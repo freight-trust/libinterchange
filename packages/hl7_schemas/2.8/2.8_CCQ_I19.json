@@ -1,0 +1,19 @@
+{
+  "Release": 2.8,
+  "DocumentType": "CCQ_I19",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "RF1", "Min": 1, "Max": 1 },
+    {
+      "Id": "CCQ_I19.PROVIDER_CONTACT",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PRD", "Min": 1, "Max": 1 },
+        { "Id": "CTD", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "REL", "Min": 0, "Max": "unbounded" }
+  ]
+}

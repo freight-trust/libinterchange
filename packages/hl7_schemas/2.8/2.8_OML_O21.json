@@ -1,0 +1,185 @@
+{
+  "Release": 2.8,
+  "DocumentType": "OML_O21",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "OML_O21.PATIENT",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        { "Id": "NK1", "Min": 0, "Max": "unbounded" },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "OML_O21.PATIENT_VISIT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PV1", "Min": 1, "Max": 1 },
+            { "Id": "PV2", "Min": 0, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "OML_O21.INSURANCE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "IN1", "Min": 1, "Max": 1 },
+            { "Id": "IN2", "Min": 0, "Max": 1 },
+            { "Id": "IN3", "Min": 0, "Max": 1 }
+          ]
+        },
+        { "Id": "GT1", "Min": 0, "Max": 1 },
+        { "Id": "AL1", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    {
+      "Id": "OML_O21.ORDER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ORC", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "OML_O21.TIMING",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "TQ1", "Min": 1, "Max": 1 },
+            { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "OML_O21.OBSERVATION_REQUEST",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "OBR", "Min": 1, "Max": 1 },
+            { "Id": "TCD", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            { "Id": "CTD", "Min": 0, "Max": 1 },
+            { "Id": "DG1", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "OML_O21.OBSERVATION",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "OBX", "Min": 1, "Max": 1 },
+                { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                { "Id": "TCD", "Min": 0, "Max": 1 },
+                { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "OML_O21.SPECIMEN",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "SPM", "Min": 1, "Max": 1 },
+                {
+                  "Id": "OML_O21.SPECIMEN_OBSERVATION",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "OBX", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                {
+                  "Id": "OML_O21.CONTAINER",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "SAC", "Min": 1, "Max": 1 },
+                    {
+                      "Id": "OML_O21.CONTAINER_OBSERVATION",
+                      "Min": 0,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "OBX", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            { "Id": "SGH", "Min": 0, "Max": 1 },
+            {
+              "Id": "OML_O21.PRIOR_RESULT",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                {
+                  "Id": "OML_O21.PATIENT_PRIOR",
+                  "Min": 0,
+                  "Max": 1,
+                  "Loop": [
+                    { "Id": "PID", "Min": 1, "Max": 1 },
+                    { "Id": "PD1", "Min": 0, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    { "Id": "ARV", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                {
+                  "Id": "OML_O21.PATIENT_VISIT_PRIOR",
+                  "Min": 0,
+                  "Max": 1,
+                  "Loop": [
+                    { "Id": "PV1", "Min": 1, "Max": 1 },
+                    { "Id": "PV2", "Min": 0, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                { "Id": "AL1", "Min": 0, "Max": "unbounded" },
+                {
+                  "Id": "OML_O21.ORDER_PRIOR",
+                  "Min": 1,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "ORC", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    { "Id": "OBR", "Min": 1, "Max": 1 },
+                    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    {
+                      "Id": "OML_O21.TIMING_PRIOR",
+                      "Min": 0,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "TQ1", "Min": 1, "Max": 1 },
+                        { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+                      ]
+                    },
+                    {
+                      "Id": "OML_O21.OBSERVATION_PRIOR",
+                      "Min": 1,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "OBX", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            { "Id": "SGT", "Min": 0, "Max": 1 }
+          ]
+        },
+        { "Id": "FT1", "Min": 0, "Max": "unbounded" },
+        { "Id": "CTI", "Min": 0, "Max": "unbounded" },
+        { "Id": "BLG", "Min": 0, "Max": 1 }
+      ]
+    }
+  ]
+}

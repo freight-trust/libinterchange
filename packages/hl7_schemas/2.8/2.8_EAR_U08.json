@@ -1,0 +1,27 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EAR_U08",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EQU", "Min": 1, "Max": 1 },
+    {
+      "Id": "EAR_U08.COMMAND_RESPONSE",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ECD", "Min": 1, "Max": 1 },
+        {
+          "Id": "EAR_U08.SPECIMEN_CONTAINER",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "SAC", "Min": 1, "Max": 1 },
+            { "Id": "SPM", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        { "Id": "ECR", "Min": 1, "Max": 1 }
+      ]
+    }
+  ]
+}

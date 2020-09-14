@@ -1,0 +1,28 @@
+{
+  "Release": 2.8,
+  "DocumentType": "SSU_U03",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EQU", "Min": 1, "Max": 1 },
+    {
+      "Id": "SSU_U03.SPECIMEN_CONTAINER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "SAC", "Min": 1, "Max": 1 },
+        { "Id": "OBX", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "SSU_U03.SPECIMEN",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "SPM", "Min": 1, "Max": 1 },
+            { "Id": "OBX", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

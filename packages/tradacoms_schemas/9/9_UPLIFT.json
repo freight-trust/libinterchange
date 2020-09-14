@@ -1,0 +1,19 @@
+{
+  "Release": "9",
+  "DocumentType": "UPLIFT",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Min": 0, "Max": 1 },
+    { "Id": "UPL", "Max": 1 },
+    { "Id": "UPS", "Min": 0, "Max": 1 },
+    { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "URFLoop1",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [{ "Id": "URF" }, { "Id": "ULDLoop1", "Max": "unbounded", "Loop": [{ "Id": "ULD" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }] }]
+    },
+    { "Id": "UTR", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

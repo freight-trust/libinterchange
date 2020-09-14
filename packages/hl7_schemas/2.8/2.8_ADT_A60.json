@@ -1,0 +1,31 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ADT_A60",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EVN", "Min": 1, "Max": 1 },
+    { "Id": "PID", "Min": 1, "Max": 1 },
+    { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ADT_A60.VISIT",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "PV1", "Min": 1, "Max": 1 },
+        { "Id": "PV2", "Min": 0, "Max": 1 },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    {
+      "Id": "ADT_A60.ADVERSE_REACTION_GROUP",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "IAM", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        { "Id": "IAR", "Min": 0, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

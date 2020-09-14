@@ -1,0 +1,65 @@
+{
+  "Release": "121",
+  "DocumentType": "DCQLCI",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "ORG" },
+    { "Id": "MSG", "Min": 0 },
+    { "Id": "MPD", "Min": 0 },
+    {
+      "Id": "TVLLoop1",
+      "Max": 9,
+      "Loop": [
+        { "Id": "SRC" },
+        { "Id": "TVL", "Min": 0, "Max": 9 },
+        {
+          "Id": "CRILoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "SDT" },
+            { "Id": "APD", "Min": 0 },
+            { "Id": "TRI", "Min": 0, "Max": 9 },
+            { "Id": "EQN", "Min": 0 },
+            { "Id": "TBI", "Min": 0 },
+            { "Id": "RPI", "Min": 0 },
+            { "Id": "TBD", "Min": 0 },
+            { "Id": "EBD", "Min": 0 },
+            { "Id": "FTI", "Min": 0 },
+            { "Id": "TVL", "Min": 0, "Max": 9 },
+            { "Id": "TIF", "Min": 0, "Max": 99 },
+            { "Id": "TPD", "Min": 0, "Max": 99 },
+            { "Id": "SSD", "Min": 0, "Max": 99 },
+            { "Id": "SSR", "Min": 0, "Max": 99 },
+            { "Id": "CRI", "Min": 0 },
+            { "Id": "ADDLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "PAX" }, { "Id": "SPI", "Min": 0 }, { "Id": "ADD", "Min": 0 }] }
+          ]
+        },
+        {
+          "Id": "CRILoop2",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "ADT" },
+            { "Id": "APD", "Min": 0 },
+            { "Id": "TRI", "Min": 0, "Max": 9 },
+            { "Id": "EQN", "Min": 0 },
+            { "Id": "TBI", "Min": 0 },
+            { "Id": "RPI", "Min": 0 },
+            { "Id": "TBD", "Min": 0 },
+            { "Id": "EBD", "Min": 0 },
+            { "Id": "FTI", "Min": 0 },
+            { "Id": "TVL", "Min": 0, "Max": 9 },
+            { "Id": "TPD", "Min": 0, "Max": 99 },
+            { "Id": "SSD", "Min": 0, "Max": 99 },
+            { "Id": "SSR", "Min": 0, "Max": 99 },
+            { "Id": "CRI", "Min": 0 },
+            { "Id": "STDLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "TIF" }, { "Id": "STD", "Min": 0 }] },
+            { "Id": "ADDLoop2", "Min": 0, "Max": 2, "Loop": [{ "Id": "PAX" }, { "Id": "SPI", "Min": 0 }, { "Id": "ADD", "Min": 0 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

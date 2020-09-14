@@ -1,0 +1,46 @@
+{
+  "Release": "D96A",
+  "DocumentType": "HANMOV",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "BGM" },
+    { "Id": "DTM", "Min": 0, "Max": 9 },
+    { "Id": "HAN", "Min": 0, "Max": 9 },
+    { "Id": "FTX", "Min": 0, "Max": 9 },
+    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "NADLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "NAD" }, { "Id": "LOC", "Min": 0, "Max": 9 }, { "Id": "RFFLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }] }]
+    },
+    {
+      "Id": "LINLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "LIN" },
+        { "Id": "PIA", "Min": 0, "Max": 9 },
+        { "Id": "IMD", "Min": 0, "Max": 99 },
+        { "Id": "HAN", "Min": 0, "Max": 9 },
+        { "Id": "NADLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "NAD" }] },
+        { "Id": "QTY", "Min": 0, "Max": 9 },
+        { "Id": "DTM", "Min": 0, "Max": 9 },
+        { "Id": "FTX", "Min": 0, "Max": 9 },
+        { "Id": "RFFLoop3", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }] },
+        {
+          "Id": "PACLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "PAC" },
+            { "Id": "MEA", "Min": 0, "Max": 9 },
+            { "Id": "QTY", "Min": 0, "Max": 9 },
+            { "Id": "PCILoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "PCI" }, { "Id": "GIN", "Min": 0, "Max": 9 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "Release": "121",
+  "DocumentType": "FTVRES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG", "Min": 0 },
+    { "Id": "QTY", "Min": 0 },
+    { "Id": "MON", "Min": 0 },
+    { "Id": "PTK", "Min": 0 },
+    { "Id": "IFTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    {
+      "Id": "REFLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [{ "Id": "FTV" }, { "Id": "REF", "Min": 0 }, { "Id": "IFTLoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }]
+    },
+    {
+      "Id": "REFLoop2",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "TIF" },
+        { "Id": "REF", "Min": 0 },
+        {
+          "Id": "QTYLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "REF", "Min": 0 },
+            { "Id": "QTY", "Min": 0 },
+            {
+              "Id": "REFLoop4",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [
+                { "Id": "FTV" },
+                { "Id": "REF", "Min": 0 },
+                { "Id": "IFTLoop3", "Min": 0, "Max": 9999, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "DUMLoop1",
+      "Min": 0,
+      "Loop": [
+        { "Id": "DUM" },
+        {
+          "Id": "FTVLoop3",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [
+            { "Id": "REF" },
+            { "Id": "TVL", "Min": 0 },
+            { "Id": "FTV", "Min": 0 },
+            { "Id": "IFTLoop4", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

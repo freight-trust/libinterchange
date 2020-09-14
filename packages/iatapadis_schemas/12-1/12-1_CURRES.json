@@ -1,0 +1,19 @@
+{
+  "Release": "121",
+  "DocumentType": "CURRES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG" },
+    { "Id": "STX", "Min": 0 },
+    { "Id": "IFT", "Min": 0, "Max": 9 },
+    { "Id": "IFTLoop1", "Min": 0, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    { "Id": "CVRLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "SDT" }, { "Id": "CVR", "Min": 0 }] },
+    {
+      "Id": "CVRLoop2",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [{ "Id": "DAT" }, { "Id": "CVR", "Min": 0 }, { "Id": "CVRLoop3", "Min": 0, "Max": 18, "Loop": [{ "Id": "MON" }, { "Id": "CVR", "Min": 0 }] }]
+    },
+    { "Id": "UNT" }
+  ]
+}

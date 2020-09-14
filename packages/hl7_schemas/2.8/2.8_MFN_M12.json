@@ -1,0 +1,28 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MFN_M12",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MFI", "Min": 1, "Max": 1 },
+    {
+      "Id": "MFN_M12.MF_OBS_ATTRIBUTES",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "MFE", "Min": 1, "Max": 1 },
+        { "Id": "OM1", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "MFN_M12.MF_OBS_OTHER_ATTRIBUTES",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "OM7", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

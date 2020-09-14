@@ -1,0 +1,29 @@
+{
+  "Release": "121",
+  "DocumentType": "SMPREQ",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG", "Min": 0 },
+    { "Id": "ORG", "Min": 0 },
+    { "Id": "TVL", "Min": 0 },
+    { "Id": "SRP", "Min": 0 },
+    { "Id": "RPI", "Min": 0 },
+    { "Id": "FTI", "Min": 0 },
+    { "Id": "RCI", "Min": 0 },
+    { "Id": "EQI", "Min": 0 },
+    {
+      "Id": "FQULoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "TIF" },
+        { "Id": "FTI", "Min": 0, "Max": 99 },
+        { "Id": "FAR", "Min": 0 },
+        { "Id": "DAT", "Min": 0 },
+        { "Id": "TKT", "Min": 0 },
+        { "Id": "FQU", "Min": 0 }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

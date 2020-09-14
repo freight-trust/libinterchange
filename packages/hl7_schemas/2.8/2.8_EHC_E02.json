@@ -1,0 +1,34 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EHC_E02",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "EHC_E02.INVOICE_INFORMATION_CANCEL",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [
+        { "Id": "IVC" },
+        { "Id": "PYE" },
+        { "Id": "CTD" },
+        { "Id": "NTE" },
+        {
+          "Id": "EHC_E02.PRODUCT_SERVICE_SECTION",
+          "Loop": [
+            { "Id": "PSS", "Min": 1, "Max": 1 },
+            {
+              "Id": "EHC_E02.PSG",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "PSG", "Min": 1, "Max": 1 },
+                { "Id": "PSL", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

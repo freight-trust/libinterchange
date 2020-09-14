@@ -1,0 +1,12 @@
+{
+  "Release": "121",
+  "DocumentType": "HWPRES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG" },
+    { "Id": "RCI", "Min": 0 },
+    { "Id": "IFTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    { "Id": "LTS", "Min": 0 },
+    { "Id": "UNT" }
+  ]
+}

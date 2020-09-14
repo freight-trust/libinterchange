@@ -1,0 +1,20 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ADT_A39",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EVN", "Min": 1, "Max": 1 },
+    {
+      "Id": "ADT_A39.PATIENT",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "MRG", "Min": 1, "Max": 1 },
+        { "Id": "PV1", "Min": 0, "Max": 1 }
+      ]
+    }
+  ]
+}

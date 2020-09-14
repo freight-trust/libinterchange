@@ -1,0 +1,29 @@
+{
+  "Release": "9",
+  "DocumentType": "ACKMNT",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Min": 0, "Max": 1 },
+    {
+      "Id": "AORLoop1",
+      "Max": 1,
+      "Loop": [
+        { "Id": "AOR" },
+        { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "ALDLoop1",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ALD" },
+            { "Id": "AGD", "Min": 0, "Max": "unbounded" },
+            { "Id": "AQD", "Min": 0, "Max": "unbounded" },
+            { "Id": "DNB", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    { "Id": "KTR", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

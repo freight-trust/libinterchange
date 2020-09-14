@@ -1,0 +1,25 @@
+{
+  "Release": "9",
+  "DocumentType": "CORDER",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Min": 0, "Max": 1 },
+    { "Id": "ORD", "Max": 1 },
+    { "Id": "OOL", "Min": 0, "Max": 1 },
+    { "Id": "ITD", "Min": 0, "Max": 1 },
+    { "Id": "DIN", "Min": 0, "Max": 1 },
+    { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "CODLoop1",
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "COD" },
+        { "Id": "DNB", "Min": 0, "Max": "unbounded" },
+        { "Id": "PVD", "Min": 0, "Max": "unbounded" },
+        { "Id": "RDQLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "RDQ" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }] }
+      ]
+    },
+    { "Id": "OTR", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

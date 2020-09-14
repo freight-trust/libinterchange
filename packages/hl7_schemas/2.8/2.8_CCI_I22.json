@@ -1,0 +1,567 @@
+{
+  "Release": 2.8,
+  "DocumentType": "CCI_I22",
+  "TransactionSet": [
+    {
+      "Id": "SFT",
+      "Min": 0,
+      "Max": "unbounded"
+    },
+    {
+      "Id": "UAC",
+      "Min": 0,
+      "Max": 1
+    },
+    {
+      "Id": "MSA",
+      "Min": 1,
+      "Max": 1
+    },
+    {
+      "Id": "ERR",
+      "Min": 0,
+      "Max": "unbounded"
+    },
+    {
+      "Id": "PID",
+      "Min": 1,
+      "Max": 1
+    },
+    {
+      "Id": "PD1",
+      "Min": 0,
+      "Max": 1
+    },
+    {
+      "Id": "NK1",
+      "Min": 0,
+      "Max": "unbounded"
+    },
+    {
+      "Id": "CCI_I22.INSURANCE",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "IN1",
+          "Min": 1,
+          "Max": 1
+        },
+        {
+          "Id": "IN2",
+          "Min": 0,
+          "Max": 1
+        },
+        {
+          "Id": "IN3",
+          "Min": 0,
+          "Max": 1
+        }
+      ]
+    },
+    {
+      "Id": "CCI_I22.APPOINTMENT_HISTORY",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "SCH",
+          "Min": 1,
+          "Max": 1
+        },
+        {
+          "Id": "CCI_I22.RESOURCES",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "RGS",
+              "Min": 1,
+              "Max": 1
+            },
+            {
+              "Id": "CCI_I22.RESOURCE_DETAIL",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                {
+                  "Id": "CCI_I22.RESOURCE_OBJECT",
+                  "Min": 1,
+                  "Max": 1,
+                  "Choice": [
+                    {
+                      "Id": "AIS"
+                    },
+                    {
+                      "Id": "AIG"
+                    },
+                    {
+                      "Id": "AIL"
+                    },
+                    {
+                      "Id": "AIP"
+                    }
+                  ]
+                },
+                {
+                  "Id": "CCI_I22.RESOURCE_OBSERVATION",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    {
+                      "Id": "OBX",
+                      "Min": 1,
+                      "Max": 1
+                    },
+                    {
+                      "Id": "PRT",
+                      "Min": 0,
+                      "Max": "unbounded"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "CCI_I22.CLINICAL_HISTORY",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "ORC",
+          "Min": 1,
+          "Max": 1
+        },
+        {
+          "Id": "CCI_I22.CLINICAL_HISTORY_DETAIL",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "CCI_I22.CLINICAL_HISTORY_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [
+                {
+                  "Id": "OBR"
+                },
+                {
+                  "Id": "ODS"
+                },
+                {
+                  "Id": "PR1"
+                },
+                {
+                  "Id": "RF1"
+                },
+                {
+                  "Id": "AL1"
+                },
+                {
+                  "Id": "IAM"
+                },
+                {
+                  "Id": "ACC"
+                },
+                {
+                  "Id": "RMI"
+                },
+                {
+                  "Id": "DB1"
+                },
+                {
+                  "Id": "DG1"
+                },
+                {
+                  "Id": "DRG"
+                },
+                {
+                  "Id": "PDA"
+                }
+              ]
+            },
+            {
+              "Id": "CCI_I22.CLINICAL_HISTORY_OBSERVATION",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                {
+                  "Id": "OBX",
+                  "Min": 1,
+                  "Max": 1
+                },
+                {
+                  "Id": "PRT",
+                  "Min": 0,
+                  "Max": "unbounded"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "CCI_I22.ROLE_CLINICAL_HISTORY",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "CCI_I22.ROLE_CLINICAL_HISTORY_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [
+                {
+                  "Id": "ROL"
+                },
+                {
+                  "Id": "PRD"
+                }
+              ]
+            },
+            {
+              "Id": "VAR",
+              "Min": 0,
+              "Max": "unbounded"
+            }
+          ]
+        },
+        {
+          "Id": "CTI",
+          "Min": 0,
+          "Max": "unbounded"
+        }
+      ]
+    },
+    {
+      "Id": "CCI_I22.PATIENT_VISITS",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "PV1",
+          "Min": 1,
+          "Max": 1
+        },
+        {
+          "Id": "PV2",
+          "Min": 0,
+          "Max": 1
+        }
+      ]
+    },
+    {
+      "Id": "CCI_I22.MEDICATION_HISTORY",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "ORC",
+          "Min": 1,
+          "Max": 1
+        },
+        {
+          "Id": "CCI_I22.MEDICATION_ORDER_DETAIL",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            {
+              "Id": "RXO",
+              "Min": 1,
+              "Max": 1
+            },
+            {
+              "Id": "RXR",
+              "Min": 1,
+              "Max": "unbounded"
+            },
+            {
+              "Id": "RXC",
+              "Min": 0,
+              "Max": "unbounded"
+            },
+            {
+              "Id": "CCI_I22.MEDICATION_ORDER_OBSERVATION",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                {
+                  "Id": "OBX",
+                  "Min": 1,
+                  "Max": 1
+                },
+                {
+                  "Id": "PRT",
+                  "Min": 0,
+                  "Max": "unbounded"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "CCI_I22.MEDICATION_ENCODING_DETAIL",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            {
+              "Id": "RXE",
+              "Min": 1,
+              "Max": 1
+            },
+            {
+              "Id": "RXR",
+              "Min": 1,
+              "Max": "unbounded"
+            },
+            {
+              "Id": "RXC",
+              "Min": 0,
+              "Max": "unbounded"
+            },
+            {
+              "Id": "CCI_I22.MEDICATION_ENCODING_OBSERVATION",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                {
+                  "Id": "OBX",
+                  "Min": 1,
+                  "Max": 1
+                },
+                {
+                  "Id": "PRT",
+                  "Min": 0,
+                  "Max": "unbounded"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "CCI_I22.MEDICATION_ADMINISTRATION_DETAIL",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "RXA",
+              "Min": 1,
+              "Max": "unbounded"
+            },
+            {
+              "Id": "RXR",
+              "Min": 1,
+              "Max": 1
+            },
+            {
+              "Id": "CCI_I22.MEDICATION_ADMINISTRATION_OBSERVATION",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                {
+                  "Id": "OBX",
+                  "Min": 1,
+                  "Max": 1
+                },
+                {
+                  "Id": "PRT",
+                  "Min": 0,
+                  "Max": "unbounded"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "CTI",
+          "Min": 0,
+          "Max": "unbounded"
+        }
+      ]
+    },
+    {
+      "Id": "CCI_I22.PROBLEM",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "PRB",
+          "Min": 1,
+          "Max": 1
+        },
+        {
+          "Id": "VAR",
+          "Min": 0,
+          "Max": "unbounded"
+        },
+        {
+          "Id": "CCI_I22.ROLE_PROBLEM",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "CCI_I22.ROLE_PROBLEM_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [
+                {
+                  "Id": "ROL"
+                },
+                {
+                  "Id": "PRD"
+                }
+              ]
+            },
+            {
+              "Id": "VAR",
+              "Min": 0,
+              "Max": "unbounded"
+            }
+          ]
+        },
+        {
+          "Id": "CCI_I22.PROBLEM_OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "OBX",
+              "Min": 1,
+              "Max": 1
+            },
+            {
+              "Id": "PRT",
+              "Min": 0,
+              "Max": "unbounded"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "CCI_I22.GOAL",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "GOL",
+          "Min": 1,
+          "Max": 1
+        },
+        {
+          "Id": "VAR",
+          "Min": 0,
+          "Max": "unbounded"
+        },
+        {
+          "Id": "CCI_I22.ROLE_GOAL",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "CCI_I22.ROLE_GOAL_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [
+                {
+                  "Id": "ROL"
+                },
+                {
+                  "Id": "PRD"
+                }
+              ]
+            },
+            {
+              "Id": "VAR",
+              "Min": 0,
+              "Max": "unbounded"
+            }
+          ]
+        },
+        {
+          "Id": "CCI_I22.GOAL_OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "OBX",
+              "Min": 1,
+              "Max": 1
+            },
+            {
+              "Id": "PRT",
+              "Min": 0,
+              "Max": "unbounded"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "CCI_I22.PATHWAY",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "PTH",
+          "Min": 1,
+          "Max": 1
+        },
+        {
+          "Id": "VAR",
+          "Min": 0,
+          "Max": "unbounded"
+        },
+        {
+          "Id": "CCI_I22.ROLE_PATHWAY",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "CCI_I22.ROLE_PATHWAY_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [
+                {
+                  "Id": "ROL"
+                },
+                {
+                  "Id": "PRD"
+                }
+              ]
+            },
+            {
+              "Id": "VAR",
+              "Min": 0,
+              "Max": "unbounded"
+            }
+          ]
+        },
+        {
+          "Id": "CCI_I22.PATHWAY_OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            {
+              "Id": "OBX",
+              "Min": 1,
+              "Max": 1
+            },
+            {
+              "Id": "PRT",
+              "Min": 0,
+              "Max": "unbounded"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "REL",
+      "Min": 0,
+      "Max": "unbounded"
+    }
+  ]
+}

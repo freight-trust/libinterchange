@@ -1,0 +1,12 @@
+{
+  "Release": "121",
+  "DocumentType": "FTAREQ",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG" },
+    { "Id": "ORG", "Min": 0 },
+    { "Id": "TVLLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "FTI" }, { "Id": "TVL", "Min": 0, "Max": 8 }] },
+    { "Id": "NADLoop1", "Min": 0, "Loop": [{ "Id": "TIF" }, { "Id": "REF", "Min": 0 }, { "Id": "NAD", "Min": 0, "Max": 3 }] },
+    { "Id": "UNT" }
+  ]
+}

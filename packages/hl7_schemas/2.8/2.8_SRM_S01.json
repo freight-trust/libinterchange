@@ -1,0 +1,77 @@
+{
+  "Release": 2.8,
+  "DocumentType": "SRM_S01",
+  "TransactionSet": [
+    { "Id": "ARQ", "Min": 1, "Max": 1 },
+    { "Id": "APR", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "SRM_S01.PATIENT",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PV1", "Min": 0, "Max": 1 },
+        { "Id": "PV2", "Min": 0, "Max": 1 },
+        {
+          "Id": "SRM_S01.OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "OBX", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        { "Id": "DG1", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    {
+      "Id": "SRM_S01.RESOURCES",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "RGS", "Min": 1, "Max": 1 },
+        {
+          "Id": "SRM_S01.SERVICE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "AIS", "Min": 1, "Max": 1 },
+            { "Id": "APR", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "SRM_S01.GENERAL_RESOURCE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "AIG", "Min": 1, "Max": 1 },
+            { "Id": "APR", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "SRM_S01.LOCATION_RESOURCE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "AIL", "Min": 1, "Max": 1 },
+            { "Id": "APR", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "SRM_S01.PERSONNEL_RESOURCE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "AIP", "Min": 1, "Max": 1 },
+            { "Id": "APR", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

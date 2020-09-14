@@ -1,0 +1,29 @@
+{
+  "Release": 2.8,
+  "DocumentType": "CRM_C01",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "CRM_C01.PATIENT",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "CRM_C01.PATIENT_VISIT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PV1", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        { "Id": "CSR", "Min": 1, "Max": 1 },
+        { "Id": "CSP", "Min": 0, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

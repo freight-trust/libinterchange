@@ -1,0 +1,21 @@
+{
+  "Release": 2.8,
+  "DocumentType": "PMU_B07",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EVN", "Min": 1, "Max": 1 },
+    { "Id": "STF", "Min": 1, "Max": 1 },
+    { "Id": "PRA", "Min": 0, "Max": 1 },
+    {
+      "Id": "PMU_B07.CERTIFICATE",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "CER", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        { "Id": "ROL", "Min": 0, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

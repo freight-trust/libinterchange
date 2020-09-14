@@ -1,0 +1,79 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ORL_O44",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ORL_O44.RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        {
+          "Id": "ORL_O44.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "ORL_O44.ORDER",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "ORL_O44.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "ORL_O44.OBSERVATION_REQUEST",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "OBR", "Min": 1, "Max": 1 },
+                { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                {
+                  "Id": "ORL_O44.SPECIMEN_SHIPMENT",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "SHP", "Min": 1, "Max": 1 },
+                    {
+                      "Id": "ORL_O44.PACKAGE",
+                      "Min": 1,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "PAC", "Min": 1, "Max": 1 },
+                        {
+                          "Id": "ORL_O44.SPECIMEN_IN_PACKAGE",
+                          "Min": 0,
+                          "Max": "unbounded",
+                          "Loop": [
+                            { "Id": "SPM", "Min": 1, "Max": 1 },
+                            { "Id": "ORL_O44.SPECIMEN_CONTAINER_IN_PACKAGE", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "SAC", "Min": 1, "Max": 1 }] }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

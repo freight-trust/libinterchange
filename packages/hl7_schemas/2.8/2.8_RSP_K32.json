@@ -1,0 +1,25 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RSP_K32",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": 1 },
+    { "Id": "QAK", "Min": 1, "Max": 1 },
+    { "Id": "QPD", "Min": 1, "Max": 1 },
+    {
+      "Id": "RSP_K32.QUERY_RESPONSE",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "NK1", "Min": 0, "Max": "unbounded" },
+        { "Id": "PV1", "Min": 1, "Max": 1 },
+        { "Id": "PV2", "Min": 0, "Max": 1 },
+        { "Id": "QRI", "Min": 0, "Max": 1 }
+      ]
+    },
+    { "Id": "DSC", "Min": 0, "Max": 1 }
+  ]
+}

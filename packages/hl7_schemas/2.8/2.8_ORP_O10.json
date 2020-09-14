@@ -1,0 +1,65 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ORP_O10",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ORP_O10.RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        {
+          "Id": "ORP_O10.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "ORP_O10.ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "ORP_O10.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "ORP_O10.ORDER_DETAIL",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "RXO", "Min": 1, "Max": 1 },
+                { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+                { "Id": "RXR", "Min": 1, "Max": "unbounded" },
+                {
+                  "Id": "ORP_O10.COMPONENT",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "RXC", "Min": 1, "Max": 1 },
+                    { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

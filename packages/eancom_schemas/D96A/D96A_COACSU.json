@@ -1,0 +1,64 @@
+{
+  "Release": "D96A",
+  "DocumentType": "COACSU",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "BGM" },
+    { "Id": "DTM", "Max": 9 },
+    { "Id": "FTX", "Min": 0, "Max": 9 },
+    {
+      "Id": "NADLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "FII", "Min": 0, "Max": 9 },
+        { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }] },
+        { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }
+      ]
+    },
+    { "Id": "CUXLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CUX" }] },
+    {
+      "Id": "PATLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [
+        { "Id": "PAT" },
+        { "Id": "MOA", "Min": 0, "Max": 9 },
+        { "Id": "PCD", "Min": 0, "Max": 9 },
+        { "Id": "DTM", "Min": 0, "Max": 9 },
+        { "Id": "FII", "Min": 0 },
+        { "Id": "PAI", "Min": 0, "Max": 9 },
+        { "Id": "TAXLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0, "Max": 9 }] }
+      ]
+    },
+    {
+      "Id": "DOCLoop1",
+      "Min": 0,
+      "Max": 9999,
+      "Loop": [
+        { "Id": "DOC" },
+        { "Id": "DTM", "Min": 0, "Max": 9 },
+        {
+          "Id": "NADLoop2",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "NAD" }, { "Id": "RFFLoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] }]
+        },
+        {
+          "Id": "MOALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [
+            { "Id": "MOA" },
+            { "Id": "TAX", "Min": 0, "Max": 9 },
+            { "Id": "AJTLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "AJT" }, { "Id": "MOA", "Min": 0 }, { "Id": "RFF", "Min": 0 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNS" },
+    { "Id": "MOALoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0, "Max": 9 }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    { "Id": "UNT" }
+  ]
+}

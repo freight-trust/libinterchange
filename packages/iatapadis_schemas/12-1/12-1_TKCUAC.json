@@ -1,0 +1,147 @@
+{
+  "Release": "121",
+  "DocumentType": "TKCUAC",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG" },
+    { "Id": "ORG" },
+    { "Id": "TAI", "Min": 0 },
+    { "Id": "RCI", "Min": 0 },
+    { "Id": "EQN", "Min": 0 },
+    { "Id": "TVL", "Min": 0, "Max": 4 },
+    { "Id": "RPI", "Min": 0 },
+    { "Id": "FAR", "Min": 0 },
+    { "Id": "FQU", "Min": 0 },
+    {
+      "Id": "PTSLoop1",
+      "Max": 999,
+      "Loop": [
+        { "Id": "TIF" },
+        { "Id": "TAI", "Min": 0 },
+        { "Id": "RCI", "Min": 0 },
+        { "Id": "FTI", "Min": 0 },
+        { "Id": "MON" },
+        { "Id": "FOP" },
+        { "Id": "PTK", "Min": 0 },
+        { "Id": "TXD", "Min": 0, "Max": 5 },
+        { "Id": "ODI", "Min": 0 },
+        { "Id": "ORG", "Min": 0 },
+        { "Id": "ATI", "Min": 0 },
+        { "Id": "EQN", "Min": 0 },
+        { "Id": "IFT", "Min": 0, "Max": 9 },
+        { "Id": "DID", "Min": 0, "Max": 99 },
+        { "Id": "CRI", "Min": 0 },
+        { "Id": "FAR", "Min": 0 },
+        { "Id": "FQU", "Min": 0 },
+        { "Id": "PTS", "Min": 0 },
+        {
+          "Id": "PTKLoop2",
+          "Max": 99,
+          "Loop": [
+            { "Id": "TKT" },
+            { "Id": "DAT", "Min": 0 },
+            { "Id": "IFT", "Min": 0, "Max": 9 },
+            { "Id": "PTK", "Min": 0 },
+            {
+              "Id": "UNIQUE_1Loop1",
+              "Max": 4,
+              "Loop": [
+                { "Id": "CPN" },
+                { "Id": "TVL", "Min": 0, "Max": 4 },
+                { "Id": "PTS", "Min": 0 },
+                { "Id": "DAT", "Min": 0 },
+                { "Id": "RPI", "Min": 0 },
+                { "Id": "IFT", "Min": 0, "Max": 9 },
+                { "Id": "EBD", "Min": 0, "Max": 2 },
+                { "Id": "PTK", "Min": 0 },
+                { "Id": "FTI", "Min": 0 },
+                { "Id": "FAR", "Min": 0 },
+                { "Id": "CVR", "Min": 0 },
+                { "Id": "UNIQUE_1", "Min": 0 }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "CVRLoop2",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [
+            { "Id": "FCI" },
+            {
+              "Id": "EQNLoop2",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [
+                { "Id": "EQN" },
+                {
+                  "Id": "FRULoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [
+                    { "Id": "ITM" },
+                    { "Id": "TVLLoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "ADT" }, { "Id": "TVL", "Min": 0 }] },
+                    { "Id": "MON", "Min": 0 },
+                    { "Id": "FQU", "Min": 0 },
+                    { "Id": "PTS", "Min": 0 },
+                    { "Id": "PTK" },
+                    { "Id": "FRU", "Min": 0 }
+                  ]
+                }
+              ]
+            },
+            { "Id": "MON", "Min": 0 },
+            { "Id": "TXD", "Min": 0, "Max": 99 },
+            { "Id": "CVR", "Min": 0 }
+          ]
+        },
+        {
+          "Id": "APDLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "STX" },
+            { "Id": "TVL", "Min": 0, "Max": 2 },
+            { "Id": "PTK", "Min": 0 },
+            { "Id": "TKT", "Min": 0 },
+            { "Id": "CPN", "Min": 0, "Max": 9 },
+            { "Id": "PTS", "Min": 0 },
+            { "Id": "RTG", "Min": 0, "Max": 99 },
+            { "Id": "APD", "Min": 0 }
+          ]
+        },
+        { "Id": "SPILoop1", "Min": 0, "Loop": [{ "Id": "TPD" }, { "Id": "SPI", "Min": 0, "Max": 4 }] },
+        { "Id": "DIDLoop2", "Min": 0, "Loop": [{ "Id": "ABI" }, { "Id": "DID", "Min": 0 }] },
+        {
+          "Id": "DATLoop3",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [
+            { "Id": "PRT" },
+            { "Id": "DAT", "Min": 0 },
+            {
+              "Id": "TKTLoop3",
+              "Max": 4,
+              "Loop": [
+                { "Id": "MON" },
+                { "Id": "TKT" },
+                {
+                  "Id": "EQILoop1",
+                  "Max": 4,
+                  "Loop": [
+                    { "Id": "CPN" },
+                    { "Id": "TXD", "Min": 0 },
+                    { "Id": "EQI", "Min": 0 },
+                    { "Id": "EQILoop2", "Min": 0, "Loop": [{ "Id": "TII" }, { "Id": "EQI", "Min": 0 }] }
+                  ]
+                }
+              ]
+            },
+            { "Id": "CVRLoop3", "Min": 0, "Loop": [{ "Id": "REF" }, { "Id": "MON", "Min": 0 }, { "Id": "CVR", "Min": 0 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

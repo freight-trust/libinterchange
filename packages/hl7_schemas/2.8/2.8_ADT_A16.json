@@ -1,0 +1,47 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ADT_A16",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EVN", "Min": 1, "Max": 1 },
+    { "Id": "PID", "Min": 1, "Max": 1 },
+    { "Id": "PD1", "Min": 0, "Max": 1 },
+    { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+    { "Id": "ROL", "Min": 0, "Max": "unbounded" },
+    { "Id": "NK1", "Min": 0, "Max": "unbounded" },
+    { "Id": "PV1", "Min": 1, "Max": 1 },
+    { "Id": "PV2", "Min": 0, "Max": 1 },
+    { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+    { "Id": "ROL", "Min": 0, "Max": "unbounded" },
+    { "Id": "DB1", "Min": 0, "Max": "unbounded" },
+    { "Id": "OBX", "Min": 0, "Max": "unbounded" },
+    { "Id": "AL1", "Min": 0, "Max": "unbounded" },
+    { "Id": "DG1", "Min": 0, "Max": "unbounded" },
+    { "Id": "DRG", "Min": 0, "Max": 1 },
+    {
+      "Id": "ADT_A16.PROCEDURE",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PR1", "Min": 1, "Max": 1 },
+        { "Id": "ROL", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "GT1", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ADT_A16.INSURANCE",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "IN1", "Min": 1, "Max": 1 },
+        { "Id": "IN2", "Min": 0, "Max": 1 },
+        { "Id": "IN3", "Min": 0, "Max": "unbounded" },
+        { "Id": "ROL", "Min": 0, "Max": "unbounded" },
+        { "Id": "AUT", "Min": 0, "Max": "unbounded" },
+        { "Id": "RF1", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "ACC", "Min": 0, "Max": 1 }
+  ]
+}

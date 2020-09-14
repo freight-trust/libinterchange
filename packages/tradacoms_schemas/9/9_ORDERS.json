@@ -1,0 +1,14 @@
+{
+  "Release": "9",
+  "DocumentType": "ORDERS",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Max": 1 },
+    { "Id": "ORD", "Max": 1 },
+    { "Id": "DIN", "Min": 0, "Max": 1 },
+    { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+    { "Id": "OLDLoop1", "Max": "unbounded", "Loop": [{ "Id": "OLD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }] },
+    { "Id": "OTR", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

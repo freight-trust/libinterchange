@@ -1,0 +1,18 @@
+{
+  "Release": "121",
+  "DocumentType": "SPORES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG", "Min": 0 },
+    { "Id": "IFT", "Min": 0 },
+    { "Id": "IFTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    {
+      "Id": "IFTLoop2",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [{ "Id": "TVL" }, { "Id": "PDI", "Min": 0 }, { "Id": "APD", "Min": 0 }, { "Id": "TRF", "Min": 0 }, { "Id": "IFT", "Min": 0 }]
+    },
+    { "Id": "IFTLoop3", "Min": 0, "Max": 999, "Loop": [{ "Id": "ODI" }, { "Id": "TRF", "Min": 0 }, { "Id": "IFT", "Min": 0 }] },
+    { "Id": "UNT" }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Release": "121",
+  "DocumentType": "FLIRES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG", "Min": 0 },
+    { "Id": "IFT", "Min": 0 },
+    { "Id": "IFTLoop1", "Min": 0, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    {
+      "Id": "IFTLoop2",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [
+        { "Id": "DUM" },
+        { "Id": "TVL" },
+        { "Id": "TRA", "Min": 0 },
+        { "Id": "APD", "Min": 0 },
+        { "Id": "IFT", "Min": 0 },
+        { "Id": "IFTLoop3", "Min": 0, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+        {
+          "Id": "TRFLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "TRA", "Min": 0 },
+            { "Id": "APD", "Min": 0 },
+            { "Id": "EQN", "Min": 0 },
+            { "Id": "EQD", "Min": 0, "Max": 0 },
+            { "Id": "DAT", "Min": 0 },
+            { "Id": "IFT", "Min": 0, "Max": 2 },
+            { "Id": "PDI", "Min": 0 },
+            { "Id": "CAR", "Min": 0 },
+            { "Id": "TRF", "Min": 0 },
+            { "Id": "PDILoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "EQI" }, { "Id": "PDI", "Min": 0 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

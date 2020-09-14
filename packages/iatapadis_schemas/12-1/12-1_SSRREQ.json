@@ -1,0 +1,34 @@
+{
+  "Release": "121",
+  "DocumentType": "SSRREQ",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "ORG", "Min": 0 },
+    { "Id": "RCI", "Min": 0 },
+    { "Id": "EQN", "Min": 0 },
+    { "Id": "SSR", "Min": 0, "Max": 9 },
+    { "Id": "SSRLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "TIF" }, { "Id": "SSR", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "MSGLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "ODI" },
+        { "Id": "MSG", "Min": 0 },
+        {
+          "Id": "SSRLoop2",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "EQN", "Min": 0 },
+            { "Id": "RPI", "Min": 0 },
+            { "Id": "SSR", "Min": 0, "Max": 9 },
+            { "Id": "SSRLoop3", "Min": 0, "Max": 999, "Loop": [{ "Id": "TIF" }, { "Id": "SSR", "Min": 0, "Max": 9 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

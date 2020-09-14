@@ -1,0 +1,48 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EHC_E10",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "EHC_E10.INVOICE_PROCESSING_RESULTS_INFO",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "IPR", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        { "Id": "PYE", "Min": 1, "Max": 1 },
+        { "Id": "IN1", "Min": 1, "Max": 1 },
+        { "Id": "IN2", "Min": 0, "Max": 1 },
+        { "Id": "IVC", "Min": 1, "Max": 1 },
+        {
+          "Id": "EHC_E10.PRODUCT_SERVICE_SECTION",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "PSS", "Min": 1, "Max": 1 },
+            {
+              "Id": "EHC_E10.PRODUCT_SERVICE_GROUP",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "PSG", "Min": 1, "Max": 1 },
+                {
+                  "Id": "EHC_E10.PRODUCT_SERVICE_LINE_INFO",
+                  "Min": 1,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "PSL", "Min": 1, "Max": 1 },
+                    { "Id": "ADJ", "Min": 0, "Max": "unbounded" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

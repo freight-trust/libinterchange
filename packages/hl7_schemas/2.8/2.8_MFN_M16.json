@@ -1,0 +1,55 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MFN_M16",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MFI", "Min": 1, "Max": 1 },
+    {
+      "Id": "MFN_M16.MATERIAL_ITEM_RECORD",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "MFE", "Min": 1, "Max": 1 },
+        { "Id": "ITM", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "MFN_M16.STERILIZATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "STZ", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "MFN_M16.PURCHASING_VENDOR",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "VND", "Min": 1, "Max": 1 },
+            {
+              "Id": "MFN_M16.PACKAGING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "PKG", "Min": 1, "Max": 1 },
+                { "Id": "PCE", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "MFN_M16.MATERIAL_LOCATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "IVT", "Min": 1, "Max": 1 },
+            { "Id": "ILT", "Min": 0, "Max": "unbounded" },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

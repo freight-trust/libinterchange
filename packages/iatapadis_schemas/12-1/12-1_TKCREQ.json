@@ -1,0 +1,63 @@
+{
+  "Release": "121",
+  "DocumentType": "TKCREQ",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG" },
+    { "Id": "ORG", "Min": 0 },
+    { "Id": "TAI", "Min": 0 },
+    { "Id": "RCI", "Min": 0 },
+    { "Id": "EQN", "Min": 0 },
+    { "Id": "TVL", "Min": 0, "Max": 2 },
+    { "Id": "TIF", "Min": 0 },
+    { "Id": "FTI", "Min": 0 },
+    { "Id": "FOP", "Min": 0 },
+    { "Id": "RPI", "Min": 0 },
+    { "Id": "IFT", "Min": 0, "Max": 9 },
+    { "Id": "CRI", "Min": 0 },
+    { "Id": "CHD", "Min": 0 },
+    {
+      "Id": "CRILoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [
+        { "Id": "TKT" },
+        { "Id": "TIF", "Min": 0 },
+        { "Id": "TAI", "Min": 0 },
+        { "Id": "RCI", "Min": 0 },
+        { "Id": "FTI", "Min": 0 },
+        { "Id": "MON", "Min": 0 },
+        { "Id": "FOP", "Min": 0 },
+        { "Id": "PTK", "Min": 0 },
+        { "Id": "TXD", "Min": 0, "Max": 5 },
+        { "Id": "ODI", "Min": 0 },
+        { "Id": "ORG", "Min": 0 },
+        { "Id": "DAT", "Min": 0 },
+        { "Id": "ATI", "Min": 0 },
+        { "Id": "EQN", "Min": 0 },
+        { "Id": "IFT", "Min": 0, "Max": 9 },
+        { "Id": "DID", "Min": 0, "Max": 99 },
+        { "Id": "TBD", "Min": 0 },
+        { "Id": "CRI", "Min": 0 },
+        {
+          "Id": "TBDLoop2",
+          "Min": 0,
+          "Max": 4,
+          "Loop": [
+            { "Id": "CPN" },
+            { "Id": "TVL", "Min": 0, "Max": 2 },
+            { "Id": "PTS", "Min": 0 },
+            { "Id": "DAT", "Min": 0 },
+            { "Id": "RPI", "Min": 0 },
+            { "Id": "IFT", "Min": 0, "Max": 9 },
+            { "Id": "EBD", "Min": 0, "Max": 2 },
+            { "Id": "PTK", "Min": 0 },
+            { "Id": "FTI", "Min": 0 },
+            { "Id": "TBD", "Min": 0 }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

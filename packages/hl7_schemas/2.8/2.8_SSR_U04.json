@@ -1,0 +1,18 @@
+{
+  "Release": 2.8,
+  "DocumentType": "SSR_U04",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EQU", "Min": 1, "Max": 1 },
+    {
+      "Id": "SSR_U04.SPECIMEN_CONTAINER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "SAC", "Min": 1, "Max": 1 },
+        { "Id": "SPM", "Min": 0, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

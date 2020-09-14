@@ -1,0 +1,34 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MFN_M18",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MFI", "Min": 1, "Max": 1 },
+    {
+      "Id": "MFN_M18.MF_PAYER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "MFE", "Min": 1, "Max": 1 },
+        {
+          "Id": "MFN_M18.PAYER_MF_ENTRY",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "PM1", "Min": 1, "Max": 1 },
+            {
+              "Id": "MFN_M18.PAYER_MF_COVERAGE",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "MCP", "Min": 1, "Max": 1 },
+                { "Id": "DPS", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

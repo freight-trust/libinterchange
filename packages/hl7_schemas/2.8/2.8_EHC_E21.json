@@ -1,0 +1,24 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EHC_E21",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "EHC_E21.AUTHORIZATION_REQUEST",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [
+        { "Id": "IVC" },
+        {
+          "Id": "EHC_E21.PSL_ITEM_INFO",
+          "Loop": [
+            { "Id": "PSL", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            { "Id": "AUT", "Min": 0, "Max": 1 }
+          ]
+        }
+      ]
+    }
+  ]
+}

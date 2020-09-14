@@ -1,0 +1,57 @@
+{
+  "Release": "D96A",
+  "DocumentType": "IFTMBF",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "BGM" },
+    { "Id": "DTM", "Min": 0, "Max": 9 },
+    { "Id": "TSR", "Min": 0, "Max": 9 },
+    { "Id": "FTX", "Min": 0, "Max": 99 },
+    { "Id": "CNT", "Min": 0, "Max": 9 },
+    { "Id": "TODLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0, "Max": 9 }] },
+    { "Id": "RFFLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "TDTLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [{ "Id": "TDT" }, { "Id": "DTM", "Min": 0, "Max": 9 }, { "Id": "LOCLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "LOC" }] }]
+    },
+    {
+      "Id": "NADLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "LOC", "Min": 0, "Max": 9 },
+        { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }
+      ]
+    },
+    {
+      "Id": "GIDLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [
+        { "Id": "GID" },
+        { "Id": "HAN", "Min": 0 },
+        { "Id": "TMP", "Min": 0 },
+        { "Id": "RNG", "Min": 0 },
+        { "Id": "MOA", "Min": 0, "Max": 9 },
+        { "Id": "PIA", "Min": 0, "Max": 9 },
+        { "Id": "FTX", "Min": 0, "Max": 9 },
+        { "Id": "NADLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "NAD" }, { "Id": "DTM", "Min": 0 }] },
+        { "Id": "MEALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }] },
+        { "Id": "DIMLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }] },
+        { "Id": "RFFLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }] },
+        { "Id": "DOCLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "DOC" }] },
+        { "Id": "DGSLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "DGS" }, { "Id": "FTX", "Min": 0, "Max": 99 }] }
+      ]
+    },
+    {
+      "Id": "EQDLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [{ "Id": "EQD" }, { "Id": "EQN", "Min": 0 }, { "Id": "NADLoop3", "Min": 0, "Max": 9, "Loop": [{ "Id": "NAD" }] }]
+    },
+    { "Id": "UNT" }
+  ]
+}

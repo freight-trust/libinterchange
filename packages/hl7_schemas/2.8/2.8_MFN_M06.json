@@ -1,0 +1,27 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MFN_M06",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MFI", "Min": 1, "Max": 1 },
+    {
+      "Id": "MFN_M06.MF_CLIN_STUDY",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "MFE", "Min": 1, "Max": 1 },
+        { "Id": "CM0", "Min": 1, "Max": 1 },
+        {
+          "Id": "MFN_M06.MF_PHASE_SCHED_DETAIL",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "CM1", "Min": 1, "Max": 1 },
+            { "Id": "CM2", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

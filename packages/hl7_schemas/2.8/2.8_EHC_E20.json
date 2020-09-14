@@ -1,0 +1,56 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EHC_E20",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "EHC_E20.AUTHORIZATION_REQUEST",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [
+        { "Id": "IVC" },
+        { "Id": "CTD" },
+        { "Id": "LOC" },
+        { "Id": "ROL" },
+        {
+          "Id": "EHC_E20.PAT_INFO",
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "ACC", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "EHC_E20.INSURANCE",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "IN1", "Min": 1, "Max": 1 },
+                { "Id": "IN2", "Min": 0, "Max": 1 }
+              ]
+            },
+            {
+              "Id": "EHC_E20.DIAGNOSIS",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "DG1", "Min": 1, "Max": 1 },
+                { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            { "Id": "OBX", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "EHC_E20.PSL_ITEM_INFO",
+          "Loop": [
+            { "Id": "PSL", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            { "Id": "ADJ", "Min": 0, "Max": "unbounded" },
+            { "Id": "LOC", "Min": 0, "Max": "unbounded" },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            { "Id": "ROL", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

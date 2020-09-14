@@ -1,0 +1,29 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MFN_M11",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MFI", "Min": 1, "Max": 1 },
+    {
+      "Id": "MFN_M11.MF_TEST_CALCULATED",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "MFE", "Min": 1, "Max": 1 },
+        { "Id": "OM1", "Min": 1, "Max": 1 },
+        { "Id": "OMC", "Min": 0, "Max": "unbounded" },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "MFN_M11.MF_TEST_CALC_DETAIL",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "OM6", "Min": 1, "Max": 1 },
+            { "Id": "OM2", "Min": 1, "Max": 1 }
+          ]
+        }
+      ]
+    }
+  ]
+}

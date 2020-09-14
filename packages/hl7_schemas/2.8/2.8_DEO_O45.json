@@ -1,0 +1,46 @@
+{
+  "Release": 2.8,
+  "DocumentType": "DEO_O45",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "DEO_O45.DONOR",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "OBX", "Min": 0, "Max": "unbounded" },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "DEO_O45.DONOR_REGISTRATION",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PV1", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "DEO_O45.DONATION_ORDER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "OBR", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "DEO_O45.DONATION_OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "OBX", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

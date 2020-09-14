@@ -1,0 +1,31 @@
+{
+  "Release": "121",
+  "DocumentType": "TNLRES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "IFT", "Min": 0 },
+    { "Id": "TVL", "Min": 0 },
+    { "Id": "ERC", "Min": 0 },
+    {
+      "Id": "ODILoop1",
+      "Max": 99,
+      "Loop": [
+        { "Id": "ODI" },
+        {
+          "Id": "MSGLoop1",
+          "Max": 999,
+          "Loop": [
+            { "Id": "TIF" },
+            { "Id": "RPI", "Min": 0 },
+            { "Id": "SDT", "Min": 0 },
+            { "Id": "TVL", "Min": 0 },
+            { "Id": "RCI", "Min": 0 },
+            { "Id": "PDI", "Min": 0 },
+            { "Id": "MSG", "Min": 0 }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

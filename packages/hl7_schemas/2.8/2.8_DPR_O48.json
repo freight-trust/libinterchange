@@ -1,0 +1,58 @@
+{
+  "Release": 2.8,
+  "DocumentType": "DPR_O48",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "DPR_O48.DONOR",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "OBX", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        { "Id": "AL1", "Min": 0, "Max": "unbounded" },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "DPR_O48.DONOR_REGISTRATION",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PV1", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "DPR_O48.DONATION_ORDER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "OBR", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    {
+      "Id": "DPR_O48.DONATION",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "DON", "Min": 1, "Max": 1 },
+        { "Id": "OBX", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "DPR_O48.BLOOD_UNIT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "BUI", "Min": 0, "Max": "unbounded" },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Release": "9",
+  "DocumentType": "PICKER",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "ORD", "Max": 1 },
+    { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+    { "Id": "DIN", "Min": 0, "Max": 1 },
+    {
+      "Id": "PLDLoop1",
+      "Max": "unbounded",
+      "Loop": [{ "Id": "PLD" }, { "Id": "PICLoop1", "Max": "unbounded", "Loop": [{ "Id": "PIC" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }] }]
+    },
+    { "Id": "PTR", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

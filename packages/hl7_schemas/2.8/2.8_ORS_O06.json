@@ -1,0 +1,50 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ORS_O06",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ORS_O06.RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        {
+          "Id": "ORS_O06.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "ORS_O06.ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "ORS_O06.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            { "Id": "RQD", "Min": 1, "Max": 1 },
+            { "Id": "RQ1", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

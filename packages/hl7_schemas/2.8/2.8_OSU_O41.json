@@ -1,0 +1,22 @@
+{
+  "Release": 2.8,
+  "DocumentType": "OSU_O41",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    { "Id": "PID", "Min": 0, "Max": 1 },
+    { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "OSU_O41.ORDER_STATUS",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ORC", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MDM_T02",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EVN", "Min": 1, "Max": 1 },
+    { "Id": "PID", "Min": 1, "Max": 1 },
+    { "Id": "PV1", "Min": 1, "Max": 1 },
+    {
+      "Id": "MDM_T02.COMMON_ORDER",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ORC", "Min": 1, "Max": 1 },
+        {
+          "Id": "MDM_T02.TIMING",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "TQ1", "Min": 1, "Max": 1 },
+            { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        { "Id": "OBR", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "TXA", "Min": 1, "Max": 1 },
+    { "Id": "CON", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "MDM_T02.OBSERVATION",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "OBX", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

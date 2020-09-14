@@ -1,0 +1,22 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RTB_Z74",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "QAK", "Min": 1, "Max": 1 },
+    { "Id": "QPD", "Min": 1, "Max": 1 },
+    {
+      "Id": "RTB_Z74.ROW_DEFINITION",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "RDF", "Min": 1, "Max": 1 },
+        { "Id": "RDT", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "DSC", "Min": 0, "Max": 1 }
+  ]
+}

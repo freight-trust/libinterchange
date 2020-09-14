@@ -1,0 +1,62 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RRA_O18",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "RRA_O18.RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        {
+          "Id": "RRA_O18.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "RRA_O18.ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "RRA_O18.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "RRA_O18.ADMINISTRATION",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                {
+                  "Id": "RRA_O18.TREATMENT",
+                  "Min": 1,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "RXA", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                { "Id": "RXR", "Min": 1, "Max": 1 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "Release": 2.8,
+  "DocumentType": "BPS_O29",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "BPS_O29.PATIENT",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "BPS_O29.PATIENT_VISIT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PV1", "Min": 1, "Max": 1 },
+            { "Id": "PV2", "Min": 0, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "BPS_O29.ORDER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ORC", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "BPS_O29.TIMING",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "TQ1", "Min": 1, "Max": 1 },
+            { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        { "Id": "BPO", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "BPS_O29.PRODUCT",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "BPX", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

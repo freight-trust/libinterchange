@@ -1,0 +1,45 @@
+{
+  "Release": "121",
+  "DocumentType": "PAORES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG", "Min": 0 },
+    { "Id": "EQN", "Min": 0 },
+    { "Id": "IFT", "Min": 0, "Max": 9 },
+    { "Id": "TIF", "Min": 0 },
+    { "Id": "IFTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    {
+      "Id": "MSGLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "ODI" },
+        { "Id": "MSG", "Min": 0 },
+        {
+          "Id": "DATLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "PDI", "Min": 0 },
+            { "Id": "APD", "Min": 0 },
+            { "Id": "EQN", "Min": 0 },
+            { "Id": "IFT", "Min": 0, "Max": 3 },
+            { "Id": "TRF", "Min": 0 },
+            { "Id": "SDT", "Min": 0 },
+            { "Id": "TIF", "Min": 0 },
+            { "Id": "IFTLoop3", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+            { "Id": "EQNLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "TBI" }, { "Id": "PDI", "Min": 0 }, { "Id": "EQN", "Min": 0 }] },
+            { "Id": "EBD", "Min": 0 },
+            { "Id": "QTY", "Min": 0 },
+            { "Id": "IFTLoop4", "Min": 0, "Max": 5, "Loop": [{ "Id": "REF" }, { "Id": "IFT" }] },
+            { "Id": "TVLLoop2", "Min": 0, "Loop": [{ "Id": "DUM" }, { "Id": "TVL" }] },
+            { "Id": "STX", "Min": 0 },
+            { "Id": "DAT", "Min": 0 }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

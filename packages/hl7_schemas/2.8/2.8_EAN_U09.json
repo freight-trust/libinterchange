@@ -1,0 +1,18 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EAN_U09",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EQU", "Min": 1, "Max": 1 },
+    {
+      "Id": "EAN_U09.NOTIFICATION",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "NDS", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": 1 }
+      ]
+    }
+  ]
+}

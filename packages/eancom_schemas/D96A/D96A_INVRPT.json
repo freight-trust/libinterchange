@@ -1,0 +1,69 @@
+{
+  "Release": "D96A",
+  "DocumentType": "INVRPT",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "BGM" },
+    { "Id": "DTM", "Max": 10 },
+    { "Id": "RFFLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "NADLoop1",
+      "Min": 0,
+      "Max": 20,
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "RFFLoop2", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }] },
+        { "Id": "CTALoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }] }
+      ]
+    },
+    { "Id": "CUXLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "LINLoop1",
+      "Min": 0,
+      "Max": 9999,
+      "Loop": [
+        { "Id": "LIN" },
+        { "Id": "PIA", "Min": 0, "Max": 10 },
+        { "Id": "IMD", "Min": 0, "Max": 10 },
+        {
+          "Id": "QTYLoop1",
+          "Min": 0,
+          "Max": 9999,
+          "Loop": [
+            { "Id": "QTY" },
+            { "Id": "INV", "Min": 0 },
+            { "Id": "GIN", "Min": 0, "Max": 9999 },
+            { "Id": "LOC", "Min": 0, "Max": 5 },
+            { "Id": "DTM", "Min": 0, "Max": 5 },
+            { "Id": "STS", "Min": 0, "Max": 9 },
+            { "Id": "PRILoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "PRI" }] },
+            { "Id": "RFFLoop3", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+            {
+              "Id": "CPSLoop1",
+              "Min": 0,
+              "Max": 9999,
+              "Loop": [
+                { "Id": "CPS" },
+                {
+                  "Id": "PACLoop1",
+                  "Min": 0,
+                  "Max": 9999,
+                  "Loop": [
+                    { "Id": "PAC" },
+                    {
+                      "Id": "PCILoop1",
+                      "Min": 0,
+                      "Max": 9999,
+                      "Loop": [{ "Id": "PCI" }, { "Id": "DTM", "Min": 0, "Max": 5 }, { "Id": "GIN", "Min": 0, "Max": 9999 }]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

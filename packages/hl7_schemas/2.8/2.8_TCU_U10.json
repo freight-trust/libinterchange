@@ -1,0 +1,18 @@
+{
+  "Release": 2.8,
+  "DocumentType": "TCU_U10",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EQU", "Min": 1, "Max": 1 },
+    {
+      "Id": "TCU_U10.TEST_CONFIGURATION",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "SPM", "Min": 0, "Max": 1 },
+        { "Id": "TCC", "Min": 1, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

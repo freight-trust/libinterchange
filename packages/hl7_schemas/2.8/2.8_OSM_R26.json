@@ -1,0 +1,118 @@
+{
+  "Release": 2.8,
+  "DocumentType": "OSM_R26",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "OSM_R26.SHIPMENT",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "SHP", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 1, "Max": "unbounded" },
+        {
+          "Id": "OSM_R26.SHIPPING_OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "OBX", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "OSM_R26.PACKAGE",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "PAC", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "OSM_R26.SPECIMEN",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "SPM", "Min": 1, "Max": 1 },
+                { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                {
+                  "Id": "OSM_R26.SPECIMEN_OBSERVATION",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "OBX", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                {
+                  "Id": "OSM_R26.CONTAINER",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "SAC", "Min": 1, "Max": 1 },
+                    {
+                      "Id": "OSM_R26.CONTAINER_OBSERVATION",
+                      "Min": 0,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "OBX", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Id": "OSM_R26.SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION",
+                  "Min": 0,
+                  "Max": 1,
+                  "Loop": [
+                    { "Id": "PID", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+                    {
+                      "Id": "OSM_R26.PATIENT_OBSERVATION",
+                      "Min": 0,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "OBX", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                      ]
+                    },
+                    { "Id": "NK1", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                {
+                  "Id": "OSM_R26.SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION",
+                  "Min": 0,
+                  "Max": 1,
+                  "Loop": [
+                    { "Id": "PV1", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    {
+                      "Id": "OSM_R26.PATIENT_VISIT_OBSERVATION",
+                      "Min": 0,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "OBX", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                      ]
+                    },
+                    {
+                      "Id": "OSM_R26.PATIENT_INFORMATION",
+                      "Min": 0,
+                      "Max": 1,
+                      "Loop": [
+                        { "Id": "PID", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                      ]
+                    },
+                    { "Id": "NK1", "Min": 0, "Max": "unbounded" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

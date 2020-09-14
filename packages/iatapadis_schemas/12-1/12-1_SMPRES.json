@@ -1,0 +1,40 @@
+{
+  "Release": "121",
+  "DocumentType": "SMPRES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG", "Min": 0 },
+    { "Id": "ORG", "Min": 0 },
+    { "Id": "RAD", "Min": 0 },
+    { "Id": "ERD", "Min": 0 },
+    { "Id": "WAD", "Min": 0 },
+    { "Id": "SRP", "Min": 0 },
+    {
+      "Id": "IFTLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [
+        { "Id": "TVL" },
+        { "Id": "ERD", "Min": 0 },
+        { "Id": "WAD", "Min": 0 },
+        { "Id": "APD", "Min": 0 },
+        { "Id": "EQI", "Min": 0 },
+        { "Id": "AAI", "Min": 0 },
+        { "Id": "CBFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CBD" }, { "Id": "EQN", "Min": 0 }, { "Id": "CBF", "Min": 0, "Max": 9 }] },
+        { "Id": "CBFLoop2", "Min": 0, "Max": 999, "Loop": [{ "Id": "ROD" }, { "Id": "CBF", "Min": 0, "Max": 9 }] },
+        { "Id": "IFT", "Min": 0, "Max": 2 },
+        {
+          "Id": "TIFLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "DUM" },
+            { "Id": "TIF", "Min": 0, "Max": 99 },
+            { "Id": "RODLoop2", "Max": 999, "Loop": [{ "Id": "MON" }, { "Id": "TXD", "Min": 0 }, { "Id": "ROD", "Max": 999 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

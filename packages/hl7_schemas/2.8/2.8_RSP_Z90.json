@@ -1,0 +1,79 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RSP_Z90",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": 1 },
+    { "Id": "QAK", "Min": 1, "Max": 1 },
+    { "Id": "QPD", "Min": 1, "Max": 1 },
+    { "Id": "RCP", "Min": 1, "Max": 1 },
+    {
+      "Id": "RSP_Z90.QUERY_RESPONSE",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "RSP_Z90.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "PD1", "Min": 0, "Max": 1 },
+            { "Id": "NK1", "Min": 0, "Max": "unbounded" },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "RSP_Z90.VISIT",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "PV1", "Min": 1, "Max": 1 },
+                { "Id": "PV2", "Min": 0, "Max": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "RSP_Z90.COMMON_ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            {
+              "Id": "RSP_Z90.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            { "Id": "OBR", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            { "Id": "CTD", "Min": 0, "Max": 1 },
+            {
+              "Id": "RSP_Z90.OBSERVATION",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "OBX", "Min": 0, "Max": 1 },
+                { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "RSP_Z90.SPECIMEN",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "SPM", "Min": 1, "Max": 1 },
+            { "Id": "OBX", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    { "Id": "DSC", "Min": 1, "Max": 1 }
+  ]
+}

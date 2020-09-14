@@ -1,0 +1,40 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ORX_O43",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ORX_O43.RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        {
+          "Id": "ORX_O43.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            { "Id": "ARV", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "ORX_O43.ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            { "Id": "TXA", "Min": 1, "Max": 1 },
+            { "Id": "CTI", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

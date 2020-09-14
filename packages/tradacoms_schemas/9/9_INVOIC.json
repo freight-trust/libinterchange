@@ -1,0 +1,32 @@
+{
+  "Release": "9",
+  "DocumentType": "INVOIC",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Max": 1 },
+    {
+      "Id": "IRFLoop1",
+      "Max": 1,
+      "Loop": [
+        { "Id": "IRF" },
+        { "Id": "PYT", "Min": 0, "Max": "unbounded" },
+        { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "ODDLoop1",
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ODD" },
+            {
+              "Id": "ILDLoop1",
+              "Max": "unbounded",
+              "Loop": [{ "Id": "ILD" }, { "Id": "CIA", "Min": 0, "Max": "unbounded" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }]
+            }
+          ]
+        },
+        { "Id": "STL", "Max": "unbounded" }
+      ]
+    },
+    { "Id": "TLR", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

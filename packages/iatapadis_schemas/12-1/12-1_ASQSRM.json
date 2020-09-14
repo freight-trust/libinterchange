@@ -1,0 +1,76 @@
+{
+  "Release": "121",
+  "DocumentType": "ASQSRM",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG" },
+    { "Id": "ORG" },
+    { "Id": "MPD", "Min": 0 },
+    { "Id": "SAC", "Min": 0 },
+    { "Id": "DID", "Min": 0 },
+    {
+      "Id": "IFTLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [{ "Id": "SER" }, { "Id": "DAT", "Min": 0 }, { "Id": "RPI", "Min": 0 }, { "Id": "IFT", "Min": 0, "Max": 6 }]
+    },
+    {
+      "Id": "SPILoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [{ "Id": "SDT" }, { "Id": "DAT", "Min": 0 }, { "Id": "IFT", "Min": 0 }, { "Id": "ODI", "Min": 0 }, { "Id": "SPI", "Min": 0, "Max": 2 }]
+    },
+    { "Id": "QTYLoop1", "Min": 0, "Loop": [{ "Id": "EQP" }, { "Id": "QTY", "Min": 0, "Max": 2 }] },
+    {
+      "Id": "ADTLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [
+        { "Id": "ADT" },
+        {
+          "Id": "NADLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "TRA", "Min": 0 },
+            { "Id": "SPI", "Min": 0, "Max": 99 },
+            { "Id": "DAT", "Min": 0 },
+            { "Id": "NAD", "Min": 0, "Max": 99 },
+            {
+              "Id": "IFTLoop3",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "SER" }, { "Id": "DAT", "Min": 0 }, { "Id": "RPI", "Min": 0 }, { "Id": "IFT", "Min": 0, "Max": 6 }]
+            },
+            {
+              "Id": "SPILoop3",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [
+                { "Id": "ODI" },
+                { "Id": "IMD", "Min": 0 },
+                { "Id": "DAT", "Min": 0 },
+                { "Id": "SPI", "Min": 0, "Max": 99 },
+                {
+                  "Id": "IFTLoop4",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "SER" }, { "Id": "DAT", "Min": 0 }, { "Id": "RPI", "Min": 0 }, { "Id": "IFT", "Min": 0, "Max": 6 }]
+                }
+              ]
+            },
+            {
+              "Id": "SPILoop4",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "SDT" }, { "Id": "DAT", "Min": 0 }, { "Id": "IFT", "Min": 0 }, { "Id": "ODI", "Min": 0 }, { "Id": "SPI", "Min": 0, "Max": 2 }]
+            },
+            { "Id": "QTYLoop2", "Min": 0, "Loop": [{ "Id": "EQP" }, { "Id": "QTY", "Min": 0, "Max": 2 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

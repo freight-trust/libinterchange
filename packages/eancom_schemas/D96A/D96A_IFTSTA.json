@@ -1,0 +1,39 @@
+{
+  "Release": "D96A",
+  "DocumentType": "IFTSTA",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "BGM" },
+    { "Id": "DTM", "Min": 0, "Max": 9 },
+    { "Id": "NADLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "NAD" }] },
+    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }] },
+    { "Id": "FTX", "Min": 0, "Max": 9 },
+    {
+      "Id": "CNILoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [
+        { "Id": "CNI" },
+        {
+          "Id": "STSLoop1",
+          "Max": 99,
+          "Loop": [
+            { "Id": "STS" },
+            { "Id": "RFF", "Min": 0, "Max": 9 },
+            { "Id": "DTM", "Min": 0, "Max": 9 },
+            { "Id": "FTX", "Min": 0, "Max": 9 },
+            { "Id": "NAD", "Min": 0, "Max": 9 },
+            { "Id": "LOC", "Min": 0 },
+            {
+              "Id": "GIDLoop1",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "GID" }, { "Id": "PCILoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "PCI" }, { "Id": "GIN", "Min": 0, "Max": 9 }] }]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

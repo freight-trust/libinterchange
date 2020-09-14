@@ -1,0 +1,28 @@
+{
+  "Release": "9",
+  "DocumentType": "PRIINF",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    {
+      "Id": "NOILoop1",
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "NOI" },
+        { "Id": "CLR", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "PRNLoop1",
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "PRN" },
+            { "Id": "PRD", "Min": 0, "Max": "unbounded" },
+            { "Id": "CLP", "Min": 0, "Max": "unbounded" },
+            { "Id": "PRILoop1", "Max": "unbounded", "Loop": [{ "Id": "PRI" }, { "Id": "PRP", "Max": "unbounded" }] },
+            { "Id": "DSCLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "DSC" }, { "Id": "DSD", "Min": 0, "Max": "unbounded" }] },
+            { "Id": "DNC", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

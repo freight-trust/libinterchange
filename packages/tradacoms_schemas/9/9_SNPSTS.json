@@ -1,0 +1,23 @@
+{
+  "Release": "9",
+  "DocumentType": "SNPSTS",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Max": 1 },
+    {
+      "Id": "SSRLoop1",
+      "Max": 1,
+      "Loop": [
+        { "Id": "SSR" },
+        { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "SRFLoop1",
+          "Max": "unbounded",
+          "Loop": [{ "Id": "SRF" }, { "Id": "SLDLoop1", "Max": "unbounded", "Loop": [{ "Id": "SLD" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }] }]
+        }
+      ]
+    },
+    { "Id": "SST", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

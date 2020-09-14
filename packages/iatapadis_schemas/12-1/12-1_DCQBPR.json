@@ -1,0 +1,22 @@
+{
+  "Release": "121",
+  "DocumentType": "DCQBPR",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "LOR" },
+    { "Id": "CHD", "Min": 0 },
+    {
+      "Id": "FDQLoop1",
+      "Max": 3,
+      "Loop": [
+        { "Id": "FDQ" },
+        {
+          "Id": "PSILoop1",
+          "Max": 99,
+          "Loop": [{ "Id": "PPD" }, { "Id": "PRD", "Min": 0 }, { "Id": "PSD", "Min": 0 }, { "Id": "PBD", "Min": 0 }, { "Id": "PSI", "Min": 0 }]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

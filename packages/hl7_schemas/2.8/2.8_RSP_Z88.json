@@ -1,0 +1,115 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RSP_Z88",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": 1 },
+    { "Id": "QAK", "Min": 1, "Max": 1 },
+    { "Id": "QPD", "Min": 1, "Max": 1 },
+    { "Id": "RCP", "Min": 1, "Max": 1 },
+    {
+      "Id": "RSP_Z88.QUERY_RESPONSE",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "RSP_Z88.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "PD1", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "RSP_Z88.ALLERGY",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "AL1", "Min": 1, "Max": "unbounded" },
+                {
+                  "Id": "RSP_Z88.VISIT",
+                  "Min": 0,
+                  "Max": 1,
+                  "Loop": [
+                    { "Id": "PV1", "Min": 1, "Max": 1 },
+                    { "Id": "PV2", "Min": 0, "Max": 1 }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "RSP_Z88.COMMON_ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            {
+              "Id": "RSP_Z88.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "RSP_Z88.ORDER_DETAIL",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "RXO", "Min": 1, "Max": 1 },
+                { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+                { "Id": "RXR", "Min": 1, "Max": "unbounded" },
+                {
+                  "Id": "RSP_Z88.COMPONENT",
+                  "Min": 0,
+                  "Max": 1,
+                  "Loop": [
+                    { "Id": "RXC", "Min": 1, "Max": "unbounded" },
+                    { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": "RSP_Z88.ORDER_ENCODED",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "RXE", "Min": 1, "Max": 1 },
+                {
+                  "Id": "RSP_Z88.TIMING_ENCODED",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "TQ1", "Min": 1, "Max": 1 },
+                    { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                { "Id": "RXR", "Min": 1, "Max": "unbounded" },
+                { "Id": "RXC", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            { "Id": "RXD", "Min": 1, "Max": 1 },
+            { "Id": "RXR", "Min": 1, "Max": "unbounded" },
+            { "Id": "RXC", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "RSP_Z88.OBSERVATION",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "OBX", "Min": 0, "Max": 1 },
+                { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "DSC", "Min": 1, "Max": 1 }
+  ]
+}

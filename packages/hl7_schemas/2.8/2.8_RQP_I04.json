@@ -1,0 +1,21 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RQP_I04",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "RQP_I04.PROVIDER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PRD", "Min": 1, "Max": 1 },
+        { "Id": "CTD", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "PID", "Min": 1, "Max": 1 },
+    { "Id": "NK1", "Min": 0, "Max": "unbounded" },
+    { "Id": "GT1", "Min": 0, "Max": "unbounded" },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+  ]
+}

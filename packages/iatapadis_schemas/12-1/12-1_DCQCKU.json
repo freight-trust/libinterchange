@@ -1,0 +1,38 @@
+{
+  "Release": "121",
+  "DocumentType": "DCQCKU",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "LOR" },
+    { "Id": "DMC", "Min": 0 },
+    { "Id": "CHD", "Min": 0 },
+    { "Id": "DVC", "Min": 0 },
+    {
+      "Id": "FDQLoop1",
+      "Max": 3,
+      "Loop": [
+        { "Id": "FDQ" },
+        {
+          "Id": "UTILoop1",
+          "Max": 99,
+          "Loop": [
+            { "Id": "PPD" },
+            { "Id": "PRD", "Min": 0 },
+            { "Id": "PSD", "Min": 0 },
+            { "Id": "PBD", "Min": 0 },
+            { "Id": "PSI", "Min": 0 },
+            { "Id": "UIF", "Min": 0 },
+            { "Id": "UPD", "Min": 0 },
+            { "Id": "URD", "Min": 0 },
+            { "Id": "USD", "Min": 0 },
+            { "Id": "UBD", "Min": 0 },
+            { "Id": "USI", "Min": 0 },
+            { "Id": "UTI", "Min": 0, "Max": 99 },
+            { "Id": "ADDLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "UAP" }, { "Id": "ADD", "Min": 0 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

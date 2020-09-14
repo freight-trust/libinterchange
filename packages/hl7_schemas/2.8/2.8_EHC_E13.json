@@ -1,0 +1,37 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EHC_E13",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "RFI", "Min": 1, "Max": 1 },
+    { "Id": "CTD", "Min": 0, "Max": "unbounded" },
+    { "Id": "IVC", "Min": 1, "Max": 1 },
+    { "Id": "PSS", "Min": 1, "Max": 1 },
+    { "Id": "PSG", "Min": 1, "Max": 1 },
+    { "Id": "PID", "Min": 0, "Max": 1 },
+    { "Id": "PSL", "Min": 0, "Max": 1 },
+    {
+      "Id": "EHC_E13.REQUEST",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "CTD", "Min": 0, "Max": 1 },
+        { "Id": "OBR", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": 1 },
+        {
+          "Id": "EHC_E13.RESPONSE",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "OBX", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": 1 },
+            { "Id": "TXA", "Min": 0, "Max": 1 }
+          ]
+        }
+      ]
+    }
+  ]
+}

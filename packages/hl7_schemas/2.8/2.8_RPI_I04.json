@@ -1,0 +1,39 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RPI_I04",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    {
+      "Id": "RPI_I04.PROVIDER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PRD", "Min": 1, "Max": 1 },
+        { "Id": "CTD", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "PID", "Min": 1, "Max": 1 },
+    { "Id": "NK1", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "RPI_I04.GUARANTOR_INSURANCE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "GT1", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "RPI_I04.INSURANCE",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "IN1", "Min": 1, "Max": 1 },
+            { "Id": "IN2", "Min": 0, "Max": 1 },
+            { "Id": "IN3", "Min": 0, "Max": 1 }
+          ]
+        }
+      ]
+    },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+  ]
+}

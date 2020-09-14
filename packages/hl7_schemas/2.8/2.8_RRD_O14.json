@@ -1,0 +1,56 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RRD_O14",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "RRD_O14.RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        {
+          "Id": "RRD_O14.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "RRD_O14.ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "RRD_O14.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "RRD_O14.DISPENSE",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "RXD", "Min": 1, "Max": 1 },
+                { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+                { "Id": "RXR", "Min": 1, "Max": "unbounded" },
+                { "Id": "RXC", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

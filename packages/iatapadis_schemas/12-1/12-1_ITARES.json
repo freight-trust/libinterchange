@@ -1,0 +1,46 @@
+{
+  "Release": "121",
+  "DocumentType": "ITARES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG", "Min": 0 },
+    { "Id": "RCI", "Min": 0 },
+    { "Id": "EQN", "Min": 0 },
+    { "Id": "IFT", "Min": 0 },
+    { "Id": "IFTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    {
+      "Id": "IFTLoop2",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "ODI" },
+        { "Id": "MSG", "Min": 0 },
+        { "Id": "IFT", "Min": 0 },
+        { "Id": "IFTLoop3", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+        {
+          "Id": "QTYLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "APD", "Min": 0 },
+            { "Id": "RPI", "Min": 0 },
+            { "Id": "RCI", "Min": 0 },
+            { "Id": "EQN", "Min": 0 },
+            { "Id": "PDI", "Min": 0 },
+            { "Id": "SDT", "Min": 0 },
+            { "Id": "IFT", "Min": 0 },
+            { "Id": "SSR", "Min": 0, "Max": 9 },
+            { "Id": "IFTLoop5", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+            { "Id": "TBI", "Min": 0 },
+            { "Id": "EBD", "Min": 0 },
+            { "Id": "QTY", "Min": 0 },
+            { "Id": "IFTLoop6", "Min": 0, "Max": 5, "Loop": [{ "Id": "REF" }, { "Id": "IFT" }] },
+            { "Id": "TVLLoop2", "Min": 0, "Loop": [{ "Id": "DUM" }, { "Id": "TVL" }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

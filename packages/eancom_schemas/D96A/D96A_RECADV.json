@@ -1,0 +1,64 @@
+{
+  "Release": "D96A",
+  "DocumentType": "RECADV",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "BGM" },
+    { "Id": "DTM", "Max": 10 },
+    { "Id": "RFFLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "NADLoop1",
+      "Max": 10,
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "RFFLoop2", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }] },
+        { "Id": "CTALoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }] }
+      ]
+    },
+    { "Id": "TDTLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "TDT" }] },
+    {
+      "Id": "CPSLoop1",
+      "Min": 0,
+      "Max": 9999,
+      "Loop": [
+        { "Id": "CPS" },
+        {
+          "Id": "PACLoop1",
+          "Min": 0,
+          "Max": 9999,
+          "Loop": [
+            { "Id": "PAC" },
+            { "Id": "QVR", "Min": 0 },
+            { "Id": "PCILoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "PCI" }, { "Id": "GINLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "GIN" }] }] }
+          ]
+        },
+        {
+          "Id": "LINLoop1",
+          "Min": 0,
+          "Max": 9999,
+          "Loop": [
+            { "Id": "LIN" },
+            { "Id": "PIA", "Min": 0, "Max": 10 },
+            { "Id": "QTY", "Min": 0, "Max": 10 },
+            { "Id": "QVR", "Min": 0, "Max": 10 },
+            { "Id": "DTM", "Min": 0, "Max": 5 },
+            { "Id": "RFFLoop3", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+            {
+              "Id": "PCILoop2",
+              "Min": 0,
+              "Max": 9999,
+              "Loop": [
+                { "Id": "PCI" },
+                { "Id": "QTY", "Min": 0 },
+                { "Id": "QVR", "Min": 0 },
+                { "Id": "GINLoop2", "Min": 0, "Max": 10, "Loop": [{ "Id": "GIN" }] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "CNT", "Min": 0 },
+    { "Id": "UNT" }
+  ]
+}

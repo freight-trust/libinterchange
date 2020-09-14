@@ -1,0 +1,41 @@
+{
+  "Release": "9",
+  "DocumentType": "PPRDET",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    {
+      "Id": "SFRLoop1",
+      "Max": 1,
+      "Loop": [
+        { "Id": "SFR" },
+        {
+          "Id": "PDNLoop1",
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "PDN" },
+            {
+              "Id": "PLOLoop1",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "PLO" },
+                { "Id": "SFPLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "SFP" }, { "Id": "SFS", "Min": 0, "Max": "unbounded" }] }
+              ]
+            },
+            {
+              "Id": "SFCLoop1",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "SFC" },
+                { "Id": "SFXLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "SFX" }, { "Id": "RFD", "Min": 0, "Max": "unbounded" }] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "SFL", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

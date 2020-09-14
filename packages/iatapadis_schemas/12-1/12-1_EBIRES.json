@@ -1,0 +1,15 @@
+{
+  "Release": "121",
+  "DocumentType": "EBIRES",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "MSG" },
+    { "Id": "ODI", "Min": 0 },
+    { "Id": "DAT", "Min": 0 },
+    { "Id": "STX", "Min": 0 },
+    { "Id": "IFT", "Min": 0, "Max": 99 },
+    { "Id": "IFTLoop1", "Min": 0, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    { "Id": "CVRLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "EBD" }, { "Id": "MON", "Min": 0 }, { "Id": "FQU", "Min": 0 }, { "Id": "CVR", "Min": 0 }] },
+    { "Id": "UNT" }
+  ]
+}

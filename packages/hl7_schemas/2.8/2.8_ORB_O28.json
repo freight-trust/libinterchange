@@ -1,0 +1,47 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ORB_O28",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ORB_O28.RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        {
+          "Id": "ORB_O28.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "ORB_O28.ORDER",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "ORC", "Min": 1, "Max": 1 },
+                { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                {
+                  "Id": "ORB_O28.TIMING",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "TQ1", "Min": 1, "Max": 1 },
+                    { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                { "Id": "BPO", "Min": 0, "Max": 1 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "Release": 2.8,
+  "DocumentType": "BAR_P12",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EVN", "Min": 1, "Max": 1 },
+    { "Id": "PID", "Min": 1, "Max": 1 },
+    { "Id": "PV1", "Min": 1, "Max": 1 },
+    { "Id": "DG1", "Min": 0, "Max": "unbounded" },
+    { "Id": "DRG", "Min": 0, "Max": 1 },
+    {
+      "Id": "BAR_P12.PROCEDURE",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PR1", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        { "Id": "ROL", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "OBX", "Min": 0, "Max": 1 }
+  ]
+}

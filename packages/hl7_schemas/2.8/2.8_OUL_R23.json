@@ -1,0 +1,119 @@
+{
+  "Release": 2.8,
+  "DocumentType": "OUL_R23",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": 1 },
+    {
+      "Id": "OUL_R23.PATIENT",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "OUL_R23.PATIENT_OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "OBX", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "OUL_R23.VISIT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PV1", "Min": 1, "Max": 1 },
+            { "Id": "PV2", "Min": 0, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    { "Id": "NK1", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "OUL_R23.SPECIMEN",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "SPM", "Min": 1, "Max": 1 },
+        {
+          "Id": "OUL_R23.SPECIMEN_OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "OBX", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "OUL_R23.CONTAINER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "SAC", "Min": 1, "Max": 1 },
+            { "Id": "INV", "Min": 0, "Max": 1 },
+            {
+              "Id": "OUL_R23.ORDER",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "OBR", "Min": 1, "Max": 1 },
+                { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                {
+                  "Id": "OUL_R23.COMMON_ORDER",
+                  "Min": 0,
+                  "Max": 1,
+                  "Loop": [
+                    { "Id": "ORC", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    {
+                      "Id": "OUL_R23.ORDER_DOCUMENT",
+                      "Min": 0,
+                      "Max": 1,
+                      "Loop": [
+                        { "Id": "OBX", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                        { "Id": "TXA", "Min": 1, "Max": 1 }
+                      ]
+                    }
+                  ]
+                },
+                { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+                {
+                  "Id": "OUL_R23.TIMING_QTY",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "TQ1", "Min": 1, "Max": 1 },
+                    { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                {
+                  "Id": "OUL_R23.RESULT",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "OBX", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    { "Id": "TCD", "Min": 0, "Max": 1 },
+                    { "Id": "SID", "Min": 0, "Max": "unbounded" },
+                    { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                { "Id": "CTI", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "DSC", "Min": 0, "Max": 1 }
+  ]
+}

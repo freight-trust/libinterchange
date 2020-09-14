@@ -1,0 +1,53 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EHC_E15",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    { "Id": "EHC_E15.PAYMENT_REMITTANCE_HEADER_INFO", "Min": 1, "Max": 1, "Choice": [{ "Id": "PMT" }, { "Id": "PYE" }] },
+    {
+      "Id": "EHC_E15.PAYMENT_REMITTANCE_DETAIL_INFO",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "IPR", "Min": 1, "Max": 1 },
+        { "Id": "IVC", "Min": 1, "Max": 1 },
+        {
+          "Id": "EHC_E15.PRODUCT_SERVICE_SECTION",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "PSS", "Min": 1, "Max": 1 },
+            {
+              "Id": "EHC_E15.PRODUCT_SERVICE_GROUP",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "PSG", "Min": 1, "Max": 1 },
+                {
+                  "Id": "EHC_E15.PSL_ITEM_INFO",
+                  "Min": 1,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "PSL", "Min": 1, "Max": 1 },
+                    { "Id": "ADJ", "Min": 0, "Max": "unbounded" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "EHC_E15.ADJUSTMENT_PAYEE",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ADJ", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": 1 },
+        { "Id": "ROL", "Min": 0, "Max": 1 }
+      ]
+    }
+  ]
+}

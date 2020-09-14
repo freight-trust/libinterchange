@@ -1,0 +1,30 @@
+{
+  "Release": "121",
+  "DocumentType": "DBQBSM",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "ORG" },
+    {
+      "Id": "TVLLoop1",
+      "Max": 9,
+      "Loop": [
+        { "Id": "SAC" },
+        { "Id": "TVL", "Min": 0 },
+        {
+          "Id": "TVLLoop2",
+          "Max": 9,
+          "Loop": [
+            { "Id": "DUM" },
+            { "Id": "TVL", "Min": 0 },
+            {
+              "Id": "TVLLoop3",
+              "Max": 999,
+              "Loop": [{ "Id": "BAG" }, { "Id": "TIF", "Min": 0 }, { "Id": "RCI", "Min": 0 }, { "Id": "IFT", "Min": 0 }, { "Id": "TVL", "Min": 0, "Max": 9 }]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

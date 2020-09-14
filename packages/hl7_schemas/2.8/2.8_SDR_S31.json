@@ -1,0 +1,9 @@
+{
+  "Release": 2.8,
+  "DocumentType": "SDR_S31",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "SDR_S31.ANTI-MICROBIAL_DEVICE_DATA", "Min": 1, "Max": 1, "Choice": [{ "Id": "SDD" }, { "Id": "SCD" }] }
+  ]
+}

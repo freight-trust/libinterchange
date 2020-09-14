@@ -1,0 +1,36 @@
+{
+  "Release": "121",
+  "DocumentType": "DCRCKA",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    {
+      "Id": "EQDLoop1",
+      "Max": 9,
+      "Loop": [
+        { "Id": "FDR" },
+        { "Id": "RAD" },
+        { "Id": "CHD", "Min": 0 },
+        { "Id": "ERD", "Min": 0 },
+        { "Id": "WAD", "Min": 0 },
+        { "Id": "FSD", "Min": 0, "Max": 9 },
+        { "Id": "EQD", "Min": 0 },
+        {
+          "Id": "CRILoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "PPD" },
+            { "Id": "PRD", "Min": 0 },
+            { "Id": "PFD", "Min": 0 },
+            { "Id": "PBD", "Min": 0 },
+            { "Id": "PCD", "Min": 0, "Max": 9 },
+            { "Id": "PSI", "Min": 0 },
+            { "Id": "CRI", "Min": 0 },
+            { "Id": "ADDLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "PAP" }, { "Id": "ADD", "Min": 0 }] }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

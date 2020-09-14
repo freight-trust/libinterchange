@@ -1,0 +1,32 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EHC_E04",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "EHC_E04.REASSESSMENT_REQUEST_INFO",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [
+        { "Id": "IVC" },
+        { "Id": "NTE" },
+        {
+          "Id": "EHC_E04.PRODUCT_SERVICE_SECTION",
+          "Loop": [
+            { "Id": "PSS", "Min": 1, "Max": 1 },
+            {
+              "Id": "EHC_E04.PRODUCT_SERVICE_GROUP",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "PSG", "Min": 1, "Max": 1 },
+                { "Id": "PSL", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

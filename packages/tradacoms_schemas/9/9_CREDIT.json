@@ -1,0 +1,16 @@
+{
+  "Release": "9",
+  "DocumentType": "CREDIT",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Max": 1 },
+    { "Id": "CRF", "Max": 1 },
+    { "Id": "PYT", "Min": 0, "Max": "unbounded" },
+    { "Id": "OIR", "Min": 0, "Max": "unbounded" },
+    { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+    { "Id": "CLDLoop1", "Max": "unbounded", "Loop": [{ "Id": "CLD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }] },
+    { "Id": "CST", "Max": "unbounded" },
+    { "Id": "CTR", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

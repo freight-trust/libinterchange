@@ -1,0 +1,75 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RDR_RDR",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": 1 },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "RDR_RDR.DEFINITION",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "QRD", "Min": 1, "Max": 1 },
+        { "Id": "QRF", "Min": 0, "Max": 1 },
+        {
+          "Id": "RDR_RDR.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "RDR_RDR.ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            {
+              "Id": "RDR_RDR.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "RDR_RDR.ENCODING",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "RXE", "Min": 1, "Max": 1 },
+                {
+                  "Id": "RDR_RDR.TIMING_ENCODED",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "TQ1", "Min": 1, "Max": 1 },
+                    { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                { "Id": "RXR", "Min": 1, "Max": "unbounded" },
+                { "Id": "RXC", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "RDR_RDR.DISPENSE",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "RXD", "Min": 1, "Max": 1 },
+                { "Id": "RXR", "Min": 1, "Max": "unbounded" },
+                { "Id": "RXC", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "DSC", "Min": 0, "Max": 1 }
+  ]
+}

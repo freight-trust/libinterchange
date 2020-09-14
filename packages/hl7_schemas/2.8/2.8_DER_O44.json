@@ -1,0 +1,39 @@
+{
+  "Release": 2.8,
+  "DocumentType": "DER_O44",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "DER_O44.DONOR",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "OBX", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        { "Id": "AL1", "Min": 0, "Max": "unbounded" },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "DER_O44.DONOR_REGISTRATION",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PV1", "Min": 0, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "DER_O44.DONOR_ORDER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "OBR", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

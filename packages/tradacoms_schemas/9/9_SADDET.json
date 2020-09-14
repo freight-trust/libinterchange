@@ -1,0 +1,19 @@
+{
+  "Release": "9",
+  "DocumentType": "SADDET",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Max": 1 },
+    {
+      "Id": "SARLoop1",
+      "Max": 1,
+      "Loop": [
+        { "Id": "SAR" },
+        { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+        { "Id": "SADLoop1", "Max": "unbounded", "Loop": [{ "Id": "SAD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }] }
+      ]
+    },
+    { "Id": "SAT", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

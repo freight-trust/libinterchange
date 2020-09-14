@@ -1,0 +1,42 @@
+{
+  "Release": 2.8,
+  "DocumentType": "NMD_N02",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        {
+          "Id": "NMD_N02.CLOCK",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "NCK", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "NMD_N02.APP_STATS",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "NST", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "NMD_N02.APP_STATUS",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "NSC", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

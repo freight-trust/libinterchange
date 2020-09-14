@@ -1,0 +1,73 @@
+{
+  "Release": 2.8,
+  "DocumentType": "VXU_V04",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "PID", "Min": 1, "Max": 1 },
+    { "Id": "PD1", "Min": 0, "Max": 1 },
+    { "Id": "NK1", "Min": 0, "Max": "unbounded" },
+    { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "VXU_V04.PATIENT_VISIT",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        { "Id": "PV1", "Min": 1, "Max": 1 },
+        { "Id": "PV2", "Min": 0, "Max": 1 },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "GT1", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "VXU_V04.INSURANCE",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "IN1", "Min": 1, "Max": 1 },
+        { "Id": "IN2", "Min": 0, "Max": 1 },
+        { "Id": "IN3", "Min": 0, "Max": 1 }
+      ]
+    },
+    {
+      "Id": "VXU_V04.PERSON_OBSERVATION",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "OBX", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    {
+      "Id": "VXU_V04.ORDER",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ORC", "Min": 1, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "VXU_V04.TIMING",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "TQ1", "Min": 1, "Max": 1 },
+            { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        { "Id": "RXA", "Min": 1, "Max": 1 },
+        { "Id": "RXR", "Min": 0, "Max": 1 },
+        {
+          "Id": "VXU_V04.OBSERVATION",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "OBX", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

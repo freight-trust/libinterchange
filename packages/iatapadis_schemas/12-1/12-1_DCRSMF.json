@@ -1,0 +1,23 @@
+{
+  "Release": "121",
+  "DocumentType": "DCRSMF",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    {
+      "Id": "RODLoop1",
+      "Max": 2,
+      "Loop": [
+        { "Id": "FDR" },
+        { "Id": "RAD" },
+        { "Id": "CHD", "Min": 0 },
+        { "Id": "ERD", "Min": 0 },
+        { "Id": "WAD", "Min": 0 },
+        { "Id": "SRP", "Min": 0 },
+        { "Id": "EQD", "Min": 0 },
+        { "Id": "CBD", "Min": 0, "Max": 9 },
+        { "Id": "ROD", "Min": 0, "Max": 999 }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "Release": 2.8,
+  "DocumentType": "ORG_O20",
+  "TransactionSet": [
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ORG_O20.RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [
+        {
+          "Id": "ORG_O20.PATIENT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PID", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            { "Id": "ARV", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "ORG_O20.ORDER",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "ORC", "Min": 1, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "ORG_O20.TIMING",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "TQ1", "Min": 1, "Max": 1 },
+                { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            {
+              "Id": "ORG_O20.OBSERVATION_GROUP",
+              "Min": 0,
+              "Max": 1,
+              "Loop": [
+                { "Id": "OBR", "Min": 1, "Max": 1 },
+                { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+              ]
+            },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+            { "Id": "CTI", "Min": 0, "Max": "unbounded" },
+            {
+              "Id": "ORG_O20.SPECIMEN",
+              "Min": 0,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "SPM", "Min": 1, "Max": 1 },
+                { "Id": "SAC", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

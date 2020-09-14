@@ -1,0 +1,18 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MFN_M15",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MFI", "Min": 1, "Max": 1 },
+    {
+      "Id": "MFN_M15.MF_INV_ITEM",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "MFE", "Min": 1, "Max": 1 },
+        { "Id": "IIM", "Min": 1, "Max": 1 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "Release": "9",
+  "DocumentType": "DELIVR",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Max": 1 },
+    { "Id": "DEL", "Max": 1 },
+    { "Id": "DNS", "Min": 0, "Max": 1 },
+    { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "ORFLoop1",
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ORF" },
+        {
+          "Id": "DLDLoop1",
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "DLD" },
+            { "Id": "DLS", "Min": 0, "Max": "unbounded" },
+            { "Id": "PID", "Min": 0, "Max": "unbounded" },
+            { "Id": "DNC", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    { "Id": "DTR", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

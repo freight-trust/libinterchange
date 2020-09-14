@@ -1,0 +1,66 @@
+{
+  "Release": 2.8,
+  "DocumentType": "SIU_S12",
+  "TransactionSet": [
+    { "Id": "SCH", "Min": 1, "Max": 1 },
+    { "Id": "TQ1", "Min": 0, "Max": "unbounded" },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "SIU_S12.PATIENT",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "PV1", "Min": 0, "Max": 1 },
+        { "Id": "PV2", "Min": 0, "Max": 1 },
+        { "Id": "OBX", "Min": 0, "Max": "unbounded" },
+        { "Id": "DG1", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    {
+      "Id": "SIU_S12.RESOURCES",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "RGS", "Min": 1, "Max": 1 },
+        {
+          "Id": "SIU_S12.SERVICE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "AIS", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "SIU_S12.GENERAL_RESOURCE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "AIG", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "SIU_S12.LOCATION_RESOURCE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "AIL", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        {
+          "Id": "SIU_S12.PERSONNEL_RESOURCE",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "AIP", "Min": 1, "Max": 1 },
+            { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

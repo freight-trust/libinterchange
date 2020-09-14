@@ -1,0 +1,34 @@
+{
+  "Release": "121",
+  "DocumentType": "DWQDLI",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "ORG", "Min": 0 },
+    { "Id": "TVL" },
+    { "Id": "CPS", "Min": 0 },
+    {
+      "Id": "ODILoop1",
+      "Max": 9,
+      "Loop": [
+        { "Id": "ODI" },
+        {
+          "Id": "MEALoop1",
+          "Max": 99,
+          "Loop": [
+            { "Id": "EQD", "Min": 0, "Max": 0 },
+            { "Id": "MEA", "Min": 0 },
+            {
+              "Id": "LDILoop1",
+              "Max": 999,
+              "Loop": [
+                { "Id": "LDI" },
+                { "Id": "DIMLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "SLD" }, { "Id": "IFT", "Min": 0 }, { "Id": "DIM", "Min": 0 }] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

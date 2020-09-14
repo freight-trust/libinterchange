@@ -1,0 +1,21 @@
+{
+  "Release": "9",
+  "DocumentType": "UCNDET",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Min": 0, "Max": 1 },
+    { "Id": "UDD", "Max": 1 },
+    {
+      "Id": "USTLoop1",
+      "Max": 1,
+      "Loop": [
+        { "Id": "UST" },
+        { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+        { "Id": "UCDLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "UCD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }] },
+        { "Id": "RCDLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "RCD" }, { "Id": "RNB", "Min": 0, "Max": "unbounded" }] }
+      ]
+    },
+    { "Id": "UCT", "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

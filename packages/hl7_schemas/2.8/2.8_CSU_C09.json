@@ -1,0 +1,102 @@
+{
+  "Release": 2.8,
+  "DocumentType": "CSU_C09",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    {
+      "Id": "CSU_C09.PATIENT",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PID", "Min": 1, "Max": 1 },
+        { "Id": "PD1", "Min": 0, "Max": 1 },
+        { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+        { "Id": "ARV", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "CSU_C09.VISIT",
+          "Min": 0,
+          "Max": 1,
+          "Loop": [
+            { "Id": "PV1", "Min": 1, "Max": 1 },
+            { "Id": "PV2", "Min": 0, "Max": 1 },
+            { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        { "Id": "CSR", "Min": 1, "Max": 1 },
+        {
+          "Id": "CSU_C09.STUDY_PHASE",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "CSP", "Min": 0, "Max": 1 },
+            {
+              "Id": "CSU_C09.STUDY_SCHEDULE",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "CSS", "Min": 0, "Max": 1 },
+                {
+                  "Id": "CSU_C09.STUDY_OBSERVATION",
+                  "Min": 1,
+                  "Max": "unbounded",
+                  "Loop": [
+                    {
+                      "Id": "CSU_C09.STUDY_OBSERVATION_ORDER",
+                      "Min": 0,
+                      "Max": 1,
+                      "Loop": [
+                        { "Id": "ORC", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                      ]
+                    },
+                    { "Id": "OBR", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    {
+                      "Id": "CSU_C09.TIMING_QTY",
+                      "Min": 0,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "TQ1", "Min": 1, "Max": 1 },
+                        { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+                      ]
+                    },
+                    { "Id": "OBX", "Min": 1, "Max": 1 },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                {
+                  "Id": "CSU_C09.STUDY_PHARM",
+                  "Min": 1,
+                  "Max": "unbounded",
+                  "Loop": [
+                    {
+                      "Id": "CSU_C09.COMMON_ORDER",
+                      "Min": 0,
+                      "Max": 1,
+                      "Loop": [
+                        { "Id": "ORC", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                      ]
+                    },
+                    {
+                      "Id": "CSU_C09.RX_ADMIN",
+                      "Min": 1,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "RXA", "Min": 1, "Max": 1 },
+                        { "Id": "RXR", "Min": 1, "Max": 1 },
+                        { "Id": "PRT", "Min": 0, "Max": "unbounded" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

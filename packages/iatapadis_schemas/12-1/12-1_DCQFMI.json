@@ -1,0 +1,58 @@
+{
+  "Release": "121",
+  "DocumentType": "DCQFMI",
+  "TransactionSet": [
+    { "Id": "UNH" },
+    { "Id": "ORG" },
+    { "Id": "MSG" },
+    { "Id": "TVL", "Min": 0 },
+    { "Id": "DAT", "Min": 0 },
+    { "Id": "IFT", "Min": 0 },
+    { "Id": "SSD", "Min": 0, "Max": 9 },
+    {
+      "Id": "SDTLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "STX" },
+        { "Id": "QAD", "Min": 0 },
+        { "Id": "SSR", "Min": 0, "Max": 99 },
+        { "Id": "SDT", "Min": 0, "Max": 99 },
+        { "Id": "QADLoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "EQI" }, { "Id": "QAD", "Min": 0 }] },
+        {
+          "Id": "IFTLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "ODI" },
+            { "Id": "QAD", "Min": 0 },
+            { "Id": "IFT", "Min": 0 },
+            { "Id": "QADLoop4", "Min": 0, "Max": 9, "Loop": [{ "Id": "EQI" }, { "Id": "QAD", "Min": 0 }] }
+          ]
+        },
+        {
+          "Id": "DATLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "QAD", "Min": 0 },
+            { "Id": "DAT", "Min": 0 },
+            { "Id": "QADLoop6", "Min": 0, "Max": 99, "Loop": [{ "Id": "EQI" }, { "Id": "QAD", "Min": 0 }] },
+            {
+              "Id": "QADLoop7",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [
+                { "Id": "ODI" },
+                { "Id": "QAD", "Min": 0 },
+                { "Id": "QADLoop8", "Min": 0, "Max": 9, "Loop": [{ "Id": "EQI" }, { "Id": "QAD", "Min": 0 }] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "Id": "UNT" }
+  ]
+}

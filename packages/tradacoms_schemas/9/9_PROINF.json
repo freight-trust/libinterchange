@@ -1,0 +1,26 @@
+{
+  "Release": "9",
+  "DocumentType": "PROINF",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    {
+      "Id": "NOILoop1",
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "NOI" },
+        {
+          "Id": "PRNLoop1",
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "PRN" },
+            { "Id": "PRD", "Min": 0, "Max": "unbounded" },
+            { "Id": "PRU", "Min": 0, "Max": "unbounded" },
+            { "Id": "STD", "Min": 0, "Max": "unbounded" },
+            { "Id": "DNC", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

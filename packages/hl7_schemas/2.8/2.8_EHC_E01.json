@@ -1,0 +1,95 @@
+{
+  "Release": 2.8,
+  "DocumentType": "EHC_E01",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "EHC_E01.INVOICE_INFORMATION_SUBMIT",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [
+        { "Id": "IVC" },
+        { "Id": "PYE" },
+        { "Id": "CTD" },
+        { "Id": "AUT" },
+        { "Id": "LOC" },
+        { "Id": "PRT" },
+        { "Id": "ROL" },
+        {
+          "Id": "EHC_E01.PRODUCT_SERVICE_SECTION",
+          "Loop": [
+            { "Id": "PSS", "Min": 1, "Max": 1 },
+            {
+              "Id": "EHC_E01.PRODUCT_SERVICE_GROUP",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [
+                { "Id": "PSG", "Min": 1, "Max": 1 },
+                { "Id": "LOC", "Min": 0, "Max": "unbounded" },
+                { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                { "Id": "ROL", "Min": 0, "Max": "unbounded" },
+                {
+                  "Id": "EHC_E01.PATIENT_INFO",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "PID", "Min": 1, "Max": 1 },
+                    { "Id": "PV1", "Min": 0, "Max": 1 },
+                    { "Id": "PV2", "Min": 0, "Max": 1 },
+                    { "Id": "ACC", "Min": 0, "Max": "unbounded" },
+                    {
+                      "Id": "EHC_E01.INSURANCE",
+                      "Min": 1,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "IN1", "Min": 1, "Max": 1 },
+                        { "Id": "IN2", "Min": 0, "Max": 1 }
+                      ]
+                    },
+                    {
+                      "Id": "EHC_E01.DIAGNOSIS",
+                      "Min": 0,
+                      "Max": "unbounded",
+                      "Loop": [
+                        { "Id": "DG1", "Min": 1, "Max": 1 },
+                        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+                      ]
+                    },
+                    { "Id": "OBX", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                {
+                  "Id": "EHC_E01.PRODUCT_SERVICE_LINE_ITEM",
+                  "Min": 1,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "PSL", "Min": 1, "Max": 1 },
+                    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+                    { "Id": "ADJ", "Min": 0, "Max": "unbounded" },
+                    { "Id": "AUT", "Min": 0, "Max": 1 },
+                    { "Id": "LOC", "Min": 0, "Max": "unbounded" },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    { "Id": "ROL", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                {
+                  "Id": "EHC_E01.PROCEDURE",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [
+                    { "Id": "PR1", "Min": 1, "Max": 1 },
+                    { "Id": "NTE", "Min": 0, "Max": "unbounded" },
+                    { "Id": "PRT", "Min": 0, "Max": "unbounded" },
+                    { "Id": "ROL", "Min": 0, "Max": "unbounded" }
+                  ]
+                },
+                { "Id": "IPR", "Min": 0, "Max": "unbounded" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

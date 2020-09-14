@@ -1,0 +1,20 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RPR_I03",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    {
+      "Id": "RPR_I03.PROVIDER",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "PRD", "Min": 1, "Max": 1 },
+        { "Id": "CTD", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "PID", "Min": 0, "Max": "unbounded" },
+    { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+  ]
+}

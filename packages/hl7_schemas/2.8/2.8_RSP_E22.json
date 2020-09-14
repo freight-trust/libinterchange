@@ -1,0 +1,27 @@
+{
+  "Release": 2.8,
+  "DocumentType": "RSP_E22",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    { "Id": "MSA", "Min": 1, "Max": 1 },
+    { "Id": "ERR", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "RSP_E22.QUERY_ACK",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [
+        { "Id": "QAK" },
+        { "Id": "QPD" },
+        {
+          "Id": "RSP_E22.AUTHORIZATION_INFO",
+          "Loop": [
+            { "Id": "IVC", "Min": 1, "Max": 1 },
+            { "Id": "PSG", "Min": 1, "Max": 1 },
+            { "Id": "RSP_E22.PSL_ITEM_INFO", "Min": 1, "Max": "unbounded", "Loop": [{ "Id": "PSL", "Min": 1, "Max": 1 }] }
+          ]
+        }
+      ]
+    }
+  ]
+}

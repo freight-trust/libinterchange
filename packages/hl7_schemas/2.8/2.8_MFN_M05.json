@@ -1,0 +1,30 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MFN_M05",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MFI", "Min": 1, "Max": 1 },
+    {
+      "Id": "MFN_M05.MF_LOCATION",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "MFE", "Min": 1, "Max": 1 },
+        { "Id": "LOC", "Min": 1, "Max": 1 },
+        { "Id": "LCH", "Min": 0, "Max": "unbounded" },
+        { "Id": "LRL", "Min": 0, "Max": "unbounded" },
+        {
+          "Id": "MFN_M05.MF_LOC_DEPT",
+          "Min": 1,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "LDP", "Min": 1, "Max": 1 },
+            { "Id": "LCH", "Min": 0, "Max": "unbounded" },
+            { "Id": "LCC", "Min": 0, "Max": "unbounded" }
+          ]
+        }
+      ]
+    }
+  ]
+}

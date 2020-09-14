@@ -1,0 +1,25 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MFN_M02",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "MFI", "Min": 1, "Max": 1 },
+    {
+      "Id": "MFN_M02.MF_STAFF",
+      "Min": 1,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "MFE", "Min": 1, "Max": 1 },
+        { "Id": "STF", "Min": 1, "Max": 1 },
+        { "Id": "PRA", "Min": 0, "Max": "unbounded" },
+        { "Id": "ORG", "Min": 0, "Max": "unbounded" },
+        { "Id": "AFF", "Min": 0, "Max": "unbounded" },
+        { "Id": "LAN", "Min": 0, "Max": "unbounded" },
+        { "Id": "EDU", "Min": 0, "Max": "unbounded" },
+        { "Id": "CER", "Min": 0, "Max": "unbounded" },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+      ]
+    }
+  ]
+}

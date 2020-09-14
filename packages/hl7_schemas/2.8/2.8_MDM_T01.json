@@ -1,0 +1,32 @@
+{
+  "Release": 2.8,
+  "DocumentType": "MDM_T01",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": 1 },
+    { "Id": "EVN", "Min": 1, "Max": 1 },
+    { "Id": "PID", "Min": 1, "Max": 1 },
+    { "Id": "PV1", "Min": 1, "Max": 1 },
+    {
+      "Id": "MDM_T01.COMMON_ORDER",
+      "Min": 0,
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "ORC", "Min": 1, "Max": 1 },
+        {
+          "Id": "MDM_T01.TIMING",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [
+            { "Id": "TQ1", "Min": 1, "Max": 1 },
+            { "Id": "TQ2", "Min": 0, "Max": "unbounded" }
+          ]
+        },
+        { "Id": "OBR", "Min": 1, "Max": 1 },
+        { "Id": "NTE", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "TXA", "Min": 1, "Max": 1 },
+    { "Id": "CON", "Min": 0, "Max": "unbounded" }
+  ]
+}

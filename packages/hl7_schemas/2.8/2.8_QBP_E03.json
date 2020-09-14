@@ -1,0 +1,9 @@
+{
+  "Release": 2.8,
+  "DocumentType": "QBP_E03",
+  "TransactionSet": [
+    { "Id": "SFT", "Min": 0, "Max": "unbounded" },
+    { "Id": "UAC", "Min": 0, "Max": "unbounded" },
+    { "Id": "QBP_E03.QUERY_INFORMATION", "Min": 1, "Max": 1, "Choice": [{ "Id": "QPD" }, { "Id": "RCP" }] }
+  ]
+}

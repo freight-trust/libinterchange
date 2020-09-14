@@ -1,0 +1,27 @@
+{
+  "Release": "9",
+  "DocumentType": "UTLBIL",
+  "TransactionSet": [
+    { "Id": "MHD" },
+    { "Id": "CLO", "Max": 1 },
+    { "Id": "BCD", "Max": 1 },
+    { "Id": "PYT", "Min": 0, "Max": "unbounded" },
+    { "Id": "CDA", "Min": 0, "Max": 1 },
+    { "Id": "DNA", "Min": 0, "Max": "unbounded" },
+    {
+      "Id": "CCDLoop1",
+      "Max": "unbounded",
+      "Loop": [
+        { "Id": "CCD" },
+        { "Id": "MOD", "Min": 0, "Max": "unbounded" },
+        { "Id": "ADJ", "Min": 0, "Max": "unbounded" },
+        { "Id": "MAN", "Min": 0, "Max": "unbounded" }
+      ]
+    },
+    { "Id": "VAT", "Max": "unbounded" },
+    { "Id": "PRV", "Min": 0, "Max": "unbounded" },
+    { "Id": "BTL", "Max": 1 },
+    { "Id": "DEF", "Min": 0, "Max": 1 },
+    { "Id": "MTR", "Max": 1 }
+  ]
+}

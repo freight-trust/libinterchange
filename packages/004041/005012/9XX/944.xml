@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+<schema
+    xmlns="http://freighttrust.io/EDISchema/v4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd"
+>
     <transaction>
         <sequence>
             <segment type="W17" minOccurs="1" />

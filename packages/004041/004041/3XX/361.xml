@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="N1" minOccurs="1" />
+            <loop code="L0001" minOccurs="1" maxOccurs="9999">
+                <sequence>
+                    <segment type="CI" />
+                    <segment type="K1" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="CI01" base="string" maxLength="60" />
+    <elementType name="CI02" base="string" minLength="2" maxLength="4" />
+    <elementType name="CI03" base="string" maxLength="2" />
+    <elementType name="CI04" base="string" minLength="2" maxLength="80" />
+    <elementType name="CI05" base="string" maxLength="2" />
+    <elementType name="CI06" base="string" minLength="2" maxLength="80" />
+    <elementType name="CI07" base="string" />
+    <elementType name="CI08" base="string" minLength="3" maxLength="3" />
+    <elementType name="CI09" base="date" minLength="8" maxLength="8" />
+    <elementType name="CI10" base="string" minLength="3" maxLength="3" />
+    <elementType name="CI11" base="date" minLength="8" maxLength="8" />
+    <elementType name="CI12" base="string" maxLength="60" />
+    <elementType name="CI13" base="string" minLength="2" maxLength="3" />
+    <elementType name="CI14" base="string" maxLength="50" />
+    <elementType name="K101" base="string" maxLength="30" />
+    <elementType name="K102" base="string" maxLength="30" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <segmentType name="CI">
+        <sequence>
+            <element type="CI01" />
+            <element type="CI02" />
+            <element type="CI03" />
+            <element type="CI04" />
+            <element type="CI05" />
+            <element type="CI06" />
+            <element type="CI07" />
+            <element type="CI08" />
+            <element type="CI09" />
+            <element type="CI10" />
+            <element type="CI11" />
+            <element type="CI12" />
+            <element type="CI13" />
+            <element type="CI14" />
+        </sequence>
+    </segmentType>
+    <segmentType name="K1">
+        <sequence>
+            <element type="K101" minOccurs="1" />
+            <element type="K102" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+</schema>

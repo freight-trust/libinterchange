@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <loop code="L0001" minOccurs="1" maxOccurs="99">
+                <sequence>
+                    <segment type="F10" />
+                    <segment type="F02" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="F0201" base="date" minLength="8" maxLength="8" />
+    <elementType name="F0202" base="string" maxLength="4" />
+    <elementType name="F0203" base="string" maxLength="15" />
+    <elementType name="F0204" base="string" minLength="2" maxLength="3" />
+    <elementType name="F0205" base="string" maxLength="80" />
+    <elementType name="F0206" base="string" minLength="2" maxLength="3" />
+    <elementType name="F0207" base="string" maxLength="80" />
+    <elementType name="F0208" base="string" maxLength="8" />
+    <elementType name="F0209" base="string" minLength="2" maxLength="28" />
+    <elementType name="F1001" base="date" minLength="8" maxLength="8" />
+    <elementType name="F1002" base="string" maxLength="80" />
+    <elementType name="F1003" base="string" maxLength="80" />
+    <elementType name="F1004" base="string" minLength="2" maxLength="3" />
+    <segmentType name="F02">
+        <sequence>
+            <element type="F0201" />
+            <element type="F0202" />
+            <element type="F0203" />
+            <element type="F0204" />
+            <element type="F0205" />
+            <element type="F0206" />
+            <element type="F0207" />
+            <element type="F0208" />
+            <element type="F0209" />
+        </sequence>
+    </segmentType>
+    <segmentType name="F10">
+        <sequence>
+            <element type="F1001" minOccurs="1" />
+            <element type="F1002" minOccurs="1" />
+            <element type="F1003" />
+            <element type="F1004" />
+        </sequence>
+    </segmentType>
+</schema>

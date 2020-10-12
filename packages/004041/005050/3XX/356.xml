@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="M10" minOccurs="1" />
+            <loop code="L0001" minOccurs="1" maxOccurs="20">
+                <sequence>
+                    <segment type="P4" />
+                    <segment type="M20" minOccurs="1" maxOccurs="9999" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="M1001" base="string" minLength="2" maxLength="4" />
+    <elementType name="M1002" base="string" maxLength="2" />
+    <elementType name="M1003" base="string" minLength="2" maxLength="3" />
+    <elementType name="M1004" base="string" maxLength="8" />
+    <elementType name="M1005" base="string" minLength="2" maxLength="28" />
+    <elementType name="M1006" base="string" minLength="2" maxLength="30" />
+    <elementType name="M1007" base="string" maxLength="80" />
+    <elementType name="M1008" base="decimal" maxLength="15" />
+    <elementType name="M1009" base="string" />
+    <elementType name="M1010" base="string" />
+    <elementType name="M1011" base="string" />
+    <elementType name="M1012" base="string" maxLength="80" />
+    <elementType name="M1013" base="string" minLength="2" maxLength="2" />
+    <elementType name="M1014" base="string" minLength="2" maxLength="2" />
+    <elementType name="M1015" base="string" />
+    <elementType name="M1016" base="string" minLength="2" maxLength="2" />
+    <elementType name="M1017" base="string" />
+    <elementType name="M2001" base="string" minLength="2" maxLength="4" />
+    <elementType name="M2002" base="string" maxLength="50" />
+    <elementType name="M2003" base="string" maxLength="4" />
+    <elementType name="M2004" base="string" maxLength="15" />
+    <elementType name="M2005" base="string" maxLength="2" />
+    <elementType name="M2006" base="string" maxLength="30" />
+    <elementType name="M2007" base="string" minLength="2" maxLength="3" />
+    <elementType name="M2008" base="string" maxLength="80" />
+    <elementType name="M2009" base="string" maxLength="45" />
+    <elementType name="P401" base="string" maxLength="30" />
+    <elementType name="P402" base="date" minLength="8" maxLength="8" />
+    <elementType name="P403" base="decimal" maxLength="15" />
+    <elementType name="P404" base="string" maxLength="30" />
+    <elementType name="P405" base="time" minLength="4" maxLength="8" />
+    <elementType name="P406" base="date" minLength="8" maxLength="8" />
+    <elementType name="P407" base="time" minLength="4" maxLength="8" />
+    <segmentType name="M10">
+        <sequence>
+            <element type="M1001" minOccurs="1" />
+            <element type="M1002" minOccurs="1" />
+            <element type="M1003" />
+            <element type="M1004" />
+            <element type="M1005" />
+            <element type="M1006" />
+            <element type="M1007" />
+            <element type="M1008" />
+            <element type="M1009" />
+            <element type="M1010" />
+            <element type="M1011" />
+            <element type="M1012" />
+            <element type="M1013" />
+            <element type="M1014" />
+            <element type="M1015" />
+            <element type="M1016" />
+            <element type="M1017" />
+        </sequence>
+    </segmentType>
+    <segmentType name="M20">
+        <sequence>
+            <element type="M2001" minOccurs="1" />
+            <element type="M2002" minOccurs="1" />
+            <element type="M2003" minOccurs="1" />
+            <element type="M2004" minOccurs="1" />
+            <element type="M2005" minOccurs="1" />
+            <element type="M2006" minOccurs="1" />
+            <element type="M2007" minOccurs="1" />
+            <element type="M2008" minOccurs="1" />
+            <element type="M2009" />
+        </sequence>
+    </segmentType>
+    <segmentType name="P4">
+        <sequence>
+            <element type="P401" minOccurs="1" />
+            <element type="P402" minOccurs="1" />
+            <element type="P403" />
+            <element type="P404" />
+            <element type="P405" />
+            <element type="P406" />
+            <element type="P407" />
+        </sequence>
+    </segmentType>
+</schema>

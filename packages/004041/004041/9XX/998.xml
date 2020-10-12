@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="ZD" minOccurs="1" />
+        </sequence>
+    </transaction>
+    <elementType name="ZD01" base="string" minLength="3" maxLength="3" />
+    <elementType name="ZD02" base="string" maxLength="30" />
+    <elementType name="ZD03" base="string" maxLength="4" />
+    <elementType name="ZD04" base="string" maxLength="15" />
+    <elementType name="ZD05" base="string" maxLength="15" />
+    <elementType name="ZD06" base="date" minLength="8" maxLength="8" />
+    <elementType name="ZD07" base="string" minLength="2" maxLength="2" />
+    <elementType name="ZD08" base="string" minLength="2" maxLength="4" />
+    <elementType name="ZD09" base="decimal" />
+    <segmentType name="ZD">
+        <sequence>
+            <element type="ZD01" minOccurs="1" />
+            <element type="ZD02" />
+            <element type="ZD03" minOccurs="1" />
+            <element type="ZD04" minOccurs="1" />
+            <element type="ZD05" />
+            <element type="ZD06" />
+            <element type="ZD07" minOccurs="1" />
+            <element type="ZD08" />
+            <element type="ZD09" />
+        </sequence>
+    </segmentType>
+</schema>

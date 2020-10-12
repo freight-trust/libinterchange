@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BC" minOccurs="1" />
+            <segment type="N1" maxOccurs="2" />
+            <segment type="G61" />
+            <segment type="NTE" maxOccurs="100" />
+            <loop code="L0001" minOccurs="1" maxOccurs="100">
+                <sequence>
+                    <segment type="CS" />
+                    <segment type="AMT" />
+                    <segment type="N9" />
+                    <segment type="G62" maxOccurs="3" />
+                    <segment type="G61" />
+                    <segment type="NTE" maxOccurs="5" />
+                    <loop code="L0002" maxOccurs="10">
+                        <sequence>
+                            <segment type="LM" />
+                            <segment type="LQ" minOccurs="1" maxOccurs="100" />
+                        </sequence>
+                    </loop>
+                    <loop code="L0003" maxOccurs="10">
+                        <sequence>
+                            <segment type="N1" />
+                            <segment type="N2" maxOccurs="2" />
+                            <segment type="N3" maxOccurs="2" />
+                            <segment type="N4" />
+                        </sequence>
+                    </loop>
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="AMT01" base="string" maxLength="3" />
+    <elementType name="AMT02" base="decimal" maxLength="18" />
+    <elementType name="AMT03" base="string" />
+    <elementType name="BC01" base="string" minLength="2" maxLength="2" />
+    <elementType name="BC02" base="date" minLength="8" maxLength="8" />
+    <elementType name="BC03" base="time" minLength="4" maxLength="8" />
+    <elementType name="BC04" base="string" maxLength="80" />
+    <elementType name="BC05" base="string" maxLength="80" />
+    <elementType name="BC06" base="string" minLength="2" maxLength="2" />
+    <elementType name="BC07" base="string" maxLength="2" />
+    <elementType name="CS01" base="string" maxLength="30" />
+    <elementType name="CS02" base="string" maxLength="8" />
+    <elementType name="CS03" base="string" maxLength="30" />
+    <elementType name="CS04" base="string" minLength="2" maxLength="3" />
+    <elementType name="CS05" base="string" maxLength="80" />
+    <elementType name="CS06" base="string" maxLength="22" />
+    <elementType name="CS07" base="string" minLength="2" maxLength="10" />
+    <elementType name="CS08" base="string" minLength="2" maxLength="2" />
+    <elementType name="CS09" base="decimal" maxLength="10" />
+    <elementType name="CS10" base="decimal" maxLength="10" />
+    <elementType name="CS11" base="decimal" maxLength="18" />
+    <elementType name="CS12" base="string" minLength="2" maxLength="2" />
+    <elementType name="CS13" base="string" minLength="2" maxLength="10" />
+    <elementType name="CS14" base="string" minLength="2" maxLength="2" />
+    <elementType name="CS15" base="decimal" maxLength="17" />
+    <elementType name="CS16" base="string" minLength="2" maxLength="2" />
+    <elementType name="CS17" base="string" />
+    <elementType name="CS18" base="string" />
+    <elementType name="G6101" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6102" base="string" maxLength="60" />
+    <elementType name="G6103" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6104" base="string" maxLength="256" />
+    <elementType name="G6105" base="string" maxLength="20" />
+    <elementType name="G6201" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6202" base="date" minLength="8" maxLength="8" />
+    <elementType name="G6203" base="string" maxLength="2" />
+    <elementType name="G6204" base="time" minLength="4" maxLength="8" />
+    <elementType name="G6205" base="string" minLength="2" maxLength="2" />
+    <elementType name="LM01" base="string" minLength="2" maxLength="2" />
+    <elementType name="LM02" base="string" maxLength="15" />
+    <elementType name="LQ01" base="string" maxLength="3" />
+    <elementType name="LQ02" base="string" maxLength="30" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="N201" base="string" maxLength="60" />
+    <elementType name="N202" base="string" maxLength="60" />
+    <elementType name="N301" base="string" maxLength="55" />
+    <elementType name="N302" base="string" maxLength="55" />
+    <elementType name="N401" base="string" minLength="2" maxLength="30" />
+    <elementType name="N402" base="string" minLength="2" maxLength="2" />
+    <elementType name="N403" base="string" minLength="3" maxLength="15" />
+    <elementType name="N404" base="string" minLength="2" maxLength="3" />
+    <elementType name="N405" base="string" maxLength="2" />
+    <elementType name="N406" base="string" maxLength="30" />
+    <elementType name="N407" base="string" maxLength="3" />
+    <elementType name="N901" base="string" minLength="2" maxLength="3" />
+    <elementType name="N902" base="string" maxLength="80" />
+    <elementType name="N903" base="string" maxLength="45" />
+    <elementType name="N904" base="date" minLength="8" maxLength="8" />
+    <elementType name="N905" base="time" minLength="4" maxLength="8" />
+    <elementType name="N906" base="string" minLength="2" maxLength="2" />
+    <elementType name="N90701" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90702" base="string" maxLength="80" />
+    <elementType name="N90703" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90704" base="string" maxLength="80" />
+    <elementType name="N90705" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90706" base="string" maxLength="80" />
+    <elementType name="NTE01" base="string" minLength="3" maxLength="3" />
+    <elementType name="NTE02" base="string" maxLength="80" />
+    <compositeType name="N907">
+        <sequence>
+            <element type="N90701" minOccurs="1" />
+            <element type="N90702" minOccurs="1" />
+            <element type="N90703" />
+            <element type="N90704" />
+            <element type="N90705" />
+            <element type="N90706" />
+        </sequence>
+    </compositeType>
+    <segmentType name="AMT">
+        <sequence>
+            <element type="AMT01" minOccurs="1" />
+            <element type="AMT02" minOccurs="1" />
+            <element type="AMT03" />
+        </sequence>
+    </segmentType>
+    <segmentType name="BC">
+        <sequence>
+            <element type="BC01" minOccurs="1" />
+            <element type="BC02" />
+            <element type="BC03" />
+            <element type="BC04" />
+            <element type="BC05" />
+            <element type="BC06" />
+            <element type="BC07" />
+        </sequence>
+    </segmentType>
+    <segmentType name="CS">
+        <sequence>
+            <element type="CS01" />
+            <element type="CS02" />
+            <element type="CS03" />
+            <element type="CS04" />
+            <element type="CS05" />
+            <element type="CS06" />
+            <element type="CS07" />
+            <element type="CS08" />
+            <element type="CS09" />
+            <element type="CS10" />
+            <element type="CS11" />
+            <element type="CS12" />
+            <element type="CS13" />
+            <element type="CS14" />
+            <element type="CS15" />
+            <element type="CS16" />
+            <element type="CS17" />
+            <element type="CS18" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G61">
+        <sequence>
+            <element type="G6101" minOccurs="1" />
+            <element type="G6102" minOccurs="1" />
+            <element type="G6103" />
+            <element type="G6104" />
+            <element type="G6105" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G62">
+        <sequence>
+            <element type="G6201" />
+            <element type="G6202" />
+            <element type="G6203" />
+            <element type="G6204" />
+            <element type="G6205" />
+        </sequence>
+    </segmentType>
+    <segmentType name="LM">
+        <sequence>
+            <element type="LM01" minOccurs="1" />
+            <element type="LM02" />
+        </sequence>
+    </segmentType>
+    <segmentType name="LQ">
+        <sequence>
+            <element type="LQ01" />
+            <element type="LQ02" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N2">
+        <sequence>
+            <element type="N201" minOccurs="1" />
+            <element type="N202" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N3">
+        <sequence>
+            <element type="N301" minOccurs="1" />
+            <element type="N302" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N4">
+        <sequence>
+            <element type="N401" />
+            <element type="N402" />
+            <element type="N403" />
+            <element type="N404" />
+            <element type="N405" />
+            <element type="N406" />
+            <element type="N407" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N9">
+        <sequence>
+            <element type="N901" minOccurs="1" />
+            <element type="N902" />
+            <element type="N903" />
+            <element type="N904" />
+            <element type="N905" />
+            <element type="N906" />
+            <composite type="N907" />
+        </sequence>
+    </segmentType>
+    <segmentType name="NTE">
+        <sequence>
+            <element type="NTE01" />
+            <element type="NTE02" minOccurs="1" />
+        </sequence>
+    </segmentType>
+</schema>

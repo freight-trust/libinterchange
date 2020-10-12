@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="VR" minOccurs="1" />
+            <segment type="G62" minOccurs="1" maxOccurs="3" />
+            <loop code="L0001" minOccurs="1" maxOccurs="99">
+                <sequence>
+                    <segment type="RT" />
+                    <segment type="RT1" minOccurs="1" maxOccurs="99" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="G6201" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6202" base="date" minLength="8" maxLength="8" />
+    <elementType name="G6203" base="string" maxLength="2" />
+    <elementType name="G6204" base="time" minLength="4" maxLength="8" />
+    <elementType name="G6205" base="string" minLength="2" maxLength="2" />
+    <elementType name="RT01" base="string" minLength="2" maxLength="2" />
+    <elementType name="RT02" base="string" minLength="6" maxLength="9" />
+    <elementType name="RT03" base="string" minLength="2" maxLength="9" />
+    <elementType name="RT04" base="string" minLength="2" maxLength="4" />
+    <elementType name="RT05" base="string" />
+    <elementType name="RT06" base="decimal" maxLength="5" />
+    <elementType name="RT07" base="string" minLength="2" maxLength="27" />
+    <elementType name="RT08" base="string" minLength="2" maxLength="2" />
+    <elementType name="RT09" base="string" maxLength="60" />
+    <elementType name="RT10" base="string" maxLength="55" />
+    <elementType name="RT101" base="string" maxLength="2" />
+    <elementType name="RT102" base="string" />
+    <elementType name="RT103" base="decimal" maxLength="15" />
+    <elementType name="RT104" base="string" />
+    <elementType name="RT105" base="string" />
+    <elementType name="RT106" base="string" minLength="2" maxLength="2" />
+    <elementType name="RT107" base="string" maxLength="16" />
+    <elementType name="RT108" base="string" maxLength="2" />
+    <elementType name="RT11" base="string" minLength="2" maxLength="80" />
+    <elementType name="RT12" base="string" maxLength="2" />
+    <elementType name="VR01" base="string" minLength="2" maxLength="2" />
+    <elementType name="VR02" base="string" maxLength="7" />
+    <elementType name="VR03" base="string" minLength="2" maxLength="4" />
+    <elementType name="VR04" base="string" maxLength="2" />
+    <elementType name="VR05" base="string" minLength="2" maxLength="80" />
+    <elementType name="VR06" base="string" minLength="3" maxLength="3" />
+    <elementType name="VR07" base="string" maxLength="4" />
+    <elementType name="VR08" base="string" maxLength="4" />
+    <elementType name="VR09" base="string" minLength="4" maxLength="4" />
+    <segmentType name="G62">
+        <sequence>
+            <element type="G6201" />
+            <element type="G6202" />
+            <element type="G6203" />
+            <element type="G6204" />
+            <element type="G6205" />
+        </sequence>
+    </segmentType>
+    <segmentType name="RT">
+        <sequence>
+            <element type="RT01" minOccurs="1" />
+            <element type="RT02" />
+            <element type="RT03" />
+            <element type="RT04" />
+            <element type="RT05" />
+            <element type="RT06" />
+            <element type="RT07" />
+            <element type="RT08" />
+            <element type="RT09" />
+            <element type="RT10" />
+            <element type="RT11" />
+            <element type="RT12" />
+        </sequence>
+    </segmentType>
+    <segmentType name="RT1">
+        <sequence>
+            <element type="RT101" minOccurs="1" />
+            <element type="RT102" minOccurs="1" />
+            <element type="RT103" minOccurs="1" />
+            <element type="RT104" />
+            <element type="RT105" />
+            <element type="RT106" />
+            <element type="RT107" />
+            <element type="RT108" />
+        </sequence>
+    </segmentType>
+    <segmentType name="VR">
+        <sequence>
+            <element type="VR01" minOccurs="1" />
+            <element type="VR02" minOccurs="1" />
+            <element type="VR03" minOccurs="1" />
+            <element type="VR04" minOccurs="1" />
+            <element type="VR05" minOccurs="1" />
+            <element type="VR06" minOccurs="1" />
+            <element type="VR07" />
+            <element type="VR08" />
+            <element type="VR09" />
+        </sequence>
+    </segmentType>
+</schema>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="B2A" minOccurs="1" />
+            <segment type="REF" maxOccurs="10" />
+            <segment type="DTM" maxOccurs="99999" />
+            <loop code="L0001" minOccurs="1" maxOccurs="99999">
+                <sequence>
+                    <segment type="N1" />
+                    <segment type="N2" />
+                    <segment type="N3" maxOccurs="2" />
+                    <segment type="N4" maxOccurs="2" />
+                </sequence>
+            </loop>
+            <loop code="L0002" minOccurs="1" maxOccurs="99999">
+                <sequence>
+                    <segment type="G39" />
+                    <segment type="G69" />
+                    <segment type="DTM" maxOccurs="99999" />
+                    <segment type="RCR" maxOccurs="99999" />
+                    <segment type="G43" maxOccurs="99999" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="B2A01" base="string" minLength="2" maxLength="2" />
+    <elementType name="B2A02" base="string" minLength="2" maxLength="2" />
+    <elementType name="DTM01" base="string" minLength="3" maxLength="3" />
+    <elementType name="DTM02" base="date" minLength="8" maxLength="8" />
+    <elementType name="DTM03" base="time" minLength="4" maxLength="8" />
+    <elementType name="DTM04" base="string" minLength="2" maxLength="2" />
+    <elementType name="DTM05" base="string" minLength="2" maxLength="3" />
+    <elementType name="DTM06" base="string" maxLength="35" />
+    <elementType name="G3901" base="string" minLength="12" maxLength="12" />
+    <elementType name="G3902" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3903" base="string" maxLength="80" />
+    <elementType name="G3904" base="string" minLength="2" maxLength="3" />
+    <elementType name="G3905" base="decimal" maxLength="8" />
+    <elementType name="G3906" base="string" maxLength="2" />
+    <elementType name="G3907" base="string" />
+    <elementType name="G3908" base="decimal" maxLength="8" />
+    <elementType name="G3909" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3910" base="decimal" maxLength="8" />
+    <elementType name="G3911" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3912" base="decimal" maxLength="8" />
+    <elementType name="G3913" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3914" base="decimal" maxLength="8" />
+    <elementType name="G3915" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3916" base="decimal" minLength="6" maxLength="6" />
+    <elementType name="G3917" base="decimal" maxLength="6" />
+    <elementType name="G3918" base="decimal" maxLength="8" />
+    <elementType name="G3919" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3920" base="string" maxLength="10" />
+    <elementType name="G3921" base="decimal" maxLength="10" />
+    <elementType name="G3922" base="string" maxLength="3" />
+    <elementType name="G3923" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3924" base="string" maxLength="80" />
+    <elementType name="G3925" base="string" maxLength="2" />
+    <elementType name="G3926" base="decimal" maxLength="8" />
+    <elementType name="G3927" base="decimal" maxLength="6" />
+    <elementType name="G3928" base="string" minLength="3" maxLength="5" />
+    <elementType name="G3929" base="string" maxLength="20" />
+    <elementType name="G4301" base="string" maxLength="3" />
+    <elementType name="G4302" base="string" maxLength="13" />
+    <elementType name="G4303" base="string" maxLength="80" />
+    <elementType name="G4304" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6901" base="string" maxLength="45" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="N201" base="string" maxLength="60" />
+    <elementType name="N202" base="string" maxLength="60" />
+    <elementType name="N301" base="string" maxLength="55" />
+    <elementType name="N302" base="string" maxLength="55" />
+    <elementType name="N401" base="string" minLength="2" maxLength="30" />
+    <elementType name="N402" base="string" minLength="2" maxLength="2" />
+    <elementType name="N403" base="string" minLength="3" maxLength="15" />
+    <elementType name="N404" base="string" minLength="2" maxLength="3" />
+    <elementType name="N405" base="string" maxLength="2" />
+    <elementType name="N406" base="string" maxLength="30" />
+    <elementType name="N407" base="string" maxLength="3" />
+    <elementType name="RCR01" base="string" />
+    <elementType name="RCR02" base="string" minLength="2" maxLength="2" />
+    <elementType name="REF01" base="string" minLength="2" maxLength="3" />
+    <elementType name="REF02" base="string" maxLength="80" />
+    <elementType name="REF03" base="string" maxLength="80" />
+    <elementType name="REF0401" base="string" minLength="2" maxLength="3" />
+    <elementType name="REF0402" base="string" maxLength="80" />
+    <elementType name="REF0403" base="string" minLength="2" maxLength="3" />
+    <elementType name="REF0404" base="string" maxLength="80" />
+    <elementType name="REF0405" base="string" minLength="2" maxLength="3" />
+    <elementType name="REF0406" base="string" maxLength="80" />
+    <compositeType name="REF04">
+        <sequence>
+            <element type="REF0401" minOccurs="1" />
+            <element type="REF0402" minOccurs="1" />
+            <element type="REF0403" />
+            <element type="REF0404" />
+            <element type="REF0405" />
+            <element type="REF0406" />
+        </sequence>
+    </compositeType>
+    <segmentType name="B2A">
+        <sequence>
+            <element type="B2A01" minOccurs="1" />
+            <element type="B2A02" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DTM">
+        <sequence>
+            <element type="DTM01" minOccurs="1" />
+            <element type="DTM02" />
+            <element type="DTM03" />
+            <element type="DTM04" />
+            <element type="DTM05" />
+            <element type="DTM06" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G39">
+        <sequence>
+            <element type="G3901" />
+            <element type="G3902" />
+            <element type="G3903" />
+            <element type="G3904" />
+            <element type="G3905" />
+            <element type="G3906" />
+            <element type="G3907" />
+            <element type="G3908" />
+            <element type="G3909" />
+            <element type="G3910" />
+            <element type="G3911" />
+            <element type="G3912" />
+            <element type="G3913" />
+            <element type="G3914" />
+            <element type="G3915" />
+            <element type="G3916" />
+            <element type="G3917" />
+            <element type="G3918" />
+            <element type="G3919" />
+            <element type="G3920" />
+            <element type="G3921" />
+            <element type="G3922" />
+            <element type="G3923" />
+            <element type="G3924" />
+            <element type="G3925" />
+            <element type="G3926" />
+            <element type="G3927" />
+            <element type="G3928" />
+            <element type="G3929" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G43">
+        <sequence>
+            <element type="G4301" minOccurs="1" />
+            <element type="G4302" />
+            <element type="G4303" />
+            <element type="G4304" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G69">
+        <sequence>
+            <element type="G6901" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N2">
+        <sequence>
+            <element type="N201" minOccurs="1" />
+            <element type="N202" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N3">
+        <sequence>
+            <element type="N301" minOccurs="1" />
+            <element type="N302" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N4">
+        <sequence>
+            <element type="N401" />
+            <element type="N402" />
+            <element type="N403" />
+            <element type="N404" />
+            <element type="N405" />
+            <element type="N406" />
+            <element type="N407" />
+        </sequence>
+    </segmentType>
+    <segmentType name="RCR">
+        <sequence>
+            <element type="RCR01" minOccurs="1" />
+            <element type="RCR02" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="REF">
+        <sequence>
+            <element type="REF01" minOccurs="1" />
+            <element type="REF02" />
+            <element type="REF03" />
+            <composite type="REF04" />
+        </sequence>
+    </segmentType>
+</schema>

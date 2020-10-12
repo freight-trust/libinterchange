@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="SMB" minOccurs="1" />
+            <segment type="N4" minOccurs="1" maxOccurs="10" />
+            <segment type="CD" maxOccurs="10" />
+            <segment type="SMS" minOccurs="1" />
+            <segment type="SMA" maxOccurs="10" />
+            <segment type="N1" />
+            <segment type="SMR" maxOccurs="10" />
+            <segment type="SMO" maxOccurs="10" />
+        </sequence>
+    </transaction>
+    <elementType name="CD01" base="string" maxLength="3" />
+    <elementType name="CD02" base="string" minLength="4" maxLength="4" />
+    <elementType name="CD03" base="string" maxLength="10" />
+    <elementType name="CD04" base="string" maxLength="10" />
+    <elementType name="CD05" base="string" maxLength="10" />
+    <elementType name="CD06" base="decimal" maxLength="6" />
+    <elementType name="CD07" base="string" />
+    <elementType name="CD08" base="string" minLength="2" maxLength="4" />
+    <elementType name="CD09" base="string" maxLength="7" />
+    <elementType name="CD10" base="string" maxLength="11" />
+    <elementType name="CD11" base="string" minLength="2" maxLength="30" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="N401" base="string" minLength="2" maxLength="30" />
+    <elementType name="N402" base="string" minLength="2" maxLength="2" />
+    <elementType name="N403" base="string" minLength="3" maxLength="15" />
+    <elementType name="N404" base="string" minLength="2" maxLength="3" />
+    <elementType name="N405" base="string" maxLength="2" />
+    <elementType name="N406" base="string" maxLength="30" />
+    <elementType name="N407" base="string" maxLength="3" />
+    <elementType name="SMA01" base="string" />
+    <elementType name="SMA02" base="string" maxLength="55" />
+    <elementType name="SMA03" base="string" minLength="2" maxLength="30" />
+    <elementType name="SMA04" base="string" minLength="2" maxLength="2" />
+    <elementType name="SMA05" base="string" minLength="3" maxLength="15" />
+    <elementType name="SMB01" base="string" minLength="2" maxLength="2" />
+    <elementType name="SMB02" base="string" />
+    <elementType name="SMB03" base="string" minLength="6" maxLength="9" />
+    <elementType name="SMB04" base="string" />
+    <elementType name="SMB05" base="string" />
+    <elementType name="SMB06" base="string" />
+    <elementType name="SMB07" base="string" />
+    <elementType name="SMB08" base="string" maxLength="5" />
+    <elementType name="SMB09" base="string" />
+    <elementType name="SMO01" base="string" />
+    <elementType name="SMO02" base="string" />
+    <elementType name="SMO03" base="string" />
+    <elementType name="SMO04" base="string" />
+    <elementType name="SMO05" base="decimal" maxLength="10" />
+    <elementType name="SMO06" base="string" />
+    <elementType name="SMO07" base="string" />
+    <elementType name="SMR01" base="string" maxLength="2" />
+    <elementType name="SMR02" base="string" minLength="6" maxLength="9" />
+    <elementType name="SMR03" base="string" minLength="2" maxLength="30" />
+    <elementType name="SMR04" base="string" minLength="2" maxLength="2" />
+    <elementType name="SMS01" base="string" minLength="2" maxLength="4" />
+    <elementType name="SMS02" base="string" maxLength="5" />
+    <elementType name="SMS03" base="string" maxLength="5" />
+    <elementType name="SMS04" base="string" minLength="3" maxLength="15" />
+    <elementType name="SMS05" base="string" />
+    <elementType name="SMS06" base="string" minLength="2" maxLength="2" />
+    <elementType name="SMS07" base="string" maxLength="30" />
+    <elementType name="SMS08" base="string" maxLength="30" />
+    <elementType name="SMS09" base="string" />
+    <elementType name="SMS10" base="string" minLength="2" maxLength="80" />
+    <elementType name="SMS11" base="string" />
+    <elementType name="SMS12" base="string" minLength="2" maxLength="4" />
+    <elementType name="SMS13" base="string" maxLength="5" />
+    <segmentType name="CD">
+        <sequence>
+            <element type="CD01" minOccurs="1" />
+            <element type="CD02" />
+            <element type="CD03" />
+            <element type="CD04" />
+            <element type="CD05" />
+            <element type="CD06" />
+            <element type="CD07" />
+            <element type="CD08" />
+            <element type="CD09" />
+            <element type="CD10" />
+            <element type="CD11" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N4">
+        <sequence>
+            <element type="N401" />
+            <element type="N402" />
+            <element type="N403" />
+            <element type="N404" />
+            <element type="N405" />
+            <element type="N406" />
+            <element type="N407" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SMA">
+        <sequence>
+            <element type="SMA01" minOccurs="1" />
+            <element type="SMA02" minOccurs="1" />
+            <element type="SMA03" minOccurs="1" />
+            <element type="SMA04" minOccurs="1" />
+            <element type="SMA05" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SMB">
+        <sequence>
+            <element type="SMB01" minOccurs="1" />
+            <element type="SMB02" minOccurs="1" />
+            <element type="SMB03" />
+            <element type="SMB04" />
+            <element type="SMB05" />
+            <element type="SMB06" />
+            <element type="SMB07" minOccurs="1" />
+            <element type="SMB08" />
+            <element type="SMB09" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SMO">
+        <sequence>
+            <element type="SMO01" />
+            <element type="SMO02" />
+            <element type="SMO03" />
+            <element type="SMO04" />
+            <element type="SMO05" />
+            <element type="SMO06" />
+            <element type="SMO07" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SMR">
+        <sequence>
+            <element type="SMR01" minOccurs="1" />
+            <element type="SMR02" />
+            <element type="SMR03" />
+            <element type="SMR04" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SMS">
+        <sequence>
+            <element type="SMS01" minOccurs="1" />
+            <element type="SMS02" minOccurs="1" />
+            <element type="SMS03" />
+            <element type="SMS04" />
+            <element type="SMS05" />
+            <element type="SMS06" />
+            <element type="SMS07" />
+            <element type="SMS08" />
+            <element type="SMS09" />
+            <element type="SMS10" />
+            <element type="SMS11" />
+            <element type="SMS12" />
+            <element type="SMS13" />
+        </sequence>
+    </segmentType>
+</schema>

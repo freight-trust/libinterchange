@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="N1" minOccurs="1" maxOccurs="2" />
+            <segment type="PER" maxOccurs="3" />
+            <loop code="L0001" minOccurs="1" maxOccurs="5000">
+                <sequence>
+                    <segment type="ENT" />
+                    <segment type="DTM" maxOccurs="2" />
+                    <loop code="L0002" maxOccurs="150">
+                        <sequence>
+                            <segment type="N1" />
+                            <segment type="G32" maxOccurs="25" />
+                            <segment type="G37" maxOccurs="10" />
+                            <loop code="L0003" maxOccurs="1000">
+<sequence>
+    <segment type="G28" />
+    <segment type="QTY" maxOccurs="10" />
+    <segment type="G29" maxOccurs="10" />
+    <segment type="CTP" maxOccurs="4" />
+    <segment type="G35" maxOccurs="10" />
+    <segment type="CRC" maxOccurs="5" />
+</sequence>
+                            </loop>
+                        </sequence>
+                    </loop>
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="CRC01" base="string" minLength="2" maxLength="2" />
+    <elementType name="CRC02" base="string" />
+    <elementType name="CRC03" base="string" minLength="2" maxLength="3" />
+    <elementType name="CRC04" base="string" minLength="2" maxLength="3" />
+    <elementType name="CRC05" base="string" minLength="2" maxLength="3" />
+    <elementType name="CRC06" base="string" minLength="2" maxLength="3" />
+    <elementType name="CRC07" base="string" minLength="2" maxLength="3" />
+    <elementType name="CTP01" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP02" base="string" minLength="3" maxLength="3" />
+    <elementType name="CTP03" base="decimal" maxLength="17" />
+    <elementType name="CTP04" base="decimal" maxLength="15" />
+    <elementType name="CTP0501" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0502" base="decimal" maxLength="15" />
+    <elementType name="CTP0503" base="decimal" maxLength="10" />
+    <elementType name="CTP0504" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0505" base="decimal" maxLength="15" />
+    <elementType name="CTP0506" base="decimal" maxLength="10" />
+    <elementType name="CTP0507" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0508" base="decimal" maxLength="15" />
+    <elementType name="CTP0509" base="decimal" maxLength="10" />
+    <elementType name="CTP0510" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0511" base="decimal" maxLength="15" />
+    <elementType name="CTP0512" base="decimal" maxLength="10" />
+    <elementType name="CTP0513" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0514" base="decimal" maxLength="15" />
+    <elementType name="CTP0515" base="decimal" maxLength="10" />
+    <elementType name="CTP06" base="string" minLength="3" maxLength="3" />
+    <elementType name="CTP07" base="decimal" maxLength="10" />
+    <elementType name="CTP08" base="decimal" maxLength="18" />
+    <elementType name="CTP09" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP10" base="string" maxLength="10" />
+    <elementType name="CTP11" base="decimal" maxLength="2" />
+    <elementType name="DTM01" base="string" minLength="3" maxLength="3" />
+    <elementType name="DTM02" base="date" minLength="8" maxLength="8" />
+    <elementType name="DTM03" base="time" minLength="4" maxLength="8" />
+    <elementType name="DTM04" base="string" minLength="2" maxLength="2" />
+    <elementType name="DTM05" base="string" minLength="2" maxLength="3" />
+    <elementType name="DTM06" base="string" maxLength="35" />
+    <elementType name="ENT01" base="decimal" maxLength="6" />
+    <elementType name="ENT02" base="string" minLength="2" maxLength="3" />
+    <elementType name="ENT03" base="string" maxLength="2" />
+    <elementType name="ENT04" base="string" minLength="2" maxLength="80" />
+    <elementType name="ENT05" base="string" minLength="2" maxLength="3" />
+    <elementType name="ENT06" base="string" maxLength="2" />
+    <elementType name="ENT07" base="string" minLength="2" maxLength="80" />
+    <elementType name="ENT08" base="string" minLength="2" maxLength="3" />
+    <elementType name="ENT09" base="string" maxLength="80" />
+    <elementType name="G2801" base="string" minLength="12" maxLength="12" />
+    <elementType name="G2802" base="string" minLength="12" maxLength="12" />
+    <elementType name="G2803" base="string" minLength="2" maxLength="2" />
+    <elementType name="G2804" base="string" maxLength="48" />
+    <elementType name="G2805" base="string" minLength="2" maxLength="2" />
+    <elementType name="G2806" base="string" maxLength="48" />
+    <elementType name="G2901" base="string" maxLength="2" />
+    <elementType name="G2902" base="decimal" maxLength="15" />
+    <elementType name="G2903" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3201" base="decimal" maxLength="9" />
+    <elementType name="G3202" base="string" />
+    <elementType name="G3203" base="decimal" maxLength="18" />
+    <elementType name="G3204" base="date" minLength="8" maxLength="8" />
+    <elementType name="G3205" base="string" maxLength="80" />
+    <elementType name="G3501" base="string" minLength="2" maxLength="2" />
+    <elementType name="G3502" base="string" maxLength="2" />
+    <elementType name="G3503" base="decimal" maxLength="18" />
+    <elementType name="G3701" base="string" maxLength="2" />
+    <elementType name="G3702" base="time" minLength="4" maxLength="8" />
+    <elementType name="G3703" base="time" minLength="4" maxLength="8" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="PER01" base="string" minLength="2" maxLength="2" />
+    <elementType name="PER02" base="string" maxLength="60" />
+    <elementType name="PER03" base="string" minLength="2" maxLength="2" />
+    <elementType name="PER04" base="string" maxLength="256" />
+    <elementType name="PER05" base="string" minLength="2" maxLength="2" />
+    <elementType name="PER06" base="string" maxLength="256" />
+    <elementType name="PER07" base="string" minLength="2" maxLength="2" />
+    <elementType name="PER08" base="string" maxLength="256" />
+    <elementType name="PER09" base="string" maxLength="20" />
+    <elementType name="QTY01" base="string" minLength="2" maxLength="2" />
+    <elementType name="QTY02" base="decimal" maxLength="15" />
+    <elementType name="QTY0301" base="string" minLength="2" maxLength="2" />
+    <elementType name="QTY0302" base="decimal" maxLength="15" />
+    <elementType name="QTY0303" base="decimal" maxLength="10" />
+    <elementType name="QTY0304" base="string" minLength="2" maxLength="2" />
+    <elementType name="QTY0305" base="decimal" maxLength="15" />
+    <elementType name="QTY0306" base="decimal" maxLength="10" />
+    <elementType name="QTY0307" base="string" minLength="2" maxLength="2" />
+    <elementType name="QTY0308" base="decimal" maxLength="15" />
+    <elementType name="QTY0309" base="decimal" maxLength="10" />
+    <elementType name="QTY0310" base="string" minLength="2" maxLength="2" />
+    <elementType name="QTY0311" base="decimal" maxLength="15" />
+    <elementType name="QTY0312" base="decimal" maxLength="10" />
+    <elementType name="QTY0313" base="string" minLength="2" maxLength="2" />
+    <elementType name="QTY0314" base="decimal" maxLength="15" />
+    <elementType name="QTY0315" base="decimal" maxLength="10" />
+    <elementType name="QTY04" base="string" maxLength="30" />
+    <compositeType name="CTP05">
+        <sequence>
+            <element type="CTP0501" minOccurs="1" />
+            <element type="CTP0502" />
+            <element type="CTP0503" />
+            <element type="CTP0504" />
+            <element type="CTP0505" />
+            <element type="CTP0506" />
+            <element type="CTP0507" />
+            <element type="CTP0508" />
+            <element type="CTP0509" />
+            <element type="CTP0510" />
+            <element type="CTP0511" />
+            <element type="CTP0512" />
+            <element type="CTP0513" />
+            <element type="CTP0514" />
+            <element type="CTP0515" />
+        </sequence>
+    </compositeType>
+    <compositeType name="QTY03">
+        <sequence>
+            <element type="QTY0301" minOccurs="1" />
+            <element type="QTY0302" />
+            <element type="QTY0303" />
+            <element type="QTY0304" />
+            <element type="QTY0305" />
+            <element type="QTY0306" />
+            <element type="QTY0307" />
+            <element type="QTY0308" />
+            <element type="QTY0309" />
+            <element type="QTY0310" />
+            <element type="QTY0311" />
+            <element type="QTY0312" />
+            <element type="QTY0313" />
+            <element type="QTY0314" />
+            <element type="QTY0315" />
+        </sequence>
+    </compositeType>
+    <segmentType name="CRC">
+        <sequence>
+            <element type="CRC01" minOccurs="1" />
+            <element type="CRC02" minOccurs="1" />
+            <element type="CRC03" minOccurs="1" />
+            <element type="CRC04" />
+            <element type="CRC05" />
+            <element type="CRC06" />
+            <element type="CRC07" />
+        </sequence>
+    </segmentType>
+    <segmentType name="CTP">
+        <sequence>
+            <element type="CTP01" />
+            <element type="CTP02" />
+            <element type="CTP03" />
+            <element type="CTP04" />
+            <composite type="CTP05" />
+            <element type="CTP06" />
+            <element type="CTP07" />
+            <element type="CTP08" />
+            <element type="CTP09" />
+            <element type="CTP10" />
+            <element type="CTP11" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DTM">
+        <sequence>
+            <element type="DTM01" minOccurs="1" />
+            <element type="DTM02" />
+            <element type="DTM03" />
+            <element type="DTM04" />
+            <element type="DTM05" />
+            <element type="DTM06" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ENT">
+        <sequence>
+            <element type="ENT01" />
+            <element type="ENT02" />
+            <element type="ENT03" />
+            <element type="ENT04" />
+            <element type="ENT05" />
+            <element type="ENT06" />
+            <element type="ENT07" />
+            <element type="ENT08" />
+            <element type="ENT09" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G28">
+        <sequence>
+            <element type="G2801" />
+            <element type="G2802" />
+            <element type="G2803" />
+            <element type="G2804" />
+            <element type="G2805" />
+            <element type="G2806" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G29">
+        <sequence>
+            <element type="G2901" minOccurs="1" />
+            <element type="G2902" />
+            <element type="G2903" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G32">
+        <sequence>
+            <element type="G3201" minOccurs="1" />
+            <element type="G3202" />
+            <element type="G3203" />
+            <element type="G3204" />
+            <element type="G3205" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G35">
+        <sequence>
+            <element type="G3501" />
+            <element type="G3502" />
+            <element type="G3503" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G37">
+        <sequence>
+            <element type="G3701" minOccurs="1" />
+            <element type="G3702" />
+            <element type="G3703" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="PER">
+        <sequence>
+            <element type="PER01" minOccurs="1" />
+            <element type="PER02" />
+            <element type="PER03" />
+            <element type="PER04" />
+            <element type="PER05" />
+            <element type="PER06" />
+            <element type="PER07" />
+            <element type="PER08" />
+            <element type="PER09" />
+        </sequence>
+    </segmentType>
+    <segmentType name="QTY">
+        <sequence>
+            <element type="QTY01" minOccurs="1" />
+            <element type="QTY02" />
+            <composite type="QTY03" />
+            <element type="QTY04" />
+        </sequence>
+    </segmentType>
+</schema>

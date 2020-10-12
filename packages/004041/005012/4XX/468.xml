@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="DK" minOccurs="1" />
+            <loop code="L0001" minOccurs="1" maxOccurs="7">
+                <sequence>
+                    <segment type="JL" />
+                    <segment type="K1" minOccurs="1" maxOccurs="100" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="DK01" base="string" minLength="2" maxLength="4" />
+    <elementType name="DK02" base="string" maxLength="7" />
+    <elementType name="DK03" base="string" maxLength="11" />
+    <elementType name="DK04" base="decimal" maxLength="4" />
+    <elementType name="DK05" base="string" />
+    <elementType name="DK06" base="string" />
+    <elementType name="DK07" base="date" minLength="8" maxLength="8" />
+    <elementType name="DK08" base="date" minLength="8" maxLength="8" />
+    <elementType name="DK09" base="string" minLength="2" maxLength="2" />
+    <elementType name="DK10" base="string" minLength="2" maxLength="30" />
+    <elementType name="JL01" base="string" minLength="2" maxLength="4" />
+    <elementType name="JL02" base="date" minLength="8" maxLength="8" />
+    <elementType name="JL03" base="time" minLength="4" maxLength="8" />
+    <elementType name="JL04" base="string" maxLength="60" />
+    <elementType name="K101" base="string" maxLength="30" />
+    <elementType name="K102" base="string" maxLength="30" />
+    <segmentType name="DK">
+        <sequence>
+            <element type="DK01" minOccurs="1" />
+            <element type="DK02" minOccurs="1" />
+            <element type="DK03" minOccurs="1" />
+            <element type="DK04" minOccurs="1" />
+            <element type="DK05" />
+            <element type="DK06" />
+            <element type="DK07" />
+            <element type="DK08" />
+            <element type="DK09" />
+            <element type="DK10" />
+        </sequence>
+    </segmentType>
+    <segmentType name="JL">
+        <sequence>
+            <element type="JL01" minOccurs="1" />
+            <element type="JL02" minOccurs="1" />
+            <element type="JL03" minOccurs="1" />
+            <element type="JL04" />
+        </sequence>
+    </segmentType>
+    <segmentType name="K1">
+        <sequence>
+            <element type="K101" minOccurs="1" />
+            <element type="K102" />
+        </sequence>
+    </segmentType>
+</schema>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BGN" minOccurs="1" />
+            <segment type="DTM" minOccurs="1" maxOccurs="10" />
+            <segment type="SMS" minOccurs="1" />
+            <loop code="L0001" minOccurs="1" maxOccurs="2">
+                <sequence>
+                    <segment type="N1" />
+                    <segment type="PI" />
+                    <segment type="CD" maxOccurs="50" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="BGN01" base="string" minLength="2" maxLength="2" />
+    <elementType name="BGN02" base="string" maxLength="50" />
+    <elementType name="BGN03" base="date" minLength="8" maxLength="8" />
+    <elementType name="BGN04" base="time" minLength="4" maxLength="8" />
+    <elementType name="BGN05" base="string" minLength="2" maxLength="2" />
+    <elementType name="BGN06" base="string" maxLength="50" />
+    <elementType name="BGN07" base="string" minLength="2" maxLength="2" />
+    <elementType name="BGN08" base="string" maxLength="2" />
+    <elementType name="BGN09" base="string" minLength="2" maxLength="2" />
+    <elementType name="CD01" base="string" maxLength="3" />
+    <elementType name="CD02" base="string" minLength="4" maxLength="4" />
+    <elementType name="CD03" base="string" maxLength="10" />
+    <elementType name="CD04" base="string" maxLength="10" />
+    <elementType name="CD05" base="string" maxLength="10" />
+    <elementType name="CD06" base="decimal" maxLength="6" />
+    <elementType name="CD07" base="string" />
+    <elementType name="CD08" base="string" minLength="2" maxLength="4" />
+    <elementType name="CD09" base="string" maxLength="7" />
+    <elementType name="CD10" base="string" maxLength="11" />
+    <elementType name="CD11" base="string" minLength="2" maxLength="30" />
+    <elementType name="DTM01" base="string" minLength="3" maxLength="3" />
+    <elementType name="DTM02" base="date" minLength="8" maxLength="8" />
+    <elementType name="DTM03" base="time" minLength="4" maxLength="8" />
+    <elementType name="DTM04" base="string" minLength="2" maxLength="2" />
+    <elementType name="DTM05" base="string" minLength="2" maxLength="3" />
+    <elementType name="DTM06" base="string" maxLength="35" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="PI01" base="string" minLength="2" maxLength="3" />
+    <elementType name="PI02" base="string" maxLength="50" />
+    <elementType name="PI03" base="string" minLength="2" maxLength="2" />
+    <elementType name="PI04" base="string" minLength="3" maxLength="5" />
+    <elementType name="PI05" base="string" maxLength="4" />
+    <elementType name="PI06" base="string" maxLength="10" />
+    <elementType name="PI07" base="string" maxLength="2" />
+    <elementType name="PI08" base="string" maxLength="16" />
+    <elementType name="PI09" base="string" maxLength="4" />
+    <elementType name="PI10" base="string" maxLength="2" />
+    <elementType name="PI11" base="string" maxLength="2" />
+    <elementType name="PI12" base="date" minLength="8" maxLength="8" />
+    <elementType name="PI13" base="date" minLength="8" maxLength="8" />
+    <elementType name="PI14" base="string" />
+    <elementType name="PI15" base="string" />
+    <elementType name="PI16" base="string" minLength="2" maxLength="2" />
+    <elementType name="SMS01" base="string" minLength="2" maxLength="4" />
+    <elementType name="SMS02" base="string" maxLength="5" />
+    <elementType name="SMS03" base="string" maxLength="5" />
+    <elementType name="SMS04" base="string" minLength="3" maxLength="15" />
+    <elementType name="SMS05" base="string" />
+    <elementType name="SMS06" base="string" minLength="2" maxLength="2" />
+    <elementType name="SMS07" base="string" maxLength="30" />
+    <elementType name="SMS08" base="string" maxLength="30" />
+    <elementType name="SMS09" base="string" />
+    <elementType name="SMS10" base="string" minLength="2" maxLength="80" />
+    <elementType name="SMS11" base="string" />
+    <elementType name="SMS12" base="string" minLength="2" maxLength="4" />
+    <elementType name="SMS13" base="string" maxLength="5" />
+    <segmentType name="BGN">
+        <sequence>
+            <element type="BGN01" minOccurs="1" />
+            <element type="BGN02" minOccurs="1" />
+            <element type="BGN03" minOccurs="1" />
+            <element type="BGN04" />
+            <element type="BGN05" />
+            <element type="BGN06" />
+            <element type="BGN07" />
+            <element type="BGN08" />
+            <element type="BGN09" />
+        </sequence>
+    </segmentType>
+    <segmentType name="CD">
+        <sequence>
+            <element type="CD01" minOccurs="1" />
+            <element type="CD02" />
+            <element type="CD03" />
+            <element type="CD04" />
+            <element type="CD05" />
+            <element type="CD06" />
+            <element type="CD07" />
+            <element type="CD08" />
+            <element type="CD09" />
+            <element type="CD10" />
+            <element type="CD11" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DTM">
+        <sequence>
+            <element type="DTM01" minOccurs="1" />
+            <element type="DTM02" />
+            <element type="DTM03" />
+            <element type="DTM04" />
+            <element type="DTM05" />
+            <element type="DTM06" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="PI">
+        <sequence>
+            <element type="PI01" minOccurs="1" />
+            <element type="PI02" minOccurs="1" />
+            <element type="PI03" />
+            <element type="PI04" />
+            <element type="PI05" />
+            <element type="PI06" />
+            <element type="PI07" />
+            <element type="PI08" />
+            <element type="PI09" />
+            <element type="PI10" />
+            <element type="PI11" />
+            <element type="PI12" />
+            <element type="PI13" />
+            <element type="PI14" />
+            <element type="PI15" />
+            <element type="PI16" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SMS">
+        <sequence>
+            <element type="SMS01" minOccurs="1" />
+            <element type="SMS02" minOccurs="1" />
+            <element type="SMS03" />
+            <element type="SMS04" />
+            <element type="SMS05" />
+            <element type="SMS06" />
+            <element type="SMS07" />
+            <element type="SMS08" />
+            <element type="SMS09" />
+            <element type="SMS10" />
+            <element type="SMS11" />
+            <element type="SMS12" />
+            <element type="SMS13" />
+        </sequence>
+    </segmentType>
+</schema>

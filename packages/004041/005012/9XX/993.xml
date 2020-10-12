@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="AK1" minOccurs="1" />
+            <segment type="AK2" />
+            <segment type="SPE" />
+            <segment type="APE" />
+            <loop code="L0001" maxOccurs="2">
+                <sequence>
+                    <segment type="S4A" />
+                    <segment type="SVA" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="AK101" base="string" minLength="2" maxLength="2" />
+    <elementType name="AK102" base="decimal" maxLength="9" />
+    <elementType name="AK103" base="string" maxLength="12" />
+    <elementType name="AK201" base="string" minLength="3" maxLength="3" />
+    <elementType name="AK202" base="string" minLength="4" maxLength="9" />
+    <elementType name="AK203" base="string" maxLength="35" />
+    <elementType name="APE01" base="string" minLength="3" maxLength="3" />
+    <elementType name="APE02" base="string" maxLength="2" />
+    <elementType name="APE03" base="string" maxLength="2" />
+    <elementType name="APE04" base="string" maxLength="64" />
+    <elementType name="APE05" base="string" maxLength="64" />
+    <elementType name="S4A01" base="string" minLength="6" maxLength="6" />
+    <elementType name="S4A02" base="string" minLength="3" maxLength="3" />
+    <elementType name="S4A0301" base="string" minLength="3" maxLength="3" />
+    <elementType name="S4A0302" base="string" minLength="3" maxLength="3" />
+    <elementType name="S4A04" base="string" maxLength="2" />
+    <elementType name="S4A05" base="string" maxLength="64" />
+    <elementType name="S4A06" base="string" maxLength="64" />
+    <elementType name="S4A07" base="string" maxLength="35" />
+    <elementType name="S4A08" base="string" minLength="17" maxLength="25" />
+    <elementType name="S4A09" base="string" maxLength="64" />
+    <elementType name="S4A1001" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1002" base="string" minLength="3" maxLength="3" />
+    <elementType name="S4A1003" base="string" maxLength="30" />
+    <elementType name="S4A1004" base="string" maxLength="4096" />
+    <elementType name="S4A1005" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1006" base="string" minLength="3" maxLength="3" />
+    <elementType name="S4A1007" base="string" maxLength="30" />
+    <elementType name="S4A1008" base="string" maxLength="4096" />
+    <elementType name="S4A1009" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1010" base="string" minLength="3" maxLength="3" />
+    <elementType name="S4A1011" base="string" maxLength="30" />
+    <elementType name="S4A1012" base="string" maxLength="4096" />
+    <elementType name="S4A1101" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1102" base="string" maxLength="64" />
+    <elementType name="S4A1103" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1104" base="string" maxLength="64" />
+    <elementType name="S4A1105" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1106" base="string" maxLength="64" />
+    <elementType name="S4A1107" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1108" base="string" maxLength="64" />
+    <elementType name="S4A1109" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1110" base="string" maxLength="64" />
+    <elementType name="S4A1111" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1112" base="string" maxLength="64" />
+    <elementType name="S4A1113" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1114" base="string" maxLength="64" />
+    <elementType name="S4A1115" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1116" base="string" maxLength="64" />
+    <elementType name="S4A1117" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1118" base="string" maxLength="64" />
+    <elementType name="S4A1119" base="string" minLength="2" maxLength="2" />
+    <elementType name="S4A1120" base="string" maxLength="64" />
+    <elementType name="SPE01" base="string" maxLength="64" />
+    <elementType name="SPE02" base="string" maxLength="64" />
+    <elementType name="SPE03" base="string" minLength="2" maxLength="2" />
+    <elementType name="SPE04" base="string" maxLength="2" />
+    <elementType name="SVA01" base="string" minLength="3" maxLength="3" />
+    <elementType name="SVA02" base="string" maxLength="30" />
+    <elementType name="SVA0301" base="string" minLength="3" maxLength="3" />
+    <elementType name="SVA0302" base="string" maxLength="99999" />
+    <compositeType name="S4A03">
+        <sequence>
+            <element type="S4A0301" minOccurs="1" />
+            <element type="S4A0302" minOccurs="1" />
+        </sequence>
+    </compositeType>
+    <compositeType name="S4A10">
+        <sequence>
+            <element type="S4A1001" minOccurs="1" />
+            <element type="S4A1002" minOccurs="1" />
+            <element type="S4A1003" minOccurs="1" />
+            <element type="S4A1004" minOccurs="1" />
+            <element type="S4A1005" />
+            <element type="S4A1006" />
+            <element type="S4A1007" />
+            <element type="S4A1008" />
+            <element type="S4A1009" />
+            <element type="S4A1010" />
+            <element type="S4A1011" />
+            <element type="S4A1012" />
+        </sequence>
+    </compositeType>
+    <compositeType name="S4A11">
+        <sequence>
+            <element type="S4A1101" minOccurs="1" />
+            <element type="S4A1102" minOccurs="1" />
+            <element type="S4A1103" />
+            <element type="S4A1104" />
+            <element type="S4A1105" />
+            <element type="S4A1106" />
+            <element type="S4A1107" />
+            <element type="S4A1108" />
+            <element type="S4A1109" />
+            <element type="S4A1110" />
+            <element type="S4A1111" />
+            <element type="S4A1112" />
+            <element type="S4A1113" />
+            <element type="S4A1114" />
+            <element type="S4A1115" />
+            <element type="S4A1116" />
+            <element type="S4A1117" />
+            <element type="S4A1118" />
+            <element type="S4A1119" />
+            <element type="S4A1120" />
+        </sequence>
+    </compositeType>
+    <compositeType name="SVA03">
+        <sequence>
+            <element type="SVA0301" minOccurs="1" />
+            <element type="SVA0302" minOccurs="1" />
+        </sequence>
+    </compositeType>
+    <segmentType name="AK1">
+        <sequence>
+            <element type="AK101" minOccurs="1" />
+            <element type="AK102" minOccurs="1" />
+            <element type="AK103" />
+        </sequence>
+    </segmentType>
+    <segmentType name="AK2">
+        <sequence>
+            <element type="AK201" minOccurs="1" />
+            <element type="AK202" minOccurs="1" />
+            <element type="AK203" />
+        </sequence>
+    </segmentType>
+    <segmentType name="APE">
+        <sequence>
+            <element type="APE01" minOccurs="1" />
+            <element type="APE02" minOccurs="1" />
+            <element type="APE03" minOccurs="1" />
+            <element type="APE04" />
+            <element type="APE05" />
+        </sequence>
+    </segmentType>
+    <segmentType name="S4A">
+        <sequence>
+            <element type="S4A01" minOccurs="1" />
+            <element type="S4A02" minOccurs="1" />
+            <composite type="S4A03" minOccurs="1" />
+            <element type="S4A04" minOccurs="1" />
+            <element type="S4A05" />
+            <element type="S4A06" />
+            <element type="S4A07" />
+            <element type="S4A08" />
+            <element type="S4A09" />
+            <composite type="S4A10" />
+            <composite type="S4A11" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SPE">
+        <sequence>
+            <element type="SPE01" minOccurs="1" />
+            <element type="SPE02" minOccurs="1" />
+            <element type="SPE03" minOccurs="1" />
+            <element type="SPE04" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SVA">
+        <sequence>
+            <element type="SVA01" minOccurs="1" />
+            <element type="SVA02" minOccurs="1" />
+            <composite type="SVA03" minOccurs="1" />
+        </sequence>
+    </segmentType>
+</schema>

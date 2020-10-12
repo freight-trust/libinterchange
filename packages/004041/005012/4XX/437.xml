@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BJF" minOccurs="1" />
+            <segment type="DTM" minOccurs="1" maxOccurs="10" />
+            <segment type="JCT" />
+            <loop code="L0001" maxOccurs="2">
+                <sequence>
+                    <segment type="JS" />
+                    <segment type="DTM" maxOccurs="2" />
+                    <segment type="SID" maxOccurs="20" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="BJF01" base="string" minLength="2" maxLength="2" />
+    <elementType name="BJF02" base="string" minLength="2" maxLength="2" />
+    <elementType name="BJF03" base="string" maxLength="5" />
+    <elementType name="BJF04" base="string" minLength="6" maxLength="9" />
+    <elementType name="BJF05" base="string" minLength="2" maxLength="30" />
+    <elementType name="BJF06" base="string" minLength="2" maxLength="2" />
+    <elementType name="BJF07" base="string" minLength="2" maxLength="3" />
+    <elementType name="DTM01" base="string" minLength="3" maxLength="3" />
+    <elementType name="DTM02" base="date" minLength="8" maxLength="8" />
+    <elementType name="DTM03" base="time" minLength="4" maxLength="8" />
+    <elementType name="DTM04" base="string" minLength="2" maxLength="2" />
+    <elementType name="DTM05" base="string" minLength="2" maxLength="3" />
+    <elementType name="DTM06" base="string" maxLength="35" />
+    <elementType name="JCT01" base="string" minLength="2" maxLength="4" />
+    <elementType name="JCT02" base="string" minLength="2" maxLength="4" />
+    <elementType name="JCT03" base="string" maxLength="5" />
+    <elementType name="JCT04" base="string" maxLength="5" />
+    <elementType name="JCT05" base="string" minLength="2" maxLength="4" />
+    <elementType name="JCT06" base="string" minLength="2" maxLength="4" />
+    <elementType name="JCT07" base="string" />
+    <elementType name="JCT08" base="string" />
+    <elementType name="JCT09" base="string" />
+    <elementType name="JS01" base="string" minLength="2" maxLength="4" />
+    <elementType name="JS02" base="string" />
+    <elementType name="JS03" base="string" minLength="2" maxLength="4" />
+    <elementType name="JS04" base="string" />
+    <elementType name="SID01" base="string" />
+    <elementType name="SID02" base="string" maxLength="30" />
+    <elementType name="SID03" base="string" />
+    <elementType name="SID04" base="date" minLength="8" maxLength="8" />
+    <elementType name="SID05" base="string" maxLength="2" />
+    <elementType name="SID06" base="string" />
+    <segmentType name="BJF">
+        <sequence>
+            <element type="BJF01" minOccurs="1" />
+            <element type="BJF02" minOccurs="1" />
+            <element type="BJF03" minOccurs="1" />
+            <element type="BJF04" />
+            <element type="BJF05" />
+            <element type="BJF06" />
+            <element type="BJF07" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DTM">
+        <sequence>
+            <element type="DTM01" minOccurs="1" />
+            <element type="DTM02" />
+            <element type="DTM03" />
+            <element type="DTM04" />
+            <element type="DTM05" />
+            <element type="DTM06" />
+        </sequence>
+    </segmentType>
+    <segmentType name="JCT">
+        <sequence>
+            <element type="JCT01" minOccurs="1" />
+            <element type="JCT02" minOccurs="1" />
+            <element type="JCT03" minOccurs="1" />
+            <element type="JCT04" minOccurs="1" />
+            <element type="JCT05" minOccurs="1" />
+            <element type="JCT06" minOccurs="1" />
+            <element type="JCT07" minOccurs="1" />
+            <element type="JCT08" minOccurs="1" />
+            <element type="JCT09" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="JS">
+        <sequence>
+            <element type="JS01" minOccurs="1" />
+            <element type="JS02" minOccurs="1" />
+            <element type="JS03" minOccurs="1" />
+            <element type="JS04" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SID">
+        <sequence>
+            <element type="SID01" minOccurs="1" />
+            <element type="SID02" minOccurs="1" />
+            <element type="SID03" />
+            <element type="SID04" />
+            <element type="SID05" />
+            <element type="SID06" />
+        </sequence>
+    </segmentType>
+</schema>

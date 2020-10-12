@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="F01" minOccurs="1" />
+            <segment type="F6X" minOccurs="1" />
+            <segment type="F02" />
+            <segment type="F12" />
+            <segment type="F07" minOccurs="1" maxOccurs="99" />
+        </sequence>
+    </transaction>
+    <elementType name="F0101" base="date" minLength="8" maxLength="8" />
+    <elementType name="F0102" base="string" maxLength="80" />
+    <elementType name="F0103" base="numeric" scale="2" maxLength="15" />
+    <elementType name="F0104" base="string" minLength="2" maxLength="4" />
+    <elementType name="F0105" base="string" />
+    <elementType name="F0106" base="string" minLength="3" maxLength="3" />
+    <elementType name="F0107" base="decimal" minLength="4" maxLength="10" />
+    <elementType name="F0108" base="string" maxLength="2" />
+    <elementType name="F0109" base="string" minLength="2" maxLength="80" />
+    <elementType name="F0201" base="date" minLength="8" maxLength="8" />
+    <elementType name="F0202" base="string" maxLength="4" />
+    <elementType name="F0203" base="string" maxLength="15" />
+    <elementType name="F0204" base="string" minLength="2" maxLength="3" />
+    <elementType name="F0205" base="string" maxLength="80" />
+    <elementType name="F0206" base="string" minLength="2" maxLength="3" />
+    <elementType name="F0207" base="string" maxLength="80" />
+    <elementType name="F0208" base="string" maxLength="8" />
+    <elementType name="F0209" base="string" minLength="2" maxLength="28" />
+    <elementType name="F0701" base="decimal" maxLength="6" />
+    <elementType name="F0702" base="decimal" maxLength="15" />
+    <elementType name="F0703" base="string" maxLength="48" />
+    <elementType name="F0704" base="string" minLength="3" maxLength="16" />
+    <elementType name="F0705" base="numeric" scale="2" maxLength="15" />
+    <elementType name="F0706" base="string" minLength="2" maxLength="2" />
+    <elementType name="F0707" base="string" minLength="2" maxLength="2" />
+    <elementType name="F0708" base="string" />
+    <elementType name="F0709" base="string" minLength="5" maxLength="6" />
+    <elementType name="F0710" base="string" maxLength="45" />
+    <elementType name="F0711" base="numeric" scale="1" maxLength="3" />
+    <elementType name="F0712" base="numeric" scale="1" maxLength="3" />
+    <elementType name="F0713" base="numeric" scale="2" minLength="3" maxLength="6" />
+    <elementType name="F0714" base="numeric" scale="2" minLength="2" maxLength="15" />
+    <elementType name="F0715" base="numeric" scale="2" minLength="3" maxLength="15" />
+    <elementType name="F0716" base="string" maxLength="4" />
+    <elementType name="F0717" base="string" maxLength="2" />
+    <elementType name="F0718" base="string" minLength="2" maxLength="2" />
+    <elementType name="F0719" base="string" minLength="2" maxLength="2" />
+    <elementType name="F0720" base="string" />
+    <elementType name="F0721" base="string" minLength="3" maxLength="3" />
+    <elementType name="F0722" base="string" minLength="2" maxLength="2" />
+    <elementType name="F1201" base="string" maxLength="80" />
+    <elementType name="F1202" base="string" maxLength="80" />
+    <elementType name="F1203" base="date" minLength="8" maxLength="8" />
+    <elementType name="F1204" base="string" maxLength="22" />
+    <elementType name="F1205" base="date" minLength="8" maxLength="8" />
+    <elementType name="F1206" base="numeric" scale="2" minLength="3" maxLength="6" />
+    <elementType name="F1207" base="numeric" scale="2" minLength="3" maxLength="6" />
+    <elementType name="F1208" base="string" />
+    <elementType name="F6X01" base="string" maxLength="30" />
+    <elementType name="F6X02" base="string" minLength="2" maxLength="2" />
+    <elementType name="F6X03" base="string" minLength="2" maxLength="9" />
+    <elementType name="F6X04" base="string" maxLength="2" />
+    <elementType name="F6X05" base="string" minLength="2" maxLength="80" />
+    <elementType name="F6X06" base="string" maxLength="22" />
+    <elementType name="F6X07" base="date" minLength="8" maxLength="8" />
+    <elementType name="F6X08" base="date" minLength="8" maxLength="8" />
+    <segmentType name="F01">
+        <sequence>
+            <element type="F0101" minOccurs="1" />
+            <element type="F0102" minOccurs="1" />
+            <element type="F0103" minOccurs="1" />
+            <element type="F0104" minOccurs="1" />
+            <element type="F0105" minOccurs="1" />
+            <element type="F0106" />
+            <element type="F0107" />
+            <element type="F0108" />
+            <element type="F0109" />
+        </sequence>
+    </segmentType>
+    <segmentType name="F02">
+        <sequence>
+            <element type="F0201" />
+            <element type="F0202" />
+            <element type="F0203" />
+            <element type="F0204" />
+            <element type="F0205" />
+            <element type="F0206" />
+            <element type="F0207" />
+            <element type="F0208" />
+            <element type="F0209" />
+        </sequence>
+    </segmentType>
+    <segmentType name="F07">
+        <sequence>
+            <element type="F0701" minOccurs="1" />
+            <element type="F0702" />
+            <element type="F0703" />
+            <element type="F0704" />
+            <element type="F0705" />
+            <element type="F0706" minOccurs="1" />
+            <element type="F0707" minOccurs="1" />
+            <element type="F0708" minOccurs="1" />
+            <element type="F0709" />
+            <element type="F0710" />
+            <element type="F0711" />
+            <element type="F0712" />
+            <element type="F0713" />
+            <element type="F0714" />
+            <element type="F0715" minOccurs="1" />
+            <element type="F0716" />
+            <element type="F0717" />
+            <element type="F0718" />
+            <element type="F0719" />
+            <element type="F0720" />
+            <element type="F0721" />
+            <element type="F0722" />
+        </sequence>
+    </segmentType>
+    <segmentType name="F12">
+        <sequence>
+            <element type="F1201" minOccurs="1" />
+            <element type="F1202" minOccurs="1" />
+            <element type="F1203" minOccurs="1" />
+            <element type="F1204" minOccurs="1" />
+            <element type="F1205" minOccurs="1" />
+            <element type="F1206" minOccurs="1" />
+            <element type="F1207" minOccurs="1" />
+            <element type="F1208" />
+        </sequence>
+    </segmentType>
+    <segmentType name="F6X">
+        <sequence>
+            <element type="F6X01" minOccurs="1" />
+            <element type="F6X02" minOccurs="1" />
+            <element type="F6X03" minOccurs="1" />
+            <element type="F6X04" minOccurs="1" />
+            <element type="F6X05" minOccurs="1" />
+            <element type="F6X06" minOccurs="1" />
+            <element type="F6X07" />
+            <element type="F6X08" />
+        </sequence>
+    </segmentType>
+</schema>

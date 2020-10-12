@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BT1" minOccurs="1" maxOccurs="10" />
+        </sequence>
+    </transaction>
+    <elementType name="BT101" base="string" minLength="3" maxLength="3" />
+    <elementType name="BT102" base="decimal" maxLength="7" />
+    <elementType name="BT103" base="string" />
+    <elementType name="BT104" base="string" minLength="4" maxLength="5" />
+    <elementType name="BT105" base="decimal" maxLength="15" />
+    <elementType name="BT106" base="string" />
+    <elementType name="BT107" base="string" minLength="4" maxLength="5" />
+    <elementType name="BT108" base="decimal" maxLength="15" />
+    <elementType name="BT109" base="string" />
+    <elementType name="BT110" base="string" minLength="4" maxLength="5" />
+    <elementType name="BT111" base="decimal" maxLength="15" />
+    <segmentType name="BT1">
+        <sequence>
+            <element type="BT101" minOccurs="1" />
+            <element type="BT102" minOccurs="1" />
+            <element type="BT103" minOccurs="1" />
+            <element type="BT104" />
+            <element type="BT105" minOccurs="1" />
+            <element type="BT106" />
+            <element type="BT107" />
+            <element type="BT108" />
+            <element type="BT109" />
+            <element type="BT110" />
+            <element type="BT111" />
+        </sequence>
+    </segmentType>
+</schema>

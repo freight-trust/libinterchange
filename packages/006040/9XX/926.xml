@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <loop code="L0001" minOccurs="1" maxOccurs="500">
+                <sequence>
+                    <segment type="F11" />
+                    <segment type="F14" maxOccurs="99" />
+                    <segment type="TRN" />
+                    <segment type="F13" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="F1101" base="date" minLength="8" maxLength="8" />
+    <elementType name="F1102" base="string" maxLength="80" />
+    <elementType name="F1103" base="string" maxLength="80" />
+    <elementType name="F1104" base="numeric" scale="2" maxLength="15" />
+    <elementType name="F1105" base="numeric" scale="2" maxLength="15" />
+    <elementType name="F1106" base="string" minLength="2" maxLength="2" />
+    <elementType name="F1107" base="date" minLength="8" maxLength="8" />
+    <elementType name="F1108" base="string" minLength="3" maxLength="3" />
+    <elementType name="F1109" base="string" minLength="3" maxLength="3" />
+    <elementType name="F1110" base="string" minLength="2" maxLength="3" />
+    <elementType name="F1301" base="string" maxLength="16" />
+    <elementType name="F1302" base="date" minLength="8" maxLength="8" />
+    <elementType name="F1303" base="numeric" scale="2" maxLength="15" />
+    <elementType name="F1304" base="string" minLength="16" maxLength="16" />
+    <elementType name="F1305" base="date" minLength="8" maxLength="8" />
+    <elementType name="F1306" base="string" minLength="3" maxLength="3" />
+    <elementType name="F1401" base="decimal" maxLength="6" />
+    <elementType name="F1402" base="string" minLength="3" maxLength="3" />
+    <elementType name="TRN01" base="string" maxLength="2" />
+    <elementType name="TRN02" base="string" maxLength="80" />
+    <elementType name="TRN03" base="string" minLength="10" maxLength="10" />
+    <elementType name="TRN04" base="string" maxLength="80" />
+    <segmentType name="F11">
+        <sequence>
+            <element type="F1101" minOccurs="1" />
+            <element type="F1102" minOccurs="1" />
+            <element type="F1103" />
+            <element type="F1104" />
+            <element type="F1105" />
+            <element type="F1106" minOccurs="1" />
+            <element type="F1107" minOccurs="1" />
+            <element type="F1108" />
+            <element type="F1109" />
+            <element type="F1110" />
+        </sequence>
+    </segmentType>
+    <segmentType name="F13">
+        <sequence>
+            <element type="F1301" minOccurs="1" />
+            <element type="F1302" minOccurs="1" />
+            <element type="F1303" minOccurs="1" />
+            <element type="F1304" />
+            <element type="F1305" />
+            <element type="F1306" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="F14">
+        <sequence>
+            <element type="F1401" minOccurs="1" />
+            <element type="F1402" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="TRN">
+        <sequence>
+            <element type="TRN01" minOccurs="1" />
+            <element type="TRN02" minOccurs="1" />
+            <element type="TRN03" />
+            <element type="TRN04" />
+        </sequence>
+    </segmentType>
+</schema>

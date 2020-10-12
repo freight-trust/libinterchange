@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <loop code="L0001" minOccurs="1" maxOccurs="150">
+                <sequence>
+                    <segment type="E6" />
+                    <segment type="W3" />
+                    <segment type="W5" maxOccurs="4" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="E601" base="string" maxLength="4" />
+    <elementType name="E602" base="string" maxLength="15" />
+    <elementType name="E603" base="string" minLength="2" maxLength="30" />
+    <elementType name="E604" base="string" minLength="6" maxLength="9" />
+    <elementType name="E605" base="string" minLength="2" maxLength="4" />
+    <elementType name="E606" base="string" minLength="2" maxLength="4" />
+    <elementType name="E607" base="string" maxLength="30" />
+    <elementType name="E608" base="string" maxLength="4" />
+    <elementType name="E609" base="string" maxLength="2" />
+    <elementType name="W301" base="decimal" maxLength="6" />
+    <elementType name="W302" base="date" minLength="8" maxLength="8" />
+    <elementType name="W303" base="string" minLength="2" maxLength="12" />
+    <elementType name="W304" base="string" minLength="2" maxLength="30" />
+    <elementType name="W305" base="string" minLength="2" maxLength="2" />
+    <elementType name="W306" base="string" />
+    <elementType name="W501" base="string" minLength="2" maxLength="4" />
+    <elementType name="W502" base="string" minLength="2" maxLength="30" />
+    <elementType name="W503" base="string" minLength="2" maxLength="4" />
+    <elementType name="W504" base="string" minLength="2" maxLength="30" />
+    <elementType name="W505" base="string" minLength="2" maxLength="4" />
+    <elementType name="W506" base="string" minLength="2" maxLength="30" />
+    <segmentType name="E6">
+        <sequence>
+            <element type="E601" minOccurs="1" />
+            <element type="E602" minOccurs="1" />
+            <element type="E603" minOccurs="1" />
+            <element type="E604" />
+            <element type="E605" minOccurs="1" />
+            <element type="E606" />
+            <element type="E607" />
+            <element type="E608" />
+            <element type="E609" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="W3">
+        <sequence>
+            <element type="W301" />
+            <element type="W302" />
+            <element type="W303" />
+            <element type="W304" />
+            <element type="W305" />
+            <element type="W306" />
+        </sequence>
+    </segmentType>
+    <segmentType name="W5">
+        <sequence>
+            <element type="W501" minOccurs="1" />
+            <element type="W502" />
+            <element type="W503" />
+            <element type="W504" />
+            <element type="W505" />
+            <element type="W506" />
+        </sequence>
+    </segmentType>
+</schema>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BW" minOccurs="1" />
+            <segment type="G4" />
+            <segment type="G5" minOccurs="1" maxOccurs="255" />
+        </sequence>
+    </transaction>
+    <elementType name="BW01" base="string" minLength="2" maxLength="4" />
+    <elementType name="BW02" base="string" maxLength="30" />
+    <elementType name="BW03" base="string" />
+    <elementType name="G401" base="string" minLength="2" maxLength="30" />
+    <elementType name="G402" base="string" minLength="2" maxLength="2" />
+    <elementType name="G403" base="string" maxLength="60" />
+    <elementType name="G404" base="date" minLength="8" maxLength="8" />
+    <elementType name="G405" base="time" minLength="4" maxLength="8" />
+    <elementType name="G406" base="string" />
+    <elementType name="G501" base="string" maxLength="4" />
+    <elementType name="G502" base="string" maxLength="15" />
+    <elementType name="G503" base="decimal" maxLength="6" />
+    <elementType name="G504" base="date" minLength="8" maxLength="8" />
+    <elementType name="G505" base="decimal" maxLength="10" />
+    <elementType name="G506" base="string" maxLength="2" />
+    <elementType name="G507" base="decimal" minLength="3" maxLength="8" />
+    <elementType name="G508" base="string" />
+    <elementType name="G509" base="decimal" minLength="2" maxLength="6" />
+    <elementType name="G510" base="string" />
+    <elementType name="G511" base="decimal" maxLength="9" />
+    <elementType name="G512" base="string" minLength="2" maxLength="2" />
+    <elementType name="G513" base="string" maxLength="10" />
+    <elementType name="G514" base="string" maxLength="30" />
+    <elementType name="G515" base="string" minLength="2" maxLength="3" />
+    <elementType name="G516" base="string" maxLength="50" />
+    <elementType name="G517" base="date" minLength="8" maxLength="8" />
+    <segmentType name="BW">
+        <sequence>
+            <element type="BW01" minOccurs="1" />
+            <element type="BW02" />
+            <element type="BW03" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G4">
+        <sequence>
+            <element type="G401" minOccurs="1" />
+            <element type="G402" minOccurs="1" />
+            <element type="G403" />
+            <element type="G404" minOccurs="1" />
+            <element type="G405" />
+            <element type="G406" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G5">
+        <sequence>
+            <element type="G501" minOccurs="1" />
+            <element type="G502" minOccurs="1" />
+            <element type="G503" />
+            <element type="G504" />
+            <element type="G505" minOccurs="1" />
+            <element type="G506" minOccurs="1" />
+            <element type="G507" />
+            <element type="G508" />
+            <element type="G509" />
+            <element type="G510" />
+            <element type="G511" />
+            <element type="G512" />
+            <element type="G513" />
+            <element type="G514" />
+            <element type="G515" />
+            <element type="G516" />
+            <element type="G517" />
+        </sequence>
+    </segmentType>
+</schema>

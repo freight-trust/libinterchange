@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="LFI" minOccurs="1" />
+            <segment type="N7" minOccurs="1" />
+            <segment type="K3" maxOccurs="3" />
+        </sequence>
+    </transaction>
+    <elementType name="K301" base="string" maxLength="80" />
+    <elementType name="K302" base="string" maxLength="2" />
+    <elementType name="K30301" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30302" base="decimal" maxLength="15" />
+    <elementType name="K30303" base="decimal" maxLength="10" />
+    <elementType name="K30304" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30305" base="decimal" maxLength="15" />
+    <elementType name="K30306" base="decimal" maxLength="10" />
+    <elementType name="K30307" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30308" base="decimal" maxLength="15" />
+    <elementType name="K30309" base="decimal" maxLength="10" />
+    <elementType name="K30310" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30311" base="decimal" maxLength="15" />
+    <elementType name="K30312" base="decimal" maxLength="10" />
+    <elementType name="K30313" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30314" base="decimal" maxLength="15" />
+    <elementType name="K30315" base="decimal" maxLength="10" />
+    <elementType name="LFI01" base="string" minLength="6" maxLength="9" />
+    <elementType name="LFI02" base="date" minLength="8" maxLength="8" />
+    <elementType name="LFI03" base="time" minLength="4" maxLength="8" />
+    <elementType name="LFI04" base="string" maxLength="2" />
+    <elementType name="LFI05" base="string" maxLength="30" />
+    <elementType name="LFI06" base="string" maxLength="30" />
+    <elementType name="LFI07" base="string" maxLength="30" />
+    <elementType name="LFI08" base="string" maxLength="10" />
+    <elementType name="N701" base="string" maxLength="4" />
+    <elementType name="N702" base="string" maxLength="15" />
+    <elementType name="N703" base="decimal" maxLength="10" />
+    <elementType name="N704" base="string" maxLength="2" />
+    <elementType name="N705" base="decimal" minLength="3" maxLength="8" />
+    <elementType name="N706" base="decimal" minLength="2" maxLength="6" />
+    <elementType name="N707" base="decimal" maxLength="6" />
+    <elementType name="N708" base="decimal" maxLength="8" />
+    <elementType name="N709" base="string" />
+    <elementType name="N710" base="string" />
+    <elementType name="N711" base="string" minLength="2" maxLength="2" />
+    <elementType name="N712" base="string" minLength="2" maxLength="4" />
+    <elementType name="N713" base="string" minLength="3" maxLength="6" />
+    <elementType name="N714" base="string" maxLength="3" />
+    <elementType name="N715" base="decimal" minLength="4" maxLength="5" />
+    <elementType name="N716" base="string" />
+    <elementType name="N717" base="string" />
+    <elementType name="N718" base="decimal" />
+    <elementType name="N719" base="string" minLength="2" maxLength="2" />
+    <elementType name="N720" base="decimal" maxLength="8" />
+    <elementType name="N721" base="decimal" maxLength="8" />
+    <elementType name="N722" base="string" minLength="4" maxLength="4" />
+    <elementType name="N723" base="string" minLength="2" maxLength="4" />
+    <elementType name="N724" base="string" maxLength="4" />
+    <compositeType name="K303">
+        <sequence>
+            <element type="K30301" minOccurs="1" />
+            <element type="K30302" />
+            <element type="K30303" />
+            <element type="K30304" />
+            <element type="K30305" />
+            <element type="K30306" />
+            <element type="K30307" />
+            <element type="K30308" />
+            <element type="K30309" />
+            <element type="K30310" />
+            <element type="K30311" />
+            <element type="K30312" />
+            <element type="K30313" />
+            <element type="K30314" />
+            <element type="K30315" />
+        </sequence>
+    </compositeType>
+    <segmentType name="K3">
+        <sequence>
+            <element type="K301" minOccurs="1" />
+            <element type="K302" />
+            <composite type="K303" />
+        </sequence>
+    </segmentType>
+    <segmentType name="LFI">
+        <sequence>
+            <element type="LFI01" minOccurs="1" />
+            <element type="LFI02" minOccurs="1" />
+            <element type="LFI03" minOccurs="1" />
+            <element type="LFI04" minOccurs="1" />
+            <element type="LFI05" minOccurs="1" />
+            <element type="LFI06" />
+            <element type="LFI07" />
+            <element type="LFI08" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N7">
+        <sequence>
+            <element type="N701" />
+            <element type="N702" minOccurs="1" />
+            <element type="N703" />
+            <element type="N704" />
+            <element type="N705" />
+            <element type="N706" />
+            <element type="N707" />
+            <element type="N708" />
+            <element type="N709" />
+            <element type="N710" />
+            <element type="N711" />
+            <element type="N712" />
+            <element type="N713" />
+            <element type="N714" />
+            <element type="N715" />
+            <element type="N716" />
+            <element type="N717" />
+            <element type="N718" />
+            <element type="N719" />
+            <element type="N720" />
+            <element type="N721" />
+            <element type="N722" />
+            <element type="N723" />
+            <element type="N724" />
+        </sequence>
+    </segmentType>
+</schema>

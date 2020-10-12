@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BIX" minOccurs="1" />
+            <segment type="TI" />
+            <loop code="L0001" minOccurs="1" maxOccurs="36">
+                <sequence>
+                    <segment type="VC" />
+                    <segment type="ID" maxOccurs="99" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="BIX01" base="string" minLength="2" maxLength="2" />
+    <elementType name="BIX02" base="string" minLength="2" maxLength="4" />
+    <elementType name="BIX03" base="date" minLength="8" maxLength="8" />
+    <elementType name="BIX04" base="string" maxLength="2" />
+    <elementType name="BIX05" base="string" maxLength="9" />
+    <elementType name="BIX06" base="string" minLength="2" maxLength="30" />
+    <elementType name="BIX07" base="string" minLength="2" maxLength="2" />
+    <elementType name="BIX08" base="string" maxLength="6" />
+    <elementType name="BIX09" base="string" />
+    <elementType name="BIX10" base="string" maxLength="2" />
+    <elementType name="BIX11" base="string" minLength="2" maxLength="80" />
+    <elementType name="ID01" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID02" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID03" base="string" />
+    <elementType name="TI01" base="string" minLength="2" maxLength="4" />
+    <elementType name="TI02" base="string" minLength="2" maxLength="4" />
+    <elementType name="TI03" base="string" maxLength="4" />
+    <elementType name="TI04" base="string" maxLength="15" />
+    <elementType name="TI05" base="date" minLength="8" maxLength="8" />
+    <elementType name="TI06" base="string" minLength="2" maxLength="2" />
+    <elementType name="TI07" base="string" maxLength="4" />
+    <elementType name="VC01" base="string" maxLength="30" />
+    <elementType name="VC02" base="string" minLength="2" maxLength="2" />
+    <elementType name="VC03" base="string" />
+    <elementType name="VC04" base="string" minLength="2" maxLength="9" />
+    <elementType name="VC05" base="string" maxLength="13" />
+    <elementType name="VC06" base="string" maxLength="6" />
+    <elementType name="VC07" base="string" minLength="2" maxLength="2" />
+    <elementType name="VC08" base="string" />
+    <elementType name="VC09" base="string" />
+    <elementType name="VC10" base="string" minLength="6" maxLength="10" />
+    <elementType name="VC11" base="string" maxLength="12" />
+    <elementType name="VC12" base="string" />
+    <elementType name="VC13" base="string" maxLength="30" />
+    <segmentType name="BIX">
+        <sequence>
+            <element type="BIX01" minOccurs="1" />
+            <element type="BIX02" minOccurs="1" />
+            <element type="BIX03" minOccurs="1" />
+            <element type="BIX04" minOccurs="1" />
+            <element type="BIX05" />
+            <element type="BIX06" />
+            <element type="BIX07" />
+            <element type="BIX08" />
+            <element type="BIX09" />
+            <element type="BIX10" />
+            <element type="BIX11" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ID">
+        <sequence>
+            <element type="ID01" minOccurs="1" />
+            <element type="ID02" minOccurs="1" />
+            <element type="ID03" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="TI">
+        <sequence>
+            <element type="TI01" />
+            <element type="TI02" />
+            <element type="TI03" />
+            <element type="TI04" />
+            <element type="TI05" />
+            <element type="TI06" />
+            <element type="TI07" />
+        </sequence>
+    </segmentType>
+    <segmentType name="VC">
+        <sequence>
+            <element type="VC01" minOccurs="1" />
+            <element type="VC02" />
+            <element type="VC03" />
+            <element type="VC04" />
+            <element type="VC05" />
+            <element type="VC06" />
+            <element type="VC07" />
+            <element type="VC08" />
+            <element type="VC09" />
+            <element type="VC10" />
+            <element type="VC11" />
+            <element type="VC12" />
+            <element type="VC13" />
+        </sequence>
+    </segmentType>
+</schema>

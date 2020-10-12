@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BVB" minOccurs="1" />
+            <segment type="G62" minOccurs="1" />
+            <segment type="VC" maxOccurs="99" />
+            <segment type="SFC" maxOccurs="20" />
+        </sequence>
+    </transaction>
+    <elementType name="BVB01" base="string" minLength="2" maxLength="4" />
+    <elementType name="BVB02" base="string" maxLength="2" />
+    <elementType name="BVB03" base="string" minLength="2" maxLength="80" />
+    <elementType name="BVB04" base="string" />
+    <elementType name="BVB05" base="string" minLength="2" maxLength="2" />
+    <elementType name="BVB06" base="decimal" maxLength="15" />
+    <elementType name="BVB07" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6201" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6202" base="date" minLength="8" maxLength="8" />
+    <elementType name="G6203" base="string" maxLength="2" />
+    <elementType name="G6204" base="time" minLength="4" maxLength="8" />
+    <elementType name="G6205" base="string" minLength="2" maxLength="2" />
+    <elementType name="SFC01" base="string" />
+    <elementType name="SFC02" base="string" maxLength="2" />
+    <elementType name="VC01" base="string" maxLength="30" />
+    <elementType name="VC02" base="string" minLength="2" maxLength="2" />
+    <elementType name="VC03" base="string" />
+    <elementType name="VC04" base="string" minLength="2" maxLength="9" />
+    <elementType name="VC05" base="string" maxLength="13" />
+    <elementType name="VC06" base="string" maxLength="6" />
+    <elementType name="VC07" base="string" minLength="2" maxLength="2" />
+    <elementType name="VC08" base="string" />
+    <elementType name="VC09" base="string" />
+    <elementType name="VC10" base="string" minLength="6" maxLength="10" />
+    <elementType name="VC11" base="string" maxLength="12" />
+    <elementType name="VC12" base="string" />
+    <elementType name="VC13" base="string" maxLength="30" />
+    <segmentType name="BVB">
+        <sequence>
+            <element type="BVB01" minOccurs="1" />
+            <element type="BVB02" minOccurs="1" />
+            <element type="BVB03" minOccurs="1" />
+            <element type="BVB04" />
+            <element type="BVB05" />
+            <element type="BVB06" />
+            <element type="BVB07" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G62">
+        <sequence>
+            <element type="G6201" />
+            <element type="G6202" />
+            <element type="G6203" />
+            <element type="G6204" />
+            <element type="G6205" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SFC">
+        <sequence>
+            <element type="SFC01" minOccurs="1" />
+            <element type="SFC02" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="VC">
+        <sequence>
+            <element type="VC01" minOccurs="1" />
+            <element type="VC02" />
+            <element type="VC03" />
+            <element type="VC04" />
+            <element type="VC05" />
+            <element type="VC06" />
+            <element type="VC07" />
+            <element type="VC08" />
+            <element type="VC09" />
+            <element type="VC10" />
+            <element type="VC11" />
+            <element type="VC12" />
+            <element type="VC13" />
+        </sequence>
+    </segmentType>
+</schema>

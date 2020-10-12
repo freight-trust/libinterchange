@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="ORI" minOccurs="1" />
+            <segment type="REF" maxOccurs="99999" />
+            <segment type="OOI" minOccurs="1" maxOccurs="99999" />
+            <segment type="BDS" minOccurs="1" />
+        </sequence>
+    </transaction>
+    <elementType name="BDS01" base="string" minLength="3" maxLength="3" />
+    <elementType name="BDS02" base="decimal" maxLength="15" />
+    <elementType name="BDS03" base="binary" maxLength="2147483647" />
+    <elementType name="OOI01" base="string" maxLength="2" />
+    <elementType name="OOI02" base="string" maxLength="3" />
+    <elementType name="OOI03" base="string" maxLength="256" />
+    <elementType name="OOI04" base="string" maxLength="3" />
+    <elementType name="ORI01" base="string" maxLength="36" />
+    <elementType name="REF01" base="string" minLength="2" maxLength="3" />
+    <elementType name="REF02" base="string" maxLength="80" />
+    <elementType name="REF03" base="string" maxLength="80" />
+    <elementType name="REF0401" base="string" minLength="2" maxLength="3" />
+    <elementType name="REF0402" base="string" maxLength="80" />
+    <elementType name="REF0403" base="string" minLength="2" maxLength="3" />
+    <elementType name="REF0404" base="string" maxLength="80" />
+    <elementType name="REF0405" base="string" minLength="2" maxLength="3" />
+    <elementType name="REF0406" base="string" maxLength="80" />
+    <compositeType name="REF04">
+        <sequence>
+            <element type="REF0401" minOccurs="1" />
+            <element type="REF0402" minOccurs="1" />
+            <element type="REF0403" />
+            <element type="REF0404" />
+            <element type="REF0405" />
+            <element type="REF0406" />
+        </sequence>
+    </compositeType>
+    <segmentType name="BDS">
+        <sequence>
+            <element type="BDS01" minOccurs="1" />
+            <element type="BDS02" minOccurs="1" />
+            <element type="BDS03" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="OOI">
+        <sequence>
+            <element type="OOI01" minOccurs="1" />
+            <element type="OOI02" minOccurs="1" />
+            <element type="OOI03" minOccurs="1" />
+            <element type="OOI04" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ORI">
+        <sequence>
+            <element type="ORI01" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="REF">
+        <sequence>
+            <element type="REF01" minOccurs="1" />
+            <element type="REF02" />
+            <element type="REF03" />
+            <composite type="REF04" />
+        </sequence>
+    </segmentType>
+</schema>

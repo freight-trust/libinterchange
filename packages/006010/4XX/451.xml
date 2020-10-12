@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="ER" maxOccurs="2" />
+            <loop code="L0001" minOccurs="1" maxOccurs="999">
+                <sequence>
+                    <segment type="ED" />
+                    <segment type="ER" maxOccurs="2" />
+                    <segment type="NA" />
+                    <segment type="IC" maxOccurs="3" />
+                    <segment type="CLR" maxOccurs="10" />
+                    <segment type="ES" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="CLR01" base="string" maxLength="2" />
+    <elementType name="CLR02" base="string" minLength="2" maxLength="80" />
+    <elementType name="CLR03" base="string" maxLength="30" />
+    <elementType name="CLR04" base="string" maxLength="80" />
+    <elementType name="ED01" base="string" maxLength="4" />
+    <elementType name="ED02" base="string" maxLength="15" />
+    <elementType name="ED03" base="string" />
+    <elementType name="ED04" base="string" maxLength="30" />
+    <elementType name="ED05" base="string" maxLength="50" />
+    <elementType name="ED06" base="decimal" maxLength="6" />
+    <elementType name="ED07" base="string" maxLength="15" />
+    <elementType name="ED08" base="date" minLength="8" maxLength="8" />
+    <elementType name="ER01" base="string" maxLength="2" />
+    <elementType name="ER02" base="string" minLength="2" maxLength="4" />
+    <elementType name="ER03" base="string" minLength="3" maxLength="3" />
+    <elementType name="ER04" base="string" minLength="6" maxLength="9" />
+    <elementType name="ER05" base="string" minLength="3" maxLength="3" />
+    <elementType name="ER06" base="string" minLength="2" maxLength="3" />
+    <elementType name="ER07" base="string" maxLength="35" />
+    <elementType name="ER08" base="string" minLength="2" maxLength="4" />
+    <elementType name="ER09" base="string" maxLength="10" />
+    <elementType name="ER10" base="date" minLength="8" maxLength="8" />
+    <elementType name="ER11" base="string" />
+    <elementType name="ER12" base="string" minLength="6" maxLength="9" />
+    <elementType name="ES01" base="string" />
+    <elementType name="ES02" base="string" minLength="2" maxLength="2" />
+    <elementType name="ES03" base="string" />
+    <elementType name="ES04" base="string" />
+    <elementType name="ES05" base="decimal" maxLength="15" />
+    <elementType name="ES06" base="string" minLength="2" maxLength="2" />
+    <elementType name="ES07" base="string" maxLength="30" />
+    <elementType name="IC01" base="string" maxLength="4" />
+    <elementType name="IC02" base="string" maxLength="15" />
+    <elementType name="IC03" base="decimal" minLength="3" maxLength="8" />
+    <elementType name="IC04" base="string" />
+    <elementType name="IC05" base="string" minLength="2" maxLength="4" />
+    <elementType name="IC06" base="decimal" minLength="4" maxLength="5" />
+    <elementType name="IC07" base="string" minLength="2" maxLength="4" />
+    <elementType name="IC08" base="string" minLength="2" maxLength="2" />
+    <elementType name="IC09" base="decimal" />
+    <elementType name="NA01" base="string" minLength="2" maxLength="3" />
+    <elementType name="NA02" base="string" maxLength="80" />
+    <elementType name="NA03" base="string" maxLength="4" />
+    <elementType name="NA04" base="string" maxLength="15" />
+    <elementType name="NA05" base="string" />
+    <elementType name="NA06" base="string" maxLength="3" />
+    <elementType name="NA07" base="string" minLength="2" maxLength="4" />
+    <elementType name="NA08" base="decimal" minLength="4" maxLength="5" />
+    <elementType name="NA09" base="string" minLength="2" maxLength="4" />
+    <elementType name="NA10" base="string" minLength="2" maxLength="2" />
+    <elementType name="NA11" base="string" />
+    <elementType name="NA12" base="decimal" />
+    <segmentType name="CLR">
+        <sequence>
+            <element type="CLR01" minOccurs="1" />
+            <element type="CLR02" minOccurs="1" />
+            <element type="CLR03" />
+            <element type="CLR04" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ED">
+        <sequence>
+            <element type="ED01" minOccurs="1" />
+            <element type="ED02" minOccurs="1" />
+            <element type="ED03" />
+            <element type="ED04" />
+            <element type="ED05" />
+            <element type="ED06" />
+            <element type="ED07" />
+            <element type="ED08" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ER">
+        <sequence>
+            <element type="ER01" minOccurs="1" />
+            <element type="ER02" minOccurs="1" />
+            <element type="ER03" minOccurs="1" />
+            <element type="ER04" minOccurs="1" />
+            <element type="ER05" minOccurs="1" />
+            <element type="ER06" minOccurs="1" />
+            <element type="ER07" minOccurs="1" />
+            <element type="ER08" />
+            <element type="ER09" />
+            <element type="ER10" />
+            <element type="ER11" />
+            <element type="ER12" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ES">
+        <sequence>
+            <element type="ES01" />
+            <element type="ES02" />
+            <element type="ES03" />
+            <element type="ES04" />
+            <element type="ES05" />
+            <element type="ES06" />
+            <element type="ES07" />
+        </sequence>
+    </segmentType>
+    <segmentType name="IC">
+        <sequence>
+            <element type="IC01" minOccurs="1" />
+            <element type="IC02" minOccurs="1" />
+            <element type="IC03" />
+            <element type="IC04" />
+            <element type="IC05" />
+            <element type="IC06" />
+            <element type="IC07" />
+            <element type="IC08" />
+            <element type="IC09" />
+        </sequence>
+    </segmentType>
+    <segmentType name="NA">
+        <sequence>
+            <element type="NA01" />
+            <element type="NA02" />
+            <element type="NA03" minOccurs="1" />
+            <element type="NA04" minOccurs="1" />
+            <element type="NA05" />
+            <element type="NA06" />
+            <element type="NA07" />
+            <element type="NA08" />
+            <element type="NA09" />
+            <element type="NA10" />
+            <element type="NA11" />
+            <element type="NA12" />
+        </sequence>
+    </segmentType>
+</schema>

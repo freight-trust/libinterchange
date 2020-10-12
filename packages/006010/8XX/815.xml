@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="CSM" minOccurs="1" />
+            <segment type="CSB" maxOccurs="99999" />
+            <loop code="L0001" maxOccurs="99999">
+                <sequence>
+                    <segment type="CSC" />
+                    <segment type="DTP" maxOccurs="9" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="CSB01" base="string" minLength="2" maxLength="4" />
+    <elementType name="CSB02" base="string" maxLength="32" />
+    <elementType name="CSC01" base="string" minLength="3" maxLength="3" />
+    <elementType name="CSC02" base="string" maxLength="64" />
+    <elementType name="CSC03" base="string" maxLength="64" />
+    <elementType name="CSC0401" base="string" minLength="2" maxLength="2" />
+    <elementType name="CSC0402" base="string" minLength="3" maxLength="3" />
+    <elementType name="CSC0403" base="string" maxLength="30" />
+    <elementType name="CSC0404" base="string" maxLength="4096" />
+    <elementType name="CSC0405" base="string" minLength="2" maxLength="2" />
+    <elementType name="CSC0406" base="string" minLength="3" maxLength="3" />
+    <elementType name="CSC0407" base="string" maxLength="30" />
+    <elementType name="CSC0408" base="string" maxLength="4096" />
+    <elementType name="CSC0409" base="string" minLength="2" maxLength="2" />
+    <elementType name="CSC0410" base="string" minLength="3" maxLength="3" />
+    <elementType name="CSC0411" base="string" maxLength="30" />
+    <elementType name="CSC0412" base="string" maxLength="4096" />
+    <elementType name="CSC0501" base="string" minLength="2" maxLength="3" />
+    <elementType name="CSC0502" base="string" maxLength="80" />
+    <elementType name="CSC0503" base="string" minLength="2" maxLength="3" />
+    <elementType name="CSC0504" base="string" maxLength="80" />
+    <elementType name="CSC0505" base="string" minLength="2" maxLength="3" />
+    <elementType name="CSC0506" base="string" maxLength="80" />
+    <elementType name="CSC06" base="string" minLength="3" maxLength="3" />
+    <elementType name="CSC07" base="string" maxLength="30" />
+    <elementType name="CSC08" base="decimal" maxLength="18" />
+    <elementType name="CSC0901" base="string" minLength="3" maxLength="3" />
+    <elementType name="CSC0902" base="string" maxLength="2147483647" />
+    <elementType name="CSM01" base="string" minLength="3" maxLength="4" />
+    <elementType name="CSM02" base="string" maxLength="64" />
+    <elementType name="CSM03" base="string" maxLength="64" />
+    <elementType name="DTP01" base="string" minLength="3" maxLength="3" />
+    <elementType name="DTP02" base="string" minLength="2" maxLength="3" />
+    <elementType name="DTP03" base="string" maxLength="35" />
+    <compositeType name="CSC04">
+        <sequence>
+            <element type="CSC0401" minOccurs="1" />
+            <element type="CSC0402" minOccurs="1" />
+            <element type="CSC0403" minOccurs="1" />
+            <element type="CSC0404" minOccurs="1" />
+            <element type="CSC0405" />
+            <element type="CSC0406" />
+            <element type="CSC0407" />
+            <element type="CSC0408" />
+            <element type="CSC0409" />
+            <element type="CSC0410" />
+            <element type="CSC0411" />
+            <element type="CSC0412" />
+        </sequence>
+    </compositeType>
+    <compositeType name="CSC05">
+        <sequence>
+            <element type="CSC0501" minOccurs="1" />
+            <element type="CSC0502" minOccurs="1" />
+            <element type="CSC0503" />
+            <element type="CSC0504" />
+            <element type="CSC0505" />
+            <element type="CSC0506" />
+        </sequence>
+    </compositeType>
+    <compositeType name="CSC09">
+        <sequence>
+            <element type="CSC0901" minOccurs="1" />
+            <element type="CSC0902" minOccurs="1" />
+        </sequence>
+    </compositeType>
+    <segmentType name="CSB">
+        <sequence>
+            <element type="CSB01" minOccurs="1" />
+            <element type="CSB02" />
+        </sequence>
+    </segmentType>
+    <segmentType name="CSC">
+        <sequence>
+            <element type="CSC01" minOccurs="1" />
+            <element type="CSC02" />
+            <element type="CSC03" />
+            <composite type="CSC04" />
+            <composite type="CSC05" />
+            <element type="CSC06" />
+            <element type="CSC07" />
+            <element type="CSC08" />
+            <composite type="CSC09" />
+        </sequence>
+    </segmentType>
+    <segmentType name="CSM">
+        <sequence>
+            <element type="CSM01" minOccurs="1" />
+            <element type="CSM02" />
+            <element type="CSM03" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DTP">
+        <sequence>
+            <element type="DTP01" minOccurs="1" />
+            <element type="DTP02" minOccurs="1" />
+            <element type="DTP03" minOccurs="1" />
+        </sequence>
+    </segmentType>
+</schema>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <loop code="L0001" minOccurs="1" maxOccurs="10">
+                <sequence>
+                    <segment type="N1" />
+                    <segment type="N2" />
+                    <segment type="N3" />
+                    <segment type="N4" />
+                </sequence>
+            </loop>
+            <segment type="N9" maxOccurs="10" />
+            <segment type="G61" maxOccurs="3" />
+            <segment type="G62" maxOccurs="10" />
+            <segment type="NTE" maxOccurs="20" />
+            <segment type="G43" maxOccurs="200" />
+            <loop code="L0002" minOccurs="1" maxOccurs="999">
+                <sequence>
+                    <segment type="ID1" />
+                    <segment type="ID2" />
+                    <segment type="ID3" maxOccurs="50" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="G4301" base="string" maxLength="3" />
+    <elementType name="G4302" base="string" maxLength="13" />
+    <elementType name="G4303" base="string" maxLength="80" />
+    <elementType name="G4304" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6101" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6102" base="string" maxLength="60" />
+    <elementType name="G6103" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6104" base="string" maxLength="256" />
+    <elementType name="G6105" base="string" maxLength="20" />
+    <elementType name="G6201" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6202" base="date" minLength="8" maxLength="8" />
+    <elementType name="G6203" base="string" maxLength="2" />
+    <elementType name="G6204" base="time" minLength="4" maxLength="8" />
+    <elementType name="G6205" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID101" base="string" minLength="12" maxLength="12" />
+    <elementType name="ID102" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID103" base="string" maxLength="48" />
+    <elementType name="ID104" base="string" maxLength="45" />
+    <elementType name="ID105" base="decimal" maxLength="8" />
+    <elementType name="ID106" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID107" base="decimal" maxLength="8" />
+    <elementType name="ID108" base="decimal" maxLength="8" />
+    <elementType name="ID109" base="decimal" maxLength="6" />
+    <elementType name="ID110" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID111" base="decimal" maxLength="10" />
+    <elementType name="ID112" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID113" base="string" />
+    <elementType name="ID114" base="string" maxLength="6" />
+    <elementType name="ID115" base="string" maxLength="6" />
+    <elementType name="ID116" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID117" base="decimal" maxLength="6" />
+    <elementType name="ID118" base="decimal" maxLength="6" />
+    <elementType name="ID119" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID120" base="date" minLength="8" maxLength="8" />
+    <elementType name="ID121" base="string" />
+    <elementType name="ID122" base="decimal" maxLength="6" />
+    <elementType name="ID123" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID124" base="string" />
+    <elementType name="ID125" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID126" base="string" maxLength="80" />
+    <elementType name="ID127" base="decimal" maxLength="6" />
+    <elementType name="ID128" base="decimal" maxLength="6" />
+    <elementType name="ID129" base="string" maxLength="80" />
+    <elementType name="ID130" base="decimal" maxLength="6" />
+    <elementType name="ID131" base="decimal" maxLength="6" />
+    <elementType name="ID132" base="string" maxLength="80" />
+    <elementType name="ID133" base="decimal" maxLength="6" />
+    <elementType name="ID134" base="decimal" maxLength="6" />
+    <elementType name="ID201" base="string" maxLength="20" />
+    <elementType name="ID202" base="string" maxLength="20" />
+    <elementType name="ID203" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID204" base="string" maxLength="80" />
+    <elementType name="ID205" base="string" maxLength="60" />
+    <elementType name="ID206" base="string" maxLength="60" />
+    <elementType name="ID207" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID208" base="string" maxLength="80" />
+    <elementType name="ID301" base="string" minLength="12" maxLength="12" />
+    <elementType name="ID302" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID303" base="string" maxLength="48" />
+    <elementType name="ID304" base="decimal" maxLength="6" />
+    <elementType name="ID305" base="decimal" maxLength="6" />
+    <elementType name="ID306" base="decimal" maxLength="8" />
+    <elementType name="ID307" base="decimal" maxLength="8" />
+    <elementType name="ID308" base="decimal" maxLength="6" />
+    <elementType name="ID309" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID310" base="decimal" maxLength="10" />
+    <elementType name="ID311" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID312" base="decimal" maxLength="8" />
+    <elementType name="ID313" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID314" base="decimal" maxLength="3" />
+    <elementType name="ID315" base="decimal" maxLength="8" />
+    <elementType name="ID316" base="decimal" maxLength="8" />
+    <elementType name="ID317" base="decimal" maxLength="6" />
+    <elementType name="ID318" base="string" minLength="2" maxLength="2" />
+    <elementType name="ID319" base="string" />
+    <elementType name="ID320" base="decimal" maxLength="6" />
+    <elementType name="ID321" base="string" minLength="2" maxLength="2" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="N201" base="string" maxLength="60" />
+    <elementType name="N202" base="string" maxLength="60" />
+    <elementType name="N301" base="string" maxLength="55" />
+    <elementType name="N302" base="string" maxLength="55" />
+    <elementType name="N401" base="string" minLength="2" maxLength="30" />
+    <elementType name="N402" base="string" minLength="2" maxLength="2" />
+    <elementType name="N403" base="string" minLength="3" maxLength="15" />
+    <elementType name="N404" base="string" minLength="2" maxLength="3" />
+    <elementType name="N405" base="string" maxLength="2" />
+    <elementType name="N406" base="string" maxLength="30" />
+    <elementType name="N407" base="string" maxLength="3" />
+    <elementType name="N901" base="string" minLength="2" maxLength="3" />
+    <elementType name="N902" base="string" maxLength="80" />
+    <elementType name="N903" base="string" maxLength="45" />
+    <elementType name="N904" base="date" minLength="8" maxLength="8" />
+    <elementType name="N905" base="time" minLength="4" maxLength="8" />
+    <elementType name="N906" base="string" minLength="2" maxLength="2" />
+    <elementType name="N90701" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90702" base="string" maxLength="80" />
+    <elementType name="N90703" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90704" base="string" maxLength="80" />
+    <elementType name="N90705" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90706" base="string" maxLength="80" />
+    <elementType name="NTE01" base="string" minLength="3" maxLength="3" />
+    <elementType name="NTE02" base="string" maxLength="80" />
+    <compositeType name="N907">
+        <sequence>
+            <element type="N90701" minOccurs="1" />
+            <element type="N90702" minOccurs="1" />
+            <element type="N90703" />
+            <element type="N90704" />
+            <element type="N90705" />
+            <element type="N90706" />
+        </sequence>
+    </compositeType>
+    <segmentType name="G43">
+        <sequence>
+            <element type="G4301" minOccurs="1" />
+            <element type="G4302" />
+            <element type="G4303" />
+            <element type="G4304" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G61">
+        <sequence>
+            <element type="G6101" minOccurs="1" />
+            <element type="G6102" minOccurs="1" />
+            <element type="G6103" />
+            <element type="G6104" />
+            <element type="G6105" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G62">
+        <sequence>
+            <element type="G6201" />
+            <element type="G6202" />
+            <element type="G6203" />
+            <element type="G6204" />
+            <element type="G6205" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ID1">
+        <sequence>
+            <element type="ID101" />
+            <element type="ID102" />
+            <element type="ID103" />
+            <element type="ID104" minOccurs="1" />
+            <element type="ID105" minOccurs="1" />
+            <element type="ID106" minOccurs="1" />
+            <element type="ID107" minOccurs="1" />
+            <element type="ID108" minOccurs="1" />
+            <element type="ID109" minOccurs="1" />
+            <element type="ID110" minOccurs="1" />
+            <element type="ID111" />
+            <element type="ID112" />
+            <element type="ID113" />
+            <element type="ID114" />
+            <element type="ID115" />
+            <element type="ID116" />
+            <element type="ID117" />
+            <element type="ID118" />
+            <element type="ID119" />
+            <element type="ID120" />
+            <element type="ID121" />
+            <element type="ID122" />
+            <element type="ID123" />
+            <element type="ID124" />
+            <element type="ID125" />
+            <element type="ID126" />
+            <element type="ID127" />
+            <element type="ID128" />
+            <element type="ID129" />
+            <element type="ID130" />
+            <element type="ID131" />
+            <element type="ID132" />
+            <element type="ID133" />
+            <element type="ID134" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ID2">
+        <sequence>
+            <element type="ID201" />
+            <element type="ID202" />
+            <element type="ID203" />
+            <element type="ID204" />
+            <element type="ID205" />
+            <element type="ID206" />
+            <element type="ID207" />
+            <element type="ID208" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ID3">
+        <sequence>
+            <element type="ID301" />
+            <element type="ID302" />
+            <element type="ID303" />
+            <element type="ID304" />
+            <element type="ID305" />
+            <element type="ID306" />
+            <element type="ID307" />
+            <element type="ID308" />
+            <element type="ID309" />
+            <element type="ID310" />
+            <element type="ID311" />
+            <element type="ID312" />
+            <element type="ID313" />
+            <element type="ID314" />
+            <element type="ID315" />
+            <element type="ID316" />
+            <element type="ID317" />
+            <element type="ID318" />
+            <element type="ID319" />
+            <element type="ID320" />
+            <element type="ID321" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N2">
+        <sequence>
+            <element type="N201" minOccurs="1" />
+            <element type="N202" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N3">
+        <sequence>
+            <element type="N301" minOccurs="1" />
+            <element type="N302" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N4">
+        <sequence>
+            <element type="N401" />
+            <element type="N402" />
+            <element type="N403" />
+            <element type="N404" />
+            <element type="N405" />
+            <element type="N406" />
+            <element type="N407" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N9">
+        <sequence>
+            <element type="N901" minOccurs="1" />
+            <element type="N902" />
+            <element type="N903" />
+            <element type="N904" />
+            <element type="N905" />
+            <element type="N906" />
+            <composite type="N907" />
+        </sequence>
+    </segmentType>
+    <segmentType name="NTE">
+        <sequence>
+            <element type="NTE01" />
+            <element type="NTE02" minOccurs="1" />
+        </sequence>
+    </segmentType>
+</schema>

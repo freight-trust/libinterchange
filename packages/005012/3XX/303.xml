@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="B1" minOccurs="1" />
+            <segment type="Y6" maxOccurs="2" />
+            <segment type="Y5" minOccurs="1" />
+            <segment type="V9" maxOccurs="10" />
+        </sequence>
+    </transaction>
+    <elementType name="B101" base="string" minLength="2" maxLength="4" />
+    <elementType name="B102" base="string" maxLength="30" />
+    <elementType name="B103" base="date" minLength="8" maxLength="8" />
+    <elementType name="B104" base="string" />
+    <elementType name="B105" base="string" />
+    <elementType name="B106" base="string" minLength="3" maxLength="3" />
+    <elementType name="V901" base="string" minLength="3" maxLength="3" />
+    <elementType name="V902" base="string" maxLength="25" />
+    <elementType name="V903" base="date" minLength="8" maxLength="8" />
+    <elementType name="V904" base="time" minLength="4" maxLength="8" />
+    <elementType name="V905" base="string" minLength="2" maxLength="30" />
+    <elementType name="V906" base="string" minLength="2" maxLength="2" />
+    <elementType name="V907" base="string" minLength="2" maxLength="3" />
+    <elementType name="V908" base="string" minLength="3" maxLength="3" />
+    <elementType name="V909" base="string" minLength="6" maxLength="9" />
+    <elementType name="V910" base="decimal" maxLength="15" />
+    <elementType name="V911" base="string" minLength="2" maxLength="3" />
+    <elementType name="V912" base="string" maxLength="30" />
+    <elementType name="V913" base="string" minLength="2" maxLength="2" />
+    <elementType name="V914" base="decimal" maxLength="15" />
+    <elementType name="V915" base="string" minLength="6" maxLength="9" />
+    <elementType name="V916" base="decimal" maxLength="3" />
+    <elementType name="V917" base="decimal" maxLength="3" />
+    <elementType name="V918" base="decimal" maxLength="3" />
+    <elementType name="V919" base="decimal" maxLength="10" />
+    <elementType name="V920" base="decimal" maxLength="8" />
+    <elementType name="Y501" base="string" maxLength="17" />
+    <elementType name="Y601" base="string" minLength="2" maxLength="2" />
+    <elementType name="Y602" base="string" maxLength="20" />
+    <elementType name="Y603" base="date" minLength="8" maxLength="8" />
+    <segmentType name="B1">
+        <sequence>
+            <element type="B101" minOccurs="1" />
+            <element type="B102" />
+            <element type="B103" />
+            <element type="B104" />
+            <element type="B105" />
+            <element type="B106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="V9">
+        <sequence>
+            <element type="V901" minOccurs="1" />
+            <element type="V902" />
+            <element type="V903" />
+            <element type="V904" />
+            <element type="V905" />
+            <element type="V906" />
+            <element type="V907" />
+            <element type="V908" />
+            <element type="V909" />
+            <element type="V910" />
+            <element type="V911" />
+            <element type="V912" />
+            <element type="V913" />
+            <element type="V914" />
+            <element type="V915" />
+            <element type="V916" />
+            <element type="V917" />
+            <element type="V918" />
+            <element type="V919" />
+            <element type="V920" />
+        </sequence>
+    </segmentType>
+    <segmentType name="Y5">
+        <sequence>
+            <element type="Y501" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="Y6">
+        <sequence>
+            <element type="Y601" />
+            <element type="Y602" minOccurs="1" />
+            <element type="Y603" minOccurs="1" />
+        </sequence>
+    </segmentType>
+</schema>

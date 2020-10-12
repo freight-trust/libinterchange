@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="AK1" minOccurs="1" />
+            <loop code="L0001" maxOccurs="99999">
+                <sequence>
+                    <segment type="AK2" />
+                    <loop code="L0002" maxOccurs="99999">
+                        <sequence>
+                            <segment type="AK3" />
+                            <segment type="AK4" maxOccurs="99" />
+                        </sequence>
+                    </loop>
+                    <segment type="AK5" minOccurs="1" />
+                </sequence>
+            </loop>
+            <segment type="AK9" minOccurs="1" />
+        </sequence>
+    </transaction>
+    <elementType name="AK101" base="string" minLength="2" maxLength="2" />
+    <elementType name="AK102" base="decimal" maxLength="9" />
+    <elementType name="AK103" base="string" maxLength="12" />
+    <elementType name="AK201" base="string" minLength="3" maxLength="3" />
+    <elementType name="AK202" base="string" minLength="4" maxLength="9" />
+    <elementType name="AK203" base="string" maxLength="35" />
+    <elementType name="AK301" base="string" minLength="2" maxLength="3" />
+    <elementType name="AK302" base="decimal" maxLength="10" />
+    <elementType name="AK303" base="string" maxLength="4" />
+    <elementType name="AK304" base="string" maxLength="3" />
+    <elementType name="AK40101" base="decimal" maxLength="2" />
+    <elementType name="AK40102" base="decimal" maxLength="2" />
+    <elementType name="AK40103" base="decimal" maxLength="4" />
+    <elementType name="AK402" base="string" maxLength="4" />
+    <elementType name="AK403" base="string" maxLength="3" />
+    <elementType name="AK404" base="string" maxLength="99" />
+    <elementType name="AK501" base="string" />
+    <elementType name="AK502" base="string" maxLength="3" />
+    <elementType name="AK503" base="string" maxLength="3" />
+    <elementType name="AK504" base="string" maxLength="3" />
+    <elementType name="AK505" base="string" maxLength="3" />
+    <elementType name="AK506" base="string" maxLength="3" />
+    <elementType name="AK901" base="string" />
+    <elementType name="AK902" base="decimal" maxLength="6" />
+    <elementType name="AK903" base="decimal" maxLength="6" />
+    <elementType name="AK904" base="decimal" maxLength="6" />
+    <elementType name="AK905" base="string" maxLength="3" />
+    <elementType name="AK906" base="string" maxLength="3" />
+    <elementType name="AK907" base="string" maxLength="3" />
+    <elementType name="AK908" base="string" maxLength="3" />
+    <elementType name="AK909" base="string" maxLength="3" />
+    <compositeType name="AK401">
+        <sequence>
+            <element type="AK40101" minOccurs="1" />
+            <element type="AK40102" />
+            <element type="AK40103" />
+        </sequence>
+    </compositeType>
+    <segmentType name="AK1">
+        <sequence>
+            <element type="AK101" minOccurs="1" />
+            <element type="AK102" minOccurs="1" />
+            <element type="AK103" />
+        </sequence>
+    </segmentType>
+    <segmentType name="AK2">
+        <sequence>
+            <element type="AK201" minOccurs="1" />
+            <element type="AK202" minOccurs="1" />
+            <element type="AK203" />
+        </sequence>
+    </segmentType>
+    <segmentType name="AK3">
+        <sequence>
+            <element type="AK301" minOccurs="1" />
+            <element type="AK302" minOccurs="1" />
+            <element type="AK303" />
+            <element type="AK304" />
+        </sequence>
+    </segmentType>
+    <segmentType name="AK4">
+        <sequence>
+            <composite type="AK401" minOccurs="1" />
+            <element type="AK402" />
+            <element type="AK403" minOccurs="1" />
+            <element type="AK404" />
+        </sequence>
+    </segmentType>
+    <segmentType name="AK5">
+        <sequence>
+            <element type="AK501" minOccurs="1" />
+            <element type="AK502" />
+            <element type="AK503" />
+            <element type="AK504" />
+            <element type="AK505" />
+            <element type="AK506" />
+        </sequence>
+    </segmentType>
+    <segmentType name="AK9">
+        <sequence>
+            <element type="AK901" minOccurs="1" />
+            <element type="AK902" minOccurs="1" />
+            <element type="AK903" minOccurs="1" />
+            <element type="AK904" minOccurs="1" />
+            <element type="AK905" />
+            <element type="AK906" />
+            <element type="AK907" />
+            <element type="AK908" />
+            <element type="AK909" />
+        </sequence>
+    </segmentType>
+</schema>

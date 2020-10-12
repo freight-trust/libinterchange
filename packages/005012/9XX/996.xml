@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BGF" minOccurs="1" />
+            <segment type="K3" minOccurs="1" maxOccurs="99999" />
+        </sequence>
+    </transaction>
+    <elementType name="BGF01" base="string" minLength="3" maxLength="3" />
+    <elementType name="BGF02" base="string" minLength="2" maxLength="3" />
+    <elementType name="BGF03" base="string" maxLength="50" />
+    <elementType name="K301" base="string" maxLength="80" />
+    <elementType name="K302" base="string" maxLength="2" />
+    <elementType name="K30301" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30302" base="decimal" maxLength="15" />
+    <elementType name="K30303" base="decimal" maxLength="10" />
+    <elementType name="K30304" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30305" base="decimal" maxLength="15" />
+    <elementType name="K30306" base="decimal" maxLength="10" />
+    <elementType name="K30307" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30308" base="decimal" maxLength="15" />
+    <elementType name="K30309" base="decimal" maxLength="10" />
+    <elementType name="K30310" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30311" base="decimal" maxLength="15" />
+    <elementType name="K30312" base="decimal" maxLength="10" />
+    <elementType name="K30313" base="string" minLength="2" maxLength="2" />
+    <elementType name="K30314" base="decimal" maxLength="15" />
+    <elementType name="K30315" base="decimal" maxLength="10" />
+    <compositeType name="K303">
+        <sequence>
+            <element type="K30301" minOccurs="1" />
+            <element type="K30302" />
+            <element type="K30303" />
+            <element type="K30304" />
+            <element type="K30305" />
+            <element type="K30306" />
+            <element type="K30307" />
+            <element type="K30308" />
+            <element type="K30309" />
+            <element type="K30310" />
+            <element type="K30311" />
+            <element type="K30312" />
+            <element type="K30313" />
+            <element type="K30314" />
+            <element type="K30315" />
+        </sequence>
+    </compositeType>
+    <segmentType name="BGF">
+        <sequence>
+            <element type="BGF01" />
+            <element type="BGF02" minOccurs="1" />
+            <element type="BGF03" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="K3">
+        <sequence>
+            <element type="K301" minOccurs="1" />
+            <element type="K302" />
+            <composite type="K303" />
+        </sequence>
+    </segmentType>
+</schema>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://freighttrust.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freighttrust.io/EDISchema/v4 https://www.freighttrust.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="B1" minOccurs="1" />
+            <segment type="L11" />
+        </sequence>
+    </transaction>
+    <elementType name="B101" base="string" minLength="2" maxLength="4" />
+    <elementType name="B102" base="string" maxLength="30" />
+    <elementType name="B103" base="date" minLength="8" maxLength="8" />
+    <elementType name="B104" base="string" />
+    <elementType name="B105" base="string" />
+    <elementType name="B106" base="string" minLength="3" maxLength="3" />
+    <elementType name="L1101" base="string" maxLength="50" />
+    <elementType name="L1102" base="string" minLength="2" maxLength="3" />
+    <elementType name="L1103" base="string" maxLength="80" />
+    <elementType name="L1104" base="date" minLength="8" maxLength="8" />
+    <elementType name="L1105" base="string" />
+    <segmentType name="B1">
+        <sequence>
+            <element type="B101" minOccurs="1" />
+            <element type="B102" />
+            <element type="B103" />
+            <element type="B104" />
+            <element type="B105" />
+            <element type="B106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="L11">
+        <sequence>
+            <element type="L1101" />
+            <element type="L1102" />
+            <element type="L1103" />
+            <element type="L1104" />
+            <element type="L1105" />
+        </sequence>
+    </segmentType>
+</schema>

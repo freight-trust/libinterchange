@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <loop code="L0001" minOccurs="1" maxOccurs="99">
+                <sequence>
+                    <segment type="BVA" />
+                    <segment type="V1" />
+                    <segment type="L7" maxOccurs="5" />
+                    <loop code="L0002" minOccurs="1" maxOccurs="99">
+                        <sequence>
+                            <segment type="VAD" />
+                            <segment type="L7" maxOccurs="5" />
+                        </sequence>
+                    </loop>
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="BVA01" base="string" minLength="2" maxLength="2" />
+    <elementType name="BVA02" base="string" minLength="2" maxLength="4" />
+    <elementType name="BVA03" base="string" maxLength="2" />
+    <elementType name="BVA04" base="string" minLength="2" maxLength="80" />
+    <elementType name="BVA05" base="date" minLength="8" maxLength="8" />
+    <elementType name="BVA06" base="string" maxLength="22" />
+    <elementType name="BVA07" base="string" maxLength="2" />
+    <elementType name="BVA08" base="string" minLength="2" maxLength="80" />
+    <elementType name="BVA09" base="string" minLength="2" maxLength="4" />
+    <elementType name="BVA10" base="string" maxLength="2" />
+    <elementType name="BVA11" base="string" minLength="2" maxLength="80" />
+    <elementType name="BVA12" base="string" minLength="3" maxLength="3" />
+    <elementType name="BVA13" base="string" />
+    <elementType name="BVA14" base="date" minLength="8" maxLength="8" />
+    <elementType name="BVA15" base="string" maxLength="80" />
+    <elementType name="BVA16" base="date" minLength="8" maxLength="8" />
+    <elementType name="BVA17" base="string" maxLength="16" />
+    <elementType name="BVA18" base="string" maxLength="4" />
+    <elementType name="BVA19" base="string" maxLength="15" />
+    <elementType name="BVA20" base="string" minLength="2" maxLength="2" />
+    <elementType name="BVA21" base="decimal" maxLength="15" />
+    <elementType name="BVA22" base="string" maxLength="30" />
+    <elementType name="BVA23" base="string" minLength="2" maxLength="30" />
+    <elementType name="BVA24" base="string" maxLength="2" />
+    <elementType name="BVA25" base="string" minLength="2" maxLength="2" />
+    <elementType name="L701" base="decimal" maxLength="6" />
+    <elementType name="L702" base="string" maxLength="4" />
+    <elementType name="L703" base="string" maxLength="7" />
+    <elementType name="L704" base="string" maxLength="2" />
+    <elementType name="L705" base="string" maxLength="16" />
+    <elementType name="L706" base="decimal" maxLength="2" />
+    <elementType name="L707" base="string" minLength="2" maxLength="5" />
+    <elementType name="L708" base="string" maxLength="4" />
+    <elementType name="L709" base="string" minLength="4" maxLength="4" />
+    <elementType name="L710" base="date" minLength="8" maxLength="8" />
+    <elementType name="L711" base="string" maxLength="6" />
+    <elementType name="L712" base="string" maxLength="2" />
+    <elementType name="L713" base="decimal" maxLength="5" />
+    <elementType name="L714" base="string" />
+    <elementType name="L715" base="string" minLength="2" maxLength="30" />
+    <elementType name="L716" base="string" minLength="2" maxLength="2" />
+    <elementType name="V101" base="string" maxLength="8" />
+    <elementType name="V102" base="string" minLength="2" maxLength="28" />
+    <elementType name="V103" base="string" minLength="2" maxLength="3" />
+    <elementType name="V104" base="string" minLength="2" maxLength="30" />
+    <elementType name="V105" base="string" minLength="2" maxLength="4" />
+    <elementType name="V106" base="string" />
+    <elementType name="V107" base="string" minLength="2" maxLength="2" />
+    <elementType name="V108" base="string" />
+    <elementType name="V109" base="string" maxLength="2" />
+    <elementType name="VAD01" base="string" maxLength="30" />
+    <elementType name="VAD02" base="string" maxLength="22" />
+    <elementType name="VAD03" base="decimal" maxLength="18" />
+    <elementType name="VAD04" base="decimal" maxLength="9" />
+    <elementType name="VAD05" base="string" minLength="2" maxLength="9" />
+    <elementType name="VAD06" base="string" maxLength="80" />
+    <elementType name="VAD07" base="string" maxLength="3" />
+    <elementType name="VAD08" base="string" maxLength="3" />
+    <elementType name="VAD09" base="string" maxLength="3" />
+    <elementType name="VAD10" base="string" minLength="3" maxLength="3" />
+    <elementType name="VAD11" base="date" minLength="8" maxLength="8" />
+    <segmentType name="BVA">
+        <sequence>
+            <element type="BVA01" minOccurs="1" />
+            <element type="BVA02" minOccurs="1" />
+            <element type="BVA03" minOccurs="1" />
+            <element type="BVA04" minOccurs="1" />
+            <element type="BVA05" minOccurs="1" />
+            <element type="BVA06" />
+            <element type="BVA07" />
+            <element type="BVA08" />
+            <element type="BVA09" />
+            <element type="BVA10" />
+            <element type="BVA11" />
+            <element type="BVA12" />
+            <element type="BVA13" />
+            <element type="BVA14" />
+            <element type="BVA15" />
+            <element type="BVA16" />
+            <element type="BVA17" />
+            <element type="BVA18" />
+            <element type="BVA19" />
+            <element type="BVA20" />
+            <element type="BVA21" />
+            <element type="BVA22" />
+            <element type="BVA23" />
+            <element type="BVA24" />
+            <element type="BVA25" />
+        </sequence>
+    </segmentType>
+    <segmentType name="L7">
+        <sequence>
+            <element type="L701" />
+            <element type="L702" />
+            <element type="L703" />
+            <element type="L704" />
+            <element type="L705" />
+            <element type="L706" />
+            <element type="L707" />
+            <element type="L708" />
+            <element type="L709" />
+            <element type="L710" />
+            <element type="L711" />
+            <element type="L712" />
+            <element type="L713" />
+            <element type="L714" />
+            <element type="L715" />
+            <element type="L716" />
+        </sequence>
+    </segmentType>
+    <segmentType name="V1">
+        <sequence>
+            <element type="V101" />
+            <element type="V102" />
+            <element type="V103" />
+            <element type="V104" />
+            <element type="V105" />
+            <element type="V106" />
+            <element type="V107" />
+            <element type="V108" />
+            <element type="V109" />
+        </sequence>
+    </segmentType>
+    <segmentType name="VAD">
+        <sequence>
+            <element type="VAD01" minOccurs="1" />
+            <element type="VAD02" />
+            <element type="VAD03" />
+            <element type="VAD04" />
+            <element type="VAD05" />
+            <element type="VAD06" />
+            <element type="VAD07" />
+            <element type="VAD08" />
+            <element type="VAD09" />
+            <element type="VAD10" />
+            <element type="VAD11" />
+        </sequence>
+    </segmentType>
+</schema>

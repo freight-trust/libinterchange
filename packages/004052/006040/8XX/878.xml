@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <loop code="L0001" minOccurs="1" maxOccurs="2">
+                <sequence>
+                    <segment type="N1" />
+                    <segment type="N2" />
+                    <segment type="N3" maxOccurs="2" />
+                    <segment type="N4" />
+                </sequence>
+            </loop>
+            <loop code="L0002" minOccurs="1" maxOccurs="999">
+                <sequence>
+                    <segment type="G21" />
+                    <segment type="G69" maxOccurs="5" />
+                    <segment type="CTP" />
+                    <segment type="G72" maxOccurs="99999" />
+                    <segment type="PID" maxOccurs="99999" />
+                    <loop code="L0003" minOccurs="1" maxOccurs="99999">
+                        <sequence>
+                            <segment type="N1" />
+                            <segment type="N2" />
+                            <segment type="N3" maxOccurs="2" />
+                            <segment type="N4" />
+                            <segment type="G62" maxOccurs="10" />
+                            <segment type="G22" />
+                            <segment type="CTP" />
+                            <segment type="G72" maxOccurs="99999" />
+                        </sequence>
+                    </loop>
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="CTP01" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP02" base="string" minLength="3" maxLength="3" />
+    <elementType name="CTP03" base="decimal" maxLength="17" />
+    <elementType name="CTP04" base="decimal" maxLength="15" />
+    <elementType name="CTP0501" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0502" base="decimal" maxLength="15" />
+    <elementType name="CTP0503" base="decimal" maxLength="10" />
+    <elementType name="CTP0504" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0505" base="decimal" maxLength="15" />
+    <elementType name="CTP0506" base="decimal" maxLength="10" />
+    <elementType name="CTP0507" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0508" base="decimal" maxLength="15" />
+    <elementType name="CTP0509" base="decimal" maxLength="10" />
+    <elementType name="CTP0510" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0511" base="decimal" maxLength="15" />
+    <elementType name="CTP0512" base="decimal" maxLength="10" />
+    <elementType name="CTP0513" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP0514" base="decimal" maxLength="15" />
+    <elementType name="CTP0515" base="decimal" maxLength="10" />
+    <elementType name="CTP06" base="string" minLength="3" maxLength="3" />
+    <elementType name="CTP07" base="decimal" maxLength="10" />
+    <elementType name="CTP08" base="decimal" maxLength="18" />
+    <elementType name="CTP09" base="string" minLength="2" maxLength="2" />
+    <elementType name="CTP10" base="string" maxLength="10" />
+    <elementType name="CTP11" base="decimal" maxLength="2" />
+    <elementType name="G2101" base="string" />
+    <elementType name="G2102" base="date" minLength="8" maxLength="8" />
+    <elementType name="G2103" base="string" minLength="12" maxLength="12" />
+    <elementType name="G2104" base="string" minLength="12" maxLength="12" />
+    <elementType name="G2105" base="decimal" maxLength="6" />
+    <elementType name="G2106" base="decimal" maxLength="17" />
+    <elementType name="G2107" base="string" minLength="2" maxLength="2" />
+    <elementType name="G2108" base="string" maxLength="80" />
+    <elementType name="G2109" base="decimal" maxLength="6" />
+    <elementType name="G2110" base="string" minLength="2" maxLength="2" />
+    <elementType name="G2201" base="string" />
+    <elementType name="G2202" base="numeric" scale="2" minLength="2" maxLength="7" />
+    <elementType name="G2203" base="decimal" maxLength="2" />
+    <elementType name="G2204" base="string" maxLength="60" />
+    <elementType name="G2205" base="date" minLength="8" maxLength="8" />
+    <elementType name="G6201" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6202" base="date" minLength="8" maxLength="8" />
+    <elementType name="G6203" base="string" maxLength="2" />
+    <elementType name="G6204" base="time" minLength="4" maxLength="8" />
+    <elementType name="G6205" base="string" minLength="2" maxLength="2" />
+    <elementType name="G6901" base="string" maxLength="45" />
+    <elementType name="G7201" base="string" maxLength="3" />
+    <elementType name="G7202" base="string" minLength="2" maxLength="2" />
+    <elementType name="G7203" base="string" maxLength="16" />
+    <elementType name="G7204" base="string" maxLength="16" />
+    <elementType name="G7205" base="decimal" maxLength="15" />
+    <elementType name="G7206" base="decimal" maxLength="10" />
+    <elementType name="G7207" base="string" minLength="2" maxLength="2" />
+    <elementType name="G7208" base="numeric" scale="2" maxLength="15" />
+    <elementType name="G7209" base="decimal" maxLength="6" />
+    <elementType name="G7210" base="decimal" maxLength="9" />
+    <elementType name="G7211" base="string" maxLength="20" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="N201" base="string" maxLength="60" />
+    <elementType name="N202" base="string" maxLength="60" />
+    <elementType name="N301" base="string" maxLength="55" />
+    <elementType name="N302" base="string" maxLength="55" />
+    <elementType name="N401" base="string" minLength="2" maxLength="30" />
+    <elementType name="N402" base="string" minLength="2" maxLength="2" />
+    <elementType name="N403" base="string" minLength="3" maxLength="15" />
+    <elementType name="N404" base="string" minLength="2" maxLength="3" />
+    <elementType name="N405" base="string" maxLength="2" />
+    <elementType name="N406" base="string" maxLength="30" />
+    <elementType name="N407" base="string" maxLength="3" />
+    <elementType name="N408" base="string" minLength="3" maxLength="20" />
+    <elementType name="PID01" base="string" />
+    <elementType name="PID02" base="string" minLength="2" maxLength="3" />
+    <elementType name="PID03" base="string" minLength="2" maxLength="2" />
+    <elementType name="PID04" base="string" maxLength="12" />
+    <elementType name="PID05" base="string" maxLength="80" />
+    <elementType name="PID06" base="string" minLength="2" maxLength="2" />
+    <elementType name="PID07" base="string" maxLength="15" />
+    <elementType name="PID08" base="string" />
+    <elementType name="PID09" base="string" minLength="2" maxLength="3" />
+    <compositeType name="CTP05">
+        <sequence>
+            <element type="CTP0501" minOccurs="1" />
+            <element type="CTP0502" />
+            <element type="CTP0503" />
+            <element type="CTP0504" />
+            <element type="CTP0505" />
+            <element type="CTP0506" />
+            <element type="CTP0507" />
+            <element type="CTP0508" />
+            <element type="CTP0509" />
+            <element type="CTP0510" />
+            <element type="CTP0511" />
+            <element type="CTP0512" />
+            <element type="CTP0513" />
+            <element type="CTP0514" />
+            <element type="CTP0515" />
+        </sequence>
+    </compositeType>
+    <segmentType name="CTP">
+        <sequence>
+            <element type="CTP01" />
+            <element type="CTP02" />
+            <element type="CTP03" />
+            <element type="CTP04" />
+            <composite type="CTP05" />
+            <element type="CTP06" />
+            <element type="CTP07" />
+            <element type="CTP08" />
+            <element type="CTP09" />
+            <element type="CTP10" />
+            <element type="CTP11" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G21">
+        <sequence>
+            <element type="G2101" minOccurs="1" />
+            <element type="G2102" minOccurs="1" />
+            <element type="G2103" minOccurs="1" />
+            <element type="G2104" />
+            <element type="G2105" />
+            <element type="G2106" />
+            <element type="G2107" />
+            <element type="G2108" />
+            <element type="G2109" />
+            <element type="G2110" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G22">
+        <sequence>
+            <element type="G2201" minOccurs="1" />
+            <element type="G2202" />
+            <element type="G2203" />
+            <element type="G2204" />
+            <element type="G2205" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G62">
+        <sequence>
+            <element type="G6201" />
+            <element type="G6202" />
+            <element type="G6203" />
+            <element type="G6204" />
+            <element type="G6205" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G69">
+        <sequence>
+            <element type="G6901" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="G72">
+        <sequence>
+            <element type="G7201" minOccurs="1" />
+            <element type="G7202" minOccurs="1" />
+            <element type="G7203" />
+            <element type="G7204" />
+            <element type="G7205" />
+            <element type="G7206" />
+            <element type="G7207" />
+            <element type="G7208" />
+            <element type="G7209" />
+            <element type="G7210" />
+            <element type="G7211" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N2">
+        <sequence>
+            <element type="N201" minOccurs="1" />
+            <element type="N202" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N3">
+        <sequence>
+            <element type="N301" minOccurs="1" />
+            <element type="N302" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N4">
+        <sequence>
+            <element type="N401" />
+            <element type="N402" />
+            <element type="N403" />
+            <element type="N404" />
+            <element type="N405" />
+            <element type="N406" />
+            <element type="N407" />
+            <element type="N408" />
+        </sequence>
+    </segmentType>
+    <segmentType name="PID">
+        <sequence>
+            <element type="PID01" minOccurs="1" />
+            <element type="PID02" />
+            <element type="PID03" />
+            <element type="PID04" />
+            <element type="PID05" />
+            <element type="PID06" />
+            <element type="PID07" />
+            <element type="PID08" />
+            <element type="PID09" />
+        </sequence>
+    </segmentType>
+</schema>

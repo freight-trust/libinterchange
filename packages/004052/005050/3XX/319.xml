@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BA2" minOccurs="1" />
+            <segment type="CD1" minOccurs="1" maxOccurs="999" />
+        </sequence>
+    </transaction>
+    <elementType name="BA201" base="string" minLength="2" maxLength="4" />
+    <elementType name="BA202" base="string" maxLength="8" />
+    <elementType name="BA203" base="string" minLength="2" maxLength="30" />
+    <elementType name="BA204" base="string" maxLength="80" />
+    <elementType name="BA205" base="string" maxLength="80" />
+    <elementType name="BA206" base="string" maxLength="4" />
+    <elementType name="BA207" base="string" minLength="2" maxLength="14" />
+    <elementType name="BA208" base="string" />
+    <elementType name="BA209" base="string" minLength="2" maxLength="24" />
+    <elementType name="BA210" base="date" minLength="8" maxLength="8" />
+    <elementType name="BA211" base="string" />
+    <elementType name="CD101" base="string" maxLength="4" />
+    <elementType name="CD102" base="string" maxLength="15" />
+    <elementType name="CD103" base="string" minLength="4" maxLength="4" />
+    <elementType name="CD104" base="string" maxLength="50" />
+    <elementType name="CD105" base="string" minLength="2" maxLength="2" />
+    <elementType name="CD106" base="string" />
+    <elementType name="CD107" base="string" maxLength="4" />
+    <elementType name="CD108" base="date" minLength="8" maxLength="8" />
+    <elementType name="CD109" base="string" maxLength="30" />
+    <elementType name="CD110" base="decimal" maxLength="15" />
+    <elementType name="CD111" base="string" minLength="3" maxLength="5" />
+    <elementType name="CD112" base="string" minLength="2" maxLength="3" />
+    <elementType name="CD113" base="string" minLength="2" maxLength="3" />
+    <elementType name="CD114" base="string" minLength="2" maxLength="3" />
+    <elementType name="CD115" base="string" maxLength="3" />
+    <elementType name="CD116" base="string" minLength="2" maxLength="2" />
+    <elementType name="CD117" base="decimal" maxLength="9" />
+    <elementType name="CD118" base="string" maxLength="3" />
+    <elementType name="CD119" base="string" minLength="2" maxLength="2" />
+    <elementType name="CD120" base="decimal" maxLength="9" />
+    <elementType name="CD121" base="string" maxLength="3" />
+    <elementType name="CD122" base="string" minLength="2" maxLength="2" />
+    <elementType name="CD123" base="decimal" maxLength="9" />
+    <elementType name="CD124" base="string" minLength="3" maxLength="3" />
+    <elementType name="CD125" base="date" minLength="8" maxLength="8" />
+    <elementType name="CD126" base="string" maxLength="2" />
+    <elementType name="CD127" base="string" minLength="2" maxLength="4" />
+    <elementType name="CD128" base="string" minLength="2" maxLength="3" />
+    <elementType name="CD129" base="string" maxLength="80" />
+    <elementType name="CD130" base="string" minLength="2" maxLength="3" />
+    <elementType name="CD131" base="string" maxLength="80" />
+    <segmentType name="BA2">
+        <sequence>
+            <element type="BA201" minOccurs="1" />
+            <element type="BA202" minOccurs="1" />
+            <element type="BA203" minOccurs="1" />
+            <element type="BA204" minOccurs="1" />
+            <element type="BA205" minOccurs="1" />
+            <element type="BA206" minOccurs="1" />
+            <element type="BA207" minOccurs="1" />
+            <element type="BA208" />
+            <element type="BA209" />
+            <element type="BA210" />
+            <element type="BA211" />
+        </sequence>
+    </segmentType>
+    <segmentType name="CD1">
+        <sequence>
+            <element type="CD101" minOccurs="1" />
+            <element type="CD102" minOccurs="1" />
+            <element type="CD103" />
+            <element type="CD104" minOccurs="1" />
+            <element type="CD105" minOccurs="1" />
+            <element type="CD106" />
+            <element type="CD107" />
+            <element type="CD108" />
+            <element type="CD109" minOccurs="1" />
+            <element type="CD110" minOccurs="1" />
+            <element type="CD111" minOccurs="1" />
+            <element type="CD112" minOccurs="1" />
+            <element type="CD113" />
+            <element type="CD114" />
+            <element type="CD115" />
+            <element type="CD116" />
+            <element type="CD117" />
+            <element type="CD118" />
+            <element type="CD119" />
+            <element type="CD120" />
+            <element type="CD121" />
+            <element type="CD122" />
+            <element type="CD123" />
+            <element type="CD124" />
+            <element type="CD125" />
+            <element type="CD126" />
+            <element type="CD127" minOccurs="1" />
+            <element type="CD128" minOccurs="1" />
+            <element type="CD129" minOccurs="1" />
+            <element type="CD130" minOccurs="1" />
+            <element type="CD131" minOccurs="1" />
+        </sequence>
+    </segmentType>
+</schema>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <loop code="L0001" minOccurs="1" maxOccurs="255">
+                <sequence>
+                    <segment type="ZT" />
+                    <segment type="F9" />
+                    <segment type="D9" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="D901" base="string" maxLength="5" />
+    <elementType name="D902" base="string" minLength="2" maxLength="30" />
+    <elementType name="D903" base="string" minLength="2" maxLength="2" />
+    <elementType name="D904" base="string" minLength="2" maxLength="3" />
+    <elementType name="D905" base="string" maxLength="5" />
+    <elementType name="D906" base="string" minLength="2" maxLength="30" />
+    <elementType name="D907" base="string" minLength="2" maxLength="2" />
+    <elementType name="D908" base="string" minLength="6" maxLength="9" />
+    <elementType name="D909" base="string" minLength="3" maxLength="15" />
+    <elementType name="D910" base="string" minLength="6" maxLength="9" />
+    <elementType name="D911" base="string" minLength="3" maxLength="15" />
+    <elementType name="D912" base="string" minLength="2" maxLength="3" />
+    <elementType name="F901" base="string" maxLength="5" />
+    <elementType name="F902" base="string" minLength="2" maxLength="30" />
+    <elementType name="F903" base="string" minLength="2" maxLength="2" />
+    <elementType name="F904" base="string" minLength="2" maxLength="3" />
+    <elementType name="F905" base="string" maxLength="5" />
+    <elementType name="F906" base="string" minLength="2" maxLength="30" />
+    <elementType name="F907" base="string" minLength="2" maxLength="2" />
+    <elementType name="F908" base="string" minLength="6" maxLength="9" />
+    <elementType name="F909" base="string" minLength="3" maxLength="15" />
+    <elementType name="F910" base="string" minLength="6" maxLength="9" />
+    <elementType name="F911" base="string" minLength="3" maxLength="15" />
+    <elementType name="F912" base="string" minLength="2" maxLength="3" />
+    <elementType name="ZT01" base="string" />
+    <elementType name="ZT02" base="string" maxLength="4" />
+    <elementType name="ZT03" base="string" maxLength="15" />
+    <elementType name="ZT04" base="decimal" maxLength="6" />
+    <elementType name="ZT05" base="date" minLength="8" maxLength="8" />
+    <elementType name="ZT06" base="decimal" />
+    <segmentType name="D9">
+        <sequence>
+            <element type="D901" />
+            <element type="D902" minOccurs="1" />
+            <element type="D903" minOccurs="1" />
+            <element type="D904" />
+            <element type="D905" />
+            <element type="D906" />
+            <element type="D907" />
+            <element type="D908" />
+            <element type="D909" />
+            <element type="D910" />
+            <element type="D911" />
+            <element type="D912" />
+        </sequence>
+    </segmentType>
+    <segmentType name="F9">
+        <sequence>
+            <element type="F901" />
+            <element type="F902" minOccurs="1" />
+            <element type="F903" minOccurs="1" />
+            <element type="F904" />
+            <element type="F905" />
+            <element type="F906" />
+            <element type="F907" />
+            <element type="F908" />
+            <element type="F909" />
+            <element type="F910" />
+            <element type="F911" />
+            <element type="F912" />
+        </sequence>
+    </segmentType>
+    <segmentType name="ZT">
+        <sequence>
+            <element type="ZT01" minOccurs="1" />
+            <element type="ZT02" minOccurs="1" />
+            <element type="ZT03" minOccurs="1" />
+            <element type="ZT04" />
+            <element type="ZT05" />
+            <element type="ZT06" />
+        </sequence>
+    </segmentType>
+</schema>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="B4" minOccurs="1" />
+            <segment type="N9" maxOccurs="30" />
+            <segment type="Q2" />
+            <segment type="SG" maxOccurs="15" />
+            <loop code="L0001" minOccurs="1" maxOccurs="20">
+                <sequence>
+                    <segment type="R4" />
+                    <segment type="DTM" maxOccurs="15" />
+                </sequence>
+            </loop>
+            <segment type="V9" maxOccurs="10" />
+        </sequence>
+    </transaction>
+    <elementType name="B401" base="string" minLength="2" maxLength="3" />
+    <elementType name="B402" base="decimal" maxLength="3" />
+    <elementType name="B403" base="string" maxLength="2" />
+    <elementType name="B404" base="date" minLength="8" maxLength="8" />
+    <elementType name="B405" base="time" minLength="4" maxLength="8" />
+    <elementType name="B406" base="string" minLength="3" maxLength="5" />
+    <elementType name="B407" base="string" maxLength="4" />
+    <elementType name="B408" base="string" maxLength="15" />
+    <elementType name="B409" base="string" maxLength="2" />
+    <elementType name="B410" base="string" minLength="4" maxLength="4" />
+    <elementType name="B411" base="string" maxLength="30" />
+    <elementType name="B412" base="string" maxLength="2" />
+    <elementType name="B413" base="decimal" />
+    <elementType name="DTM01" base="string" minLength="3" maxLength="3" />
+    <elementType name="DTM02" base="date" minLength="8" maxLength="8" />
+    <elementType name="DTM03" base="time" minLength="4" maxLength="8" />
+    <elementType name="DTM04" base="string" minLength="2" maxLength="2" />
+    <elementType name="DTM05" base="string" minLength="2" maxLength="3" />
+    <elementType name="DTM06" base="string" maxLength="35" />
+    <elementType name="N901" base="string" minLength="2" maxLength="3" />
+    <elementType name="N902" base="string" maxLength="50" />
+    <elementType name="N903" base="string" maxLength="45" />
+    <elementType name="N904" base="date" minLength="8" maxLength="8" />
+    <elementType name="N905" base="time" minLength="4" maxLength="8" />
+    <elementType name="N906" base="string" minLength="2" maxLength="2" />
+    <elementType name="N90701" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90702" base="string" maxLength="50" />
+    <elementType name="N90703" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90704" base="string" maxLength="50" />
+    <elementType name="N90705" base="string" minLength="2" maxLength="3" />
+    <elementType name="N90706" base="string" maxLength="50" />
+    <elementType name="Q201" base="string" maxLength="8" />
+    <elementType name="Q202" base="string" minLength="2" maxLength="3" />
+    <elementType name="Q203" base="date" minLength="8" maxLength="8" />
+    <elementType name="Q204" base="date" minLength="8" maxLength="8" />
+    <elementType name="Q205" base="date" minLength="8" maxLength="8" />
+    <elementType name="Q206" base="decimal" maxLength="7" />
+    <elementType name="Q207" base="decimal" maxLength="10" />
+    <elementType name="Q208" base="string" maxLength="2" />
+    <elementType name="Q209" base="string" minLength="2" maxLength="10" />
+    <elementType name="Q210" base="string" minLength="2" maxLength="3" />
+    <elementType name="Q211" base="string" maxLength="50" />
+    <elementType name="Q212" base="string" />
+    <elementType name="Q213" base="string" minLength="2" maxLength="28" />
+    <elementType name="Q214" base="decimal" maxLength="8" />
+    <elementType name="Q215" base="string" />
+    <elementType name="Q216" base="string" />
+    <elementType name="R401" base="string" />
+    <elementType name="R402" base="string" maxLength="2" />
+    <elementType name="R403" base="string" maxLength="30" />
+    <elementType name="R404" base="string" minLength="2" maxLength="24" />
+    <elementType name="R405" base="string" minLength="2" maxLength="3" />
+    <elementType name="R406" base="string" minLength="2" maxLength="30" />
+    <elementType name="R407" base="string" maxLength="4" />
+    <elementType name="R408" base="string" minLength="2" maxLength="2" />
+    <elementType name="SG01" base="string" maxLength="2" />
+    <elementType name="SG02" base="string" minLength="3" maxLength="3" />
+    <elementType name="SG03" base="string" minLength="2" maxLength="2" />
+    <elementType name="SG04" base="date" minLength="8" maxLength="8" />
+    <elementType name="SG05" base="time" minLength="4" maxLength="8" />
+    <elementType name="SG06" base="string" minLength="2" maxLength="2" />
+    <elementType name="V901" base="string" minLength="3" maxLength="3" />
+    <elementType name="V902" base="string" maxLength="25" />
+    <elementType name="V903" base="date" minLength="8" maxLength="8" />
+    <elementType name="V904" base="time" minLength="4" maxLength="8" />
+    <elementType name="V905" base="string" minLength="2" maxLength="30" />
+    <elementType name="V906" base="string" minLength="2" maxLength="2" />
+    <elementType name="V907" base="string" minLength="2" maxLength="3" />
+    <elementType name="V908" base="string" minLength="3" maxLength="3" />
+    <elementType name="V909" base="string" minLength="6" maxLength="9" />
+    <elementType name="V910" base="decimal" maxLength="15" />
+    <elementType name="V911" base="string" minLength="2" maxLength="3" />
+    <elementType name="V912" base="string" maxLength="30" />
+    <elementType name="V913" base="string" minLength="2" maxLength="2" />
+    <elementType name="V914" base="decimal" maxLength="15" />
+    <elementType name="V915" base="string" minLength="6" maxLength="9" />
+    <elementType name="V916" base="decimal" maxLength="3" />
+    <elementType name="V917" base="decimal" maxLength="3" />
+    <elementType name="V918" base="decimal" maxLength="3" />
+    <elementType name="V919" base="decimal" maxLength="10" />
+    <elementType name="V920" base="decimal" maxLength="8" />
+    <compositeType name="N907">
+        <sequence>
+            <element type="N90701" minOccurs="1" />
+            <element type="N90702" minOccurs="1" />
+            <element type="N90703" />
+            <element type="N90704" />
+            <element type="N90705" />
+            <element type="N90706" />
+        </sequence>
+    </compositeType>
+    <segmentType name="B4">
+        <sequence>
+            <element type="B401" />
+            <element type="B402" />
+            <element type="B403" />
+            <element type="B404" />
+            <element type="B405" />
+            <element type="B406" />
+            <element type="B407" />
+            <element type="B408" />
+            <element type="B409" />
+            <element type="B410" />
+            <element type="B411" />
+            <element type="B412" />
+            <element type="B413" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DTM">
+        <sequence>
+            <element type="DTM01" minOccurs="1" />
+            <element type="DTM02" />
+            <element type="DTM03" />
+            <element type="DTM04" />
+            <element type="DTM05" />
+            <element type="DTM06" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N9">
+        <sequence>
+            <element type="N901" minOccurs="1" />
+            <element type="N902" />
+            <element type="N903" />
+            <element type="N904" />
+            <element type="N905" />
+            <element type="N906" />
+            <composite type="N907" />
+        </sequence>
+    </segmentType>
+    <segmentType name="Q2">
+        <sequence>
+            <element type="Q201" />
+            <element type="Q202" />
+            <element type="Q203" />
+            <element type="Q204" />
+            <element type="Q205" />
+            <element type="Q206" />
+            <element type="Q207" />
+            <element type="Q208" />
+            <element type="Q209" />
+            <element type="Q210" />
+            <element type="Q211" />
+            <element type="Q212" />
+            <element type="Q213" />
+            <element type="Q214" />
+            <element type="Q215" />
+            <element type="Q216" />
+        </sequence>
+    </segmentType>
+    <segmentType name="R4">
+        <sequence>
+            <element type="R401" minOccurs="1" />
+            <element type="R402" />
+            <element type="R403" />
+            <element type="R404" />
+            <element type="R405" />
+            <element type="R406" />
+            <element type="R407" />
+            <element type="R408" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SG">
+        <sequence>
+            <element type="SG01" />
+            <element type="SG02" />
+            <element type="SG03" />
+            <element type="SG04" />
+            <element type="SG05" />
+            <element type="SG06" />
+        </sequence>
+    </segmentType>
+    <segmentType name="V9">
+        <sequence>
+            <element type="V901" minOccurs="1" />
+            <element type="V902" />
+            <element type="V903" />
+            <element type="V904" />
+            <element type="V905" />
+            <element type="V906" />
+            <element type="V907" />
+            <element type="V908" />
+            <element type="V909" />
+            <element type="V910" />
+            <element type="V911" />
+            <element type="V912" />
+            <element type="V913" />
+            <element type="V914" />
+            <element type="V915" />
+            <element type="V916" />
+            <element type="V917" />
+            <element type="V918" />
+            <element type="V919" />
+            <element type="V920" />
+        </sequence>
+    </segmentType>
+</schema>

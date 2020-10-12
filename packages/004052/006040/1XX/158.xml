@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="BGN" minOccurs="1" />
+            <segment type="N1" minOccurs="1" maxOccurs="2" />
+            <loop code="L0001" minOccurs="1" maxOccurs="99999">
+                <sequence>
+                    <segment type="DTP" />
+                    <loop code="L0002" minOccurs="1" maxOccurs="99999">
+                        <sequence>
+                            <segment type="LX" />
+                            <segment type="NX2" minOccurs="1" maxOccurs="99999" />
+                            <segment type="PPA" />
+                            <segment type="TA" maxOccurs="99999" />
+                            <segment type="ASI" />
+                        </sequence>
+                    </loop>
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="ASI01" base="string" maxLength="2" />
+    <elementType name="ASI02" base="string" minLength="3" maxLength="3" />
+    <elementType name="ASI03" base="string" minLength="3" maxLength="3" />
+    <elementType name="BGN01" base="string" minLength="2" maxLength="2" />
+    <elementType name="BGN02" base="string" maxLength="80" />
+    <elementType name="BGN03" base="date" minLength="8" maxLength="8" />
+    <elementType name="BGN04" base="time" minLength="4" maxLength="8" />
+    <elementType name="BGN05" base="string" minLength="2" maxLength="2" />
+    <elementType name="BGN06" base="string" maxLength="80" />
+    <elementType name="BGN07" base="string" minLength="2" maxLength="2" />
+    <elementType name="BGN08" base="string" maxLength="2" />
+    <elementType name="BGN09" base="string" minLength="2" maxLength="2" />
+    <elementType name="DTP01" base="string" minLength="3" maxLength="3" />
+    <elementType name="DTP02" base="string" minLength="2" maxLength="3" />
+    <elementType name="DTP03" base="string" maxLength="35" />
+    <elementType name="LX01" base="decimal" maxLength="6" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="NX201" base="string" minLength="2" maxLength="2" />
+    <elementType name="NX202" base="string" maxLength="55" />
+    <elementType name="NX203" base="string" minLength="5" maxLength="5" />
+    <elementType name="NX204" base="string" minLength="2" maxLength="2" />
+    <elementType name="NX205" base="string" maxLength="55" />
+    <elementType name="PPA01" base="string" maxLength="2" />
+    <elementType name="PPA02" base="string" maxLength="30" />
+    <elementType name="PPA03" base="string" minLength="7" maxLength="7" />
+    <elementType name="PPA04" base="string" />
+    <elementType name="PPA05" base="string" minLength="7" maxLength="7" />
+    <elementType name="PPA06" base="string" />
+    <elementType name="TA01" base="string" minLength="2" maxLength="2" />
+    <elementType name="TA02" base="string" maxLength="10" />
+    <elementType name="TA03" base="string" maxLength="80" />
+    <elementType name="TA04" base="string" minLength="2" maxLength="2" />
+    <elementType name="TA05" base="string" maxLength="80" />
+    <elementType name="TA06" base="string" />
+    <elementType name="TA07" base="string" minLength="2" maxLength="2" />
+    <segmentType name="ASI">
+        <sequence>
+            <element type="ASI01" minOccurs="1" />
+            <element type="ASI02" minOccurs="1" />
+            <element type="ASI03" />
+        </sequence>
+    </segmentType>
+    <segmentType name="BGN">
+        <sequence>
+            <element type="BGN01" minOccurs="1" />
+            <element type="BGN02" minOccurs="1" />
+            <element type="BGN03" minOccurs="1" />
+            <element type="BGN04" />
+            <element type="BGN05" />
+            <element type="BGN06" />
+            <element type="BGN07" />
+            <element type="BGN08" />
+            <element type="BGN09" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DTP">
+        <sequence>
+            <element type="DTP01" minOccurs="1" />
+            <element type="DTP02" minOccurs="1" />
+            <element type="DTP03" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="LX">
+        <sequence>
+            <element type="LX01" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="NX2">
+        <sequence>
+            <element type="NX201" minOccurs="1" />
+            <element type="NX202" minOccurs="1" />
+            <element type="NX203" />
+            <element type="NX204" />
+            <element type="NX205" />
+        </sequence>
+    </segmentType>
+    <segmentType name="PPA">
+        <sequence>
+            <element type="PPA01" minOccurs="1" />
+            <element type="PPA02" minOccurs="1" />
+            <element type="PPA03" />
+            <element type="PPA04" />
+            <element type="PPA05" />
+            <element type="PPA06" />
+        </sequence>
+    </segmentType>
+    <segmentType name="TA">
+        <sequence>
+            <element type="TA01" />
+            <element type="TA02" />
+            <element type="TA03" />
+            <element type="TA04" />
+            <element type="TA05" />
+            <element type="TA06" />
+            <element type="TA07" />
+        </sequence>
+    </segmentType>
+</schema>

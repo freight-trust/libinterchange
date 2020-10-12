@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="CF1" minOccurs="1" />
+            <loop code="L0001" minOccurs="1" maxOccurs="9999">
+                <sequence>
+                    <segment type="CF2" />
+                    <segment type="L11" maxOccurs="99" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="CF101" base="string" maxLength="22" />
+    <elementType name="CF102" base="string" minLength="2" maxLength="4" />
+    <elementType name="CF103" base="date" minLength="8" maxLength="8" />
+    <elementType name="CF104" base="decimal" maxLength="9" />
+    <elementType name="CF105" base="numeric" scale="2" maxLength="15" />
+    <elementType name="CF106" base="date" minLength="8" maxLength="8" />
+    <elementType name="CF201" base="string" maxLength="22" />
+    <elementType name="CF202" base="numeric" scale="2" maxLength="12" />
+    <elementType name="CF203" base="string" maxLength="30" />
+    <elementType name="CF204" base="string" minLength="2" maxLength="2" />
+    <elementType name="CF205" base="date" minLength="8" maxLength="8" />
+    <elementType name="CF206" base="date" minLength="8" maxLength="8" />
+    <elementType name="CF207" base="string" maxLength="2" />
+    <elementType name="CF208" base="string" />
+    <elementType name="CF209" base="decimal" maxLength="10" />
+    <elementType name="CF210" base="string" minLength="2" maxLength="2" />
+    <elementType name="L1101" base="string" maxLength="50" />
+    <elementType name="L1102" base="string" minLength="2" maxLength="3" />
+    <elementType name="L1103" base="string" maxLength="80" />
+    <elementType name="L1104" base="date" minLength="8" maxLength="8" />
+    <elementType name="L1105" base="string" />
+    <segmentType name="CF1">
+        <sequence>
+            <element type="CF101" minOccurs="1" />
+            <element type="CF102" minOccurs="1" />
+            <element type="CF103" />
+            <element type="CF104" />
+            <element type="CF105" />
+            <element type="CF106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="CF2">
+        <sequence>
+            <element type="CF201" minOccurs="1" />
+            <element type="CF202" minOccurs="1" />
+            <element type="CF203" />
+            <element type="CF204" />
+            <element type="CF205" />
+            <element type="CF206" />
+            <element type="CF207" />
+            <element type="CF208" />
+            <element type="CF209" />
+            <element type="CF210" />
+        </sequence>
+    </segmentType>
+    <segmentType name="L11">
+        <sequence>
+            <element type="L1101" />
+            <element type="L1102" />
+            <element type="L1103" />
+            <element type="L1104" />
+            <element type="L1105" />
+        </sequence>
+    </segmentType>
+</schema>

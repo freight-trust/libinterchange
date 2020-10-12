@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="RU1" maxOccurs="999" />
+            <loop code="L0001" maxOccurs="999">
+                <sequence>
+                    <segment type="RU2" />
+                    <segment type="RU3" />
+                    <segment type="NTE" maxOccurs="2" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="NTE01" base="string" minLength="3" maxLength="3" />
+    <elementType name="NTE02" base="string" maxLength="80" />
+    <elementType name="RU101" base="string" />
+    <elementType name="RU102" base="string" maxLength="80" />
+    <elementType name="RU103" base="string" maxLength="60" />
+    <elementType name="RU104" base="string" maxLength="80" />
+    <elementType name="RU105" base="date" minLength="8" maxLength="8" />
+    <elementType name="RU106" base="string" />
+    <elementType name="RU107" base="string" />
+    <elementType name="RU108" base="date" minLength="8" maxLength="8" />
+    <elementType name="RU109" base="string" minLength="14" maxLength="14" />
+    <elementType name="RU201" base="string" />
+    <elementType name="RU202" base="string" maxLength="80" />
+    <elementType name="RU203" base="date" minLength="8" maxLength="8" />
+    <elementType name="RU204" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU205" base="numeric" scale="2" maxLength="15" />
+    <elementType name="RU206" base="string" />
+    <elementType name="RU207" base="date" minLength="8" maxLength="8" />
+    <elementType name="RU208" base="date" minLength="8" maxLength="8" />
+    <elementType name="RU301" base="date" minLength="8" maxLength="8" />
+    <elementType name="RU302" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU303" base="string" />
+    <elementType name="RU304" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU305" base="string" />
+    <elementType name="RU306" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU307" base="string" />
+    <elementType name="RU308" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU309" base="string" />
+    <elementType name="RU310" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU311" base="string" />
+    <elementType name="RU312" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU313" base="string" />
+    <elementType name="RU314" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU315" base="string" />
+    <elementType name="RU316" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU317" base="string" />
+    <elementType name="RU318" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU319" base="string" />
+    <elementType name="RU320" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU321" base="string" />
+    <elementType name="RU322" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU323" base="string" />
+    <elementType name="RU324" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU325" base="string" />
+    <elementType name="RU326" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU327" base="string" />
+    <elementType name="RU328" base="string" minLength="2" maxLength="2" />
+    <elementType name="RU329" base="string" />
+    <segmentType name="NTE">
+        <sequence>
+            <element type="NTE01" />
+            <element type="NTE02" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="RU1">
+        <sequence>
+            <element type="RU101" minOccurs="1" />
+            <element type="RU102" minOccurs="1" />
+            <element type="RU103" minOccurs="1" />
+            <element type="RU104" />
+            <element type="RU105" />
+            <element type="RU106" />
+            <element type="RU107" />
+            <element type="RU108" />
+            <element type="RU109" />
+        </sequence>
+    </segmentType>
+    <segmentType name="RU2">
+        <sequence>
+            <element type="RU201" minOccurs="1" />
+            <element type="RU202" minOccurs="1" />
+            <element type="RU203" />
+            <element type="RU204" />
+            <element type="RU205" />
+            <element type="RU206" />
+            <element type="RU207" />
+            <element type="RU208" />
+        </sequence>
+    </segmentType>
+    <segmentType name="RU3">
+        <sequence>
+            <element type="RU301" minOccurs="1" />
+            <element type="RU302" />
+            <element type="RU303" />
+            <element type="RU304" />
+            <element type="RU305" />
+            <element type="RU306" />
+            <element type="RU307" />
+            <element type="RU308" />
+            <element type="RU309" />
+            <element type="RU310" />
+            <element type="RU311" />
+            <element type="RU312" />
+            <element type="RU313" />
+            <element type="RU314" />
+            <element type="RU315" />
+            <element type="RU316" />
+            <element type="RU317" />
+            <element type="RU318" />
+            <element type="RU319" />
+            <element type="RU320" />
+            <element type="RU321" />
+            <element type="RU322" />
+            <element type="RU323" />
+            <element type="RU324" />
+            <element type="RU325" />
+            <element type="RU326" />
+            <element type="RU327" />
+            <element type="RU328" />
+            <element type="RU329" />
+        </sequence>
+    </segmentType>
+</schema>

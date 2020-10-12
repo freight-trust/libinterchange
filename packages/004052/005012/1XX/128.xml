@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="N1" minOccurs="1" />
+            <segment type="N2" maxOccurs="99" />
+            <segment type="N3" maxOccurs="2" />
+            <segment type="N4" />
+            <segment type="DN" maxOccurs="7" />
+            <segment type="R9" maxOccurs="50" />
+            <segment type="DH" maxOccurs="28" />
+            <segment type="PER" />
+            <segment type="K1" />
+        </sequence>
+    </transaction>
+    <elementType name="DH01" base="string" maxLength="2" />
+    <elementType name="DH02" base="time" minLength="4" maxLength="8" />
+    <elementType name="DH03" base="time" minLength="4" maxLength="8" />
+    <elementType name="DN01" base="string" minLength="2" maxLength="2" />
+    <elementType name="DN02" base="date" minLength="8" maxLength="8" />
+    <elementType name="DN03" base="string" minLength="3" maxLength="3" />
+    <elementType name="DN04" base="string" minLength="3" maxLength="3" />
+    <elementType name="K101" base="string" maxLength="30" />
+    <elementType name="K102" base="string" maxLength="30" />
+    <elementType name="N101" base="string" minLength="2" maxLength="3" />
+    <elementType name="N102" base="string" maxLength="60" />
+    <elementType name="N103" base="string" maxLength="2" />
+    <elementType name="N104" base="string" minLength="2" maxLength="80" />
+    <elementType name="N105" base="string" minLength="2" maxLength="2" />
+    <elementType name="N106" base="string" minLength="2" maxLength="3" />
+    <elementType name="N201" base="string" maxLength="60" />
+    <elementType name="N202" base="string" maxLength="60" />
+    <elementType name="N301" base="string" maxLength="55" />
+    <elementType name="N302" base="string" maxLength="55" />
+    <elementType name="N401" base="string" minLength="2" maxLength="30" />
+    <elementType name="N402" base="string" minLength="2" maxLength="2" />
+    <elementType name="N403" base="string" minLength="3" maxLength="15" />
+    <elementType name="N404" base="string" minLength="2" maxLength="3" />
+    <elementType name="N405" base="string" maxLength="2" />
+    <elementType name="N406" base="string" maxLength="30" />
+    <elementType name="N407" base="string" maxLength="3" />
+    <elementType name="PER01" base="string" minLength="2" maxLength="2" />
+    <elementType name="PER02" base="string" maxLength="60" />
+    <elementType name="PER03" base="string" minLength="2" maxLength="2" />
+    <elementType name="PER04" base="string" maxLength="256" />
+    <elementType name="PER05" base="string" minLength="2" maxLength="2" />
+    <elementType name="PER06" base="string" maxLength="256" />
+    <elementType name="PER07" base="string" minLength="2" maxLength="2" />
+    <elementType name="PER08" base="string" maxLength="256" />
+    <elementType name="PER09" base="string" maxLength="20" />
+    <elementType name="R901" base="string" maxLength="13" />
+    <elementType name="R902" base="string" />
+    <elementType name="R903" base="string" maxLength="2" />
+    <elementType name="R904" base="string" minLength="2" maxLength="4" />
+    <elementType name="R905" base="string" maxLength="2" />
+    <elementType name="R906" base="string" minLength="2" maxLength="4" />
+    <elementType name="R907" base="string" />
+    <elementType name="R908" base="string" />
+    <elementType name="R909" base="string" maxLength="13" />
+    <segmentType name="DH">
+        <sequence>
+            <element type="DH01" minOccurs="1" />
+            <element type="DH02" minOccurs="1" />
+            <element type="DH03" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DN">
+        <sequence>
+            <element type="DN01" minOccurs="1" />
+            <element type="DN02" minOccurs="1" />
+            <element type="DN03" />
+            <element type="DN04" />
+        </sequence>
+    </segmentType>
+    <segmentType name="K1">
+        <sequence>
+            <element type="K101" minOccurs="1" />
+            <element type="K102" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N1">
+        <sequence>
+            <element type="N101" minOccurs="1" />
+            <element type="N102" />
+            <element type="N103" />
+            <element type="N104" />
+            <element type="N105" />
+            <element type="N106" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N2">
+        <sequence>
+            <element type="N201" minOccurs="1" />
+            <element type="N202" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N3">
+        <sequence>
+            <element type="N301" minOccurs="1" />
+            <element type="N302" />
+        </sequence>
+    </segmentType>
+    <segmentType name="N4">
+        <sequence>
+            <element type="N401" />
+            <element type="N402" />
+            <element type="N403" />
+            <element type="N404" />
+            <element type="N405" />
+            <element type="N406" />
+            <element type="N407" />
+        </sequence>
+    </segmentType>
+    <segmentType name="PER">
+        <sequence>
+            <element type="PER01" minOccurs="1" />
+            <element type="PER02" />
+            <element type="PER03" />
+            <element type="PER04" />
+            <element type="PER05" />
+            <element type="PER06" />
+            <element type="PER07" />
+            <element type="PER08" />
+            <element type="PER09" />
+        </sequence>
+    </segmentType>
+    <segmentType name="R9">
+        <sequence>
+            <element type="R901" minOccurs="1" />
+            <element type="R902" />
+            <element type="R903" />
+            <element type="R904" />
+            <element type="R905" />
+            <element type="R906" />
+            <element type="R907" />
+            <element type="R908" />
+            <element type="R909" />
+        </sequence>
+    </segmentType>
+</schema>

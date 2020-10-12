@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <loop code="L0001" minOccurs="1" maxOccurs="150">
+                <sequence>
+                    <segment type="E6" />
+                    <segment type="E8" minOccurs="1" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="E601" base="string" maxLength="4" />
+    <elementType name="E602" base="string" maxLength="15" />
+    <elementType name="E603" base="string" minLength="2" maxLength="30" />
+    <elementType name="E604" base="string" minLength="6" maxLength="9" />
+    <elementType name="E605" base="string" minLength="2" maxLength="4" />
+    <elementType name="E606" base="string" minLength="2" maxLength="4" />
+    <elementType name="E607" base="string" maxLength="30" />
+    <elementType name="E608" base="string" maxLength="4" />
+    <elementType name="E609" base="string" maxLength="2" />
+    <elementType name="E801" base="string" maxLength="12" />
+    <elementType name="E802" base="string" maxLength="2" />
+    <segmentType name="E6">
+        <sequence>
+            <element type="E601" minOccurs="1" />
+            <element type="E602" minOccurs="1" />
+            <element type="E603" minOccurs="1" />
+            <element type="E604" />
+            <element type="E605" minOccurs="1" />
+            <element type="E606" />
+            <element type="E607" />
+            <element type="E608" />
+            <element type="E609" minOccurs="1" />
+        </sequence>
+    </segmentType>
+    <segmentType name="E8">
+        <sequence>
+            <element type="E801" />
+            <element type="E802" />
+        </sequence>
+    </segmentType>
+</schema>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema xmlns="http://xlate.io/EDISchema/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xlate.io/EDISchema/v4 https://www.xlate.io/EDISchema/EDISchema-v4.xsd">
+    <transaction>
+        <sequence>
+            <segment type="DK" minOccurs="1" />
+            <segment type="PRI" minOccurs="1" />
+            <segment type="DM" />
+            <loop code="L0001" maxOccurs="10">
+                <sequence>
+                    <segment type="SC" />
+                    <segment type="DM" />
+                </sequence>
+            </loop>
+        </sequence>
+    </transaction>
+    <elementType name="DK01" base="string" minLength="2" maxLength="4" />
+    <elementType name="DK02" base="string" maxLength="7" />
+    <elementType name="DK03" base="string" maxLength="11" />
+    <elementType name="DK04" base="decimal" maxLength="4" />
+    <elementType name="DK05" base="string" />
+    <elementType name="DK06" base="string" />
+    <elementType name="DK07" base="date" minLength="8" maxLength="8" />
+    <elementType name="DK08" base="date" minLength="8" maxLength="8" />
+    <elementType name="DK09" base="string" minLength="2" maxLength="2" />
+    <elementType name="DK10" base="string" minLength="2" maxLength="30" />
+    <elementType name="DM01" base="string" />
+    <elementType name="DM02" base="string" minLength="2" maxLength="2" />
+    <elementType name="DM03" base="string" maxLength="2" />
+    <elementType name="DM04" base="time" minLength="4" maxLength="8" />
+    <elementType name="DM05" base="decimal" maxLength="3" />
+    <elementType name="DM06" base="string" maxLength="2" />
+    <elementType name="DM07" base="decimal" maxLength="3" />
+    <elementType name="DM08" base="decimal" maxLength="9" />
+    <elementType name="DM09" base="string" maxLength="2" />
+    <elementType name="DM10" base="string" />
+    <elementType name="DM11" base="string" />
+    <elementType name="DM12" base="string" maxLength="2" />
+    <elementType name="DM13" base="decimal" maxLength="3" />
+    <elementType name="DM14" base="decimal" maxLength="3" />
+    <elementType name="DM15" base="decimal" maxLength="9" />
+    <elementType name="DM16" base="decimal" maxLength="3" />
+    <elementType name="DM17" base="decimal" maxLength="9" />
+    <elementType name="DM18" base="decimal" maxLength="3" />
+    <elementType name="DM19" base="decimal" maxLength="9" />
+    <elementType name="DM20" base="decimal" maxLength="3" />
+    <elementType name="DM21" base="decimal" maxLength="9" />
+    <elementType name="PRI01" base="string" minLength="2" maxLength="2" />
+    <elementType name="PRI02" base="string" maxLength="4" />
+    <elementType name="PRI03" base="string" maxLength="7" />
+    <elementType name="PRI04" base="string" maxLength="2" />
+    <elementType name="PRI05" base="string" maxLength="4" />
+    <elementType name="PRI06" base="string" maxLength="2" />
+    <elementType name="PRI07" base="string" maxLength="16" />
+    <elementType name="PRI08" base="string" minLength="2" maxLength="3" />
+    <elementType name="PRI09" base="string" maxLength="80" />
+    <elementType name="PRI10" base="string" minLength="2" maxLength="4" />
+    <elementType name="PRI11" base="string" maxLength="7" />
+    <elementType name="PRI12" base="string" maxLength="11" />
+    <elementType name="PRI13" base="decimal" maxLength="4" />
+    <elementType name="PRI14" base="string" minLength="2" maxLength="30" />
+    <elementType name="SC01" base="decimal" maxLength="2" />
+    <elementType name="SC02" base="string" maxLength="3" />
+    <segmentType name="DK">
+        <sequence>
+            <element type="DK01" minOccurs="1" />
+            <element type="DK02" minOccurs="1" />
+            <element type="DK03" minOccurs="1" />
+            <element type="DK04" minOccurs="1" />
+            <element type="DK05" />
+            <element type="DK06" />
+            <element type="DK07" />
+            <element type="DK08" />
+            <element type="DK09" />
+            <element type="DK10" />
+        </sequence>
+    </segmentType>
+    <segmentType name="DM">
+        <sequence>
+            <element type="DM01" minOccurs="1" />
+            <element type="DM02" minOccurs="1" />
+            <element type="DM03" />
+            <element type="DM04" />
+            <element type="DM05" minOccurs="1" />
+            <element type="DM06" minOccurs="1" />
+            <element type="DM07" minOccurs="1" />
+            <element type="DM08" minOccurs="1" />
+            <element type="DM09" />
+            <element type="DM10" />
+            <element type="DM11" />
+            <element type="DM12" />
+            <element type="DM13" />
+            <element type="DM14" />
+            <element type="DM15" />
+            <element type="DM16" />
+            <element type="DM17" />
+            <element type="DM18" />
+            <element type="DM19" />
+            <element type="DM20" />
+            <element type="DM21" />
+        </sequence>
+    </segmentType>
+    <segmentType name="PRI">
+        <sequence>
+            <element type="PRI01" minOccurs="1" />
+            <element type="PRI02" minOccurs="1" />
+            <element type="PRI03" minOccurs="1" />
+            <element type="PRI04" />
+            <element type="PRI05" />
+            <element type="PRI06" />
+            <element type="PRI07" />
+            <element type="PRI08" />
+            <element type="PRI09" />
+            <element type="PRI10" />
+            <element type="PRI11" />
+            <element type="PRI12" />
+            <element type="PRI13" />
+            <element type="PRI14" />
+        </sequence>
+    </segmentType>
+    <segmentType name="SC">
+        <sequence>
+            <element type="SC01" minOccurs="1" />
+            <element type="SC02" minOccurs="1" />
+        </sequence>
+    </segmentType>
+</schema>

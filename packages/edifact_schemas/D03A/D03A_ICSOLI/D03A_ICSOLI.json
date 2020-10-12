@@ -33,8 +33,18 @@
         { "Id": "FTX", "Min": 0 },
         { "Id": "COM", "Min": 0, "Max": 9 },
         { "Id": "ATT", "Min": 0, "Max": 9 },
-        { "Id": "ADRLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "ADR" }, { "Id": "COM", "Min": 0, "Max": 9 }] },
-        { "Id": "RODLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "ROD" }, { "Id": "MOA" }, { "Id": "FTX", "Min": 0 }] },
+        {
+          "Id": "ADRLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "ADR" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        },
+        {
+          "Id": "RODLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "ROD" }, { "Id": "MOA" }, { "Id": "FTX", "Min": 0 }]
+        },
         {
           "Id": "CODLoop1",
           "Min": 0,
@@ -64,7 +74,12 @@
         { "Id": "DTM", "Min": 0, "Max": 9 },
         { "Id": "QRS", "Min": 0, "Max": 9 },
         { "Id": "FTX", "Min": 0, "Max": 9 },
-        { "Id": "ATTLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "ATT" }, { "Id": "MOA", "Min": 0 }] }
+        {
+          "Id": "ATTLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "ATT" }, { "Id": "MOA", "Min": 0 }]
+        }
       ]
     },
     {

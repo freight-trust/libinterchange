@@ -6,8 +6,18 @@
     { "Id": "BGM" },
     { "Id": "DTM", "Min": 0, "Max": 9 },
     { "Id": "FTX", "Min": 0, "Max": 99 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-    { "Id": "LOCLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
+    {
+      "Id": "LOCLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
     {
       "Id": "TDTLoop1",
       "Min": 0,

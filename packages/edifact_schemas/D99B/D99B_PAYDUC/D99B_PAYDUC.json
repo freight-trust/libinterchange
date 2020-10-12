@@ -15,7 +15,15 @@
       "Id": "NADLoop1",
       "Min": 0,
       "Max": 6,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTALoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0 }] }]
+      "Loop": [
+        { "Id": "NAD" },
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0 }]
+        }
+      ]
     },
     {
       "Id": "GISLoop1",

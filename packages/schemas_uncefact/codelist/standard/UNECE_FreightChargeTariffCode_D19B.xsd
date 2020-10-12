@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 65243 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm65243="urn:un:unece:uncefact:codelist:standard:UNECE:FreightChargeTariffCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:FreightChargeTariffCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm65243="urn:un:unece:uncefact:codelist:standard:UNECE:FreightChargeTariffCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:FreightChargeTariffCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="FreightChargeTariffCode" type="clm65243:FreightChargeTariffCodeContentType"/>
+  <xsd:element name="FreightChargeTariffCode" type="clm65243:FreightChargeTariffCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -45,7 +53,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Basic</ccts:Name>
-            <ccts:Description>Code specifying that the rate or tariff is a basic one.</ccts:Description>
+            <ccts:Description
+            >Code specifying that the rate or tariff is a basic one.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -9,7 +9,11 @@
       "Loop": [
         { "Id": "ARF" },
         { "Id": "DNA", "Min": 0, "Max": "unbounded" },
-        { "Id": "AVDLoop1", "Max": "unbounded", "Loop": [{ "Id": "AVD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }] }
+        {
+          "Id": "AVDLoop1",
+          "Max": "unbounded",
+          "Loop": [{ "Id": "AVD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }]
+        }
       ]
     },
     { "Id": "ATR", "Min": 0, "Max": 1 },

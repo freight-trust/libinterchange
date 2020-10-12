@@ -9,7 +9,12 @@
     {
       "Id": "NADLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 9 }, { "Id": "FTX", "Min": 0, "Max": 99 }]
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "CTA", "Min": 0 },
+        { "Id": "COM", "Min": 0, "Max": 9 },
+        { "Id": "FTX", "Min": 0, "Max": 99 }
+      ]
     },
     {
       "Id": "RFFLoop2",
@@ -21,7 +26,12 @@
         {
           "Id": "RCSLoop1",
           "Max": 99,
-          "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 99 }, { "Id": "MOA", "Min": 0 }, { "Id": "LOC", "Min": 0, "Max": 9 }]
+          "Loop": [
+            { "Id": "RCS" },
+            { "Id": "FTX", "Min": 0, "Max": 99 },
+            { "Id": "MOA", "Min": 0 },
+            { "Id": "LOC", "Min": 0, "Max": 9 }
+          ]
         }
       ]
     },

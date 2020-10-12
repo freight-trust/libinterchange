@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 67233_AutomaticDataCaptureMethodCode - Code List Schema Module ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm67233AutomaticDataCaptureMethodCode="urn:un:unece:uncefact:codelist:standard:UNECE:AutomaticDataCaptureMethodCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:AutomaticDataCaptureMethodCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.3">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm67233AutomaticDataCaptureMethodCode="urn:un:unece:uncefact:codelist:standard:UNECE:AutomaticDataCaptureMethodCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:AutomaticDataCaptureMethodCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.3"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="AutomaticDataCaptureMethodCode" type="clm67233AutomaticDataCaptureMethodCode:AutomaticDataCaptureMethodCodeContentType"/>
+  <xsd:element
+    name="AutomaticDataCaptureMethodCode"
+    type="clm67233AutomaticDataCaptureMethodCode:AutomaticDataCaptureMethodCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -61,7 +72,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package never EPC tagged</ccts:Name>
-            <ccts:Description>The package will never be tagged with an EPC (Electronic Product Code) transponder.</ccts:Description>
+            <ccts:Description
+            >The package will never be tagged with an EPC (Electronic Product Code) transponder.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +81,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package sometimes EPC tagged</ccts:Name>
-            <ccts:Description>The package will sometimes be tagged with an EPC (Electronic Product Code) transponder.</ccts:Description>
+            <ccts:Description
+            >The package will sometimes be tagged with an EPC (Electronic Product Code) transponder.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +90,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tagging/bar code instructions</ccts:Name>
-            <ccts:Description>The information provides instructions as to how a package is to be tagged or have a bar code applied to it.</ccts:Description>
+            <ccts:Description
+            >The information provides instructions as to how a package is to be tagged or have a bar code applied to it.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +99,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package bar-coded and EPC tagged</ccts:Name>
-            <ccts:Description>The package is bar-coded and tagged with an EPC (Electronic Product Code) transponder.</ccts:Description>
+            <ccts:Description
+            >The package is bar-coded and tagged with an EPC (Electronic Product Code) transponder.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +108,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package EPC tagged only</ccts:Name>
-            <ccts:Description>The package is tagged with an EPC (Electronic Product Code) transponder only.</ccts:Description>
+            <ccts:Description
+            >The package is tagged with an EPC (Electronic Product Code) transponder only.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +117,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package marked with a variable measure barcode</ccts:Name>
-            <ccts:Description>The package is marked with a variable measure barcode.</ccts:Description>
+            <ccts:Description
+            >The package is marked with a variable measure barcode.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

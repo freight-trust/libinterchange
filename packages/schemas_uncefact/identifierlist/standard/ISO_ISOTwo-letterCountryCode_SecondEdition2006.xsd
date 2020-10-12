@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 5ISO 3166-1 2A - Code List Schema Module                   ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ids5ISO316612A="urn:un:unece:uncefact:identifierlist:standard:ISO:ISOTwo-letterCountryCode:SecondEdition2006" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:identifierlist:standard:ISO:ISOTwo-letterCountryCode:SecondEdition2006" elementFormDefault="qualified" attributeFormDefault="unqualified" version="10.11">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ids5ISO316612A="urn:un:unece:uncefact:identifierlist:standard:ISO:ISOTwo-letterCountryCode:SecondEdition2006"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:identifierlist:standard:ISO:ISOTwo-letterCountryCode:SecondEdition2006"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="10.11"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="ISOTwoletterCountryCode" type="ids5ISO316612A:ISOTwoletterCountryCodeContentType"/>
+  <xsd:element
+    name="ISOTwoletterCountryCode"
+    type="ids5ISO316612A:ISOTwoletterCountryCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -1311,7 +1322,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>PALESTINE, STATE OF</ccts:Name>
-            <ccts:Description>AT, CH, DE: Es gibt keinen deutschen Ländernamen (weder Kurzbezeichnung noch amtliche Vollform) für diesen Eintrag.
+            <ccts:Description
+            >AT, CH, DE: Es gibt keinen deutschen Ländernamen (weder Kurzbezeichnung noch amtliche Vollform) für diesen Eintrag.
 DE: Die Bundesrepublik Deutschland erkennt einen palästinensischen Staat nicht an.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>

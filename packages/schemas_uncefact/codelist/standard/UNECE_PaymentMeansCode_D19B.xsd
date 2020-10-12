@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 64461 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm64461="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMeansCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMeansCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm64461="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMeansCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentMeansCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="PaymentMeansCode" type="clm64461:PaymentMeansCodeContentType"/>
+  <xsd:element name="PaymentMeansCode" type="clm64461:PaymentMeansCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Instrument not defined</ccts:Name>
-            <ccts:Description>Not defined legally enforceable agreement between two or more parties (expressing a contractual right or a right to the payment of money).</ccts:Description>
+            <ccts:Description
+            >Not defined legally enforceable agreement between two or more parties (expressing a contractual right or a right to the payment of money).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +54,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Automated clearing house credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the automated clearing house system.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the automated clearing house system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +63,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Automated clearing house debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the automated clearing house system.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the automated clearing house system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +72,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand debit reversal</ccts:Name>
-            <ccts:Description>A request to reverse an ACH debit transaction to a demand deposit account.</ccts:Description>
+            <ccts:Description
+            >A request to reverse an ACH debit transaction to a demand deposit account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +81,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand credit reversal</ccts:Name>
-            <ccts:Description>A request to reverse a credit transaction to a demand deposit account.</ccts:Description>
+            <ccts:Description
+            >A request to reverse a credit transaction to a demand deposit account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +90,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a demand deposit account.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a demand deposit account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +99,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a demand deposit account.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a demand deposit account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +108,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Hold</ccts:Name>
-            <ccts:Description>Indicates that the bank should hold the payment for collection by the beneficiary or other instructions.</ccts:Description>
+            <ccts:Description
+            >Indicates that the bank should hold the payment for collection by the beneficiary or other instructions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +117,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>National or regional clearing</ccts:Name>
-            <ccts:Description>Indicates that the payment should be made using the national or regional clearing.</ccts:Description>
+            <ccts:Description
+            >Indicates that the payment should be made using the national or regional clearing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +126,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>In cash</ccts:Name>
-            <ccts:Description>Payment by currency (including bills and coins) in circulation, including checking account deposits.</ccts:Description>
+            <ccts:Description
+            >Payment by currency (including bills and coins) in circulation, including checking account deposits.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +135,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings credit reversal</ccts:Name>
-            <ccts:Description>A request to reverse an ACH credit transaction to a savings account.</ccts:Description>
+            <ccts:Description
+            >A request to reverse an ACH credit transaction to a savings account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,7 +144,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings debit reversal</ccts:Name>
-            <ccts:Description>A request to reverse an ACH debit transaction to a savings account.</ccts:Description>
+            <ccts:Description
+            >A request to reverse an ACH debit transaction to a savings account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +153,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a savings account.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a savings account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +162,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a savings account.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a savings account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +171,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bookentry credit</ccts:Name>
-            <ccts:Description>A credit entry between two accounts at the same bank branch. Synonym: house credit.</ccts:Description>
+            <ccts:Description
+            >A credit entry between two accounts at the same bank branch. Synonym: house credit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +180,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bookentry debit</ccts:Name>
-            <ccts:Description>A debit entry between two accounts at the same bank branch. Synonym: house debit.</ccts:Description>
+            <ccts:Description
+            >A debit entry between two accounts at the same bank branch. Synonym: house debit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +189,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand cash concentration/disbursement (CCD) credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a demand deposit account using the CCD payment format.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a demand deposit account using the CCD payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +198,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand cash concentration/disbursement (CCD) debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a demand deposit account using the CCD payment format.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a demand deposit account using the CCD payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +207,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand corporate trade payment (CTP) credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a demand deposit account using the CTP payment format.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a demand deposit account using the CTP payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +216,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cheque</ccts:Name>
-            <ccts:Description>Payment by a pre-printed form on which instructions are given to an account holder (a bank or building society) to pay a stated sum to a named recipient.</ccts:Description>
+            <ccts:Description
+            >Payment by a pre-printed form on which instructions are given to an account holder (a bank or building society) to pay a stated sum to a named recipient.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +233,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Certified banker's draft</ccts:Name>
-            <ccts:Description>Cheque drawn by a bank on itself or its agent. A person who owes money to another buys the draft from a bank for cash and hands it to the creditor who need have no fear that it might be dishonoured.</ccts:Description>
+            <ccts:Description
+            >Cheque drawn by a bank on itself or its agent. A person who owes money to another buys the draft from a bank for cash and hands it to the creditor who need have no fear that it might be dishonoured.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +242,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bank cheque (issued by a banking or similar establishment)</ccts:Name>
-            <ccts:Description>Payment by a pre-printed form, which has been completed by a financial institution, on which instructions are given to an account holder (a bank or building society) to pay a stated sum to a named recipient.</ccts:Description>
+            <ccts:Description
+            >Payment by a pre-printed form, which has been completed by a financial institution, on which instructions are given to an account holder (a bank or building society) to pay a stated sum to a named recipient.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +251,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bill of exchange awaiting acceptance</ccts:Name>
-            <ccts:Description>Bill drawn by the creditor on the debtor but not yet accepted by the debtor.</ccts:Description>
+            <ccts:Description
+            >Bill drawn by the creditor on the debtor but not yet accepted by the debtor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -229,7 +260,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Certified cheque</ccts:Name>
-            <ccts:Description>Payment by a pre-printed form stamped with the paying bank's certification on which instructions are given to an account holder (a bank or building society) to pay a stated sum to a named recipient .</ccts:Description>
+            <ccts:Description
+            >Payment by a pre-printed form stamped with the paying bank's certification on which instructions are given to an account holder (a bank or building society) to pay a stated sum to a named recipient .</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -237,7 +269,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Local cheque</ccts:Name>
-            <ccts:Description>Indicates that the cheque is given local to the recipient.</ccts:Description>
+            <ccts:Description
+            >Indicates that the cheque is given local to the recipient.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -245,7 +278,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand corporate trade payment (CTP) debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a demand deposit account using the CTP payment format.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a demand deposit account using the CTP payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -253,7 +287,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand corporate trade exchange (CTX) credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a demand deposit account using the CTX payment format.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a demand deposit account using the CTX payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -261,7 +296,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand corporate trade exchange (CTX) debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a demand account using the CTX payment format.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a demand account using the CTX payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -269,7 +305,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit transfer</ccts:Name>
-            <ccts:Description>Payment by credit movement of funds from one account to another.</ccts:Description>
+            <ccts:Description
+            >Payment by credit movement of funds from one account to another.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -277,7 +314,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit transfer</ccts:Name>
-            <ccts:Description>Payment by debit movement of funds from one account to another.</ccts:Description>
+            <ccts:Description
+            >Payment by debit movement of funds from one account to another.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -285,7 +323,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand cash concentration/disbursement plus (CCD+) credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a demand deposit account using the CCD+ payment format.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a demand deposit account using the CCD+ payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -293,7 +332,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH demand cash concentration/disbursement plus (CCD+) debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a demand deposit account using the CCD+ payment format.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a demand deposit account using the CCD+ payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -301,7 +341,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH prearranged payment and deposit (PPD)</ccts:Name>
-            <ccts:Description>A consumer credit transaction made through the ACH system to a demand deposit or savings account.</ccts:Description>
+            <ccts:Description
+            >A consumer credit transaction made through the ACH system to a demand deposit or savings account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -309,7 +350,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings cash concentration/disbursement (CCD) credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a demand deposit or savings account.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a demand deposit or savings account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -317,7 +359,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings cash concentration/disbursement (CCD) debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a savings account using the CCD payment format.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a savings account using the CCD payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -325,7 +368,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings corporate trade payment (CTP) credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a savings account using the CTP payment format.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a savings account using the CTP payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +377,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings corporate trade payment (CTP) debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a savings account using the CTP payment format.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a savings account using the CTP payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -341,7 +386,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings corporate trade exchange (CTX) credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a savings account using the CTX payment format.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a savings account using the CTX payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -349,7 +395,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings corporate trade exchange (CTX) debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a savings account using the CTX payment format.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a savings account using the CTX payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +404,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings cash concentration/disbursement plus (CCD+) credit</ccts:Name>
-            <ccts:Description>A credit transaction made through the ACH system to a savings account using the CCD+ payment format.</ccts:Description>
+            <ccts:Description
+            >A credit transaction made through the ACH system to a savings account using the CCD+ payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -365,7 +413,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Payment to bank account</ccts:Name>
-            <ccts:Description>Payment by an arrangement for settling debts that is operated by the Post Office.</ccts:Description>
+            <ccts:Description
+            >Payment by an arrangement for settling debts that is operated by the Post Office.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -373,7 +422,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ACH savings cash concentration/disbursement plus (CCD+) debit</ccts:Name>
-            <ccts:Description>A debit transaction made through the ACH system to a savings account using the CCD+ payment format.</ccts:Description>
+            <ccts:Description
+            >A debit transaction made through the ACH system to a savings account using the CCD+ payment format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -381,7 +431,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Accepted bill of exchange</ccts:Name>
-            <ccts:Description>Bill drawn by the creditor on the debtor and accepted by the debtor.</ccts:Description>
+            <ccts:Description
+            >Bill drawn by the creditor on the debtor and accepted by the debtor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -389,7 +440,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Referenced home-banking credit transfer</ccts:Name>
-            <ccts:Description>A referenced credit transfer initiated through home-banking.</ccts:Description>
+            <ccts:Description
+            >A referenced credit transfer initiated through home-banking.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -413,7 +465,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bank card</ccts:Name>
-            <ccts:Description>Payment by means of a card issued by a bank or other financial institution.</ccts:Description>
+            <ccts:Description
+            >Payment by means of a card issued by a bank or other financial institution.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -421,7 +474,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Direct debit</ccts:Name>
-            <ccts:Description>The amount is to be, or has been, directly debited to the customer's bank account.</ccts:Description>
+            <ccts:Description
+            >The amount is to be, or has been, directly debited to the customer's bank account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -429,15 +483,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Payment by postgiro</ccts:Name>
-            <ccts:Description>A method for the transmission of funds through the postal system rather than through the banking system.</ccts:Description>
+            <ccts:Description
+            >A method for the transmission of funds through the postal system rather than through the banking system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="51">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>FR, norme 6 97-Telereglement CFONB (French Organisation for Banking Standards)  - Option A</ccts:Name>
-            <ccts:Description>A French standard procedure that allows a debtor to pay an amount due to a creditor. The creditor will forward it to its bank, which will collect the money on the bank account of the debtor.</ccts:Description>
+            <ccts:Name
+            >FR, norme 6 97-Telereglement CFONB (French Organisation for Banking Standards)  - Option A</ccts:Name>
+            <ccts:Description
+            >A French standard procedure that allows a debtor to pay an amount due to a creditor. The creditor will forward it to its bank, which will collect the money on the bank account of the debtor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -445,7 +502,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Urgent commercial payment</ccts:Name>
-            <ccts:Description>Payment order which requires guaranteed processing by the most appropriate means to ensure it occurs on the requested execution date, provided that it is issued to the ordered bank before the agreed cut-off time.</ccts:Description>
+            <ccts:Description
+            >Payment order which requires guaranteed processing by the most appropriate means to ensure it occurs on the requested execution date, provided that it is issued to the ordered bank before the agreed cut-off time.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -453,7 +511,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Urgent Treasury Payment</ccts:Name>
-            <ccts:Description>Payment order or transfer which must be executed, by the most appropriate means, as urgently as possible and before urgent commercial payments.</ccts:Description>
+            <ccts:Description
+            >Payment order or transfer which must be executed, by the most appropriate means, as urgently as possible and before urgent commercial payments.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -485,7 +544,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Standing agreement</ccts:Name>
-            <ccts:Description>The payment means have been previously agreed between seller and buyer and thus are not stated again.</ccts:Description>
+            <ccts:Description
+            >The payment means have been previously agreed between seller and buyer and thus are not stated again.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -493,7 +553,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>SEPA credit transfer</ccts:Name>
-            <ccts:Description>Credit transfer inside the Single Euro Payment Area (SEPA) system.</ccts:Description>
+            <ccts:Description
+            >Credit transfer inside the Single Euro Payment Area (SEPA) system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -501,7 +562,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>SEPA direct debit</ccts:Name>
-            <ccts:Description>Direct debit inside the Single Euro Payment Area (SEPA) system.</ccts:Description>
+            <ccts:Description
+            >Direct debit inside the Single Euro Payment Area (SEPA) system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -509,7 +571,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promissory note</ccts:Name>
-            <ccts:Description>Payment by an unconditional promise in writing made by one person to another, signed by the maker, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
+            <ccts:Description
+            >Payment by an unconditional promise in writing made by one person to another, signed by the maker, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -517,7 +580,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promissory note signed by the debtor</ccts:Name>
-            <ccts:Description>Payment by an unconditional promise in writing made by the debtor to another person, signed by the debtor, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
+            <ccts:Description
+            >Payment by an unconditional promise in writing made by the debtor to another person, signed by the debtor, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -525,15 +589,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promissory note signed by the debtor and endorsed by a bank</ccts:Name>
-            <ccts:Description>Payment by an unconditional promise in writing made by the debtor to another person, signed by the debtor and endorsed by a bank, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
+            <ccts:Description
+            >Payment by an unconditional promise in writing made by the debtor to another person, signed by the debtor and endorsed by a bank, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="63">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Promissory note signed by the debtor and endorsed by a third party</ccts:Name>
-            <ccts:Description>Payment by an unconditional promise in writing made by the debtor to another person, signed by the debtor and endorsed by a third party, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
+            <ccts:Name
+            >Promissory note signed by the debtor and endorsed by a third party</ccts:Name>
+            <ccts:Description
+            >Payment by an unconditional promise in writing made by the debtor to another person, signed by the debtor and endorsed by a third party, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -541,7 +608,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promissory note signed by a bank</ccts:Name>
-            <ccts:Description>Payment by an unconditional promise in writing made by the bank to another person, signed by the bank, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
+            <ccts:Description
+            >Payment by an unconditional promise in writing made by the bank to another person, signed by the bank, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -549,7 +617,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promissory note signed by a bank and endorsed by another bank</ccts:Name>
-            <ccts:Description>Payment by an unconditional promise in writing made by the bank to another person, signed by the bank and endorsed by another bank, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
+            <ccts:Description
+            >Payment by an unconditional promise in writing made by the bank to another person, signed by the bank and endorsed by another bank, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -557,7 +626,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promissory note signed by a third party</ccts:Name>
-            <ccts:Description>Payment by an unconditional promise in writing made by a third party to another person, signed by the third party, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
+            <ccts:Description
+            >Payment by an unconditional promise in writing made by a third party to another person, signed by the third party, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -565,7 +635,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promissory note signed by a third party and endorsed by a bank</ccts:Name>
-            <ccts:Description>Payment by an unconditional promise in writing made by a third party to another person, signed by the third party and endorsed by a bank, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
+            <ccts:Description
+            >Payment by an unconditional promise in writing made by a third party to another person, signed by the third party and endorsed by a bank, engaging to pay on demand or at a fixed or determinable future time a sum certain in money, to order or to bearer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -573,7 +644,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Online payment service</ccts:Name>
-            <ccts:Description>Payment will be made or has been made by an online payment service.</ccts:Description>
+            <ccts:Description
+            >Payment will be made or has been made by an online payment service.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -581,7 +653,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transfer Advice</ccts:Name>
-            <ccts:Description>Transfer of an amount of money in the books of the account servicer. An advice should be sent back to the account owner.</ccts:Description>
+            <ccts:Description
+            >Transfer of an amount of money in the books of the account servicer. An advice should be sent back to the account owner.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -605,15 +678,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bill drawn by the creditor, endorsed by another bank</ccts:Name>
-            <ccts:Description>Bill drawn by the creditor, endorsed by another bank.</ccts:Description>
+            <ccts:Description
+            >Bill drawn by the creditor, endorsed by another bank.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="76">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Bill drawn by the creditor on a bank and endorsed by a third party</ccts:Name>
-            <ccts:Description>Bill drawn by the creditor on a bank and endorsed by a third party.</ccts:Description>
+            <ccts:Name
+            >Bill drawn by the creditor on a bank and endorsed by a third party</ccts:Name>
+            <ccts:Description
+            >Bill drawn by the creditor on a bank and endorsed by a third party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -628,8 +704,10 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="78">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Bill drawn by creditor on third party, accepted and endorsed by bank</ccts:Name>
-            <ccts:Description>Bill drawn by creditor on third party, accepted and endorsed by bank.</ccts:Description>
+            <ccts:Name
+            >Bill drawn by creditor on third party, accepted and endorsed by bank</ccts:Name>
+            <ccts:Description
+            >Bill drawn by creditor on third party, accepted and endorsed by bank.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -645,7 +723,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Not transferable local cheque</ccts:Name>
-            <ccts:Description>Issue a cheque not endorsable in payment of the funds.</ccts:Description>
+            <ccts:Description
+            >Issue a cheque not endorsable in payment of the funds.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -653,7 +732,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Reference giro</ccts:Name>
-            <ccts:Description>Ordering customer tells the bank to use the payment system 'Reference giro'. Used in the Finnish national banking system.</ccts:Description>
+            <ccts:Description
+            >Ordering customer tells the bank to use the payment system 'Reference giro'. Used in the Finnish national banking system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -661,7 +741,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Urgent giro</ccts:Name>
-            <ccts:Description>Ordering customer tells the bank to use the bank service 'Urgent Giro' when transferring the payment. Used in Finnish national banking system.</ccts:Description>
+            <ccts:Description
+            >Ordering customer tells the bank to use the bank service 'Urgent Giro' when transferring the payment. Used in Finnish national banking system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -669,7 +750,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Free format giro</ccts:Name>
-            <ccts:Description>Ordering customer tells the ordering bank to use the bank service 'Free Format Giro' when transferring the payment. Used in Finnish national banking system.</ccts:Description>
+            <ccts:Description
+            >Ordering customer tells the ordering bank to use the bank service 'Free Format Giro' when transferring the payment. Used in Finnish national banking system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -677,7 +759,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Requested method for payment was not used</ccts:Name>
-            <ccts:Description>If the requested method for payment was or could not be used, this code indicates that.</ccts:Description>
+            <ccts:Description
+            >If the requested method for payment was or could not be used, this code indicates that.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -685,7 +768,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Clearing between partners</ccts:Name>
-            <ccts:Description>Amounts which two partners owe to each other to be compensated in order to avoid useless payments.</ccts:Description>
+            <ccts:Description
+            >Amounts which two partners owe to each other to be compensated in order to avoid useless payments.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -693,7 +777,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Mutually defined</ccts:Name>
-            <ccts:Description>A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
+            <ccts:Description
+            >A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

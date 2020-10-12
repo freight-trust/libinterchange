@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 69677 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm69677="urn:un:unece:uncefact:codelist:standard:UNECE:SecurityClassificationType:D10B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:SecurityClassificationType:D10B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.3">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm69677="urn:un:unece:uncefact:codelist:standard:UNECE:SecurityClassificationType:D10B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:SecurityClassificationType:D10B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="1.3"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="SecurityClassificationType" type="clm69677:SecurityClassificationTypeContentType"/>
+  <xsd:element
+    name="SecurityClassificationType"
+    type="clm69677:SecurityClassificationTypeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -45,7 +56,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Government confidential</ccts:Name>
-            <ccts:Description>Information which is defined by a government entity as confidential.</ccts:Description>
+            <ccts:Description
+            >Information which is defined by a government entity as confidential.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +65,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Government non-classified</ccts:Name>
-            <ccts:Description>Information which is defined by a government entity as not confidential.</ccts:Description>
+            <ccts:Description
+            >Information which is defined by a government entity as not confidential.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +74,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Government secret</ccts:Name>
-            <ccts:Description>Information which is defined by a government entity as secret.</ccts:Description>
+            <ccts:Description
+            >Information which is defined by a government entity as secret.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +83,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Government top secret</ccts:Name>
-            <ccts:Description>Information which is defined by a government entity as having the highest level of secrecy.</ccts:Description>
+            <ccts:Description
+            >Information which is defined by a government entity as having the highest level of secrecy.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

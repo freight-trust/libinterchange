@@ -6,7 +6,12 @@
     { "Id": "BGM" },
     { "Id": "DTM", "Min": 0, "Max": 9 },
     { "Id": "FTX", "Min": 0, "Max": 9 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
     {
       "Id": "TDTLoop1",
       "Loop": [
@@ -20,7 +25,15 @@
     {
       "Id": "NADLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }]
+      "Loop": [
+        { "Id": "NAD" },
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        }
+      ]
     },
     {
       "Id": "EQDLoop1",
@@ -44,7 +57,12 @@
         {
           "Id": "TDTLoop2",
           "Min": 0,
-          "Loop": [{ "Id": "TDT" }, { "Id": "RFF", "Min": 0, "Max": 9 }, { "Id": "LOC", "Min": 0, "Max": 9 }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+          "Loop": [
+            { "Id": "TDT" },
+            { "Id": "RFF", "Min": 0, "Max": 9 },
+            { "Id": "LOC", "Min": 0, "Max": 9 },
+            { "Id": "DTM", "Min": 0, "Max": 9 }
+          ]
         },
         { "Id": "NAD", "Min": 0 }
       ]

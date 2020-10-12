@@ -8,7 +8,12 @@
     { "Id": "ERR", "Min": 0, "Max": 1 },
     { "Id": "QAK", "Min": 1, "Max": 1 },
     { "Id": "QPD", "Min": 1, "Max": 1 },
-    { "Id": "RSP_K23.QUERY_RESPONSE", "Min": 0, "Max": 1, "Loop": [{ "Id": "PID", "Min": 1, "Max": 1 }] },
+    {
+      "Id": "RSP_K23.QUERY_RESPONSE",
+      "Min": 0,
+      "Max": 1,
+      "Loop": [{ "Id": "PID", "Min": 1, "Max": 1 }]
+    },
     { "Id": "DSC", "Min": 0, "Max": 1 }
   ]
 }

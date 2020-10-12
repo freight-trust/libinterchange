@@ -7,8 +7,20 @@
     { "Id": "CNT" },
     { "Id": "FTX", "Min": 0, "Max": 5 },
     { "Id": "RFF", "Min": 0 },
-    { "Id": "TDTLoop1", "Loop": [{ "Id": "TDT" }, { "Id": "DTM", "Min": 0 }, { "Id": "CTA", "Min": 0 }] },
-    { "Id": "LOCLoop1", "Max": 3, "Loop": [{ "Id": "LOC" }, { "Id": "NAD", "Min": 0 }, { "Id": "RFF", "Min": 0 }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "TDTLoop1",
+      "Loop": [{ "Id": "TDT" }, { "Id": "DTM", "Min": 0 }, { "Id": "CTA", "Min": 0 }]
+    },
+    {
+      "Id": "LOCLoop1",
+      "Max": 3,
+      "Loop": [
+        { "Id": "LOC" },
+        { "Id": "NAD", "Min": 0 },
+        { "Id": "RFF", "Min": 0 },
+        { "Id": "DTM", "Min": 0 }
+      ]
+    },
     { "Id": "EQDLoop1", "Max": 9999, "Loop": [{ "Id": "EQD" }, { "Id": "SEL", "Min": 0 }] },
     {
       "Id": "CNILoop1",
@@ -31,7 +43,15 @@
                 { "Id": "DGS" },
                 { "Id": "FTX", "Min": 0, "Max": 5 },
                 { "Id": "MEA", "Min": 0, "Max": 2 },
-                { "Id": "SGPLoop1", "Max": 9999, "Loop": [{ "Id": "SGP" }, { "Id": "LOC", "Min": 0 }, { "Id": "MEA", "Min": 0, "Max": 2 }] }
+                {
+                  "Id": "SGPLoop1",
+                  "Max": 9999,
+                  "Loop": [
+                    { "Id": "SGP" },
+                    { "Id": "LOC", "Min": 0 },
+                    { "Id": "MEA", "Min": 0, "Max": 2 }
+                  ]
+                }
               ]
             }
           ]

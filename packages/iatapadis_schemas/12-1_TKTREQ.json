@@ -24,7 +24,16 @@
       "Id": "ORGLoop1",
       "Min": 0,
       "Max": 99,
-      "Loop": [{ "Id": "TKT" }, { "Id": "CVRLoop1", "Min": 0, "Max": 4, "Loop": [{ "Id": "CPN" }, { "Id": "CVR", "Min": 0 }] }, { "Id": "ORG", "Min": 0 }]
+      "Loop": [
+        { "Id": "TKT" },
+        {
+          "Id": "CVRLoop1",
+          "Min": 0,
+          "Max": 4,
+          "Loop": [{ "Id": "CPN" }, { "Id": "CVR", "Min": 0 }]
+        },
+        { "Id": "ORG", "Min": 0 }
+      ]
     },
     {
       "Id": "PTSLoop1",
@@ -101,7 +110,12 @@
                   "Max": 99,
                   "Loop": [
                     { "Id": "ITM" },
-                    { "Id": "TVLLoop3", "Min": 0, "Max": 99, "Loop": [{ "Id": "ADT" }, { "Id": "TVL", "Min": 0 }] },
+                    {
+                      "Id": "TVLLoop3",
+                      "Min": 0,
+                      "Max": 99,
+                      "Loop": [{ "Id": "ADT" }, { "Id": "TVL", "Min": 0 }]
+                    },
                     { "Id": "MON", "Min": 0 },
                     { "Id": "PTS", "Min": 0 },
                     { "Id": "FCC", "Min": 0 },
@@ -131,7 +145,11 @@
             { "Id": "APD", "Min": 0 }
           ]
         },
-        { "Id": "SPILoop1", "Min": 0, "Loop": [{ "Id": "TPD" }, { "Id": "SPI", "Min": 0, "Max": 4 }] },
+        {
+          "Id": "SPILoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "TPD" }, { "Id": "SPI", "Min": 0, "Max": 4 }]
+        },
         { "Id": "DIDLoop2", "Min": 0, "Loop": [{ "Id": "ABI" }, { "Id": "DID", "Min": 0 }] },
         {
           "Id": "SDTLoop1",
@@ -152,7 +170,12 @@
                   "Id": "FARLoop3",
                   "Min": 0,
                   "Max": 99,
-                  "Loop": [{ "Id": "ITM" }, { "Id": "FRU", "Min": 0 }, { "Id": "PTK", "Min": 0 }, { "Id": "FAR", "Min": 0 }]
+                  "Loop": [
+                    { "Id": "ITM" },
+                    { "Id": "FRU", "Min": 0 },
+                    { "Id": "PTK", "Min": 0 },
+                    { "Id": "FAR", "Min": 0 }
+                  ]
                 }
               ]
             }
@@ -176,14 +199,22 @@
                     { "Id": "CPN" },
                     { "Id": "TXD", "Min": 0 },
                     { "Id": "EQI", "Min": 0 },
-                    { "Id": "EQILoop2", "Min": 0, "Loop": [{ "Id": "TII" }, { "Id": "EQI", "Min": 0 }] }
+                    {
+                      "Id": "EQILoop2",
+                      "Min": 0,
+                      "Loop": [{ "Id": "TII" }, { "Id": "EQI", "Min": 0 }]
+                    }
                   ]
                 }
               ]
             }
           ]
         },
-        { "Id": "CVRLoop4", "Min": 0, "Loop": [{ "Id": "REF" }, { "Id": "MON", "Min": 0 }, { "Id": "CVR", "Min": 0 }] }
+        {
+          "Id": "CVRLoop4",
+          "Min": 0,
+          "Loop": [{ "Id": "REF" }, { "Id": "MON", "Min": 0 }, { "Id": "CVR", "Min": 0 }]
+        }
       ]
     },
     { "Id": "UNT" }

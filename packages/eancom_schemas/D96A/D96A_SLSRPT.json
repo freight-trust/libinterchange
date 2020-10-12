@@ -8,10 +8,28 @@
     {
       "Id": "NADLoop1",
       "Max": 5,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTALoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }] }]
+      "Loop": [
+        { "Id": "NAD" },
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }]
+        }
+      ]
     },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 5 }] },
-    { "Id": "CUXLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0, "Max": 5 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 5 }]
+    },
+    {
+      "Id": "CUXLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0, "Max": 5 }]
+    },
     {
       "Id": "LOCLoop1",
       "Max": 200000,
@@ -30,7 +48,12 @@
             { "Id": "ALI", "Min": 0, "Max": 5 },
             { "Id": "MOA", "Min": 0, "Max": 5 },
             { "Id": "PRI", "Min": 0, "Max": 5 },
-            { "Id": "QTYLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "QTY" }, { "Id": "NAD", "Min": 0 }] }
+            {
+              "Id": "QTYLoop1",
+              "Min": 0,
+              "Max": 999,
+              "Loop": [{ "Id": "QTY" }, { "Id": "NAD", "Min": 0 }]
+            }
           ]
         }
       ]

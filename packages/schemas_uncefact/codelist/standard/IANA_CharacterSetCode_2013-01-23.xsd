@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== IANA Character Set Code - Code List Schema Module          ===== -->
 <!-- ====================================================================== -->
@@ -39,13 +39,21 @@ BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL
 NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR 
 FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clmIANACharacterSetCode="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2013-01-23" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2013-01-23" elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clmIANACharacterSetCode="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2013-01-23"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2013-01-23"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="4.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="CharacterSetCode" type="clmIANACharacterSetCode:CharacterSetCodeContentType"/>
+  <xsd:element name="CharacterSetCode" type="clmIANACharacterSetCode:CharacterSetCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -67,7 +75,8 @@ Aliases: iso-ir-6; ANSI_X3.4-1968; ANSI_X3.4-1986; ISO_646.irv:1991; ISO646-US; 
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-1:1987</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-100; ISO_8859-1; ISO-8859-1; latin1; l1; IBM819; CP819; csISOLatin1</ccts:Description>
           </xsd:documentation>
@@ -77,7 +86,8 @@ Aliases: iso-ir-100; ISO_8859-1; ISO-8859-1; latin1; l1; IBM819; CP819; csISOLat
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-2:1987</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-101; ISO_8859-2; ISO-8859-2; latin2; l2; csISOLatin2</ccts:Description>
           </xsd:documentation>
@@ -87,7 +97,8 @@ Aliases: iso-ir-101; ISO_8859-2; ISO-8859-2; latin2; l2; csISOLatin2</ccts:Descr
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-3:1988</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-109; ISO_8859-3; ISO-8859-3; latin3; l3; csISOLatin3</ccts:Description>
           </xsd:documentation>
@@ -97,7 +108,8 @@ Aliases: iso-ir-109; ISO_8859-3; ISO-8859-3; latin3; l3; csISOLatin3</ccts:Descr
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-4:1988</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-110; ISO_8859-4; ISO-8859-4; latin4; l4; csISOLatin4</ccts:Description>
           </xsd:documentation>
@@ -107,7 +119,8 @@ Aliases: iso-ir-110; ISO_8859-4; ISO-8859-4; latin4; l4; csISOLatin4</ccts:Descr
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-5:1988</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-144; ISO_8859-5; ISO-8859-5; cyrillic; csISOLatinCyrillic</ccts:Description>
           </xsd:documentation>
@@ -117,7 +130,8 @@ Aliases: iso-ir-144; ISO_8859-5; ISO-8859-5; cyrillic; csISOLatinCyrillic</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-6:1987</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-127; ISO_8859-6; ISO-8859-6; ECMA-114; ASMO-708; arabic; csISOLatinArabic</ccts:Description>
           </xsd:documentation>
@@ -127,7 +141,8 @@ Aliases: iso-ir-127; ISO_8859-6; ISO-8859-6; ECMA-114; ASMO-708; arabic; csISOLa
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-7:1987</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1947][RFC1345][Keld_Simonsen]
 Aliases: iso-ir-126; ISO_8859-7; ISO-8859-7; ELOT_928; ECMA-118; greek; greek8; csISOLatinGreek</ccts:Description>
           </xsd:documentation>
@@ -137,7 +152,8 @@ Aliases: iso-ir-126; ISO_8859-7; ISO-8859-7; ELOT_928; ECMA-118; greek; greek8; 
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-8:1988</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-138; ISO_8859-8; ISO-8859-8; hebrew; csISOLatinHebrew</ccts:Description>
           </xsd:documentation>
@@ -147,7 +163,8 @@ Aliases: iso-ir-138; ISO_8859-8; ISO-8859-8; hebrew; csISOLatinHebrew</ccts:Desc
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-9:1989</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-148; ISO_8859-9; ISO-8859-9; latin5; l5; csISOLatin5</ccts:Description>
           </xsd:documentation>
@@ -157,7 +174,8 @@ Aliases: iso-ir-148; ISO_8859-9; ISO-8859-9; latin5; l5; csISOLatin5</ccts:Descr
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-8859-10</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-157; l6; ISO_8859-10:1992; csISOLatin6; latin6</ccts:Description>
           </xsd:documentation>
@@ -167,7 +185,8 @@ Aliases: iso-ir-157; l6; ISO_8859-10:1992; csISOLatin6; latin6</ccts:Description
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_6937-2-add</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences] and ISO 6937-2:1983; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences] and ISO 6937-2:1983; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-142; csISOTextComm</ccts:Description>
           </xsd:documentation>
@@ -177,7 +196,8 @@ Aliases: iso-ir-142; csISOTextComm</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_X0201</ccts:Name>
-            <ccts:Description>Source: JIS X 0201-1976. One byte only, this is equivalent to JIS/Roman (similar to ASCII) plus eight-bit half-width Katakana
+            <ccts:Description
+            >Source: JIS X 0201-1976. One byte only, this is equivalent to JIS/Roman (similar to ASCII) plus eight-bit half-width Katakana
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: X0201; csHalfWidthKatakana</ccts:Description>
           </xsd:documentation>
@@ -187,7 +207,8 @@ Aliases: X0201; csHalfWidthKatakana</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_Encoding</ccts:Name>
-            <ccts:Description>Source: JIS X 0202-1991. Uses ISO 2022 escape sequences to shift code sets as documented in JIS X 0202-1991.
+            <ccts:Description
+            >Source: JIS X 0202-1991. Uses ISO 2022 escape sequences to shift code sets as documented in JIS X 0202-1991.
 Reference:
 Aliases: csJISEncoding</ccts:Description>
           </xsd:documentation>
@@ -197,7 +218,8 @@ Aliases: csJISEncoding</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shift_JIS</ccts:Name>
-            <ccts:Description>Source: This charset is an extension of csHalfWidthKatakana by adding graphic characters in JIS X 0208. The CCS's are JIS X0201:1997 and JIS X0208:1997. The complete definition is shown in Appendix 1 of JIS X0208:1997. This charset can be used for the top-level media type "text".
+            <ccts:Description
+            >Source: This charset is an extension of csHalfWidthKatakana by adding graphic characters in JIS X 0208. The CCS's are JIS X0201:1997 and JIS X0208:1997. The complete definition is shown in Appendix 1 of JIS X0208:1997. This charset can be used for the top-level media type "text".
 Reference:
 Aliases: MS_Kanji; csShiftJIS</ccts:Description>
           </xsd:documentation>
@@ -207,7 +229,8 @@ Aliases: MS_Kanji; csShiftJIS</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Extended_UNIX_Code_Packed_Format_for_Japanese</ccts:Name>
-            <ccts:Description>Source: Standardized by OSF, UNIX International, and UNIX Systems Laboratories Pacific. Uses ISO 2022 rules to select code set 0: US-ASCII (a single 7-bit byte set) code set 1: JIS X0208-1990 (a double 8-bit byte set) restricted to A0-FF in both bytes code set 2: Half Width Katakana (a single 7-bit byte set) requiring SS2 as the character prefix code set 3: JIS X0212-1990 (a double 7-bit byte set) restricted to A0-FF in both bytes requiring SS3 as the character prefix
+            <ccts:Description
+            >Source: Standardized by OSF, UNIX International, and UNIX Systems Laboratories Pacific. Uses ISO 2022 rules to select code set 0: US-ASCII (a single 7-bit byte set) code set 1: JIS X0208-1990 (a double 8-bit byte set) restricted to A0-FF in both bytes code set 2: Half Width Katakana (a single 7-bit byte set) requiring SS2 as the character prefix code set 3: JIS X0212-1990 (a double 7-bit byte set) restricted to A0-FF in both bytes requiring SS3 as the character prefix
 Reference:
 Aliases: csEUCPkdFmtJapanese; EUC-JP</ccts:Description>
           </xsd:documentation>
@@ -217,7 +240,8 @@ Aliases: csEUCPkdFmtJapanese; EUC-JP</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Extended_UNIX_Code_Fixed_Width_for_Japanese</ccts:Name>
-            <ccts:Description>Source: Used in Japan. Each character is 2 octets. code set 0: US-ASCII (a single 7-bit byte set) 1st byte = 00 2nd byte = 20-7E code set 1: JIS X0208-1990 (a double 7-bit byte set) restricted to A0-FF in both bytes code set 2: Half Width Katakana (a single 7-bit byte set) 1st byte = 00 2nd byte = A0-FF code set 3: JIS X0212-1990 (a double 7-bit byte set) restricted to A0-FF in the first byte and 21-7E in the second byte
+            <ccts:Description
+            >Source: Used in Japan. Each character is 2 octets. code set 0: US-ASCII (a single 7-bit byte set) 1st byte = 00 2nd byte = 20-7E code set 1: JIS X0208-1990 (a double 7-bit byte set) restricted to A0-FF in both bytes code set 2: Half Width Katakana (a single 7-bit byte set) 1st byte = 00 2nd byte = A0-FF code set 3: JIS X0212-1990 (a double 7-bit byte set) restricted to A0-FF in the first byte and 21-7E in the second byte
 Reference:
 Aliases: csEUCFixWidJapanese</ccts:Description>
           </xsd:documentation>
@@ -227,7 +251,8 @@ Aliases: csEUCFixWidJapanese</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>BS_4730</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-4; ISO646-GB; gb; uk; csISO4UnitedKingdom</ccts:Description>
           </xsd:documentation>
@@ -237,7 +262,8 @@ Aliases: iso-ir-4; ISO646-GB; gb; uk; csISO4UnitedKingdom</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>SEN_850200_C</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-11; ISO646-SE2; se2; csISO11SwedishForNames</ccts:Description>
           </xsd:documentation>
@@ -247,7 +273,8 @@ Aliases: iso-ir-11; ISO646-SE2; se2; csISO11SwedishForNames</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IT</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-15; ISO646-IT; csISO15Italian</ccts:Description>
           </xsd:documentation>
@@ -257,7 +284,8 @@ Aliases: iso-ir-15; ISO646-IT; csISO15Italian</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ES</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-17; ISO646-ES; csISO17Spanish</ccts:Description>
           </xsd:documentation>
@@ -267,7 +295,8 @@ Aliases: iso-ir-17; ISO646-ES; csISO17Spanish</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>DIN_66003</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-21; de; ISO646-DE; csISO21German</ccts:Description>
           </xsd:documentation>
@@ -277,7 +306,8 @@ Aliases: iso-ir-21; de; ISO646-DE; csISO21German</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NS_4551-1</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-60; ISO646-NO; no; csISO60DanishNorwegian; csISO60Norwegian1</ccts:Description>
           </xsd:documentation>
@@ -287,7 +317,8 @@ Aliases: iso-ir-60; ISO646-NO; no; csISO60DanishNorwegian; csISO60Norwegian1</cc
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NF_Z_62-010</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-69; ISO646-FR; fr; csISO69French</ccts:Description>
           </xsd:documentation>
@@ -297,7 +328,8 @@ Aliases: iso-ir-69; ISO646-FR; fr; csISO69French</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-10646-UTF-1</ccts:Name>
-            <ccts:Description>Source: Universal Transfer Format (1), this is the multibyte encoding, that subsets ASCII-7. It does not have byte ordering issues.
+            <ccts:Description
+            >Source: Universal Transfer Format (1), this is the multibyte encoding, that subsets ASCII-7. It does not have byte ordering issues.
 Reference:
 Aliases: csISO10646UTF1</ccts:Description>
           </xsd:documentation>
@@ -307,7 +339,8 @@ Aliases: csISO10646UTF1</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_646.basic:1983</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: ref; csISO646basic1983</ccts:Description>
           </xsd:documentation>
@@ -327,7 +360,8 @@ Aliases: csINVARIANT</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_646.irv:1983</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-2; irv; csISO2IntlRefVersion</ccts:Description>
           </xsd:documentation>
@@ -337,7 +371,8 @@ Aliases: iso-ir-2; irv; csISO2IntlRefVersion</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NATS-SEFI</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-8-1; csNATSSEFI</ccts:Description>
           </xsd:documentation>
@@ -347,7 +382,8 @@ Aliases: iso-ir-8-1; csNATSSEFI</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NATS-SEFI-ADD</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-8-2; csNATSSEFIADD</ccts:Description>
           </xsd:documentation>
@@ -357,7 +393,8 @@ Aliases: iso-ir-8-2; csNATSSEFIADD</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NATS-DANO</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-9-1; csNATSDANO</ccts:Description>
           </xsd:documentation>
@@ -367,7 +404,8 @@ Aliases: iso-ir-9-1; csNATSDANO</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NATS-DANO-ADD</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-9-2; csNATSDANOADD</ccts:Description>
           </xsd:documentation>
@@ -377,7 +415,8 @@ Aliases: iso-ir-9-2; csNATSDANOADD</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>SEN_850200_B</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-10; FI; ISO646-FI; ISO646-SE; se; csISO10Swedish</ccts:Description>
           </xsd:documentation>
@@ -387,7 +426,8 @@ Aliases: iso-ir-10; FI; ISO646-FI; ISO646-SE; se; csISO10Swedish</ccts:Descripti
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>KS_C_5601-1987</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-149; KS_C_5601-1989; KSC_5601; korean; csKSC56011987</ccts:Description>
           </xsd:documentation>
@@ -437,7 +477,8 @@ Aliases: csISO2022JP2</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6220-1969-jp</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: JIS_C6220-1969; iso-ir-13; katakana; x0201-7; csISO13JISC6220jp</ccts:Description>
           </xsd:documentation>
@@ -447,7 +488,8 @@ Aliases: JIS_C6220-1969; iso-ir-13; katakana; x0201-7; csISO13JISC6220jp</ccts:D
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6220-1969-ro</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-14; jp; ISO646-JP; csISO14JISC6220ro</ccts:Description>
           </xsd:documentation>
@@ -457,7 +499,8 @@ Aliases: iso-ir-14; jp; ISO646-JP; csISO14JISC6220ro</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>PT</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-16; ISO646-PT; csISO16Portuguese</ccts:Description>
           </xsd:documentation>
@@ -467,7 +510,8 @@ Aliases: iso-ir-16; ISO646-PT; csISO16Portuguese</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>greek7-old</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-18; csISO18Greek7Old</ccts:Description>
           </xsd:documentation>
@@ -477,7 +521,8 @@ Aliases: iso-ir-18; csISO18Greek7Old</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>latin-greek</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-19; csISO19LatinGreek</ccts:Description>
           </xsd:documentation>
@@ -487,7 +532,8 @@ Aliases: iso-ir-19; csISO19LatinGreek</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NF_Z_62-010_(1973)</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-25; ISO646-FR1; csISO25French</ccts:Description>
           </xsd:documentation>
@@ -497,7 +543,8 @@ Aliases: iso-ir-25; ISO646-FR1; csISO25French</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Latin-greek-1</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-27; csISO27LatinGreek1</ccts:Description>
           </xsd:documentation>
@@ -507,7 +554,8 @@ Aliases: iso-ir-27; csISO27LatinGreek1</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_5427</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-37; csISO5427Cyrillic</ccts:Description>
           </xsd:documentation>
@@ -517,7 +565,8 @@ Aliases: iso-ir-37; csISO5427Cyrillic</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6226-1978</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-42; csISO42JISC62261978</ccts:Description>
           </xsd:documentation>
@@ -527,7 +576,8 @@ Aliases: iso-ir-42; csISO42JISC62261978</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>BS_viewdata</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-47; csISO47BSViewdata</ccts:Description>
           </xsd:documentation>
@@ -537,7 +587,8 @@ Aliases: iso-ir-47; csISO47BSViewdata</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>INIS</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-49; csISO49INIS</ccts:Description>
           </xsd:documentation>
@@ -547,7 +598,8 @@ Aliases: iso-ir-49; csISO49INIS</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>INIS-8</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-50; csISO50INIS8</ccts:Description>
           </xsd:documentation>
@@ -557,7 +609,8 @@ Aliases: iso-ir-50; csISO50INIS8</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>INIS-cyrillic</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-51; csISO51INISCyrillic</ccts:Description>
           </xsd:documentation>
@@ -567,7 +620,8 @@ Aliases: iso-ir-51; csISO51INISCyrillic</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_5427:1981</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-54; ISO5427Cyrillic1981; csISO54271981</ccts:Description>
           </xsd:documentation>
@@ -577,7 +631,8 @@ Aliases: iso-ir-54; ISO5427Cyrillic1981; csISO54271981</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_5428:1980</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-55; csISO5428Greek</ccts:Description>
           </xsd:documentation>
@@ -587,7 +642,8 @@ Aliases: iso-ir-55; csISO5428Greek</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>GB_1988-80</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-57; cn; ISO646-CN; csISO57GB1988</ccts:Description>
           </xsd:documentation>
@@ -597,7 +653,8 @@ Aliases: iso-ir-57; cn; ISO646-CN; csISO57GB1988</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>GB_2312-80</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-58; chinese; csISO58GB231280</ccts:Description>
           </xsd:documentation>
@@ -607,7 +664,8 @@ Aliases: iso-ir-58; chinese; csISO58GB231280</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NS_4551-2</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: ISO646-NO2; iso-ir-61; no2; csISO61Norwegian2</ccts:Description>
           </xsd:documentation>
@@ -617,7 +675,8 @@ Aliases: ISO646-NO2; iso-ir-61; no2; csISO61Norwegian2</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>videotex-suppl</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-70; csISO70VideotexSupp1</ccts:Description>
           </xsd:documentation>
@@ -627,7 +686,8 @@ Aliases: iso-ir-70; csISO70VideotexSupp1</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>PT2</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-84; ISO646-PT2; csISO84Portuguese2</ccts:Description>
           </xsd:documentation>
@@ -637,7 +697,8 @@ Aliases: iso-ir-84; ISO646-PT2; csISO84Portuguese2</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ES2</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-85; ISO646-ES2; csISO85Spanish2</ccts:Description>
           </xsd:documentation>
@@ -647,7 +708,8 @@ Aliases: iso-ir-85; ISO646-ES2; csISO85Spanish2</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>MSZ_7795.3</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-86; ISO646-HU; hu; csISO86Hungarian</ccts:Description>
           </xsd:documentation>
@@ -657,7 +719,8 @@ Aliases: iso-ir-86; ISO646-HU; hu; csISO86Hungarian</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6226-1983</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-87; x0208; JIS_X0208-1983; csISO87JISX0208</ccts:Description>
           </xsd:documentation>
@@ -667,7 +730,8 @@ Aliases: iso-ir-87; x0208; JIS_X0208-1983; csISO87JISX0208</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>greek7</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-88; csISO88Greek7</ccts:Description>
           </xsd:documentation>
@@ -677,7 +741,8 @@ Aliases: iso-ir-88; csISO88Greek7</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ASMO_449</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: ISO_9036; arabic7; iso-ir-89; csISO89ASMO449</ccts:Description>
           </xsd:documentation>
@@ -687,7 +752,8 @@ Aliases: ISO_9036; arabic7; iso-ir-89; csISO89ASMO449</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>iso-ir-90</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: csISO90</ccts:Description>
           </xsd:documentation>
@@ -697,7 +763,8 @@ Aliases: csISO90</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6229-1984-a</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-91; jp-ocr-a; csISO91JISC62291984a</ccts:Description>
           </xsd:documentation>
@@ -707,7 +774,8 @@ Aliases: iso-ir-91; jp-ocr-a; csISO91JISC62291984a</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6229-1984-b</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-92; ISO646-JP-OCR-B; jp-ocr-b; csISO92JISC62991984b</ccts:Description>
           </xsd:documentation>
@@ -717,7 +785,8 @@ Aliases: iso-ir-92; ISO646-JP-OCR-B; jp-ocr-b; csISO92JISC62991984b</ccts:Descri
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6229-1984-b-add</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-93; jp-ocr-b-add; csISO93JIS62291984badd</ccts:Description>
           </xsd:documentation>
@@ -727,7 +796,8 @@ Aliases: iso-ir-93; jp-ocr-b-add; csISO93JIS62291984badd</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6229-1984-hand</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-94; jp-ocr-hand; csISO94JIS62291984hand</ccts:Description>
           </xsd:documentation>
@@ -737,7 +807,8 @@ Aliases: iso-ir-94; jp-ocr-hand; csISO94JIS62291984hand</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6229-1984-hand-add</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-95; jp-ocr-hand-add; csISO95JIS62291984handadd</ccts:Description>
           </xsd:documentation>
@@ -747,7 +818,8 @@ Aliases: iso-ir-95; jp-ocr-hand-add; csISO95JIS62291984handadd</ccts:Description
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_C6229-1984-kana</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-96; csISO96JISC62291984kana</ccts:Description>
           </xsd:documentation>
@@ -757,7 +829,8 @@ Aliases: iso-ir-96; csISO96JISC62291984kana</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_2033-1983</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-98; e13b; csISO2033</ccts:Description>
           </xsd:documentation>
@@ -767,7 +840,8 @@ Aliases: iso-ir-98; e13b; csISO2033</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ANSI_X3.110-1983</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-99; CSA_T500-1983; NAPLPS; csISO99NAPLPS</ccts:Description>
           </xsd:documentation>
@@ -777,7 +851,8 @@ Aliases: iso-ir-99; CSA_T500-1983; NAPLPS; csISO99NAPLPS</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>T.61-7bit</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-102; csISO102T617bit</ccts:Description>
           </xsd:documentation>
@@ -787,7 +862,8 @@ Aliases: iso-ir-102; csISO102T617bit</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>T.61-8bit</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: T.61; iso-ir-103; csISO103T618bit</ccts:Description>
           </xsd:documentation>
@@ -807,7 +883,8 @@ Aliases: iso-ir-111; KOI8-E; csISO111ECMACyrillic</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CSA_Z243.4-1985-1</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-121; ISO646-CA; csa7-1; csa71; ca; csISO121Canadian1</ccts:Description>
           </xsd:documentation>
@@ -817,7 +894,8 @@ Aliases: iso-ir-121; ISO646-CA; csa7-1; csa71; ca; csISO121Canadian1</ccts:Descr
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CSA_Z243.4-1985-2</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-122; ISO646-CA2; csa7-2; csa72; csISO122Canadian2</ccts:Description>
           </xsd:documentation>
@@ -827,7 +905,8 @@ Aliases: iso-ir-122; ISO646-CA2; csa7-2; csa72; csISO122Canadian2</ccts:Descript
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CSA_Z243.4-1985-gr</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-123; csISO123CSAZ24341985gr</ccts:Description>
           </xsd:documentation>
@@ -857,7 +936,8 @@ Aliases: csISO88596I; ISO-8859-6-I</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>T.101-G2</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-128; csISO128T101G2</ccts:Description>
           </xsd:documentation>
@@ -887,7 +967,8 @@ Aliases: csISO88598I; ISO-8859-8-I</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CSN_369103</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-139; csISO139CSN369103</ccts:Description>
           </xsd:documentation>
@@ -897,7 +978,8 @@ Aliases: iso-ir-139; csISO139CSN369103</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JUS_I.B1.002</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-141; ISO646-YU; js; yu; csISO141JUSIB1002</ccts:Description>
           </xsd:documentation>
@@ -907,7 +989,8 @@ Aliases: iso-ir-141; ISO646-YU; js; yu; csISO141JUSIB1002</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IEC_P27-1</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-143; csISO143IECP271</ccts:Description>
           </xsd:documentation>
@@ -917,7 +1000,8 @@ Aliases: iso-ir-143; csISO143IECP271</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JUS_I.B1.003-serb</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-146; serbian; csISO146Serbian</ccts:Description>
           </xsd:documentation>
@@ -927,7 +1011,8 @@ Aliases: iso-ir-146; serbian; csISO146Serbian</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JUS_I.B1.003-mac</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: macedonian; iso-ir-147; csISO147Macedonian</ccts:Description>
           </xsd:documentation>
@@ -937,7 +1022,8 @@ Aliases: macedonian; iso-ir-147; csISO147Macedonian</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>greek-ccitt</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-150; csISO150; csISO150GreekCCITT</ccts:Description>
           </xsd:documentation>
@@ -947,7 +1033,8 @@ Aliases: iso-ir-150; csISO150; csISO150GreekCCITT</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>NC_NC00-10:81</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: cuba; iso-ir-151; ISO646-CU; csISO151Cuba</ccts:Description>
           </xsd:documentation>
@@ -957,7 +1044,8 @@ Aliases: cuba; iso-ir-151; ISO646-CU; csISO151Cuba</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_6937-2-25</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-152; csISO6937Add</ccts:Description>
           </xsd:documentation>
@@ -967,7 +1055,8 @@ Aliases: iso-ir-152; csISO6937Add</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>GOST_19768-74</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: ST_SEV_358-88; iso-ir-153; csISO153GOST1976874</ccts:Description>
           </xsd:documentation>
@@ -977,7 +1066,8 @@ Aliases: ST_SEV_358-88; iso-ir-153; csISO153GOST1976874</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_8859-supp</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-154; latin1-2-5; csISO8859Supp</ccts:Description>
           </xsd:documentation>
@@ -987,7 +1077,8 @@ Aliases: iso-ir-154; latin1-2-5; csISO8859Supp</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO_10367-box</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: iso-ir-155; csISO10367Box</ccts:Description>
           </xsd:documentation>
@@ -997,7 +1088,8 @@ Aliases: iso-ir-155; csISO10367Box</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>latin-lap</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: lap; iso-ir-158; csISO158Lap</ccts:Description>
           </xsd:documentation>
@@ -1007,7 +1099,8 @@ Aliases: lap; iso-ir-158; csISO158Lap</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>JIS_X0212-1990</ccts:Name>
-            <ccts:Description>Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
+            <ccts:Description
+            >Source: [ISO-IR: International Register of Escape Sequences]; Note: The current registration authority is IPSJ/ITSCJ, Japan.
 Reference: [RFC1345][Keld_Simonsen]
 Aliases: x0212; iso-ir-159; csISO159JISX02121990</ccts:Description>
           </xsd:documentation>
@@ -1097,7 +1190,8 @@ Aliases: csUTF8</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-8859-13</ccts:Name>
-            <ccts:Description>Source: ISO See [http://www.iana.org/assignments/charset-reg/ISO-8859-13][Vladas_Tumasonis]
+            <ccts:Description
+            >Source: ISO See [http://www.iana.org/assignments/charset-reg/ISO-8859-13][Vladas_Tumasonis]
 Reference:
 Aliases: csISO885913</ccts:Description>
           </xsd:documentation>
@@ -1107,7 +1201,8 @@ Aliases: csISO885913</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-8859-14</ccts:Name>
-            <ccts:Description>Source: ISO See [http://www.iana.org/assignments/charset-reg/ISO-8859-14] [Keld_Simonsen_2]
+            <ccts:Description
+            >Source: ISO See [http://www.iana.org/assignments/charset-reg/ISO-8859-14] [Keld_Simonsen_2]
 Reference:
 Aliases: iso-ir-199; ISO_8859-14:1998; ISO_8859-14; latin8; iso-celtic; l8; csISO885914</ccts:Description>
           </xsd:documentation>
@@ -1117,7 +1212,8 @@ Aliases: iso-ir-199; ISO_8859-14:1998; ISO_8859-14; latin8; iso-celtic; l8; csIS
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-8859-15</ccts:Name>
-            <ccts:Description>Source: ISO Please see: [http://www.iana.org/assignments/charset-reg/ISO-8859-15]
+            <ccts:Description
+            >Source: ISO Please see: [http://www.iana.org/assignments/charset-reg/ISO-8859-15]
 Reference:
 Aliases: ISO_8859-15; Latin-9; csISO885915</ccts:Description>
           </xsd:documentation>
@@ -1137,7 +1233,8 @@ Aliases: iso-ir-226; ISO_8859-16:2001; ISO_8859-16; latin10; l10; csISO885916</c
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>GBK</ccts:Name>
-            <ccts:Description>Source: Chinese IT Standardization Technical Committee Please see: [http://www.iana.org/assignments/charset-reg/GBK]
+            <ccts:Description
+            >Source: Chinese IT Standardization Technical Committee Please see: [http://www.iana.org/assignments/charset-reg/GBK]
 Reference:
 Aliases: CP936; MS936; windows-936; csGBK</ccts:Description>
           </xsd:documentation>
@@ -1147,7 +1244,8 @@ Aliases: CP936; MS936; windows-936; csGBK</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>GB18030</ccts:Name>
-            <ccts:Description>Source: Chinese IT Standardization Technical Committee Please see: [http://www.iana.org/assignments/charset-reg/GB18030]
+            <ccts:Description
+            >Source: Chinese IT Standardization Technical Committee Please see: [http://www.iana.org/assignments/charset-reg/GB18030]
 Reference:
 Aliases: csGB18030</ccts:Description>
           </xsd:documentation>
@@ -1157,7 +1255,8 @@ Aliases: csGB18030</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>OSD_EBCDIC_DF04_15</ccts:Name>
-            <ccts:Description>Source: Fujitsu-Siemens standard mainframe EBCDIC encoding Please see: [http://www.iana.org/assignments/charset-reg/OSD-EBCDIC-DF04-15]
+            <ccts:Description
+            >Source: Fujitsu-Siemens standard mainframe EBCDIC encoding Please see: [http://www.iana.org/assignments/charset-reg/OSD-EBCDIC-DF04-15]
 Reference:
 Aliases: csOSDEBCDICDF0415</ccts:Description>
           </xsd:documentation>
@@ -1167,7 +1266,8 @@ Aliases: csOSDEBCDICDF0415</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>OSD_EBCDIC_DF03_IRV</ccts:Name>
-            <ccts:Description>Source: Fujitsu-Siemens standard mainframe EBCDIC encoding Please see: [http://www.iana.org/assignments/charset-reg/OSD-EBCDIC-DF03-IRV]
+            <ccts:Description
+            >Source: Fujitsu-Siemens standard mainframe EBCDIC encoding Please see: [http://www.iana.org/assignments/charset-reg/OSD-EBCDIC-DF03-IRV]
 Reference:
 Aliases: csOSDEBCDICDF03IRV</ccts:Description>
           </xsd:documentation>
@@ -1177,7 +1277,8 @@ Aliases: csOSDEBCDICDF03IRV</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>OSD_EBCDIC_DF04_1</ccts:Name>
-            <ccts:Description>Source: Fujitsu-Siemens standard mainframe EBCDIC encoding Please see: [http://www.iana.org/assignments/charset-reg/OSD-EBCDIC-DF04-1]
+            <ccts:Description
+            >Source: Fujitsu-Siemens standard mainframe EBCDIC encoding Please see: [http://www.iana.org/assignments/charset-reg/OSD-EBCDIC-DF04-1]
 Reference:
 Aliases: csOSDEBCDICDF041</ccts:Description>
           </xsd:documentation>
@@ -1187,7 +1288,8 @@ Aliases: csOSDEBCDICDF041</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-11548-1</ccts:Name>
-            <ccts:Description>Source: See [http://www.iana.org/assignments/charset-reg/ISO-11548-1] [Samuel_Thibault]
+            <ccts:Description
+            >Source: See [http://www.iana.org/assignments/charset-reg/ISO-11548-1] [Samuel_Thibault]
 Reference:
 Aliases: ISO_11548-1; ISO_TR_11548-1; csISO115481</ccts:Description>
           </xsd:documentation>
@@ -1197,7 +1299,8 @@ Aliases: ISO_11548-1; ISO_TR_11548-1; csISO115481</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>KZ-1048</ccts:Name>
-            <ccts:Description>Source: See [http://www.iana.org/assignments/charset-reg/KZ-1048] [Sairan_M_Kikkarin][Alexei_Veremeev]
+            <ccts:Description
+            >Source: See [http://www.iana.org/assignments/charset-reg/KZ-1048] [Sairan_M_Kikkarin][Alexei_Veremeev]
 Reference:
 Aliases: STRK1048-2002; RK1048; csKZ1048</ccts:Description>
           </xsd:documentation>
@@ -1207,7 +1310,8 @@ Aliases: STRK1048-2002; RK1048; csKZ1048</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-10646-UCS-2</ccts:Name>
-            <ccts:Description>Source: the 2-octet Basic Multilingual Plane, aka Unicode this needs to specify network byte order: the standard does not specify (it is a 16-bit integer space)
+            <ccts:Description
+            >Source: the 2-octet Basic Multilingual Plane, aka Unicode this needs to specify network byte order: the standard does not specify (it is a 16-bit integer space)
 Reference:
 Aliases: csUnicode</ccts:Description>
           </xsd:documentation>
@@ -1217,7 +1321,8 @@ Aliases: csUnicode</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-10646-UCS-4</ccts:Name>
-            <ccts:Description>Source: the full code space. (same comment about byte order, these are 31-bit numbers.
+            <ccts:Description
+            >Source: the full code space. (same comment about byte order, these are 31-bit numbers.
 Reference:
 Aliases: csUCS4</ccts:Description>
           </xsd:documentation>
@@ -1227,7 +1332,8 @@ Aliases: csUCS4</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-10646-UCS-Basic</ccts:Name>
-            <ccts:Description>Source: ASCII subset of Unicode. Basic Latin = collection 1 See ISO 10646, Appendix A
+            <ccts:Description
+            >Source: ASCII subset of Unicode. Basic Latin = collection 1 See ISO 10646, Appendix A
 Reference:
 Aliases: csUnicodeASCII</ccts:Description>
           </xsd:documentation>
@@ -1237,7 +1343,8 @@ Aliases: csUnicodeASCII</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-10646-Unicode-Latin1</ccts:Name>
-            <ccts:Description>Source: ISO Latin-1 subset of Unicode. Basic Latin and Latin-1 Supplement = collections 1 and 2. See ISO 10646, Appendix A. See [RFC1815].
+            <ccts:Description
+            >Source: ISO Latin-1 subset of Unicode. Basic Latin and Latin-1 Supplement = collections 1 and 2. See ISO 10646, Appendix A. See [RFC1815].
 Reference:
 Aliases: csUnicodeLatin1; ISO-10646</ccts:Description>
           </xsd:documentation>
@@ -1317,7 +1424,8 @@ Aliases: csUnicode11</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>SCSU</ccts:Name>
-            <ccts:Description>Source: SCSU See [http://www.iana.org/assignments/charset-reg/SCSU] [Markus_Scherer]
+            <ccts:Description
+            >Source: SCSU See [http://www.iana.org/assignments/charset-reg/SCSU] [Markus_Scherer]
 Reference:
 Aliases: csSCSU</ccts:Description>
           </xsd:documentation>
@@ -1417,7 +1525,8 @@ Aliases: csBOCU1; csBOCU-1</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-8859-1-Windows-3.0-Latin-1</ccts:Name>
-            <ccts:Description>Source: Extended ISO 8859-1 Latin-1 for Windows 3.0. PCL Symbol Set id: 9U
+            <ccts:Description
+            >Source: Extended ISO 8859-1 Latin-1 for Windows 3.0. PCL Symbol Set id: 9U
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csWindows30Latin1</ccts:Description>
           </xsd:documentation>
@@ -1427,7 +1536,8 @@ Aliases: csWindows30Latin1</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-8859-1-Windows-3.1-Latin-1</ccts:Name>
-            <ccts:Description>Source: Extended ISO 8859-1 Latin-1 for Windows 3.1. PCL Symbol Set id: 19U
+            <ccts:Description
+            >Source: Extended ISO 8859-1 Latin-1 for Windows 3.1. PCL Symbol Set id: 19U
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csWindows31Latin1</ccts:Description>
           </xsd:documentation>
@@ -1437,7 +1547,8 @@ Aliases: csWindows31Latin1</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-8859-2-Windows-Latin-2</ccts:Name>
-            <ccts:Description>Source: Extended ISO 8859-2. Latin-2 for Windows 3.1. PCL Symbol Set id: 9E
+            <ccts:Description
+            >Source: Extended ISO 8859-2. Latin-2 for Windows 3.1. PCL Symbol Set id: 9E
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csWindows31Latin2</ccts:Description>
           </xsd:documentation>
@@ -1447,7 +1558,8 @@ Aliases: csWindows31Latin2</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ISO-8859-9-Windows-Latin-5</ccts:Name>
-            <ccts:Description>Source: Extended ISO 8859-9. Latin-5 for Windows 3.1 PCL Symbol Set id: 5T
+            <ccts:Description
+            >Source: Extended ISO 8859-9. Latin-5 for Windows 3.1 PCL Symbol Set id: 5T
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csWindows31Latin5</ccts:Description>
           </xsd:documentation>
@@ -1457,7 +1569,8 @@ Aliases: csWindows31Latin5</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>hp-roman8</ccts:Name>
-            <ccts:Description>Source: LaserJet IIP Printer User's Manual, HP part no 33471-90901, Hewlet-Packard, June 1989.
+            <ccts:Description
+            >Source: LaserJet IIP Printer User's Manual, HP part no 33471-90901, Hewlet-Packard, June 1989.
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.][RFC1345][Keld_Simonsen]
 Aliases: roman8; r8; csHPRoman8</ccts:Description>
           </xsd:documentation>
@@ -1477,7 +1590,8 @@ Aliases: csAdobeStandardEncoding</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ventura-US</ccts:Name>
-            <ccts:Description>Source: Ventura US. ASCII plus characters typically used in publishing, like pilcrow, copyright, registered, trade mark, section, dagger, and double dagger in the range A0 (hex) to FF (hex). PCL Symbol Set id: 14J
+            <ccts:Description
+            >Source: Ventura US. ASCII plus characters typically used in publishing, like pilcrow, copyright, registered, trade mark, section, dagger, and double dagger in the range A0 (hex) to FF (hex). PCL Symbol Set id: 14J
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csVenturaUS</ccts:Description>
           </xsd:documentation>
@@ -1487,7 +1601,8 @@ Aliases: csVenturaUS</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ventura-International</ccts:Name>
-            <ccts:Description>Source: Ventura International. ASCII plus coded characters similar to Roman8. PCL Symbol Set id: 13J
+            <ccts:Description
+            >Source: Ventura International. ASCII plus coded characters similar to Roman8. PCL Symbol Set id: 13J
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csVenturaInternational</ccts:Description>
           </xsd:documentation>
@@ -1537,7 +1652,8 @@ Aliases: cp437; 437; csPC8CodePage437</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>PC8-Danish-Norwegian</ccts:Name>
-            <ccts:Description>Source: PC Danish Norwegian 8-bit PC set for Danish Norwegian PCL Symbol Set id: 11U
+            <ccts:Description
+            >Source: PC Danish Norwegian 8-bit PC set for Danish Norwegian PCL Symbol Set id: 11U
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csPC8DanishNorwegian</ccts:Description>
           </xsd:documentation>
@@ -1587,7 +1703,8 @@ Aliases: csIBMThai</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>HP-Legal</ccts:Name>
-            <ccts:Description>Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 1U
+            <ccts:Description
+            >Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 1U
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csHPLegal</ccts:Description>
           </xsd:documentation>
@@ -1597,7 +1714,8 @@ Aliases: csHPLegal</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>HP-Pi-font</ccts:Name>
-            <ccts:Description>Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 15U
+            <ccts:Description
+            >Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 15U
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csHPPiFont</ccts:Description>
           </xsd:documentation>
@@ -1607,7 +1725,8 @@ Aliases: csHPPiFont</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>HP-Math8</ccts:Name>
-            <ccts:Description>Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 8M
+            <ccts:Description
+            >Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 8M
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csHPMath8</ccts:Description>
           </xsd:documentation>
@@ -1627,7 +1746,8 @@ Aliases: csHPPSMath</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>HP-DeskTop</ccts:Name>
-            <ccts:Description>Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 7J
+            <ccts:Description
+            >Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 7J
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csHPDesktop</ccts:Description>
           </xsd:documentation>
@@ -1637,7 +1757,8 @@ Aliases: csHPDesktop</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ventura-Math</ccts:Name>
-            <ccts:Description>Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 6M
+            <ccts:Description
+            >Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 6M
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csVenturaMath</ccts:Description>
           </xsd:documentation>
@@ -1647,7 +1768,8 @@ Aliases: csVenturaMath</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Microsoft-Publishing</ccts:Name>
-            <ccts:Description>Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 6J
+            <ccts:Description
+            >Source: PCL 5 Comparison Guide, Hewlett-Packard, HP part number 5961-0510, October 1992 PCL Symbol Set id: 6J
 Reference: [Hewlett-Packard Company, "HP PCL 5 Comparison Guide", (P/N 5021-0329) pp B-13, 1996.]
 Aliases: csMicrosoftPublishing</ccts:Description>
           </xsd:documentation>
@@ -1657,7 +1779,8 @@ Aliases: csMicrosoftPublishing</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Windows-31J</ccts:Name>
-            <ccts:Description>Source: Windows Japanese. A further extension of Shift_JIS to include NEC special characters (Row 13), NEC selection of IBM extensions (Rows 89 to 92), and IBM extensions (Rows 115 to 119). The CCS's are JIS X0201:1997, JIS X0208:1997, and these extensions. This charset can be used for the top-level media type "text", but it is of limited or specialized use (see [RFC2278]). PCL Symbol Set id: 19K
+            <ccts:Description
+            >Source: Windows Japanese. A further extension of Shift_JIS to include NEC special characters (Row 13), NEC selection of IBM extensions (Rows 89 to 92), and IBM extensions (Rows 115 to 119). The CCS's are JIS X0201:1997, JIS X0208:1997, and these extensions. This charset can be used for the top-level media type "text", but it is of limited or specialized use (see [RFC2278]). PCL Symbol Set id: 19K
 Reference:
 Aliases: csWindows31J</ccts:Description>
           </xsd:documentation>
@@ -1667,7 +1790,8 @@ Aliases: csWindows31J</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>GB2312</ccts:Name>
-            <ccts:Description>Source: Chinese for People's Republic of China (PRC) mixed one byte, two byte set: 20-7E = one byte ASCII A1-FE = two byte PRC Kanji See GB 2312-80 PCL Symbol Set Id: 18C
+            <ccts:Description
+            >Source: Chinese for People's Republic of China (PRC) mixed one byte, two byte set: 20-7E = one byte ASCII A1-FE = two byte PRC Kanji See GB 2312-80 PCL Symbol Set Id: 18C
 Reference:
 Aliases: csGB2312</ccts:Description>
           </xsd:documentation>
@@ -2257,7 +2381,8 @@ Aliases: csVIQR</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>KOI8-R</ccts:Name>
-            <ccts:Description>Source: [RFC1489], based on GOST-19768-74, ISO-6937/8, INIS-Cyrillic, ISO-5427.
+            <ccts:Description
+            >Source: [RFC1489], based on GOST-19768-74, ISO-6937/8, INIS-Cyrillic, ISO-5427.
 Reference: [RFC1489]
 Aliases: csKOI8R</ccts:Description>
           </xsd:documentation>
@@ -2307,7 +2432,8 @@ Aliases: csKOI8U</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM00858</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM00858] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM00858] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID00858; CP00858; PC-Multilingual-850+euro; csIBM00858</ccts:Description>
           </xsd:documentation>
@@ -2317,7 +2443,8 @@ Aliases: CCSID00858; CP00858; PC-Multilingual-850+euro; csIBM00858</ccts:Descrip
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM00924</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM00924] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM00924] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID00924; CP00924; ebcdic-Latin9--euro; csIBM00924</ccts:Description>
           </xsd:documentation>
@@ -2327,7 +2454,8 @@ Aliases: CCSID00924; CP00924; ebcdic-Latin9--euro; csIBM00924</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01140</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01140] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01140] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01140; CP01140; ebcdic-us-37+euro; csIBM01140</ccts:Description>
           </xsd:documentation>
@@ -2337,7 +2465,8 @@ Aliases: CCSID01140; CP01140; ebcdic-us-37+euro; csIBM01140</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01141</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01141] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01141] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01141; CP01141; ebcdic-de-273+euro; csIBM01141</ccts:Description>
           </xsd:documentation>
@@ -2347,7 +2476,8 @@ Aliases: CCSID01141; CP01141; ebcdic-de-273+euro; csIBM01141</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01142</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01142] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01142] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01142; CP01142; ebcdic-dk-277+euro; ebcdic-no-277+euro; csIBM01142</ccts:Description>
           </xsd:documentation>
@@ -2357,7 +2487,8 @@ Aliases: CCSID01142; CP01142; ebcdic-dk-277+euro; ebcdic-no-277+euro; csIBM01142
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01143</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01143] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01143] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01143; CP01143; ebcdic-fi-278+euro; ebcdic-se-278+euro; csIBM01143</ccts:Description>
           </xsd:documentation>
@@ -2367,7 +2498,8 @@ Aliases: CCSID01143; CP01143; ebcdic-fi-278+euro; ebcdic-se-278+euro; csIBM01143
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01144</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01144] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01144] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01144; CP01144; ebcdic-it-280+euro; csIBM01144</ccts:Description>
           </xsd:documentation>
@@ -2377,7 +2509,8 @@ Aliases: CCSID01144; CP01144; ebcdic-it-280+euro; csIBM01144</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01145</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01145] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01145] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01145; CP01145; ebcdic-es-284+euro; csIBM01145</ccts:Description>
           </xsd:documentation>
@@ -2387,7 +2520,8 @@ Aliases: CCSID01145; CP01145; ebcdic-es-284+euro; csIBM01145</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01146</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01146] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01146] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01146; CP01146; ebcdic-gb-285+euro; csIBM01146</ccts:Description>
           </xsd:documentation>
@@ -2397,7 +2531,8 @@ Aliases: CCSID01146; CP01146; ebcdic-gb-285+euro; csIBM01146</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01147</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01147] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01147] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01147; CP01147; ebcdic-fr-297+euro; csIBM01147</ccts:Description>
           </xsd:documentation>
@@ -2407,7 +2542,8 @@ Aliases: CCSID01147; CP01147; ebcdic-fr-297+euro; csIBM01147</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01148</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01148] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01148] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01148; CP01148; ebcdic-international-500+euro; csIBM01148</ccts:Description>
           </xsd:documentation>
@@ -2417,7 +2553,8 @@ Aliases: CCSID01148; CP01148; ebcdic-international-500+euro; csIBM01148</ccts:De
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM01149</ccts:Name>
-            <ccts:Description>Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01149] [Tamer_Mahdi]
+            <ccts:Description
+            >Source: IBM See [http://www.iana.org/assignments/charset-reg/IBM01149] [Tamer_Mahdi]
 Reference:
 Aliases: CCSID01149; CP01149; ebcdic-is-871+euro; csIBM01149</ccts:Description>
           </xsd:documentation>
@@ -2437,7 +2574,8 @@ Aliases: csBig5HKSCS</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>IBM1047</ccts:Name>
-            <ccts:Description>Source: IBM1047 (EBCDIC Latin 1/Open Systems) [http://www-1.ibm.com/servers/eserver/iseries/software/globalization/pdf/cp01047z.pdf]
+            <ccts:Description
+            >Source: IBM1047 (EBCDIC Latin 1/Open Systems) [http://www-1.ibm.com/servers/eserver/iseries/software/globalization/pdf/cp01047z.pdf]
 Reference: [Reuel_Robrigado]
 Aliases: IBM-1047; csIBM1047</ccts:Description>
           </xsd:documentation>
@@ -2467,7 +2605,8 @@ Aliases: Ami1251; Amiga1251; Ami-1251; csAmiga1251 (Aliases are provided for his
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>KOI7-switched</ccts:Name>
-            <ccts:Description>Source: See [http://www.iana.org/assignments/charset-reg/KOI7-switched]
+            <ccts:Description
+            >Source: See [http://www.iana.org/assignments/charset-reg/KOI7-switched]
 Reference:
 Aliases: csKOI7switched</ccts:Description>
           </xsd:documentation>
@@ -2477,7 +2616,8 @@ Aliases: csKOI7switched</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>BRF</ccts:Name>
-            <ccts:Description>Source: See [http://www.iana.org/assignments/charset-reg/BRF] [Samuel_Thibault]
+            <ccts:Description
+            >Source: See [http://www.iana.org/assignments/charset-reg/BRF] [Samuel_Thibault]
 Reference:
 Aliases: csBRF</ccts:Description>
           </xsd:documentation>
@@ -2487,7 +2627,8 @@ Aliases: csBRF</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>TSCII</ccts:Name>
-            <ccts:Description>Source: See [http://www.iana.org/assignments/charset-reg/TSCII] [Kuppuswamy_Kalyanasu]
+            <ccts:Description
+            >Source: See [http://www.iana.org/assignments/charset-reg/TSCII] [Kuppuswamy_Kalyanasu]
 Reference:
 Aliases: csTSCII</ccts:Description>
           </xsd:documentation>
@@ -2497,7 +2638,8 @@ Aliases: csTSCII</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CP51932</ccts:Name>
-            <ccts:Description>Source: See [http://www.iana.org/assignments/charset-reg/CP51932] [Yui_Naruse]
+            <ccts:Description
+            >Source: See [http://www.iana.org/assignments/charset-reg/CP51932] [Yui_Naruse]
 Reference:
 Aliases: csCP51932</ccts:Description>
           </xsd:documentation>
@@ -2507,7 +2649,8 @@ Aliases: csCP51932</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-874</ccts:Name>
-            <ccts:Description>Source: See [http://www.iana.org/assignments/charset-reg/windows-874] [Shawn_Steele]
+            <ccts:Description
+            >Source: See [http://www.iana.org/assignments/charset-reg/windows-874] [Shawn_Steele]
 Reference:
 Aliases: cswindows874</ccts:Description>
           </xsd:documentation>
@@ -2517,7 +2660,8 @@ Aliases: cswindows874</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1250</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1250] [Katya_Lazhintseva]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1250] [Katya_Lazhintseva]
 Reference:
 Aliases: cswindows1250</ccts:Description>
           </xsd:documentation>
@@ -2527,7 +2671,8 @@ Aliases: cswindows1250</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1251</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1251] [Katya_Lazhintseva]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1251] [Katya_Lazhintseva]
 Reference:
 Aliases: cswindows1251</ccts:Description>
           </xsd:documentation>
@@ -2537,7 +2682,8 @@ Aliases: cswindows1251</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1252</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1252] [Chris_Wendt]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1252] [Chris_Wendt]
 Reference:
 Aliases: cswindows1252</ccts:Description>
           </xsd:documentation>
@@ -2547,7 +2693,8 @@ Aliases: cswindows1252</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1253</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1253] [Katya_Lazhintseva]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1253] [Katya_Lazhintseva]
 Reference:
 Aliases: cswindows1253</ccts:Description>
           </xsd:documentation>
@@ -2557,7 +2704,8 @@ Aliases: cswindows1253</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1254</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1254] [Katya_Lazhintseva]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1254] [Katya_Lazhintseva]
 Reference:
 Aliases: cswindows1254</ccts:Description>
           </xsd:documentation>
@@ -2567,7 +2715,8 @@ Aliases: cswindows1254</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1255</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1255] [Katya_Lazhintseva]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1255] [Katya_Lazhintseva]
 Reference:
 Aliases: cswindows1255</ccts:Description>
           </xsd:documentation>
@@ -2577,7 +2726,8 @@ Aliases: cswindows1255</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1256</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1256] [Katya_Lazhintseva]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1256] [Katya_Lazhintseva]
 Reference:
 Aliases: cswindows1256</ccts:Description>
           </xsd:documentation>
@@ -2587,7 +2737,8 @@ Aliases: cswindows1256</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1257</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1257] [Katya_Lazhintseva]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1257] [Katya_Lazhintseva]
 Reference:
 Aliases: cswindows1257</ccts:Description>
           </xsd:documentation>
@@ -2597,7 +2748,8 @@ Aliases: cswindows1257</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>windows-1258</ccts:Name>
-            <ccts:Description>Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1258] [Katya_Lazhintseva]
+            <ccts:Description
+            >Source: Microsoft [http://www.iana.org/assignments/charset-reg/windows-1258] [Katya_Lazhintseva]
 Reference:
 Aliases: cswindows1258</ccts:Description>
           </xsd:documentation>
@@ -2617,7 +2769,8 @@ Aliases: csTIS620</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CP50220</ccts:Name>
-            <ccts:Description>Source: See [http://www.iana.org/assignments/charset-reg/CP50220] [Yui_Naruse]
+            <ccts:Description
+            >Source: See [http://www.iana.org/assignments/charset-reg/CP50220] [Yui_Naruse]
 Reference:
 Aliases: csCP50220</ccts:Description>
           </xsd:documentation>

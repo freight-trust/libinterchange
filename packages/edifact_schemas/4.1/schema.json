@@ -97,7 +97,29 @@
               "minLength": 1
             }
           },
-          "required": ["AA", "AB", "SECAUT", "AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK", "AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "SECACK"]
+          "required": [
+            "AA",
+            "AB",
+            "SECAUT",
+            "AC",
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AH",
+            "AI",
+            "AJ",
+            "AK",
+            "AL",
+            "AM",
+            "AN",
+            "AO",
+            "AP",
+            "AQ",
+            "AR",
+            "AS",
+            "SECACK"
+          ]
         },
         "Test indicator": {
           "type": "object",
@@ -495,7 +517,21 @@
               "minLength": 1
             }
           },
-          "required": ["UNOY", "UNOX", "UNOE", "UNOD", "UNOC", "UNOB", "UNOA", "UNOK", "UNOJ", "UNOI", "UNOH", "UNOG", "UNOF"]
+          "required": [
+            "UNOY",
+            "UNOX",
+            "UNOE",
+            "UNOD",
+            "UNOC",
+            "UNOB",
+            "UNOA",
+            "UNOK",
+            "UNOJ",
+            "UNOI",
+            "UNOH",
+            "UNOG",
+            "UNOF"
+          ]
         },
         "Message version number": {
           "type": "object",
@@ -2070,7 +2106,18 @@
               "type": "string"
             }
           },
-          "required": ["EAN001", "EAN002", "EAN003", "EAN004", "EAN005", "EAN006", "EAN007", "EAN008", "EAN009", "EAN010"]
+          "required": [
+            "EAN001",
+            "EAN002",
+            "EAN003",
+            "EAN004",
+            "EAN005",
+            "EAN006",
+            "EAN007",
+            "EAN008",
+            "EAN009",
+            "EAN010"
+          ]
         },
         "Action, coded": {
           "type": "object",
@@ -3393,7 +3440,23 @@
           "required": ["Desc", "Elements"]
         }
       },
-      "required": ["UNH", "UNT", "UCD", "UCF", "UCI", "UCM", "UCS", "USA", "USB", "USC", "USH", "USL", "UST", "USX", "USY"]
+      "required": [
+        "UNH",
+        "UNT",
+        "UCD",
+        "UCF",
+        "UCI",
+        "UCM",
+        "UCS",
+        "USA",
+        "USB",
+        "USC",
+        "USH",
+        "USL",
+        "UST",
+        "USX",
+        "USY"
+      ]
     }
   },
   "required": ["Release", "Qualifiers", "Segments"]

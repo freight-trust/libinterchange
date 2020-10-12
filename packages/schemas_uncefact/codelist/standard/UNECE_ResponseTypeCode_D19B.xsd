@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 64343_ResponseTypeCode - Code List Schema Module           ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm64343ResponseTypeCode="urn:un:unece:uncefact:codelist:standard:UNECE:ResponseTypeCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ResponseTypeCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.2">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm64343ResponseTypeCode="urn:un:unece:uncefact:codelist:standard:UNECE:ResponseTypeCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ResponseTypeCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.2"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="ResponseTypeCode" type="clm64343ResponseTypeCode:ResponseTypeCodeContentType"/>
+  <xsd:element
+    name="ResponseTypeCode"
+    type="clm64343ResponseTypeCode:ResponseTypeCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit advice</ccts:Name>
-            <ccts:Description>Receiver of the payment message needs to return a debit advice in response to the payment message.</ccts:Description>
+            <ccts:Description
+            >Receiver of the payment message needs to return a debit advice in response to the payment message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Message acknowledgement</ccts:Name>
-            <ccts:Description>Indicates that an acknowledgement relating to receipt of message is required.</ccts:Description>
+            <ccts:Description
+            >Indicates that an acknowledgement relating to receipt of message is required.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +82,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit advice for each transaction</ccts:Name>
-            <ccts:Description>A debit advice is requested for each transaction in the message.</ccts:Description>
+            <ccts:Description
+            >A debit advice is requested for each transaction in the message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +91,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit advice/message acknowledgement</ccts:Name>
-            <ccts:Description>The sender wishes to receive both a Debit Advice and an acknowledgement of receipt for a payment message.</ccts:Description>
+            <ccts:Description
+            >The sender wishes to receive both a Debit Advice and an acknowledgement of receipt for a payment message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +100,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Authentication</ccts:Name>
-            <ccts:Description>Authentication, by a party, of a document established for him by another party.</ccts:Description>
+            <ccts:Description
+            >Authentication, by a party, of a document established for him by another party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +109,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit advice/message acknowledgement for each transaction</ccts:Name>
-            <ccts:Description>A debit advice and message acknowledgement are requested for each transaction in the message.</ccts:Description>
+            <ccts:Description
+            >A debit advice and message acknowledgement are requested for each transaction in the message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +126,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pending</ccts:Name>
-            <ccts:Description>Indication that the referenced offer or transaction (e.g. cargo booking or quotation request) is being dealt with.</ccts:Description>
+            <ccts:Description
+            >Indication that the referenced offer or transaction (e.g. cargo booking or quotation request) is being dealt with.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +135,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Return only TIR transport information</ccts:Name>
-            <ccts:Description>The sender of the message expects only TIR (Transports Internationaux Routiers) transport information in return.</ccts:Description>
+            <ccts:Description
+            >The sender of the message expects only TIR (Transports Internationaux Routiers) transport information in return.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -134,7 +153,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Return only guarantee information</ccts:Name>
-            <ccts:Description>The sender of the message expects only guarantee information in return.</ccts:Description>
+            <ccts:Description
+            >The sender of the message expects only guarantee information in return.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -142,7 +162,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Return all information regarding guarantee</ccts:Name>
-            <ccts:Description>The sender of the message expects all information regarding the guarantee in return.</ccts:Description>
+            <ccts:Description
+            >The sender of the message expects all information regarding the guarantee in return.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -150,7 +171,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Accepted</ccts:Name>
-            <ccts:Description>Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) has been accepted.</ccts:Description>
+            <ccts:Description
+            >Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) has been accepted.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -174,7 +196,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit advice and message acknowledgement</ccts:Name>
-            <ccts:Description>The receiver of the message is to acknowledge receipt of the message and sent a credit advice for each credit.</ccts:Description>
+            <ccts:Description
+            >The receiver of the message is to acknowledge receipt of the message and sent a credit advice for each credit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -182,7 +205,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Conditionally accepted</ccts:Name>
-            <ccts:Description>Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) has been accepted under conditions indicated in this message.</ccts:Description>
+            <ccts:Description
+            >Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) has been accepted under conditions indicated in this message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -190,7 +214,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Confirmation of measurements</ccts:Name>
-            <ccts:Description>Indication that the message contains the physical measurements on which the charges will be based.</ccts:Description>
+            <ccts:Description
+            >Indication that the message contains the physical measurements on which the charges will be based.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -198,7 +223,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>No acknowledgement needed</ccts:Name>
-            <ccts:Description>Specifies that no acknowledgement is needed in response to this message.</ccts:Description>
+            <ccts:Description
+            >Specifies that no acknowledgement is needed in response to this message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -206,7 +232,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Rejected</ccts:Name>
-            <ccts:Description>Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) is not accepted.</ccts:Description>
+            <ccts:Description
+            >Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) is not accepted.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -214,7 +241,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit advice</ccts:Name>
-            <ccts:Description>The message recipient is to send a credit advice in response to the message.</ccts:Description>
+            <ccts:Description
+            >The message recipient is to send a credit advice in response to the message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -222,7 +250,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Acknowledgement when error</ccts:Name>
-            <ccts:Description>An acknowledgement is requested when an error occurred.</ccts:Description>
+            <ccts:Description
+            >An acknowledgement is requested when an error occurred.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -230,7 +259,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Acknowledgment due to error</ccts:Name>
-            <ccts:Description>An acknowledgment is sent because an error was identified in the received message.</ccts:Description>
+            <ccts:Description
+            >An acknowledgment is sent because an error was identified in the received message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -238,7 +268,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Alternate date</ccts:Name>
-            <ccts:Description>The solution proposed in the response applies to another date than the one requested.</ccts:Description>
+            <ccts:Description
+            >The solution proposed in the response applies to another date than the one requested.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -246,7 +277,8 @@ The sender of the message expects only declaration information in return.</ccts:
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Alternate service</ccts:Name>
-            <ccts:Description>The solution proposed in the response applies to another service than the one requested.</ccts:Description>
+            <ccts:Description
+            >The solution proposed in the response applies to another service than the one requested.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -18,11 +18,21 @@
         { "Id": "LOC", "Min": 0 },
         { "Id": "FII", "Min": 0, "Max": 5 },
         { "Id": "RFFLoop2", "Min": 0, "Max": 3, "Loop": [{ "Id": "RFF" }] },
-        { "Id": "COMLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }] }
+        {
+          "Id": "COMLoop1",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }]
+        }
       ]
     },
     { "Id": "DTMLoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] },
-    { "Id": "PCDLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "PAT" }, { "Id": "DTM", "Min": 0, "Max": 5 }, { "Id": "PCD", "Min": 0 }] },
+    {
+      "Id": "PCDLoop1",
+      "Min": 0,
+      "Max": 10,
+      "Loop": [{ "Id": "PAT" }, { "Id": "DTM", "Min": 0, "Max": 5 }, { "Id": "PCD", "Min": 0 }]
+    },
     {
       "Id": "FTXLoop1",
       "Min": 0,
@@ -38,19 +48,37 @@
         { "Id": "PRILoop1", "Min": 0, "Max": 25, "Loop": [{ "Id": "PRI" }] },
         { "Id": "RFFLoop3", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }] },
         { "Id": "TAXLoop1", "Min": 0, "Max": 20, "Loop": [{ "Id": "TAX" }] },
-        { "Id": "DTMLoop5", "Min": 0, "Max": 15, "Loop": [{ "Id": "ALC" }, { "Id": "DTM", "Min": 0, "Max": 5 }] },
+        {
+          "Id": "DTMLoop5",
+          "Min": 0,
+          "Max": 15,
+          "Loop": [{ "Id": "ALC" }, { "Id": "DTM", "Min": 0, "Max": 5 }]
+        },
         {
           "Id": "TDTLoop1",
           "Min": 0,
           "Max": 10,
-          "Loop": [{ "Id": "TDT" }, { "Id": "DTMLoop6", "Min": 0, "Max": 10, "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 5 }] }]
+          "Loop": [
+            { "Id": "TDT" },
+            {
+              "Id": "DTMLoop6",
+              "Min": 0,
+              "Max": 10,
+              "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 5 }]
+            }
+          ]
         },
         { "Id": "RCSLoop1", "Min": 0, "Loop": [{ "Id": "RCS" }] }
       ]
     },
     { "Id": "UNS" },
     { "Id": "MOALoop2", "Max": 10, "Loop": [{ "Id": "MOA" }] },
-    { "Id": "MOALoop3", "Min": 0, "Max": 10, "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0, "Max": 2 }] },
+    {
+      "Id": "MOALoop3",
+      "Min": 0,
+      "Max": 10,
+      "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0, "Max": 2 }]
+    },
     { "Id": "UNT" }
   ]
 }

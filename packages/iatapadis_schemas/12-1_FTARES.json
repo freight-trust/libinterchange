@@ -16,7 +16,17 @@
         { "Id": "REF", "Min": 0 },
         { "Id": "NAD", "Min": 0, "Max": 3 },
         { "Id": "QTYLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "TRI" }, { "Id": "QTY" }] },
-        { "Id": "IFTLoop3", "Min": 0, "Max": 99, "Loop": [{ "Id": "TVL" }, { "Id": "QTY" }, { "Id": "DAT", "Min": 0 }, { "Id": "IFT", "Min": 0 }] },
+        {
+          "Id": "IFTLoop3",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "QTY" },
+            { "Id": "DAT", "Min": 0 },
+            { "Id": "IFT", "Min": 0 }
+          ]
+        },
         { "Id": "IFTLoop4", "Min": 0, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }
       ]
     },

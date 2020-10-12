@@ -12,7 +12,15 @@
     {
       "Id": "PNALoop1",
       "Max": 9,
-      "Loop": [{ "Id": "PNA" }, { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] }]
+      "Loop": [
+        { "Id": "PNA" },
+        {
+          "Id": "RFFLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+        }
+      ]
     },
     {
       "Id": "EVELoop1",

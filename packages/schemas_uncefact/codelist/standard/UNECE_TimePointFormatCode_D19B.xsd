@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 62379 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm62379="urn:un:unece:uncefact:codelist:standard:UNECE:TimePointFormatCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:TimePointFormatCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.3">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm62379="urn:un:unece:uncefact:codelist:standard:UNECE:TimePointFormatCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:TimePointFormatCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="4.3"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="TimePointFormatCode" type="clm62379:TimePointFormatCodeContentType"/>
+  <xsd:element name="TimePointFormatCode" type="clm62379:TimePointFormatCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -61,7 +69,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>DDMMCCYYHHMM</ccts:Name>
-            <ccts:Description>Calendar date and time: C=Century; Y=Year; M=Month; D=Day; H=Hour; M=Minute.</ccts:Description>
+            <ccts:Description
+            >Calendar date and time: C=Century; Y=Year; M=Month; D=Day; H=Hour; M=Minute.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +78,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMB</ccts:Name>
-            <ccts:Description>Half-month: CC=century YY=year MM=month, B=1:first half month, B=2:second half month.</ccts:Description>
+            <ccts:Description
+            >Half-month: CC=century YY=year MM=month, B=1:first half month, B=2:second half month.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +87,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMW</ccts:Name>
-            <ccts:Description>Week within a calendar month: CC=century YY=year MM=month. W=1-5 first week to fifth week in a month.</ccts:Description>
+            <ccts:Description
+            >Week within a calendar month: CC=century YY=year MM=month. W=1-5 first week to fifth week in a month.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +96,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDDS</ccts:Name>
-            <ccts:Description>Shift within a calendar day: CC=century YY=year MM=month DD=day S=1-9 shift in a day.</ccts:Description>
+            <ccts:Description
+            >Shift within a calendar day: CC=century YY=year MM=month DD=day S=1-9 shift in a day.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +105,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDDPP</ccts:Name>
-            <ccts:Description>Time period within a calendar day: CC=century YY=year MM=month DD=day PP=00-99 time period.</ccts:Description>
+            <ccts:Description
+            >Time period within a calendar day: CC=century YY=year MM=month DD=day PP=00-99 time period.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +114,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDDTHHMM</ccts:Name>
-            <ccts:Description>Calendar date including time with minutes: C=Century; Y=Year; M=Month; D=Day; T=Time designator; H=Hour; M=Minutes.
+            <ccts:Description
+            >Calendar date including time with minutes: C=Century; Y=Year; M=Month; D=Day; T=Time designator; H=Hour; M=Minutes.
  The character [T] shall be used as time designator to indicate the start of the representation of the time. For example: 20010912T1433.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
@@ -118,7 +132,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDD</ccts:Name>
-            <ccts:Description>Calendar date: C = Century ; Y = Year ; M = Month ; D = Day.</ccts:Description>
+            <ccts:Description
+            >Calendar date: C = Century ; Y = Year ; M = Month ; D = Day.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -126,7 +141,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYWWD</ccts:Name>
-            <ccts:Description>Calendar week day: Y = Year ; W = Week ; D = Day Week number 01 is always first week of January Day number 1 is always Monday.</ccts:Description>
+            <ccts:Description
+            >Calendar week day: Y = Year ; W = Week ; D = Day Week number 01 is always first week of January Day number 1 is always Monday.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -134,7 +150,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>MMWW-MMWW</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start week of a month followed by the end week of a month. Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start week of a month followed by the end week of a month. Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -142,7 +159,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYDDD</ccts:Name>
-            <ccts:Description>Calendar day: Y = Year ; D = Day January the first = Day 001 Always start numbering the days of the year from January 1st through December 31st.</ccts:Description>
+            <ccts:Description
+            >Calendar day: Y = Year ; D = Day January the first = Day 001 Always start numbering the days of the year from January 1st through December 31st.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -190,7 +208,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYMMDDHHMM</ccts:Name>
-            <ccts:Description>Calendar date including time without seconds: Y = Year; M = Month; D = Day; H = Hour; M = Minute.</ccts:Description>
+            <ccts:Description
+            >Calendar date including time without seconds: Y = Year; M = Month; D = Day; H = Hour; M = Minute.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -198,7 +217,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYMMDDHHMMSS</ccts:Name>
-            <ccts:Description>Calendar date including time with seconds: Y = Year; M = Month; D = Day; H = Hour; m = Minutes = Seconds.</ccts:Description>
+            <ccts:Description
+            >Calendar date including time with seconds: Y = Year; M = Month; D = Day; H = Hour; m = Minutes = Seconds.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -206,7 +226,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDDHHMM</ccts:Name>
-            <ccts:Description>Calendar date including time with minutes: C=Century; Y=Year; M=Month; D=Day; H=Hour; M=Minutes.</ccts:Description>
+            <ccts:Description
+            >Calendar date including time with minutes: C=Century; Y=Year; M=Month; D=Day; H=Hour; M=Minutes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -214,7 +235,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDDHHMMSS</ccts:Name>
-            <ccts:Description>Calendar date including time with seconds: C=Century;Y=Year; M=Month;D=Day;H=Hour;M=Minute;S=Second.</ccts:Description>
+            <ccts:Description
+            >Calendar date including time with seconds: C=Century;Y=Year; M=Month;D=Day;H=Hour;M=Minute;S=Second.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -222,7 +244,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDDHHMMZHHMM</ccts:Name>
-            <ccts:Description>Calendar date including time and time zone expressed in hours and minutes.
+            <ccts:Description
+            >Calendar date including time and time zone expressed in hours and minutes.
 ZHHMM = time zone given as offset from Coordinated Universal Time (UTC).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
@@ -269,7 +292,8 @@ H = Hour; M = Minute, S = Seconds, Z = leading plus/minus sign, HHMM = differenc
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>HHMMSSZHHMM-HHMMSSZHHMM</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start time followed by the end time (both expressed by hours, minutes, seconds and time zone leading plus/minus sign and time zone difference in hours and minutes).</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start time followed by the end time (both expressed by hours, minutes, seconds and time zone leading plus/minus sign and time zone difference in hours and minutes).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -309,7 +333,8 @@ H = Hour; M = Minute, S = Seconds, Z = leading plus/minus sign, HHMM = differenc
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>MMDDHHMM</ccts:Name>
-            <ccts:Description>Month, day, hours, minutes; M = Month; D = Day; H = Hour; M = Minute.</ccts:Description>
+            <ccts:Description
+            >Month, day, hours, minutes; M = Month; D = Day; H = Hour; M = Minute.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -334,7 +359,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDDHHMMZZZ-CCYYMMDDHHMMZZZ</ccts:Name>
-            <ccts:Description>A period of time which includes the century, year, month, day, hour and minute and time zone. Format of period to be given in actual message without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time which includes the century, year, month, day, hour and minute and time zone. Format of period to be given in actual message without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -350,7 +376,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>HHMMSS</ccts:Name>
-            <ccts:Description>Time with seconds: H = Hour; m = Minute; s = Seconds.</ccts:Description>
+            <ccts:Description
+            >Time with seconds: H = Hour; m = Minute; s = Seconds.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -374,7 +401,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>ZHHMM</ccts:Name>
-            <ccts:Description>Offset from Coordinated Universal Time (UTC) where Z is plus (+) or minus (-).</ccts:Description>
+            <ccts:Description
+            >Offset from Coordinated Universal Time (UTC) where Z is plus (+) or minus (-).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -390,7 +418,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>HHMMSS-HHMMSS</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start time followed by the end time (both expressed by hours minutes and seconds). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start time followed by the end time (both expressed by hours minutes and seconds). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -398,7 +427,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>HHMMSSZZZ-HHMMSSZZZ</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start time followed by the end time (both expressed by hours minutes, seconds and time zone). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start time followed by the end time (both expressed by hours minutes, seconds and time zone). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -422,7 +452,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYY</ccts:Name>
-            <ccts:Description>Calendar year including century: C = Century; Y = Year.</ccts:Description>
+            <ccts:Description
+            >Calendar year including century: C = Century; Y = Year.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -430,7 +461,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYS</ccts:Name>
-            <ccts:Description>Semester in a calendar year: Y = Year; S = Semester.</ccts:Description>
+            <ccts:Description
+            >Semester in a calendar year: Y = Year; S = Semester.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -438,7 +470,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYS</ccts:Name>
-            <ccts:Description>Semester in a calendar year: C = Century; Y = Year; S = Semester.</ccts:Description>
+            <ccts:Description
+            >Semester in a calendar year: C = Century; Y = Year; S = Semester.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -446,7 +479,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYQ</ccts:Name>
-            <ccts:Description>Quarter in a calendar year: C = Century; Y = Year; Q = Quarter.</ccts:Description>
+            <ccts:Description
+            >Quarter in a calendar year: C = Century; Y = Year; Q = Quarter.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -462,7 +496,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMM</ccts:Name>
-            <ccts:Description>Month within a calendar year: CC = Century; Y = Year; M = Month.</ccts:Description>
+            <ccts:Description
+            >Month within a calendar year: CC = Century; Y = Year; M = Month.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -470,7 +505,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYMMA</ccts:Name>
-            <ccts:Description>To specifiy a ten-day period within a month of a year (A = ten day period).</ccts:Description>
+            <ccts:Description
+            >To specifiy a ten-day period within a month of a year (A = ten day period).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -478,7 +514,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMA</ccts:Name>
-            <ccts:Description>To specifiy a ten-day period within a month of a year, including century  (A = ten day period).</ccts:Description>
+            <ccts:Description
+            >To specifiy a ten-day period within a month of a year, including century  (A = ten day period).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -486,7 +523,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYWW</ccts:Name>
-            <ccts:Description>Week within a calendar year: Y = Year; W = Week 1st week of January = week 01.</ccts:Description>
+            <ccts:Description
+            >Week within a calendar year: Y = Year; W = Week 1st week of January = week 01.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -494,7 +532,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYWW</ccts:Name>
-            <ccts:Description>Week within a calendar year: CC = Century; Y = Year; W = Week (1st week of January = week 01).</ccts:Description>
+            <ccts:Description
+            >Week within a calendar year: CC = Century; Y = Year; W = Week (1st week of January = week 01).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -502,7 +541,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YY-YY</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start year followed by the end year (both without century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start year followed by the end year (both without century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -510,7 +550,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYY-CCYY</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start year followed by the end year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start year followed by the end year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -518,7 +559,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYS-YYS</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start semester of a year followed by the end semester of a year (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start semester of a year followed by the end semester of a year (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -526,7 +568,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYS-CCYYS</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start semester of a year followed by the end semester of a year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start semester of a year followed by the end semester of a year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -534,7 +577,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYPYYP</ccts:Name>
-            <ccts:Description>Format of period to be given without hyphen (P = period of 4 months).</ccts:Description>
+            <ccts:Description
+            >Format of period to be given without hyphen (P = period of 4 months).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -542,7 +586,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYP-CCYYP</ccts:Name>
-            <ccts:Description>Format of period to be given without hyphen (P = period of 4 months).</ccts:Description>
+            <ccts:Description
+            >Format of period to be given without hyphen (P = period of 4 months).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -550,7 +595,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYQ-YYQ</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start quarter of a year followed by the end quarter of year (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start quarter of a year followed by the end quarter of year (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -558,7 +604,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYQ-CCYYQ</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start quarter of a year followed by the end quarter of year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start quarter of a year followed by the end quarter of year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -566,7 +613,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYMM-YYMM</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start month of a year followed by the end month of a year (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start month of a year followed by the end month of a year (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -574,7 +622,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMM-CCYYMM</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start month of a year followed by the end month of a year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start month of a year followed by the end month of a year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -582,7 +631,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYMMDDHHMM-YYMMDDHHMM</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start time followed by the end time (format year, month, day, hour and minute). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start time followed by the end time (format year, month, day, hour and minute). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -590,7 +640,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYWW-YYWW</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start week of a year followed by the end week of year (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start week of a year followed by the end week of year (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -598,7 +649,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYWW-CCYYWW</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start week of a year followed by the end week of year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start week of a year followed by the end week of year (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -606,7 +658,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>YYMMDD-YYMMDD</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start date followed by the end date (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start date followed by the end date (both not including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -614,7 +667,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDD-CCYYMMDD</ccts:Name>
-            <ccts:Description>A period of time specified by giving the start date followed by the end date (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time specified by giving the start date followed by the end date (both including century). Data is to be transmitted as consecutive characters without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -622,7 +676,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>CCYYMMDDHHMM-CCYYMMDDHHMM</ccts:Name>
-            <ccts:Description>A period of time which includes the century, year, month, day, hour and minute. Format of period to be given in actual message without hyphen.</ccts:Description>
+            <ccts:Description
+            >A period of time which includes the century, year, month, day, hour and minute. Format of period to be given in actual message without hyphen.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -630,7 +685,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>DHHMM-DHHMM</ccts:Name>
-            <ccts:Description>Format of period to be given without hyphen (D=day of the week, 1=Monday; 2=Tuesday; ... 7=Sunday).</ccts:Description>
+            <ccts:Description
+            >Format of period to be given without hyphen (D=day of the week, 1=Monday; 2=Tuesday; ... 7=Sunday).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -710,7 +766,8 @@ C = century, Y = year, M = month, D = day, H = hour, M = minute, S = second, F =
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Trimester</ccts:Name>
-            <ccts:Description>To indicate a quantity of trimesters (three months).</ccts:Description>
+            <ccts:Description
+            >To indicate a quantity of trimesters (three months).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

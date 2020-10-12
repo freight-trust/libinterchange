@@ -54,7 +54,10 @@
           "Id": "LOCLoop1",
           "Min": 0,
           "Max": 99,
-          "Loop": [{ "Id": "LOC" }, { "Id": "PCDLoop1", "Max": 9, "Loop": [{ "Id": "PCD" }, { "Id": "MOA", "Max": 9 }] }]
+          "Loop": [
+            { "Id": "LOC" },
+            { "Id": "PCDLoop1", "Max": 9, "Loop": [{ "Id": "PCD" }, { "Id": "MOA", "Max": 9 }] }
+          ]
         }
       ]
     },
@@ -73,7 +76,16 @@
         { "Id": "DTM", "Min": 0, "Max": 9 }
       ]
     },
-    { "Id": "AUTLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0, "Max": 9 }, { "Id": "RFF", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [
+        { "Id": "AUT" },
+        { "Id": "DTM", "Min": 0, "Max": 9 },
+        { "Id": "RFF", "Min": 0, "Max": 9 }
+      ]
+    },
     { "Id": "UNT" }
   ]
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 61001_Invoice - Code List Schema Module                    ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm61001Invoice="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode_Invoice:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode_Invoice:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm61001Invoice="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode_Invoice:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode_Invoice:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="DocumentNameCodeInvoice" type="clm61001Invoice:DocumentNameCodeInvoiceContentType"/>
+  <xsd:element
+    name="DocumentNameCodeInvoice"
+    type="clm61001Invoice:DocumentNameCodeInvoiceContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit note related to goods or services</ccts:Name>
-            <ccts:Description>Debit information related to a transaction for goods or services to the relevant party.</ccts:Description>
+            <ccts:Description
+            >Debit information related to a transaction for goods or services to the relevant party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit note related to goods or services</ccts:Name>
-            <ccts:Description>Document message used to provide credit information related to a transaction for goods or services to the relevant party.</ccts:Description>
+            <ccts:Description
+            >Document message used to provide credit information related to a transaction for goods or services to the relevant party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Metered services invoice</ccts:Name>
-            <ccts:Description>Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time.</ccts:Description>
+            <ccts:Description
+            >Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +75,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit note related to financial adjustments</ccts:Name>
-            <ccts:Description>Document message for providing credit information related to financial adjustments to the relevant party, e.g., bonuses.</ccts:Description>
+            <ccts:Description
+            >Document message for providing credit information related to financial adjustments to the relevant party, e.g., bonuses.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +84,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit note related to financial adjustments</ccts:Name>
-            <ccts:Description>Document/message for providing debit information related to financial adjustments to the relevant party.</ccts:Description>
+            <ccts:Description
+            >Document/message for providing debit information related to financial adjustments to the relevant party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +93,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Self billed credit note</ccts:Name>
-            <ccts:Description>A document which indicates that the customer is claiming credit in a self billing environment.</ccts:Description>
+            <ccts:Description
+            >A document which indicates that the customer is claiming credit in a self billing environment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +102,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Consolidated credit note - goods and services</ccts:Name>
-            <ccts:Description>Credit note for goods and services that covers multiple transactions involving more than one invoice.</ccts:Description>
+            <ccts:Description
+            >Credit note for goods and services that covers multiple transactions involving more than one invoice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +111,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Proforma invoice</ccts:Name>
-            <ccts:Description>Document/message serving as a preliminary invoice, containing - on the whole - the same information as the final invoice, but not actually claiming payment.</ccts:Description>
+            <ccts:Description
+            >Document/message serving as a preliminary invoice, containing - on the whole - the same information as the final invoice, but not actually claiming payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +120,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commercial invoice</ccts:Name>
-            <ccts:Description>(1334) Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.</ccts:Description>
+            <ccts:Description
+            >(1334) Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +129,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit note</ccts:Name>
-            <ccts:Description>(1113) Document/message for providing credit information to the relevant party.</ccts:Description>
+            <ccts:Description
+            >(1113) Document/message for providing credit information to the relevant party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +138,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit note</ccts:Name>
-            <ccts:Description>Document/message for providing debit information to the relevant party.</ccts:Description>
+            <ccts:Description
+            >Document/message for providing debit information to the relevant party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,7 +147,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Corrected invoice</ccts:Name>
-            <ccts:Description>Commercial invoice that includes revised information differing from an earlier submission of the same invoice.</ccts:Description>
+            <ccts:Description
+            >Commercial invoice that includes revised information differing from an earlier submission of the same invoice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +156,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Consolidated invoice</ccts:Name>
-            <ccts:Description>Commercial invoice that covers multiple transactions involving more than one vendor.</ccts:Description>
+            <ccts:Description
+            >Commercial invoice that covers multiple transactions involving more than one vendor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +165,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Prepayment invoice</ccts:Name>
-            <ccts:Description>An invoice to pay amounts for goods and services in advance; these amounts will be subtracted from the final invoice.</ccts:Description>
+            <ccts:Description
+            >An invoice to pay amounts for goods and services in advance; these amounts will be subtracted from the final invoice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +174,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Self-billed invoice</ccts:Name>
-            <ccts:Description>An invoice the invoicee is producing instead of the seller.</ccts:Description>
+            <ccts:Description
+            >An invoice the invoicee is producing instead of the seller.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +183,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Consignment invoice</ccts:Name>
-            <ccts:Description>Commercial invoice that covers a transaction other than one involving a sale.</ccts:Description>
+            <ccts:Description
+            >Commercial invoice that covers a transaction other than one involving a sale.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 67075 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm67075="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingLevelCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingLevelCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.2">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm67075="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingLevelCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingLevelCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.2"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="PackagingLevelCode" type="clm67075:PackagingLevelCodeContentType"/>
+  <xsd:element name="PackagingLevelCode" type="clm67075:PackagingLevelCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Inner</ccts:Name>
-            <ccts:Description>Level of packing, if it exists, that is immediately subordinate to the intermediate packaging level.</ccts:Description>
+            <ccts:Description
+            >Level of packing, if it exists, that is immediately subordinate to the intermediate packaging level.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +54,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Intermediate</ccts:Name>
-            <ccts:Description>Level of packaging, if it exists, that is immediately subordinate to the outer packaging level.</ccts:Description>
+            <ccts:Description
+            >Level of packaging, if it exists, that is immediately subordinate to the outer packaging level.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +63,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Outer</ccts:Name>
-            <ccts:Description>For packed merchandise, outermost level of packaging for a shipment.</ccts:Description>
+            <ccts:Description
+            >For packed merchandise, outermost level of packaging for a shipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +72,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>No packaging hierarchy</ccts:Name>
-            <ccts:Description>There is no specifiable level of packaging: packaging is inner and outer level as well.</ccts:Description>
+            <ccts:Description
+            >There is no specifiable level of packaging: packaging is inner and outer level as well.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +81,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shipment level</ccts:Name>
-            <ccts:Description>The packaging level being described is the shipment level.</ccts:Description>
+            <ccts:Description
+            >The packaging level being described is the shipment level.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +90,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Highest</ccts:Name>
-            <ccts:Description>Level of packaging, if it exists, which is highest in the packaging hierarchy.</ccts:Description>
+            <ccts:Description
+            >Level of packaging, if it exists, which is highest in the packaging hierarchy.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

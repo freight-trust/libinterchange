@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 66245 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm66245="urn:un:unece:uncefact:codelist:standard:UNECE:TemperatureTypeCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:TemperatureTypeCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm66245="urn:un:unece:uncefact:codelist:standard:UNECE:TemperatureTypeCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:TemperatureTypeCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="TemperatureTypeCode" type="clm66245:TemperatureTypeCodeContentType"/>
+  <xsd:element name="TemperatureTypeCode" type="clm66245:TemperatureTypeCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Storage temperature</ccts:Name>
-            <ccts:Description>[6240] The temperature at which the cargo is to be kept while it is in storage.</ccts:Description>
+            <ccts:Description
+            >[6240] The temperature at which the cargo is to be kept while it is in storage.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +54,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transport temperature</ccts:Name>
-            <ccts:Description>[6242] The temperature at which cargo is to be kept while it is under transport.</ccts:Description>
+            <ccts:Description
+            >[6242] The temperature at which cargo is to be kept while it is under transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +63,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cargo operating temperature</ccts:Name>
-            <ccts:Description>The temperature at which cargo is to be kept during cargo handling.</ccts:Description>
+            <ccts:Description
+            >The temperature at which cargo is to be kept during cargo handling.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +72,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transport emergency temperature</ccts:Name>
-            <ccts:Description>The temperature at which emergency procedures apply for the disposal of temperature-controlled goods.</ccts:Description>
+            <ccts:Description
+            >The temperature at which emergency procedures apply for the disposal of temperature-controlled goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +81,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transport control temperature</ccts:Name>
-            <ccts:Description>The maximum temperature at which certain products can be safely transported.</ccts:Description>
+            <ccts:Description
+            >The maximum temperature at which certain products can be safely transported.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +106,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Self-accelerating decomposition temperature (SADT)</ccts:Name>
-            <ccts:Description>The lowest temperature at which self-accelerating decomposition may occur for a substance in the packaging as used in transport.</ccts:Description>
+            <ccts:Description
+            >The lowest temperature at which self-accelerating decomposition may occur for a substance in the packaging as used in transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +115,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Self-accelerating polymerization temperature (SAPT)</ccts:Name>
-            <ccts:Description>The lowest temperature at which polymerization may occur for a substance.</ccts:Description>
+            <ccts:Description
+            >The lowest temperature at which polymerization may occur for a substance.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -9,15 +9,36 @@
     { "Id": "DOC", "Max": 40 },
     { "Id": "INP", "Min": 0, "Max": 20 },
     { "Id": "FTX", "Min": 0, "Max": 15 },
-    { "Id": "FIILoop1", "Max": 7, "Loop": [{ "Id": "FII" }, { "Id": "RFF", "Min": 0 }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 5 }] },
+    {
+      "Id": "FIILoop1",
+      "Max": 7,
+      "Loop": [
+        { "Id": "FII" },
+        { "Id": "RFF", "Min": 0 },
+        { "Id": "CTA", "Min": 0 },
+        { "Id": "COM", "Min": 0, "Max": 5 }
+      ]
+    },
     {
       "Id": "NADLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "RFF", "Min": 0, "Max": 3 }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 5 }]
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "RFF", "Min": 0, "Max": 3 },
+        { "Id": "CTA", "Min": 0 },
+        { "Id": "COM", "Min": 0, "Max": 5 }
+      ]
     },
-    { "Id": "PYTLoop1", "Loop": [{ "Id": "PYT" }, { "Id": "DTM", "Min": 0 }, { "Id": "FTX", "Min": 0 }] },
+    {
+      "Id": "PYTLoop1",
+      "Loop": [{ "Id": "PYT" }, { "Id": "DTM", "Min": 0 }, { "Id": "FTX", "Min": 0 }]
+    },
     { "Id": "MOALoop1", "Max": 5, "Loop": [{ "Id": "MOA" }, { "Id": "FTX", "Min": 0 }] },
-    { "Id": "TDTLoop1", "Min": 0, "Loop": [{ "Id": "TDT" }, { "Id": "DTM", "Min": 0 }, { "Id": "LOC", "Min": 0, "Max": 3 }] },
+    {
+      "Id": "TDTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "TDT" }, { "Id": "DTM", "Min": 0 }, { "Id": "LOC", "Min": 0, "Max": 3 }]
+    },
     {
       "Id": "GEILoop1",
       "Min": 0,

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== Core Component Type Schema Module                                                          ===== -->
 <!-- ====================================================================== -->
@@ -31,13 +31,15 @@
 	NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR 
 	FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema 
-	version="2.0"
-	targetNamespace="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2" 
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-	xmlns:cct="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2" 
-	xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" 
-	elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema
+  version="2.0"
+  targetNamespace="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:cct="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+>
 	<!-- =================================================================== -->
 	<!-- ===== Type Definitions                                        ===== -->
 	<!-- =================================================================== -->
@@ -50,7 +52,8 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Amount. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>A number of monetary units specified in a currency where the unit of the currency is explicit or implied.</ccts:Definition>
+				<ccts:Definition
+        >A number of monetary units specified in a currency where the unit of the currency is explicit or implied.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Amount</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>decimal</ccts:PrimitiveType>
 			</xsd:documentation>
@@ -135,7 +138,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Binary Object. Uniform Resource. Identifier</ccts:Name>
-							<ccts:Definition>The Uniform Resource Identifier that identifies where the binary object is located.</ccts:Definition>
+							<ccts:Definition
+              >The Uniform Resource Identifier that identifies where the binary object is located.</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -162,10 +166,12 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Code. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>A character string (letters, figures, or symbols) that for brevity and/or languange independence may be used to represent or replace a definitive value or text of an attribute together with relevant supplementary information.</ccts:Definition>
+				<ccts:Definition
+        >A character string (letters, figures, or symbols) that for brevity and/or languange independence may be used to represent or replace a definitive value or text of an attribute together with relevant supplementary information.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Code</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>string</ccts:PrimitiveType>
-				<ccts:UsageRule>Should not be used if the character string identifies an instance of an object class or an object in the real world, in which case the Identifier. Type should be used.</ccts:UsageRule>
+				<ccts:UsageRule
+        >Should not be used if the character string identifies an instance of an object class or an object in the real world, in which case the Identifier. Type should be used.</ccts:UsageRule>
 			</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
@@ -237,7 +243,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Code List. Uniform Resource. Identifier</ccts:Name>
-							<ccts:Definition>The Uniform Resource Identifier that identifies where the code list is located.</ccts:Definition>
+							<ccts:Definition
+              >The Uniform Resource Identifier that identifies where the code list is located.</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -246,7 +253,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Code List Scheme. Uniform Resource. Identifier</ccts:Name>
-							<ccts:Definition>The Uniform Resource Identifier that identifies where the code list scheme is located.</ccts:Definition>
+							<ccts:Definition
+              >The Uniform Resource Identifier that identifies where the code list scheme is located.</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -264,7 +272,8 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Date Time. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
+				<ccts:Definition
+        >A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Date Time</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>string</ccts:PrimitiveType>
 			</xsd:documentation>
@@ -293,7 +302,8 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+				<ccts:Definition
+        >A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Identifier</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>string</ccts:PrimitiveType>
 			</xsd:documentation>
@@ -322,7 +332,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Identification Scheme. Agency. Identifier</ccts:Name>
-							<ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:Definition
+              >The identification of the agency that maintains the identification scheme.</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -349,7 +360,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Identification Scheme Data. Uniform Resource. Identifier</ccts:Name>
-							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+							<ccts:Definition
+              >The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -358,7 +370,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Identification Scheme. Uniform Resource. Identifier</ccts:Name>
-							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+							<ccts:Definition
+              >The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -376,7 +389,8 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>A list of two mutually exclusive Boolean values that express the only possible states of a Property.</ccts:Definition>
+				<ccts:Definition
+        >A list of two mutually exclusive Boolean values that express the only possible states of a Property.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Indicator</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>string</ccts:PrimitiveType>
 			</xsd:documentation>
@@ -405,7 +419,8 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Measure. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>A numeric value determined by measuring an object along with the specified unit of measure.</ccts:Definition>
+				<ccts:Definition
+        >A numeric value determined by measuring an object along with the specified unit of measure.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Measure</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>decimal</ccts:PrimitiveType>
 			</xsd:documentation>
@@ -443,7 +458,8 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Numeric. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+				<ccts:Definition
+        >Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Numeric</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>string</ccts:PrimitiveType>
 			</xsd:documentation>
@@ -454,7 +470,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Numeric. Format. Text</ccts:Name>
-							<ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+							<ccts:Definition
+              >Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -472,7 +489,8 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Quantity. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>A counted number of non-monetary units possibly including fractions.</ccts:Definition>
+				<ccts:Definition
+        >A counted number of non-monetary units possibly including fractions.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Quantity</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>decimal</ccts:PrimitiveType>
 			</xsd:documentation>
@@ -501,7 +519,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Quantity Unit. Code List Agency. Identifier</ccts:Name>
-							<ccts:Definition>The identification of the agency that maintains the quantity unit code list</ccts:Definition>
+							<ccts:Definition
+              >The identification of the agency that maintains the quantity unit code list</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -510,7 +529,8 @@
 					<xsd:annotation>
 						<xsd:documentation xml:lang="en">
 							<ccts:Name>Quantity Unit. Code List Agency. Name</ccts:Name>
-							<ccts:Definition>The name of the agency which maintains the quantity unit code list.</ccts:Definition>
+							<ccts:Definition
+              >The name of the agency which maintains the quantity unit code list.</ccts:Definition>
 							<ccts:PrimitiveType>string</ccts:PrimitiveType>
 						</xsd:documentation>
 					</xsd:annotation>
@@ -528,7 +548,8 @@
 				<ccts:Acronym>CCT</ccts:Acronym>
 				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
 				<ccts:Version>2.01</ccts:Version>
-				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:Definition
+        >A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
 				<ccts:PrimaryRepresentationTerm>Text</ccts:PrimaryRepresentationTerm>
 				<ccts:PrimitiveType>string</ccts:PrimitiveType>
 			</xsd:documentation>

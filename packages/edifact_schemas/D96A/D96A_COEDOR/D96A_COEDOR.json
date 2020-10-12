@@ -16,8 +16,17 @@
         { "Id": "RFF", "Min": 0, "Max": 9 },
         { "Id": "DTM", "Min": 0, "Max": 9 },
         { "Id": "LOC", "Min": 0, "Max": 9 },
-        { "Id": "DAMLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "DAM" }, { "Id": "COD", "Min": 0 }] },
-        { "Id": "TDTLoop1", "Min": 0, "Loop": [{ "Id": "TDT" }, { "Id": "LOC", "Min": 0, "Max": 9 }] }
+        {
+          "Id": "DAMLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "DAM" }, { "Id": "COD", "Min": 0 }]
+        },
+        {
+          "Id": "TDTLoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "TDT" }, { "Id": "LOC", "Min": 0, "Max": 9 }]
+        }
       ]
     },
     { "Id": "CNT" },

@@ -7,7 +7,12 @@
     {
       "Id": "NADLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 5 }, { "Id": "RFF", "Min": 0, "Max": 9 }]
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "CTA", "Min": 0 },
+        { "Id": "COM", "Min": 0, "Max": 5 },
+        { "Id": "RFF", "Min": 0, "Max": 9 }
+      ]
     },
     { "Id": "DTM", "Max": 6 },
     { "Id": "FTX", "Min": 0, "Max": 6 },
@@ -33,7 +38,12 @@
             { "Id": "NAD", "Min": 0, "Max": 7 },
             { "Id": "DTM", "Min": 0, "Max": 9 },
             { "Id": "FTX", "Min": 0, "Max": 6 },
-            { "Id": "PCDLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "PCD" }, { "Id": "NAD", "Min": 0 }] },
+            {
+              "Id": "PCDLoop1",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "PCD" }, { "Id": "NAD", "Min": 0 }]
+            },
             {
               "Id": "MOALoop1",
               "Min": 0,
@@ -43,7 +53,16 @@
                 { "Id": "GIS", "Min": 0, "Max": 2 },
                 { "Id": "PCD", "Min": 0, "Max": 3 },
                 { "Id": "DTM", "Min": 0, "Max": 2 },
-                { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 3 }, { "Id": "COM", "Min": 0 }] },
+                {
+                  "Id": "RFFLoop1",
+                  "Min": 0,
+                  "Max": 9,
+                  "Loop": [
+                    { "Id": "RFF" },
+                    { "Id": "DTM", "Min": 0, "Max": 3 },
+                    { "Id": "COM", "Min": 0 }
+                  ]
+                },
                 { "Id": "CUX", "Min": 0 }
               ]
             }
@@ -58,7 +77,12 @@
       "Max": 99,
       "Loop": [
         { "Id": "MOA" },
-        { "Id": "RFFLoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 3 }, { "Id": "COM", "Min": 0 }] },
+        {
+          "Id": "RFFLoop2",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 3 }, { "Id": "COM", "Min": 0 }]
+        },
         { "Id": "PCD", "Min": 0, "Max": 3 }
       ]
     },

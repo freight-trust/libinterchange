@@ -10,7 +10,15 @@
       "Id": "NADLoop1",
       "Min": 0,
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }]
+      "Loop": [
+        { "Id": "NAD" },
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        }
+      ]
     },
     { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
     { "Id": "LOC", "Min": 0, "Max": 9 },
@@ -44,7 +52,12 @@
                 { "Id": "TDT" },
                 { "Id": "DTM", "Min": 0, "Max": 9 },
                 { "Id": "RFF", "Min": 0, "Max": 9 },
-                { "Id": "LOCLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }] }
+                {
+                  "Id": "LOCLoop1",
+                  "Min": 0,
+                  "Max": 9,
+                  "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+                }
               ]
             },
             {
@@ -59,7 +72,12 @@
                 { "Id": "RFF", "Min": 0, "Max": 9 },
                 { "Id": "TPL", "Min": 0, "Max": 9 },
                 { "Id": "TMD", "Min": 0 },
-                { "Id": "EQALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "EQA" }, { "Id": "SEL", "Min": 0, "Max": 9 }] }
+                {
+                  "Id": "EQALoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "EQA" }, { "Id": "SEL", "Min": 0, "Max": 9 }]
+                }
               ]
             },
             {
@@ -72,9 +90,24 @@
                 { "Id": "SGP", "Min": 0, "Max": 99 },
                 { "Id": "DGS", "Min": 0, "Max": 9 },
                 { "Id": "FTX", "Min": 0, "Max": 9 },
-                { "Id": "MEALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }] },
-                { "Id": "DIMLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }] },
-                { "Id": "PCILoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "PCI" }, { "Id": "GIN", "Min": 0, "Max": 9 }] }
+                {
+                  "Id": "MEALoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }]
+                },
+                {
+                  "Id": "DIMLoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }]
+                },
+                {
+                  "Id": "PCILoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "PCI" }, { "Id": "GIN", "Min": 0, "Max": 9 }]
+                }
               ]
             }
           ]

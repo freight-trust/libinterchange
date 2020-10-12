@@ -12,7 +12,16 @@
       "Id": "CVRLoop2",
       "Min": 0,
       "Max": 999,
-      "Loop": [{ "Id": "DAT" }, { "Id": "CVR", "Min": 0 }, { "Id": "CVRLoop3", "Min": 0, "Max": 18, "Loop": [{ "Id": "MON" }, { "Id": "CVR", "Min": 0 }] }]
+      "Loop": [
+        { "Id": "DAT" },
+        { "Id": "CVR", "Min": 0 },
+        {
+          "Id": "CVRLoop3",
+          "Min": 0,
+          "Max": 18,
+          "Loop": [{ "Id": "MON" }, { "Id": "CVR", "Min": 0 }]
+        }
+      ]
     },
     { "Id": "UNT" }
   ]

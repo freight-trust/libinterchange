@@ -28,7 +28,15 @@
               "Id": "GIDLoop1",
               "Min": 0,
               "Max": 99,
-              "Loop": [{ "Id": "GID" }, { "Id": "PCILoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "PCI" }, { "Id": "GIN", "Min": 0, "Max": 9 }] }]
+              "Loop": [
+                { "Id": "GID" },
+                {
+                  "Id": "PCILoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "PCI" }, { "Id": "GIN", "Min": 0, "Max": 9 }]
+                }
+              ]
             }
           ]
         }

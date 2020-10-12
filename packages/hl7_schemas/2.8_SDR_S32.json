@@ -4,6 +4,11 @@
   "TransactionSet": [
     { "Id": "SFT", "Min": 0, "Max": "unbounded" },
     { "Id": "UAC", "Min": 0, "Max": 1 },
-    { "Id": "SDR_S32.ANTI-MICROBIAL_DEVICE_CYCLE_DATA", "Min": 1, "Max": 1, "Choice": [{ "Id": "SDD" }, { "Id": "SCD" }] }
+    {
+      "Id": "SDR_S32.ANTI-MICROBIAL_DEVICE_CYCLE_DATA",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [{ "Id": "SDD" }, { "Id": "SCD" }]
+    }
   ]
 }

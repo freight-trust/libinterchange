@@ -27,7 +27,12 @@
         }
       ]
     },
-    { "Id": "SRPLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }] },
+    {
+      "Id": "SRPLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }]
+    },
     {
       "Id": "DATLoop2",
       "Min": 0,
@@ -38,13 +43,26 @@
         { "Id": "FTI", "Min": 0 },
         { "Id": "TRT", "Min": 0 },
         { "Id": "FAR", "Min": 0, "Max": 3 },
-        { "Id": "SRPLoop2", "Min": 0, "Max": 999, "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }] },
+        {
+          "Id": "SRPLoop2",
+          "Min": 0,
+          "Max": 999,
+          "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }]
+        },
         { "Id": "RCI", "Min": 0 },
         { "Id": "DAT", "Min": 0 }
       ]
     },
-    { "Id": "CVRLoop1", "Min": 0, "Loop": [{ "Id": "PTK" }, { "Id": "EQN", "Min": 0 }, { "Id": "CVR", "Min": 0 }] },
-    { "Id": "TIFLoop2", "Min": 0, "Loop": [{ "Id": "DID" }, { "Id": "RCI", "Min": 0 }, { "Id": "TIF", "Min": 0, "Max": 999 }] },
+    {
+      "Id": "CVRLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "PTK" }, { "Id": "EQN", "Min": 0 }, { "Id": "CVR", "Min": 0 }]
+    },
+    {
+      "Id": "TIFLoop2",
+      "Min": 0,
+      "Loop": [{ "Id": "DID" }, { "Id": "RCI", "Min": 0 }, { "Id": "TIF", "Min": 0, "Max": 999 }]
+    },
     {
       "Id": "IFTLoop4",
       "Min": 0,
@@ -58,8 +76,18 @@
         { "Id": "EQN", "Min": 0 },
         { "Id": "SDT", "Min": 0 },
         { "Id": "IFT", "Min": 0, "Max": 99 },
-        { "Id": "APDLoop2", "Min": 0, "Max": 3, "Loop": [{ "Id": "TII" }, { "Id": "APD", "Min": 0 }] },
-        { "Id": "SRPLoop3", "Min": 0, "Max": 999, "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }] },
+        {
+          "Id": "APDLoop2",
+          "Min": 0,
+          "Max": 3,
+          "Loop": [{ "Id": "TII" }, { "Id": "APD", "Min": 0 }]
+        },
+        {
+          "Id": "SRPLoop3",
+          "Min": 0,
+          "Max": 999,
+          "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }]
+        },
         {
           "Id": "IFTLoop5",
           "Min": 0,
@@ -71,7 +99,12 @@
             { "Id": "CRI", "Min": 0 },
             { "Id": "PMT", "Min": 0 },
             { "Id": "IFT", "Min": 0, "Max": 99 },
-            { "Id": "SRPLoop4", "Min": 0, "Max": 999, "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }] }
+            {
+              "Id": "SRPLoop4",
+              "Min": 0,
+              "Max": 999,
+              "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }]
+            }
           ]
         },
         {

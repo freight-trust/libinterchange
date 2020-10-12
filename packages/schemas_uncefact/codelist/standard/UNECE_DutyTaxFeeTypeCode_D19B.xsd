@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 65153 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm65153="urn:un:unece:uncefact:codelist:standard:UNECE:DutyTaxFeeTypeCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DutyTaxFeeTypeCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.2">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm65153="urn:un:unece:uncefact:codelist:standard:UNECE:DutyTaxFeeTypeCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DutyTaxFeeTypeCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.2"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="DutyTaxFeeTypeCode" type="clm65153:DutyTaxFeeTypeCodeContentType"/>
+  <xsd:element name="DutyTaxFeeTypeCode" type="clm65153:DutyTaxFeeTypeCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Petroleum tax</ccts:Name>
-            <ccts:Description>A tax levied on the volume of petroleum being transacted.</ccts:Description>
+            <ccts:Description
+            >A tax levied on the volume of petroleum being transacted.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +54,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Provisional countervailing duty cash</ccts:Name>
-            <ccts:Description>Countervailing duty paid in cash prior to a formal finding of subsidization by Customs.</ccts:Description>
+            <ccts:Description
+            >Countervailing duty paid in cash prior to a formal finding of subsidization by Customs.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +63,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Provisional countervailing duty bond</ccts:Name>
-            <ccts:Description>Countervailing duty paid by posting a bond during an investigation period prior to a formal decision on subsidization by Customs.</ccts:Description>
+            <ccts:Description
+            >Countervailing duty paid by posting a bond during an investigation period prior to a formal decision on subsidization by Customs.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +96,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Harmonised sales tax, Canadian</ccts:Name>
-            <ccts:Description>A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable.</ccts:Description>
+            <ccts:Description
+            >A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +105,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Quebec sales tax</ccts:Name>
-            <ccts:Description>A sales tax charged within the Canadian province of Quebec which is recoverable.</ccts:Description>
+            <ccts:Description
+            >A sales tax charged within the Canadian province of Quebec which is recoverable.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +114,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Canadian provincial sales tax</ccts:Name>
-            <ccts:Description>A sales tax charged within Canadian provinces which is non-recoverable.</ccts:Description>
+            <ccts:Description
+            >A sales tax charged within Canadian provinces which is non-recoverable.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +123,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tax on replacement part</ccts:Name>
-            <ccts:Description>A tax levied on a replacement part, where the original part is returned.</ccts:Description>
+            <ccts:Description
+            >A tax levied on a replacement part, where the original part is returned.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +132,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Mineral oil tax</ccts:Name>
-            <ccts:Description>Tax that is levied specifically on products containing mineral oil.</ccts:Description>
+            <ccts:Description
+            >Tax that is levied specifically on products containing mineral oil.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +157,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Anti-dumping duty</ccts:Name>
-            <ccts:Description>Duty applied to goods ruled to have been dumped in an import market at a price lower than that in the exporter's domestic market.</ccts:Description>
+            <ccts:Description
+            >Duty applied to goods ruled to have been dumped in an import market at a price lower than that in the exporter's domestic market.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +166,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Stamp duty (Imposta di Bollo)</ccts:Name>
-            <ccts:Description>Tax required in Italy, which may be fixed or graduated in various circumstances (e.g. VAT exempt documents or bank receipts).</ccts:Description>
+            <ccts:Description
+            >Tax required in Italy, which may be fixed or graduated in various circumstances (e.g. VAT exempt documents or bank receipts).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +175,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Agricultural levy</ccts:Name>
-            <ccts:Description>Levy imposed on agricultural products where there is a difference between the selling price between trading countries.</ccts:Description>
+            <ccts:Description
+            >Levy imposed on agricultural products where there is a difference between the selling price between trading countries.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +184,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Car tax</ccts:Name>
-            <ccts:Description>A tax that is levied on the value of the automobile.</ccts:Description>
+            <ccts:Description
+            >A tax that is levied on the value of the automobile.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +201,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commodity specific tax</ccts:Name>
-            <ccts:Description>Tax related to a specified commodity, e.g. illuminants, salts.</ccts:Description>
+            <ccts:Description
+            >Tax related to a specified commodity, e.g. illuminants, salts.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +210,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Customs duty</ccts:Name>
-            <ccts:Description>Duties laid down in the Customs tariff, to which goods are liable on entering or leaving the Customs territory (CCC).</ccts:Description>
+            <ccts:Description
+            >Duties laid down in the Customs tariff, to which goods are liable on entering or leaving the Customs territory (CCC).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +219,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Countervailing duty</ccts:Name>
-            <ccts:Description>A duty on imported goods applied for compensate for subsidies granted to those goods in the exporting country.</ccts:Description>
+            <ccts:Description
+            >A duty on imported goods applied for compensate for subsidies granted to those goods in the exporting country.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +228,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Environmental tax</ccts:Name>
-            <ccts:Description>Tax assessed for funding or assuring environmental protection or clean-up.</ccts:Description>
+            <ccts:Description
+            >Tax assessed for funding or assuring environmental protection or clean-up.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +237,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Excise duty</ccts:Name>
-            <ccts:Description>Customs or fiscal authorities code to identify a specific or ad valorem levy on a specific commodity, applied either domestically or at time of importation.</ccts:Description>
+            <ccts:Description
+            >Customs or fiscal authorities code to identify a specific or ad valorem levy on a specific commodity, applied either domestically or at time of importation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +246,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Agricultural export rebate</ccts:Name>
-            <ccts:Description>Monetary rebate given to the seller in certain circumstances when agricultural products are exported.</ccts:Description>
+            <ccts:Description
+            >Monetary rebate given to the seller in certain circumstances when agricultural products are exported.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -229,7 +255,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Federal excise tax</ccts:Name>
-            <ccts:Description>Tax levied by the federal government on the manufacture of specific items.</ccts:Description>
+            <ccts:Description
+            >Tax levied by the federal government on the manufacture of specific items.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -253,7 +280,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Goods and services tax</ccts:Name>
-            <ccts:Description>Tax levied on the final consumption of goods and services throughout the production and distribution chain.</ccts:Description>
+            <ccts:Description
+            >Tax levied on the final consumption of goods and services throughout the production and distribution chain.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -277,7 +305,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Individual tax</ccts:Name>
-            <ccts:Description>A tax levied based on an individual's ability to pay.</ccts:Description>
+            <ccts:Description
+            >A tax levied based on an individual's ability to pay.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -285,7 +314,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Business license fee</ccts:Name>
-            <ccts:Description>Government assessed charge for permit to do business.</ccts:Description>
+            <ccts:Description
+            >Government assessed charge for permit to do business.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -301,7 +331,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Light dues payable</ccts:Name>
-            <ccts:Description>Fee levied on a vessel to pay for port navigation lights.</ccts:Description>
+            <ccts:Description
+            >Fee levied on a vessel to pay for port navigation lights.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -309,7 +340,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Local sales tax</ccts:Name>
-            <ccts:Description>Assessment charges on sale of goods or services by city, borough country or other taxing authorities below state or provincial level.</ccts:Description>
+            <ccts:Description
+            >Assessment charges on sale of goods or services by city, borough country or other taxing authorities below state or provincial level.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -317,7 +349,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lust tax</ccts:Name>
-            <ccts:Description>Tax imposed for clean-up of leaky underground storage tanks.</ccts:Description>
+            <ccts:Description
+            >Tax imposed for clean-up of leaky underground storage tanks.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -325,7 +358,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Monetary compensatory amount</ccts:Name>
-            <ccts:Description>Levy on Common Agricultural Policy (European Union) goods used to compensate for fluctuating currencies between member states.</ccts:Description>
+            <ccts:Description
+            >Levy on Common Agricultural Policy (European Union) goods used to compensate for fluctuating currencies between member states.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +367,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Miscellaneous cash deposit</ccts:Name>
-            <ccts:Description>Duty paid and held on deposit, by Customs, during an investigation period prior to a final decision being made on any aspect related to imported goods (except valuation) by Customs.</ccts:Description>
+            <ccts:Description
+            >Duty paid and held on deposit, by Customs, during an investigation period prior to a final decision being made on any aspect related to imported goods (except valuation) by Customs.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -349,7 +384,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Provisional duty bond</ccts:Name>
-            <ccts:Description>Anti-dumping duty paid by posting a bond during an investigation period prior to a formal decision on dumping by Customs.</ccts:Description>
+            <ccts:Description
+            >Anti-dumping duty paid by posting a bond during an investigation period prior to a formal decision on dumping by Customs.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +393,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Provisional duty cash</ccts:Name>
-            <ccts:Description>Anti-dumping duty paid in cash prior to a formal finding of dumping by Customs.</ccts:Description>
+            <ccts:Description
+            >Anti-dumping duty paid in cash prior to a formal finding of dumping by Customs.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -365,7 +402,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Preference duty</ccts:Name>
-            <ccts:Description>Duties laid down in the Customs tariff, to which goods are liable on entering or leaving the Customs territory falling under a preferential regime such as Generalised System of Preferences (GSP).</ccts:Description>
+            <ccts:Description
+            >Duties laid down in the Customs tariff, to which goods are liable on entering or leaving the Customs territory falling under a preferential regime such as Generalised System of Preferences (GSP).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -381,7 +419,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shifted social securities</ccts:Name>
-            <ccts:Description>Social securities share of the invoice amount to be paid directly to the social securities collector.</ccts:Description>
+            <ccts:Description
+            >Social securities share of the invoice amount to be paid directly to the social securities collector.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -389,7 +428,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>State/provincial sales tax</ccts:Name>
-            <ccts:Description>All applicable sale taxes by authorities at the state or provincial level, below national level.</ccts:Description>
+            <ccts:Description
+            >All applicable sale taxes by authorities at the state or provincial level, below national level.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -405,7 +445,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Surtax</ccts:Name>
-            <ccts:Description>A tax or duty applied on and in addition to existing duties and taxes.</ccts:Description>
+            <ccts:Description
+            >A tax or duty applied on and in addition to existing duties and taxes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -413,7 +454,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shifted wage tax</ccts:Name>
-            <ccts:Description>Wage tax share of the invoice amount to be paid directly to the tax collector(s office).</ccts:Description>
+            <ccts:Description
+            >Wage tax share of the invoice amount to be paid directly to the tax collector(s office).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -421,7 +463,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Alcohol mark tax</ccts:Name>
-            <ccts:Description>A tax levied based on the type of alcohol being obtained.</ccts:Description>
+            <ccts:Description
+            >A tax levied based on the type of alcohol being obtained.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -437,7 +480,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Turnover tax</ccts:Name>
-            <ccts:Description>Tax levied on the total sales/turnover of a corporation.</ccts:Description>
+            <ccts:Description
+            >Tax levied on the total sales/turnover of a corporation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -453,7 +497,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Valuation deposit</ccts:Name>
-            <ccts:Description>Duty paid and held on deposit, by Customs, during an investigation period prior to a formal decision on valuation of the goods being made.</ccts:Description>
+            <ccts:Description
+            >Duty paid and held on deposit, by Customs, during an investigation period prior to a formal decision on valuation of the goods being made.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -461,7 +506,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Value added tax</ccts:Name>
-            <ccts:Description>A tax on domestic or imported goods applied to the value added at each stage in the production/distribution cycle.</ccts:Description>
+            <ccts:Description
+            >A tax on domestic or imported goods applied to the value added at each stage in the production/distribution cycle.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

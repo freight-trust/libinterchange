@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 210AccountingE012 - Code List Schema Module                ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm210AccountingE012="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:AccountingJournal:D11A" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:AccountingJournal:D11A" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm210AccountingE012="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:AccountingJournal:D11A"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:AccountingJournal:D11A"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="1.0"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="AccountingJournal" type="clm210AccountingE012:AccountingJournalContentType"/>
+  <xsd:element name="AccountingJournal" type="clm210AccountingE012:AccountingJournalContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Subsidiary journal</ccts:Name>
-            <ccts:Description>The code indicates the type of the journal is subsidiary journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the type of the journal is subsidiary journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +54,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Budget journal</ccts:Name>
-            <ccts:Description>The code indicates the type of the journal is budget journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the type of the journal is budget journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +63,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cost journal</ccts:Name>
-            <ccts:Description>The code indicates the type of the journal is cost journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the type of the journal is cost journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +72,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Journal</ccts:Name>
-            <ccts:Description>The code indicates the type of the non specialized journal is journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the type of the non specialized journal is journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

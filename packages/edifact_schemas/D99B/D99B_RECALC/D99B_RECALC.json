@@ -7,7 +7,12 @@
     {
       "Id": "NADLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 5 }, { "Id": "RFF", "Min": 0, "Max": 9 }]
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "CTA", "Min": 0 },
+        { "Id": "COM", "Min": 0, "Max": 5 },
+        { "Id": "RFF", "Min": 0, "Max": 9 }
+      ]
     },
     { "Id": "DTM", "Max": 9 },
     { "Id": "FTX", "Min": 0, "Max": 3 },
@@ -42,9 +47,18 @@
                   "Id": "RFFLoop1",
                   "Min": 0,
                   "Max": 9,
-                  "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 2 }, { "Id": "COM", "Min": 0 }, { "Id": "FTX", "Min": 0 }]
+                  "Loop": [
+                    { "Id": "RFF" },
+                    { "Id": "DTM", "Min": 0, "Max": 2 },
+                    { "Id": "COM", "Min": 0 },
+                    { "Id": "FTX", "Min": 0 }
+                  ]
                 },
-                { "Id": "CUXLoop1", "Min": 0, "Loop": [{ "Id": "CUX" }, { "Id": "MOA", "Min": 0 }, { "Id": "AJT" }] }
+                {
+                  "Id": "CUXLoop1",
+                  "Min": 0,
+                  "Loop": [{ "Id": "CUX" }, { "Id": "MOA", "Min": 0 }, { "Id": "AJT" }]
+                }
               ]
             }
           ]

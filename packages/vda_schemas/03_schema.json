@@ -15,10 +15,7 @@
       "uniqueItems": true,
       "minItems": 1,
       "items": {
-        "required": [
-          "ID",
-          "Max"
-        ],
+        "required": ["ID", "Max"],
         "properties": {
           "ID": {
             "type": "string",
@@ -32,10 +29,7 @@
             "uniqueItems": true,
             "minItems": 1,
             "items": {
-              "required": [
-                "ID",
-                "Max"
-              ],
+              "required": ["ID", "Max"],
               "properties": {
                 "ID": {
                   "type": "string",
@@ -49,10 +43,7 @@
                   "uniqueItems": true,
                   "minItems": 1,
                   "items": {
-                    "required": [
-                      "ID",
-                      "Max"
-                    ],
+                    "required": ["ID", "Max"],
                     "properties": {
                       "ID": {
                         "type": "string",
@@ -66,11 +57,7 @@
                         "uniqueItems": true,
                         "minItems": 1,
                         "items": {
-                          "required": [
-                            "ID",
-                            "Min",
-                            "Max"
-                          ],
+                          "required": ["ID", "Min", "Max"],
                           "properties": {
                             "ID": {
                               "type": "string",
@@ -109,10 +96,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "E",
-            "J"
-          ]
+          "required": ["E", "J"]
         },
         "Pre-payment of charges key": {
           "type": "object",
@@ -126,10 +110,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "01",
-            "03"
-          ]
+          "required": ["01", "03"]
         },
         "Key to means of Transport": {
           "type": "object",
@@ -163,15 +144,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "10",
-            "11",
-            "01",
-            "02",
-            "07",
-            "08",
-            "09"
-          ]
+          "required": ["10", "11", "01", "02", "07", "08", "09"]
         },
         "Qualifier for information": {
           "type": "object",
@@ -185,10 +158,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "1",
-            "2"
-          ]
+          "required": ["1", "2"]
         },
         "Truck type code": {
           "type": "object",
@@ -210,12 +180,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+          "required": ["1", "2", "3", "4"]
         },
         "Dispatch type": {
           "type": "object",
@@ -261,18 +226,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "10",
-            "11",
-            "20",
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "08",
-            "09"
-          ]
+          "required": ["10", "11", "20", "01", "02", "03", "04", "05", "08", "09"]
         },
         "Process code": {
           "type": "object",
@@ -302,14 +256,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "30",
-            "32",
-            "33",
-            "35",
-            "36",
-            "40"
-          ]
+          "required": ["30", "32", "33", "35", "36", "40"]
         },
         "Country of origin": {
           "type": "object",
@@ -1554,16 +1501,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "KG",
-            "L",
-            "M",
-            "M2",
-            "M3",
-            "SA",
-            "ST",
-            "T"
-          ]
+          "required": ["KG", "L", "M", "M2", "M3", "SA", "ST", "T"]
         },
         "Type of call-off, coded": {
           "type": "object",
@@ -1577,10 +1515,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "F",
-            "P"
-          ]
+          "required": ["F", "P"]
         },
         "Usage code": {
           "type": "object",
@@ -1602,12 +1537,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "E",
-            "M",
-            "S",
-            "U"
-          ]
+          "required": ["E", "M", "S", "U"]
         },
         "Preference status": {
           "type": "object",
@@ -1649,17 +1579,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "C",
-            "F",
-            "G",
-            "I",
-            "N",
-            "O",
-            "S",
-            "W",
-            "X"
-          ]
+          "required": ["C", "F", "G", "I", "N", "O", "S", "W", "X"]
         },
         "Dutiable goods": {
           "type": "object",
@@ -1669,9 +1589,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "1"
-          ]
+          "required": ["1"]
         },
         "Customer's package type ID": {
           "type": "object",
@@ -1876,11 +1794,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "G",
-            "M",
-            "S"
-          ]
+          "required": ["G", "M", "S"]
         },
         "Returnable package indicator": {
           "type": "object",
@@ -1894,10 +1808,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "E",
-            "M"
-          ]
+          "required": ["E", "M"]
         },
         "Property code": {
           "type": "object",
@@ -1915,11 +1826,7 @@
               "minLength": 1
             }
           },
-          "required": [
-            "D",
-            "K",
-            "L"
-          ]
+          "required": ["D", "K", "L"]
         }
       },
       "required": [
@@ -1953,13 +1860,7 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": [
-                  "Desc",
-                  "DataType",
-                  "Required",
-                  "Length",
-                  "QualifierRef"
-                ],
+                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -1983,9 +1884,7 @@
               }
             }
           },
-          "required": [
-            "Elements"
-          ]
+          "required": ["Elements"]
         },
         "712": {
           "type": "object",
@@ -1995,13 +1894,7 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": [
-                  "Desc",
-                  "DataType",
-                  "Required",
-                  "Length",
-                  "QualifierRef"
-                ],
+                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -2025,9 +1918,7 @@
               }
             }
           },
-          "required": [
-            "Elements"
-          ]
+          "required": ["Elements"]
         },
         "713": {
           "type": "object",
@@ -2037,13 +1928,7 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": [
-                  "Desc",
-                  "DataType",
-                  "Required",
-                  "Length",
-                  "QualifierRef"
-                ],
+                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -2067,9 +1952,7 @@
               }
             }
           },
-          "required": [
-            "Elements"
-          ]
+          "required": ["Elements"]
         },
         "714": {
           "type": "object",
@@ -2079,13 +1962,7 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": [
-                  "Desc",
-                  "DataType",
-                  "Required",
-                  "Length",
-                  "QualifierRef"
-                ],
+                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -2109,9 +1986,7 @@
               }
             }
           },
-          "required": [
-            "Elements"
-          ]
+          "required": ["Elements"]
         },
         "715": {
           "type": "object",
@@ -2121,13 +1996,7 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": [
-                  "Desc",
-                  "DataType",
-                  "Required",
-                  "Length",
-                  "QualifierRef"
-                ],
+                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -2151,9 +2020,7 @@
               }
             }
           },
-          "required": [
-            "Elements"
-          ]
+          "required": ["Elements"]
         },
         "716": {
           "type": "object",
@@ -2163,12 +2030,7 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": [
-                  "Desc",
-                  "DataType",
-                  "Required",
-                  "Length"
-                ],
+                "required": ["Desc", "DataType", "Required", "Length"],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -2188,9 +2050,7 @@
               }
             }
           },
-          "required": [
-            "Elements"
-          ]
+          "required": ["Elements"]
         },
         "718": {
           "type": "object",
@@ -2200,12 +2060,7 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": [
-                  "Desc",
-                  "DataType",
-                  "Required",
-                  "Length"
-                ],
+                "required": ["Desc", "DataType", "Required", "Length"],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -2225,9 +2080,7 @@
               }
             }
           },
-          "required": [
-            "Elements"
-          ]
+          "required": ["Elements"]
         },
         "719": {
           "type": "object",
@@ -2237,12 +2090,7 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": [
-                  "Desc",
-                  "DataType",
-                  "Required",
-                  "Length"
-                ],
+                "required": ["Desc", "DataType", "Required", "Length"],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -2262,28 +2110,11 @@
               }
             }
           },
-          "required": [
-            "Elements"
-          ]
+          "required": ["Elements"]
         }
       },
-      "required": [
-        "711",
-        "712",
-        "713",
-        "714",
-        "715",
-        "716",
-        "718",
-        "719"
-      ]
+      "required": ["711", "712", "713", "714", "715", "716", "718", "719"]
     }
   },
-  "required": [
-    "Release",
-    "DocumentType",
-    "TransactionSet",
-    "Qualifiers",
-    "Segments"
-  ]
+  "required": ["Release", "DocumentType", "TransactionSet", "Qualifiers", "Segments"]
 }

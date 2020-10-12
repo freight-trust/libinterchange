@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 64279 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm64279="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentTermsTypeCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentTermsTypeCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm64279="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentTermsTypeCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PaymentTermsTypeCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="PaymentTermsTypeCode" type="clm64279:PaymentTermsTypeCodeContentType"/>
+  <xsd:element name="PaymentTermsTypeCode" type="clm64279:PaymentTermsTypeCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -69,7 +77,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Discount not applicable</ccts:Name>
-            <ccts:Description>Payment terms on which discounts are not applicable.</ccts:Description>
+            <ccts:Description
+            >Payment terms on which discounts are not applicable.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +86,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Mixed</ccts:Name>
-            <ccts:Description>Different payment terms negotiated under a documentary credit.</ccts:Description>
+            <ccts:Description
+            >Different payment terms negotiated under a documentary credit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +127,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Elective</ccts:Name>
-            <ccts:Description>Payment terms to be chosen by buyer (from options separately advised).</ccts:Description>
+            <ccts:Description
+            >Payment terms to be chosen by buyer (from options separately advised).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +144,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Seller to advise buyer</ccts:Name>
-            <ccts:Description>Seller will advise buyer of payment terms by separate transaction.</ccts:Description>
+            <ccts:Description
+            >Seller will advise buyer of payment terms by separate transaction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +177,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ultimo</ccts:Name>
-            <ccts:Description>Payment is due the end of the current or specified month.</ccts:Description>
+            <ccts:Description
+            >Payment is due the end of the current or specified month.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +194,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>United States funds</ccts:Name>
-            <ccts:Description>The payment terms require the use of United States funds.</ccts:Description>
+            <ccts:Description
+            >The payment terms require the use of United States funds.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -245,7 +259,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Available by negotiation with any bank in ...</ccts:Name>
-            <ccts:Description>Payment made by negotiation with any bank in a specified location.</ccts:Description>
+            <ccts:Description
+            >Payment made by negotiation with any bank in a specified location.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -253,7 +268,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Available by negotiation by named bank</ccts:Name>
-            <ccts:Description>Payment made by negotiation with a specified financial institution.</ccts:Description>
+            <ccts:Description
+            >Payment made by negotiation with a specified financial institution.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -293,7 +309,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Payment by instalments according to progress (as agreed)</ccts:Name>
-            <ccts:Description>Payment by instalments according to progress (as agreed).</ccts:Description>
+            <ccts:Description
+            >Payment by instalments according to progress (as agreed).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -301,7 +318,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Payment by instalments according to progress (to be agreed)</ccts:Name>
-            <ccts:Description>Payment by instalments according to progress (to be agreed).</ccts:Description>
+            <ccts:Description
+            >Payment by instalments according to progress (to be agreed).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -317,7 +335,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tenor payment terms</ccts:Name>
-            <ccts:Description>Payment to be made according to bilaterally agreed conditions between buyer and seller.</ccts:Description>
+            <ccts:Description
+            >Payment to be made according to bilaterally agreed conditions between buyer and seller.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -325,7 +344,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Complete payment</ccts:Name>
-            <ccts:Description>Payment must be made for complete value and may not be paid in instalments.</ccts:Description>
+            <ccts:Description
+            >Payment must be made for complete value and may not be paid in instalments.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +353,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Payment terms defined in consolidated invoice</ccts:Name>
-            <ccts:Description>Payment terms are specified in a consolidated invoice.</ccts:Description>
+            <ccts:Description
+            >Payment terms are specified in a consolidated invoice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -349,7 +370,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Partial advance</ccts:Name>
-            <ccts:Description>The payment terms require a partial payment in advance of completion.</ccts:Description>
+            <ccts:Description
+            >The payment terms require a partial payment in advance of completion.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +379,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Consignment</ccts:Name>
-            <ccts:Description>The payment terms are that the goods will be paid for when they are sold or consumed.</ccts:Description>
+            <ccts:Description
+            >The payment terms are that the goods will be paid for when they are sold or consumed.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -365,7 +388,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Inter-company account</ccts:Name>
-            <ccts:Description>The payment terms involve the use of an inter-company account.</ccts:Description>
+            <ccts:Description
+            >The payment terms involve the use of an inter-company account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -373,7 +397,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sell by note</ccts:Name>
-            <ccts:Description>The payment terms involve a debtor who promises to pay a definite sum of money on demand or at a definite time in the future.</ccts:Description>
+            <ccts:Description
+            >The payment terms involve a debtor who promises to pay a definite sum of money on demand or at a definite time in the future.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -381,7 +406,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Supplier floor plan</ccts:Name>
-            <ccts:Description>The payment terms involve payment for merchandise owned by a third party.</ccts:Description>
+            <ccts:Description
+            >The payment terms involve payment for merchandise owned by a third party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -389,7 +415,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Contract basis</ccts:Name>
-            <ccts:Description>The payment terms are based on a contract with a vendor.</ccts:Description>
+            <ccts:Description
+            >The payment terms are based on a contract with a vendor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -397,7 +424,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit controlled</ccts:Name>
-            <ccts:Description>The payment terms involve the monitoring of credit by the grantor.</ccts:Description>
+            <ccts:Description
+            >The payment terms involve the monitoring of credit by the grantor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -405,7 +433,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Dating given</ccts:Name>
-            <ccts:Description>The payment terms in which suppliers may extend seasonal dating.</ccts:Description>
+            <ccts:Description
+            >The payment terms in which suppliers may extend seasonal dating.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -413,7 +442,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Trade acceptance</ccts:Name>
-            <ccts:Description>A trade acceptance is a written acknowledgement of the sale of goods and promise to pay at a definite date and place.</ccts:Description>
+            <ccts:Description
+            >A trade acceptance is a written acknowledgement of the sale of goods and promise to pay at a definite date and place.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -421,7 +451,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cost plus</ccts:Name>
-            <ccts:Description>The payment terms permit reimbursement of costs plus other authorised changes.</ccts:Description>
+            <ccts:Description
+            >The payment terms permit reimbursement of costs plus other authorised changes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -429,7 +460,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Letter of credit</ccts:Name>
-            <ccts:Description>The payment terms require the use of a letter of credit.</ccts:Description>
+            <ccts:Description
+            >The payment terms require the use of a letter of credit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -437,7 +469,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lease agreement</ccts:Name>
-            <ccts:Description>The payment terms are included in the lease agreement.</ccts:Description>
+            <ccts:Description
+            >The payment terms are included in the lease agreement.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -445,7 +478,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash On Delivery (COD)</ccts:Name>
-            <ccts:Description>The payment terms are cash is due on delivery of merchandise.</ccts:Description>
+            <ccts:Description
+            >The payment terms are cash is due on delivery of merchandise.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -453,7 +487,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash by state law</ccts:Name>
-            <ccts:Description>The payment terms are dictated by state law requiring payment of cash.</ccts:Description>
+            <ccts:Description
+            >The payment terms are dictated by state law requiring payment of cash.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -469,7 +504,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash on arrival</ccts:Name>
-            <ccts:Description>The payment terms require payment by cash on arrival of the goods or services.</ccts:Description>
+            <ccts:Description
+            >The payment terms require payment by cash on arrival of the goods or services.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -477,7 +513,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash</ccts:Name>
-            <ccts:Description>The payment terms are that payments are made in cash.</ccts:Description>
+            <ccts:Description
+            >The payment terms are that payments are made in cash.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -485,7 +522,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash discount terms apply</ccts:Name>
-            <ccts:Description>The payment terms are that a discount is applicable if the payment is made in cash.</ccts:Description>
+            <ccts:Description
+            >The payment terms are that a discount is applicable if the payment is made in cash.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -493,7 +531,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash with order</ccts:Name>
-            <ccts:Description>The payment terms require the payment in cash with placement of the order.</ccts:Description>
+            <ccts:Description
+            >The payment terms require the payment in cash with placement of the order.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -501,7 +540,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash per vendor request</ccts:Name>
-            <ccts:Description>The payment terms involve a vendor request for payment by cash.</ccts:Description>
+            <ccts:Description
+            >The payment terms involve a vendor request for payment by cash.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -509,7 +549,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Irrevocable letter of credit</ccts:Name>
-            <ccts:Description>The payment terms require the use of an irrevocable letter of credit.</ccts:Description>
+            <ccts:Description
+            >The payment terms require the use of an irrevocable letter of credit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -517,7 +558,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Documents against acceptance</ccts:Name>
-            <ccts:Description>The payment terms require acceptance of liability before document transfer.</ccts:Description>
+            <ccts:Description
+            >The payment terms require acceptance of liability before document transfer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -525,7 +567,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Charge card</ccts:Name>
-            <ccts:Description>The payment terms permit the use of a charge card to effect payment.</ccts:Description>
+            <ccts:Description
+            >The payment terms permit the use of a charge card to effect payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -533,7 +576,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Documents against payment</ccts:Name>
-            <ccts:Description>The payment terms require payment before document transfer.</ccts:Description>
+            <ccts:Description
+            >The payment terms require payment before document transfer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -541,7 +585,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Usance bill</ccts:Name>
-            <ccts:Description>The payment terms are based on the time allowed by commercial usage for the payment of foreign bills of exchange.</ccts:Description>
+            <ccts:Description
+            >The payment terms are based on the time allowed by commercial usage for the payment of foreign bills of exchange.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -549,7 +594,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Letter of credit at sight</ccts:Name>
-            <ccts:Description>The payment terms require the presentation of a letter of credit.</ccts:Description>
+            <ccts:Description
+            >The payment terms require the presentation of a letter of credit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -557,7 +603,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Secured account</ccts:Name>
-            <ccts:Description>The payment terms call for the use of a secured account.</ccts:Description>
+            <ccts:Description
+            >The payment terms call for the use of a secured account.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -565,7 +612,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Basic commission terms</ccts:Name>
-            <ccts:Description>The payment terms call for the use of basic commission terms.</ccts:Description>
+            <ccts:Description
+            >The payment terms call for the use of basic commission terms.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -581,7 +629,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Discount with prompt pay</ccts:Name>
-            <ccts:Description>The payment terms include a discount when payment is made within a time frame designated as prompt pay.</ccts:Description>
+            <ccts:Description
+            >The payment terms include a discount when payment is made within a time frame designated as prompt pay.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -589,7 +638,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Discount with advance payment</ccts:Name>
-            <ccts:Description>The payment terms include a discount when payment is made in advance.</ccts:Description>
+            <ccts:Description
+            >The payment terms include a discount when payment is made in advance.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -597,7 +647,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Certified cheque</ccts:Name>
-            <ccts:Description>The payment terms require the use of a certified cheque.</ccts:Description>
+            <ccts:Description
+            >The payment terms require the use of a certified cheque.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -605,7 +656,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash against documents</ccts:Name>
-            <ccts:Description>The payment terms require cash payment before document transfer.</ccts:Description>
+            <ccts:Description
+            >The payment terms require cash payment before document transfer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -613,7 +665,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bill of exchange</ccts:Name>
-            <ccts:Description>The payment terms require the use of bill of exchange.</ccts:Description>
+            <ccts:Description
+            >The payment terms require the use of bill of exchange.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -621,7 +674,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Progressive discount</ccts:Name>
-            <ccts:Description>The payment terms include a progressive discount based on the amount and speed with which payments are made.</ccts:Description>
+            <ccts:Description
+            >The payment terms include a progressive discount based on the amount and speed with which payments are made.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -645,7 +699,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promissory note</ccts:Name>
-            <ccts:Description>The payment term requires the use of a promissory note as a means of payment.</ccts:Description>
+            <ccts:Description
+            >The payment term requires the use of a promissory note as a means of payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -653,7 +708,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Factoring</ccts:Name>
-            <ccts:Description>Payment term requires payment being made by the factoring company according to the agreement between buyer, bank and factoring company.</ccts:Description>
+            <ccts:Description
+            >Payment term requires payment being made by the factoring company according to the agreement between buyer, bank and factoring company.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -661,7 +717,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Mutually defined</ccts:Name>
-            <ccts:Description>A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
+            <ccts:Description
+            >A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

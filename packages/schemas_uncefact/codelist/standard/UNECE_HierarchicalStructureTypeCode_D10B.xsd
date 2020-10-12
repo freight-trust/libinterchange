@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 69661 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm69661="urn:un:unece:uncefact:codelist:standard:UNECE:HierarchicalStructureTypeCode:D10B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:HierarchicalStructureTypeCode:D10B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.2">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm69661="urn:un:unece:uncefact:codelist:standard:UNECE:HierarchicalStructureTypeCode:D10B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:HierarchicalStructureTypeCode:D10B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="1.2"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="HierarchicalStructureTypeCode" type="clm69661:HierarchicalStructureTypeCodeContentType"/>
+  <xsd:element
+    name="HierarchicalStructureTypeCode"
+    type="clm69661:HierarchicalStructureTypeCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Integrated Project Team</ccts:Name>
-            <ccts:Description>Multi-function work team organized to complete project objectives.</ccts:Description>
+            <ccts:Description
+            >Multi-function work team organized to complete project objectives.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Integrated master plan</ccts:Name>
-            <ccts:Description>An event-driven plan that documents the significant accomplishments necessary to complete the work and ties each accomplishment to a key program event.</ccts:Description>
+            <ccts:Description
+            >An event-driven plan that documents the significant accomplishments necessary to complete the work and ties each accomplishment to a key program event.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Integrated master schedule</ccts:Name>
-            <ccts:Description>An integrated and networked schedule of tasks required to complete a defined work effort or scope of work.</ccts:Description>
+            <ccts:Description
+            >An integrated and networked schedule of tasks required to complete a defined work effort or scope of work.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +83,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Organizational breakdown structure</ccts:Name>
-            <ccts:Description>A structure that defines how an entity is organized.</ccts:Description>
+            <ccts:Description
+            >A structure that defines how an entity is organized.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +92,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Resource breakdown structure</ccts:Name>
-            <ccts:Description>A structure that defines the resource classifications necessary to complete a project.</ccts:Description>
+            <ccts:Description
+            >A structure that defines the resource classifications necessary to complete a project.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +101,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Work breakdown structure</ccts:Name>
-            <ccts:Description>A structure that defines the work that must be accomplished to complete a project.</ccts:Description>
+            <ccts:Description
+            >A structure that defines the work that must be accomplished to complete a project.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

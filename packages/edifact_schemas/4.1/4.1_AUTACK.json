@@ -9,7 +9,12 @@
       "Loop": [
         { "Id": "USH" },
         { "Id": "USA", "Min": 0, "Max": 3 },
-        { "Id": "USCLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "USC" }, { "Id": "USA", "Min": 0, "Max": 3 }] }
+        {
+          "Id": "USCLoop1",
+          "Min": 0,
+          "Max": 2,
+          "Loop": [{ "Id": "USC" }, { "Id": "USA", "Min": 0, "Max": 3 }]
+        }
       ]
     },
     { "Id": "USB" },

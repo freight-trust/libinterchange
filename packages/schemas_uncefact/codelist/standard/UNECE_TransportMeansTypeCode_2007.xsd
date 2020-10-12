@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 6Recommendation 28 - Code List Schema Module               ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm6Recommendation28="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMeansTypeCode:2007" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMeansTypeCode:2007" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm6Recommendation28="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMeansTypeCode:2007"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMeansTypeCode:2007"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="TransportMeansTypeCode" type="clm6Recommendation28:TransportMeansTypeCodeContentType"/>
+  <xsd:element
+    name="TransportMeansTypeCode"
+    type="clm6Recommendation28:TransportMeansTypeCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -61,7 +72,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tractor</ccts:Name>
-            <ccts:Description>Automotive vehicle with an engine designed for pulling.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with an engine designed for pulling.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +81,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Van</ccts:Name>
-            <ccts:Description>Closed automotive vehicle designed for carrying freight.</ccts:Description>
+            <ccts:Description
+            >Closed automotive vehicle designed for carrying freight.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +90,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tiptanker</ccts:Name>
-            <ccts:Description>Automotive vehicle designed with a tank lifting capability.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed with a tank lifting capability.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +99,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, dry bulk</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying dry bulk cargo.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying dry bulk cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +108,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, container</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying containers.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying containers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +125,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, reefer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for the carriage of frozen cargo.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for the carriage of frozen cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +150,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pipeline</ccts:Name>
-            <ccts:Description>A line of one or more pipes for continuous transport of liquid or gas commodity.</ccts:Description>
+            <ccts:Description
+            >A line of one or more pipes for continuous transport of liquid or gas commodity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +159,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Powerline</ccts:Name>
-            <ccts:Description>A line of one or more cables or wires for continuous transport of electricity.</ccts:Description>
+            <ccts:Description
+            >A line of one or more cables or wires for continuous transport of electricity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +176,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor freighter</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying general cargo.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying general cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +185,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor freighter, tug</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying cargo and capable of towing.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying cargo and capable of towing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +194,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor tanker, tug</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying liquid cargo and capable of towing.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying liquid cargo and capable of towing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +203,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor freighter with one or more ships alongside</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying general cargo that has one or more vessels alongside.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying general cargo that has one or more vessels alongside.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +212,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor freighter with tanker</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying general cargo alongside a vessel designed for carrying liquid cargo.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying general cargo alongside a vessel designed for carrying liquid cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +221,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor freighter pushing one or more freighters</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying general cargo, pushing one or more vessels also designed for carrying general cargo.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying general cargo, pushing one or more vessels also designed for carrying general cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -349,7 +374,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Speedboat</ccts:Name>
-            <ccts:Description>Vessel designed for speed, often used for recreation.</ccts:Description>
+            <ccts:Description
+            >Vessel designed for speed, often used for recreation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +383,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sailing boat with auxiliary motor</ccts:Name>
-            <ccts:Description>Vessel designed primarily for sailing outfitted with an auxiliary motor.</ccts:Description>
+            <ccts:Description
+            >Vessel designed primarily for sailing outfitted with an auxiliary motor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -365,7 +392,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sailing yacht</ccts:Name>
-            <ccts:Description>A specific type of vessel mostly used for pleasure and designed for sailing.</ccts:Description>
+            <ccts:Description
+            >A specific type of vessel mostly used for pleasure and designed for sailing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -381,7 +409,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Craft, pleasure, longer than 20 metres</ccts:Name>
-            <ccts:Description>A pleasure craft equal or longer than 20 metres, used for purposes of sports and recreation and not financial gain.</ccts:Description>
+            <ccts:Description
+            >A pleasure craft equal or longer than 20 metres, used for purposes of sports and recreation and not financial gain.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -389,7 +418,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Craft, pleasure, smaller than 20 metres</ccts:Name>
-            <ccts:Description>A pleasure craft smaller than 20 metres, used for purposes of sports and recreation and not financial gain.</ccts:Description>
+            <ccts:Description
+            >A pleasure craft smaller than 20 metres, used for purposes of sports and recreation and not financial gain.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -397,7 +427,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Craft, other, extra definitions and specifications</ccts:Name>
-            <ccts:Description>A small craft with some extra definitions and specifications.</ccts:Description>
+            <ccts:Description
+            >A small craft with some extra definitions and specifications.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -405,7 +436,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Craft, other, recreational</ccts:Name>
-            <ccts:Description>Vessel designed for recreation, not otherwise specified.</ccts:Description>
+            <ccts:Description
+            >Vessel designed for recreation, not otherwise specified.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -421,7 +453,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Hydrofoil</ccts:Name>
-            <ccts:Description>Vessel with wing-like structure for skimming at high speed.</ccts:Description>
+            <ccts:Description
+            >Vessel with wing-like structure for skimming at high speed.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -437,7 +470,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Train, railroad</ccts:Name>
-            <ccts:Description>One or more rail wagons pulled or pushed by one or more locomotive units, or self-propelled, that move over rail tracks.</ccts:Description>
+            <ccts:Description
+            >One or more rail wagons pulled or pushed by one or more locomotive units, or self-propelled, that move over rail tracks.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -469,7 +503,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck dump</ccts:Name>
-            <ccts:Description>Automotive vehicle designed with a cargo-dumping capability.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed with a cargo-dumping capability.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -477,7 +512,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, forklift</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for lifting cargo and heavy objects.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for lifting cargo and heavy objects.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -485,7 +521,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Loader, shovel</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for shoveling sand and other bulk material.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for shoveling sand and other bulk material.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -501,7 +538,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Carrier, straddle</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for lifting and transporting containers.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for lifting and transporting containers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -517,7 +555,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bus</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying more than 8 passengers including the driver.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying more than 8 passengers including the driver.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -525,7 +564,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Van, delivery</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for making fast deliveries.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for making fast deliveries.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -549,7 +589,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tractor, industrial</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for towing one or more trailers.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for towing one or more trailers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -557,7 +598,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, freezer with isothermic trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying frozen goods with a trailer designed for carrying temperature-controlled goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying frozen goods with a trailer designed for carrying temperature-controlled goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -565,7 +607,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, isothermic with isothermic trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle with trailer designed to carry temperature-controlled goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with trailer designed to carry temperature-controlled goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -573,7 +616,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, refrigerated with isothermic trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying refrigerated goods with a trailer designed for carrying temperature-controlled goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying refrigerated goods with a trailer designed for carrying temperature-controlled goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -581,7 +625,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, freezer with refrigerated trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying frozen goods with a trailer designed for carrying refrigerated goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying frozen goods with a trailer designed for carrying refrigerated goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -589,7 +634,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, isothermic with refrigerated trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry temperature-controlled goods with a trailer designed to carry refrigerated goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry temperature-controlled goods with a trailer designed to carry refrigerated goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -597,7 +643,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, opening floor, with extendable trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle with an opening floor with an extendable trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with an opening floor with an extendable trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -605,7 +652,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, rigid, with tank and tank trailer</ccts:Name>
-            <ccts:Description>Rigid automotive vehicle designed with a tank with a tank trailer.</ccts:Description>
+            <ccts:Description
+            >Rigid automotive vehicle designed with a tank with a tank trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -613,7 +661,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, bulk with tank trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for bulk carrying with a tank trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for bulk carrying with a tank trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -621,7 +670,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, rigid with tank and bulk trailer</ccts:Name>
-            <ccts:Description>Rigid automotive vehicle designed with a tank with a trailer capable of carrying bulk cargo and liquid.</ccts:Description>
+            <ccts:Description
+            >Rigid automotive vehicle designed with a tank with a trailer capable of carrying bulk cargo and liquid.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -629,7 +679,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, bulk with bulk trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle and trailer both designed for carrying bulk cargo.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle and trailer both designed for carrying bulk cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -637,7 +688,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner with extendable trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle with extendable trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle with extendable trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -645,7 +697,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner with removable roof and extendable trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle with removable roof and extendable trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle with removable roof and extendable trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -653,7 +706,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, bulk truck with extendable trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying bulk cargo with an extendable trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying bulk cargo with an extendable trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -661,7 +715,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, refrigerated with freezer trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying refrigerated goods with a trailer designed for carrying frozen goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying refrigerated goods with a trailer designed for carrying frozen goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -669,7 +724,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, isothermic with freezer trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying temperature-controlled goods with a trailer designed for carrying frozen goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying temperature-controlled goods with a trailer designed for carrying frozen goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -677,7 +733,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, furniture with trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying furniture with a trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying furniture with a trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -685,7 +742,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner with furniture trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle with trailer designed for carrying furniture.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle with trailer designed for carrying furniture.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -693,7 +751,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner, removable roof with furniture trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle designed with a removable roof with a trailer designed for carrying furniture.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle designed with a removable roof with a trailer designed for carrying furniture.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -701,7 +760,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tip-up with gondola trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed with a tip-up capability with a gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed with a tip-up capability with a gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -709,7 +769,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner with gondola trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle with a gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle with a gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -717,7 +778,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner, with removable roof and gondola trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle with removable roof and a gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle with removable roof and a gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -725,7 +787,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, opening-floor with gondola trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle with an opening floor and with a gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with an opening floor and with a gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -733,7 +796,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, bulk with gondola trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying bulk cargo with a gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying bulk cargo with a gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -741,7 +805,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tip-up with extendable gondola trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed with a tip-up capability with an extendable gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed with a tip-up capability with an extendable gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -749,7 +814,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner with extendable gondola trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle with an extendable gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle with an extendable gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -757,7 +823,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner, removable roof with extendable gondola trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle designed with a removable roof and with an extendable gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle designed with a removable roof and with an extendable gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -765,7 +832,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, opening floor with extendable gondola trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle designed with an opening floor and with an extendable gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle designed with an opening floor and with an extendable gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -773,7 +841,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, bulk with extendable gondola trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying bulk cargo with an extendable gondola trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying bulk cargo with an extendable gondola trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -781,7 +850,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tip-up truck with opening-floor trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed with a tip-up capability with an opening-floor trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed with a tip-up capability with an opening-floor trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -789,7 +859,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner with opening-floor trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle with opening-floor trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle with opening-floor trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -797,7 +868,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner, removable roof, with opening-floor trailer</ccts:Name>
-            <ccts:Description>Automotive tautliner vehicle with a removable roof, with an opening-floor trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautliner vehicle with a removable roof, with an opening-floor trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -805,7 +877,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, opening-floor with opening-floor trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle and trailer both with opening floors.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle and trailer both with opening floors.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -813,7 +886,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, bulk truck with opening-floor trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for carrying bulk cargo with an opening-floor trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for carrying bulk cargo with an opening-floor trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -821,7 +895,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, with trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to pull a trailer, with a trailer attached.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to pull a trailer, with a trailer attached.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -829,7 +904,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tilt, with tilt trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle with a tilt capability with a trailer also with a tilt capability.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with a tilt capability with a trailer also with a tilt capability.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -837,7 +913,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, refrigerated, with refrigerated trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry refrigerated goods with a trailer also capable of carrying refrigerated goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry refrigerated goods with a trailer also capable of carrying refrigerated goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -845,7 +922,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, freezer with freezer trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle capable of carrying frozen goods with a trailer also capable of carrying frozen goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle capable of carrying frozen goods with a trailer also capable of carrying frozen goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -853,7 +931,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, removal with removal trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry household effects with a trailer also capable of carrying household effects.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry household effects with a trailer also capable of carrying household effects.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -861,7 +940,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor tanker</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying liquid cargo in fixed cargo tanks.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying liquid cargo in fixed cargo tanks.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -869,7 +949,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Container vessel</ccts:Name>
-            <ccts:Description>Motorized vessel specially designed and equipped for carrying containers.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel specially designed and equipped for carrying containers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -877,7 +958,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Gas tanker</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying gas in fixed cargo tanks, type G according to ADN.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying gas in fixed cargo tanks, type G according to ADN.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -885,7 +967,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor freighter pushing at least one tank-ship</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying general cargo, pushing at least one vessel designed to carry liquid cargo.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying general cargo, pushing at least one vessel designed to carry liquid cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -893,7 +976,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tug, freighter</ccts:Name>
-            <ccts:Description>Vessel designed to push or pull another vessel that is also capable of carrying general cargo.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to push or pull another vessel that is also capable of carrying general cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -901,7 +985,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tug, tanker</ccts:Name>
-            <ccts:Description>Vessel designed to push or pull another vessel also capable of carrying liquid cargo.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to push or pull another vessel also capable of carrying liquid cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -909,7 +994,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tug, freighter, coupled</ccts:Name>
-            <ccts:Description>Vessel designed to push or pull another vessel that is also capable of carrying general cargo tied to one or more other vessels.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to push or pull another vessel that is also capable of carrying general cargo tied to one or more other vessels.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -917,7 +1003,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tug, freighter/tanker, coupled</ccts:Name>
-            <ccts:Description>Vessel designed to push or pull another vessel that is also capable of carrying either general or liquid cargo tied to one or more other vessels.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to push or pull another vessel that is also capable of carrying either general or liquid cargo tied to one or more other vessels.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -925,7 +1012,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Freight barge</ccts:Name>
-            <ccts:Description>Lighter or Barge designed for carrying general cargo, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
+            <ccts:Description
+            >Lighter or Barge designed for carrying general cargo, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -933,7 +1021,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tank barge</ccts:Name>
-            <ccts:Description>Lighter or Barge designed for carrying liquid cargo in fixed tanks, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
+            <ccts:Description
+            >Lighter or Barge designed for carrying liquid cargo in fixed tanks, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -941,7 +1030,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Freight barge with containers</ccts:Name>
-            <ccts:Description>Lighter or Barge specially designed and equipped for carrying containers, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
+            <ccts:Description
+            >Lighter or Barge specially designed and equipped for carrying containers, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -949,7 +1039,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tank barge, gas</ccts:Name>
-            <ccts:Description>Lighter or Barge designed for carrying gas in cargo tanks, type G according to ADN, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
+            <ccts:Description
+            >Lighter or Barge designed for carrying gas in cargo tanks, type G according to ADN, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -957,7 +1048,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, one cargo barge</ccts:Name>
-            <ccts:Description>Vessel designed for pushing/towing, facilitating the movement of one cargo barge.</ccts:Description>
+            <ccts:Description
+            >Vessel designed for pushing/towing, facilitating the movement of one cargo barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -965,7 +1057,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, two cargo barges</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, facilitating the movement of two cargo barges.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, facilitating the movement of two cargo barges.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -973,7 +1066,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, three cargo barges</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, facilitating the movement of three cargo barges.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, facilitating the movement of three cargo barges.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -981,7 +1075,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, four cargo barges</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, facilitating the movement of four cargo barges.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, facilitating the movement of four cargo barges.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -989,7 +1084,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, five cargo barges</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, facilitating the movement of five cargo barges.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, facilitating the movement of five cargo barges.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -997,7 +1093,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, six cargo barges</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, facilitating the movement of six cargo barges.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, facilitating the movement of six cargo barges.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1005,7 +1102,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, seven cargo barges</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, facilitating the movement of seven cargo barges.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, facilitating the movement of seven cargo barges.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1013,7 +1111,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, eight cargo barges</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, facilitating the movement of eight cargo barges.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, facilitating the movement of eight cargo barges.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1021,7 +1120,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, nine cargo barges</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, facilitating the movement of nine or more cargo barges.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, facilitating the movement of nine or more cargo barges.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1029,7 +1129,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, one gas/tank barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving one tanker or gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving one tanker or gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1037,7 +1138,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, two barges at least one tanker or gas barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving two barges of which at least one tanker or gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving two barges of which at least one tanker or gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1045,7 +1147,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, three barges at least one tanker or gas barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving three barges of which at least one is a tanker or gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving three barges of which at least one is a tanker or gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1053,7 +1156,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, four barges at least one tanker or gas barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving four barges of which at least one is a tanker or gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving four barges of which at least one is a tanker or gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1061,7 +1165,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, five barges at least one tanker or gas barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving five barges of which at least one is a tanker of gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving five barges of which at least one is a tanker of gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1069,7 +1174,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, six barges at least one tanker or gas barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving six barges of which at least one is a tanker or gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving six barges of which at least one is a tanker or gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1077,7 +1183,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, seven barges at least one tanker or gas barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving seven barges of which at least one is a tanker or gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving seven barges of which at least one is a tanker or gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1085,7 +1192,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, eight barges at least one tanker or gas barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving eight barges of which at least one is a tanker or gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving eight barges of which at least one is a tanker or gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1093,7 +1201,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pushtow, nine or more barges at least one tanker or gas barge</ccts:Name>
-            <ccts:Description>Combination designed for pushing/towing, moving nine or more barges of which at least one is a tanker or gas barge.</ccts:Description>
+            <ccts:Description
+            >Combination designed for pushing/towing, moving nine or more barges of which at least one is a tanker or gas barge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1101,7 +1210,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tug, single</ccts:Name>
-            <ccts:Description>Vessel specially designed to perform towing operations.</ccts:Description>
+            <ccts:Description
+            >Vessel specially designed to perform towing operations.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1109,7 +1219,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tug, one or more tows</ccts:Name>
-            <ccts:Description>Vessel designed for pushing another vessel that is involved in one or more concurrent tows.</ccts:Description>
+            <ccts:Description
+            >Vessel designed for pushing another vessel that is involved in one or more concurrent tows.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1117,7 +1228,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tug, assisting a vessel or linked combination</ccts:Name>
-            <ccts:Description>Vessel designed for pushing another vessel that is assisting one vessel or a combination of vessels or tugs and vessels.</ccts:Description>
+            <ccts:Description
+            >Vessel designed for pushing another vessel that is assisting one vessel or a combination of vessels or tugs and vessels.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1142,14 +1254,16 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Service vessel</ccts:Name>
-            <ccts:Description>A tender (vessel for logistical support), dealing with the transport of small material and maintenance requirements outside the port area on rivers and other inland waterways.</ccts:Description>
+            <ccts:Description
+            >A tender (vessel for logistical support), dealing with the transport of small material and maintenance requirements outside the port area on rivers and other inland waterways.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="846">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Vessel, work maintenance craft, floating derrick, cable-ship, buoy-ship, dredge</ccts:Name>
+            <ccts:Name
+            >Vessel, work maintenance craft, floating derrick, cable-ship, buoy-ship, dredge</ccts:Name>
             <ccts:Description>Vessel designed to perform a specific type of work.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
@@ -1174,7 +1288,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bunkership</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying and delivering bunkers (products intended for the propulsion and operation of vessels) to other vessels, type N according to ADN.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying and delivering bunkers (products intended for the propulsion and operation of vessels) to other vessels, type N according to ADN.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1230,7 +1345,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Carrier, general cargo/container</ccts:Name>
-            <ccts:Description>Vessel designed to carry general cargo and containers.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry general cargo and containers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1238,7 +1354,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Temperature controlled cargo vessels</ccts:Name>
-            <ccts:Description>Vessel designed to carry temperature-controlled cargo.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry temperature-controlled cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1254,7 +1371,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>RoRo vessel</ccts:Name>
-            <ccts:Description>Vessel with ramp designed to carry roll-on/roll-off cargo.</ccts:Description>
+            <ccts:Description
+            >Vessel with ramp designed to carry roll-on/roll-off cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1262,7 +1380,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Car carrier</ccts:Name>
-            <ccts:Description>Vessel designed to carry automotive vehicles or their knock-down parts.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry automotive vehicles or their knock-down parts.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1278,7 +1397,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Barge carrier - Lash ship</ccts:Name>
-            <ccts:Description>Vessel designed to carry barges. Lash means lighters aboard ship.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry barges. Lash means lighters aboard ship.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1286,7 +1406,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Chemical carrier</ccts:Name>
-            <ccts:Description>Vessel designed to carry chemicals in bulk or drums not in tanks.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry chemicals in bulk or drums not in tanks.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1310,7 +1431,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>RoRo/Container vessel</ccts:Name>
-            <ccts:Description>Vessel designed to carry both containers and roll-on/roll-off cargo.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry both containers and roll-on/roll-off cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1366,7 +1488,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Chemical tanker, coaster</ccts:Name>
-            <ccts:Description>Tanker designed to carry chemicals in coastal traffic.</ccts:Description>
+            <ccts:Description
+            >Tanker designed to carry chemicals in coastal traffic.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1390,7 +1513,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>LPG tanker</ccts:Name>
-            <ccts:Description>Vessel designed to carry Liquefied Petroleum Gas (LPG).</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry Liquefied Petroleum Gas (LPG).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1398,7 +1522,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>LNG tanker</ccts:Name>
-            <ccts:Description>Tanker designed to carry Liquefied Natural Gas (LNG).</ccts:Description>
+            <ccts:Description
+            >Tanker designed to carry Liquefied Natural Gas (LNG).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1406,7 +1531,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>LNG/LPG tanker</ccts:Name>
-            <ccts:Description>Tanker designed to carry Liquefied Natural Gas (LNG) and Liquefied Petroleum Gas (LPG).</ccts:Description>
+            <ccts:Description
+            >Tanker designed to carry Liquefied Natural Gas (LNG) and Liquefied Petroleum Gas (LPG).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1438,7 +1564,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cruise ship</ccts:Name>
-            <ccts:Description>Passenger ship designed to carry tourists on specified routes.</ccts:Description>
+            <ccts:Description
+            >Passenger ship designed to carry tourists on specified routes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1446,7 +1573,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ferry</ccts:Name>
-            <ccts:Description>Vessel designed to ply regularly between two or more ports.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to ply regularly between two or more ports.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1454,7 +1582,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Other passenger ship</ccts:Name>
-            <ccts:Description>Vessel designed to carry passengers, not otherwise specified.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry passengers, not otherwise specified.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1462,7 +1591,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Passenger ship, sailing</ccts:Name>
-            <ccts:Description>Vessel designed to carry passengers and mainly propelled by sails.</ccts:Description>
+            <ccts:Description
+            >Vessel designed to carry passengers and mainly propelled by sails.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1614,7 +1744,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cutter</ccts:Name>
-            <ccts:Description>Small vessel that sometimes can be carried on a larger ship.</ccts:Description>
+            <ccts:Description
+            >Small vessel that sometimes can be carried on a larger ship.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1646,7 +1777,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ship for environmental measurement</ccts:Name>
-            <ccts:Description>Vessel designed for environmental monitoring and measurement.</ccts:Description>
+            <ccts:Description
+            >Vessel designed for environmental monitoring and measurement.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1702,7 +1834,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Train, sleeper</ccts:Name>
-            <ccts:Description>Passenger train that includes carriages for sleeping.</ccts:Description>
+            <ccts:Description
+            >Passenger train that includes carriages for sleeping.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1742,7 +1875,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Train, with more than one and less than 20 wagons</ccts:Name>
-            <ccts:Description>Train with more than one and less than 20 wagons for carrying freight.</ccts:Description>
+            <ccts:Description
+            >Train with more than one and less than 20 wagons for carrying freight.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1750,7 +1884,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Train, with more than 20 wagons</ccts:Name>
-            <ccts:Description>Train with more than 20 wagons for carrying freight.</ccts:Description>
+            <ccts:Description
+            >Train with more than 20 wagons for carrying freight.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1758,7 +1893,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner with removal trailer</ccts:Name>
-            <ccts:Description>Automotive tautline truck with trailer capable of carrying household effects.</ccts:Description>
+            <ccts:Description
+            >Automotive tautline truck with trailer capable of carrying household effects.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1766,7 +1902,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner with removable roof and removal trailer</ccts:Name>
-            <ccts:Description>Automotive tautline vehicle with removable roof and a trailer capable of carrying household effects.</ccts:Description>
+            <ccts:Description
+            >Automotive tautline vehicle with removable roof and a trailer capable of carrying household effects.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1782,7 +1919,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner, 25 tonne</ccts:Name>
-            <ccts:Description>Automotive tautline vehicle with a 25 tonne capacity.</ccts:Description>
+            <ccts:Description
+            >Automotive tautline vehicle with a 25 tonne capacity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1790,7 +1928,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner, 25 tonne with removable roof</ccts:Name>
-            <ccts:Description>Automotive tautline vehicle with a 25 tonne capacity and a removable roof.</ccts:Description>
+            <ccts:Description
+            >Automotive tautline vehicle with a 25 tonne capacity and a removable roof.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1798,7 +1937,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, articulated, flat bed, 25 tonne</ccts:Name>
-            <ccts:Description>Articulated automotive vehicle with a flat bed and 25 tonne capacity.</ccts:Description>
+            <ccts:Description
+            >Articulated automotive vehicle with a flat bed and 25 tonne capacity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1806,7 +1946,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, articulated, flat bed, 24 tonne, with 10 metre crane</ccts:Name>
-            <ccts:Description>Articulated automotive vehicle with a flat bed and 25 tonne capacity with a 10 metre crane attached.</ccts:Description>
+            <ccts:Description
+            >Articulated automotive vehicle with a flat bed and 25 tonne capacity with a 10 metre crane attached.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1814,7 +1955,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, articulated, flat bed, 24 tonne, with 15 metre crane</ccts:Name>
-            <ccts:Description>Articulated automotive vehicle with a flat bed and 25 tonne capacity with a 15 metre crane attached.</ccts:Description>
+            <ccts:Description
+            >Articulated automotive vehicle with a flat bed and 25 tonne capacity with a 15 metre crane attached.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1822,7 +1964,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, articulated, flat bed, 24 tonne, with 18 metre crane</ccts:Name>
-            <ccts:Description>Articulated automotive vehicle with a flat bed and 25 tonne capacity with an 18 metre crane attached.</ccts:Description>
+            <ccts:Description
+            >Articulated automotive vehicle with a flat bed and 25 tonne capacity with an 18 metre crane attached.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1830,7 +1973,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, articulated, flat bed, 10 tonne</ccts:Name>
-            <ccts:Description>Articulated automotive vehicle with a flat bed and 10 tonne capacity.</ccts:Description>
+            <ccts:Description
+            >Articulated automotive vehicle with a flat bed and 10 tonne capacity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1838,7 +1982,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner, 25 tonne, with 90 cubic metre trailer</ccts:Name>
-            <ccts:Description>Automotive tautline vehicle with a 25 tonne capacity and a 90 cubic metre trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautline vehicle with a 25 tonne capacity and a 90 cubic metre trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1846,7 +1991,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tautliner, 25 tonne, with 120 cubic metre trailer</ccts:Name>
-            <ccts:Description>Automotive tautline vehicle with a 25 tonne capacity and a 120 cubic metre trailer.</ccts:Description>
+            <ccts:Description
+            >Automotive tautline vehicle with a 25 tonne capacity and a 120 cubic metre trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1854,7 +2000,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, flat with trailer and 10 metre crane</ccts:Name>
-            <ccts:Description>Automotive vehicle with flat bed and trailer and 10 metre crane.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with flat bed and trailer and 10 metre crane.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1862,7 +2009,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, articulated with tank</ccts:Name>
-            <ccts:Description>Articulated automotive vehicle with tank designed for carrying liquid or bulk goods.</ccts:Description>
+            <ccts:Description
+            >Articulated automotive vehicle with tank designed for carrying liquid or bulk goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1870,7 +2018,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, flat, 15 tonne</ccts:Name>
-            <ccts:Description>Automotive vehicle with flat bed and a 15 tonne capacity.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with flat bed and a 15 tonne capacity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1878,7 +2027,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lorry, flat, 15 tonne with crane</ccts:Name>
-            <ccts:Description>Automotive vehicle with flat bed and a 15 tonne capacity and attached crane.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with flat bed and a 15 tonne capacity and attached crane.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1886,7 +2036,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, isothermic</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry temperature-controlled goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry temperature-controlled goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1894,7 +2045,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, refrigerated</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry refrigerated goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry refrigerated goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1910,7 +2062,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Van, isothermic</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry temperature-controlled goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry temperature-controlled goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1918,7 +2071,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Van, refrigerated</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry refrigerated goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry refrigerated goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1934,7 +2088,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, tip-up</ccts:Name>
-            <ccts:Description>Automotive vehicle designed with a tip-up capability.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed with a tip-up capability.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1942,7 +2097,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, articulated, tip-up</ccts:Name>
-            <ccts:Description>Articulated automotive vehicle designed with a tip-up capability.</ccts:Description>
+            <ccts:Description
+            >Articulated automotive vehicle designed with a tip-up capability.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1990,7 +2146,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, with crane for moving goods, without trailer</ccts:Name>
-            <ccts:Description>A truck with a crane for moving goods, without a trailer.</ccts:Description>
+            <ccts:Description
+            >A truck with a crane for moving goods, without a trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1998,7 +2155,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, with crane for moving goods, with trailer</ccts:Name>
-            <ccts:Description>A truck with a crane for moving goods, with a trailer.</ccts:Description>
+            <ccts:Description
+            >A truck with a crane for moving goods, with a trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2006,7 +2164,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, with crane for lifting goods, without trailer</ccts:Name>
-            <ccts:Description>A truck with a crane for lifting goods, without a trailer.</ccts:Description>
+            <ccts:Description
+            >A truck with a crane for lifting goods, without a trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2014,7 +2173,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, with crane for lifting goods, with trailer</ccts:Name>
-            <ccts:Description>A truck with a crane for lifting goods, with a trailer.</ccts:Description>
+            <ccts:Description
+            >A truck with a crane for lifting goods, with a trailer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2038,7 +2198,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, hydrant</ccts:Name>
-            <ccts:Description>Automotive vehicle designed for the delivery of fuel from a fixed installation to a means of transport.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed for the delivery of fuel from a fixed installation to a means of transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2046,7 +2207,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Car</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry a small number of passengers.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry a small number of passengers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2054,7 +2216,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Truck, with tail-lift</ccts:Name>
-            <ccts:Description>Automotive vehicle with a hydraulic lifting device on the rear of the vehicle for loading and unloading goods.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with a hydraulic lifting device on the rear of the vehicle for loading and unloading goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2062,7 +2225,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Armoured vehicle</ccts:Name>
-            <ccts:Description>Automotive vehicle designed with fortified body for enhanced protection.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed with fortified body for enhanced protection.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2078,7 +2242,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bus, with trailer</ccts:Name>
-            <ccts:Description>Automotive vehicle with an attached trailer for carrying passengers and/or luggage.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle with an attached trailer for carrying passengers and/or luggage.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2102,7 +2267,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bus, airport/city</ccts:Name>
-            <ccts:Description>Automotive vehicle designed to carry passengers and their baggage between an airport and a city and return.</ccts:Description>
+            <ccts:Description
+            >Automotive vehicle designed to carry passengers and their baggage between an airport and a city and return.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2126,7 +2292,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor tanker, liquid cargo, type N</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying liquid cargo in cargo tanks, type N according to ADN.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying liquid cargo in cargo tanks, type N according to ADN.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2134,7 +2301,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor tanker, liquid cargo, type C</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying special liquid chemicals in cargo tanks, type C according to ADN.</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying special liquid chemicals in cargo tanks, type C according to ADN.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2142,7 +2310,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Motor tanker, dry cargo</ccts:Name>
-            <ccts:Description>Motorized vessel designed for carrying dry cargo as if liquid in fixed tanks (e.g. cement).</ccts:Description>
+            <ccts:Description
+            >Motorized vessel designed for carrying dry cargo as if liquid in fixed tanks (e.g. cement).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2150,7 +2319,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tank barge, liquid cargo, type N</ccts:Name>
-            <ccts:Description>Lighter or Barge designed for carrying liquid cargo in cargo tanks, type N according to ADN, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
+            <ccts:Description
+            >Lighter or Barge designed for carrying liquid cargo in cargo tanks, type N according to ADN, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2158,7 +2328,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tank barge, liquid cargo, type C</ccts:Name>
-            <ccts:Description>Lighter or Barge designed to for carrying special liquid chemicals in cargo tanks, type C according to ADN, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
+            <ccts:Description
+            >Lighter or Barge designed to for carrying special liquid chemicals in cargo tanks, type C according to ADN, either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2166,7 +2337,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tank barge, dry cargo</ccts:Name>
-            <ccts:Description>Lighter or Barge designed for carrying dry cargo in fixed tanks as if liquid (e.g. cement), either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
+            <ccts:Description
+            >Lighter or Barge designed for carrying dry cargo in fixed tanks as if liquid (e.g. cement), either having no motive power of its own or having only sufficient motive power to perform restricted manoeuvres.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2174,7 +2346,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ferry</ccts:Name>
-            <ccts:Description>Vessel designed for carrying passengers and/or vehicles on regular short voyages.</ccts:Description>
+            <ccts:Description
+            >Vessel designed for carrying passengers and/or vehicles on regular short voyages.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2182,7 +2355,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Red cross ship</ccts:Name>
-            <ccts:Description>Passenger vessel with overnight passenger cabins designed for carrying sick and or disabled people.</ccts:Description>
+            <ccts:Description
+            >Passenger vessel with overnight passenger cabins designed for carrying sick and or disabled people.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2190,7 +2364,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cruise ship</ccts:Name>
-            <ccts:Description>Passenger vessel designed for carrying more than 12 passengers accommodated on board.</ccts:Description>
+            <ccts:Description
+            >Passenger vessel designed for carrying more than 12 passengers accommodated on board.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2198,7 +2373,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Passenger ship without accommodation</ccts:Name>
-            <ccts:Description>Passenger vessel designed for carrying more than 12 passengers but without passenger accommodation such as cabins etc.</ccts:Description>
+            <ccts:Description
+            >Passenger vessel designed for carrying more than 12 passengers but without passenger accommodation such as cabins etc.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2206,7 +2382,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Day-trip high speed vessel</ccts:Name>
-            <ccts:Description>Passenger vessel designed for carrying more than 12 passengers but without passenger accommodation such as cabins etc. capable of reaching speeds over 40 km/h in relation to water.</ccts:Description>
+            <ccts:Description
+            >Passenger vessel designed for carrying more than 12 passengers but without passenger accommodation such as cabins etc. capable of reaching speeds over 40 km/h in relation to water.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2214,7 +2391,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Day-trip hydrofoil vessel</ccts:Name>
-            <ccts:Description>Passenger vessel designed for carrying more than 12 passengers but without passenger accommodation such as cabins etc., hydrofoil.</ccts:Description>
+            <ccts:Description
+            >Passenger vessel designed for carrying more than 12 passengers but without passenger accommodation such as cabins etc., hydrofoil.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2222,7 +2400,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sailing cruise ship</ccts:Name>
-            <ccts:Description>Passenger vessel built and fitted out also with a view to propulsion under sail and designed for carrying more than 12 passengers accommodated on board.</ccts:Description>
+            <ccts:Description
+            >Passenger vessel built and fitted out also with a view to propulsion under sail and designed for carrying more than 12 passengers accommodated on board.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2230,7 +2409,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sailing passenger ship without accommodation</ccts:Name>
-            <ccts:Description>Passenger vessel built and fitted out also with a view to propulsion under sail and designed for carrying more than 12 passengers but without passenger accommodation such as cabins etc.</ccts:Description>
+            <ccts:Description
+            >Passenger vessel built and fitted out also with a view to propulsion under sail and designed for carrying more than 12 passengers but without passenger accommodation such as cabins etc.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2238,7 +2418,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Service vessel</ccts:Name>
-            <ccts:Description>A tender (vessel for logistical support), dealing with the transport of small material and maintenance requirements outside the port area on rivers and other inland waterways.</ccts:Description>
+            <ccts:Description
+            >A tender (vessel for logistical support), dealing with the transport of small material and maintenance requirements outside the port area on rivers and other inland waterways.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2246,7 +2427,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Police patrol vessel</ccts:Name>
-            <ccts:Description>A vessel for the supervision by police for the enforcement of applicable rules and regulations.</ccts:Description>
+            <ccts:Description
+            >A vessel for the supervision by police for the enforcement of applicable rules and regulations.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2254,7 +2436,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Port service vessel</ccts:Name>
-            <ccts:Description>A port tender (vessel for logistical support), dealing with the transport of material and people within a port area.</ccts:Description>
+            <ccts:Description
+            >A port tender (vessel for logistical support), dealing with the transport of material and people within a port area.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2262,7 +2445,8 @@ Vessel specially designed for pushing a pushed convoy.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Navigation surveillance vessel</ccts:Name>
-            <ccts:Description>A vessel of the competent authority supervising waterway traffic and navigation to ensure safety and adherence to the respective rules and regulations.</ccts:Description>
+            <ccts:Description
+            >A vessel of the competent authority supervising waterway traffic and navigation to ensure safety and adherence to the respective rules and regulations.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

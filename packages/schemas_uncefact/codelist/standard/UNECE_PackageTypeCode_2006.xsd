@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 67065 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm67065="urn:un:unece:uncefact:codelist:standard:UNECE:PackageTypeCode:2006" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PackageTypeCode:2006" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm67065="urn:un:unece:uncefact:codelist:standard:UNECE:PackageTypeCode:2006"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PackageTypeCode:2006"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="2.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="PackageTypeCode" type="clm67065:PackageTypeCodeContentType"/>
+  <xsd:element name="PackageTypeCode" type="clm67065:PackageTypeCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -44,7 +52,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bag, polybag</ccts:Name>
-            <ccts:Description>A type of plastic bag, typically used to wrap promotional pieces, publications, product samples, and/or catalogues.</ccts:Description>
+            <ccts:Description
+            >A type of plastic bag, typically used to wrap promotional pieces, publications, product samples, and/or catalogues.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -200,7 +209,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Case, car</ccts:Name>
-            <ccts:Description>A type of portable container designed to store equipment for carriage in an automobile.</ccts:Description>
+            <ccts:Description
+            >A type of portable container designed to store equipment for carriage in an automobile.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -208,7 +218,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Case, wooden</ccts:Name>
-            <ccts:Description>A case made of wood for retaining substances or articles.</ccts:Description>
+            <ccts:Description
+            >A case made of wood for retaining substances or articles.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -216,7 +227,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pallet, wooden</ccts:Name>
-            <ccts:Description>A platform or open-ended box, made of wood, on which goods are retained for ease of mechanical handling during transport and storage.</ccts:Description>
+            <ccts:Description
+            >A platform or open-ended box, made of wood, on which goods are retained for ease of mechanical handling during transport and storage.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -224,7 +236,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Crate, wooden</ccts:Name>
-            <ccts:Description>A receptacle, made of wood, on which goods are retained for ease of mechanical handling during transport and storage.</ccts:Description>
+            <ccts:Description
+            >A receptacle, made of wood, on which goods are retained for ease of mechanical handling during transport and storage.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -232,7 +245,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bundle, wooden</ccts:Name>
-            <ccts:Description>Loose or unpacked pieces of wood tied or wrapped together.</ccts:Description>
+            <ccts:Description
+            >Loose or unpacked pieces of wood tied or wrapped together.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -310,7 +324,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ball</ccts:Name>
-            <ccts:Description>A spherical containment vessel for retaining substances or articles.</ccts:Description>
+            <ccts:Description
+            >A spherical containment vessel for retaining substances or articles.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -914,7 +929,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Flexibag</ccts:Name>
-            <ccts:Description>A flexible containment bag made of plastic, typically for the transportation bulk non-hazardous cargoes using standard size shipping containers.</ccts:Description>
+            <ccts:Description
+            >A flexible containment bag made of plastic, typically for the transportation bulk non-hazardous cargoes using standard size shipping containers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -936,7 +952,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Flexitank</ccts:Name>
-            <ccts:Description>A flexible containment tank made of plastic, typically for the transportation bulk non-hazardous cargoes using standard size shipping containers.</ccts:Description>
+            <ccts:Description
+            >A flexible containment tank made of plastic, typically for the transportation bulk non-hazardous cargoes using standard size shipping containers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -986,7 +1003,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cart, flatbed</ccts:Name>
-            <ccts:Description>Wheeled flat bedded device on which trays or other regular shaped items are packed for transportation purposes.</ccts:Description>
+            <ccts:Description
+            >Wheeled flat bedded device on which trays or other regular shaped items are packed for transportation purposes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1030,7 +1048,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tray, containing horizontally stacked flat items</ccts:Name>
-            <ccts:Description>Tray containing flat items stacked on top of one another.</ccts:Description>
+            <ccts:Description
+            >Tray containing flat items stacked on top of one another.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1038,7 +1057,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bag, gunny</ccts:Name>
-            <ccts:Description>A sack made of gunny or burlap, used for transporting coarse commodities, such as grains, potatoes, and other agricultural products.</ccts:Description>
+            <ccts:Description
+            >A sack made of gunny or burlap, used for transporting coarse commodities, such as grains, potatoes, and other agricultural products.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1081,7 +1101,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Hanger</ccts:Name>
-            <ccts:Description>A purpose shaped device with a hook at the top for hanging items from a rail.</ccts:Description>
+            <ccts:Description
+            >A purpose shaped device with a hook at the top for hanging items from a rail.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1159,7 +1180,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tray, rigid, lidded stackable (CEN TS 14482:2002)</ccts:Name>
-            <ccts:Description>Lidded stackable rigid tray compliant with CEN TS 14482:2002.</ccts:Description>
+            <ccts:Description
+            >Lidded stackable rigid tray compliant with CEN TS 14482:2002.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1181,7 +1203,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bag, jumbo</ccts:Name>
-            <ccts:Description>A flexible containment bag, widely used for storage, transportation and handling of powder, flake or granular materials. Typically constructed from woven polypropylene (PP) fabric in the form of cubic bags.</ccts:Description>
+            <ccts:Description
+            >A flexible containment bag, widely used for storage, transportation and handling of powder, flake or granular materials. Typically constructed from woven polypropylene (PP) fabric in the form of cubic bags.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1231,7 +1254,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Kit</ccts:Name>
-            <ccts:Description>A set of articles or implements used for a specific purpose.</ccts:Description>
+            <ccts:Description
+            >A set of articles or implements used for a specific purpose.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1239,7 +1263,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Luggage</ccts:Name>
-            <ccts:Description>A collection of bags, cases and/or containers which hold personal belongings for a journey.</ccts:Description>
+            <ccts:Description
+            >A collection of bags, cases and/or containers which hold personal belongings for a journey.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1261,7 +1286,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lug</ccts:Name>
-            <ccts:Description>A wooden box for the transportation and storage of fruit or vegetables.</ccts:Description>
+            <ccts:Description
+            >A wooden box for the transportation and storage of fruit or vegetables.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1283,7 +1309,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Crate, metal</ccts:Name>
-            <ccts:Description>Containment box made of metal for retaining substances or articles.</ccts:Description>
+            <ccts:Description
+            >Containment box made of metal for retaining substances or articles.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1305,7 +1332,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Container, metal</ccts:Name>
-            <ccts:Description>A type of containment box made of metal for retaining substances or articles, not otherwise specified as transport equipment.</ccts:Description>
+            <ccts:Description
+            >A type of containment box made of metal for retaining substances or articles, not otherwise specified as transport equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1404,7 +1432,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Two sided cage on wheels with fixing strap</ccts:Name>
-            <ccts:Description>A two sided cage mounted on wheels with fixing strap. Dimensions: 900 x 770 x 1513 cm (length x width x height).</ccts:Description>
+            <ccts:Description
+            >A two sided cage mounted on wheels with fixing strap. Dimensions: 900 x 770 x 1513 cm (length x width x height).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1412,7 +1441,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Trolley</ccts:Name>
-            <ccts:Description>A low cart for the transportation and storage of groceries, milk, etc.</ccts:Description>
+            <ccts:Description
+            >A low cart for the transportation and storage of groceries, milk, etc.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1452,7 +1482,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pallet, CHEP 40 cm x 60 cm</ccts:Name>
-            <ccts:Description>CHEP standard pallet of dimensions 40 centimeters x 60 centimeters.</ccts:Description>
+            <ccts:Description
+            >CHEP standard pallet of dimensions 40 centimeters x 60 centimeters.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1460,7 +1491,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pallet, CHEP 80 cm x 120 cm</ccts:Name>
-            <ccts:Description>CHEP standard pallet of dimensions 80 centimeters x 120 centimeters.</ccts:Description>
+            <ccts:Description
+            >CHEP standard pallet of dimensions 80 centimeters x 120 centimeters.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1468,7 +1500,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pallet, CHEP 100 cm x 120 cm</ccts:Name>
-            <ccts:Description>CHEP standard pallet of dimensions 100 centimeters x 120 centimeters.</ccts:Description>
+            <ccts:Description
+            >CHEP standard pallet of dimensions 100 centimeters x 120 centimeters.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1476,7 +1509,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pallet, AS 4068-1993</ccts:Name>
-            <ccts:Description>Australian standard pallet of dimensions 115.5 centimeters x 116.5 centimeters.</ccts:Description>
+            <ccts:Description
+            >Australian standard pallet of dimensions 115.5 centimeters x 116.5 centimeters.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1484,7 +1518,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pallet, ISO T11</ccts:Name>
-            <ccts:Description>ISO standard pallet of dimensions 110 centimeters x 110 centimeters, prevalent in Asia - Pacific region.</ccts:Description>
+            <ccts:Description
+            >ISO standard pallet of dimensions 110 centimeters x 110 centimeters, prevalent in Asia - Pacific region.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1492,7 +1527,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Platform, unspecified weight or dimension</ccts:Name>
-            <ccts:Description>A pallet equivalent shipping platform of unknown dimensions or unknown weight.</ccts:Description>
+            <ccts:Description
+            >A pallet equivalent shipping platform of unknown dimensions or unknown weight.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1532,7 +1568,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Block</ccts:Name>
-            <ccts:Description>A solid piece of a hard substance, such as granite, having one or more flat sides.</ccts:Description>
+            <ccts:Description
+            >A solid piece of a hard substance, such as granite, having one or more flat sides.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1548,7 +1585,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Synthetic pallet ISO 1</ccts:Name>
-            <ccts:Description>A standard pallet with standard dimensions 80 x 120cm made of a synthetic material for hygienic reasons.</ccts:Description>
+            <ccts:Description
+            >A standard pallet with standard dimensions 80 x 120cm made of a synthetic material for hygienic reasons.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1556,7 +1594,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Synthetic pallet ISO 2</ccts:Name>
-            <ccts:Description>A standard pallet with standard dimensions 100 x 120cm made of a synthetic material for hygienic reasons.</ccts:Description>
+            <ccts:Description
+            >A standard pallet with standard dimensions 100 x 120cm made of a synthetic material for hygienic reasons.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1588,7 +1627,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Oneway pallet</ccts:Name>
-            <ccts:Description>Pallet need not be returned to the point of expedition.</ccts:Description>
+            <ccts:Description
+            >Pallet need not be returned to the point of expedition.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1596,7 +1636,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Octabin</ccts:Name>
-            <ccts:Description>A standard cardboard container of large dimensions for storing for example vegetables, granules of plastics or other dry products.</ccts:Description>
+            <ccts:Description
+            >A standard cardboard container of large dimensions for storing for example vegetables, granules of plastics or other dry products.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1604,7 +1645,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Container, outer</ccts:Name>
-            <ccts:Description>A type of containment box that serves as the outer shipping container, not otherwise specified as transport equipment.</ccts:Description>
+            <ccts:Description
+            >A type of containment box that serves as the outer shipping container, not otherwise specified as transport equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1620,7 +1662,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Large bag, pallet sized</ccts:Name>
-            <ccts:Description>A non-rigid container made of fabric, paper, plastic, etc, with an opening at the top which can be closed and which is suitable for use on pallets.</ccts:Description>
+            <ccts:Description
+            >A non-rigid container made of fabric, paper, plastic, etc, with an opening at the top which can be closed and which is suitable for use on pallets.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1628,7 +1671,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>A wheeled pallet with raised rim (81 x 67 x 135)</ccts:Name>
-            <ccts:Description>A wheeled pallet with raised rim for the storing and transporting of loads. Dimensions: 81 x 67 x 135 cm (length x width x height).</ccts:Description>
+            <ccts:Description
+            >A wheeled pallet with raised rim for the storing and transporting of loads. Dimensions: 81 x 67 x 135 cm (length x width x height).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1636,7 +1680,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>A wheeled pallet with raised rim (81 x 72 x 135)</ccts:Name>
-            <ccts:Description>A wheeled pallet with raised rim for the storing and transporting of loads. Dimensions: 81 x 72 x 135 cm (length x width x height).</ccts:Description>
+            <ccts:Description
+            >A wheeled pallet with raised rim for the storing and transporting of loads. Dimensions: 81 x 72 x 135 cm (length x width x height).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1644,7 +1689,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>A wheeled pallet with raised rim (81 x 60 x 16)</ccts:Name>
-            <ccts:Description>A wheeled pallet with raised rim for the storing and transporting of loads. Dimensions: 81 x 60 x 16 cm (length x width x height).</ccts:Description>
+            <ccts:Description
+            >A wheeled pallet with raised rim for the storing and transporting of loads. Dimensions: 81 x 60 x 16 cm (length x width x height).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2116,7 +2162,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tablet</ccts:Name>
-            <ccts:Description>A loose or unpacked article in the form of a bar, block or piece.</ccts:Description>
+            <ccts:Description
+            >A loose or unpacked article in the form of a bar, block or piece.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2145,7 +2192,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tyre</ccts:Name>
-            <ccts:Description>A ring made of rubber and/or metal surrounding a wheel.</ccts:Description>
+            <ccts:Description
+            >A ring made of rubber and/or metal surrounding a wheel.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2153,7 +2201,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tank container, generic</ccts:Name>
-            <ccts:Description>A specially constructed container for transporting liquids and gases in bulk.</ccts:Description>
+            <ccts:Description
+            >A specially constructed container for transporting liquids and gases in bulk.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2232,7 +2281,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pallet, triwall</ccts:Name>
-            <ccts:Description>A lightweight pallet made from heavy duty corrugated board.</ccts:Description>
+            <ccts:Description
+            >A lightweight pallet made from heavy duty corrugated board.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2261,7 +2311,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Unit</ccts:Name>
-            <ccts:Description>A type of package composed of a single item or object, not otherwise specified as a unit of transport equipment.</ccts:Description>
+            <ccts:Description
+            >A type of package composed of a single item or object, not otherwise specified as a unit of transport equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2340,7 +2391,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bulk, scrap metal</ccts:Name>
-            <ccts:Description>Loose or unpacked scrap metal transported in bulk form.</ccts:Description>
+            <ccts:Description
+            >Loose or unpacked scrap metal transported in bulk form.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2753,7 +2805,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="ZD">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Intermediate bulk container, rigid plastic, with structural equipment, solids</ccts:Name>
+            <ccts:Name
+            >Intermediate bulk container, rigid plastic, with structural equipment, solids</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2767,21 +2820,24 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="ZG">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Intermediate bulk container, rigid plastic, with structural equipment, pressurised</ccts:Name>
+            <ccts:Name
+            >Intermediate bulk container, rigid plastic, with structural equipment, pressurised</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ZH">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Intermediate bulk container, rigid plastic, freestanding, pressurised</ccts:Name>
+            <ccts:Name
+            >Intermediate bulk container, rigid plastic, freestanding, pressurised</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ZJ">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Intermediate bulk container, rigid plastic, with structural equipment, liquids </ccts:Name>
+            <ccts:Name
+            >Intermediate bulk container, rigid plastic, with structural equipment, liquids </ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2809,14 +2865,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="ZN">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Intermediate bulk container, composite, rigid plastic, pressurised</ccts:Name>
+            <ccts:Name
+            >Intermediate bulk container, composite, rigid plastic, pressurised</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="ZP">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Intermediate bulk container, composite, flexible plastic, pressurised</ccts:Name>
+            <ccts:Name
+            >Intermediate bulk container, composite, flexible plastic, pressurised</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

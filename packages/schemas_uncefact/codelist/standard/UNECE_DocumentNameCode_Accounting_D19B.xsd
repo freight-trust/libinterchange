@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 61001_Accounting - Code List Schema Module                 ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm61001Accounting="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode_Accounting:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode_Accounting:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm61001Accounting="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode_Accounting:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode_Accounting:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="DocumentNameCodeAccounting" type="clm61001Accounting:DocumentNameCodeAccountingContentType"/>
+  <xsd:element
+    name="DocumentNameCodeAccounting"
+    type="clm61001Accounting:DocumentNameCodeAccountingContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Purchase order</ccts:Name>
-            <ccts:Description>Document/message issued within an enterprise to initiate the purchase of articles, materials or services required for the production or manufacture of goods to be offered for sale or otherwise supplied to customers.</ccts:Description>
+            <ccts:Description
+            >Document/message issued within an enterprise to initiate the purchase of articles, materials or services required for the production or manufacture of goods to be offered for sale or otherwise supplied to customers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Order</ccts:Name>
-            <ccts:Description>Document/message by means of which a buyer initiates a transaction with a seller involving the supply of goods or services as specified, according to conditions set out in an offer, or otherwise known to the buyer.</ccts:Description>
+            <ccts:Description
+            >Document/message by means of which a buyer initiates a transaction with a seller involving the supply of goods or services as specified, according to conditions set out in an offer, or otherwise known to the buyer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +82,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Delivery release</ccts:Name>
-            <ccts:Description>Document/message issued by a buyer releasing the despatch of goods after receipt of the Ready for despatch advice from the seller.</ccts:Description>
+            <ccts:Description
+            >Document/message issued by a buyer releasing the despatch of goods after receipt of the Ready for despatch advice from the seller.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +91,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Contract</ccts:Name>
-            <ccts:Description>(1296) Document/message evidencing an agreement between the seller and the buyer for the supply of goods or services; its effects are equivalent to those of an order followed by an acknowledgement of order.</ccts:Description>
+            <ccts:Description
+            >(1296) Document/message evidencing an agreement between the seller and the buyer for the supply of goods or services; its effects are equivalent to those of an order followed by an acknowledgement of order.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +100,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Acknowledgement of order</ccts:Name>
-            <ccts:Description>Document/message acknowledging an undertaking to fulfil an order and confirming conditions or acceptance of conditions.</ccts:Description>
+            <ccts:Description
+            >Document/message acknowledging an undertaking to fulfil an order and confirming conditions or acceptance of conditions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +109,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Proforma invoice</ccts:Name>
-            <ccts:Description>Document/message serving as a preliminary invoice, containing - on the whole - the same information as the final invoice, but not actually claiming payment.</ccts:Description>
+            <ccts:Description
+            >Document/message serving as a preliminary invoice, containing - on the whole - the same information as the final invoice, but not actually claiming payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +118,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Partial invoice</ccts:Name>
-            <ccts:Description>Document/message specifying details of an incomplete invoice.</ccts:Description>
+            <ccts:Description
+            >Document/message specifying details of an incomplete invoice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +127,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commercial invoice</ccts:Name>
-            <ccts:Description>(1334) Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.</ccts:Description>
+            <ccts:Description
+            >(1334) Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +136,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Self-billed invoice</ccts:Name>
-            <ccts:Description>An invoice the invoicee is producing instead of the seller.</ccts:Description>
+            <ccts:Description
+            >An invoice the invoicee is producing instead of the seller.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +153,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lease invoice</ccts:Name>
-            <ccts:Description>Usage of INVOIC-message for goods in leasing contracts.</ccts:Description>
+            <ccts:Description
+            >Usage of INVOIC-message for goods in leasing contracts.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +162,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Consignment invoice</ccts:Name>
-            <ccts:Description>Commercial invoice that covers a transaction other than one involving a sale.</ccts:Description>
+            <ccts:Description
+            >Commercial invoice that covers a transaction other than one involving a sale.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +171,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cross docking despatch advice</ccts:Name>
-            <ccts:Description>Document by means of which the supplier or consignor informs the buyer, consignee or the distribution centre about the despatch of goods for cross docking.</ccts:Description>
+            <ccts:Description
+            >Document by means of which the supplier or consignor informs the buyer, consignee or the distribution centre about the despatch of goods for cross docking.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +180,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transshipment despatch advice</ccts:Name>
-            <ccts:Description>Document by means of which the supplier or consignor informs the buyer, consignee or the distribution centre about the despatch of goods for transshipment.</ccts:Description>
+            <ccts:Description
+            >Document by means of which the supplier or consignor informs the buyer, consignee or the distribution centre about the despatch of goods for transshipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +189,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Extended credit advice</ccts:Name>
-            <ccts:Description>Document/message sent by an account servicing institution to one of its account owners, to inform the account owner of an entry that has been or will be credited to its account for a specified amount on the date indicated. It provides extended commercial information concerning the relevant remittance advice.</ccts:Description>
+            <ccts:Description
+            >Document/message sent by an account servicing institution to one of its account owners, to inform the account owner of an entry that has been or will be credited to its account for a specified amount on the date indicated. It provides extended commercial information concerning the relevant remittance advice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +198,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Remittance advice</ccts:Name>
-            <ccts:Description>Document/message advising of the remittance of payment.</ccts:Description>
+            <ccts:Description
+            >Document/message advising of the remittance of payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +207,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Original accounting voucher</ccts:Name>
-            <ccts:Description>To indicate that the document/message justifying an accounting entry is original.</ccts:Description>
+            <ccts:Description
+            >To indicate that the document/message justifying an accounting entry is original.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +216,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Copy accounting voucher</ccts:Name>
-            <ccts:Description>To indicate that the document/message justifying an accounting entry is a copy.</ccts:Description>
+            <ccts:Description
+            >To indicate that the document/message justifying an accounting entry is a copy.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +225,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Delivery order</ccts:Name>
-            <ccts:Description>Document/message issued by a party entitled to authorize the release of goods specified therein to a named consignee, to be retained by the custodian of the goods.</ccts:Description>
+            <ccts:Description
+            >Document/message issued by a party entitled to authorize the release of goods specified therein to a named consignee, to be retained by the custodian of the goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +234,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>General message</ccts:Name>
-            <ccts:Description>Document/message providing agreed textual information.</ccts:Description>
+            <ccts:Description
+            >Document/message providing agreed textual information.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +243,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commercial account summary</ccts:Name>
-            <ccts:Description>A message enabling the transmission of commercial data concerning payments made and outstanding items on an account over a period of time.</ccts:Description>
+            <ccts:Description
+            >A message enabling the transmission of commercial data concerning payments made and outstanding items on an account over a period of time.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +252,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Payroll deductions advice</ccts:Name>
-            <ccts:Description>A message sent by a party (usually an employer or its representative) to a service providing organisation, to detail payroll deductions paid on behalf of its employees to the service providing organisation.</ccts:Description>
+            <ccts:Description
+            >A message sent by a party (usually an employer or its representative) to a service providing organisation, to detail payroll deductions paid on behalf of its employees to the service providing organisation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

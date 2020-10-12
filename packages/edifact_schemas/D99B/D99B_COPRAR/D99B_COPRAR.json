@@ -6,20 +6,42 @@
     { "Id": "BGM" },
     { "Id": "DTM", "Min": 0, "Max": 9 },
     { "Id": "FTX", "Min": 0, "Max": 9 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
     {
       "Id": "TDTLoop1",
       "Loop": [
         { "Id": "TDT" },
         { "Id": "DTM", "Min": 0, "Max": 9 },
         { "Id": "RFF", "Min": 0, "Max": 9 },
-        { "Id": "LOCLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }, { "Id": "FTX", "Min": 0, "Max": 9 }] }
+        {
+          "Id": "LOCLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [
+            { "Id": "LOC" },
+            { "Id": "DTM", "Min": 0, "Max": 9 },
+            { "Id": "FTX", "Min": 0, "Max": 9 }
+          ]
+        }
       ]
     },
     {
       "Id": "NADLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }]
+      "Loop": [
+        { "Id": "NAD" },
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        }
+      ]
     },
     {
       "Id": "EQDLoop1",
@@ -45,7 +67,12 @@
           "Loop": [
             { "Id": "DGS" },
             { "Id": "FTX", "Min": 0, "Max": 9 },
-            { "Id": "CTALoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }
+            {
+              "Id": "CTALoop2",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+            }
           ]
         },
         { "Id": "EQA", "Min": 0, "Max": 9 },
@@ -57,7 +84,12 @@
             { "Id": "TDT" },
             { "Id": "DTM", "Min": 0, "Max": 9 },
             { "Id": "RFF", "Min": 0, "Max": 9 },
-            { "Id": "LOCLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }] }
+            {
+              "Id": "LOCLoop2",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+            }
           ]
         },
         { "Id": "NAD", "Min": 0, "Max": 9 }

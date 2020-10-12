@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 66313 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm66313="urn:un:unece:uncefact:codelist:standard:UNECE:MeasuredAttributeCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:MeasuredAttributeCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.10">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm66313="urn:un:unece:uncefact:codelist:standard:UNECE:MeasuredAttributeCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:MeasuredAttributeCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.10"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="MeasuredAttributeCode" type="clm66313:MeasuredAttributeCodeContentType"/>
+  <xsd:element name="MeasuredAttributeCode" type="clm66313:MeasuredAttributeCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -45,7 +53,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Net weight</ccts:Name>
-            <ccts:Description>[6160] Weight of goods including any packaging that normally going with the goods.</ccts:Description>
+            <ccts:Description
+            >[6160] Weight of goods including any packaging that normally going with the goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +62,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Goods item gross weight</ccts:Name>
-            <ccts:Description>[6292] Weight (mass) of goods including packing but excluding the carrier's equipment.</ccts:Description>
+            <ccts:Description
+            >[6292] Weight (mass) of goods including packing but excluding the carrier's equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +79,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Consignment gross weight</ccts:Name>
-            <ccts:Description>[6012] Total gross weight (mass) of all goods items referred to as one consignment including packaging but excluding any transport equipment.</ccts:Description>
+            <ccts:Description
+            >[6012] Total gross weight (mass) of all goods items referred to as one consignment including packaging but excluding any transport equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +88,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Net net weight</ccts:Name>
-            <ccts:Description>[6048] Weight (mass) if goods without any packaging.</ccts:Description>
+            <ccts:Description
+            >[6048] Weight (mass) if goods without any packaging.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +97,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Stern thrust</ccts:Name>
-            <ccts:Description>Force exerted by a thruster installed at the stern of a vessel.</ccts:Description>
+            <ccts:Description
+            >Force exerted by a thruster installed at the stern of a vessel.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +106,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bow thrust</ccts:Name>
-            <ccts:Description>Force exerted by a thruster installed at the bow of a vessel.</ccts:Description>
+            <ccts:Description
+            >Force exerted by a thruster installed at the bow of a vessel.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +115,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Hydrate content of an alcoholic product at bottling</ccts:Name>
-            <ccts:Description>The hydrate content of an alcoholic product at the moment of bottling.</ccts:Description>
+            <ccts:Description
+            >The hydrate content of an alcoholic product at the moment of bottling.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,7 +140,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transport means gross weight</ccts:Name>
-            <ccts:Description>[6300] The measure of the overall size of a ship determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969.</ccts:Description>
+            <ccts:Description
+            >[6300] The measure of the overall size of a ship determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +149,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Net tonnage of the vessel</ccts:Name>
-            <ccts:Description>[6302] The measure of the useful capacity of a ship determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969.</ccts:Description>
+            <ccts:Description
+            >[6302] The measure of the useful capacity of a ship determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +166,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Voltage</ccts:Name>
-            <ccts:Description>Electromotive force, or difference of electronic potential between two points.</ccts:Description>
+            <ccts:Description
+            >Electromotive force, or difference of electronic potential between two points.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +207,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Operative temperature</ccts:Name>
-            <ccts:Description>Temperature identified system or process works according to specifications.</ccts:Description>
+            <ccts:Description
+            >Temperature identified system or process works according to specifications.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +216,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Non operative temperature</ccts:Name>
-            <ccts:Description>Temperature identified system or process does not work according to specifications.</ccts:Description>
+            <ccts:Description
+            >Temperature identified system or process does not work according to specifications.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +225,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Gross volume</ccts:Name>
-            <ccts:Description>The volume unadjusted for factors such as temperature or gravity.</ccts:Description>
+            <ccts:Description
+            >The volume unadjusted for factors such as temperature or gravity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +234,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Net volume</ccts:Name>
-            <ccts:Description>The volume after adjustment for factors such as temperature or gravity.</ccts:Description>
+            <ccts:Description
+            >The volume after adjustment for factors such as temperature or gravity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -301,7 +323,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Original wort</ccts:Name>
-            <ccts:Description>Measure of the malt and hops content of beer, before fermentation has taken place.</ccts:Description>
+            <ccts:Description
+            >Measure of the malt and hops content of beer, before fermentation has taken place.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -309,7 +332,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Volume</ccts:Name>
-            <ccts:Description>The amount of air space taken up by the entity identified in the 6311 qualifier.</ccts:Description>
+            <ccts:Description
+            >The amount of air space taken up by the entity identified in the 6311 qualifier.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -325,7 +349,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Peg hole horizontal distance from package leftmost edge</ccts:Name>
-            <ccts:Description>Horizontal distance from the left most edge of the package to the center of the hole into which the peg is inserted.</ccts:Description>
+            <ccts:Description
+            >Horizontal distance from the left most edge of the package to the center of the hole into which the peg is inserted.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +358,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Peg hole vertical distance from package top</ccts:Name>
-            <ccts:Description>Vertical distance from the top of the package to the top of the hole into which the peg is inserted.</ccts:Description>
+            <ccts:Description
+            >Vertical distance from the top of the package to the top of the hole into which the peg is inserted.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -349,7 +375,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product strengh, chemical</ccts:Name>
-            <ccts:Description>The amount of the single active chemical ingredient within a product.</ccts:Description>
+            <ccts:Description
+            >The amount of the single active chemical ingredient within a product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +384,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product strength basis, chemical</ccts:Name>
-            <ccts:Description>Amount of product used as the basis for the specification of the chemical product strenght.</ccts:Description>
+            <ccts:Description
+            >Amount of product used as the basis for the specification of the chemical product strenght.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -389,7 +417,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Conveyance summer dead weight</ccts:Name>
-            <ccts:Description>Registered summer dead weight total tonnage of the vessel.</ccts:Description>
+            <ccts:Description
+            >Registered summer dead weight total tonnage of the vessel.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -413,7 +442,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ascertained weight</ccts:Name>
-            <ccts:Description>[4240] Endorsement of the true weight (mass) as ascertained or verified.</ccts:Description>
+            <ccts:Description
+            >[4240] Endorsement of the true weight (mass) as ascertained or verified.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -429,7 +459,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Estimated gross weight</ccts:Name>
-            <ccts:Description>Estimated weight (mass) of goods, including packing and excluding carrier's.</ccts:Description>
+            <ccts:Description
+            >Estimated weight (mass) of goods, including packing and excluding carrier's.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -437,7 +468,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Estimated volume</ccts:Name>
-            <ccts:Description>Estimated size or measure of anything in three dimensions.</ccts:Description>
+            <ccts:Description
+            >Estimated size or measure of anything in three dimensions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -453,7 +485,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Loading meters</ccts:Name>
-            <ccts:Description>[6046] (6042) (6044) The length in a vehicle, whereby the complete width and height over that length is needed for the goods.</ccts:Description>
+            <ccts:Description
+            >[6046] (6042) (6044) The length in a vehicle, whereby the complete width and height over that length is needed for the goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -461,7 +494,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of axles</ccts:Name>
-            <ccts:Description>Number of axles of movable equipment or means of transport on wheels.</ccts:Description>
+            <ccts:Description
+            >Number of axles of movable equipment or means of transport on wheels.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -469,7 +503,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Payload</ccts:Name>
-            <ccts:Description>The revenue-producing load carried by a means of transport.</ccts:Description>
+            <ccts:Description
+            >The revenue-producing load carried by a means of transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -477,7 +512,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Start position in the length</ccts:Name>
-            <ccts:Description>The starting position from the beginning of an item located in the length direction.</ccts:Description>
+            <ccts:Description
+            >The starting position from the beginning of an item located in the length direction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -485,7 +521,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>End position in the length</ccts:Name>
-            <ccts:Description>The end position from the beginning of an item located in the length direction.</ccts:Description>
+            <ccts:Description
+            >The end position from the beginning of an item located in the length direction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -493,7 +530,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Start position in the width</ccts:Name>
-            <ccts:Description>The start position from the beginning of an item located in the width direction.</ccts:Description>
+            <ccts:Description
+            >The start position from the beginning of an item located in the width direction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -501,7 +539,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>End position in the width</ccts:Name>
-            <ccts:Description>The end position from the beginning of an item located in the width direction.</ccts:Description>
+            <ccts:Description
+            >The end position from the beginning of an item located in the width direction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -509,7 +548,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Start position in the thickness</ccts:Name>
-            <ccts:Description>The start position from the beginning of an item located in the thickness direction.</ccts:Description>
+            <ccts:Description
+            >The start position from the beginning of an item located in the thickness direction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -517,7 +557,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>End position in the thickness</ccts:Name>
-            <ccts:Description>The end position from the beginning of an item located in the thickness direction.</ccts:Description>
+            <ccts:Description
+            >The end position from the beginning of an item located in the thickness direction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -541,7 +582,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Declared net weight</ccts:Name>
-            <ccts:Description>The declared net weight of a product or products used for invoicing, customs or transport purposes.</ccts:Description>
+            <ccts:Description
+            >The declared net weight of a product or products used for invoicing, customs or transport purposes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -549,7 +591,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Loading height</ccts:Name>
-            <ccts:Description>Maximum height of products or packages loaded onto a given transportation device or equipment such as a pallet.</ccts:Description>
+            <ccts:Description
+            >Maximum height of products or packages loaded onto a given transportation device or equipment such as a pallet.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -557,7 +600,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Stacking height</ccts:Name>
-            <ccts:Description>Maximum height up to which the same product or package may be placed one upon the other for storage purposes.</ccts:Description>
+            <ccts:Description
+            >Maximum height up to which the same product or package may be placed one upon the other for storage purposes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -565,7 +609,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Calculated weight</ccts:Name>
-            <ccts:Description>The calculated weight of the item based on the ordered dimensions.</ccts:Description>
+            <ccts:Description
+            >The calculated weight of the item based on the ordered dimensions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -581,7 +626,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Impurity</ccts:Name>
-            <ccts:Description>The impurity of the product i.e. the measurement of other chemical elements not normally appearing in a product.</ccts:Description>
+            <ccts:Description
+            >The impurity of the product i.e. the measurement of other chemical elements not normally appearing in a product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -613,7 +659,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Drained weight</ccts:Name>
-            <ccts:Description>The weight of a product when all liquids used in the packaging of the product have been removed.</ccts:Description>
+            <ccts:Description
+            >The weight of a product when all liquids used in the packaging of the product have been removed.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -653,7 +700,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Radioactive index of transport</ccts:Name>
-            <ccts:Description>The index of transport determines the maximum radiation level at a distance of 1m from the external surface.</ccts:Description>
+            <ccts:Description
+            >The index of transport determines the maximum radiation level at a distance of 1m from the external surface.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -669,7 +717,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Average gross weight</ccts:Name>
-            <ccts:Description>Weight which is the outcome of the division of the total gross weight by the number of units.</ccts:Description>
+            <ccts:Description
+            >Weight which is the outcome of the division of the total gross weight by the number of units.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -677,7 +726,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Forward draft</ccts:Name>
-            <ccts:Description>Depth of water from the surface of water to the bottom of the vessel measured at the draft mark of the bow.</ccts:Description>
+            <ccts:Description
+            >Depth of water from the surface of water to the bottom of the vessel measured at the draft mark of the bow.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -685,7 +735,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>After draft</ccts:Name>
-            <ccts:Description>Depth of water from the surface of water to the bottom of the vessel measured at the draft mark of the stern.</ccts:Description>
+            <ccts:Description
+            >Depth of water from the surface of water to the bottom of the vessel measured at the draft mark of the stern.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -701,7 +752,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transport equipment gross weight</ccts:Name>
-            <ccts:Description>[6294] Weight of a transport equipment including the cargo and carrier's equipment.</ccts:Description>
+            <ccts:Description
+            >[6294] Weight of a transport equipment including the cargo and carrier's equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -709,7 +761,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Total transport equipment gross weight</ccts:Name>
-            <ccts:Description>Total weight of all transport equipment including the cargo and carrier's equipment.</ccts:Description>
+            <ccts:Description
+            >Total weight of all transport equipment including the cargo and carrier's equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -725,7 +778,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Penetrometry</ccts:Name>
-            <ccts:Description>Measurement of force required to drive a standard penetrating stamp.</ccts:Description>
+            <ccts:Description
+            >Measurement of force required to drive a standard penetrating stamp.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -733,7 +787,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Durofel</ccts:Name>
-            <ccts:Description>Measurement of the elastic force using a standard penetrating stamp.</ccts:Description>
+            <ccts:Description
+            >Measurement of the elastic force using a standard penetrating stamp.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -741,7 +796,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Juice weight per 100 grams</ccts:Name>
-            <ccts:Description>Measurement of weight of juice, based on 100 grams of the entire weight.</ccts:Description>
+            <ccts:Description
+            >Measurement of weight of juice, based on 100 grams of the entire weight.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -749,7 +805,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Fruit skin colour</ccts:Name>
-            <ccts:Description>Measurement of the colouring of the epidermis of a fruit.</ccts:Description>
+            <ccts:Description
+            >Measurement of the colouring of the epidermis of a fruit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -773,7 +830,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Durofel D10</ccts:Name>
-            <ccts:Description>Measure of the elastic force of the pulp of a fruit. It is measured with a penetrating stamp with diameter 10.</ccts:Description>
+            <ccts:Description
+            >Measure of the elastic force of the pulp of a fruit. It is measured with a penetrating stamp with diameter 10.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -781,7 +839,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Durofel D25</ccts:Name>
-            <ccts:Description>Measure of the elastic force of the pulp of a fruit. It is measured with a penetrating stamp with diameter 25.</ccts:Description>
+            <ccts:Description
+            >Measure of the elastic force of the pulp of a fruit. It is measured with a penetrating stamp with diameter 25.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -789,7 +848,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Durofel D50</ccts:Name>
-            <ccts:Description>Measure of the elastic force of the pulp of a fruit. It is measured with a penetrating stamp with diameter 50.</ccts:Description>
+            <ccts:Description
+            >Measure of the elastic force of the pulp of a fruit. It is measured with a penetrating stamp with diameter 50.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -797,7 +857,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Maximum stacking weight</ccts:Name>
-            <ccts:Description>The maximum weight which may be stacked upon a product or package without the product or packaging being crushed.</ccts:Description>
+            <ccts:Description
+            >The maximum weight which may be stacked upon a product or package without the product or packaging being crushed.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -805,7 +866,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Gross measure cube</ccts:Name>
-            <ccts:Description>The total cubic space occupied by an item, taking into account any protruding components, arrived at by multiplying the maximum length, width and height.</ccts:Description>
+            <ccts:Description
+            >The total cubic space occupied by an item, taking into account any protruding components, arrived at by multiplying the maximum length, width and height.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -829,7 +891,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Hydrate content of an alcoholic product after bottling</ccts:Name>
-            <ccts:Description>The hydrate content which occurs in an alcoholic product after bottling.</ccts:Description>
+            <ccts:Description
+            >The hydrate content which occurs in an alcoholic product after bottling.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -853,7 +916,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Freeboard</ccts:Name>
-            <ccts:Description>The vertical distance between the waterline and the upper edge of the deck line.</ccts:Description>
+            <ccts:Description
+            >The vertical distance between the waterline and the upper edge of the deck line.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -861,7 +925,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Maximum vessel draught</ccts:Name>
-            <ccts:Description>The depth of water needed to float the ship (Maximum vessel draught according to Load Line Certificate IMO, MSC/Circ. 920 15 June 1999).</ccts:Description>
+            <ccts:Description
+            >The depth of water needed to float the ship (Maximum vessel draught according to Load Line Certificate IMO, MSC/Circ. 920 15 June 1999).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -869,7 +934,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Net explosive weight</ccts:Name>
-            <ccts:Description>Mass of the explosive part or substance of goods without any packing.</ccts:Description>
+            <ccts:Description
+            >Mass of the explosive part or substance of goods without any packing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -877,7 +943,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Radioactive criticality safety index</ccts:Name>
-            <ccts:Description>A number, assigned to fissile material i.e. material capable of sustaining a nuclear chain reaction, which is used to provide control over the accumulation of packages containing such material.</ccts:Description>
+            <ccts:Description
+            >A number, assigned to fissile material i.e. material capable of sustaining a nuclear chain reaction, which is used to provide control over the accumulation of packages containing such material.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -885,7 +952,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Waste currently on board</ccts:Name>
-            <ccts:Description>Amount of waste on board at the moment of the notification.</ccts:Description>
+            <ccts:Description
+            >Amount of waste on board at the moment of the notification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -893,7 +961,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Waste to be delivered at waste reception facility</ccts:Name>
-            <ccts:Description>Amount of waste to be delivered to a waste reception facility, e.g. in the port of call.</ccts:Description>
+            <ccts:Description
+            >Amount of waste to be delivered to a waste reception facility, e.g. in the port of call.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -901,7 +970,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Waste to be generated until next port of call, estimated</ccts:Name>
-            <ccts:Description>Estimated amount of waste to be generated between creation of the current notification and arrival in the next port of call, irrespective of use of incinerator or compactor or disposal at sea.</ccts:Description>
+            <ccts:Description
+            >Estimated amount of waste to be generated between creation of the current notification and arrival in the next port of call, irrespective of use of incinerator or compactor or disposal at sea.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -909,7 +979,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Waste remaining on board at departure</ccts:Name>
-            <ccts:Description>Amount of waste remaining on board when leaving the port of call.</ccts:Description>
+            <ccts:Description
+            >Amount of waste remaining on board when leaving the port of call.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -917,7 +988,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Colour depth</ccts:Name>
-            <ccts:Description>The number of distinct colours represented, e.g. in an image or in a display.</ccts:Description>
+            <ccts:Description
+            >The number of distinct colours represented, e.g. in an image or in a display.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -925,7 +997,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Colour depth, maximum</ccts:Name>
-            <ccts:Description>The maximum number of distinct colours that can be represented, e.g. in an image or in a display.</ccts:Description>
+            <ccts:Description
+            >The maximum number of distinct colours that can be represented, e.g. in an image or in a display.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -949,7 +1022,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Acoustic absorption coefficient</ccts:Name>
-            <ccts:Description>The portion of sound energy a surface absorbs, measured at different frequencies.</ccts:Description>
+            <ccts:Description
+            >The portion of sound energy a surface absorbs, measured at different frequencies.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -989,7 +1063,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>List</ccts:Name>
-            <ccts:Description>The leaning or inclination of a vessel expressed in degrees port or starboard.</ccts:Description>
+            <ccts:Description
+            >The leaning or inclination of a vessel expressed in degrees port or starboard.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -997,7 +1072,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Trim</ccts:Name>
-            <ccts:Description>The condition of a vessel with reference to its longitudinal axis.</ccts:Description>
+            <ccts:Description
+            >The condition of a vessel with reference to its longitudinal axis.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1005,7 +1081,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Free water</ccts:Name>
-            <ccts:Description>The volume of water present in a container that is not in suspension in the contained liquid.</ccts:Description>
+            <ccts:Description
+            >The volume of water present in a container that is not in suspension in the contained liquid.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1021,7 +1098,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>API (American Petroleum Institute) gravity</ccts:Name>
-            <ccts:Description>The relative density of petroleum liquids as specified by a standard developed by the API.</ccts:Description>
+            <ccts:Description
+            >The relative density of petroleum liquids as specified by a standard developed by the API.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1029,7 +1107,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Petroleum gross observed volume</ccts:Name>
-            <ccts:Description>The total volume of all petroleum liquids and sediment and water, excluding free water, at observed temperature and pressure.</ccts:Description>
+            <ccts:Description
+            >The total volume of all petroleum liquids and sediment and water, excluding free water, at observed temperature and pressure.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1037,7 +1116,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Petroleum gross standard volume</ccts:Name>
-            <ccts:Description>The total volume of all petroleum liquids, sediment, and water excluding free water, corrected by the appropriate volume correction factor for the observed temperature and American Petroleum Institute relative density, or density to a standard temperature.</ccts:Description>
+            <ccts:Description
+            >The total volume of all petroleum liquids, sediment, and water excluding free water, corrected by the appropriate volume correction factor for the observed temperature and American Petroleum Institute relative density, or density to a standard temperature.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1053,7 +1133,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Petroleum net standard volume</ccts:Name>
-            <ccts:Description>The total volume of all petroleum liquids, excluding sediment and water and free water, corrected by the appropriate volume correction factor for the observed temperature and American Petroleum Institute gravity relative to density or to a standard temperature.</ccts:Description>
+            <ccts:Description
+            >The total volume of all petroleum liquids, excluding sediment and water and free water, corrected by the appropriate volume correction factor for the observed temperature and American Petroleum Institute gravity relative to density or to a standard temperature.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1061,7 +1142,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Material on-board quantity, after discharge</ccts:Name>
-            <ccts:Description>The material in vessel tanks, void spaces, and pipelines after discharge.</ccts:Description>
+            <ccts:Description
+            >The material in vessel tanks, void spaces, and pipelines after discharge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1069,7 +1151,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Petroleum total calculated volume</ccts:Name>
-            <ccts:Description>The total volume of all petroleum liquids, sediment and water corrected by the appropriate volume correction factor for the observed temperature and American Petroleum Institute (API) gravity, relative density, or density to a standard temperature.</ccts:Description>
+            <ccts:Description
+            >The total volume of all petroleum liquids, sediment and water corrected by the appropriate volume correction factor for the observed temperature and American Petroleum Institute (API) gravity, relative density, or density to a standard temperature.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1077,7 +1160,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Petroleum total observed volume</ccts:Name>
-            <ccts:Description>The total volume of all petroleum liquids, sediment and water and free water at observed temperature and pressure.</ccts:Description>
+            <ccts:Description
+            >The total volume of all petroleum liquids, sediment and water and free water at observed temperature and pressure.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1085,7 +1169,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Innage gauge distance</ccts:Name>
-            <ccts:Description>The measured distance from the surface of the liquid to a fixed datum plate or to the tank bottom.</ccts:Description>
+            <ccts:Description
+            >The measured distance from the surface of the liquid to a fixed datum plate or to the tank bottom.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1093,7 +1178,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Petroleum net standard weight</ccts:Name>
-            <ccts:Description>The total weight of all petroleum liquids excluding sediments, water and free water.</ccts:Description>
+            <ccts:Description
+            >The total weight of all petroleum liquids excluding sediments, water and free water.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1101,7 +1187,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sediment and water in petroleum</ccts:Name>
-            <ccts:Description>The measurement of non-hydrocarbon solid material and water in suspension in petroleum liquid.</ccts:Description>
+            <ccts:Description
+            >The measurement of non-hydrocarbon solid material and water in suspension in petroleum liquid.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1109,7 +1196,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Observed reference height, tank</ccts:Name>
-            <ccts:Description>The observed distance from the tank bottom or datum plate to the established reference point.</ccts:Description>
+            <ccts:Description
+            >The observed distance from the tank bottom or datum plate to the established reference point.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1117,7 +1205,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Reference height, tank</ccts:Name>
-            <ccts:Description>The measured distance from the tank bottom or datum plate to the established reference point.</ccts:Description>
+            <ccts:Description
+            >The measured distance from the tank bottom or datum plate to the established reference point.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1125,7 +1214,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ullage gauge distance</ccts:Name>
-            <ccts:Description>The measured distance from the cargo liquid surface to the reference point.</ccts:Description>
+            <ccts:Description
+            >The measured distance from the cargo liquid surface to the reference point.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1133,7 +1223,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Trim correction</ccts:Name>
-            <ccts:Description>The correction applied to the observed gauge or observed volume when a vessel is not on an even keel.</ccts:Description>
+            <ccts:Description
+            >The correction applied to the observed gauge or observed volume when a vessel is not on an even keel.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1141,7 +1232,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bow to bridge distance</ccts:Name>
-            <ccts:Description>The distance between the bow and the bridge of a vessel.</ccts:Description>
+            <ccts:Description
+            >The distance between the bow and the bridge of a vessel.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1149,7 +1241,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Peg hole number</ccts:Name>
-            <ccts:Description>Used to identify the peg hole if more than one hole is present in the product or packaging.</ccts:Description>
+            <ccts:Description
+            >Used to identify the peg hole if more than one hole is present in the product or packaging.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1157,7 +1250,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of inner packs</ccts:Name>
-            <ccts:Description>Indicates the number of non coded physical groupings (inner packs) of next lower level trade items within the current trade item level.</ccts:Description>
+            <ccts:Description
+            >Indicates the number of non coded physical groupings (inner packs) of next lower level trade items within the current trade item level.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1165,7 +1259,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of next level trade items within inner pack</ccts:Name>
-            <ccts:Description>The number of next lower level trade items contained within the physical non-coded grouping (inner pack).</ccts:Description>
+            <ccts:Description
+            >The number of next lower level trade items contained within the physical non-coded grouping (inner pack).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1173,7 +1268,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of trade items per pallet layer</ccts:Name>
-            <ccts:Description>The number of trade items contained on a single layer of a pallet.</ccts:Description>
+            <ccts:Description
+            >The number of trade items contained on a single layer of a pallet.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1189,7 +1285,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Packing material weight, skin tight covering</ccts:Name>
-            <ccts:Description>The weight measurement of the packing material used for skin tight covering (e.g. when packaging prepared meats, poultry, cheese, and other food products).</ccts:Description>
+            <ccts:Description
+            >The weight measurement of the packing material used for skin tight covering (e.g. when packaging prepared meats, poultry, cheese, and other food products).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1213,7 +1310,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Components labelled for recycling percentage</ccts:Name>
-            <ccts:Description>Percentage of trade item components that clearly label how to facilitate product disassembly and recycling.</ccts:Description>
+            <ccts:Description
+            >Percentage of trade item components that clearly label how to facilitate product disassembly and recycling.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1221,7 +1319,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Renewable plastic components percentage, by net weight</ccts:Name>
-            <ccts:Description>The percentage of the plastic components only made from rapidly renewable plant-based material by net weight of product.</ccts:Description>
+            <ccts:Description
+            >The percentage of the plastic components only made from rapidly renewable plant-based material by net weight of product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1245,7 +1344,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ascertained volume</ccts:Name>
-            <ccts:Description>Endorsement of the true volume as ascertained or verified.</ccts:Description>
+            <ccts:Description
+            >Endorsement of the true volume as ascertained or verified.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1277,7 +1377,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Vertical center of gravity</ccts:Name>
-            <ccts:Description>Distance of vertical center of gravity relative to item's base.</ccts:Description>
+            <ccts:Description
+            >Distance of vertical center of gravity relative to item's base.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1285,7 +1386,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Maximum allowable transport stacking weight</ccts:Name>
-            <ccts:Description>Maximum weight allowed to be stowed on top of an item during transport.</ccts:Description>
+            <ccts:Description
+            >Maximum weight allowed to be stowed on top of an item during transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1309,7 +1411,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Colony forming unit</ccts:Name>
-            <ccts:Description>Micro-organism colonies that are to be counted under determined conditions.</ccts:Description>
+            <ccts:Description
+            >Micro-organism colonies that are to be counted under determined conditions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1317,7 +1420,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Diluted liquid volume</ccts:Name>
-            <ccts:Description>The volume of liquid which results after a dilution agent has been added, e.g. undiluted orange juice of 200ml, after dilution with water the volume of diluted liquid equals 1 litre.</ccts:Description>
+            <ccts:Description
+            >The volume of liquid which results after a dilution agent has been added, e.g. undiluted orange juice of 200ml, after dilution with water the volume of diluted liquid equals 1 litre.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1325,7 +1429,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Energy efficiency</ccts:Name>
-            <ccts:Description>A measurement of the energy efficiency of an article.</ccts:Description>
+            <ccts:Description
+            >A measurement of the energy efficiency of an article.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1333,7 +1438,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of layers</ccts:Name>
-            <ccts:Description>Number of layers of a product or products within a package, container, etc.</ccts:Description>
+            <ccts:Description
+            >Number of layers of a product or products within a package, container, etc.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1341,7 +1447,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Maximum demand</ccts:Name>
-            <ccts:Description>The highest demand recorded during the period of recording of usage of the supply.</ccts:Description>
+            <ccts:Description
+            >The highest demand recorded during the period of recording of usage of the supply.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1349,7 +1456,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of pallet places</ccts:Name>
-            <ccts:Description>The number of pallet places needed to store or to transport pallets (can be stacked).</ccts:Description>
+            <ccts:Description
+            >The number of pallet places needed to store or to transport pallets (can be stacked).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1357,7 +1465,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package net measurement, cubed</ccts:Name>
-            <ccts:Description>An indication of the net cubed measurement of a package.</ccts:Description>
+            <ccts:Description
+            >An indication of the net cubed measurement of a package.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1365,7 +1474,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Power factor</ccts:Name>
-            <ccts:Description>The ratio of the power dissipated (active power in kW) to the total power (which is the product of the input volts times amps given in kVa). When equipment which uses reactive power is being operated the power factor will be less than one.</ccts:Description>
+            <ccts:Description
+            >The ratio of the power dissipated (active power in kW) to the total power (which is the product of the input volts times amps given in kVa). When equipment which uses reactive power is being operated the power factor will be less than one.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1373,7 +1483,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Stacking factor excluding bottom item</ccts:Name>
-            <ccts:Description>Maximum number of identical items stackable on top of item.</ccts:Description>
+            <ccts:Description
+            >Maximum number of identical items stackable on top of item.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1397,7 +1508,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Step size</ccts:Name>
-            <ccts:Description>An indication of measurements in which options contained within a Customer Specific Article are available, e.g. 10 metre planks of wood may be sold in step sizes of 2 metres.</ccts:Description>
+            <ccts:Description
+            >An indication of measurements in which options contained within a Customer Specific Article are available, e.g. 10 metre planks of wood may be sold in step sizes of 2 metres.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1413,7 +1525,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of units per layer</ccts:Name>
-            <ccts:Description>Number of units of a product or package within one layer of a package, container, etc.</ccts:Description>
+            <ccts:Description
+            >Number of units of a product or package within one layer of a package, container, etc.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1421,7 +1534,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Weight per running metre</ccts:Name>
-            <ccts:Description>A code used to indicate the weight per running metre of floor coverings over floor area.</ccts:Description>
+            <ccts:Description
+            >A code used to indicate the weight per running metre of floor coverings over floor area.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1429,7 +1543,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Weight per square metre</ccts:Name>
-            <ccts:Description>A code used to indicate the weight per square metre of floor coverings over floor area.</ccts:Description>
+            <ccts:Description
+            >A code used to indicate the weight per square metre of floor coverings over floor area.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1453,7 +1568,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Stacking factor including bottom item</ccts:Name>
-            <ccts:Description>Maximum number of items stackable upon each other, including the bottom item.</ccts:Description>
+            <ccts:Description
+            >Maximum number of items stackable upon each other, including the bottom item.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1461,7 +1577,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of units in the width of a layer</ccts:Name>
-            <ccts:Description>Number of units of a product or package which make up the width of a layer in a package, container, pallet, etc.</ccts:Description>
+            <ccts:Description
+            >Number of units of a product or package which make up the width of a layer in a package, container, pallet, etc.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1469,7 +1586,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Number of units in the depth of a layer</ccts:Name>
-            <ccts:Description>Number of units of a product or package which make up the depth of a layer in a package, container, pallet, etc.</ccts:Description>
+            <ccts:Description
+            >Number of units of a product or package which make up the depth of a layer in a package, container, pallet, etc.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1477,7 +1595,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Nestable percentage</ccts:Name>
-            <ccts:Description>Extent expressed as a percentage to which an item can be nested within an identical item, e.g. paper cups.</ccts:Description>
+            <ccts:Description
+            >Extent expressed as a percentage to which an item can be nested within an identical item, e.g. paper cups.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1485,7 +1604,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Gross weight including carrier's equipment</ccts:Name>
-            <ccts:Description>Weight (mass) of goods including packaging and the carrier's equipment. In this context 'carrier's equipment' means any material resources necessary to facilitate the transport and handling of the goods without having the ability to move by its own propulsion, e.g. pallet, container, etc.</ccts:Description>
+            <ccts:Description
+            >Weight (mass) of goods including packaging and the carrier's equipment. In this context 'carrier's equipment' means any material resources necessary to facilitate the transport and handling of the goods without having the ability to move by its own propulsion, e.g. pallet, container, etc.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1501,7 +1621,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Self-accelerating polymerization temperature (SAPT)</ccts:Name>
-            <ccts:Description>The lowest temperature at which polymerization may occur for a substance as packed for transport.</ccts:Description>
+            <ccts:Description
+            >The lowest temperature at which polymerization may occur for a substance as packed for transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1509,7 +1630,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Self-accelerating decomposition temperature (SADT)</ccts:Name>
-            <ccts:Description>The lowest temperature at which self-accelerating decomposition may occur for a substance as packed for transport.</ccts:Description>
+            <ccts:Description
+            >The lowest temperature at which self-accelerating decomposition may occur for a substance as packed for transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1541,7 +1663,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Contents of package</ccts:Name>
-            <ccts:Description>In combination with the other data elements of the actual segment this code indicates the measured content of a package.</ccts:Description>
+            <ccts:Description
+            >In combination with the other data elements of the actual segment this code indicates the measured content of a package.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1549,7 +1672,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commercial weight</ccts:Name>
-            <ccts:Description>Item weight considering its maximum possible humidity.</ccts:Description>
+            <ccts:Description
+            >Item weight considering its maximum possible humidity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1557,7 +1681,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Core length</ccts:Name>
-            <ccts:Description>To specify length of core on which product is to be placed.</ccts:Description>
+            <ccts:Description
+            >To specify length of core on which product is to be placed.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1565,7 +1690,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Destination weight agreement</ccts:Name>
-            <ccts:Description>The agreed weight of despatched goods whose weight may change during transport.</ccts:Description>
+            <ccts:Description
+            >The agreed weight of despatched goods whose weight may change during transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1781,7 +1907,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Moisture</ccts:Name>
-            <ccts:Description>Measurement application is the moisture content of the item.</ccts:Description>
+            <ccts:Description
+            >Measurement application is the moisture content of the item.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1813,7 +1940,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pre stretch</ccts:Name>
-            <ccts:Description>Measurement identifying the amount an item has been stretched prior to use.</ccts:Description>
+            <ccts:Description
+            >Measurement identifying the amount an item has been stretched prior to use.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1893,7 +2021,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tare weight</ccts:Name>
-            <ccts:Description>(6052) (6156) Weight excluding goods and loose accessories.</ccts:Description>
+            <ccts:Description
+            >(6052) (6156) Weight excluding goods and loose accessories.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1933,7 +2062,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transport equipment verified gross mass (weight)</ccts:Name>
-            <ccts:Description>The gross mass (weight) of the transport equipment verified according to SOLAS Chapter VI, Regulation 2, paragraphs 4-6.</ccts:Description>
+            <ccts:Description
+            >The gross mass (weight) of the transport equipment verified according to SOLAS Chapter VI, Regulation 2, paragraphs 4-6.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1989,7 +2119,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Side height, flat bed with removable sides</ccts:Name>
-            <ccts:Description>The height of the removable sides of a flat bed truck.</ccts:Description>
+            <ccts:Description
+            >The height of the removable sides of a flat bed truck.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2349,7 +2480,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Mutually defined</ccts:Name>
-            <ccts:Description>A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
+            <ccts:Description
+            >A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -3,7 +3,11 @@
   "DocumentType": "SRMINF",
   "TransactionSet": [
     { "Id": "MHD" },
-    { "Id": "SRDLoop1", "Max": "unbounded", "Loop": [{ "Id": "SRD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }] },
+    {
+      "Id": "SRDLoop1",
+      "Max": "unbounded",
+      "Loop": [{ "Id": "SRD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }]
+    },
     { "Id": "SRT", "Max": 1 },
     { "Id": "PYC", "Min": 0, "Max": 1 },
     { "Id": "MTR", "Max": 1 }

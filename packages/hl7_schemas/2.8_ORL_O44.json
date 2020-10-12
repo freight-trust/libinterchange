@@ -62,7 +62,12 @@
                           "Max": "unbounded",
                           "Loop": [
                             { "Id": "SPM", "Min": 1, "Max": 1 },
-                            { "Id": "ORL_O44.SPECIMEN_CONTAINER_IN_PACKAGE", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "SAC", "Min": 1, "Max": 1 }] }
+                            {
+                              "Id": "ORL_O44.SPECIMEN_CONTAINER_IN_PACKAGE",
+                              "Min": 0,
+                              "Max": "unbounded",
+                              "Loop": [{ "Id": "SAC", "Min": 1, "Max": 1 }]
+                            }
                           ]
                         }
                       ]

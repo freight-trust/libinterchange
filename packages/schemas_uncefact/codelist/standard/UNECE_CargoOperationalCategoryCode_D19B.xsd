@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 67085b - Code List Schema Module                           ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm67085b="urn:un:unece:uncefact:codelist:standard:UNECE:CargoOperationalCategoryCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:CargoOperationalCategoryCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm67085b="urn:un:unece:uncefact:codelist:standard:UNECE:CargoOperationalCategoryCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:CargoOperationalCategoryCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="CargoOperationalCategoryCode" type="clm67085b:CargoOperationalCategoryCodeContentType"/>
+  <xsd:element
+    name="CargoOperationalCategoryCode"
+    type="clm67085b:CargoOperationalCategoryCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Documents</ccts:Name>
-            <ccts:Description>Printed, typed or written matter including leaflets, pamphlets, certificates etc., which are not subject to import duties and taxes, restrictions and prohibitions.</ccts:Description>
+            <ccts:Description
+            >Printed, typed or written matter including leaflets, pamphlets, certificates etc., which are not subject to import duties and taxes, restrictions and prohibitions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Low value non-dutiable consignments</ccts:Name>
-            <ccts:Description>Imported consignments/items/goods in respect of which Customs duties and other taxes are waived as they are below a value determined by the Customs administration.</ccts:Description>
+            <ccts:Description
+            >Imported consignments/items/goods in respect of which Customs duties and other taxes are waived as they are below a value determined by the Customs administration.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Low value dutiable consignments</ccts:Name>
-            <ccts:Description>Imported consignments/items/goods in respect of which Customs duties and other taxes are payable are below a certain amount as determined by the Customs administration.</ccts:Description>
+            <ccts:Description
+            >Imported consignments/items/goods in respect of which Customs duties and other taxes are payable are below a certain amount as determined by the Customs administration.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +75,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>High value consignments</ccts:Name>
-            <ccts:Description>Imported consignments/items/goods which are determined as having a value above a certain amount fixed by the Customs administration, which may or may not attract duties and taxes.</ccts:Description>
+            <ccts:Description
+            >Imported consignments/items/goods which are determined as having a value above a certain amount fixed by the Customs administration, which may or may not attract duties and taxes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +84,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Other non-containerized</ccts:Name>
-            <ccts:Description>Non-containerized cargo which cannot be categorized by any of the other nature of cargo code.</ccts:Description>
+            <ccts:Description
+            >Non-containerized cargo which cannot be categorized by any of the other nature of cargo code.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +101,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Roll-on roll-off</ccts:Name>
-            <ccts:Description>Cargo transported or to be transported on roll-on roll-off vessels and which is transportable on its own wheels or stowed on special heavy duty trailers.</ccts:Description>
+            <ccts:Description
+            >Cargo transported or to be transported on roll-on roll-off vessels and which is transportable on its own wheels or stowed on special heavy duty trailers.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +134,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Hazardous cargo</ccts:Name>
-            <ccts:Description>Cargo with dangerous properties, according to appropriate dangerous goods regulations.</ccts:Description>
+            <ccts:Description
+            >Cargo with dangerous properties, according to appropriate dangerous goods regulations.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +159,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Temperature controlled cargo</ccts:Name>
-            <ccts:Description>Cargo transported under specified temperature conditions.</ccts:Description>
+            <ccts:Description
+            >Cargo transported under specified temperature conditions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +216,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Household goods and personal effects</ccts:Name>
-            <ccts:Description>Cargo consisting of household goods and personal effects.</ccts:Description>
+            <ccts:Description
+            >Cargo consisting of household goods and personal effects.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +233,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ballast only</ccts:Name>
-            <ccts:Description>No cargo, means of transport is carrying only ballast.</ccts:Description>
+            <ccts:Description
+            >No cargo, means of transport is carrying only ballast.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +242,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Incompatible cargo</ccts:Name>
-            <ccts:Description>Incompatible cargo to be transported / stored with other types of cargo.</ccts:Description>
+            <ccts:Description
+            >Incompatible cargo to be transported / stored with other types of cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

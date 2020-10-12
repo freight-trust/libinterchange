@@ -4,7 +4,12 @@
   "TransactionSet": [
     { "Id": "SFT", "Min": 0, "Max": "unbounded" },
     { "Id": "UAC", "Min": 0, "Max": "unbounded" },
-    { "Id": "EHC_E15.PAYMENT_REMITTANCE_HEADER_INFO", "Min": 1, "Max": 1, "Choice": [{ "Id": "PMT" }, { "Id": "PYE" }] },
+    {
+      "Id": "EHC_E15.PAYMENT_REMITTANCE_HEADER_INFO",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [{ "Id": "PMT" }, { "Id": "PYE" }]
+    },
     {
       "Id": "EHC_E15.PAYMENT_REMITTANCE_DETAIL_INFO",
       "Min": 0,

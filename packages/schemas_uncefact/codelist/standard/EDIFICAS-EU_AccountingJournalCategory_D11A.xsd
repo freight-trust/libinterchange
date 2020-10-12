@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 210AccountingE013 - Code List Schema Module                ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm210AccountingE013="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:AccountingJournalCategory:D11A" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:AccountingJournalCategory:D11A" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm210AccountingE013="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:AccountingJournalCategory:D11A"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:AccountingJournalCategory:D11A"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="1.0"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="AccountingJournalCategory" type="clm210AccountingE013:AccountingJournalCategoryContentType"/>
+  <xsd:element
+    name="AccountingJournalCategory"
+    type="clm210AccountingE013:AccountingJournalCategoryContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bank</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is bank journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is bank journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is cash journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is cash journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Others</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is other journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is other journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +75,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Purchase</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is purchase journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is purchase journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +84,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sales</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is sales journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is sales journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +93,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bank cheques remit</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is bank cheques remit journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is bank cheques remit journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +102,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Miscellaneous</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is miscellaneous journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is miscellaneous journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +111,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Payroll</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is payroll journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is payroll journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +120,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Investments</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is investments journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is investments journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +129,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Amortization</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is amortization journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is amortization journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +138,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Depreciation</ccts:Name>
-            <ccts:Description>The code indicates the category of the journal is depreciation journal.</ccts:Description>
+            <ccts:Description
+            >The code indicates the category of the journal is depreciation journal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

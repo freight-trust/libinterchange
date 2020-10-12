@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 69303 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm69303="urn:un:unece:uncefact:codelist:standard:UNECE:SealingPartyRoleCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:SealingPartyRoleCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm69303="urn:un:unece:uncefact:codelist:standard:UNECE:SealingPartyRoleCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:SealingPartyRoleCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="SealingPartyRoleCode" type="clm69303:SealingPartyRoleCodeContentType"/>
+  <xsd:element name="SealingPartyRoleCode" type="clm69303:SealingPartyRoleCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -53,7 +61,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Quarantine agency</ccts:Name>
-            <ccts:Description>Agency responsible for the administration of statutory disease controls on the movement of people, animals and plants.</ccts:Description>
+            <ccts:Description
+            >Agency responsible for the administration of statutory disease controls on the movement of people, animals and plants.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +70,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Carrier</ccts:Name>
-            <ccts:Description>Party undertaking or arranging transport of goods between named points.</ccts:Description>
+            <ccts:Description
+            >Party undertaking or arranging transport of goods between named points.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +79,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Customs</ccts:Name>
-            <ccts:Description>'Customs' means the Government Service which is responsible for the administration of Customs law and the collection of duties and taxes and which also has the responsibility for the application of other laws and regulations relating to the importation, exportation, movement or storage of goods.</ccts:Description>
+            <ccts:Description
+            >'Customs' means the Government Service which is responsible for the administration of Customs law and the collection of duties and taxes and which also has the responsibility for the application of other laws and regulations relating to the importation, exportation, movement or storage of goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +88,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shipper</ccts:Name>
-            <ccts:Description>Party which, by contract with a carrier, consigns or sends goods with the carrier, or has them conveyed by him.</ccts:Description>
+            <ccts:Description
+            >Party which, by contract with a carrier, consigns or sends goods with the carrier, or has them conveyed by him.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +97,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Terminal operator</ccts:Name>
-            <ccts:Description>Party which handles the loading and unloading of marine vessels.</ccts:Description>
+            <ccts:Description
+            >Party which handles the loading and unloading of marine vessels.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== TenderResultNotice Schema Module                           ===== -->
 <!-- ====================================================================== -->
@@ -15,22 +15,42 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rsm="urn:un:unece:uncefact:data:standard:TenderResultNotice:23" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27" xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27" targetNamespace="urn:un:unece:uncefact:data:standard:TenderResultNotice:23" elementFormDefault="qualified" attributeFormDefault="unqualified" version="23.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:rsm="urn:un:unece:uncefact:data:standard:TenderResultNotice:23"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27"
+  xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27"
+  xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27"
+  targetNamespace="urn:un:unece:uncefact:data:standard:TenderResultNotice:23"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="23.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Imports                                                     ===== -->
 <!-- ======================================================================= -->
 <!-- ======================================================================= -->
 <!-- ===== Import of Unqualified Data Type Schema Module               ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27" schemaLocation="UnqualifiedDataType_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27"
+    schemaLocation="UnqualifiedDataType_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Import of Qualified Data Type Schema Module                 ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27" schemaLocation="QualifiedDataType_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27"
+    schemaLocation="QualifiedDataType_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27" schemaLocation="ReusableAggregateBusinessInformationEntity_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27"
+    schemaLocation="ReusableAggregateBusinessInformationEntity_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
@@ -43,9 +63,11 @@ This document and the information contained herein is provided on an "AS IS" bas
         <ccts:Acronym>RSM</ccts:Acronym>
         <ccts:Name>TenderResultNotice</ccts:Name>
         <ccts:Version>1.0</ccts:Version>
-        <ccts:Definition>A message by which the procuring organization notifies the tenderer of the tendering result.</ccts:Definition>
+        <ccts:Definition
+        >A message by which the procuring organization notifies the tenderer of the tendering result.</ccts:Definition>
         <ccts:BusinessProcessContextValue>Tendering</ccts:BusinessProcessContextValue>
-        <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+        <ccts:GeopoliticalOrRegionContextValue
+        >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
         <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
         <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
         <ccts:IndustryContextValue>In All Contexts</ccts:IndustryContextValue>
@@ -67,10 +89,12 @@ This document and the information contained herein is provided on an "AS IS" bas
         <ccts:Acronym>MA</ccts:Acronym>
         <ccts:DictionaryEntryName>Tender Result Notice. Details</ccts:DictionaryEntryName>
         <ccts:Version>1.0</ccts:Version>
-        <ccts:Definition>A message by which the procuring organization notifies the tenderer of the tendering result.</ccts:Definition>
+        <ccts:Definition
+        >A message by which the procuring organization notifies the tenderer of the tendering result.</ccts:Definition>
         <ccts:ObjectClassTerm>Tender Result Notice</ccts:ObjectClassTerm>
         <ccts:BusinessProcessContextValue>Tendering</ccts:BusinessProcessContextValue>
-        <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+        <ccts:GeopoliticalOrRegionContextValue
+        >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
         <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
         <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
         <ccts:IndustryContextValue>In All Contexts</ccts:IndustryContextValue>
@@ -80,28 +104,38 @@ This document and the information contained herein is provided on an "AS IS" bas
       </xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="TenderResultNoticeDocument" type="ram:TenderResultNoticeDocumentType" minOccurs="1">
+      <xsd:element
+        name="TenderResultNoticeDocument"
+        type="ram:TenderResultNoticeDocumentType"
+        minOccurs="1"
+      >
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>ETR101810</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>Tender Result Notice. Tender Result Notice_ Document</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >Tender Result Notice. Tender Result Notice_ Document</ccts:DictionaryEntryName>
             <ccts:Version>0.1</ccts:Version>
-            <ccts:Definition>Tender Result Notice Document for this Tender Result Notice message.</ccts:Definition>
+            <ccts:Definition
+            >Tender Result Notice Document for this Tender Result Notice message.</ccts:Definition>
             <ccts:Cardinality>1</ccts:Cardinality>
             <ccts:ObjectClassTerm>Tender Result Notice</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Document</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>Tender Result Notice</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >Tender Result Notice</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>Tendering</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
             <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
             <ccts:IndustryContextValue>In All Contexts</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -110,23 +144,29 @@ This document and the information contained herein is provided on an "AS IS" bas
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>ETR101820</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>Tender Result Notice. Procuring_ Project</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >Tender Result Notice. Procuring_ Project</ccts:DictionaryEntryName>
             <ccts:Version>0.1</ccts:Version>
-            <ccts:Definition>Procuring Project for this Tender Result Notice message.</ccts:Definition>
+            <ccts:Definition
+            >Procuring Project for this Tender Result Notice message.</ccts:Definition>
             <ccts:Cardinality>1</ccts:Cardinality>
             <ccts:ObjectClassTerm>Tender Result Notice</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Project</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>Procuring</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >Procuring</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>In All Contexts</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
             <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
             <ccts:IndustryContextValue>In All Contexts</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -135,23 +175,29 @@ This document and the information contained herein is provided on an "AS IS" bas
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>ETR101830</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>Tender Result Notice. Procuring_ Organization</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >Tender Result Notice. Procuring_ Organization</ccts:DictionaryEntryName>
             <ccts:Version>0.1</ccts:Version>
-            <ccts:Definition>Procuring Organization for this Tender Result Notice message.</ccts:Definition>
+            <ccts:Definition
+            >Procuring Organization for this Tender Result Notice message.</ccts:Definition>
             <ccts:Cardinality>1</ccts:Cardinality>
             <ccts:ObjectClassTerm>Tender Result Notice</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Organization</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>Procuring</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >Procuring</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>Procurement</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
             <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
             <ccts:IndustryContextValue>In All Contexts</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -160,23 +206,29 @@ This document and the information contained herein is provided on an "AS IS" bas
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>ETR101840</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>Tender Result Notice. Tenderer_ Organization</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >Tender Result Notice. Tenderer_ Organization</ccts:DictionaryEntryName>
             <ccts:Version>0.1</ccts:Version>
-            <ccts:Definition>Tenderer Organization for this Tender Result Notice message.</ccts:Definition>
+            <ccts:Definition
+            >Tenderer Organization for this Tender Result Notice message.</ccts:Definition>
             <ccts:Cardinality>1</ccts:Cardinality>
             <ccts:ObjectClassTerm>Tender Result Notice</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Organization</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>Tenderer</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >Tenderer</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>Tendering</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
             <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
             <ccts:IndustryContextValue>In All Contexts</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
@@ -185,48 +237,65 @@ This document and the information contained herein is provided on an "AS IS" bas
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>ETR101850</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>Tender Result Notice. Tendering_ Tender Result</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >Tender Result Notice. Tendering_ Tender Result</ccts:DictionaryEntryName>
             <ccts:Version>0.1</ccts:Version>
-            <ccts:Definition>Tendering Tender Result for this Tender Result Notice message.</ccts:Definition>
+            <ccts:Definition
+            >Tendering Tender Result for this Tender Result Notice message.</ccts:Definition>
             <ccts:Cardinality>1</ccts:Cardinality>
             <ccts:ObjectClassTerm>Tender Result Notice</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Tender Result</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>Tendering</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >Tendering</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>Tendering</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
             <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
             <ccts:IndustryContextValue>In All Contexts</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="TenderingContractAwardNotice" type="ram:TenderingContractAwardNoticeType" minOccurs="0" maxOccurs="unbounded">
+      <xsd:element
+        name="TenderingContractAwardNotice"
+        type="ram:TenderingContractAwardNoticeType"
+        minOccurs="0"
+        maxOccurs="unbounded"
+      >
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>ETR101860</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>Tender Result Notice. Tendering_ Contract Award Notice</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >Tender Result Notice. Tendering_ Contract Award Notice</ccts:DictionaryEntryName>
             <ccts:Version>0.1</ccts:Version>
-            <ccts:Definition>Tendering Contract Award Notice for this Tender Result Notice message.</ccts:Definition>
+            <ccts:Definition
+            >Tendering Contract Award Notice for this Tender Result Notice message.</ccts:Definition>
             <ccts:Cardinality>0..n</ccts:Cardinality>
             <ccts:ObjectClassTerm>Tender Result Notice</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Contract Award Notice</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>Tendering</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >Tendering</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>Tendering</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
             <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
             <ccts:IndustryContextValue>In All Contexts</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>

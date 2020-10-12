@@ -5,8 +5,18 @@
     { "Id": "UNH" },
     { "Id": "BGM" },
     { "Id": "DTM", "Min": 0, "Max": 9 },
-    { "Id": "DOCLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "DOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "DOCLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "DOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
     {
       "Id": "NADLoop1",
       "Min": 0,
@@ -15,11 +25,25 @@
         { "Id": "NAD" },
         { "Id": "LOC", "Min": 0, "Max": 9 },
         { "Id": "RFFLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }] },
-        { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        }
       ]
     },
     { "Id": "TDTLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "TDT" }] },
-    { "Id": "ALCLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "ALC" }, { "Id": "DTM", "Min": 0, "Max": 9 }, { "Id": "MOA", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "ALCLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [
+        { "Id": "ALC" },
+        { "Id": "DTM", "Min": 0, "Max": 9 },
+        { "Id": "MOA", "Min": 0, "Max": 9 }
+      ]
+    },
     {
       "Id": "LINLoop1",
       "Min": 0,
@@ -78,7 +102,16 @@
             }
           ]
         },
-        { "Id": "ALCLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "ALC" }, { "Id": "DTM", "Min": 0, "Max": 9 }, { "Id": "MOA", "Min": 0, "Max": 9 }] }
+        {
+          "Id": "ALCLoop2",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [
+            { "Id": "ALC" },
+            { "Id": "DTM", "Min": 0, "Max": 9 },
+            { "Id": "MOA", "Min": 0, "Max": 9 }
+          ]
+        }
       ]
     },
     { "Id": "UNS" },

@@ -32,7 +32,12 @@
             { "Id": "SSD", "Min": 0, "Max": 99 },
             { "Id": "SSR", "Min": 0, "Max": 99 },
             { "Id": "CRI", "Min": 0 },
-            { "Id": "ADDLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "PAX" }, { "Id": "SPI", "Min": 0 }, { "Id": "ADD", "Min": 0 }] }
+            {
+              "Id": "ADDLoop1",
+              "Min": 0,
+              "Max": 2,
+              "Loop": [{ "Id": "PAX" }, { "Id": "SPI", "Min": 0 }, { "Id": "ADD", "Min": 0 }]
+            }
           ]
         },
         {
@@ -54,8 +59,18 @@
             { "Id": "SSD", "Min": 0, "Max": 99 },
             { "Id": "SSR", "Min": 0, "Max": 99 },
             { "Id": "CRI", "Min": 0 },
-            { "Id": "STDLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "TIF" }, { "Id": "STD", "Min": 0 }] },
-            { "Id": "ADDLoop2", "Min": 0, "Max": 2, "Loop": [{ "Id": "PAX" }, { "Id": "SPI", "Min": 0 }, { "Id": "ADD", "Min": 0 }] }
+            {
+              "Id": "STDLoop1",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "TIF" }, { "Id": "STD", "Min": 0 }]
+            },
+            {
+              "Id": "ADDLoop2",
+              "Min": 0,
+              "Max": 2,
+              "Loop": [{ "Id": "PAX" }, { "Id": "SPI", "Min": 0 }, { "Id": "ADD", "Min": 0 }]
+            }
           ]
         }
       ]

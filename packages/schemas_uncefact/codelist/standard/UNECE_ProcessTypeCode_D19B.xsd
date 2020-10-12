@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 67187 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm67187="urn:un:unece:uncefact:codelist:standard:UNECE:ProcessTypeCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ProcessTypeCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.5">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm67187="urn:un:unece:uncefact:codelist:standard:UNECE:ProcessTypeCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ProcessTypeCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.5"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="ProcessTypeCode" type="clm67187:ProcessTypeCodeContentType"/>
+  <xsd:element name="ProcessTypeCode" type="clm67187:ProcessTypeCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -69,7 +77,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bleaching</ccts:Name>
-            <ccts:Description>Removing colour by treatment with an oxidizing agent (a bleach).</ccts:Description>
+            <ccts:Description
+            >Removing colour by treatment with an oxidizing agent (a bleach).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,23 +102,28 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Processing of structured information</ccts:Name>
-            <ccts:Description>The information to be processed is in structured form.</ccts:Description>
+            <ccts:Description
+            >The information to be processed is in structured form.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="9">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Processing of identical information in structured and unstructured form</ccts:Name>
-            <ccts:Description>The information to be processed is identical and given in structured and unstructured form.</ccts:Description>
+            <ccts:Name
+            >Processing of identical information in structured and unstructured form</ccts:Name>
+            <ccts:Description
+            >The information to be processed is identical and given in structured and unstructured form.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="10">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Processing of different information in structured and unstructured form</ccts:Name>
-            <ccts:Description>The information to be processed is different and is given in structured and unstructured form.</ccts:Description>
+            <ccts:Name
+            >Processing of different information in structured and unstructured form</ccts:Name>
+            <ccts:Description
+            >The information to be processed is different and is given in structured and unstructured form.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +131,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Processing of unstructured information</ccts:Name>
-            <ccts:Description>The information to be processed is in unstructured form.</ccts:Description>
+            <ccts:Description
+            >The information to be processed is in unstructured form.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +196,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Acceptance of business conditions</ccts:Name>
-            <ccts:Description>Code specifying the process of accepting the terms and conditions under which business will be conducted.</ccts:Description>
+            <ccts:Description
+            >Code specifying the process of accepting the terms and conditions under which business will be conducted.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -229,7 +245,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Specialist medical service</ccts:Name>
-            <ccts:Description>The provision of specialist medical services, other than pathology or radiology.</ccts:Description>
+            <ccts:Description
+            >The provision of specialist medical services, other than pathology or radiology.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -237,7 +254,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Dispensing of medicine</ccts:Name>
-            <ccts:Description>The process performed by a pharmacist to prepare and dispense medicine according to a prescription.</ccts:Description>
+            <ccts:Description
+            >The process performed by a pharmacist to prepare and dispense medicine according to a prescription.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -293,7 +311,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Collecting</ccts:Name>
-            <ccts:Description>To gather or extract from a number of persons or sources.</ccts:Description>
+            <ccts:Description
+            >To gather or extract from a number of persons or sources.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -301,7 +320,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cutting</ccts:Name>
-            <ccts:Description>To penetrate with or as if with an edged instrument.</ccts:Description>
+            <ccts:Description
+            >To penetrate with or as if with an edged instrument.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +353,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Preserving</ccts:Name>
-            <ccts:Description>To can, pickle, or similarly prepare for future use.</ccts:Description>
+            <ccts:Description
+            >To can, pickle, or similarly prepare for future use.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -341,7 +362,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Processing</ccts:Name>
-            <ccts:Description>To subject to or handle through an established usually routine set of procedures.</ccts:Description>
+            <ccts:Description
+            >To subject to or handle through an established usually routine set of procedures.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +379,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Rendering (agriculture)</ccts:Name>
-            <ccts:Description>To extract by melting in order to extract proteins, fats, and other usable parts.</ccts:Description>
+            <ccts:Description
+            >To extract by melting in order to extract proteins, fats, and other usable parts.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -373,7 +396,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Storing</ccts:Name>
-            <ccts:Description>To place or leave in a location (as a warehouse, library, or computer memory) for preservation.</ccts:Description>
+            <ccts:Description
+            >To place or leave in a location (as a warehouse, library, or computer memory) for preservation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -381,7 +405,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transferring</ccts:Name>
-            <ccts:Description>To convey from one person, place, or situation to another.</ccts:Description>
+            <ccts:Description
+            >To convey from one person, place, or situation to another.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -413,7 +438,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Metals recovery</ccts:Name>
-            <ccts:Description>The process of recovering metals e.g. retorting, smelting, chemical process.</ccts:Description>
+            <ccts:Description
+            >The process of recovering metals e.g. retorting, smelting, chemical process.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -421,7 +447,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Solvents recovery</ccts:Name>
-            <ccts:Description>The process of recovering solvents e.g. distillation, extraction.</ccts:Description>
+            <ccts:Description
+            >The process of recovering solvents e.g. distillation, extraction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -429,7 +456,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Recovery for reuse</ccts:Name>
-            <ccts:Description>The process of recovering (reclaiming) materials for reuse, e.g. acid regeneration, organics recovery.</ccts:Description>
+            <ccts:Description
+            >The process of recovering (reclaiming) materials for reuse, e.g. acid regeneration, organics recovery.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -437,7 +465,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Incineration</ccts:Name>
-            <ccts:Description>The process of destruction through the application of heat.</ccts:Description>
+            <ccts:Description
+            >The process of destruction through the application of heat.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -445,7 +474,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>On-site fuel recovery</ccts:Name>
-            <ccts:Description>The process of recovering a material for reuse as a fuel on the same site.</ccts:Description>
+            <ccts:Description
+            >The process of recovering a material for reuse as a fuel on the same site.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -469,7 +499,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cyanide destruction</ccts:Name>
-            <ccts:Description>The process of destruction through the application of cyanide.</ccts:Description>
+            <ccts:Description
+            >The process of destruction through the application of cyanide.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -541,7 +572,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Stabilization</ccts:Name>
-            <ccts:Description>The process of stabilization e.g. chemical fixation.</ccts:Description>
+            <ccts:Description
+            >The process of stabilization e.g. chemical fixation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -589,7 +621,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Landfill or surface impoundment disposal</ccts:Name>
-            <ccts:Description>The process of disposing waste as landfill or in a surface impoundment that will be closed as landfill.</ccts:Description>
+            <ccts:Description
+            >The process of disposing waste as landfill or in a surface impoundment that will be closed as landfill.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -597,7 +630,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Deep well or underground injection</ccts:Name>
-            <ccts:Description>The process of filling up a deep well or underground pocket.</ccts:Description>
+            <ccts:Description
+            >The process of filling up a deep well or underground pocket.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -605,7 +639,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Discharge to sewer</ccts:Name>
-            <ccts:Description>The process of discharging materials into the public sewer system.</ccts:Description>
+            <ccts:Description
+            >The process of discharging materials into the public sewer system.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -613,7 +648,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Collection and storage, temporary</ccts:Name>
-            <ccts:Description>The process of collecting and temporarily storing objects.</ccts:Description>
+            <ccts:Description
+            >The process of collecting and temporarily storing objects.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -829,7 +865,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Land treatment or application</ccts:Name>
-            <ccts:Description>The process of using bio remediation for treating waste e.g. Tilling the land for aerating the waste.</ccts:Description>
+            <ccts:Description
+            >The process of using bio remediation for treating waste e.g. Tilling the land for aerating the waste.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -837,7 +874,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pasteurization</ccts:Name>
-            <ccts:Description>A process of heating a food, usually liquid, to a specific temperature for a definite length of time, and then cooling it immediately.</ccts:Description>
+            <ccts:Description
+            >A process of heating a food, usually liquid, to a specific temperature for a definite length of time, and then cooling it immediately.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -845,7 +883,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Mutually defined</ccts:Name>
-            <ccts:Description>Process type mutually agreed between interchanging parties.</ccts:Description>
+            <ccts:Description
+            >Process type mutually agreed between interchanging parties.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

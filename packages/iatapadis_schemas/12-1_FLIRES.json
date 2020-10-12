@@ -32,7 +32,12 @@
             { "Id": "PDI", "Min": 0 },
             { "Id": "CAR", "Min": 0 },
             { "Id": "TRF", "Min": 0 },
-            { "Id": "PDILoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "EQI" }, { "Id": "PDI", "Min": 0 }] }
+            {
+              "Id": "PDILoop2",
+              "Min": 0,
+              "Max": 5,
+              "Loop": [{ "Id": "EQI" }, { "Id": "PDI", "Min": 0 }]
+            }
           ]
         }
       ]

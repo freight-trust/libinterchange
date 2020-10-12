@@ -21,7 +21,12 @@
         { "Id": "DAT", "Min": 0 },
         { "Id": "IFT", "Min": 0 },
         { "Id": "CHD", "Min": 0 },
-        { "Id": "IFTLoop3", "Min": 0, "Max": 9, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+        {
+          "Id": "IFTLoop3",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+        },
         {
           "Id": "IFTLoop4",
           "Min": 0,
@@ -30,7 +35,12 @@
             { "Id": "TIF" },
             { "Id": "STD", "Min": 0 },
             { "Id": "IFT", "Min": 0 },
-            { "Id": "IFTLoop5", "Min": 0, "Max": 9, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }
+            {
+              "Id": "IFTLoop5",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+            }
           ]
         },
         {
@@ -50,14 +60,29 @@
             { "Id": "FTI", "Min": 0 },
             { "Id": "IFT", "Min": 0, "Max": 9 },
             { "Id": "TPD", "Min": 0 },
-            { "Id": "RPILoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "TVL" }, { "Id": "RPI", "Min": 0 }] },
+            {
+              "Id": "RPILoop2",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "TVL" }, { "Id": "RPI", "Min": 0 }]
+            },
             { "Id": "SSD", "Min": 0, "Max": 99 },
             { "Id": "SSR", "Min": 0, "Max": 99 },
             { "Id": "CRI", "Min": 0 },
             { "Id": "DAT", "Min": 0 },
             { "Id": "TAI", "Min": 0 },
-            { "Id": "IFTLoop7", "Min": 0, "Max": 9, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
-            { "Id": "ADDLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "PAX" }, { "Id": "SPI", "Min": 0 }, { "Id": "ADD", "Min": 0 }] }
+            {
+              "Id": "IFTLoop7",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+            },
+            {
+              "Id": "ADDLoop1",
+              "Min": 0,
+              "Max": 2,
+              "Loop": [{ "Id": "PAX" }, { "Id": "SPI", "Min": 0 }, { "Id": "ADD", "Min": 0 }]
+            }
           ]
         }
       ]

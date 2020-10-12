@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 62475_Payment Terms Event - Code List Schema Module        ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm62475PaymentTermsEvent="urn:un:unece:uncefact:codelist:standard:UNECE:EventTimeReferenceCodePaymentTermsEvent:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:EventTimeReferenceCodePaymentTermsEvent:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm62475PaymentTermsEvent="urn:un:unece:uncefact:codelist:standard:UNECE:EventTimeReferenceCodePaymentTermsEvent:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:EventTimeReferenceCodePaymentTermsEvent:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="EventTimeReferenceCodePaymentTermsEvent" type="clm62475PaymentTermsEvent:EventTimeReferenceCodePaymentTermsEventContentType"/>
+  <xsd:element
+    name="EventTimeReferenceCodePaymentTermsEvent"
+    type="clm62475PaymentTermsEvent:EventTimeReferenceCodePaymentTermsEventContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -45,7 +56,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Date ex-works</ccts:Name>
-            <ccts:Description>Payment time reference is date when goods are leaving the sellers factory.</ccts:Description>
+            <ccts:Description
+            >Payment time reference is date when goods are leaving the sellers factory.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,15 +65,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Date of delivery of goods to establishments/domicile/site</ccts:Name>
-            <ccts:Description>Date the goods are delivered at agreed place of destination.</ccts:Description>
+            <ccts:Description
+            >Date the goods are delivered at agreed place of destination.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="45">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Date of bill of lading, consignment note or other transport document</ccts:Name>
-            <ccts:Description>The date of issuance of a bill of lading, consignment note or similar transport document.</ccts:Description>
+            <ccts:Name
+            >Date of bill of lading, consignment note or other transport document</ccts:Name>
+            <ccts:Description
+            >The date of issuance of a bill of lading, consignment note or similar transport document.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +84,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Date of presentation of documents</ccts:Name>
-            <ccts:Description>Payment time reference is the date when documents are presented.</ccts:Description>
+            <ccts:Description
+            >Payment time reference is the date when documents are presented.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

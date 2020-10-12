@@ -13,7 +13,12 @@
       "Loop": [
         { "Id": "SDT" },
         { "Id": "TAI", "Min": 0 },
-        { "Id": "SQULoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "QUE" }, { "Id": "SQU", "Min": 0, "Max": 999 }] }
+        {
+          "Id": "SQULoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [{ "Id": "QUE" }, { "Id": "SQU", "Min": 0, "Max": 999 }]
+        }
       ]
     },
     { "Id": "UNT" }

@@ -43,7 +43,12 @@
         { "Id": "SEQ", "Min": 0 },
         { "Id": "RFF", "Min": 0, "Max": 99 },
         { "Id": "DTM", "Min": 0, "Max": 99 },
-        { "Id": "ICDLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "ICD" }, { "Id": "FTX", "Min": 0, "Max": 9 }] }
+        {
+          "Id": "ICDLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [{ "Id": "ICD" }, { "Id": "FTX", "Min": 0, "Max": 9 }]
+        }
       ]
     },
     {
@@ -57,7 +62,12 @@
           "Id": "PNALoop2",
           "Min": 0,
           "Max": 9,
-          "Loop": [{ "Id": "PNA" }, { "Id": "ADR", "Min": 0, "Max": 9 }, { "Id": "STS", "Min": 0 }, { "Id": "RCS", "Min": 0, "Max": 9 }]
+          "Loop": [
+            { "Id": "PNA" },
+            { "Id": "ADR", "Min": 0, "Max": 9 },
+            { "Id": "STS", "Min": 0 },
+            { "Id": "RCS", "Min": 0, "Max": 9 }
+          ]
         }
       ]
     },
@@ -73,8 +83,18 @@
         { "Id": "FTX", "Min": 0, "Max": 99 },
         { "Id": "AGR", "Min": 0, "Max": 99 },
         { "Id": "DOC", "Min": 0, "Max": 9 },
-        { "Id": "MOALoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }] },
-        { "Id": "RCSLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 9 }] },
+        {
+          "Id": "MOALoop2",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }]
+        },
+        {
+          "Id": "RCSLoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 9 }]
+        },
         {
           "Id": "PNALoop3",
           "Min": 0,
@@ -113,10 +133,25 @@
               "Id": "PASLoop1",
               "Min": 0,
               "Max": 99,
-              "Loop": [{ "Id": "PAS" }, { "Id": "LOC", "Min": 0, "Max": 9 }, { "Id": "DTM", "Min": 0, "Max": 9 }, { "Id": "RFF", "Min": 0, "Max": 9 }]
+              "Loop": [
+                { "Id": "PAS" },
+                { "Id": "LOC", "Min": 0, "Max": 9 },
+                { "Id": "DTM", "Min": 0, "Max": 9 },
+                { "Id": "RFF", "Min": 0, "Max": 9 }
+              ]
             },
-            { "Id": "MOALoop3", "Min": 0, "Max": 99, "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }] },
-            { "Id": "RCSLoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 9 }] },
+            {
+              "Id": "MOALoop3",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }]
+            },
+            {
+              "Id": "RCSLoop2",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 9 }]
+            },
             {
               "Id": "CLILoop1",
               "Min": 0,
@@ -133,9 +168,24 @@
                 { "Id": "QTY", "Min": 0, "Max": 99 },
                 { "Id": "PCD", "Min": 0, "Max": 99 },
                 { "Id": "PAC", "Min": 0, "Max": 9 },
-                { "Id": "MOALoop4", "Min": 0, "Max": 99, "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }] },
-                { "Id": "RCSLoop3", "Min": 0, "Max": 99, "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 9 }] },
-                { "Id": "EQDLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "EQD" }, { "Id": "SEQ", "Min": 0 }] }
+                {
+                  "Id": "MOALoop4",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }]
+                },
+                {
+                  "Id": "RCSLoop3",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 9 }]
+                },
+                {
+                  "Id": "EQDLoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "EQD" }, { "Id": "SEQ", "Min": 0 }]
+                }
               ]
             }
           ]
@@ -164,8 +214,18 @@
             { "Id": "FTX", "Min": 0, "Max": 99 },
             { "Id": "CIN", "Min": 0, "Max": 99 },
             { "Id": "QTY", "Min": 0, "Max": 99 },
-            { "Id": "ADRLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "ADR" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-            { "Id": "TSRLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "TSR" }, { "Id": "FTX", "Min": 0, "Max": 9 }] },
+            {
+              "Id": "ADRLoop1",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "ADR" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+            },
+            {
+              "Id": "TSRLoop1",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "TSR" }, { "Id": "FTX", "Min": 0, "Max": 9 }]
+            },
             {
               "Id": "TCCLoop1",
               "Min": 0,
@@ -179,15 +239,30 @@
                 { "Id": "FTX", "Min": 0, "Max": 99 },
                 { "Id": "QTY", "Min": 0, "Max": 99 },
                 { "Id": "PCD", "Min": 0, "Max": 99 },
-                { "Id": "MOALoop5", "Min": 0, "Max": 99, "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }] },
-                { "Id": "TSRLoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "TSR" }, { "Id": "FTX", "Min": 0, "Max": 9 }] }
+                {
+                  "Id": "MOALoop5",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }]
+                },
+                {
+                  "Id": "TSRLoop2",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "TSR" }, { "Id": "FTX", "Min": 0, "Max": 9 }]
+                }
               ]
             }
           ]
         }
       ]
     },
-    { "Id": "AUTLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
     { "Id": "UNT" }
   ]
 }

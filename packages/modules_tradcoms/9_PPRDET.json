@@ -19,7 +19,12 @@
               "Max": "unbounded",
               "Loop": [
                 { "Id": "PLO" },
-                { "Id": "SFPLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "SFP" }, { "Id": "SFS", "Min": 0, "Max": "unbounded" }] }
+                {
+                  "Id": "SFPLoop1",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [{ "Id": "SFP" }, { "Id": "SFS", "Min": 0, "Max": "unbounded" }]
+                }
               ]
             },
             {
@@ -28,7 +33,12 @@
               "Max": "unbounded",
               "Loop": [
                 { "Id": "SFC" },
-                { "Id": "SFXLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "SFX" }, { "Id": "RFD", "Min": 0, "Max": "unbounded" }] }
+                {
+                  "Id": "SFXLoop1",
+                  "Min": 0,
+                  "Max": "unbounded",
+                  "Loop": [{ "Id": "SFX" }, { "Id": "RFD", "Min": 0, "Max": "unbounded" }]
+                }
               ]
             }
           ]

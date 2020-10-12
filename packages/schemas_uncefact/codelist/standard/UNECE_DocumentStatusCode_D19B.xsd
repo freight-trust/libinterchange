@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 61373 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm61373="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentStatusCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentStatusCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.7">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm61373="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentStatusCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentStatusCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.7"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="DocumentStatusCode" type="clm61373:DocumentStatusCodeContentType"/>
+  <xsd:element name="DocumentStatusCode" type="clm61373:DocumentStatusCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -45,7 +53,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Accompanying goods</ccts:Name>
-            <ccts:Description>Notice that a specific document will be accompanying the goods.</ccts:Description>
+            <ccts:Description
+            >Notice that a specific document will be accompanying the goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +70,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>To arrive by separate EDI message</ccts:Name>
-            <ccts:Description>Notice that a specific document/message will be transmitted via a separate EDI message.</ccts:Description>
+            <ccts:Description
+            >Notice that a specific document/message will be transmitted via a separate EDI message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +79,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Information only</ccts:Name>
-            <ccts:Description>Notice that the specific document or message is for information only.</ccts:Description>
+            <ccts:Description
+            >Notice that the specific document or message is for information only.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +88,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>To arrive by manual means</ccts:Name>
-            <ccts:Description>Notice that a specific document or message will not be sent via EDI.</ccts:Description>
+            <ccts:Description
+            >Notice that a specific document or message will not be sent via EDI.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +97,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>To be raised and sent</ccts:Name>
-            <ccts:Description>Request for a specific message to be formatted and transmitted or a request for a specific document to be raised and sent.</ccts:Description>
+            <ccts:Description
+            >Request for a specific message to be formatted and transmitted or a request for a specific document to be raised and sent.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,7 +138,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Document exhausted by declaration and attached</ccts:Name>
-            <ccts:Description>Customs declaration to which the document is related completed or exhaust the allowance stated on the document. The document is attached to the Customs declaration.</ccts:Description>
+            <ccts:Description
+            >Customs declaration to which the document is related completed or exhaust the allowance stated on the document. The document is attached to the Customs declaration.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +147,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Document not exhausted by declaration and attached</ccts:Name>
-            <ccts:Description>Customs declaration to which the document is related does not complete or exhaust the allowance stated on the document . The document is not attached to the declaration but has already been lodged in the Customs station.</ccts:Description>
+            <ccts:Description
+            >Customs declaration to which the document is related does not complete or exhaust the allowance stated on the document . The document is not attached to the declaration but has already been lodged in the Customs station.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +156,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Document exhausted by declaration and previously lodged</ccts:Name>
-            <ccts:Description>Customs declaration to which the document is related completed or exhaust the allowance stated on the document. The usage of the document is complete. The document is not attached to the declaration but has already been lodged in the Customs station.</ccts:Description>
+            <ccts:Description
+            >Customs declaration to which the document is related completed or exhaust the allowance stated on the document. The usage of the document is complete. The document is not attached to the declaration but has already been lodged in the Customs station.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +165,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Document not exhausted by declaration and previously lodged</ccts:Name>
-            <ccts:Description>Customs declaration to which the document is related does not complete or exhaust the allowance stated on the document. The document can continue to be used for future declarations until the allowance is exhausted. The document is not attached to the declaration but has already been lodged in the Customs station.</ccts:Description>
+            <ccts:Description
+            >Customs declaration to which the document is related does not complete or exhaust the allowance stated on the document. The document can continue to be used for future declarations until the allowance is exhausted. The document is not attached to the declaration but has already been lodged in the Customs station.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +182,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Document with the goods</ccts:Name>
-            <ccts:Description>Document not attached to the Customs declaration but is attached to the goods.</ccts:Description>
+            <ccts:Description
+            >Document not attached to the Customs declaration but is attached to the goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +191,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Document attached, to be returned after endorsement</ccts:Name>
-            <ccts:Description>Specified document is attached to the Customs declaration and will be required to be returned to the declarant after Customs endorsement.</ccts:Description>
+            <ccts:Description
+            >Specified document is attached to the Customs declaration and will be required to be returned to the declarant after Customs endorsement.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +208,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Received for shipment</ccts:Name>
-            <ccts:Description>Indicates that the document has legal validity from the date of receival of the cargo.</ccts:Description>
+            <ccts:Description
+            >Indicates that the document has legal validity from the date of receival of the cargo.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +217,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shipped on board</ccts:Name>
-            <ccts:Description>Indicates that the document has legal validity from the date that cargo is loaded on board a vessel.</ccts:Description>
+            <ccts:Description
+            >Indicates that the document has legal validity from the date that cargo is loaded on board a vessel.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -269,7 +290,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Documents enclosed in the first transmission</ccts:Name>
-            <ccts:Description>The documents are enclosed in the first transmission.</ccts:Description>
+            <ccts:Description
+            >The documents are enclosed in the first transmission.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -277,7 +299,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Documents enclosed in the second transmission</ccts:Name>
-            <ccts:Description>The documents are enclosed in the second transmission.</ccts:Description>
+            <ccts:Description
+            >The documents are enclosed in the second transmission.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -285,7 +308,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Document not required, waiver issued</ccts:Name>
-            <ccts:Description>The document is not required, waiver of requirement has been issued.</ccts:Description>
+            <ccts:Description
+            >The document is not required, waiver of requirement has been issued.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -293,15 +317,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Already on file with receiver of this message</ccts:Name>
-            <ccts:Description>The document is already on file with the party receiving the message.</ccts:Description>
+            <ccts:Description
+            >The document is already on file with the party receiving the message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="34">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Retained by sender of this message, or by sender's agent or representative</ccts:Name>
-            <ccts:Description>The document is in the possession of the sender or sender's agent or representative.</ccts:Description>
+            <ccts:Name
+            >Retained by sender of this message, or by sender's agent or representative</ccts:Name>
+            <ccts:Description
+            >The document is in the possession of the sender or sender's agent or representative.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -341,7 +368,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>On hold</ccts:Name>
-            <ccts:Description>The document or message will not be processed until further release information.</ccts:Description>
+            <ccts:Description
+            >The document or message will not be processed until further release information.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -349,7 +377,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Validity suspended</ccts:Name>
-            <ccts:Description>The validity of the document is or has been suspended.</ccts:Description>
+            <ccts:Description
+            >The validity of the document is or has been suspended.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +386,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Validity revoked</ccts:Name>
-            <ccts:Description>The validity of the document is or has been revoked.</ccts:Description>
+            <ccts:Description
+            >The validity of the document is or has been revoked.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 69655 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm69655="urn:un:unece:uncefact:codelist:standard:UNECE:CostReportingCode:D10B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:CostReportingCode:D10B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm69655="urn:un:unece:uncefact:codelist:standard:UNECE:CostReportingCode:D10B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:CostReportingCode:D10B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="1.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="CostReportingCode" type="clm69655:CostReportingCodeContentType"/>
+  <xsd:element name="CostReportingCode" type="clm69655:CostReportingCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cost Of Money</ccts:Name>
-            <ccts:Description>The cost of funds borrowed to finance project work effort.</ccts:Description>
+            <ccts:Description
+            >The cost of funds borrowed to finance project work effort.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +54,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Direct Plus Overhead</ccts:Name>
-            <ccts:Description>The direct costs plus overhead or indirect costs required to complete a unit of work excluding general and administrative indirect costs.</ccts:Description>
+            <ccts:Description
+            >The direct costs plus overhead or indirect costs required to complete a unit of work excluding general and administrative indirect costs.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +63,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Management Reserve</ccts:Name>
-            <ccts:Description>The contingency amount designated for project unknowns and risk handling rather than designated for project work effort.</ccts:Description>
+            <ccts:Description
+            >The contingency amount designated for project unknowns and risk handling rather than designated for project work effort.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +72,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Overhead</ccts:Name>
-            <ccts:Description>The indirect costs required to complete a unit of work excluding general and administrative indirect costs.</ccts:Description>
+            <ccts:Description
+            >The indirect costs required to complete a unit of work excluding general and administrative indirect costs.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +81,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Undistributed Budget</ccts:Name>
-            <ccts:Description>The budget amount applicable to project work effort that has not yet been assigned to a defined element of work.</ccts:Description>
+            <ccts:Description
+            >The budget amount applicable to project work effort that has not yet been assigned to a defined element of work.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +114,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Direct Reporting Subcontractor</ccts:Name>
-            <ccts:Description>Costs related to a subcontractor that reports directly to the responsible contractor.</ccts:Description>
+            <ccts:Description
+            >Costs related to a subcontractor that reports directly to the responsible contractor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,7 +139,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Engineering Overhead</ccts:Name>
-            <ccts:Description>Indirect costs related to engineering labour resources required to complete a unit of work.</ccts:Description>
+            <ccts:Description
+            >Indirect costs related to engineering labour resources required to complete a unit of work.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +148,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Engineering Total</ccts:Name>
-            <ccts:Description>All costs, direct and indirect, related to engineering work.</ccts:Description>
+            <ccts:Description
+            >All costs, direct and indirect, related to engineering work.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +157,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Fee</ccts:Name>
-            <ccts:Description>Indirect costs related to cost of money or other service fees.</ccts:Description>
+            <ccts:Description
+            >Indirect costs related to cost of money or other service fees.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +166,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Fringe</ccts:Name>
-            <ccts:Description>Indirect costs related to labour, materials, or other resources required to complete a unit of work.</ccts:Description>
+            <ccts:Description
+            >Indirect costs related to labour, materials, or other resources required to complete a unit of work.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +175,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>General and administrative overhead</ccts:Name>
-            <ccts:Description>Indirect costs related to the direction, control, and administration of a company or other entity.</ccts:Description>
+            <ccts:Description
+            >Indirect costs related to the direction, control, and administration of a company or other entity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +184,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Labour overhead</ccts:Name>
-            <ccts:Description>Indirect costs related to labour resources required to complete a unit of work.</ccts:Description>
+            <ccts:Description
+            >Indirect costs related to labour resources required to complete a unit of work.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +193,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Material overhead</ccts:Name>
-            <ccts:Description>Indirect costs related to material resources required to complete a unit of work.</ccts:Description>
+            <ccts:Description
+            >Indirect costs related to material resources required to complete a unit of work.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +218,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Purchased Equipment</ccts:Name>
-            <ccts:Description>Costs related to the purchase of finished equipment.</ccts:Description>
+            <ccts:Description
+            >Costs related to the purchase of finished equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +227,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Purchased Parts</ccts:Name>
-            <ccts:Description>Costs related to the purchase of manufactured parts.</ccts:Description>
+            <ccts:Description
+            >Costs related to the purchase of manufactured parts.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

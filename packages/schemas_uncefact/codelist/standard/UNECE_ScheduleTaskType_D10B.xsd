@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 69675 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm69675="urn:un:unece:uncefact:codelist:standard:UNECE:ScheduleTaskType:D10B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ScheduleTaskType:D10B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm69675="urn:un:unece:uncefact:codelist:standard:UNECE:ScheduleTaskType:D10B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ScheduleTaskType:D10B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="2.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="ScheduleTaskType" type="clm69675:ScheduleTaskTypeContentType"/>
+  <xsd:element name="ScheduleTaskType" type="clm69675:ScheduleTaskTypeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Contractual Milestone</ccts:Name>
-            <ccts:Description>A contractual goal that must be accomplished or a key event that must occur for a project.</ccts:Description>
+            <ccts:Description
+            >A contractual goal that must be accomplished or a key event that must occur for a project.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +54,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Activity</ccts:Name>
-            <ccts:Description>An activity is a single atomic unit of work to be accomplished.</ccts:Description>
+            <ccts:Description
+            >An activity is a single atomic unit of work to be accomplished.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +71,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Hammock</ccts:Name>
-            <ccts:Description>This task type is used to create a pseudo-summary over detailed tasks that are not subordinate to this task.</ccts:Description>
+            <ccts:Description
+            >This task type is used to create a pseudo-summary over detailed tasks that are not subordinate to this task.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +80,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Milestone</ccts:Name>
-            <ccts:Description>A milestone is a specific goal to be accomplished within a project.  Milestones typically have zero duration.</ccts:Description>
+            <ccts:Description
+            >A milestone is a specific goal to be accomplished within a project.  Milestones typically have zero duration.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +97,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Summary</ccts:Name>
-            <ccts:Description>A summary task summarizes detailed subordinate activities.</ccts:Description>
+            <ccts:Description
+            >A summary task summarizes detailed subordinate activities.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

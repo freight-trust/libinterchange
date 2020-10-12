@@ -14,7 +14,12 @@
       "Loop": [
         { "Id": "NAD" },
         { "Id": "RFF", "Min": 0, "Max": 9 },
-        { "Id": "CTALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        }
       ]
     },
     { "Id": "CCILoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "CCI" }, { "Id": "CAV", "Min": 0 }] },
@@ -30,7 +35,15 @@
         {
           "Id": "CPTLoop1",
           "Max": 9,
-          "Loop": [{ "Id": "CPT" }, { "Id": "CCILoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "CCI" }, { "Id": "CAV", "Min": 0 }] }]
+          "Loop": [
+            { "Id": "CPT" },
+            {
+              "Id": "CCILoop2",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "CCI" }, { "Id": "CAV", "Min": 0 }]
+            }
+          ]
         }
       ]
     },

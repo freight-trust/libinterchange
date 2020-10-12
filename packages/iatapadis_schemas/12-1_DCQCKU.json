@@ -28,7 +28,12 @@
             { "Id": "UBD", "Min": 0 },
             { "Id": "USI", "Min": 0 },
             { "Id": "UTI", "Min": 0, "Max": 99 },
-            { "Id": "ADDLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "UAP" }, { "Id": "ADD", "Min": 0 }] }
+            {
+              "Id": "ADDLoop1",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "UAP" }, { "Id": "ADD", "Min": 0 }]
+            }
           ]
         }
       ]

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 60133 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -34,13 +34,24 @@ BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL
 NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR 
 FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm60133="urn:un:unece:uncefact:codelist:standard:6:0133:40106" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:6:0133:40106" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.3">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm60133="urn:un:unece:uncefact:codelist:standard:6:0133:40106"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:6:0133:40106"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.3"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="CharacterSetEncodingCode" type="clm60133:CharacterSetEncodingCodeContentType"/>
+  <xsd:element
+    name="CharacterSetEncodingCode"
+    type="clm60133:CharacterSetEncodingCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -68,7 +79,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Code page 500 (EBCDIC Multinational No. 5)</ccts:Name>
-            <ccts:Description>Encoding schema for the repertoire as defined by the code page.</ccts:Description>
+            <ccts:Description
+            >Encoding schema for the repertoire as defined by the code page.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -76,7 +88,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Code page 850 (IBM PC Multinational)</ccts:Name>
-            <ccts:Description>Encoding schema for the repertoire as defined by the code page.</ccts:Description>
+            <ccts:Description
+            >Encoding schema for the repertoire as defined by the code page.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -84,7 +97,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>UCS-2</ccts:Name>
-            <ccts:Description>Universal Multiple-Octet Coded Character Set (UCS) two-octet per character encoding schema as defined in ISO/IEC 10646-1.</ccts:Description>
+            <ccts:Description
+            >Universal Multiple-Octet Coded Character Set (UCS) two-octet per character encoding schema as defined in ISO/IEC 10646-1.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -92,7 +106,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>UCS-4</ccts:Name>
-            <ccts:Description>Universal Multiple-Octet Coded Character Set (UCS) four-octet per character encoding schema as defined in ISO/IEC 10646-1.</ccts:Description>
+            <ccts:Description
+            >Universal Multiple-Octet Coded Character Set (UCS) four-octet per character encoding schema as defined in ISO/IEC 10646-1.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -100,7 +115,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>UTF-8</ccts:Name>
-            <ccts:Description>UCS Transformation Format 8 (UTF-8) multi-octet (of length one to six octets) per character encoding schema as defined in ISO/IEC 10646-1, Annex R.</ccts:Description>
+            <ccts:Description
+            >UCS Transformation Format 8 (UTF-8) multi-octet (of length one to six octets) per character encoding schema as defined in ISO/IEC 10646-1, Annex R.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -108,7 +124,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>UTF-16</ccts:Name>
-            <ccts:Description>UCS Transformation Format 16 (UTF-16) two-octet per character encoding schema as defined in ISO/IEC 10646-1, Annex Q.</ccts:Description>
+            <ccts:Description
+            >UCS Transformation Format 16 (UTF-16) two-octet per character encoding schema as defined in ISO/IEC 10646-1, Annex Q.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

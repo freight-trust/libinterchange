@@ -20,7 +20,16 @@
           "Id": "REFLoop4",
           "Min": 0,
           "Max": 99,
-          "Loop": [{ "Id": "TVL" }, { "Id": "REF", "Min": 0 }, { "Id": "REFLoop5", "Min": 0, "Max": 9, "Loop": [{ "Id": "FTV" }, { "Id": "REF", "Min": 0 }] }]
+          "Loop": [
+            { "Id": "TVL" },
+            { "Id": "REF", "Min": 0 },
+            {
+              "Id": "REFLoop5",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "FTV" }, { "Id": "REF", "Min": 0 }]
+            }
+          ]
         }
       ]
     },

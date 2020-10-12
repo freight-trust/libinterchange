@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== Unqualified Data Type Schema Module                        ===== -->
 <!-- ====================================================================== -->
@@ -30,7 +30,15 @@ BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL
 NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR 
 FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27" elementFormDefault="qualified" attributeFormDefault="unqualified" version="27.0">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="27.0"
+>
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -43,7 +51,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Amount. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A number of monetary units specified in a currency where the unit of the currency is explicit or implied.</ccts:Definition>
+        <ccts:Definition
+        >A number of monetary units specified in a currency where the unit of the currency is explicit or implied.</ccts:Definition>
         <ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -52,7 +61,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="currencyID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Amount Currency. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The currency of the amount.</ccts:Definition>
@@ -64,9 +73,10 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="currencyCodeListVersionID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Amount Currency. Code List Version. Identifier</ccts:DictionaryEntryName>
+              <ccts:DictionaryEntryName
+              >Amount Currency. Code List Version. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The Version of the UN/ECE Rec.9 code list.</ccts:Definition>
               <ccts:ObjectClassTerm>Amount Currency</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Code List Version</ccts:PropertyTerm>
@@ -95,7 +105,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The format of the binary content.</ccts:Definition>
@@ -107,7 +117,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="mimeCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
               <ccts:Definition>The mime type of the binary object.</ccts:Definition>
@@ -119,10 +129,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="encodingCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+              <ccts:Definition
+              >Specifies the decoding algorithm of the binary object.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
             </xsd:documentation>
@@ -131,10 +142,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The character set of the binary object if the mime type is text.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
             </xsd:documentation>
@@ -143,10 +156,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="uri" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -155,7 +170,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="filename" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The filename of the binary object.</ccts:Definition>
@@ -177,7 +192,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Code. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A character string (letters, figures or symbols) that for brevity and/or language independence may be used to represent or replace a definitive value or text of an Attribute together with relevant supplementary information.</ccts:Definition>
+        <ccts:Definition
+        >A character string (letters, figures or symbols) that for brevity and/or language independence may be used to represent or replace a definitive value or text of an Attribute together with relevant supplementary information.</ccts:Definition>
         <ccts:PrimitiveType>String</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -186,7 +202,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="listID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Code List. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The identification of a list of codes</ccts:Definition>
@@ -198,7 +214,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="listAgencyID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Code List. Agency. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>An agency that maintains one or more code lists.</ccts:Definition>
@@ -210,10 +226,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="listAgencyName" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Code List. Agency Name. Text</ccts:DictionaryEntryName>
-              <ccts:Definition>The name of the agency that maintains the code list.</ccts:Definition>
+              <ccts:Definition
+              >The name of the agency that maintains the code list.</ccts:Definition>
               <ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
             </xsd:documentation>
@@ -222,7 +239,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="listName" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Code List. Name. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The name of a list of codes.</ccts:Definition>
@@ -234,7 +251,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="listVersionID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Code List. Version. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The Version of the code list.</ccts:Definition>
@@ -246,7 +263,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="name" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Code. Name. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The textual equivalent of the code content.</ccts:Definition>
@@ -258,10 +275,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="languageID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+              <ccts:Definition
+              >The identifier of the language used in the corresponding text string.</ccts:Definition>
               <ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
             </xsd:documentation>
@@ -270,10 +288,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="listURI" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Code List. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the code list is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Code List. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the code list is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -282,10 +302,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="listSchemeURI" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Code List Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the code list scheme is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Code List Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the code list scheme is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Code List Scheme</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -304,7 +326,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Date Time. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
+        <ccts:Definition
+        >A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
         <ccts:PrimitiveType>String</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -313,12 +336,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:complexType>
           <xsd:simpleContent>
             <xsd:extension base="xsd:string">
-              <xsd:attribute name="format" type="xsd:string" use="optional"/>
+              <xsd:attribute name="format" type="xsd:string" use="optional" />
             </xsd:extension>
           </xsd:simpleContent>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element name="DateTime" type="xsd:dateTime"/>
+      <xsd:element name="DateTime" type="xsd:dateTime" />
     </xsd:choice>
   </xsd:complexType>
 <!-- ================================================================== -->
@@ -331,7 +354,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Date. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
+        <ccts:Definition
+        >A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
         <ccts:PrimitiveType>String</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -340,12 +364,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:complexType>
           <xsd:simpleContent>
             <xsd:extension base="xsd:string">
-              <xsd:attribute name="format" type="xsd:string" use="optional"/>
+              <xsd:attribute name="format" type="xsd:string" use="optional" />
             </xsd:extension>
           </xsd:simpleContent>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element name="Date" type="xsd:date"/>
+      <xsd:element name="Date" type="xsd:date" />
     </xsd:choice>
   </xsd:complexType>
 <!-- ================================================================== -->
@@ -367,7 +391,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The format of the binary content.</ccts:Definition>
@@ -379,7 +403,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="mimeCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
               <ccts:Definition>The mime type of the binary object.</ccts:Definition>
@@ -391,10 +415,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="encodingCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+              <ccts:Definition
+              >Specifies the decoding algorithm of the binary object.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
             </xsd:documentation>
@@ -403,10 +428,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The character set of the binary object if the mime type is text.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
             </xsd:documentation>
@@ -415,10 +442,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="uri" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -427,7 +456,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="filename" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The filename of the binary object.</ccts:Definition>
@@ -449,7 +478,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+        <ccts:Definition
+        >A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
         <ccts:PrimitiveType>String</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -458,7 +488,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="schemeID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Identification Scheme. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The identification of the identification scheme.</ccts:Definition>
@@ -470,7 +500,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="schemeName" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Identification Scheme. Name. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The name of the identification scheme.</ccts:Definition>
@@ -482,10 +512,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="schemeAgencyID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The identification of the agency that maintains the identification scheme.</ccts:Definition>
               <ccts:ObjectClassTerm>Identification Scheme Agency</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
             </xsd:documentation>
@@ -494,10 +526,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="schemeAgencyName" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
-              <ccts:Definition>The name of the agency that maintains the identification scheme.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The name of the agency that maintains the identification scheme.</ccts:Definition>
               <ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
             </xsd:documentation>
@@ -506,9 +540,10 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="schemeVersionID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
+              <ccts:DictionaryEntryName
+              >Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The Version of the identification scheme.</ccts:Definition>
               <ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Version</ccts:PropertyTerm>
@@ -518,10 +553,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="schemeDataURI" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Identification Scheme Data</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -530,10 +567,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="schemeURI" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -552,7 +591,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A list of two mutually exclusive Boolean values that express the only possible states of a Property.</ccts:Definition>
+        <ccts:Definition
+        >A list of two mutually exclusive Boolean values that express the only possible states of a Property.</ccts:Definition>
         <ccts:PrimitiveType>String</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -561,12 +601,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:complexType>
           <xsd:simpleContent>
             <xsd:extension base="xsd:string">
-              <xsd:attribute name="format" type="xsd:string" use="optional"/>
+              <xsd:attribute name="format" type="xsd:string" use="optional" />
             </xsd:extension>
           </xsd:simpleContent>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element name="Indicator" type="xsd:boolean"/>
+      <xsd:element name="Indicator" type="xsd:boolean" />
     </xsd:choice>
   </xsd:complexType>
 <!-- ================================================================== -->
@@ -579,7 +619,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Measure. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A numeric valuedetermined by measuring an object along with the specified unit of measure.</ccts:Definition>
+        <ccts:Definition
+        >A numeric valuedetermined by measuring an object along with the specified unit of measure.</ccts:Definition>
         <ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -588,7 +629,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="unitCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Measure Unit. Code</ccts:DictionaryEntryName>
               <ccts:Definition>The type of unit of measure.</ccts:Definition>
@@ -600,9 +641,10 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="unitCodeListVersionID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Measure Unit. Code List Version. Identifier</ccts:DictionaryEntryName>
+              <ccts:DictionaryEntryName
+              >Measure Unit. Code List Version. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The Version of the measure unit code list.</ccts:Definition>
               <ccts:ObjectClassTerm>Measure Unit</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Code List Version</ccts:PropertyTerm>
@@ -622,7 +664,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Name. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+        <ccts:Definition
+        >A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
         <ccts:PrimitiveType>String</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -631,10 +674,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="languageID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+              <ccts:Definition
+              >The identifier of the language used in the corresponding text string.</ccts:Definition>
               <ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
             </xsd:documentation>
@@ -643,7 +687,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The identification of the locale of the language.</ccts:Definition>
@@ -665,7 +709,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Numeric. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+        <ccts:Definition
+        >Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
         <ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -674,10 +719,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Numeric. Format. Text</ccts:DictionaryEntryName>
-              <ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+              <ccts:Definition
+              >Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
               <ccts:ObjectClassTerm>Numeric</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Format</ccts:PropertyTerm>
             </xsd:documentation>
@@ -696,7 +742,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Percent. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+        <ccts:Definition
+        >Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
         <ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -705,10 +752,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Numeric. Format. Text</ccts:DictionaryEntryName>
-              <ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+              <ccts:Definition
+              >Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
               <ccts:ObjectClassTerm>Numeric</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Format</ccts:PropertyTerm>
             </xsd:documentation>
@@ -736,7 +784,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The format of the binary content.</ccts:Definition>
@@ -748,7 +796,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="mimeCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
               <ccts:Definition>The mime type of the binary object.</ccts:Definition>
@@ -760,10 +808,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="encodingCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+              <ccts:Definition
+              >Specifies the decoding algorithm of the binary object.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
             </xsd:documentation>
@@ -772,10 +821,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The character set of the binary object if the mime type is text.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
             </xsd:documentation>
@@ -784,10 +835,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="uri" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -796,7 +849,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="filename" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The filename of the binary object.</ccts:Definition>
@@ -818,7 +871,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Quantity. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A counted number of non-monetary units possibly including fractions.</ccts:Definition>
+        <ccts:Definition
+        >A counted number of non-monetary units possibly including fractions.</ccts:Definition>
         <ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -827,7 +881,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="unitCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Quantity Unit. Code</ccts:DictionaryEntryName>
               <ccts:Definition>The unit of the quantity.</ccts:Definition>
@@ -839,9 +893,10 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="unitCodeListID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Quantity Unit. Code List. Identifier</ccts:DictionaryEntryName>
+              <ccts:DictionaryEntryName
+              >Quantity Unit. Code List. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The quantity unit code list.</ccts:Definition>
               <ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Code List</ccts:PropertyTerm>
@@ -851,10 +906,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="unitCodeListAgencyID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Quantity Unit. Code List Agency. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The identification of the agency which maintains the quantity unit code list.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Quantity Unit. Code List Agency. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The identification of the agency which maintains the quantity unit code list.</ccts:Definition>
               <ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Code List Agency</ccts:PropertyTerm>
             </xsd:documentation>
@@ -863,10 +920,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="unitCodeListAgencyName" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Quantity Unit. Code List Agency Name. Text</ccts:DictionaryEntryName>
-              <ccts:Definition>The name of the agency which maintains the quantity unit code list.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Quantity Unit. Code List Agency Name. Text</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The name of the agency which maintains the quantity unit code list.</ccts:Definition>
               <ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Code List Agency Name</ccts:PropertyTerm>
             </xsd:documentation>
@@ -885,7 +944,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Rate. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+        <ccts:Definition
+        >Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
         <ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -894,10 +954,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Numeric. Format. Text</ccts:DictionaryEntryName>
-              <ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+              <ccts:Definition
+              >Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
               <ccts:ObjectClassTerm>Numeric</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Format</ccts:PropertyTerm>
             </xsd:documentation>
@@ -925,7 +986,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The format of the binary content.</ccts:Definition>
@@ -937,7 +998,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="mimeCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
               <ccts:Definition>The mime type of the binary object.</ccts:Definition>
@@ -949,10 +1010,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="encodingCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+              <ccts:Definition
+              >Specifies the decoding algorithm of the binary object.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
             </xsd:documentation>
@@ -961,10 +1023,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The character set of the binary object if the mime type is text.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
             </xsd:documentation>
@@ -973,10 +1037,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="uri" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -985,7 +1051,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="filename" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The filename of the binary object.</ccts:Definition>
@@ -1007,7 +1073,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+        <ccts:Definition
+        >A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
         <ccts:PrimitiveType>String</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -1016,10 +1083,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="languageID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+              <ccts:Definition
+              >The identifier of the language used in the corresponding text string.</ccts:Definition>
               <ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
             </xsd:documentation>
@@ -1028,7 +1096,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
               <ccts:Definition>The identification of the locale of the language.</ccts:Definition>
@@ -1050,7 +1118,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Time. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
+        <ccts:Definition
+        >A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
         <ccts:PrimitiveType>String</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -1059,12 +1128,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:complexType>
           <xsd:simpleContent>
             <xsd:extension base="xsd:string">
-              <xsd:attribute name="format" type="xsd:string" use="optional"/>
+              <xsd:attribute name="format" type="xsd:string" use="optional" />
             </xsd:extension>
           </xsd:simpleContent>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element name="Time" type="xsd:time"/>
+      <xsd:element name="Time" type="xsd:time" />
     </xsd:choice>
   </xsd:complexType>
 <!-- ================================================================== -->
@@ -1077,7 +1146,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <ccts:Acronym>UDT</ccts:Acronym>
         <ccts:DictionaryEntryName>Value. Type</ccts:DictionaryEntryName>
         <ccts:Version>2.01</ccts:Version>
-        <ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+        <ccts:Definition
+        >Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
         <ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
       </xsd:documentation>
     </xsd:annotation>
@@ -1086,10 +1156,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Numeric. Format. Text</ccts:DictionaryEntryName>
-              <ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+              <ccts:Definition
+              >Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
               <ccts:ObjectClassTerm>Numeric</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Format</ccts:PropertyTerm>
             </xsd:documentation>
@@ -1117,7 +1188,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="format" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The format of the binary content.</ccts:Definition>
@@ -1129,7 +1200,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="mimeCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
               <ccts:Definition>The mime type of the binary object.</ccts:Definition>
@@ -1141,10 +1212,11 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="encodingCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+              <ccts:Definition
+              >Specifies the decoding algorithm of the binary object.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
             </xsd:documentation>
@@ -1153,10 +1225,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
-              <ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The character set of the binary object if the mime type is text.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
             </xsd:documentation>
@@ -1165,10 +1239,12 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="uri" type="xsd:anyURI" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
-              <ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
-              <ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+              <ccts:DictionaryEntryName
+              >Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+              <ccts:Definition
+              >The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
               <ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
               <ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
             </xsd:documentation>
@@ -1177,7 +1253,7 @@ FITNESS FOR A PARTICULAR PURPOSE.
         <xsd:attribute name="filename" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation xml:lang="en">
-              <ccts:UniqueID></ccts:UniqueID>
+              <ccts:UniqueID />
               <ccts:Acronym>SC</ccts:Acronym>
               <ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
               <ccts:Definition>The filename of the binary object.</ccts:Definition>

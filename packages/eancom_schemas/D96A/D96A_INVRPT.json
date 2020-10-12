@@ -13,7 +13,12 @@
       "Loop": [
         { "Id": "NAD" },
         { "Id": "RFFLoop2", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }] },
-        { "Id": "CTALoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }] }
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 10,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }]
+        }
       ]
     },
     { "Id": "CUXLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] },
@@ -37,7 +42,12 @@
             { "Id": "DTM", "Min": 0, "Max": 5 },
             { "Id": "STS", "Min": 0, "Max": 9 },
             { "Id": "PRILoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "PRI" }] },
-            { "Id": "RFFLoop3", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+            {
+              "Id": "RFFLoop3",
+              "Min": 0,
+              "Max": 10,
+              "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+            },
             {
               "Id": "CPSLoop1",
               "Min": 0,
@@ -54,7 +64,11 @@
                       "Id": "PCILoop1",
                       "Min": 0,
                       "Max": 9999,
-                      "Loop": [{ "Id": "PCI" }, { "Id": "DTM", "Min": 0, "Max": 5 }, { "Id": "GIN", "Min": 0, "Max": 9999 }]
+                      "Loop": [
+                        { "Id": "PCI" },
+                        { "Id": "DTM", "Min": 0, "Max": 5 },
+                        { "Id": "GIN", "Min": 0, "Max": 9999 }
+                      ]
                     }
                   ]
                 }

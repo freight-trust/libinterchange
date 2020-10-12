@@ -10,7 +10,15 @@
       "Id": "SSRLoop1",
       "Min": 0,
       "Max": 9,
-      "Loop": [{ "Id": "SSR" }, { "Id": "IFTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }]
+      "Loop": [
+        { "Id": "SSR" },
+        {
+          "Id": "IFTLoop1",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+        }
+      ]
     },
     {
       "Id": "TIFLoop1",
@@ -22,7 +30,15 @@
           "Id": "SSRLoop2",
           "Min": 0,
           "Max": 9,
-          "Loop": [{ "Id": "SSR" }, { "Id": "IFTLoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }]
+          "Loop": [
+            { "Id": "SSR" },
+            {
+              "Id": "IFTLoop2",
+              "Min": 0,
+              "Max": 5,
+              "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+            }
+          ]
         }
       ]
     },
@@ -35,12 +51,25 @@
         { "Id": "MSG", "Min": 0 },
         { "Id": "EQN", "Min": 0 },
         { "Id": "IFT", "Min": 0 },
-        { "Id": "IFTLoop4", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+        {
+          "Id": "IFTLoop4",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+        },
         {
           "Id": "SSRLoop3",
           "Min": 0,
           "Max": 9,
-          "Loop": [{ "Id": "SSR" }, { "Id": "IFTLoop5", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }]
+          "Loop": [
+            { "Id": "SSR" },
+            {
+              "Id": "IFTLoop5",
+              "Min": 0,
+              "Max": 5,
+              "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+            }
+          ]
         },
         {
           "Id": "TIFLoop2",
@@ -52,7 +81,15 @@
               "Id": "SSRLoop4",
               "Min": 0,
               "Max": 9,
-              "Loop": [{ "Id": "SSR" }, { "Id": "IFTLoop6", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] }]
+              "Loop": [
+                { "Id": "SSR" },
+                {
+                  "Id": "IFTLoop6",
+                  "Min": 0,
+                  "Max": 5,
+                  "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+                }
+              ]
             }
           ]
         }

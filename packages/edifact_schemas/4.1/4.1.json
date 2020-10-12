@@ -24,7 +24,12 @@
       "AS": "Interactive, product rules request",
       "SECACK": "Security acknowledgment"
     },
-    "Test indicator": { "1": "Interchange is a test", "2": "Syntax only test", "3": "Echo request", "4": "Echo response" },
+    "Test indicator": {
+      "1": "Interchange is a test",
+      "2": "Syntax only test",
+      "3": "Echo request",
+      "4": "Echo response"
+    },
     "Recipient reference/password qualifier": { "AA": "Reference", "BB": "Password" },
     "Message release number": {
       "1": "First release",
@@ -83,7 +88,12 @@
       "99A": "Release 1999 - A",
       "99B": "Release 1999 - B"
     },
-    "Syntax version number": { "1": "Version 1", "2": "Version 2", "3": "Version 3", "4": "Version 4" },
+    "Syntax version number": {
+      "1": "Version 1",
+      "2": "Version 2",
+      "3": "Version 3",
+      "4": "Version 4"
+    },
     "Syntax identifier": {
       "UNOY": "UN/ECE level Y",
       "UNOX": "UN/ECE level X",
@@ -542,13 +552,28 @@
   "Segments": {
     "UNH": {
       "Elements": [
-        { "Id": "0062", "Name": "UNH1", "Desc": "Message reference number", "Required": true, "MinLength": 1, "MaxLength": 14 },
+        {
+          "Id": "0062",
+          "Name": "UNH1",
+          "Desc": "Message reference number",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
         {
           "Id": "S009",
           "Name": "UNH2",
           "Desc": "MESSAGE IDENTIFIER",
           "Components": [
-            { "Id": "0065", "Name": "UNH2.1", "Desc": "Message type", "Required": true, "MinLength": 1, "MaxLength": 6, "QualifierRef": "Message type" },
+            {
+              "Id": "0065",
+              "Name": "UNH2.1",
+              "Desc": "Message type",
+              "Required": true,
+              "MinLength": 1,
+              "MaxLength": 6,
+              "QualifierRef": "Message type"
+            },
             {
               "Id": "0052",
               "Name": "UNH2.2",
@@ -576,8 +601,22 @@
               "MaxLength": 3,
               "QualifierRef": "Controlling agency, coded"
             },
-            { "Id": "0057", "Name": "UNH2.5", "Desc": "Association assigned code", "Required": false, "MinLength": 1, "MaxLength": 6 },
-            { "Id": "0110", "Name": "UNH2.6", "Desc": "Code list directory version number", "Required": false, "MinLength": 1, "MaxLength": 6 },
+            {
+              "Id": "0057",
+              "Name": "UNH2.5",
+              "Desc": "Association assigned code",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            },
+            {
+              "Id": "0110",
+              "Name": "UNH2.6",
+              "Desc": "Code list directory version number",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            },
             {
               "Id": "0113",
               "Name": "UNH2.7",
@@ -589,13 +628,27 @@
             }
           ]
         },
-        { "Id": "0068", "Name": "UNH3", "Desc": "Common access reference", "Required": false, "MinLength": 1, "MaxLength": 35 },
+        {
+          "Id": "0068",
+          "Name": "UNH3",
+          "Desc": "Common access reference",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 35
+        },
         {
           "Id": "S010",
           "Name": "UNH4",
           "Desc": "STATUS OF THE TRANSFER",
           "Components": [
-            { "Id": "0070", "Name": "UNH4.1", "Desc": "Sequence of transfers", "Required": true, "MinLength": 1, "MaxLength": 2 },
+            {
+              "Id": "0070",
+              "Name": "UNH4.1",
+              "Desc": "Sequence of transfers",
+              "Required": true,
+              "MinLength": 1,
+              "MaxLength": 2
+            },
             {
               "Id": "0073",
               "Name": "UNH4.2",
@@ -612,9 +665,30 @@
           "Name": "UNH5",
           "Desc": "MESSAGE SUBSET IDENTIFICATION",
           "Components": [
-            { "Id": "0115", "Name": "UNH5.1", "Desc": "Message subset identification", "Required": true, "MinLength": 1, "MaxLength": 14 },
-            { "Id": "0116", "Name": "UNH5.2", "Desc": "Message subset version number", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0118", "Name": "UNH5.3", "Desc": "Message subset release number", "Required": false, "MinLength": 1, "MaxLength": 3 },
+            {
+              "Id": "0115",
+              "Name": "UNH5.1",
+              "Desc": "Message subset identification",
+              "Required": true,
+              "MinLength": 1,
+              "MaxLength": 14
+            },
+            {
+              "Id": "0116",
+              "Name": "UNH5.2",
+              "Desc": "Message subset version number",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0118",
+              "Name": "UNH5.3",
+              "Desc": "Message subset release number",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
             {
               "Id": "0051",
               "Name": "UNH5.4",
@@ -631,9 +705,30 @@
           "Name": "UNH6",
           "Desc": "MESSAGE IMPLEMENTATION GUIDELINE IDENTIFICATION",
           "Components": [
-            { "Id": "0121", "Name": "UNH6.1", "Desc": "Message implementation guideline identification", "Required": true, "MinLength": 1, "MaxLength": 14 },
-            { "Id": "0122", "Name": "UNH6.2", "Desc": "Message implementation guideline version number", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0124", "Name": "UNH6.3", "Desc": "Message implementation guideline release number", "Required": false, "MinLength": 1, "MaxLength": 3 },
+            {
+              "Id": "0121",
+              "Name": "UNH6.1",
+              "Desc": "Message implementation guideline identification",
+              "Required": true,
+              "MinLength": 1,
+              "MaxLength": 14
+            },
+            {
+              "Id": "0122",
+              "Name": "UNH6.2",
+              "Desc": "Message implementation guideline version number",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0124",
+              "Name": "UNH6.3",
+              "Desc": "Message implementation guideline release number",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
             {
               "Id": "0051",
               "Name": "UNH6.4",
@@ -650,9 +745,30 @@
           "Name": "UNH7",
           "Desc": "SCENARIO IDENTIFICATION",
           "Components": [
-            { "Id": "0127", "Name": "UNH7.1", "Desc": "Scenario identification", "Required": true, "MinLength": 1, "MaxLength": 14 },
-            { "Id": "0128", "Name": "UNH7.2", "Desc": "Scenario version number", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0130", "Name": "UNH7.3", "Desc": "Scenario release number", "Required": false, "MinLength": 1, "MaxLength": 3 },
+            {
+              "Id": "0127",
+              "Name": "UNH7.1",
+              "Desc": "Scenario identification",
+              "Required": true,
+              "MinLength": 1,
+              "MaxLength": 14
+            },
+            {
+              "Id": "0128",
+              "Name": "UNH7.2",
+              "Desc": "Scenario version number",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0130",
+              "Name": "UNH7.3",
+              "Desc": "Scenario release number",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
             {
               "Id": "0051",
               "Name": "UNH7.4",
@@ -668,22 +784,62 @@
     },
     "UNT": {
       "Elements": [
-        { "Id": "0074", "Name": "UNT1", "Desc": "Number of segments in a message", "Required": true, "MinLength": 1, "MaxLength": 10 },
-        { "Id": "0062", "Name": "UNT2", "Desc": "Message reference number", "Required": true, "MinLength": 1, "MaxLength": 14 }
+        {
+          "Id": "0074",
+          "Name": "UNT1",
+          "Desc": "Number of segments in a message",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 10
+        },
+        {
+          "Id": "0062",
+          "Name": "UNT2",
+          "Desc": "Message reference number",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 14
+        }
       ]
     },
     "UCD": {
       "Desc": "DATA ELEMENT ERROR INDICATION",
       "Elements": [
-        { "Id": "0085", "Desc": "Syntax error, coded", "Required": true, "QualifierRef": "Syntax error, coded" },
+        {
+          "Id": "0085",
+          "Desc": "Syntax error, coded",
+          "Required": true,
+          "QualifierRef": "Syntax error, coded"
+        },
         {
           "Id": "S011",
           "Desc": "DATA ELEMENT IDENTIFICATION",
           "Required": true,
           "Components": [
-            { "Id": "0098", "Desc": "Erroneous data element position in segment", "DataType": "A", "Required": true, "MinLength": 0, "MaxLength": 3 },
-            { "Id": "0104", "Desc": "Erroneous component data element position", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0136", "Desc": "Erroneous data element occurrence", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 6 }
+            {
+              "Id": "0098",
+              "Desc": "Erroneous data element position in segment",
+              "DataType": "A",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0104",
+              "Desc": "Erroneous component data element position",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0136",
+              "Desc": "Erroneous data element occurrence",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            }
           ]
         }
       ]
@@ -691,14 +847,33 @@
     "UCF": {
       "Desc": "GROUP RESPONSE",
       "Elements": [
-        { "Id": "0048", "Desc": "Group reference number", "DataType": "AN", "Required": true, "MinLength": 1, "MaxLength": 14 },
+        {
+          "Id": "0048",
+          "Desc": "Group reference number",
+          "DataType": "AN",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
         {
           "Id": "S006",
           "Desc": "APPLICATION SENDER IDENTIFICATION",
           "Required": false,
           "Components": [
-            { "Id": "0040", "Desc": "Application sender identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" }
+            {
+              "Id": "0040",
+              "Desc": "Application sender identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            }
           ]
         },
         {
@@ -706,40 +881,135 @@
           "Desc": "APPLICATION RECIPIENT IDENTIFICATION",
           "Required": false,
           "Components": [
-            { "Id": "0044", "Desc": "Application recipient identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" }
+            {
+              "Id": "0044",
+              "Desc": "Application recipient identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            }
           ]
         },
-        { "Id": "0083", "Desc": "Action, coded", "Required": true, "QualifierRef": "Action, coded" },
-        { "Id": "0085", "Desc": "Syntax error, coded", "Required": false, "QualifierRef": "Syntax error, coded" },
-        { "Id": "0135", "Desc": "Service segment tag, coded", "Required": false, "QualifierRef": "Service segment tag, coded" },
+        {
+          "Id": "0083",
+          "Desc": "Action, coded",
+          "Required": true,
+          "QualifierRef": "Action, coded"
+        },
+        {
+          "Id": "0085",
+          "Desc": "Syntax error, coded",
+          "Required": false,
+          "QualifierRef": "Syntax error, coded"
+        },
+        {
+          "Id": "0135",
+          "Desc": "Service segment tag, coded",
+          "Required": false,
+          "QualifierRef": "Service segment tag, coded"
+        },
         {
           "Id": "S011",
           "Desc": "DATA ELEMENT IDENTIFICATION",
           "Required": false,
           "Components": [
-            { "Id": "0098", "Desc": "Erroneous data element position in segment", "DataType": "A", "Required": true, "MinLength": 0, "MaxLength": 3 },
-            { "Id": "0104", "Desc": "Erroneous component data element position", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0136", "Desc": "Erroneous data element occurrence", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 6 }
+            {
+              "Id": "0098",
+              "Desc": "Erroneous data element position in segment",
+              "DataType": "A",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0104",
+              "Desc": "Erroneous component data element position",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0136",
+              "Desc": "Erroneous data element occurrence",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            }
           ]
         },
-        { "Id": "0534", "Desc": "Security reference number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 14 },
-        { "Id": "0138", "Desc": "Security segment position", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 6 }
+        {
+          "Id": "0534",
+          "Desc": "Security reference number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
+        {
+          "Id": "0138",
+          "Desc": "Security segment position",
+          "DataType": "A",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 6
+        }
       ]
     },
     "UCI": {
       "Desc": "INTERCHANGE RESPONSE",
       "Elements": [
-        { "Id": "0020", "Desc": "Interchange control reference", "DataType": "AN", "Required": true, "MinLength": 1, "MaxLength": 14 },
+        {
+          "Id": "0020",
+          "Desc": "Interchange control reference",
+          "DataType": "AN",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
         {
           "Id": "S002",
           "Desc": "INTERCHANGE SENDER",
           "Required": true,
           "Components": [
-            { "Id": "0004", "Desc": "Interchange sender identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" },
-            { "Id": "0008", "Desc": "Interchange sender internal identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0042", "Desc": "Interchange sender internal sub-identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 }
+            {
+              "Id": "0004",
+              "Desc": "Interchange sender identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            },
+            {
+              "Id": "0008",
+              "Desc": "Interchange sender internal identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0042",
+              "Desc": "Interchange sender internal sub-identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            }
           ]
         },
         {
@@ -747,80 +1017,283 @@
           "Desc": "INTERCHANGE RECIPIENT",
           "Required": true,
           "Components": [
-            { "Id": "0010", "Desc": "Interchange recipient identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" },
-            { "Id": "0014", "Desc": "Interchange recipient internal identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0046", "Desc": "Interchange recipient internal sub-identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 }
+            {
+              "Id": "0010",
+              "Desc": "Interchange recipient identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            },
+            {
+              "Id": "0014",
+              "Desc": "Interchange recipient internal identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0046",
+              "Desc": "Interchange recipient internal sub-identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            }
           ]
         },
-        { "Id": "0083", "Desc": "Action, coded", "Required": true, "QualifierRef": "Action, coded" },
-        { "Id": "0085", "Desc": "Syntax error, coded", "Required": false, "QualifierRef": "Syntax error, coded" },
-        { "Id": "0135", "Desc": "Service segment tag, coded", "Required": false, "QualifierRef": "Service segment tag, coded" },
+        {
+          "Id": "0083",
+          "Desc": "Action, coded",
+          "Required": true,
+          "QualifierRef": "Action, coded"
+        },
+        {
+          "Id": "0085",
+          "Desc": "Syntax error, coded",
+          "Required": false,
+          "QualifierRef": "Syntax error, coded"
+        },
+        {
+          "Id": "0135",
+          "Desc": "Service segment tag, coded",
+          "Required": false,
+          "QualifierRef": "Service segment tag, coded"
+        },
         {
           "Id": "S011",
           "Desc": "DATA ELEMENT IDENTIFICATION",
           "Required": false,
           "Components": [
-            { "Id": "0098", "Desc": "Erroneous data element position in segment", "DataType": "A", "Required": true, "MinLength": 0, "MaxLength": 3 },
-            { "Id": "0104", "Desc": "Erroneous component data element position", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0136", "Desc": "Erroneous data element occurrence", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 6 }
+            {
+              "Id": "0098",
+              "Desc": "Erroneous data element position in segment",
+              "DataType": "A",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0104",
+              "Desc": "Erroneous component data element position",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0136",
+              "Desc": "Erroneous data element occurrence",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            }
           ]
         },
-        { "Id": "0534", "Desc": "Security reference number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 14 },
-        { "Id": "0138", "Desc": "Security segment position", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 6 }
+        {
+          "Id": "0534",
+          "Desc": "Security reference number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
+        {
+          "Id": "0138",
+          "Desc": "Security segment position",
+          "DataType": "A",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 6
+        }
       ]
     },
     "UCM": {
       "Desc": "MESSAGE/PACKAGE RESPONSE",
       "Elements": [
-        { "Id": "0062", "Desc": "Message reference number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 14 },
+        {
+          "Id": "0062",
+          "Desc": "Message reference number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
         {
           "Id": "S009",
           "Desc": "MESSAGE IDENTIFIER",
           "Required": false,
           "Components": [
-            { "Id": "0065", "Desc": "Message type", "Required": true, "QualifierRef": "Message type" },
-            { "Id": "0052", "Desc": "Message version number", "Required": true, "QualifierRef": "Message version number" },
-            { "Id": "0054", "Desc": "Message release number", "Required": true, "QualifierRef": "Message release number" },
-            { "Id": "0051", "Desc": "Controlling agency, coded", "Required": true, "QualifierRef": "Controlling agency, coded" },
-            { "Id": "0057", "Desc": "Association assigned code", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 6 },
-            { "Id": "0110", "Desc": "Code list directory version number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 6 },
-            { "Id": "0113", "Desc": "Message type sub-function identification", "Required": false, "QualifierRef": "Message type sub-function identification" }
+            {
+              "Id": "0065",
+              "Desc": "Message type",
+              "Required": true,
+              "QualifierRef": "Message type"
+            },
+            {
+              "Id": "0052",
+              "Desc": "Message version number",
+              "Required": true,
+              "QualifierRef": "Message version number"
+            },
+            {
+              "Id": "0054",
+              "Desc": "Message release number",
+              "Required": true,
+              "QualifierRef": "Message release number"
+            },
+            {
+              "Id": "0051",
+              "Desc": "Controlling agency, coded",
+              "Required": true,
+              "QualifierRef": "Controlling agency, coded"
+            },
+            {
+              "Id": "0057",
+              "Desc": "Association assigned code",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            },
+            {
+              "Id": "0110",
+              "Desc": "Code list directory version number",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            },
+            {
+              "Id": "0113",
+              "Desc": "Message type sub-function identification",
+              "Required": false,
+              "QualifierRef": "Message type sub-function identification"
+            }
           ]
         },
-        { "Id": "0083", "Desc": "Action, coded", "Required": true, "QualifierRef": "Action, coded" },
-        { "Id": "0085", "Desc": "Syntax error, coded", "Required": false, "QualifierRef": "Syntax error, coded" },
-        { "Id": "0135", "Desc": "Service segment tag, coded", "Required": false, "QualifierRef": "Service segment tag, coded" },
+        {
+          "Id": "0083",
+          "Desc": "Action, coded",
+          "Required": true,
+          "QualifierRef": "Action, coded"
+        },
+        {
+          "Id": "0085",
+          "Desc": "Syntax error, coded",
+          "Required": false,
+          "QualifierRef": "Syntax error, coded"
+        },
+        {
+          "Id": "0135",
+          "Desc": "Service segment tag, coded",
+          "Required": false,
+          "QualifierRef": "Service segment tag, coded"
+        },
         {
           "Id": "S011",
           "Desc": "DATA ELEMENT IDENTIFICATION",
           "Required": false,
           "Components": [
-            { "Id": "0098", "Desc": "Erroneous data element position in segment", "DataType": "A", "Required": true, "MinLength": 0, "MaxLength": 3 },
-            { "Id": "0104", "Desc": "Erroneous component data element position", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0136", "Desc": "Erroneous data element occurrence", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 6 }
+            {
+              "Id": "0098",
+              "Desc": "Erroneous data element position in segment",
+              "DataType": "A",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0104",
+              "Desc": "Erroneous component data element position",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0136",
+              "Desc": "Erroneous data element occurrence",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            }
           ]
         },
-        { "Id": "0800", "Desc": "Package reference number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
+        {
+          "Id": "0800",
+          "Desc": "Package reference number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 35
+        },
         {
           "Id": "S020",
           "Desc": "REFERENCE IDENTIFICATION",
           "Required": false,
           "Repeat": 99,
           "Components": [
-            { "Id": "0813", "Desc": "Reference qualifier", "Required": true, "QualifierRef": "Reference qualifier" },
-            { "Id": "0802", "Desc": "Reference identification number", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 }
+            {
+              "Id": "0813",
+              "Desc": "Reference qualifier",
+              "Required": true,
+              "QualifierRef": "Reference qualifier"
+            },
+            {
+              "Id": "0802",
+              "Desc": "Reference identification number",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            }
           ]
         },
-        { "Id": "0534", "Desc": "Security reference number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 14 },
-        { "Id": "0138", "Desc": "Security segment position", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 6 }
+        {
+          "Id": "0534",
+          "Desc": "Security reference number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
+        {
+          "Id": "0138",
+          "Desc": "Security segment position",
+          "DataType": "A",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 6
+        }
       ]
     },
     "UCS": {
       "Desc": "SEGMENT ERROR INDICATION",
       "Elements": [
-        { "Id": "0096", "Desc": "Segment position in message body", "DataType": "A", "Required": true, "MinLength": 1, "MaxLength": 6 },
-        { "Id": "0085", "Desc": "Syntax error, coded", "Required": false, "QualifierRef": "Syntax error, coded" }
+        {
+          "Id": "0096",
+          "Desc": "Segment position in message body",
+          "DataType": "A",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 6
+        },
+        {
+          "Id": "0085",
+          "Desc": "Syntax error, coded",
+          "Required": false,
+          "QualifierRef": "Syntax error, coded"
+        }
       ]
     },
     "USA": {
@@ -831,13 +1304,48 @@
           "Desc": "SECURITY ALGORITHM",
           "Required": true,
           "Components": [
-            { "Id": "0523", "Desc": "Use of algorithm, coded", "Required": true, "QualifierRef": "Use of algorithm, coded" },
-            { "Id": "0525", "Desc": "Cryptographic mode of operation, coded", "Required": false, "QualifierRef": "Cryptographic mode of operation, coded" },
-            { "Id": "0533", "Desc": "Mode of operation code list identifier", "Required": false, "QualifierRef": "Mode of operation code list identifier" },
-            { "Id": "0527", "Desc": "Algorithm, coded", "Required": false, "QualifierRef": "Algorithm, coded" },
-            { "Id": "0529", "Desc": "Algorithm code list identifier", "Required": false, "QualifierRef": "Algorithm code list identifier" },
-            { "Id": "0591", "Desc": "Padding mechanism, coded", "Required": false, "QualifierRef": "Padding mechanism, coded" },
-            { "Id": "0601", "Desc": "Padding mechanism code list identifier", "Required": false, "QualifierRef": "Padding mechanism code list identifier" }
+            {
+              "Id": "0523",
+              "Desc": "Use of algorithm, coded",
+              "Required": true,
+              "QualifierRef": "Use of algorithm, coded"
+            },
+            {
+              "Id": "0525",
+              "Desc": "Cryptographic mode of operation, coded",
+              "Required": false,
+              "QualifierRef": "Cryptographic mode of operation, coded"
+            },
+            {
+              "Id": "0533",
+              "Desc": "Mode of operation code list identifier",
+              "Required": false,
+              "QualifierRef": "Mode of operation code list identifier"
+            },
+            {
+              "Id": "0527",
+              "Desc": "Algorithm, coded",
+              "Required": false,
+              "QualifierRef": "Algorithm, coded"
+            },
+            {
+              "Id": "0529",
+              "Desc": "Algorithm code list identifier",
+              "Required": false,
+              "QualifierRef": "Algorithm code list identifier"
+            },
+            {
+              "Id": "0591",
+              "Desc": "Padding mechanism, coded",
+              "Required": false,
+              "QualifierRef": "Padding mechanism, coded"
+            },
+            {
+              "Id": "0601",
+              "Desc": "Padding mechanism code list identifier",
+              "Required": false,
+              "QualifierRef": "Padding mechanism code list identifier"
+            }
           ]
         },
         {
@@ -845,8 +1353,20 @@
           "Desc": "ALGORITHM PARAMETER",
           "Required": false,
           "Components": [
-            { "Id": "0531", "Desc": "Algorithm parameter qualifier", "Required": true, "QualifierRef": "Algorithm parameter qualifier" },
-            { "Id": "0554", "Desc": "Algorithm parameter value", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 512 }
+            {
+              "Id": "0531",
+              "Desc": "Algorithm parameter qualifier",
+              "Required": true,
+              "QualifierRef": "Algorithm parameter qualifier"
+            },
+            {
+              "Id": "0554",
+              "Desc": "Algorithm parameter value",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 512
+            }
           ]
         }
       ]
@@ -854,16 +1374,47 @@
     "USB": {
       "Desc": "Secured data identification",
       "Elements": [
-        { "Id": "0503", "Desc": "Response type, coded", "Required": true, "QualifierRef": "Response type, coded" },
+        {
+          "Id": "0503",
+          "Desc": "Response type, coded",
+          "Required": true,
+          "QualifierRef": "Response type, coded"
+        },
         {
           "Id": "S501",
           "Desc": "SECURITY DATE AND TIME",
           "Required": false,
           "Components": [
-            { "Id": "0517", "Desc": "Date and time qualifier", "Required": true, "QualifierRef": "Date and time qualifier" },
-            { "Id": "0338", "Desc": "Event date", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 8 },
-            { "Id": "0314", "Desc": "Event time", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 15 },
-            { "Id": "0336", "Desc": "Time offset", "DataType": "A", "Required": false, "MinLength": 4, "MaxLength": 4 }
+            {
+              "Id": "0517",
+              "Desc": "Date and time qualifier",
+              "Required": true,
+              "QualifierRef": "Date and time qualifier"
+            },
+            {
+              "Id": "0338",
+              "Desc": "Event date",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 8
+            },
+            {
+              "Id": "0314",
+              "Desc": "Event time",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 15
+            },
+            {
+              "Id": "0336",
+              "Desc": "Time offset",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 4,
+              "MaxLength": 4
+            }
           ]
         },
         {
@@ -871,10 +1422,36 @@
           "Desc": "INTERCHANGE SENDER",
           "Required": true,
           "Components": [
-            { "Id": "0004", "Desc": "Interchange sender identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" },
-            { "Id": "0008", "Desc": "Interchange sender internal identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0042", "Desc": "Interchange sender internal sub-identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 }
+            {
+              "Id": "0004",
+              "Desc": "Interchange sender identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            },
+            {
+              "Id": "0008",
+              "Desc": "Interchange sender internal identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0042",
+              "Desc": "Interchange sender internal sub-identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            }
           ]
         },
         {
@@ -882,10 +1459,36 @@
           "Desc": "INTERCHANGE RECIPIENT",
           "Required": true,
           "Components": [
-            { "Id": "0010", "Desc": "Interchange recipient identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" },
-            { "Id": "0014", "Desc": "Interchange recipient internal identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0046", "Desc": "Interchange recipient internal sub-identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 }
+            {
+              "Id": "0010",
+              "Desc": "Interchange recipient identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            },
+            {
+              "Id": "0014",
+              "Desc": "Interchange recipient internal identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0046",
+              "Desc": "Interchange recipient internal sub-identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            }
           ]
         }
       ]
@@ -893,34 +1496,136 @@
     "USC": {
       "Desc": "Certificate",
       "Elements": [
-        { "Id": "0536", "Desc": "Certificate reference", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
+        {
+          "Id": "0536",
+          "Desc": "Certificate reference",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 35
+        },
         {
           "Id": "S500",
           "Desc": "SECURITY IDENTIFICATION DETAILS",
           "Required": false,
           "Components": [
-            { "Id": "0577", "Desc": "Security party qualifier", "Required": true, "QualifierRef": "Security party qualifier" },
-            { "Id": "0538", "Desc": "Key name", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0511", "Desc": "Security party identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 512 },
-            { "Id": "0513", "Desc": "Security party code list qualifier", "Required": false, "QualifierRef": "Security party code list qualifier" },
-            { "Id": "0515", "Desc": "Security party code list responsible agency, coded", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0586", "Desc": "Security party name", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0586", "Desc": "Security party name", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0586", "Desc": "Security party name", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 }
+            {
+              "Id": "0577",
+              "Desc": "Security party qualifier",
+              "Required": true,
+              "QualifierRef": "Security party qualifier"
+            },
+            {
+              "Id": "0538",
+              "Desc": "Key name",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0511",
+              "Desc": "Security party identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 512
+            },
+            {
+              "Id": "0513",
+              "Desc": "Security party code list qualifier",
+              "Required": false,
+              "QualifierRef": "Security party code list qualifier"
+            },
+            {
+              "Id": "0515",
+              "Desc": "Security party code list responsible agency, coded",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0586",
+              "Desc": "Security party name",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0586",
+              "Desc": "Security party name",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0586",
+              "Desc": "Security party name",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            }
           ]
         },
-        { "Id": "0545", "Desc": "Certificate syntax and version, coded", "Required": false, "QualifierRef": "Certificate syntax and version, coded" },
-        { "Id": "0505", "Desc": "Filter function, coded", "Required": false, "QualifierRef": "Filter function, coded" },
-        { "Id": "0507", "Desc": "Original character set encoding, coded", "Required": false, "QualifierRef": "Original character set encoding, coded" },
-        { "Id": "0543", "Desc": "Certificate original character set repertoire, coded", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 3 },
-        { "Id": "0546", "Desc": "User authorisation level", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
+        {
+          "Id": "0545",
+          "Desc": "Certificate syntax and version, coded",
+          "Required": false,
+          "QualifierRef": "Certificate syntax and version, coded"
+        },
+        {
+          "Id": "0505",
+          "Desc": "Filter function, coded",
+          "Required": false,
+          "QualifierRef": "Filter function, coded"
+        },
+        {
+          "Id": "0507",
+          "Desc": "Original character set encoding, coded",
+          "Required": false,
+          "QualifierRef": "Original character set encoding, coded"
+        },
+        {
+          "Id": "0543",
+          "Desc": "Certificate original character set repertoire, coded",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 3
+        },
+        {
+          "Id": "0546",
+          "Desc": "User authorisation level",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 35
+        },
         {
           "Id": "S505",
           "Desc": "SERVICE CHARACTER FOR SIGNATURE",
           "Required": false,
           "Components": [
-            { "Id": "0551", "Desc": "Service character for signature qualifier", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 3 },
-            { "Id": "0548", "Desc": "Service character for signature", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 4 }
+            {
+              "Id": "0551",
+              "Desc": "Service character for signature qualifier",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0548",
+              "Desc": "Service character for signature",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 4
+            }
           ]
         },
         {
@@ -928,51 +1633,213 @@
           "Desc": "SECURITY DATE AND TIME",
           "Required": false,
           "Components": [
-            { "Id": "0517", "Desc": "Date and time qualifier", "Required": true, "QualifierRef": "Date and time qualifier" },
-            { "Id": "0338", "Desc": "Event date", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 8 },
-            { "Id": "0314", "Desc": "Event time", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 15 },
-            { "Id": "0336", "Desc": "Time offset", "DataType": "A", "Required": false, "MinLength": 4, "MaxLength": 4 }
+            {
+              "Id": "0517",
+              "Desc": "Date and time qualifier",
+              "Required": true,
+              "QualifierRef": "Date and time qualifier"
+            },
+            {
+              "Id": "0338",
+              "Desc": "Event date",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 8
+            },
+            {
+              "Id": "0314",
+              "Desc": "Event time",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 15
+            },
+            {
+              "Id": "0336",
+              "Desc": "Time offset",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 4,
+              "MaxLength": 4
+            }
           ]
         },
-        { "Id": "0567", "Desc": "Security status, coded", "Required": false, "QualifierRef": "Security status, coded" },
-        { "Id": "0569", "Desc": "Revocation reason, coded", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 3 }
+        {
+          "Id": "0567",
+          "Desc": "Security status, coded",
+          "Required": false,
+          "QualifierRef": "Security status, coded"
+        },
+        {
+          "Id": "0569",
+          "Desc": "Revocation reason, coded",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 3
+        }
       ]
     },
     "USH": {
       "Desc": "Security header",
       "Elements": [
-        { "Id": "0501", "Desc": "Security service, coded", "Required": true, "QualifierRef": "Security service, coded" },
-        { "Id": "0534", "Desc": "Security reference number", "DataType": "AN", "Required": true, "MinLength": 1, "MaxLength": 14 },
-        { "Id": "0541", "Desc": "Scope of security application, coded", "Required": false, "QualifierRef": "Scope of security application, coded" },
-        { "Id": "0503", "Desc": "Response type, coded", "Required": false, "QualifierRef": "Response type, coded" },
-        { "Id": "0505", "Desc": "Filter function, coded", "Required": false, "QualifierRef": "Filter function, coded" },
-        { "Id": "0507", "Desc": "Original character set encoding, coded", "Required": false, "QualifierRef": "Original character set encoding, coded" },
-        { "Id": "0509", "Desc": "Role of security provider, coded", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 3 },
+        {
+          "Id": "0501",
+          "Desc": "Security service, coded",
+          "Required": true,
+          "QualifierRef": "Security service, coded"
+        },
+        {
+          "Id": "0534",
+          "Desc": "Security reference number",
+          "DataType": "AN",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
+        {
+          "Id": "0541",
+          "Desc": "Scope of security application, coded",
+          "Required": false,
+          "QualifierRef": "Scope of security application, coded"
+        },
+        {
+          "Id": "0503",
+          "Desc": "Response type, coded",
+          "Required": false,
+          "QualifierRef": "Response type, coded"
+        },
+        {
+          "Id": "0505",
+          "Desc": "Filter function, coded",
+          "Required": false,
+          "QualifierRef": "Filter function, coded"
+        },
+        {
+          "Id": "0507",
+          "Desc": "Original character set encoding, coded",
+          "Required": false,
+          "QualifierRef": "Original character set encoding, coded"
+        },
+        {
+          "Id": "0509",
+          "Desc": "Role of security provider, coded",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 3
+        },
         {
           "Id": "S500",
           "Desc": "SECURITY IDENTIFICATION DETAILS",
           "Required": false,
           "Components": [
-            { "Id": "0577", "Desc": "Security party qualifier", "Required": true, "QualifierRef": "Security party qualifier" },
-            { "Id": "0538", "Desc": "Key name", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0511", "Desc": "Security party identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 512 },
-            { "Id": "0513", "Desc": "Security party code list qualifier", "Required": false, "QualifierRef": "Security party code list qualifier" },
-            { "Id": "0515", "Desc": "Security party code list responsible agency, coded", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 3 },
-            { "Id": "0586", "Desc": "Security party name", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0586", "Desc": "Security party name", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0586", "Desc": "Security party name", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 }
+            {
+              "Id": "0577",
+              "Desc": "Security party qualifier",
+              "Required": true,
+              "QualifierRef": "Security party qualifier"
+            },
+            {
+              "Id": "0538",
+              "Desc": "Key name",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0511",
+              "Desc": "Security party identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 512
+            },
+            {
+              "Id": "0513",
+              "Desc": "Security party code list qualifier",
+              "Required": false,
+              "QualifierRef": "Security party code list qualifier"
+            },
+            {
+              "Id": "0515",
+              "Desc": "Security party code list responsible agency, coded",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 3
+            },
+            {
+              "Id": "0586",
+              "Desc": "Security party name",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0586",
+              "Desc": "Security party name",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0586",
+              "Desc": "Security party name",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            }
           ]
         },
-        { "Id": "0520", "Desc": "Security sequence number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
+        {
+          "Id": "0520",
+          "Desc": "Security sequence number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 35
+        },
         {
           "Id": "S501",
           "Desc": "SECURITY DATE AND TIME",
           "Required": false,
           "Components": [
-            { "Id": "0517", "Desc": "Date and time qualifier", "Required": true, "QualifierRef": "Date and time qualifier" },
-            { "Id": "0338", "Desc": "Event date", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 8 },
-            { "Id": "0314", "Desc": "Event time", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 15 },
-            { "Id": "0336", "Desc": "Time offset", "DataType": "A", "Required": false, "MinLength": 4, "MaxLength": 4 }
+            {
+              "Id": "0517",
+              "Desc": "Date and time qualifier",
+              "Required": true,
+              "QualifierRef": "Date and time qualifier"
+            },
+            {
+              "Id": "0338",
+              "Desc": "Event date",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 8
+            },
+            {
+              "Id": "0314",
+              "Desc": "Event time",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 15
+            },
+            {
+              "Id": "0336",
+              "Desc": "Time offset",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 4,
+              "MaxLength": 4
+            }
           ]
         }
       ]
@@ -980,14 +1847,31 @@
     "USL": {
       "Desc": "Security list status",
       "Elements": [
-        { "Id": "0567", "Desc": "Security status, coded", "Required": true, "QualifierRef": "Security status, coded" },
+        {
+          "Id": "0567",
+          "Desc": "Security status, coded",
+          "Required": true,
+          "QualifierRef": "Security status, coded"
+        },
         {
           "Id": "S504",
           "Desc": "LIST PARAMETER",
           "Required": false,
           "Components": [
-            { "Id": "0575", "Desc": "List parameter qualifier", "Required": true, "QualifierRef": "List parameter qualifier" },
-            { "Id": "0558", "Desc": "List parameter", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 70 }
+            {
+              "Id": "0575",
+              "Desc": "List parameter qualifier",
+              "Required": true,
+              "QualifierRef": "List parameter qualifier"
+            },
+            {
+              "Id": "0558",
+              "Desc": "List parameter",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 70
+            }
           ]
         }
       ]
@@ -995,23 +1879,70 @@
     "UST": {
       "Desc": "Security trailer",
       "Elements": [
-        { "Id": "0534", "Desc": "Security reference number", "DataType": "AN", "Required": true, "MinLength": 1, "MaxLength": 14 },
-        { "Id": "0588", "Desc": "Number of security segments", "DataType": "A", "Required": true, "MinLength": 1, "MaxLength": 10 }
+        {
+          "Id": "0534",
+          "Desc": "Security reference number",
+          "DataType": "AN",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
+        {
+          "Id": "0588",
+          "Desc": "Number of security segments",
+          "DataType": "A",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 10
+        }
       ]
     },
     "USX": {
       "Desc": "Security references",
       "Elements": [
-        { "Id": "0020", "Desc": "Interchange control reference", "DataType": "AN", "Required": true, "MinLength": 1, "MaxLength": 14 },
+        {
+          "Id": "0020",
+          "Desc": "Interchange control reference",
+          "DataType": "AN",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
         {
           "Id": "S002",
           "Desc": "INTERCHANGE SENDER",
           "Required": false,
           "Components": [
-            { "Id": "0004", "Desc": "Interchange sender identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" },
-            { "Id": "0008", "Desc": "Interchange sender internal identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0042", "Desc": "Interchange sender internal sub-identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 }
+            {
+              "Id": "0004",
+              "Desc": "Interchange sender identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            },
+            {
+              "Id": "0008",
+              "Desc": "Interchange sender internal identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0042",
+              "Desc": "Interchange sender internal sub-identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            }
           ]
         },
         {
@@ -1019,20 +1950,65 @@
           "Desc": "INTERCHANGE RECIPIENT",
           "Required": false,
           "Components": [
-            { "Id": "0010", "Desc": "Interchange recipient identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" },
-            { "Id": "0014", "Desc": "Interchange recipient internal identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
-            { "Id": "0046", "Desc": "Interchange recipient internal sub-identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 }
+            {
+              "Id": "0010",
+              "Desc": "Interchange recipient identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            },
+            {
+              "Id": "0014",
+              "Desc": "Interchange recipient internal identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0046",
+              "Desc": "Interchange recipient internal sub-identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 35
+            }
           ]
         },
-        { "Id": "0048", "Desc": "Group reference number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 14 },
+        {
+          "Id": "0048",
+          "Desc": "Group reference number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
         {
           "Id": "S006",
           "Desc": "APPLICATION SENDER IDENTIFICATION",
           "Required": false,
           "Components": [
-            { "Id": "0040", "Desc": "Application sender identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" }
+            {
+              "Id": "0040",
+              "Desc": "Application sender identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            }
           ]
         },
         {
@@ -1040,35 +2016,126 @@
           "Desc": "APPLICATION RECIPIENT IDENTIFICATION",
           "Required": false,
           "Components": [
-            { "Id": "0044", "Desc": "Application recipient identification", "DataType": "AN", "Required": true, "MinLength": 0, "MaxLength": 35 },
-            { "Id": "0007", "Desc": "Identification code qualifier", "Required": false, "QualifierRef": "Identification code qualifier" }
+            {
+              "Id": "0044",
+              "Desc": "Application recipient identification",
+              "DataType": "AN",
+              "Required": true,
+              "MinLength": 0,
+              "MaxLength": 35
+            },
+            {
+              "Id": "0007",
+              "Desc": "Identification code qualifier",
+              "Required": false,
+              "QualifierRef": "Identification code qualifier"
+            }
           ]
         },
-        { "Id": "0062", "Desc": "Message reference number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 14 },
+        {
+          "Id": "0062",
+          "Desc": "Message reference number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
         {
           "Id": "S009",
           "Desc": "MESSAGE IDENTIFIER",
           "Required": false,
           "Components": [
-            { "Id": "0065", "Desc": "Message type", "Required": true, "QualifierRef": "Message type" },
-            { "Id": "0052", "Desc": "Message version number", "Required": true, "QualifierRef": "Message version number" },
-            { "Id": "0054", "Desc": "Message release number", "Required": true, "QualifierRef": "Message release number" },
-            { "Id": "0051", "Desc": "Controlling agency, coded", "Required": true, "QualifierRef": "Controlling agency, coded" },
-            { "Id": "0057", "Desc": "Association assigned code", "Required": false, "QualifierRef": "Association assigned code" },
-            { "Id": "0110", "Desc": "Code list directory version number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 6 },
-            { "Id": "0113", "Desc": "Message type sub-function identification", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 6 }
+            {
+              "Id": "0065",
+              "Desc": "Message type",
+              "Required": true,
+              "QualifierRef": "Message type"
+            },
+            {
+              "Id": "0052",
+              "Desc": "Message version number",
+              "Required": true,
+              "QualifierRef": "Message version number"
+            },
+            {
+              "Id": "0054",
+              "Desc": "Message release number",
+              "Required": true,
+              "QualifierRef": "Message release number"
+            },
+            {
+              "Id": "0051",
+              "Desc": "Controlling agency, coded",
+              "Required": true,
+              "QualifierRef": "Controlling agency, coded"
+            },
+            {
+              "Id": "0057",
+              "Desc": "Association assigned code",
+              "Required": false,
+              "QualifierRef": "Association assigned code"
+            },
+            {
+              "Id": "0110",
+              "Desc": "Code list directory version number",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            },
+            {
+              "Id": "0113",
+              "Desc": "Message type sub-function identification",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 6
+            }
           ]
         },
-        { "Id": "0800", "Desc": "Package reference number", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 35 },
+        {
+          "Id": "0800",
+          "Desc": "Package reference number",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 35
+        },
         {
           "Id": "S501",
           "Desc": "SECURITY DATE AND TIME",
           "Required": false,
           "Components": [
-            { "Id": "0517", "Desc": "Date and time qualifier", "Required": true, "QualifierRef": "Date and time qualifier" },
-            { "Id": "0338", "Desc": "Event date", "DataType": "A", "Required": false, "MinLength": 1, "MaxLength": 8 },
-            { "Id": "0314", "Desc": "Event time", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 15 },
-            { "Id": "0336", "Desc": "Time offset", "DataType": "A", "Required": false, "MinLength": 4, "MaxLength": 4 }
+            {
+              "Id": "0517",
+              "Desc": "Date and time qualifier",
+              "Required": true,
+              "QualifierRef": "Date and time qualifier"
+            },
+            {
+              "Id": "0338",
+              "Desc": "Event date",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 8
+            },
+            {
+              "Id": "0314",
+              "Desc": "Event time",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 15
+            },
+            {
+              "Id": "0336",
+              "Desc": "Time offset",
+              "DataType": "A",
+              "Required": false,
+              "MinLength": 4,
+              "MaxLength": 4
+            }
           ]
         }
       ]
@@ -1076,17 +2143,43 @@
     "USY": {
       "Desc": "Security on references",
       "Elements": [
-        { "Id": "0534", "Desc": "Security reference number", "DataType": "AN", "Required": true, "MinLength": 1, "MaxLength": 14 },
+        {
+          "Id": "0534",
+          "Desc": "Security reference number",
+          "DataType": "AN",
+          "Required": true,
+          "MinLength": 1,
+          "MaxLength": 14
+        },
         {
           "Id": "S508",
           "Desc": "VALIDATION RESULT",
           "Required": false,
           "Components": [
-            { "Id": "0563", "Desc": "Validation value, qualifier", "Required": true, "QualifierRef": "Validation value, qualifier" },
-            { "Id": "0560", "Desc": "Validation value", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 512 }
+            {
+              "Id": "0563",
+              "Desc": "Validation value, qualifier",
+              "Required": true,
+              "QualifierRef": "Validation value, qualifier"
+            },
+            {
+              "Id": "0560",
+              "Desc": "Validation value",
+              "DataType": "AN",
+              "Required": false,
+              "MinLength": 1,
+              "MaxLength": 512
+            }
           ]
         },
-        { "Id": "0571", "Desc": "Security error, coded", "DataType": "AN", "Required": false, "MinLength": 1, "MaxLength": 3 }
+        {
+          "Id": "0571",
+          "Desc": "Security error, coded",
+          "DataType": "AN",
+          "Required": false,
+          "MinLength": 1,
+          "MaxLength": 3
+        }
       ]
     }
   }

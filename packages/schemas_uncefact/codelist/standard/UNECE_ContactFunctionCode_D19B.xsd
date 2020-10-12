@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 63139_ContactTypeCode - Code List Schema Module            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm63139ContactTypeCode="urn:un:unece:uncefact:codelist:standard:UNECE:ContactFunctionCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ContactFunctionCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.6">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm63139ContactTypeCode="urn:un:unece:uncefact:codelist:standard:UNECE:ContactFunctionCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ContactFunctionCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.6"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="ContactFunctionCode" type="clm63139ContactTypeCode:ContactFunctionCodeContentType"/>
+  <xsd:element
+    name="ContactFunctionCode"
+    type="clm63139ContactTypeCode:ContactFunctionCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Insurance contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding insurance.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding insurance.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Workshop contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding the workshop.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding the workshop.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Accepting contact</ccts:Name>
-            <ccts:Description>Department/person in charge of accepting incoming goods.</ccts:Description>
+            <ccts:Description
+            >Department/person in charge of accepting incoming goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +83,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Contract contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding contracts.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding contracts.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +92,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Land registry contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding land registry.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding land registry.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +101,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Agent</ccts:Name>
-            <ccts:Description>Department/person of the agent which acts on behalf of another party.</ccts:Description>
+            <ccts:Description
+            >Department/person of the agent which acts on behalf of another party.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +110,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Coordination contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding technical coordination of works.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding technical coordination of works.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +119,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Project management contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding project management on behalf of the contractor.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding project management on behalf of the contractor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +128,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Investment contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding investments.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding investments.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +137,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Works management contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding management of works on behalf of the owner.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding management of works on behalf of the owner.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,7 +146,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Personnel contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding personnel (human resources).</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding personnel (human resources).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +155,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Claims contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding claims.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding claims.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +164,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Laboratory contact</ccts:Name>
-            <ccts:Description>Department/person to contact for laboratory matters.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for laboratory matters.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +173,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Plant/equipment contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding plant/equipment.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding plant/equipment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +182,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Accounts payable contact</ccts:Name>
-            <ccts:Description>Department/person responsible for the accounts payable function within a corporation.</ccts:Description>
+            <ccts:Description
+            >Department/person responsible for the accounts payable function within a corporation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +191,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Quantity surveyor contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding quantity surveying.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding quantity surveying.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +200,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Accounts receivable contact</ccts:Name>
-            <ccts:Description>Department/person responsible for the accounts receivable within a corporation.</ccts:Description>
+            <ccts:Description
+            >Department/person responsible for the accounts receivable within a corporation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +209,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Public relations contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding public relations.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding public relations.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +218,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Technical contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding technical issues.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding technical issues.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +227,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>City works authority contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding city works.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding city works.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +236,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Maintenance contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding maintenance.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding maintenance.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +245,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Town planning contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding town planning.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding town planning.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +254,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Traffic authority contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding traffic.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding traffic.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -229,7 +263,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Electricity supply contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding electricity supply.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding electricity supply.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -237,7 +272,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Gas supply contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding gas supply.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding gas supply.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -245,7 +281,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Water supply contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding water supply.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding water supply.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -253,7 +290,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Telecommunications network contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding telecommunications network.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding telecommunications network.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -269,7 +307,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>New developments contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding new developments (e.g. construction).</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding new developments (e.g. construction).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -277,7 +316,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transport infrastructure authority</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding transport infrastructure.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding transport infrastructure.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -285,7 +325,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Service contact</ccts:Name>
-            <ccts:Description>Department/person to be contacted in service matters.</ccts:Description>
+            <ccts:Description
+            >Department/person to be contacted in service matters.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -293,7 +334,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Auditing contact</ccts:Name>
-            <ccts:Description>Department or person to contact with regard to auditing.</ccts:Description>
+            <ccts:Description
+            >Department or person to contact with regard to auditing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -301,7 +343,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Legal auditing contact</ccts:Name>
-            <ccts:Description>Department or person to contact with regard to legal auditing.</ccts:Description>
+            <ccts:Description
+            >Department or person to contact with regard to legal auditing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -309,7 +352,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Software house contact</ccts:Name>
-            <ccts:Description>Department or person to contact with regard to software house.</ccts:Description>
+            <ccts:Description
+            >Department or person to contact with regard to software house.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -317,7 +361,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Department or person responsible for processing purchase order</ccts:Name>
-            <ccts:Description>Identification of the department or person responsible for the processing of purchase orders.</ccts:Description>
+            <ccts:Description
+            >Identification of the department or person responsible for the processing of purchase orders.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -325,7 +370,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Electronic data interchange coordinator</ccts:Name>
-            <ccts:Description>Code specifying a person responsible for the coordination of matters related to the exchange of information in electronic data interchange format.</ccts:Description>
+            <ccts:Description
+            >Code specifying a person responsible for the coordination of matters related to the exchange of information in electronic data interchange format.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +379,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Waiver contact</ccts:Name>
-            <ccts:Description>Code specifying a party knowledgeable about a waiver.</ccts:Description>
+            <ccts:Description
+            >Code specifying a party knowledgeable about a waiver.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -341,7 +388,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Automated clearing house (ACH) contact</ccts:Name>
-            <ccts:Description>Code specifying a person to be contacted at an automated clearing house.</ccts:Description>
+            <ccts:Description
+            >Code specifying a person to be contacted at an automated clearing house.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -349,7 +397,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Certification contact</ccts:Name>
-            <ccts:Description>Code specifying a contact with knowledge of a certification action.</ccts:Description>
+            <ccts:Description
+            >Code specifying a contact with knowledge of a certification action.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +406,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>After business hours contact</ccts:Name>
-            <ccts:Description>Department/person to contact after normal working hours.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact after normal working hours.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -365,7 +415,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Company Security Officer’s 24-hour contact</ccts:Name>
-            <ccts:Description>The round the clock contact of the Company Security Officer who is responsible for the vessel.</ccts:Description>
+            <ccts:Description
+            >The round the clock contact of the Company Security Officer who is responsible for the vessel.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -373,7 +424,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Agent of ship at the intended port of arrival</ccts:Name>
-            <ccts:Description>Contact details of the agent of the ship at the intended port of arrival.</ccts:Description>
+            <ccts:Description
+            >Contact details of the agent of the ship at the intended port of arrival.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -389,7 +441,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Customer contact</ccts:Name>
-            <ccts:Description>The main department/person to be contacted at the customer.</ccts:Description>
+            <ccts:Description
+            >The main department/person to be contacted at the customer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -397,7 +450,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Meter access contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding meter reading, including access to the meter.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding meter reading, including access to the meter.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -413,7 +467,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Carrier</ccts:Name>
-            <ccts:Description>(3126) Party undertaking or arranging transport of goods between named points.</ccts:Description>
+            <ccts:Description
+            >(3126) Party undertaking or arranging transport of goods between named points.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -429,7 +484,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Responsible person for information production</ccts:Name>
-            <ccts:Description>Responsible person to contact for matters regarding the production of information.</ccts:Description>
+            <ccts:Description
+            >Responsible person to contact for matters regarding the production of information.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -437,7 +493,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Responsible person for information dissemination</ccts:Name>
-            <ccts:Description>Responsible person to contact for matters regarding information dissemination.</ccts:Description>
+            <ccts:Description
+            >Responsible person to contact for matters regarding information dissemination.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -445,7 +502,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Head of unit for computer data processing</ccts:Name>
-            <ccts:Description>Head of unit to contact for matters regarding computer data processing.</ccts:Description>
+            <ccts:Description
+            >Head of unit to contact for matters regarding computer data processing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -453,7 +511,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Head of unit for information production</ccts:Name>
-            <ccts:Description>Head of unit to contact for matters regarding the production of information.</ccts:Description>
+            <ccts:Description
+            >Head of unit to contact for matters regarding the production of information.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -461,7 +520,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Head of unit for information dissemination</ccts:Name>
-            <ccts:Description>Head of unit to contact for matters regarding dissemination of information.</ccts:Description>
+            <ccts:Description
+            >Head of unit to contact for matters regarding dissemination of information.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -477,7 +537,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Consignor</ccts:Name>
-            <ccts:Description>(3336) Party which, by contract with a carrier, consigns or sends goods with the carrier, or has them conveyed by him. Synonym: shipper/sender.</ccts:Description>
+            <ccts:Description
+            >(3336) Party which, by contract with a carrier, consigns or sends goods with the carrier, or has them conveyed by him. Synonym: shipper/sender.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -485,7 +546,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Responsible person for computer data processing</ccts:Name>
-            <ccts:Description>Responsible person to contact for matters regarding computer data processing.</ccts:Description>
+            <ccts:Description
+            >Responsible person to contact for matters regarding computer data processing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -501,7 +563,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Confirmed with</ccts:Name>
-            <ccts:Description>Person with whom the contents of the purchase order has been discussed and agreed (e.g. by telephone) prior to the sending of this message.</ccts:Description>
+            <ccts:Description
+            >Person with whom the contents of the purchase order has been discussed and agreed (e.g. by telephone) prior to the sending of this message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -509,7 +572,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Department/employee to execute export procedures</ccts:Name>
-            <ccts:Description>Department/employee which/who executes export procedures.</ccts:Description>
+            <ccts:Description
+            >Department/employee which/who executes export procedures.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -517,7 +581,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Department/employee to execute import procedures</ccts:Name>
-            <ccts:Description>Department/employee which/who executes import procedures.</ccts:Description>
+            <ccts:Description
+            >Department/employee which/who executes import procedures.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -549,7 +614,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Engineering contact</ccts:Name>
-            <ccts:Description>Department/person to contact for matters regarding engineering.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for matters regarding engineering.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -565,7 +631,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Goods receiving contact</ccts:Name>
-            <ccts:Description>Department/person responsible for receiving the goods at the place of delivery.</ccts:Description>
+            <ccts:Description
+            >Department/person responsible for receiving the goods at the place of delivery.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -573,7 +640,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Emergency dangerous goods contact</ccts:Name>
-            <ccts:Description>[3058] Party who is to be contacted to intervene in case of emergency.</ccts:Description>
+            <ccts:Description
+            >[3058] Party who is to be contacted to intervene in case of emergency.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -581,7 +649,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Dangerous goods contact</ccts:Name>
-            <ccts:Description>[3060] Department/person to be contacted for details about the transportation of dangerous goods/hazardous material.</ccts:Description>
+            <ccts:Description
+            >[3060] Department/person to be contacted for details about the transportation of dangerous goods/hazardous material.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -589,7 +658,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Hazardous material contact</ccts:Name>
-            <ccts:Description>Department/person responsible for hazardous material control.</ccts:Description>
+            <ccts:Description
+            >Department/person responsible for hazardous material control.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -597,7 +667,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Information contact</ccts:Name>
-            <ccts:Description>Department/person to contact for questions regarding transactions.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for questions regarding transactions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -613,7 +684,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Place of delivery contact</ccts:Name>
-            <ccts:Description>Department/employee to be contacted at the place of delivery.</ccts:Description>
+            <ccts:Description
+            >Department/employee to be contacted at the place of delivery.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -621,7 +693,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Place of collection contact</ccts:Name>
-            <ccts:Description>Department/employee to be contacted at the place of collection.</ccts:Description>
+            <ccts:Description
+            >Department/employee to be contacted at the place of collection.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -629,7 +702,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Material control contact</ccts:Name>
-            <ccts:Description>Department/person responsible for the controlling/inspection of goods.</ccts:Description>
+            <ccts:Description
+            >Department/person responsible for the controlling/inspection of goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -637,7 +711,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Material disposition contact</ccts:Name>
-            <ccts:Description>Department/person responsible for the disposition/scheduling of goods.</ccts:Description>
+            <ccts:Description
+            >Department/person responsible for the disposition/scheduling of goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -645,7 +720,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Material handling contact</ccts:Name>
-            <ccts:Description>Department/employee to be contacted for material handling.</ccts:Description>
+            <ccts:Description
+            >Department/employee to be contacted for material handling.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -653,7 +729,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Message recipient contact</ccts:Name>
-            <ccts:Description>Department/employee to be contacted at the message recipient.</ccts:Description>
+            <ccts:Description
+            >Department/employee to be contacted at the message recipient.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -661,7 +738,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Message sender contact</ccts:Name>
-            <ccts:Description>Department/employee to be contacted at the message sender.</ccts:Description>
+            <ccts:Description
+            >Department/employee to be contacted at the message sender.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -677,7 +755,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Order contact</ccts:Name>
-            <ccts:Description>An individual to contact for questions regarding this order.</ccts:Description>
+            <ccts:Description
+            >An individual to contact for questions regarding this order.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -685,7 +764,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Prototype coordinator</ccts:Name>
-            <ccts:Description>Department/employee to be contacted as prototype co-ordinator.</ccts:Description>
+            <ccts:Description
+            >Department/employee to be contacted as prototype co-ordinator.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -693,7 +773,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Purchasing contact</ccts:Name>
-            <ccts:Description>Department/person responsible for issuing this purchase order.</ccts:Description>
+            <ccts:Description
+            >Department/person responsible for issuing this purchase order.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -709,7 +790,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product management contact</ccts:Name>
-            <ccts:Description>Department/person to contact for questions regarding this order.</ccts:Description>
+            <ccts:Description
+            >Department/person to contact for questions regarding this order.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -741,7 +823,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Authorized responsible person</ccts:Name>
-            <ccts:Description>Responsible person who is authorized to sign official documents.</ccts:Description>
+            <ccts:Description
+            >Responsible person who is authorized to sign official documents.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -749,7 +832,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sales administration</ccts:Name>
-            <ccts:Description>Name of the sales administration contact within a corporation.</ccts:Description>
+            <ccts:Description
+            >Name of the sales administration contact within a corporation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -757,7 +841,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Schedule contact</ccts:Name>
-            <ccts:Description>Name of the scheduling contact within a corporation.</ccts:Description>
+            <ccts:Description
+            >Name of the scheduling contact within a corporation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -765,7 +850,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shipping contact</ccts:Name>
-            <ccts:Description>The shipping department contact within an organization.</ccts:Description>
+            <ccts:Description
+            >The shipping department contact within an organization.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -773,7 +859,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sales representative or department</ccts:Name>
-            <ccts:Description>The sales representative or department contact within an organization.</ccts:Description>
+            <ccts:Description
+            >The sales representative or department contact within an organization.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -789,7 +876,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Traffic administrator</ccts:Name>
-            <ccts:Description>The traffic administrator contact within an organization.</ccts:Description>
+            <ccts:Description
+            >The traffic administrator contact within an organization.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -805,7 +893,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Technical documentation recipient</ccts:Name>
-            <ccts:Description>Department/person to receive technical documentation.</ccts:Description>
+            <ccts:Description
+            >Department/person to receive technical documentation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -837,7 +926,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Office Manager</ccts:Name>
-            <ccts:Description>An individual responsible for managing the day to day activities of an office.</ccts:Description>
+            <ccts:Description
+            >An individual responsible for managing the day to day activities of an office.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -853,7 +943,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Mutually defined</ccts:Name>
-            <ccts:Description>A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
+            <ccts:Description
+            >A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

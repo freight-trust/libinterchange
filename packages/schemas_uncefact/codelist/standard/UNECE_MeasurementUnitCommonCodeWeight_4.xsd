@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 6Recommendation20_Weight - Code List Schema Module         ===== -->
 <!-- ====================================================================== -->
@@ -34,13 +34,24 @@ BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL
 NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR 
 FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm6Recommendation20Weight="urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeWeight:4" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeWeight:4" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm6Recommendation20Weight="urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeWeight:4"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeWeight:4"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="1.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="MeasurementUnitCommonCodeWeight" type="clm6Recommendation20Weight:MeasurementUnitCommonCodeWeightContentType"/>
+  <xsd:element
+    name="MeasurementUnitCommonCodeWeight"
+    type="clm6Recommendation20Weight:MeasurementUnitCommonCodeWeightContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -64,8 +75,8 @@ FITNESS FOR A PARTICULAR PURPOSE.
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:minLength value="1"/>
-      <xsd:maxLength value="3"/>
+      <xsd:minLength value="1" />
+      <xsd:maxLength value="3" />
     </xsd:restriction>
   </xsd:simpleType>
 </xsd:schema>

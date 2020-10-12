@@ -80,7 +80,12 @@
                   "Max": 99,
                   "Loop": [
                     { "Id": "ITM" },
-                    { "Id": "TVLLoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "ADT" }, { "Id": "TVL", "Min": 0 }] },
+                    {
+                      "Id": "TVLLoop2",
+                      "Min": 0,
+                      "Max": 99,
+                      "Loop": [{ "Id": "ADT" }, { "Id": "TVL", "Min": 0 }]
+                    },
                     { "Id": "MON", "Min": 0 },
                     { "Id": "FQU", "Min": 0 },
                     { "Id": "PTS", "Min": 0 },
@@ -110,7 +115,11 @@
             { "Id": "APD", "Min": 0 }
           ]
         },
-        { "Id": "SPILoop1", "Min": 0, "Loop": [{ "Id": "TPD" }, { "Id": "SPI", "Min": 0, "Max": 4 }] },
+        {
+          "Id": "SPILoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "TPD" }, { "Id": "SPI", "Min": 0, "Max": 4 }]
+        },
         { "Id": "DIDLoop2", "Min": 0, "Loop": [{ "Id": "ABI" }, { "Id": "DID", "Min": 0 }] },
         {
           "Id": "DATLoop3",
@@ -132,12 +141,20 @@
                     { "Id": "CPN" },
                     { "Id": "TXD", "Min": 0 },
                     { "Id": "EQI", "Min": 0 },
-                    { "Id": "EQILoop2", "Min": 0, "Loop": [{ "Id": "TII" }, { "Id": "EQI", "Min": 0 }] }
+                    {
+                      "Id": "EQILoop2",
+                      "Min": 0,
+                      "Loop": [{ "Id": "TII" }, { "Id": "EQI", "Min": 0 }]
+                    }
                   ]
                 }
               ]
             },
-            { "Id": "CVRLoop3", "Min": 0, "Loop": [{ "Id": "REF" }, { "Id": "MON", "Min": 0 }, { "Id": "CVR", "Min": 0 }] }
+            {
+              "Id": "CVRLoop3",
+              "Min": 0,
+              "Loop": [{ "Id": "REF" }, { "Id": "MON", "Min": 0 }, { "Id": "CVR", "Min": 0 }]
+            }
           ]
         }
       ]

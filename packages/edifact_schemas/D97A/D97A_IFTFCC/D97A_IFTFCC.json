@@ -10,11 +10,31 @@
     { "Id": "DTM", "Min": 0, "Max": 9 },
     { "Id": "TSR", "Min": 0, "Max": 9 },
     { "Id": "DOC", "Min": 0, "Max": 9 },
-    { "Id": "LOCLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "LOCLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
     { "Id": "MOALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "MOA" }, { "Id": "PCD", "Min": 0 }] },
-    { "Id": "TAXLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "TAX" }, { "Id": "PCD", "Min": 0 }, { "Id": "MOA", "Min": 0, "Max": 2 }] },
-    { "Id": "CUXLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "TAXLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "TAX" }, { "Id": "PCD", "Min": 0 }, { "Id": "MOA", "Min": 0, "Max": 2 }]
+    },
+    {
+      "Id": "CUXLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
     {
       "Id": "TCCLoop1",
       "Min": 0,
@@ -27,7 +47,12 @@
         { "Id": "FTX", "Min": 0, "Max": 9 },
         { "Id": "PCD", "Min": 0, "Max": 9 },
         { "Id": "QTY", "Min": 0, "Max": 9 },
-        { "Id": "PRILoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "PRI" }, { "Id": "CUX", "Min": 0, "Max": 9 }] },
+        {
+          "Id": "PRILoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "PRI" }, { "Id": "CUX", "Min": 0, "Max": 9 }]
+        },
         {
           "Id": "MOALoop2",
           "Min": 0,
@@ -49,22 +74,47 @@
         { "Id": "NAD" },
         { "Id": "FII", "Min": 0, "Max": 9 },
         { "Id": "LOC", "Min": 0, "Max": 9 },
-        { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] },
-        { "Id": "RFFLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] }
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        },
+        {
+          "Id": "RFFLoop2",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+        }
       ]
     },
-    { "Id": "TODLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0, "Max": 2 }] },
+    {
+      "Id": "TODLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0, "Max": 2 }]
+    },
     {
       "Id": "CPILoop1",
       "Min": 0,
       "Max": 9,
-      "Loop": [{ "Id": "CPI" }, { "Id": "CUX", "Min": 0 }, { "Id": "LOC", "Min": 0, "Max": 9 }, { "Id": "MOA", "Min": 0, "Max": 9 }]
+      "Loop": [
+        { "Id": "CPI" },
+        { "Id": "CUX", "Min": 0 },
+        { "Id": "LOC", "Min": 0, "Max": 9 },
+        { "Id": "MOA", "Min": 0, "Max": 9 }
+      ]
     },
     {
       "Id": "PATLoop1",
       "Min": 0,
       "Max": 5,
-      "Loop": [{ "Id": "PAT" }, { "Id": "DTM", "Min": 0, "Max": 5 }, { "Id": "PCD", "Min": 0 }, { "Id": "MOA", "Min": 0 }]
+      "Loop": [
+        { "Id": "PAT" },
+        { "Id": "DTM", "Min": 0, "Max": 5 },
+        { "Id": "PCD", "Min": 0 },
+        { "Id": "MOA", "Min": 0 }
+      ]
     },
     {
       "Id": "TDTLoop1",
@@ -75,7 +125,12 @@
         { "Id": "TCC", "Min": 0, "Max": 99 },
         { "Id": "DTM", "Min": 0, "Max": 9 },
         { "Id": "LOC", "Min": 0, "Max": 9 },
-        { "Id": "RFFLoop3", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] }
+        {
+          "Id": "RFFLoop3",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+        }
       ]
     },
     {
@@ -92,10 +147,30 @@
         { "Id": "PCI", "Min": 0, "Max": 9 },
         { "Id": "PIA", "Min": 0, "Max": 9 },
         { "Id": "FTX", "Min": 0, "Max": 9 },
-        { "Id": "MEALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }] },
-        { "Id": "DIMLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }] },
-        { "Id": "RFFLoop4", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
-        { "Id": "DGSLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "DGS" }, { "Id": "FTX", "Min": 0 }] }
+        {
+          "Id": "MEALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }]
+        },
+        {
+          "Id": "DIMLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }]
+        },
+        {
+          "Id": "RFFLoop4",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+        },
+        {
+          "Id": "DGSLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "DGS" }, { "Id": "FTX", "Min": 0 }]
+        }
       ]
     },
     {
@@ -112,9 +187,24 @@
         { "Id": "SEL", "Min": 0, "Max": 99 },
         { "Id": "TPL", "Min": 0, "Max": 9 },
         { "Id": "FTX", "Min": 0, "Max": 9 },
-        { "Id": "RFFLoop5", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-        { "Id": "NADLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "NAD" }, { "Id": "DTM", "Min": 0 }] },
-        { "Id": "EQALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "EQA" }, { "Id": "EQN", "Min": 0 }] }
+        {
+          "Id": "RFFLoop5",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+        },
+        {
+          "Id": "NADLoop2",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "NAD" }, { "Id": "DTM", "Min": 0 }]
+        },
+        {
+          "Id": "EQALoop1",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [{ "Id": "EQA" }, { "Id": "EQN", "Min": 0 }]
+        }
       ]
     },
     {
@@ -128,21 +218,51 @@
         { "Id": "TSR", "Min": 0, "Max": 9 },
         { "Id": "FTX", "Min": 0, "Max": 9 },
         { "Id": "MOA", "Min": 0, "Max": 9 },
-        { "Id": "CUXLoop3", "Min": 0, "Max": 9, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-        { "Id": "LOCLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-        { "Id": "RFFLoop6", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-        { "Id": "TODLoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0, "Max": 2 }] },
+        {
+          "Id": "CUXLoop3",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+        },
+        {
+          "Id": "LOCLoop2",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+        },
+        {
+          "Id": "RFFLoop6",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+        },
+        {
+          "Id": "TODLoop2",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0, "Max": 2 }]
+        },
         {
           "Id": "CPILoop2",
           "Min": 0,
           "Max": 9,
-          "Loop": [{ "Id": "CPI" }, { "Id": "CUX", "Min": 0 }, { "Id": "LOC", "Min": 0, "Max": 9 }, { "Id": "MOA", "Min": 0, "Max": 9 }]
+          "Loop": [
+            { "Id": "CPI" },
+            { "Id": "CUX", "Min": 0 },
+            { "Id": "LOC", "Min": 0, "Max": 9 },
+            { "Id": "MOA", "Min": 0, "Max": 9 }
+          ]
         },
         {
           "Id": "TDTLoop2",
           "Min": 0,
           "Max": 99,
-          "Loop": [{ "Id": "TDT" }, { "Id": "DTM", "Min": 0, "Max": 9 }, { "Id": "LOC", "Min": 0, "Max": 9 }, { "Id": "RFF", "Min": 0, "Max": 9 }]
+          "Loop": [
+            { "Id": "TDT" },
+            { "Id": "DTM", "Min": 0, "Max": 9 },
+            { "Id": "LOC", "Min": 0, "Max": 9 },
+            { "Id": "RFF", "Min": 0, "Max": 9 }
+          ]
         },
         {
           "Id": "NADLoop3",
@@ -150,7 +270,12 @@
           "Max": 99,
           "Loop": [
             { "Id": "NAD" },
-            { "Id": "CTALoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] },
+            {
+              "Id": "CTALoop2",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+            },
             { "Id": "RFF", "Min": 0, "Max": 9 }
           ]
         },
@@ -168,10 +293,30 @@
             { "Id": "PCI", "Min": 0, "Max": 9 },
             { "Id": "PIA", "Min": 0, "Max": 9 },
             { "Id": "FTX", "Min": 0, "Max": 9 },
-            { "Id": "MEALoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }] },
-            { "Id": "DIMLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }] },
-            { "Id": "RFFLoop7", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
-            { "Id": "DGSLoop2", "Min": 0, "Max": 9, "Loop": [{ "Id": "DGS" }, { "Id": "FTX", "Min": 0 }] }
+            {
+              "Id": "MEALoop2",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }]
+            },
+            {
+              "Id": "DIMLoop2",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }]
+            },
+            {
+              "Id": "RFFLoop7",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+            },
+            {
+              "Id": "DGSLoop2",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "DGS" }, { "Id": "FTX", "Min": 0 }]
+            }
           ]
         },
         {
@@ -188,9 +333,24 @@
             { "Id": "SEL", "Min": 0, "Max": 99 },
             { "Id": "TPL", "Min": 0, "Max": 9 },
             { "Id": "FTX", "Min": 0, "Max": 9 },
-            { "Id": "RFFLoop8", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-            { "Id": "NADLoop4", "Min": 0, "Max": 9, "Loop": [{ "Id": "NAD" }, { "Id": "DTM", "Min": 0 }] },
-            { "Id": "EQALoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "EQA" }, { "Id": "EQN", "Min": 0 }] }
+            {
+              "Id": "RFFLoop8",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+            },
+            {
+              "Id": "NADLoop4",
+              "Min": 0,
+              "Max": 9,
+              "Loop": [{ "Id": "NAD" }, { "Id": "DTM", "Min": 0 }]
+            },
+            {
+              "Id": "EQALoop2",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "EQA" }, { "Id": "EQN", "Min": 0 }]
+            }
           ]
         }
       ]

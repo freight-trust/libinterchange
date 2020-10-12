@@ -11,13 +11,21 @@
       "Id": "DCDLoop1",
       "Min": 0,
       "Max": "unbounded",
-      "Loop": [{ "Id": "DCD" }, { "Id": "DPI", "Min": 0, "Max": "unbounded" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }]
+      "Loop": [
+        { "Id": "DCD" },
+        { "Id": "DPI", "Min": 0, "Max": "unbounded" },
+        { "Id": "DNB", "Min": 0, "Max": "unbounded" }
+      ]
     },
     {
       "Id": "RCDLoop1",
       "Min": 0,
       "Max": "unbounded",
-      "Loop": [{ "Id": "RCD" }, { "Id": "RPI", "Min": 0, "Max": "unbounded" }, { "Id": "RNB", "Min": 0, "Max": "unbounded" }]
+      "Loop": [
+        { "Id": "RCD" },
+        { "Id": "RPI", "Min": 0, "Max": "unbounded" },
+        { "Id": "RNB", "Min": 0, "Max": "unbounded" }
+      ]
     },
     { "Id": "DCT", "Min": 0, "Max": 1 },
     { "Id": "MTR", "Max": 1 }

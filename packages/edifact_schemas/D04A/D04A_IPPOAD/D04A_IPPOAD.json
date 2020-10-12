@@ -13,7 +13,15 @@
       "Id": "PNALoop1",
       "Min": 0,
       "Max": 9,
-      "Loop": [{ "Id": "PNA" }, { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] }]
+      "Loop": [
+        { "Id": "PNA" },
+        {
+          "Id": "RFFLoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+        }
+      ]
     },
     {
       "Id": "ICDLoop1",
@@ -88,7 +96,12 @@
         { "Id": "QTY", "Min": 0, "Max": 9 },
         { "Id": "RFF", "Min": 0, "Max": 9 },
         { "Id": "FTX", "Min": 0, "Max": 99 },
-        { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] },
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        },
         {
           "Id": "CODLoop2",
           "Min": 0,

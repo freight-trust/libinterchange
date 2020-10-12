@@ -11,7 +11,13 @@
     {
       "Id": "NADLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "ATT", "Min": 0 }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 3 }, { "Id": "RFF", "Min": 0, "Max": 9 }]
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "ATT", "Min": 0 },
+        { "Id": "CTA", "Min": 0 },
+        { "Id": "COM", "Min": 0, "Max": 3 },
+        { "Id": "RFF", "Min": 0, "Max": 9 }
+      ]
     },
     {
       "Id": "DTMLoop1",
@@ -31,8 +37,18 @@
               "Loop": [
                 { "Id": "MOA" },
                 { "Id": "DTM", "Min": 0 },
-                { "Id": "INDLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "IND" }, { "Id": "DTM", "Min": 0 }] },
-                { "Id": "ATTLoop2", "Min": 0, "Max": 2, "Loop": [{ "Id": "ATT" }, { "Id": "PCD", "Min": 0 }] },
+                {
+                  "Id": "INDLoop1",
+                  "Min": 0,
+                  "Max": 2,
+                  "Loop": [{ "Id": "IND" }, { "Id": "DTM", "Min": 0 }]
+                },
+                {
+                  "Id": "ATTLoop2",
+                  "Min": 0,
+                  "Max": 2,
+                  "Loop": [{ "Id": "ATT" }, { "Id": "PCD", "Min": 0 }]
+                },
                 { "Id": "TAXLoop1", "Min": 0, "Loop": [{ "Id": "TAX" }, { "Id": "PCD", "Min": 0 }] }
               ]
             }

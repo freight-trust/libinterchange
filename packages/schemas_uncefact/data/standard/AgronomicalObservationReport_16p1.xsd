@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== AgronomicalObservationReport Schema Module                 ===== -->
 <!-- ====================================================================== -->
@@ -15,22 +15,42 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rsm="urn:un:unece:uncefact:data:standard:AgronomicalObservationReport:16" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27" xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27" targetNamespace="urn:un:unece:uncefact:data:standard:AgronomicalObservationReport:16" elementFormDefault="qualified" attributeFormDefault="unqualified" version="16.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:rsm="urn:un:unece:uncefact:data:standard:AgronomicalObservationReport:16"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27"
+  xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27"
+  xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27"
+  targetNamespace="urn:un:unece:uncefact:data:standard:AgronomicalObservationReport:16"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="16.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Imports                                                     ===== -->
 <!-- ======================================================================= -->
 <!-- ======================================================================= -->
 <!-- ===== Import of Unqualified Data Type Schema Module               ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27" schemaLocation="UnqualifiedDataType_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27"
+    schemaLocation="UnqualifiedDataType_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Import of Qualified Data Type Schema Module                 ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27" schemaLocation="QualifiedDataType_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27"
+    schemaLocation="QualifiedDataType_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27" schemaLocation="ReusableAggregateBusinessInformationEntity_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27"
+    schemaLocation="ReusableAggregateBusinessInformationEntity_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
@@ -43,9 +63,11 @@ This document and the information contained herein is provided on an "AS IS" bas
         <ccts:Acronym>RSM</ccts:Acronym>
         <ccts:Name>AgronomicalObservationReport</ccts:Name>
         <ccts:Version>1.0</ccts:Version>
-        <ccts:Definition>Message that provides to transfer raw datas from the field to any kind of parties</ccts:Definition>
+        <ccts:Definition
+        >Message that provides to transfer raw datas from the field to any kind of parties</ccts:Definition>
         <ccts:BusinessProcessContextValue>In All Contexts</ccts:BusinessProcessContextValue>
-        <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+        <ccts:GeopoliticalOrRegionContextValue
+        >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
         <ccts:OfficialConstraintContextValue>In All Contexts</ccts:OfficialConstraintContextValue>
         <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
         <ccts:IndustryContextValue>European, National, Local Regulations</ccts:IndustryContextValue>
@@ -67,10 +89,12 @@ This document and the information contained herein is provided on an "AS IS" bas
         <ccts:Acronym>MA</ccts:Acronym>
         <ccts:DictionaryEntryName>Agronomical Observation Report. Details</ccts:DictionaryEntryName>
         <ccts:Version>1.0</ccts:Version>
-        <ccts:Definition>Message that provides to transfer raw datas from the field to any kind of parties</ccts:Definition>
+        <ccts:Definition
+        >Message that provides to transfer raw datas from the field to any kind of parties</ccts:Definition>
         <ccts:ObjectClassTerm>Agronomical Observation Report</ccts:ObjectClassTerm>
         <ccts:BusinessProcessContextValue>In All Contexts</ccts:BusinessProcessContextValue>
-        <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+        <ccts:GeopoliticalOrRegionContextValue
+        >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
         <ccts:OfficialConstraintContextValue>In All Contexts</ccts:OfficialConstraintContextValue>
         <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
         <ccts:IndustryContextValue>European, National, Local Regulations</ccts:IndustryContextValue>
@@ -80,53 +104,79 @@ This document and the information contained herein is provided on an "AS IS" bas
       </xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="AgronomicalObservationDocument" type="ram:AgronomicalObservationDocumentType" minOccurs="1" maxOccurs="unbounded">
+      <xsd:element
+        name="AgronomicalObservationDocument"
+        type="ram:AgronomicalObservationDocumentType"
+        minOccurs="1"
+        maxOccurs="unbounded"
+      >
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>UN01009294</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>Agronomical Observation Report. Agronomical Observation_ Document</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >Agronomical Observation Report. Agronomical Observation_ Document</ccts:DictionaryEntryName>
             <ccts:Version>1.1</ccts:Version>
-            <ccts:Definition>A collection of data for a piece of written, printed or electronic matter that provides information or evidence of the transfer of agronomical data from the field to one or more parties, such as to set up a network of epidemiological monitoring of crops.</ccts:Definition>
+            <ccts:Definition
+            >A collection of data for a piece of written, printed or electronic matter that provides information or evidence of the transfer of agronomical data from the field to one or more parties, such as to set up a network of epidemiological monitoring of crops.</ccts:Definition>
             <ccts:Cardinality>1..n</ccts:Cardinality>
             <ccts:ObjectClassTerm>Agronomical Observation Report</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Document</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>Agronomical Observation</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >Agronomical Observation</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>In All Contexts</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
-            <ccts:OfficialConstraintContextValue>In All Contexts</ccts:OfficialConstraintContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:OfficialConstraintContextValue
+            >In All Contexts</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
-            <ccts:IndustryContextValue>European, National, Local Regulations</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:IndustryContextValue
+            >European, National, Local Regulations</ccts:IndustryContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="SingleAgronomicalObservation" type="ram:SingleAgronomicalObservationType" minOccurs="0" maxOccurs="unbounded">
+      <xsd:element
+        name="SingleAgronomicalObservation"
+        type="ram:SingleAgronomicalObservationType"
+        minOccurs="0"
+        maxOccurs="unbounded"
+      >
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>UN01009309</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>Agronomical Observation Report. Single_ Agronomical Observation</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >Agronomical Observation Report. Single_ Agronomical Observation</ccts:DictionaryEntryName>
             <ccts:Version>1.0</ccts:Version>
-            <ccts:Definition>A single collection of diagnostic data, visual or technical, for agronomical purposes.</ccts:Definition>
+            <ccts:Definition
+            >A single collection of diagnostic data, visual or technical, for agronomical purposes.</ccts:Definition>
             <ccts:Cardinality>0..n</ccts:Cardinality>
             <ccts:ObjectClassTerm>Agronomical Observation Report</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Agronomical Observation</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>Single</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >Single</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>In All Contexts</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
-            <ccts:OfficialConstraintContextValue>In All Contexts</ccts:OfficialConstraintContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:OfficialConstraintContextValue
+            >In All Contexts</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
-            <ccts:IndustryContextValue>European, National, Local Regulations</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:IndustryContextValue
+            >European, National, Local Regulations</ccts:IndustryContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>

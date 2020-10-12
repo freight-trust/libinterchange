@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 210AccountingE307 - Code List Schema Module                ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm210AccountingE307="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:TaxExemptionReason:D11A" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:TaxExemptionReason:D11A" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm210AccountingE307="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:TaxExemptionReason:D11A"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:EDIFICAS-EU:TaxExemptionReason:D11A"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="1.0"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="TaxExemptionReason" type="clm210AccountingE307:TaxExemptionReasonContentType"/>
+  <xsd:element
+    name="TaxExemptionReason"
+    type="clm210AccountingE307:TaxExemptionReasonContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -61,7 +72,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Acquisition intraCommunity exempt</ccts:Name>
-            <ccts:Description>The code indicates Acquisition intraCommunity exempt.</ccts:Description>
+            <ccts:Description
+            >The code indicates Acquisition intraCommunity exempt.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +89,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>FR DOM (special exemptions)</ccts:Name>
-            <ccts:Description>The code indicates special exemptions in Departments and Territories Overseas of France.</ccts:Description>
+            <ccts:Description
+            >The code indicates special exemptions in Departments and Territories Overseas of France.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -100,8 +113,10 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="9">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Education and professional training provided by recognized institutions</ccts:Name>
-            <ccts:Description>The code indicates Education and professional training provided by recognized institutions.</ccts:Description>
+            <ccts:Name
+            >Education and professional training provided by recognized institutions</ccts:Name>
+            <ccts:Description
+            >The code indicates Education and professional training provided by recognized institutions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +124,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Exemption on particular bank and financial transactions</ccts:Name>
-            <ccts:Description>The code indicates Exemption on particular bank and financial transactions.</ccts:Description>
+            <ccts:Description
+            >The code indicates Exemption on particular bank and financial transactions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,15 +141,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Insurance and reinsurance transactions</ccts:Name>
-            <ccts:Description>The code indicates Insurance and reinsurance transactions.</ccts:Description>
+            <ccts:Description
+            >The code indicates Insurance and reinsurance transactions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="13">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Particular real estate rental (farm land and buildings; unmanaged soil; unequipped business premises)</ccts:Name>
-            <ccts:Description>The code indicates Particular real estate rental (farm land and buildings; unmanaged soil; unequipped business premises).</ccts:Description>
+            <ccts:Name
+            >Particular real estate rental (farm land and buildings; unmanaged soil; unequipped business premises)</ccts:Name>
+            <ccts:Description
+            >The code indicates Particular real estate rental (farm land and buildings; unmanaged soil; unequipped business premises).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +160,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Particular rentals of furnished dwelling</ccts:Name>
-            <ccts:Description>The code indicates Particular rentals of furnished dwelling.</ccts:Description>
+            <ccts:Description
+            >The code indicates Particular rentals of furnished dwelling.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +177,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cost reimbursement of equipment by members of grouping</ccts:Name>
-            <ccts:Description>The code indicates Cost reimbursement of equipment by members of grouping.</ccts:Description>
+            <ccts:Description
+            >The code indicates Cost reimbursement of equipment by members of grouping.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -172,8 +193,10 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="18">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Not for profit organizations (including groupings of blind or disabled workers, philosophical, religious, political, civic organizations or unions)</ccts:Name>
-            <ccts:Description>The code indicates Not for profit organizations (including groupings of blind or disabled workers, philosophical, religious, political, civic organizations or unions).</ccts:Description>
+            <ccts:Name
+            >Not for profit organizations (including groupings of blind or disabled workers, philosophical, religious, political, civic organizations or unions)</ccts:Name>
+            <ccts:Description
+            >The code indicates Not for profit organizations (including groupings of blind or disabled workers, philosophical, religious, political, civic organizations or unions).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +212,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Second hand objects sold by their users</ccts:Name>
-            <ccts:Description>The code indicates Second hand objects sold by their users.</ccts:Description>
+            <ccts:Description
+            >The code indicates Second hand objects sold by their users.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +245,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Gamings and bets (casinos; races; lotto)</ccts:Name>
-            <ccts:Description>The code indicates Gamings and bets (casinos; races; lotto).</ccts:Description>
+            <ccts:Description
+            >The code indicates Gamings and bets (casinos; races; lotto).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -245,7 +270,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Prosthesis supply by prosthodontist</ccts:Name>
-            <ccts:Description>The code indicates Prosthesis supply by prosthodontist.</ccts:Description>
+            <ccts:Description
+            >The code indicates Prosthesis supply by prosthodontist.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -277,7 +303,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Industry brand-new wastes and recycling/recovering materials</ccts:Name>
-            <ccts:Description>The code indicates Industry brand-new wastes and recycling/recovering materials.</ccts:Description>
+            <ccts:Description
+            >The code indicates Industry brand-new wastes and recycling/recovering materials.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

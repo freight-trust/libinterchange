@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 6Recommendation 23 - Code List Schema Module               ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ids6Recommendation23="urn:un:unece:uncefact:identifierlist:standard:UNECE:FreightCostCode:4" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:identifierlist:standard:UNECE:FreightCostCode:4" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.2">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ids6Recommendation23="urn:un:unece:uncefact:identifierlist:standard:UNECE:FreightCostCode:4"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:identifierlist:standard:UNECE:FreightCostCode:4"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="2.2"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="FreightCostCode" type="ids6Recommendation23:FreightCostCodeContentType"/>
+  <xsd:element name="FreightCostCode" type="ids6Recommendation23:FreightCostCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -442,7 +450,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="101056">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Cost of transportation (sea, inland waterways, or air freight, or overland carriage)</ccts:Name>
+            <ccts:Name
+            >Cost of transportation (sea, inland waterways, or air freight, or overland carriage)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -456,14 +465,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="101058">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Road transport, delivery to free house, including any urban area congestion surcharge</ccts:Name>
+            <ccts:Name
+            >Road transport, delivery to free house, including any urban area congestion surcharge</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="101059">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Collection ex house, movement including any urban area transport congestion surcharge</ccts:Name>
+            <ccts:Name
+            >Collection ex house, movement including any urban area transport congestion surcharge</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1366,7 +1377,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="104071">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Additional for extra loading/discharging sites (incl. Axle changing)</ccts:Name>
+            <ccts:Name
+            >Additional for extra loading/discharging sites (incl. Axle changing)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1632,7 +1644,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="104127">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Demurrage and/or standage charges for vehicles (lorries or rail trucks) or containers</ccts:Name>
+            <ccts:Name
+            >Demurrage and/or standage charges for vehicles (lorries or rail trucks) or containers</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2969,14 +2982,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203033">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading palletized cargo - increase for exceeding 3 cbm per 1000 kg</ccts:Name>
+            <ccts:Name
+            >Loading palletized cargo - increase for exceeding 3 cbm per 1000 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203034">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading big bags of at least 1000 kg, provided with hoisting loops</ccts:Name>
+            <ccts:Name
+            >Loading big bags of at least 1000 kg, provided with hoisting loops</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3025,7 +3040,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203041">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading plates (also corrugated) up to/incl. 5000 kg per piece/bundle</ccts:Name>
+            <ccts:Name
+            >Loading plates (also corrugated) up to/incl. 5000 kg per piece/bundle</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3039,21 +3055,24 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203043">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading tubes, pipes of min. 500 kg, up to/incl. 3000 kg per piece/bundle</ccts:Name>
+            <ccts:Name
+            >Loading tubes, pipes of min. 500 kg, up to/incl. 3000 kg per piece/bundle</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203044">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading tubes, pipes of min. 500 kg, and over 3000 kg per piece/bundle</ccts:Name>
+            <ccts:Name
+            >Loading tubes, pipes of min. 500 kg, and over 3000 kg per piece/bundle</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203045">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading normal structural- and merchant steel up to/incl. 12 metres length</ccts:Name>
+            <ccts:Name
+            >Loading normal structural- and merchant steel up to/incl. 12 metres length</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3074,7 +3093,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203048">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading normal structural- and merchant steel over 12 metres length</ccts:Name>
+            <ccts:Name
+            >Loading normal structural- and merchant steel over 12 metres length</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3193,7 +3213,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203065">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading onions palletized, up to/incl. 750 kg per pallet or in bins of min. 400 kg</ccts:Name>
+            <ccts:Name
+            >Loading onions palletized, up to/incl. 750 kg per pallet or in bins of min. 400 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3207,7 +3228,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203067">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading garlic palletized, up to/incl. 750 kg per pallet or in bins of min. 400 kg</ccts:Name>
+            <ccts:Name
+            >Loading garlic palletized, up to/incl. 750 kg per pallet or in bins of min. 400 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3221,7 +3243,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203069">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading potatoes palletized, up to/incl. 750 kg per pallet or in bins of min. 400 kg</ccts:Name>
+            <ccts:Name
+            >Loading potatoes palletized, up to/incl. 750 kg per pallet or in bins of min. 400 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3235,14 +3258,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203071">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading fresh fruits in crates, bags over 15 kg up to/incl. 45 kg per package</ccts:Name>
+            <ccts:Name
+            >Loading fresh fruits in crates, bags over 15 kg up to/incl. 45 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203072">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading other agricultural products in crates, bags, etc. over 45 kg per package</ccts:Name>
+            <ccts:Name
+            >Loading other agricultural products in crates, bags, etc. over 45 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3270,28 +3295,32 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203076">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading bagged cargo in bags of min. 40 kg - parcels up to/incl 250 tons</ccts:Name>
+            <ccts:Name
+            >Loading bagged cargo in bags of min. 40 kg - parcels up to/incl 250 tons</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203077">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading bagged cargo in bags of min. 40 kg - parcels over 250 tons or paying for 250 tons</ccts:Name>
+            <ccts:Name
+            >Loading bagged cargo in bags of min. 40 kg - parcels over 250 tons or paying for 250 tons</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203078">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading drums and barrels of min. 160 kg to be handled with chimbhooks</ccts:Name>
+            <ccts:Name
+            >Loading drums and barrels of min. 160 kg to be handled with chimbhooks</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203079">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading drums and barrels of min. 160 kg, to be handled without chimbhooks or limited hoist size due to IMO</ccts:Name>
+            <ccts:Name
+            >Loading drums and barrels of min. 160 kg, to be handled without chimbhooks or limited hoist size due to IMO</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3305,42 +3334,48 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203081">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading general cargo measuring up to/incl. 3 cbm per 1000 kg, delivered on shipper's pallets to be broken down during loading and to be redelivered to shore</ccts:Name>
+            <ccts:Name
+            >Loading general cargo measuring up to/incl. 3 cbm per 1000 kg, delivered on shipper's pallets to be broken down during loading and to be redelivered to shore</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203082">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading general cargo - extra for measuring over 3 cbm per 1000 kg</ccts:Name>
+            <ccts:Name
+            >Loading general cargo - extra for measuring over 3 cbm per 1000 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203083">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading general cargo, delivered on shipper's pallets to be broken down during loading and to be broken down during loading and to be redelivered to shore</ccts:Name>
+            <ccts:Name
+            >Loading general cargo, delivered on shipper's pallets to be broken down during loading and to be broken down during loading and to be redelivered to shore</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203084">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading motorcars or other rolling stock unpacked with tyres or tracks, up to/incl. 5 tons per piece</ccts:Name>
+            <ccts:Name
+            >Loading motorcars or other rolling stock unpacked with tyres or tracks, up to/incl. 5 tons per piece</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203085">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading motorcars or other rolling stock unpacked with tyres or tracks, over 5 tons but up to/incl. 17.5 tons per piece</ccts:Name>
+            <ccts:Name
+            >Loading motorcars or other rolling stock unpacked with tyres or tracks, over 5 tons but up to/incl. 17.5 tons per piece</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203086">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading motorcars or other rolling stock unpacked with tyres or tracks, over 17.5 tons per piece</ccts:Name>
+            <ccts:Name
+            >Loading motorcars or other rolling stock unpacked with tyres or tracks, over 17.5 tons per piece</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3669,7 +3704,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203135">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 20 feet container full with overheight/overwide on feeders</ccts:Name>
+            <ccts:Name
+            >Loading 20 feet container full with overheight/overwide on feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3683,7 +3719,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203137">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 40 feet container full with overheight/overwide on feeders</ccts:Name>
+            <ccts:Name
+            >Loading 40 feet container full with overheight/overwide on feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3697,7 +3734,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203139">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 20 feet container full with overheight/overwide into barge</ccts:Name>
+            <ccts:Name
+            >Loading 20 feet container full with overheight/overwide into barge</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3711,7 +3749,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203141">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 40 feet container full with overheight/overwide into barge</ccts:Name>
+            <ccts:Name
+            >Loading 40 feet container full with overheight/overwide into barge</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3851,7 +3890,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203161">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 45 feet container full with overheight/overwide on feeders</ccts:Name>
+            <ccts:Name
+            >Loading 45 feet container full with overheight/overwide on feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3865,7 +3905,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203163">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 45 feet container full with overheight/overwide into barge</ccts:Name>
+            <ccts:Name
+            >Loading 45 feet container full with overheight/overwide into barge</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -3991,112 +4032,128 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="203181">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 20 feet containers full DS/SS main vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 20 feet containers full DS/SS main vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203182">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 40 feet containers full DS/SS main vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 40 feet containers full DS/SS main vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203183">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 45 feet containers full DS/SS main vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 45 feet containers full DS/SS main vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203184">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 20 feet containers full feeder vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 20 feet containers full feeder vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203185">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 40 feet containers full feeder vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 40 feet containers full feeder vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203186">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 45 feet containers full feeder vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 45 feet containers full feeder vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203187">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 20 feet containers empty DS/SS main vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 20 feet containers empty DS/SS main vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203188">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 40 feet containers empty DS/SS main vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 40 feet containers empty DS/SS main vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203189">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 45 feet containers empty DS/SS main vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 45 feet containers empty DS/SS main vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203190">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 20 feet containers empty feeder vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 20 feet containers empty feeder vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203191">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 40 feet containers empty feeder vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 40 feet containers empty feeder vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203192">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading 45 feet containers empty feeder vessel to main vessel in overtime</ccts:Name>
+            <ccts:Name
+            >Loading 45 feet containers empty feeder vessel to main vessel in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203193">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading containers main vessel to main vessel with dangerous goods</ccts:Name>
+            <ccts:Name
+            >Loading containers main vessel to main vessel with dangerous goods</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203194">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading containers main vessel to main vessel with overheight/overwidth in overtime</ccts:Name>
+            <ccts:Name
+            >Loading containers main vessel to main vessel with overheight/overwidth in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203195">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading containers main vessel to main vessel with dangerous goods in overtime</ccts:Name>
+            <ccts:Name
+            >Loading containers main vessel to main vessel with dangerous goods in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="203196">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Loading containers main vessel to main vessel with overheight/overwidth in overtime</ccts:Name>
+            <ccts:Name
+            >Loading containers main vessel to main vessel with overheight/overwidth in overtime</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4327,28 +4384,32 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204032">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging palletized cargo up to and including 3 cbm per 1000 kg</ccts:Name>
+            <ccts:Name
+            >Discharging palletized cargo up to and including 3 cbm per 1000 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204033">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging palletized cargo - increase for exceeding 3 cbm per 1000 kg</ccts:Name>
+            <ccts:Name
+            >Discharging palletized cargo - increase for exceeding 3 cbm per 1000 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204034">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging big bags of at least 1000 kg, provided with hoisting loops</ccts:Name>
+            <ccts:Name
+            >Discharging big bags of at least 1000 kg, provided with hoisting loops</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204035">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging plywood/veneer bundled/on skids/crated, min. 300 kg per package - from North America</ccts:Name>
+            <ccts:Name
+            >Discharging plywood/veneer bundled/on skids/crated, min. 300 kg per package - from North America</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4362,14 +4423,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204037">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging cellulose/woodpulp in units of min. 4 bales to be lifted on steelstrips</ccts:Name>
+            <ccts:Name
+            >Discharging cellulose/woodpulp in units of min. 4 bales to be lifted on steelstrips</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204038">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging newsprint and other paper on reels of min. 1000 kg per reel</ccts:Name>
+            <ccts:Name
+            >Discharging newsprint and other paper on reels of min. 1000 kg per reel</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4383,14 +4446,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204040">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging plywood/veneer in bundles/on skids/in crates of min. 300 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging plywood/veneer in bundles/on skids/in crates of min. 300 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204041">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging plywood/veneer in bundles/on skids/in crates of min. 300 kg per package - from North America</ccts:Name>
+            <ccts:Name
+            >Discharging plywood/veneer in bundles/on skids/in crates of min. 300 kg per package - from North America</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4411,7 +4476,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204044">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging logs incl. delay &amp; labour for measuring during discharge</ccts:Name>
+            <ccts:Name
+            >Discharging logs incl. delay &amp; labour for measuring during discharge</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4425,42 +4491,48 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204046">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging timber/lumber in bundles of min. 0.5 cbm - receipt by arrangement</ccts:Name>
+            <ccts:Name
+            >Discharging timber/lumber in bundles of min. 0.5 cbm - receipt by arrangement</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204047">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging timber/lumber in bundles of min. 0.5 cbm incl. storage</ccts:Name>
+            <ccts:Name
+            >Discharging timber/lumber in bundles of min. 0.5 cbm incl. storage</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204048">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging timber/lumber in bundles of min. 0.5 cbm - from North-America</ccts:Name>
+            <ccts:Name
+            >Discharging timber/lumber in bundles of min. 0.5 cbm - from North-America</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204049">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging timber/lumber in bundles of min. 0.5 cbm from North-America - receipt by arrangement</ccts:Name>
+            <ccts:Name
+            >Discharging timber/lumber in bundles of min. 0.5 cbm from North-America - receipt by arrangement</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204050">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging timber/lumber in bundles of min. 0.5 cbm from North-America incl. storage</ccts:Name>
+            <ccts:Name
+            >Discharging timber/lumber in bundles of min. 0.5 cbm from North-America incl. storage</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204051">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging wallboards (like hardboard) on pallets/skids in bundles</ccts:Name>
+            <ccts:Name
+            >Discharging wallboards (like hardboard) on pallets/skids in bundles</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4537,21 +4609,24 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204062">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging plates (also corrugated), up to/incl. 5000 kg per piece/bundle</ccts:Name>
+            <ccts:Name
+            >Discharging plates (also corrugated), up to/incl. 5000 kg per piece/bundle</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204063">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging plates (also corrugated), over 5000 kg per piece/bundle</ccts:Name>
+            <ccts:Name
+            >Discharging plates (also corrugated), over 5000 kg per piece/bundle</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204064">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging tinplates and sheets up to/incl. 5000 kg per piece/bundle</ccts:Name>
+            <ccts:Name
+            >Discharging tinplates and sheets up to/incl. 5000 kg per piece/bundle</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4586,14 +4661,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204069">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging normal structural- and merchant steel up to/incl 12 metres in length</ccts:Name>
+            <ccts:Name
+            >Discharging normal structural- and merchant steel up to/incl 12 metres in length</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204070">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging normal structural- and merchant steel longer than 12 metres</ccts:Name>
+            <ccts:Name
+            >Discharging normal structural- and merchant steel longer than 12 metres</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4698,7 +4775,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204085">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging fresh fruits over 10 kg, up to/incl. 15 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging fresh fruits over 10 kg, up to/incl. 15 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4712,7 +4790,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204087">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging fresh fruits palletized, up to/incl 750 kg per pallet or in bins of min. 400 kg</ccts:Name>
+            <ccts:Name
+            >Discharging fresh fruits palletized, up to/incl 750 kg per pallet or in bins of min. 400 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4726,14 +4805,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204089">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging other agricultural products, up to/incl 15 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging other agricultural products, up to/incl 15 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204090">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging other agricultural products, over 15 kg up to/incl. 45 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging other agricultural products, over 15 kg up to/incl. 45 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4747,28 +4828,32 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204092">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging cooled/refrig. cargo other than meat, up to/incl 20 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging cooled/refrig. cargo other than meat, up to/incl 20 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204093">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging cooled and refrig. cargo other than meat, up to/incl. 20 kg per package, incl. extra for weighing</ccts:Name>
+            <ccts:Name
+            >Discharging cooled and refrig. cargo other than meat, up to/incl. 20 kg per package, incl. extra for weighing</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204094">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging cooled and refrig. cargo other than meat, over 20 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging cooled and refrig. cargo other than meat, over 20 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204095">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging cooled and refrig. cargo other than meat, over 20 kg per package, incl. weighing on deck</ccts:Name>
+            <ccts:Name
+            >Discharging cooled and refrig. cargo other than meat, over 20 kg per package, incl. weighing on deck</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4782,42 +4867,48 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204097">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging frozen meat, unpacked or in bags, up to/incl. 20 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging frozen meat, unpacked or in bags, up to/incl. 20 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204098">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging frozen meat, unpacked or in bags, over 20 kg but up to/incl 45 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging frozen meat, unpacked or in bags, over 20 kg but up to/incl 45 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204099">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging frozen meat, unpacked or in bags, over 45 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging frozen meat, unpacked or in bags, over 45 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204100">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging chilled meat, unpacked or in bags, up to/incl. 20 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging chilled meat, unpacked or in bags, up to/incl. 20 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204101">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging chilled meat, unpacked or in bags, over 20 kg but up to/incl. 45 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging chilled meat, unpacked or in bags, over 20 kg but up to/incl. 45 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204102">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging chilled meat, unpacked or in bags, over 45 kg per package</ccts:Name>
+            <ccts:Name
+            >Discharging chilled meat, unpacked or in bags, over 45 kg per package</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4831,7 +4922,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204104">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging fruit juices in drums of min. 160 kg, not stowed in cool chamber</ccts:Name>
+            <ccts:Name
+            >Discharging fruit juices in drums of min. 160 kg, not stowed in cool chamber</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4887,14 +4979,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204112">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging bagged cargo, min.40 kg per bag vide alphabetic list group A</ccts:Name>
+            <ccts:Name
+            >Discharging bagged cargo, min.40 kg per bag vide alphabetic list group A</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204113">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging bagged cargo, min. 40 kg per bag vide alphabetic list group B</ccts:Name>
+            <ccts:Name
+            >Discharging bagged cargo, min. 40 kg per bag vide alphabetic list group B</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4915,14 +5009,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204116">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging drums and barrels of min. 160 kg, to be handled with chimbhooks</ccts:Name>
+            <ccts:Name
+            >Discharging drums and barrels of min. 160 kg, to be handled with chimbhooks</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204117">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging drums and barrels of at least 160 kg to be handled without chimbhooks or limited hoist size due to IMO class</ccts:Name>
+            <ccts:Name
+            >Discharging drums and barrels of at least 160 kg to be handled without chimbhooks or limited hoist size due to IMO class</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4936,28 +5032,32 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204119">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging general cargo, extra for measuring over 3 cbm per 1000 kg</ccts:Name>
+            <ccts:Name
+            >Discharging general cargo, extra for measuring over 3 cbm per 1000 kg</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204120">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging motorcars or other rolling stock unpacked with tyres or tracks, up to/incl. 5 tons per piece</ccts:Name>
+            <ccts:Name
+            >Discharging motorcars or other rolling stock unpacked with tyres or tracks, up to/incl. 5 tons per piece</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204121">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging motorcars or other rolling stock unpacked with tyres or tracks, over 5 tons but up to/incl. 17.5 tons per piece</ccts:Name>
+            <ccts:Name
+            >Discharging motorcars or other rolling stock unpacked with tyres or tracks, over 5 tons but up to/incl. 17.5 tons per piece</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204122">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging motorcars or other rolling stock unpacked with tyres or tracks, over 17.5 tons per piece</ccts:Name>
+            <ccts:Name
+            >Discharging motorcars or other rolling stock unpacked with tyres or tracks, over 17.5 tons per piece</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -5342,7 +5442,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204180">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 20 feet container full ex barge with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Discharging 20 feet container full ex barge with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -5356,7 +5457,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204182">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 40 feet container full ex barge with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Discharging 40 feet container full ex barge with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -5419,28 +5521,32 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204191">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 20 feet container full DS/SS with overheight/overwide ex feeders</ccts:Name>
+            <ccts:Name
+            >Discharging 20 feet container full DS/SS with overheight/overwide ex feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204192">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 20 feet container full DS/SS with dangerous goods ex feeders</ccts:Name>
+            <ccts:Name
+            >Discharging 20 feet container full DS/SS with dangerous goods ex feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204193">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 40 feet container full DS/SS with overheight/overwide ex feeders</ccts:Name>
+            <ccts:Name
+            >Discharging 40 feet container full DS/SS with overheight/overwide ex feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204194">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 40 feet container full DS/SS with dangerous goods ex feeders</ccts:Name>
+            <ccts:Name
+            >Discharging 40 feet container full DS/SS with dangerous goods ex feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -5496,7 +5602,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204202">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 45 feet container full ex barge with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Discharging 45 feet container full ex barge with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -5531,14 +5638,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="204207">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 45 feet container full DS/SS with overheight/overwide ex feeders</ccts:Name>
+            <ccts:Name
+            >Discharging 45 feet container full DS/SS with overheight/overwide ex feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="204208">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Discharging 45 feet container full DS/SS with dangerous goods ex feeders</ccts:Name>
+            <ccts:Name
+            >Discharging 45 feet container full DS/SS with dangerous goods ex feeders</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -5930,14 +6039,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="205055">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Shifting 20 feet container full over quai with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Shifting 20 feet container full over quai with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="205056">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Shifting 40 feet container full over quai with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Shifting 40 feet container full over quai with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -5979,7 +6090,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="205062">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Shifting 45 feet container full over quai with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Shifting 45 feet container full over quai with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -6315,21 +6427,24 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="206049">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Reloading 20 feet container full via quai with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Reloading 20 feet container full via quai with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="206050">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Reloading 40 feet container full via quai with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Reloading 40 feet container full via quai with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="206051">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Reloading 45 feet container full via quai with overheight/overwide</ccts:Name>
+            <ccts:Name
+            >Reloading 45 feet container full via quai with overheight/overwide</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -6616,14 +6731,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="207042">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Receiving 20 feet container full with overheight/overwide - additional</ccts:Name>
+            <ccts:Name
+            >Receiving 20 feet container full with overheight/overwide - additional</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="207043">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Receiving 40 feet container full with overheight/overwide - additional</ccts:Name>
+            <ccts:Name
+            >Receiving 40 feet container full with overheight/overwide - additional</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -6651,7 +6768,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="207047">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Receiving 45 feet container full with overheight/overwide - additional</ccts:Name>
+            <ccts:Name
+            >Receiving 45 feet container full with overheight/overwide - additional</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -6980,7 +7098,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="208031">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Delivery into store (Store, warehouse, Customs area, transit store)</ccts:Name>
+            <ccts:Name
+            >Delivery into store (Store, warehouse, Customs area, transit store)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -7043,14 +7162,16 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="208041">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Delivery 20 feet container full with overheight/overwide - additional</ccts:Name>
+            <ccts:Name
+            >Delivery 20 feet container full with overheight/overwide - additional</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="208042">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Delivery 40 feet container full with overheight/overwide - additional</ccts:Name>
+            <ccts:Name
+            >Delivery 40 feet container full with overheight/overwide - additional</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -7092,7 +7213,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="208048">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Delivery 45 feet container full with overheight/overwide - additional</ccts:Name>
+            <ccts:Name
+            >Delivery 45 feet container full with overheight/overwide - additional</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -8548,7 +8670,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="216036">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Stripping ex vehicle till free on truck incl. 1 month warehouserent</ccts:Name>
+            <ccts:Name
+            >Stripping ex vehicle till free on truck incl. 1 month warehouserent</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -9045,7 +9168,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="301011">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Telex, telephone, telegrams, correspondence, photo-copy charges (FF)</ccts:Name>
+            <ccts:Name
+            >Telex, telephone, telegrams, correspondence, photo-copy charges (FF)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -9318,7 +9442,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="301048">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Charges for the presentation of customs documents completion of a D.A.S.</ccts:Name>
+            <ccts:Name
+            >Charges for the presentation of customs documents completion of a D.A.S.</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -9941,7 +10066,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="501005">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Customs duties and other sums collected by customs other than VAT (20)</ccts:Name>
+            <ccts:Name
+            >Customs duties and other sums collected by customs other than VAT (20)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -10088,7 +10214,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="502006">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Turnover tax (E.U.S.T.) on transport charges in transit through France (in cases where this is paid to a third Union (EU)</ccts:Name>
+            <ccts:Name
+            >Turnover tax (E.U.S.T.) on transport charges in transit through France (in cases where this is paid to a third Union (EU)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -10249,7 +10376,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="603002">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Warehouse rent on goods which have remained in the transit area over the allotted free period</ccts:Name>
+            <ccts:Name
+            >Warehouse rent on goods which have remained in the transit area over the allotted free period</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -10424,7 +10552,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="607001">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Charges prepaid and paid on delivery (disbursement/charges forward) (FF)</ccts:Name>
+            <ccts:Name
+            >Charges prepaid and paid on delivery (disbursement/charges forward) (FF)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -10669,15 +10798,18 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="609018">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Charges resulting from the fact of having to wait for the consignor to supply documents needed for the completion of formalities required by Customs or other authorities (cf. article 25/paragraph 3(1) of CIM)</ccts:Name>
+            <ccts:Name
+            >Charges resulting from the fact of having to wait for the consignor to supply documents needed for the completion of formalities required by Customs or other authorities (cf. article 25/paragraph 3(1) of CIM)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="609019">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Charges resulting from the fact that the consignor has entered in the consignment note particulars which are irregular/incorrect/incomplete or not in the alloted spaces (cf. article 18 of CIM)</ccts:Name>
-            <ccts:Description>particulars which are irregular/incorrect/incomplete or not in the allotted spaces (cf. article 18 of CIM)</ccts:Description>
+            <ccts:Name
+            >Charges resulting from the fact that the consignor has entered in the consignment note particulars which are irregular/incorrect/incomplete or not in the alloted spaces (cf. article 18 of CIM)</ccts:Name>
+            <ccts:Description
+            >particulars which are irregular/incorrect/incomplete or not in the allotted spaces (cf. article 18 of CIM)</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -10789,7 +10921,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="609034">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Examination on the spot of railway wagons on private bogies (charge for)</ccts:Name>
+            <ccts:Name
+            >Examination on the spot of railway wagons on private bogies (charge for)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -10838,7 +10971,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="609041">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Fees for presentation for veterinary and/or phyto-sanitary examination (FF)</ccts:Name>
+            <ccts:Name
+            >Fees for presentation for veterinary and/or phyto-sanitary examination (FF)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -10866,7 +11000,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="609043">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Financial charges on cash advanced, for guarantees undertaken or for international currency transfers (FF)</ccts:Name>
+            <ccts:Name
+            >Financial charges on cash advanced, for guarantees undertaken or for international currency transfers (FF)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -10915,7 +11050,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="609051">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>From cif oceanport till free on truck, incl. 1 month warehouse rent</ccts:Name>
+            <ccts:Name
+            >From cif oceanport till free on truck, incl. 1 month warehouse rent</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -11209,7 +11345,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="609094">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Shed/quay rent on goods which have remained in the transit area over the allotted free period</ccts:Name>
+            <ccts:Name
+            >Shed/quay rent on goods which have remained in the transit area over the allotted free period</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -11398,7 +11535,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="609126">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Charges for reforwarding complete wagonloads emanating from or going to destination</ccts:Name>
+            <ccts:Name
+            >Charges for reforwarding complete wagonloads emanating from or going to destination</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

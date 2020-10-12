@@ -12,7 +12,16 @@
     { "Id": "SDT", "Min": 0 },
     { "Id": "SSR", "Min": 0, "Max": 9 },
     { "Id": "POC", "Min": 0 },
-    { "Id": "SSRLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "TIF" }, { "Id": "FTI", "Min": 0, "Max": 99 }, { "Id": "SSR", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "SSRLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [
+        { "Id": "TIF" },
+        { "Id": "FTI", "Min": 0, "Max": 99 },
+        { "Id": "SSR", "Min": 0, "Max": 9 }
+      ]
+    },
     {
       "Id": "MSGLoop1",
       "Max": 99,
@@ -33,8 +42,22 @@
             { "Id": "SDT", "Min": 0 },
             { "Id": "SSR", "Min": 0, "Max": 9 },
             { "Id": "REF", "Min": 0 },
-            { "Id": "SSRLoop3", "Min": 0, "Max": 999, "Loop": [{ "Id": "TIF" }, { "Id": "FTI", "Min": 0, "Max": 99 }, { "Id": "SSR", "Min": 0, "Max": 9 }] },
-            { "Id": "PDILoop2", "Min": 0, "Max": 20, "Loop": [{ "Id": "SAC" }, { "Id": "ODI" }, { "Id": "PDI", "Max": 4 }] },
+            {
+              "Id": "SSRLoop3",
+              "Min": 0,
+              "Max": 999,
+              "Loop": [
+                { "Id": "TIF" },
+                { "Id": "FTI", "Min": 0, "Max": 99 },
+                { "Id": "SSR", "Min": 0, "Max": 9 }
+              ]
+            },
+            {
+              "Id": "PDILoop2",
+              "Min": 0,
+              "Max": 20,
+              "Loop": [{ "Id": "SAC" }, { "Id": "ODI" }, { "Id": "PDI", "Max": 4 }]
+            },
             { "Id": "IFT", "Min": 0 },
             { "Id": "TVLLoop2", "Min": 0, "Loop": [{ "Id": "DUM" }, { "Id": "TVL" }] }
           ]

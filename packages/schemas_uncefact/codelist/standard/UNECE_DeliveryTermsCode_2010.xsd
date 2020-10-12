@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 64053 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm64053="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryTermsCode:2010" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryTermsCode:2010" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm64053="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryTermsCode:2010"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryTermsCode:2010"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="2.0"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="DeliveryTermsCode" type="clm64053:DeliveryTermsCodeContentType"/>
+  <xsd:element name="DeliveryTermsCode" type="clm64053:DeliveryTermsCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Delivery arranged by the supplier</ccts:Name>
-            <ccts:Description>Indicates that the supplier will arrange delivery of the goods.</ccts:Description>
+            <ccts:Description
+            >Indicates that the supplier will arrange delivery of the goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +54,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Delivery arranged by logistic service provider</ccts:Name>
-            <ccts:Description>Code indicating that the logistic service provider has arranged the delivery of goods.</ccts:Description>
+            <ccts:Description
+            >Code indicating that the logistic service provider has arranged the delivery of goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -66,7 +76,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="CIP">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Carriage and Insurance Paid to (insert named place of destination)</ccts:Name>
+            <ccts:Name
+            >Carriage and Insurance Paid to (insert named place of destination)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -87,7 +98,8 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="DAT">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Delivered At Terminal (insert named terminal at port or place of destination)</ccts:Name>
+            <ccts:Name
+            >Delivered At Terminal (insert named terminal at port or place of destination)</ccts:Name>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -12,7 +12,16 @@
     { "Id": "RCI", "Min": 0 },
     { "Id": "SSR", "Min": 0, "Max": 9 },
     { "Id": "POC", "Min": 0 },
-    { "Id": "SSRLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "TIF" }, { "Id": "FTI", "Min": 0, "Max": 99 }, { "Id": "SSR", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "SSRLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [
+        { "Id": "TIF" },
+        { "Id": "FTI", "Min": 0, "Max": 99 },
+        { "Id": "SSR", "Min": 0, "Max": 9 }
+      ]
+    },
     {
       "Id": "PDILoop1",
       "Max": 99,
@@ -35,10 +44,24 @@
             { "Id": "TRA", "Min": 0, "Max": 2 },
             { "Id": "PRT", "Min": 0 },
             { "Id": "RNG", "Min": 0 },
-            { "Id": "MPDLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "TRA" }, { "Id": "MPD", "Min": 0 }] },
+            {
+              "Id": "MPDLoop1",
+              "Min": 0,
+              "Max": 2,
+              "Loop": [{ "Id": "TRA" }, { "Id": "MPD", "Min": 0 }]
+            },
             { "Id": "UNIQUE_1", "Min": 0 },
             { "Id": "UNIQUE_2", "Min": 0 },
-            { "Id": "SSRLoop3", "Min": 0, "Max": 999, "Loop": [{ "Id": "TIF" }, { "Id": "FTI", "Min": 0, "Max": 99 }, { "Id": "SSR", "Min": 0, "Max": 9 }] },
+            {
+              "Id": "SSRLoop3",
+              "Min": 0,
+              "Max": 999,
+              "Loop": [
+                { "Id": "TIF" },
+                { "Id": "FTI", "Min": 0, "Max": 99 },
+                { "Id": "SSR", "Min": 0, "Max": 9 }
+              ]
+            },
             { "Id": "TBI", "Min": 0, "Max": 3 },
             { "Id": "IFT", "Min": 0 },
             { "Id": "TVLLoop2", "Min": 0, "Loop": [{ "Id": "DUM" }, { "Id": "TVL" }] }

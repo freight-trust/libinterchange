@@ -11,7 +11,14 @@
       "Id": "URFLoop1",
       "Min": 0,
       "Max": "unbounded",
-      "Loop": [{ "Id": "URF" }, { "Id": "ULDLoop1", "Max": "unbounded", "Loop": [{ "Id": "ULD" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }] }]
+      "Loop": [
+        { "Id": "URF" },
+        {
+          "Id": "ULDLoop1",
+          "Max": "unbounded",
+          "Loop": [{ "Id": "ULD" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }]
+        }
+      ]
     },
     { "Id": "UTR", "Max": 1 },
     { "Id": "MTR", "Max": 1 }

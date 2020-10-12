@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 61229_LineStatusCode - Code List Schema Module             ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm61229LineStatusCode="urn:un:unece:uncefact:codelist:standard:UNECE:ActionCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ActionCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm61229LineStatusCode="urn:un:unece:uncefact:codelist:standard:UNECE:ActionCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ActionCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="ActionCode" type="clm61229LineStatusCode:ActionCodeContentType"/>
+  <xsd:element name="ActionCode" type="clm61229LineStatusCode:ActionCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -61,7 +69,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>No action</ccts:Name>
-            <ccts:Description>This line item is not affected by the actual message.</ccts:Description>
+            <ccts:Description
+            >This line item is not affected by the actual message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +86,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Accepted with amendment</ccts:Name>
-            <ccts:Description>This line item is accepted but amended by the seller.</ccts:Description>
+            <ccts:Description
+            >This line item is accepted but amended by the seller.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +103,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Schedule only</ccts:Name>
-            <ccts:Description>Code specifying that the message is a schedule only.</ccts:Description>
+            <ccts:Description
+            >Code specifying that the message is a schedule only.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +112,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Amendments</ccts:Name>
-            <ccts:Description>Code specifying that amendments are requested/notified.</ccts:Description>
+            <ccts:Description
+            >Code specifying that amendments are requested/notified.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +121,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Not found</ccts:Name>
-            <ccts:Description>This line item is not found in the referenced message.</ccts:Description>
+            <ccts:Description
+            >This line item is not found in the referenced message.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,7 +138,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Line item numbers changed</ccts:Name>
-            <ccts:Description>Code specifying that the line item numbers have changed.</ccts:Description>
+            <ccts:Description
+            >Code specifying that the line item numbers have changed.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +163,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Charge back by seller</ccts:Name>
-            <ccts:Description>Factor has been requested to charge back the outstanding item.</ccts:Description>
+            <ccts:Description
+            >Factor has been requested to charge back the outstanding item.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +188,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Abide outcome of negotiations</ccts:Name>
-            <ccts:Description>Factor agrees to abide by the outcome of negotiations between seller and buyer.</ccts:Description>
+            <ccts:Description
+            >Factor agrees to abide by the outcome of negotiations between seller and buyer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +221,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Call-off delivery</ccts:Name>
-            <ccts:Description>A request for delivery of a particular quantity of goods to be delivered on a particular date (or within a particular period).</ccts:Description>
+            <ccts:Description
+            >A request for delivery of a particular quantity of goods to be delivered on a particular date (or within a particular period).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +230,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Proposed amendment</ccts:Name>
-            <ccts:Description>A code used to indicate an amendment suggested by the sender.</ccts:Description>
+            <ccts:Description
+            >A code used to indicate an amendment suggested by the sender.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +239,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Accepted with amendment, no confirmation required</ccts:Name>
-            <ccts:Description>Accepted with changes which require no confirmation.</ccts:Description>
+            <ccts:Description
+            >Accepted with changes which require no confirmation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -229,7 +248,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Equipment provisionally repaired</ccts:Name>
-            <ccts:Description>The equipment or component has been provisionally repaired.</ccts:Description>
+            <ccts:Description
+            >The equipment or component has been provisionally repaired.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -244,40 +264,50 @@ This document and the information contained herein is provided on an "AS IS" bas
       <xsd:enumeration value="27">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Upon receipt and verification of documents we shall cover you when due as per your instructions</ccts:Name>
-            <ccts:Description>Upon receipt and verification of documents we shall cover you when due as per your instructions.</ccts:Description>
+            <ccts:Name
+            >Upon receipt and verification of documents we shall cover you when due as per your instructions</ccts:Name>
+            <ccts:Description
+            >Upon receipt and verification of documents we shall cover you when due as per your instructions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="28">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Upon receipt and verification of documents we shall authorize you to debit our account with you when due</ccts:Name>
-            <ccts:Description>Upon receipt and verification of documents we shall authorize you to debit our account with you when due.</ccts:Description>
+            <ccts:Name
+            >Upon receipt and verification of documents we shall authorize you to debit our account with you when due</ccts:Name>
+            <ccts:Description
+            >Upon receipt and verification of documents we shall authorize you to debit our account with you when due.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="29">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>On receipt of your authenticated advice we shall cover you when due as per your instructions</ccts:Name>
-            <ccts:Description>On receipt of your authenticated advice we shall cover you when due as per your instructions.</ccts:Description>
+            <ccts:Name
+            >On receipt of your authenticated advice we shall cover you when due as per your instructions</ccts:Name>
+            <ccts:Description
+            >On receipt of your authenticated advice we shall cover you when due as per your instructions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="30">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>On receipt of your authenticated advice we shall authorize you to debit our account with you when due</ccts:Name>
-            <ccts:Description>On receipt of your authenticated advice we shall authorize you to debit our account with you when due.</ccts:Description>
+            <ccts:Name
+            >On receipt of your authenticated advice we shall authorize you to debit our account with you when due</ccts:Name>
+            <ccts:Description
+            >On receipt of your authenticated advice we shall authorize you to debit our account with you when due.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="31">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>On receipt of your authenticated advice we shall credit your account with us when due</ccts:Name>
-            <ccts:Description>On receipt of your authenticated advice we shall credit your account with us when due.</ccts:Description>
+            <ccts:Name
+            >On receipt of your authenticated advice we shall credit your account with us when due</ccts:Name>
+            <ccts:Description
+            >On receipt of your authenticated advice we shall credit your account with us when due.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -293,7 +323,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit advice and acknowledgement for direct debit</ccts:Name>
-            <ccts:Description>A credit advice and acknowledgement are requested for the direct debit.</ccts:Description>
+            <ccts:Description
+            >A credit advice and acknowledgement are requested for the direct debit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -373,7 +404,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Additional subordinate structures will follow</ccts:Name>
-            <ccts:Description>Additional subordinate structures will follow the current hierarchy level.</ccts:Description>
+            <ccts:Description
+            >Additional subordinate structures will follow the current hierarchy level.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -381,7 +413,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Additional subordinate structures will not follow</ccts:Name>
-            <ccts:Description>No additional subordinate structures will follow the current hierarchy level.</ccts:Description>
+            <ccts:Description
+            >No additional subordinate structures will follow the current hierarchy level.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -445,7 +478,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pending</ccts:Name>
-            <ccts:Description>A notification that an action is awaiting settlement.</ccts:Description>
+            <ccts:Description
+            >A notification that an action is awaiting settlement.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -453,7 +487,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Court action dismissed</ccts:Name>
-            <ccts:Description>A notification that a court action will no longer be heard.</ccts:Description>
+            <ccts:Description
+            >A notification that a court action will no longer be heard.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -477,7 +512,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Debit advice statement line</ccts:Name>
-            <ccts:Description>Notification that the statement line is a debit advice.</ccts:Description>
+            <ccts:Description
+            >Notification that the statement line is a debit advice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -485,7 +521,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit advice statement line</ccts:Name>
-            <ccts:Description>Notification that the statement line is a credit advice.</ccts:Description>
+            <ccts:Description
+            >Notification that the statement line is a credit advice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -629,7 +666,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Processed by primary, forwarded to additional payer(s)</ccts:Name>
-            <ccts:Description>This request has been processed by the primary payer and sent to additional payer(s).</ccts:Description>
+            <ccts:Description
+            >This request has been processed by the primary payer and sent to additional payer(s).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -637,7 +675,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Processed by secondary, forwarded to additional payer(s)</ccts:Name>
-            <ccts:Description>This request has been processed by the secondary payer and sent to additional payer(s).</ccts:Description>
+            <ccts:Description
+            >This request has been processed by the secondary payer and sent to additional payer(s).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -645,7 +684,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Processed by tertiary, forwarded to additional payer(s)</ccts:Name>
-            <ccts:Description>This request has been processed by the tertiary payer and sent to additional payer(s).</ccts:Description>
+            <ccts:Description
+            >This request has been processed by the tertiary payer and sent to additional payer(s).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -661,7 +701,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Not our claim, forwarded to another payer(s)</ccts:Name>
-            <ccts:Description>A request does not belong to this payer but has been forwarded to another payer(s).</ccts:Description>
+            <ccts:Description
+            >A request does not belong to this payer but has been forwarded to another payer(s).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -669,7 +710,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transferred to correct insurance carrier</ccts:Name>
-            <ccts:Description>The request has been transferred to the correct insurance carrier for processing.</ccts:Description>
+            <ccts:Description
+            >The request has been transferred to the correct insurance carrier for processing.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -677,7 +719,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Not paid, predetermination pricing only</ccts:Name>
-            <ccts:Description>Payment has not been made and the enclosed response is predetermination pricing only.</ccts:Description>
+            <ccts:Description
+            >Payment has not been made and the enclosed response is predetermination pricing only.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -685,7 +728,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Documentation claim</ccts:Name>
-            <ccts:Description>The claim is for documentation purposes only, no payment required.</ccts:Description>
+            <ccts:Description
+            >The claim is for documentation purposes only, no payment required.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -725,7 +769,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>On appeal</ccts:Name>
-            <ccts:Description>Reconsideration of the decision has been applied for.</ccts:Description>
+            <ccts:Description
+            >Reconsideration of the decision has been applied for.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -797,7 +842,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Correction of error</ccts:Name>
-            <ccts:Description>A correction to information previously communicated which contained an error.</ccts:Description>
+            <ccts:Description
+            >A correction to information previously communicated which contained an error.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -805,7 +851,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Single credit item of a group</ccts:Name>
-            <ccts:Description>Notification that the credit item is a single credit item of a group of credit items.</ccts:Description>
+            <ccts:Description
+            >Notification that the credit item is a single credit item of a group of credit items.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -813,7 +860,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Single debit item of a group</ccts:Name>
-            <ccts:Description>Notification that the debit item is a single debit item of a group of debit items.</ccts:Description>
+            <ccts:Description
+            >Notification that the debit item is a single debit item of a group of debit items.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -861,7 +909,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Healthcare provider to be notified</ccts:Name>
-            <ccts:Description>The action to take is to notify the healthcare provider.</ccts:Description>
+            <ccts:Description
+            >The action to take is to notify the healthcare provider.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -869,7 +918,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Usual general practitioner to be notified</ccts:Name>
-            <ccts:Description>The action to take is to notify the usual general practitioner.</ccts:Description>
+            <ccts:Description
+            >The action to take is to notify the usual general practitioner.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -917,7 +967,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Delivery date change</ccts:Name>
-            <ccts:Description>The action / notiification is a change of the delivery date.</ccts:Description>
+            <ccts:Description
+            >The action / notiification is a change of the delivery date.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -933,7 +984,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Resale and claim</ccts:Name>
-            <ccts:Description>The identified items have been sold by the distributor to the end customer, and compensation for the loss of inventory value is claimed.</ccts:Description>
+            <ccts:Description
+            >The identified items have been sold by the distributor to the end customer, and compensation for the loss of inventory value is claimed.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -941,7 +993,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Resale</ccts:Name>
-            <ccts:Description>The identified items have been sold by the distributor to the end customer.</ccts:Description>
+            <ccts:Description
+            >The identified items have been sold by the distributor to the end customer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -949,7 +1002,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Prior addition</ccts:Name>
-            <ccts:Description>This existing line item becomes available at an earlier date.</ccts:Description>
+            <ccts:Description
+            >This existing line item becomes available at an earlier date.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

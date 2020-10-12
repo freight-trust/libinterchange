@@ -18,7 +18,12 @@
           "Loop": [
             { "Id": "IVC", "Min": 1, "Max": 1 },
             { "Id": "PSG", "Min": 1, "Max": 1 },
-            { "Id": "RSP_E22.PSL_ITEM_INFO", "Min": 1, "Max": "unbounded", "Loop": [{ "Id": "PSL", "Min": 1, "Max": 1 }] }
+            {
+              "Id": "RSP_E22.PSL_ITEM_INFO",
+              "Min": 1,
+              "Max": "unbounded",
+              "Loop": [{ "Id": "PSL", "Min": 1, "Max": 1 }]
+            }
           ]
         }
       ]

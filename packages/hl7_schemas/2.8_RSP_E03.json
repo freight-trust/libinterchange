@@ -6,6 +6,11 @@
     { "Id": "UAC", "Min": 0, "Max": "unbounded" },
     { "Id": "MSA", "Min": 1, "Max": 1 },
     { "Id": "ERR", "Min": 0, "Max": "unbounded" },
-    { "Id": "RSP_E03.QUERY_ACK_IPR", "Min": 1, "Max": 1, "Choice": [{ "Id": "QAK" }, { "Id": "QPD" }, { "Id": "IPR" }] }
+    {
+      "Id": "RSP_E03.QUERY_ACK_IPR",
+      "Min": 1,
+      "Max": 1,
+      "Choice": [{ "Id": "QAK" }, { "Id": "QPD" }, { "Id": "IPR" }]
+    }
   ]
 }

@@ -7,7 +7,12 @@
     { "Id": "RCI", "Min": 0 },
     { "Id": "EQN", "Min": 0 },
     { "Id": "SSR", "Min": 0, "Max": 9 },
-    { "Id": "SSRLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "TIF" }, { "Id": "SSR", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "SSRLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [{ "Id": "TIF" }, { "Id": "SSR", "Min": 0, "Max": 9 }]
+    },
     {
       "Id": "MSGLoop1",
       "Min": 0,
@@ -24,7 +29,12 @@
             { "Id": "EQN", "Min": 0 },
             { "Id": "RPI", "Min": 0 },
             { "Id": "SSR", "Min": 0, "Max": 9 },
-            { "Id": "SSRLoop3", "Min": 0, "Max": 999, "Loop": [{ "Id": "TIF" }, { "Id": "SSR", "Min": 0, "Max": 9 }] }
+            {
+              "Id": "SSRLoop3",
+              "Min": 0,
+              "Max": 999,
+              "Loop": [{ "Id": "TIF" }, { "Id": "SSR", "Min": 0, "Max": 9 }]
+            }
           ]
         }
       ]

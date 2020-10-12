@@ -10,7 +10,15 @@
       "Id": "NADLoop1",
       "Min": 0,
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }]
+      "Loop": [
+        { "Id": "NAD" },
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        }
+      ]
     },
     { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
     { "Id": "LOC", "Min": 0, "Max": 9 },
@@ -40,7 +48,12 @@
               "Id": "TDTLoop1",
               "Min": 0,
               "Max": 99,
-              "Loop": [{ "Id": "TDT" }, { "Id": "RFF", "Min": 0, "Max": 9 }, { "Id": "LOC", "Min": 0, "Max": 9 }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+              "Loop": [
+                { "Id": "TDT" },
+                { "Id": "RFF", "Min": 0, "Max": 9 },
+                { "Id": "LOC", "Min": 0, "Max": 9 },
+                { "Id": "DTM", "Min": 0, "Max": 9 }
+              ]
             },
             {
               "Id": "EQDLoop1",
@@ -51,7 +64,12 @@
                 { "Id": "MEA", "Min": 0, "Max": 9 },
                 { "Id": "DIM", "Min": 0, "Max": 9 },
                 { "Id": "SEL", "Min": 0, "Max": 9 },
-                { "Id": "EQALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "EQA" }, { "Id": "SEL", "Min": 0, "Max": 9 }] }
+                {
+                  "Id": "EQALoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "EQA" }, { "Id": "SEL", "Min": 0, "Max": 9 }]
+                }
               ]
             },
             {
@@ -61,9 +79,24 @@
               "Loop": [
                 { "Id": "GID" },
                 { "Id": "HAN", "Min": 0, "Max": 9 },
-                { "Id": "MEALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }] },
-                { "Id": "DIMLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }] },
-                { "Id": "PCILoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "PCI" }, { "Id": "GIN", "Min": 0, "Max": 9 }] }
+                {
+                  "Id": "MEALoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "MEA" }, { "Id": "EQN", "Min": 0 }]
+                },
+                {
+                  "Id": "DIMLoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "DIM" }, { "Id": "EQN", "Min": 0 }]
+                },
+                {
+                  "Id": "PCILoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "PCI" }, { "Id": "GIN", "Min": 0, "Max": 9 }]
+                }
               ]
             }
           ]

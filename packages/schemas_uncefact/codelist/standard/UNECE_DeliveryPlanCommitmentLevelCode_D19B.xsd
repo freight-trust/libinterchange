@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 64017_CommitmentLevelCode - Code List Schema Module        ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm64017CommitmentLevelCode="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryPlanCommitmentLevelCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryPlanCommitmentLevelCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.2">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm64017CommitmentLevelCode="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryPlanCommitmentLevelCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DeliveryPlanCommitmentLevelCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.2"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="DeliveryPlanCommitmentLevelCode" type="clm64017CommitmentLevelCode:DeliveryPlanCommitmentLevelCodeContentType"/>
+  <xsd:element
+    name="DeliveryPlanCommitmentLevelCode"
+    type="clm64017CommitmentLevelCode:DeliveryPlanCommitmentLevelCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Firm</ccts:Name>
-            <ccts:Description>Indicates that the scheduling information is a firm commitment.</ccts:Description>
+            <ccts:Description
+            >Indicates that the scheduling information is a firm commitment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commitment for manufacturing and material</ccts:Name>
-            <ccts:Description>Authorizes the supplier to start the manufacturing of goods.</ccts:Description>
+            <ccts:Description
+            >Authorizes the supplier to start the manufacturing of goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commitment for material</ccts:Name>
-            <ccts:Description>Authorizes the manufacturer to order material required for manufacturing specified goods.</ccts:Description>
+            <ccts:Description
+            >Authorizes the manufacturer to order material required for manufacturing specified goods.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +75,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Planning/forecast</ccts:Name>
-            <ccts:Description>An estimate of future requirements based on trends and actual information.</ccts:Description>
+            <ccts:Description
+            >An estimate of future requirements based on trends and actual information.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +84,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Short delivered on previous delivery</ccts:Name>
-            <ccts:Description>Part of a consignment which was not delivered when the original delivery was made.</ccts:Description>
+            <ccts:Description
+            >Part of a consignment which was not delivered when the original delivery was made.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +93,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Capacity available</ccts:Name>
-            <ccts:Description>Capacity is available to meet the requested scheduling demands.</ccts:Description>
+            <ccts:Description
+            >Capacity is available to meet the requested scheduling demands.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +102,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promotion</ccts:Name>
-            <ccts:Description>All related schedule information refer to a promotion.</ccts:Description>
+            <ccts:Description
+            >All related schedule information refer to a promotion.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +111,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Special demand</ccts:Name>
-            <ccts:Description>All related schedule information refers to a special demand.</ccts:Description>
+            <ccts:Description
+            >All related schedule information refers to a special demand.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +120,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>User defined</ccts:Name>
-            <ccts:Description>The user can interpret the meaning of the values from information exchanged previously.</ccts:Description>
+            <ccts:Description
+            >The user can interpret the meaning of the values from information exchanged previously.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +129,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Immediate</ccts:Name>
-            <ccts:Description>Indicates that the scheduling information is for immediate execution.</ccts:Description>
+            <ccts:Description
+            >Indicates that the scheduling information is for immediate execution.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +138,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pilot/Pre-volume</ccts:Name>
-            <ccts:Description>Initial products required in advance of the normal production process.</ccts:Description>
+            <ccts:Description
+            >Initial products required in advance of the normal production process.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +155,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Potential order increase</ccts:Name>
-            <ccts:Description>The possibility and magnitude of a schedule fluctuation.</ccts:Description>
+            <ccts:Description
+            >The possibility and magnitude of a schedule fluctuation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +164,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Average plant usage</ccts:Name>
-            <ccts:Description>The usual amount that a manufacturing facility will use over a specified duration.</ccts:Description>
+            <ccts:Description
+            >The usual amount that a manufacturing facility will use over a specified duration.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +189,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tooling capacity</ccts:Name>
-            <ccts:Description>The maximum amount that the process was designed to accommodate.</ccts:Description>
+            <ccts:Description
+            >The maximum amount that the process was designed to accommodate.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +198,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Normal tooling capacity</ccts:Name>
-            <ccts:Description>The anticipated amount that the process was designed to accommodate over a specific period of time.</ccts:Description>
+            <ccts:Description
+            >The anticipated amount that the process was designed to accommodate over a specific period of time.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +215,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Strike protection</ccts:Name>
-            <ccts:Description>Product level that is set aside as protection in the event of a work stoppage.</ccts:Description>
+            <ccts:Description
+            >Product level that is set aside as protection in the event of a work stoppage.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +224,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Required tooling capacity</ccts:Name>
-            <ccts:Description>The contracted amount that the process was designed to accommodate over a specific period of time.</ccts:Description>
+            <ccts:Description
+            >The contracted amount that the process was designed to accommodate over a specific period of time.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +249,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Reference to commercial agreement between partners</ccts:Name>
-            <ccts:Description>The buyer's commitment is the one defined in the commercial agreement.</ccts:Description>
+            <ccts:Description
+            >The buyer's commitment is the one defined in the commercial agreement.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -229,7 +258,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Proposed</ccts:Name>
-            <ccts:Description>Indicates that the scheduling information is a proposal.</ccts:Description>
+            <ccts:Description
+            >Indicates that the scheduling information is a proposal.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 68051 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm68051="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMovementStageCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMovementStageCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm68051="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMovementStageCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:TransportMovementStageCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="TransportMovementStageCode" type="clm68051:TransportMovementStageCodeContentType"/>
+  <xsd:element
+    name="TransportMovementStageCode"
+    type="clm68051:TransportMovementStageCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Inland transport</ccts:Name>
-            <ccts:Description>Transport by which goods are moved from or to the frontier, or between inland points.</ccts:Description>
+            <ccts:Description
+            >Transport by which goods are moved from or to the frontier, or between inland points.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>At the statistical territory limit</ccts:Name>
-            <ccts:Description>Point by which the means of transport are presumed to have left the statistical territory of despatch or to have entered the statistical territory of arrival.</ccts:Description>
+            <ccts:Description
+            >Point by which the means of transport are presumed to have left the statistical territory of despatch or to have entered the statistical territory of arrival.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>At arrival</ccts:Name>
-            <ccts:Description>Transport by which goods are moved to the place of arrival.</ccts:Description>
+            <ccts:Description
+            >Transport by which goods are moved to the place of arrival.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +75,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Means of transport at transit</ccts:Name>
-            <ccts:Description>The means of transport used to carry goods that have come under transit procedures of the customs administration to which a transit declaration is being made.</ccts:Description>
+            <ccts:Description
+            >The means of transport used to carry goods that have come under transit procedures of the customs administration to which a transit declaration is being made.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,15 +84,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Means of transport crossing the regulatory border</ccts:Name>
-            <ccts:Description>The means of transport moving into and out of a regulatory territory.</ccts:Description>
+            <ccts:Description
+            >The means of transport moving into and out of a regulatory territory.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="6">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Means of transport at first port of arrival into regulatory territory</ccts:Name>
-            <ccts:Description>The means of transport moving into a regulatory territory at the first port of arrival.</ccts:Description>
+            <ccts:Name
+            >Means of transport at first port of arrival into regulatory territory</ccts:Name>
+            <ccts:Description
+            >The means of transport moving into a regulatory territory at the first port of arrival.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +103,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pre-carriage transport</ccts:Name>
-            <ccts:Description>Transport by which the goods are moved prior to their main carriage transport.</ccts:Description>
+            <ccts:Description
+            >Transport by which the goods are moved prior to their main carriage transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +112,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>At border</ccts:Name>
-            <ccts:Description>Transport by which goods are moved to the Customs frontier.</ccts:Description>
+            <ccts:Description
+            >Transport by which goods are moved to the Customs frontier.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +121,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>At departure</ccts:Name>
-            <ccts:Description>Transport by which goods are moved from the place of departure.</ccts:Description>
+            <ccts:Description
+            >Transport by which goods are moved from the place of departure.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +130,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>At destination</ccts:Name>
-            <ccts:Description>Transport by which goods are moved at the place of destination.</ccts:Description>
+            <ccts:Description
+            >Transport by which goods are moved at the place of destination.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +179,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Main-carriage transport</ccts:Name>
-            <ccts:Description>The primary stage in the movement of cargo from the point of origin to the intended destination.</ccts:Description>
+            <ccts:Description
+            >The primary stage in the movement of cargo from the point of origin to the intended destination.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +188,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Main carriage - first carrier</ccts:Name>
-            <ccts:Description>The first carrier of the ordered transport when more than one carrier is involved.</ccts:Description>
+            <ccts:Description
+            >The first carrier of the ordered transport when more than one carrier is involved.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +197,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Main carriage - second carrier</ccts:Name>
-            <ccts:Description>The second carrier of the ordered transport when more than one carrier is involved.</ccts:Description>
+            <ccts:Description
+            >The second carrier of the ordered transport when more than one carrier is involved.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +206,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Main carriage - third carrier</ccts:Name>
-            <ccts:Description>The third carrier of the ordered transport when more than one carrier is involved.</ccts:Description>
+            <ccts:Description
+            >The third carrier of the ordered transport when more than one carrier is involved.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +215,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Inland waterway transport</ccts:Name>
-            <ccts:Description>Transport by which goods are moved via an inland body of water.</ccts:Description>
+            <ccts:Description
+            >Transport by which goods are moved via an inland body of water.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +224,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Delivery carrier all transport</ccts:Name>
-            <ccts:Description>Carrier responsible from the point of origin to the final delivery destination.</ccts:Description>
+            <ccts:Description
+            >Carrier responsible from the point of origin to the final delivery destination.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +233,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Second pre-carriage transport</ccts:Name>
-            <ccts:Description>Second transport by which the goods are moved prior to their main carriage transport.</ccts:Description>
+            <ccts:Description
+            >Second transport by which the goods are moved prior to their main carriage transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +242,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pre-acceptance transport</ccts:Name>
-            <ccts:Description>The transport by which the goods are moved to the place of acceptance.</ccts:Description>
+            <ccts:Description
+            >The transport by which the goods are moved to the place of acceptance.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +251,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Second on-carriage transport</ccts:Name>
-            <ccts:Description>Second transport by which the goods are moved after the main carriage transport.</ccts:Description>
+            <ccts:Description
+            >Second transport by which the goods are moved after the main carriage transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -237,7 +268,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>On-carriage transport</ccts:Name>
-            <ccts:Description>Transport by which the goods are moved after the main carriage transport.</ccts:Description>
+            <ccts:Description
+            >Transport by which the goods are moved after the main carriage transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -269,7 +301,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Overflight</ccts:Name>
-            <ccts:Description>The movement of a conveyance through the airspace over the territories of a country without landing within the territories of the country.</ccts:Description>
+            <ccts:Description
+            >The movement of a conveyance through the airspace over the territories of a country without landing within the territories of the country.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

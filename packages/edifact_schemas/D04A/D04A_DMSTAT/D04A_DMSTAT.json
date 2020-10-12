@@ -16,13 +16,24 @@
           "Id": "STSLoop1",
           "Min": 0,
           "Max": 9,
-          "Loop": [{ "Id": "STS" }, { "Id": "PNA", "Min": 0 }, { "Id": "DTM", "Min": 0 }, { "Id": "RFF", "Min": 0 }, { "Id": "FTX", "Min": 0, "Max": 999 }]
+          "Loop": [
+            { "Id": "STS" },
+            { "Id": "PNA", "Min": 0 },
+            { "Id": "DTM", "Min": 0 },
+            { "Id": "RFF", "Min": 0 },
+            { "Id": "FTX", "Min": 0, "Max": 999 }
+          ]
         },
         {
           "Id": "IRQLoop1",
           "Min": 0,
           "Max": 9999,
-          "Loop": [{ "Id": "IRQ" }, { "Id": "RFF", "Min": 0 }, { "Id": "PNA", "Min": 0, "Max": 2 }, { "Id": "DTM", "Min": 0 }]
+          "Loop": [
+            { "Id": "IRQ" },
+            { "Id": "RFF", "Min": 0 },
+            { "Id": "PNA", "Min": 0, "Max": 2 },
+            { "Id": "DTM", "Min": 0 }
+          ]
         }
       ]
     },

@@ -5,7 +5,12 @@
     { "Id": "UNH" },
     { "Id": "BGM", "Min": 0 },
     { "Id": "DTM", "Min": 0, "Max": 9 },
-    { "Id": "FNTLoop1", "Min": 0, "Max": 9999, "Loop": [{ "Id": "FNT" }, { "Id": "FTX", "Min": 0, "Max": 9999 }] },
+    {
+      "Id": "FNTLoop1",
+      "Min": 0,
+      "Max": 9999,
+      "Loop": [{ "Id": "FNT" }, { "Id": "FTX", "Min": 0, "Max": 9999 }]
+    },
     {
       "Id": "NADLoop1",
       "Min": 0,
@@ -13,7 +18,12 @@
       "Loop": [
         { "Id": "NAD" },
         { "Id": "IDE", "Min": 0 },
-        { "Id": "CTALoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }] }
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }]
+        }
       ]
     },
     {
@@ -25,11 +35,34 @@
         { "Id": "DTM", "Min": 0, "Max": 9999 },
         { "Id": "FTX", "Min": 0, "Max": 9999 },
         { "Id": "IDE", "Min": 0, "Max": 9 },
-        { "Id": "GIRLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "GIR" }, { "Id": "DTM", "Min": 0, "Max": 2 }] },
-        { "Id": "CDVLoop1", "Min": 0, "Max": 9999, "Loop": [{ "Id": "CDV" }, { "Id": "FTX", "Min": 0, "Max": 999 }, { "Id": "IDE", "Min": 0, "Max": 5 }] }
+        {
+          "Id": "GIRLoop1",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "GIR" }, { "Id": "DTM", "Min": 0, "Max": 2 }]
+        },
+        {
+          "Id": "CDVLoop1",
+          "Min": 0,
+          "Max": 9999,
+          "Loop": [
+            { "Id": "CDV" },
+            { "Id": "FTX", "Min": 0, "Max": 999 },
+            { "Id": "IDE", "Min": 0, "Max": 5 }
+          ]
+        }
       ]
     },
-    { "Id": "STCLoop1", "Min": 0, "Max": 999, "Loop": [{ "Id": "STC" }, { "Id": "FTX", "Min": 0, "Max": 5 }, { "Id": "IDE", "Min": 0, "Max": 5 }] },
+    {
+      "Id": "STCLoop1",
+      "Min": 0,
+      "Max": 999,
+      "Loop": [
+        { "Id": "STC" },
+        { "Id": "FTX", "Min": 0, "Max": 5 },
+        { "Id": "IDE", "Min": 0, "Max": 5 }
+      ]
+    },
     {
       "Id": "ASILoop1",
       "Min": 0,
@@ -46,7 +79,16 @@
           "Loop": [
             { "Id": "SCD" },
             { "Id": "ATT", "Min": 0, "Max": 99 },
-            { "Id": "IDELoop1", "Min": 0, "Max": 9999, "Loop": [{ "Id": "IDE" }, { "Id": "ATT", "Min": 0, "Max": 99 }, { "Id": "DTM", "Min": 0, "Max": 2 }] }
+            {
+              "Id": "IDELoop1",
+              "Min": 0,
+              "Max": 9999,
+              "Loop": [
+                { "Id": "IDE" },
+                { "Id": "ATT", "Min": 0, "Max": 99 },
+                { "Id": "DTM", "Min": 0, "Max": 2 }
+              ]
+            }
           ]
         }
       ]
@@ -70,7 +112,12 @@
             { "Id": "IDE" },
             { "Id": "GIS", "Min": 0, "Max": 5 },
             { "Id": "DTM", "Min": 0, "Max": 5 },
-            { "Id": "CDVLoop2", "Min": 0, "Max": 999, "Loop": [{ "Id": "CDV" }, { "Id": "FTX", "Min": 0, "Max": 99 }] },
+            {
+              "Id": "CDVLoop2",
+              "Min": 0,
+              "Max": 999,
+              "Loop": [{ "Id": "CDV" }, { "Id": "FTX", "Min": 0, "Max": 99 }]
+            },
             {
               "Id": "SCDLoop2",
               "Min": 0,
@@ -79,7 +126,12 @@
                 { "Id": "SCD" },
                 { "Id": "ATT", "Min": 0, "Max": 9 },
                 { "Id": "DTM", "Min": 0, "Max": 9999 },
-                { "Id": "CDVLoop3", "Min": 0, "Max": 9999, "Loop": [{ "Id": "CDV" }, { "Id": "FTX", "Min": 0, "Max": 99 }] }
+                {
+                  "Id": "CDVLoop3",
+                  "Min": 0,
+                  "Max": 9999,
+                  "Loop": [{ "Id": "CDV" }, { "Id": "FTX", "Min": 0, "Max": 99 }]
+                }
               ]
             }
           ]
@@ -91,7 +143,12 @@
           "Loop": [
             { "Id": "NAD" },
             { "Id": "IDE", "Min": 0 },
-            { "Id": "CTALoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }] }
+            {
+              "Id": "CTALoop2",
+              "Min": 0,
+              "Max": 5,
+              "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }]
+            }
           ]
         },
         {
@@ -100,10 +157,24 @@
           "Max": 5,
           "Loop": [
             { "Id": "FNS" },
-            { "Id": "RELLoop1", "Min": 0, "Max": 9999, "Loop": [{ "Id": "REL" }, { "Id": "ARR", "Min": 0 }, { "Id": "IDE", "Min": 0, "Max": 99 }] }
+            {
+              "Id": "RELLoop1",
+              "Min": 0,
+              "Max": 9999,
+              "Loop": [
+                { "Id": "REL" },
+                { "Id": "ARR", "Min": 0 },
+                { "Id": "IDE", "Min": 0, "Max": 99 }
+              ]
+            }
           ]
         },
-        { "Id": "FNTLoop2", "Min": 0, "Max": 9999, "Loop": [{ "Id": "FNT" }, { "Id": "FTX", "Min": 0, "Max": 9999 }] }
+        {
+          "Id": "FNTLoop2",
+          "Min": 0,
+          "Max": 9999,
+          "Loop": [{ "Id": "FNT" }, { "Id": "FTX", "Min": 0, "Max": 9999 }]
+        }
       ]
     },
     { "Id": "UNT" }

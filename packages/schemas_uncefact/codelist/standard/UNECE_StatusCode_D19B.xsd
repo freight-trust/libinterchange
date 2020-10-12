@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 64405 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,21 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm64405="urn:un:unece:uncefact:codelist:standard:UNECE:StatusCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:StatusCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.3">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm64405="urn:un:unece:uncefact:codelist:standard:UNECE:StatusCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:StatusCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.3"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="StatusCode" type="clm64405:StatusCodeContentType"/>
+  <xsd:element name="StatusCode" type="clm64405:StatusCodeContentType" />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +45,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>To be done</ccts:Name>
-            <ccts:Description>Remark that the requested service in the order remains outstanding.</ccts:Description>
+            <ccts:Description
+            >Remark that the requested service in the order remains outstanding.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +182,8 @@ The goods/consignment/equipment/means of transport held for import restriction p
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Information</ccts:Name>
-            <ccts:Description>The amount is quoted for information only, it is not part of the charges to be deducted or added.</ccts:Description>
+            <ccts:Description
+            >The amount is quoted for information only, it is not part of the charges to be deducted or added.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -207,7 +217,8 @@ The goods/consignment/equipment/means of transport has been cleared by agricultu
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>1 day available</ccts:Name>
-            <ccts:Description>The amount is available on the next banking office day after the booking date.</ccts:Description>
+            <ccts:Description
+            >The amount is available on the next banking office day after the booking date.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -224,7 +235,8 @@ The goods/consignment/equipment/means of transport has been cleared by port auth
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>2 days available</ccts:Name>
-            <ccts:Description>The amount is available on the second banking office day after the booking date.</ccts:Description>
+            <ccts:Description
+            >The amount is available on the second banking office day after the booking date.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -241,7 +253,8 @@ The goods/consignment/equipment/means of transport has been cleared by customs.<
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>3 days available</ccts:Name>
-            <ccts:Description>The amount available on the third banking office day after the booking date.</ccts:Description>
+            <ccts:Description
+            >The amount available on the third banking office day after the booking date.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -343,7 +356,8 @@ The goods/consignment/equipment has been damaged in the course of transportation
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Rounded</ccts:Name>
-            <ccts:Description>The quantity has been the subject of a rounding operation.</ccts:Description>
+            <ccts:Description
+            >The quantity has been the subject of a rounding operation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -377,7 +391,8 @@ The goods/consignment/equipment/means of transport has been delayed in the cours
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Temporary</ccts:Name>
-            <ccts:Description>Lasting or intended to last or function for a limited time.</ccts:Description>
+            <ccts:Description
+            >Lasting or intended to last or function for a limited time.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1148,7 +1163,8 @@ The party has been informed  in advance.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Recommended</ccts:Name>
-            <ccts:Description>The object is favoured in preference to other alternatives.</ccts:Description>
+            <ccts:Description
+            >The object is favoured in preference to other alternatives.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1266,7 +1282,8 @@ The consignee has been changed.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>All published issues since subscription start</ccts:Name>
-            <ccts:Description>Applies to all published issues since subscription start.</ccts:Description>
+            <ccts:Description
+            >Applies to all published issues since subscription start.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1283,7 +1300,8 @@ The transport of the goods/consignment/equipment has been re-arranged.</ccts:Des
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>All published issues since issue specified in claim</ccts:Name>
-            <ccts:Description>Applies to all published issues since issue specified in claim.</ccts:Description>
+            <ccts:Description
+            >Applies to all published issues since issue specified in claim.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1300,7 +1318,8 @@ The transport action has been refused.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>All published issues from and including issue specified in claim</ccts:Name>
-            <ccts:Description>Applies to all published issues from and including issue specified in claim.</ccts:Description>
+            <ccts:Description
+            >Applies to all published issues from and including issue specified in claim.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1385,7 +1404,8 @@ The goods/consignment/equipment has been returned .</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Under legal appeal</ccts:Name>
-            <ccts:Description>An application to a court for a reconsideration of the decision.</ccts:Description>
+            <ccts:Description
+            >An application to a court for a reconsideration of the decision.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1470,7 +1490,8 @@ The goods/consignment/equipment has been despatched via a wrong route.</ccts:Des
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Countersued</ccts:Name>
-            <ccts:Description>A response to institute legal proceedings in which an entity has filed a law suit.</ccts:Description>
+            <ccts:Description
+            >A response to institute legal proceedings in which an entity has filed a law suit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1538,7 +1559,8 @@ The goods/consignment/equipment has been placed into storage.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Legal documentation filed</ccts:Name>
-            <ccts:Description>Submitted a petition, document or application to the appropriate authority.</ccts:Description>
+            <ccts:Description
+            >Submitted a petition, document or application to the appropriate authority.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1606,7 +1628,8 @@ A sub-lease notice has been sent to the lessor.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Legal documentation not filed</ccts:Name>
-            <ccts:Description>No petition, document or application was submitted to the appropriate authority.</ccts:Description>
+            <ccts:Description
+            >No petition, document or application was submitted to the appropriate authority.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1674,7 +1697,8 @@ The goods/consignment/equipment has been transferred out .</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Satisfied</ccts:Name>
-            <ccts:Description>Adequately met, fulfilled or complied with all conditions.</ccts:Description>
+            <ccts:Description
+            >Adequately met, fulfilled or complied with all conditions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1844,7 +1868,8 @@ Delivery has not been possible; a delivery notice has been left .</ccts:Descript
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Stock quantity corrected</ccts:Name>
-            <ccts:Description>A difference in quantity between stocks has been corrected.</ccts:Description>
+            <ccts:Description
+            >A difference in quantity between stocks has been corrected.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -1912,7 +1937,8 @@ The delivery of the goods/consignment is in progress.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Booked when overbooked</ccts:Name>
-            <ccts:Description>The booking has been made although there is no more availability.</ccts:Description>
+            <ccts:Description
+            >The booking has been made although there is no more availability.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2328,7 +2354,8 @@ Relocating of a means of transport.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Normal security measures required</ccts:Name>
-            <ccts:Description>Minimum appropriate protective security measures shall be maintained at all times on the means of transport.</ccts:Description>
+            <ccts:Description
+            >Minimum appropriate protective security measures shall be maintained at all times on the means of transport.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2345,7 +2372,8 @@ Manoeuvring operations connected with entering the port .</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Heightened security measures required</ccts:Name>
-            <ccts:Description>Appropriate additional protective security measures shall be maintained for a period of time as a result of heightened risk of a security incident.</ccts:Description>
+            <ccts:Description
+            >Appropriate additional protective security measures shall be maintained for a period of time as a result of heightened risk of a security incident.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2362,7 +2390,8 @@ Manoeuvring operations connected with leaving the port .</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Exceptional security measures required</ccts:Name>
-            <ccts:Description>Specific protective security measures shall be maintained for a limited period of time when a security incident is probable or imminent, although it may not be possible to identify the specific target.</ccts:Description>
+            <ccts:Description
+            >Specific protective security measures shall be maintained for a limited period of time when a security incident is probable or imminent, although it may not be possible to identify the specific target.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2378,8 +2407,10 @@ Manoeuvring operations connected with movement within the port .</ccts:Descripti
       <xsd:enumeration value="142">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Ship security procedures not maintained during ship-to-ship activity</ccts:Name>
-            <ccts:Description>Ship security procedures, specified in the approved ship security plan, have not been maintained during each of the ship-to-ship activities specified.</ccts:Description>
+            <ccts:Name
+            >Ship security procedures not maintained during ship-to-ship activity</ccts:Name>
+            <ccts:Description
+            >Ship security procedures, specified in the approved ship security plan, have not been maintained during each of the ship-to-ship activities specified.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2396,7 +2427,8 @@ Preparation for handling of the means of transport.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Ship security procedure maintained during ship-to-ship activity</ccts:Name>
-            <ccts:Description>A confirmation that ship security procedures in terms of the approved in the Ship Security Plan were maintained during ship-to-ship activity.</ccts:Description>
+            <ccts:Description
+            >A confirmation that ship security procedures in terms of the approved in the Ship Security Plan were maintained during ship-to-ship activity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2413,7 +2445,8 @@ Loading of ballast.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Special or additional security measures taken</ccts:Name>
-            <ccts:Description>The ship has taken special or additional security measures, beyond those specified in the approved ship security plan.</ccts:Description>
+            <ccts:Description
+            >The ship has taken special or additional security measures, beyond those specified in the approved ship security plan.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2430,7 +2463,8 @@ Unloading of ballast.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Security related matter to report</ccts:Name>
-            <ccts:Description>A status indicating that there is a security related matter to report for the specified leg in the itinerary.</ccts:Description>
+            <ccts:Description
+            >A status indicating that there is a security related matter to report for the specified leg in the itinerary.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -2447,7 +2481,8 @@ Preparation of the cargo space of the means of transport.</ccts:Description>
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transhipped</ccts:Name>
-            <ccts:Description>The goods/consignment/transport equipment has been transhipped from one means of transport to another.</ccts:Description>
+            <ccts:Description
+            >The goods/consignment/transport equipment has been transhipped from one means of transport to another.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4290,7 +4325,8 @@ The equipment has not been released by the equipment operator.</ccts:Description
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Delivery Order Issued</ccts:Name>
-            <ccts:Description>Delivery Order for the goods/consignment/equipment/means has been issued.</ccts:Description>
+            <ccts:Description
+            >Delivery Order for the goods/consignment/equipment/means has been issued.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -4298,7 +4334,8 @@ The equipment has not been released by the equipment operator.</ccts:Description
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cleared for container release</ccts:Name>
-            <ccts:Description>The procedures of containers’ release from container yard have been cleared by all authorities and private sectors.</ccts:Description>
+            <ccts:Description
+            >The procedures of containers’ release from container yard have been cleared by all authorities and private sectors.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

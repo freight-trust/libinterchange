@@ -9,7 +9,14 @@
     {
       "Id": "PLDLoop1",
       "Max": "unbounded",
-      "Loop": [{ "Id": "PLD" }, { "Id": "PICLoop1", "Max": "unbounded", "Loop": [{ "Id": "PIC" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }] }]
+      "Loop": [
+        { "Id": "PLD" },
+        {
+          "Id": "PICLoop1",
+          "Max": "unbounded",
+          "Loop": [{ "Id": "PIC" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }]
+        }
+      ]
     },
     { "Id": "PTR", "Max": 1 },
     { "Id": "MTR", "Max": 1 }

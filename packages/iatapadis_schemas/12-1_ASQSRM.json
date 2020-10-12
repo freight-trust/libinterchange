@@ -12,13 +12,24 @@
       "Id": "IFTLoop1",
       "Min": 0,
       "Max": 999,
-      "Loop": [{ "Id": "SER" }, { "Id": "DAT", "Min": 0 }, { "Id": "RPI", "Min": 0 }, { "Id": "IFT", "Min": 0, "Max": 6 }]
+      "Loop": [
+        { "Id": "SER" },
+        { "Id": "DAT", "Min": 0 },
+        { "Id": "RPI", "Min": 0 },
+        { "Id": "IFT", "Min": 0, "Max": 6 }
+      ]
     },
     {
       "Id": "SPILoop1",
       "Min": 0,
       "Max": 99,
-      "Loop": [{ "Id": "SDT" }, { "Id": "DAT", "Min": 0 }, { "Id": "IFT", "Min": 0 }, { "Id": "ODI", "Min": 0 }, { "Id": "SPI", "Min": 0, "Max": 2 }]
+      "Loop": [
+        { "Id": "SDT" },
+        { "Id": "DAT", "Min": 0 },
+        { "Id": "IFT", "Min": 0 },
+        { "Id": "ODI", "Min": 0 },
+        { "Id": "SPI", "Min": 0, "Max": 2 }
+      ]
     },
     { "Id": "QTYLoop1", "Min": 0, "Loop": [{ "Id": "EQP" }, { "Id": "QTY", "Min": 0, "Max": 2 }] },
     {
@@ -41,7 +52,12 @@
               "Id": "IFTLoop3",
               "Min": 0,
               "Max": 99,
-              "Loop": [{ "Id": "SER" }, { "Id": "DAT", "Min": 0 }, { "Id": "RPI", "Min": 0 }, { "Id": "IFT", "Min": 0, "Max": 6 }]
+              "Loop": [
+                { "Id": "SER" },
+                { "Id": "DAT", "Min": 0 },
+                { "Id": "RPI", "Min": 0 },
+                { "Id": "IFT", "Min": 0, "Max": 6 }
+              ]
             },
             {
               "Id": "SPILoop3",
@@ -56,7 +72,12 @@
                   "Id": "IFTLoop4",
                   "Min": 0,
                   "Max": 99,
-                  "Loop": [{ "Id": "SER" }, { "Id": "DAT", "Min": 0 }, { "Id": "RPI", "Min": 0 }, { "Id": "IFT", "Min": 0, "Max": 6 }]
+                  "Loop": [
+                    { "Id": "SER" },
+                    { "Id": "DAT", "Min": 0 },
+                    { "Id": "RPI", "Min": 0 },
+                    { "Id": "IFT", "Min": 0, "Max": 6 }
+                  ]
                 }
               ]
             },
@@ -64,9 +85,19 @@
               "Id": "SPILoop4",
               "Min": 0,
               "Max": 99,
-              "Loop": [{ "Id": "SDT" }, { "Id": "DAT", "Min": 0 }, { "Id": "IFT", "Min": 0 }, { "Id": "ODI", "Min": 0 }, { "Id": "SPI", "Min": 0, "Max": 2 }]
+              "Loop": [
+                { "Id": "SDT" },
+                { "Id": "DAT", "Min": 0 },
+                { "Id": "IFT", "Min": 0 },
+                { "Id": "ODI", "Min": 0 },
+                { "Id": "SPI", "Min": 0, "Max": 2 }
+              ]
             },
-            { "Id": "QTYLoop2", "Min": 0, "Loop": [{ "Id": "EQP" }, { "Id": "QTY", "Min": 0, "Max": 2 }] }
+            {
+              "Id": "QTYLoop2",
+              "Min": 0,
+              "Loop": [{ "Id": "EQP" }, { "Id": "QTY", "Min": 0, "Max": 2 }]
+            }
           ]
         }
       ]

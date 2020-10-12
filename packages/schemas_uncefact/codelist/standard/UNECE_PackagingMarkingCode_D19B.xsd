@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 67233_PackagingMarkingCode - Code List Schema Module       ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm67233PackagingMarkingCode="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingMarkingCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingMarkingCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.2">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm67233PackagingMarkingCode="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingMarkingCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingMarkingCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.2"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="PackagingMarkingCode" type="clm67233PackagingMarkingCode:PackagingMarkingCodeContentType"/>
+  <xsd:element
+    name="PackagingMarkingCode"
+    type="clm67233PackagingMarkingCode:PackagingMarkingCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product ingredients not marked on package</ccts:Name>
-            <ccts:Description>The ingredients of the product are not marked on the packaging of the product.</ccts:Description>
+            <ccts:Description
+            >The ingredients of the product are not marked on the packaging of the product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product price not marked on packaging</ccts:Name>
-            <ccts:Description>The product price is not marked on the packaging of the product.</ccts:Description>
+            <ccts:Description
+            >The product price is not marked on the packaging of the product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product best before date not marked on product package</ccts:Name>
-            <ccts:Description>The product best before date is not marked on the packaging of the product.</ccts:Description>
+            <ccts:Description
+            >The product best before date is not marked on the packaging of the product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,15 +83,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Promotional details marked</ccts:Name>
-            <ccts:Description>A code indicating that promotional details have been marked on the package.</ccts:Description>
+            <ccts:Description
+            >A code indicating that promotional details have been marked on the package.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="6">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Labeled according to general EAN.UCC specifications for clothing and fashion accessories</ccts:Name>
-            <ccts:Description>The item is labeled according to the general EAN.UCC specifications for clothing and fashion accessories.</ccts:Description>
+            <ccts:Name
+            >Labeled according to general EAN.UCC specifications for clothing and fashion accessories</ccts:Name>
+            <ccts:Description
+            >The item is labeled according to the general EAN.UCC specifications for clothing and fashion accessories.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -85,7 +102,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sell-by date marked on package</ccts:Name>
-            <ccts:Description>The package is marked with the last date on which the item may be sold.</ccts:Description>
+            <ccts:Description
+            >The package is marked with the last date on which the item may be sold.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +111,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Use-by date marked on package</ccts:Name>
-            <ccts:Description>The package is marked with the last date on which the item may be used.</ccts:Description>
+            <ccts:Description
+            >The package is marked with the last date on which the item may be used.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +120,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Packaging / manufacturing date marked on package</ccts:Name>
-            <ccts:Description>The package is marked with the date of the packaging or manufacturing of the item.</ccts:Description>
+            <ccts:Description
+            >The package is marked with the date of the packaging or manufacturing of the item.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -109,7 +129,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>No freshness date marked on package</ccts:Name>
-            <ccts:Description>Package is not marked with any kind of date indicating freshness, such as use-by, best before or packaging date.</ccts:Description>
+            <ccts:Description
+            >Package is not marked with any kind of date indicating freshness, such as use-by, best before or packaging date.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +138,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package best before date marked</ccts:Name>
-            <ccts:Description>Package is marked with the product best before date.</ccts:Description>
+            <ccts:Description
+            >Package is marked with the product best before date.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +187,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package protection</ccts:Name>
-            <ccts:Description>The information is related to protection of the package.</ccts:Description>
+            <ccts:Description
+            >The information is related to protection of the package.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +196,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Tarping</ccts:Name>
-            <ccts:Description>The information describes how coverage with tarpaulins is to be provided.</ccts:Description>
+            <ccts:Description
+            >The information describes how coverage with tarpaulins is to be provided.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +205,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Platform/skid location</ccts:Name>
-            <ccts:Description>The information describes the platform or skid location.</ccts:Description>
+            <ccts:Description
+            >The information describes the platform or skid location.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +214,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bearing piece location</ccts:Name>
-            <ccts:Description>The information gives the location of the load bearing piece.</ccts:Description>
+            <ccts:Description
+            >The information gives the location of the load bearing piece.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +223,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Skid/pallet type</ccts:Name>
-            <ccts:Description>The information describes the type of skid or pallet.</ccts:Description>
+            <ccts:Description
+            >The information describes the type of skid or pallet.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -205,7 +232,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Placement on carrier</ccts:Name>
-            <ccts:Description>The information describes the placement on the carrier.</ccts:Description>
+            <ccts:Description
+            >The information describes the placement on the carrier.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -221,7 +249,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Unloading device</ccts:Name>
-            <ccts:Description>The information specifies the unloading device which must be used to handle the package.</ccts:Description>
+            <ccts:Description
+            >The information specifies the unloading device which must be used to handle the package.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -229,7 +258,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Unloading equipment</ccts:Name>
-            <ccts:Description>The information specifies the unloading equipment which must be used to handle the package.</ccts:Description>
+            <ccts:Description
+            >The information specifies the unloading equipment which must be used to handle the package.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -237,7 +267,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Packing method</ccts:Name>
-            <ccts:Description>The method used in packing the commodity, e.g. hermetically sealed, repacked in original container.</ccts:Description>
+            <ccts:Description
+            >The method used in packing the commodity, e.g. hermetically sealed, repacked in original container.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -277,7 +308,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product ingredients marked on package</ccts:Name>
-            <ccts:Description>The ingredients of the product contained in a package are marked on that package.</ccts:Description>
+            <ccts:Description
+            >The ingredients of the product contained in a package are marked on that package.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -285,7 +317,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Core characteristics</ccts:Name>
-            <ccts:Description>Specifies the characteristics of the core of the package.</ccts:Description>
+            <ccts:Description
+            >Specifies the characteristics of the core of the package.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -309,7 +342,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transport contract requirement</ccts:Name>
-            <ccts:Description>The packaging as per transport contract requirement.</ccts:Description>
+            <ccts:Description
+            >The packaging as per transport contract requirement.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -317,7 +351,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Preservation method</ccts:Name>
-            <ccts:Description>The packaging related information is for methods of preservation.</ccts:Description>
+            <ccts:Description
+            >The packaging related information is for methods of preservation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -325,7 +360,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product marking pattern</ccts:Name>
-            <ccts:Description>The information describes the pattern used to mark the product.</ccts:Description>
+            <ccts:Description
+            >The information describes the pattern used to mark the product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +369,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Product marking location</ccts:Name>
-            <ccts:Description>The information provides the location of the product marking.</ccts:Description>
+            <ccts:Description
+            >The information provides the location of the product marking.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -341,7 +378,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Package/container mark location</ccts:Name>
-            <ccts:Description>The information provides the location of a package or container mark.</ccts:Description>
+            <ccts:Description
+            >The information provides the location of a package or container mark.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -357,7 +395,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Receiving facility limitations</ccts:Name>
-            <ccts:Description>The information describes limitations which apply to a receiving facility.</ccts:Description>
+            <ccts:Description
+            >The information describes limitations which apply to a receiving facility.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -365,7 +404,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shipping package labelling</ccts:Name>
-            <ccts:Description>The labelling of a package in which goods are shipped.</ccts:Description>
+            <ccts:Description
+            >The labelling of a package in which goods are shipped.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -373,7 +413,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Shipping package sealing</ccts:Name>
-            <ccts:Description>The sealing particulars of a package in which goods are shipped.</ccts:Description>
+            <ccts:Description
+            >The sealing particulars of a package in which goods are shipped.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -389,7 +430,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cleaning or drying specification</ccts:Name>
-            <ccts:Description>Identification of the cleaning or drying specification.</ccts:Description>
+            <ccts:Description
+            >Identification of the cleaning or drying specification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -397,7 +439,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cushioning thickness specification</ccts:Name>
-            <ccts:Description>Identification of the cushioning thickness specification.</ccts:Description>
+            <ccts:Description
+            >Identification of the cushioning thickness specification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -405,7 +448,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cushioning and dunnage specification</ccts:Name>
-            <ccts:Description>Identification of the cushioning and dunnage specification.</ccts:Description>
+            <ccts:Description
+            >Identification of the cushioning and dunnage specification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -413,7 +457,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Level of preservation specification</ccts:Name>
-            <ccts:Description>Identification of the level of preservation specification.</ccts:Description>
+            <ccts:Description
+            >Identification of the level of preservation specification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -421,7 +466,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Preservation material specification</ccts:Name>
-            <ccts:Description>Identification of the preservation material specification.</ccts:Description>
+            <ccts:Description
+            >Identification of the preservation material specification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -437,7 +483,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Material wrapping specification</ccts:Name>
-            <ccts:Description>Identification of the material wrapping specification.</ccts:Description>
+            <ccts:Description
+            >Identification of the material wrapping specification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -445,7 +492,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Marked with “display until date”</ccts:Name>
-            <ccts:Description>Package is marked with the date by which the product should be removed from the display location.</ccts:Description>
+            <ccts:Description
+            >Package is marked with the date by which the product should be removed from the display location.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

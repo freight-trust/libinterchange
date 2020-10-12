@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 64465 - Code List Schema Module                            ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm64465="urn:un:unece:uncefact:codelist:standard:UNECE:AdjustmentReasonDescriptionCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:AdjustmentReasonDescriptionCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.4">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm64465="urn:un:unece:uncefact:codelist:standard:UNECE:AdjustmentReasonDescriptionCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:AdjustmentReasonDescriptionCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.4"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="AdjustmentReasonDescriptionCode" type="clm64465:AdjustmentReasonDescriptionCodeContentType"/>
+  <xsd:element
+    name="AdjustmentReasonDescriptionCode"
+    type="clm64465:AdjustmentReasonDescriptionCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Agreed settlement</ccts:Name>
-            <ccts:Description>An adjustment made based on an agreement between partners.</ccts:Description>
+            <ccts:Description
+            >An adjustment made based on an agreement between partners.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +73,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Short delivery</ccts:Name>
-            <ccts:Description>An adjustment made because the delivered quantity was less than expected.</ccts:Description>
+            <ccts:Description
+            >An adjustment made because the delivered quantity was less than expected.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +90,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Proof of delivery required</ccts:Name>
-            <ccts:Description>The buyer requires that proof of delivery be made before payment.</ccts:Description>
+            <ccts:Description
+            >The buyer requires that proof of delivery be made before payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +107,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Returnable container charge included</ccts:Name>
-            <ccts:Description>Adjustment made to deduct the returnable container charge.</ccts:Description>
+            <ccts:Description
+            >Adjustment made to deduct the returnable container charge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -133,7 +148,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Counter claim</ccts:Name>
-            <ccts:Description>Buyer claims an existing (financial) obligation from seller which (partly) offsets the outstanding invoice(s).</ccts:Description>
+            <ccts:Description
+            >Buyer claims an existing (financial) obligation from seller which (partly) offsets the outstanding invoice(s).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -173,7 +189,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Goods on consignment</ccts:Name>
-            <ccts:Description>Buyer does not accept invoice(s) charge as it relates to goods where the ownership remains with the seller until sold.</ccts:Description>
+            <ccts:Description
+            >Buyer does not accept invoice(s) charge as it relates to goods where the ownership remains with the seller until sold.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -245,7 +262,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Reclaimed deduction</ccts:Name>
-            <ccts:Description>Buyer reclaims an unspecified deduction from the invoice(s) (to be) paid.</ccts:Description>
+            <ccts:Description
+            >Buyer reclaims an unspecified deduction from the invoice(s) (to be) paid.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -253,7 +271,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>See separate advice</ccts:Name>
-            <ccts:Description>Buyer or seller refers to separate correspondence about a related shipment(s) and/or invoice(s) and/or a payment(s).</ccts:Description>
+            <ccts:Description
+            >Buyer or seller refers to separate correspondence about a related shipment(s) and/or invoice(s) and/or a payment(s).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -301,7 +320,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Quoted as paid to you</ccts:Name>
-            <ccts:Description>Factor informs the seller that a certain invoice(s) was paid by the buyer directly to the seller.</ccts:Description>
+            <ccts:Description
+            >Factor informs the seller that a certain invoice(s) was paid by the buyer directly to the seller.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -317,7 +337,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Invoice not received</ccts:Name>
-            <ccts:Description>Buyer claims he did not receive the invoice for which payment is requested.</ccts:Description>
+            <ccts:Description
+            >Buyer claims he did not receive the invoice for which payment is requested.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -325,7 +346,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit note to debtor/not to us</ccts:Name>
-            <ccts:Description>Factor informs the seller that he did not receive copy of a credit note sent to the buyer.</ccts:Description>
+            <ccts:Description
+            >Factor informs the seller that he did not receive copy of a credit note sent to the buyer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +355,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Deducted bonus</ccts:Name>
-            <ccts:Description>Buyer has/will deduct a bonus he is entitled to from the payment.</ccts:Description>
+            <ccts:Description
+            >Buyer has/will deduct a bonus he is entitled to from the payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -341,7 +364,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Deducted discount</ccts:Name>
-            <ccts:Description>Buyer has/will deduct the discount he is entitled to from the payment.</ccts:Description>
+            <ccts:Description
+            >Buyer has/will deduct the discount he is entitled to from the payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -349,7 +373,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Deducted freight costs</ccts:Name>
-            <ccts:Description>Buyer has/will deduct freight costs from the payment.</ccts:Description>
+            <ccts:Description
+            >Buyer has/will deduct freight costs from the payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -365,7 +390,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Credit balance(s)</ccts:Name>
-            <ccts:Description>Buyer makes use of existing credit balance(s) to offset (partly) the outstanding invoice(s).</ccts:Description>
+            <ccts:Description
+            >Buyer makes use of existing credit balance(s) to offset (partly) the outstanding invoice(s).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -373,7 +399,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Reason unknown</ccts:Name>
-            <ccts:Description>Factor informs the seller that the reason of a commercial dispute raised by the buyer is unknown.</ccts:Description>
+            <ccts:Description
+            >Factor informs the seller that the reason of a commercial dispute raised by the buyer is unknown.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -381,7 +408,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Awaiting message from seller</ccts:Name>
-            <ccts:Description>Buyer or factor are waiting for a (reply) message from the seller before a commercial dispute can be settled.</ccts:Description>
+            <ccts:Description
+            >Buyer or factor are waiting for a (reply) message from the seller before a commercial dispute can be settled.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -397,7 +425,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Discount beyond terms</ccts:Name>
-            <ccts:Description>Buyer has taken a discount larger than the discount terms agreed with the seller.</ccts:Description>
+            <ccts:Description
+            >Buyer has taken a discount larger than the discount terms agreed with the seller.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -413,7 +442,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Allowance/charge error</ccts:Name>
-            <ccts:Description>Error made by seller in the amount of allowance/charge.</ccts:Description>
+            <ccts:Description
+            >Error made by seller in the amount of allowance/charge.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -421,7 +451,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Substitute product</ccts:Name>
-            <ccts:Description>Product delivered not fully according to specification.</ccts:Description>
+            <ccts:Description
+            >Product delivered not fully according to specification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -437,7 +468,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Required data missing</ccts:Name>
-            <ccts:Description>A message sent by buyer to seller or by seller to buyer did not contain data required to take action/decision.</ccts:Description>
+            <ccts:Description
+            >A message sent by buyer to seller or by seller to buyer did not contain data required to take action/decision.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -477,7 +509,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Incorrect discount</ccts:Name>
-            <ccts:Description>Buyer states that calculated discount on the invoice(s) is wrongly calculated.</ccts:Description>
+            <ccts:Description
+            >Buyer states that calculated discount on the invoice(s) is wrongly calculated.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -501,7 +534,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Chargeback</ccts:Name>
-            <ccts:Description>Balance of one or more items charged back to seller.</ccts:Description>
+            <ccts:Description
+            >Balance of one or more items charged back to seller.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -509,7 +543,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Offset</ccts:Name>
-            <ccts:Description>Allocation of one or more debit items to one or more credit items or vice-versa.</ccts:Description>
+            <ccts:Description
+            >Allocation of one or more debit items to one or more credit items or vice-versa.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -517,7 +552,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Indirect payment</ccts:Name>
-            <ccts:Description>Payment in settlement of an invoice has been made to a party other than the designated creditor.</ccts:Description>
+            <ccts:Description
+            >Payment in settlement of an invoice has been made to a party other than the designated creditor.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -525,7 +561,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Financial reassignment</ccts:Name>
-            <ccts:Description>Previously assigned invoice/credit note is being reassigned.</ccts:Description>
+            <ccts:Description
+            >Previously assigned invoice/credit note is being reassigned.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -533,7 +570,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Reinstatement of chargeback/offset</ccts:Name>
-            <ccts:Description>Reversal or cancellation of a chargeback and/or offset relating to an incorrect balance.</ccts:Description>
+            <ccts:Description
+            >Reversal or cancellation of a chargeback and/or offset relating to an incorrect balance.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -541,7 +579,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Expecting new terms</ccts:Name>
-            <ccts:Description>Buyer expects that seller revises the terms of payment of an invoice.</ccts:Description>
+            <ccts:Description
+            >Buyer expects that seller revises the terms of payment of an invoice.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -557,7 +596,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Cash discount</ccts:Name>
-            <ccts:Description>An adjustment has been made due to the application of a cash discount.</ccts:Description>
+            <ccts:Description
+            >An adjustment has been made due to the application of a cash discount.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -565,7 +605,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Delcredere costs</ccts:Name>
-            <ccts:Description>Costs deducted from a total amount to pay for the services of central payment.</ccts:Description>
+            <ccts:Description
+            >Costs deducted from a total amount to pay for the services of central payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -573,7 +614,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Early payment allowance adjustment</ccts:Name>
-            <ccts:Description>Adjustment results from the application of an early payment allowance.</ccts:Description>
+            <ccts:Description
+            >Adjustment results from the application of an early payment allowance.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -581,15 +623,18 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Incorrect due date for monetary amount</ccts:Name>
-            <ccts:Description>Adjustment has been made because an incorrect due date was referred to with regard to the monetary amount.</ccts:Description>
+            <ccts:Description
+            >Adjustment has been made because an incorrect due date was referred to with regard to the monetary amount.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="70">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
-            <ccts:Name>Wrong monetary amount resulting from incorrect free goods quantity</ccts:Name>
-            <ccts:Description>Adjustment has been made because of a wrong monetary amount resulting from an incorrect free goods quantity.</ccts:Description>
+            <ccts:Name
+            >Wrong monetary amount resulting from incorrect free goods quantity</ccts:Name>
+            <ccts:Description
+            >Adjustment has been made because of a wrong monetary amount resulting from an incorrect free goods quantity.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -597,7 +642,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Rack or shelf replenishment service by a supplier</ccts:Name>
-            <ccts:Description>Adjustment due to the replenishment of the racks or shelves by a supplier.</ccts:Description>
+            <ccts:Description
+            >Adjustment due to the replenishment of the racks or shelves by a supplier.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -645,7 +691,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Pricing discount</ccts:Name>
-            <ccts:Description>An adjustment has been made due to the application of a pricing discount.</ccts:Description>
+            <ccts:Description
+            >An adjustment has been made due to the application of a pricing discount.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -653,7 +700,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Volume discount</ccts:Name>
-            <ccts:Description>Discount for reaching or exceeding an agreed accumulated volume.</ccts:Description>
+            <ccts:Description
+            >Discount for reaching or exceeding an agreed accumulated volume.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -661,7 +709,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sundry discount</ccts:Name>
-            <ccts:Description>Adjustment has been made due to the application of a sundry discount.</ccts:Description>
+            <ccts:Description
+            >Adjustment has been made due to the application of a sundry discount.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -669,7 +718,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Card holder signature missing</ccts:Name>
-            <ccts:Description>The adjustment was made due to the card holder not signing the filing document.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the card holder not signing the filing document.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -677,7 +727,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Card expiry date missing</ccts:Name>
-            <ccts:Description>The adjustment was made due to the card acceptor not specifying the expiry date within the filing document.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the card acceptor not specifying the expiry date within the filing document.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -685,7 +736,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Card number error</ccts:Name>
-            <ccts:Description>The adjustment was made due to the card acceptor specifying an erroneous card number within the filing document.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the card acceptor specifying an erroneous card number within the filing document.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -693,7 +745,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Card expired</ccts:Name>
-            <ccts:Description>The adjustment was made due to the card acceptor specifying an expired expiry date within the filing document or electronic data.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the card acceptor specifying an expired expiry date within the filing document or electronic data.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -701,7 +754,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Test card transaction</ccts:Name>
-            <ccts:Description>The adjustment was made due to a test card transaction, used for installing, maintaining or debugging purposes.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to a test card transaction, used for installing, maintaining or debugging purposes.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -709,7 +763,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Permission limit exceeded</ccts:Name>
-            <ccts:Description>The adjustment was made due to the permission limit defined by card issuer or card company was exceeded without prior authorisation. Synonym: Floor limit.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the permission limit defined by card issuer or card company was exceeded without prior authorisation. Synonym: Floor limit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -717,7 +772,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Wrong authorisation code</ccts:Name>
-            <ccts:Description>The adjustment was made due to the authorisation code provided did not fit to the specified transaction.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the authorisation code provided did not fit to the specified transaction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -725,7 +781,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Wrong authorised amount</ccts:Name>
-            <ccts:Description>The adjustment was made due to the specified amount not meeting the authorised amount for the transaction.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the specified amount not meeting the authorised amount for the transaction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -733,7 +790,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Authorisation failed</ccts:Name>
-            <ccts:Description>The adjustment was made due to the authorisation needed had failed.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the authorisation needed had failed.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -741,7 +799,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Card acceptor data error</ccts:Name>
-            <ccts:Description>The adjustment was made due to the data regarding the card acceptor is erroneous.</ccts:Description>
+            <ccts:Description
+            >The adjustment was made due to the data regarding the card acceptor is erroneous.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -757,7 +816,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Agreed discount</ccts:Name>
-            <ccts:Description>The reason for the adjustment is that a mutually agreed discount has been applied.</ccts:Description>
+            <ccts:Description
+            >The reason for the adjustment is that a mutually agreed discount has been applied.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -765,7 +825,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Expediting fee</ccts:Name>
-            <ccts:Description>The reason for the adjustment is that a fee for expediting has been applied.</ccts:Description>
+            <ccts:Description
+            >The reason for the adjustment is that a fee for expediting has been applied.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -773,7 +834,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Invoicing fee</ccts:Name>
-            <ccts:Description>The reason for the adjustment is that a fee for invoicing has been applied.</ccts:Description>
+            <ccts:Description
+            >The reason for the adjustment is that a fee for invoicing has been applied.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -781,7 +843,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Freight charge</ccts:Name>
-            <ccts:Description>The reason for the adjustment is that freight charges has been applied.</ccts:Description>
+            <ccts:Description
+            >The reason for the adjustment is that freight charges has been applied.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -789,7 +852,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Small order processing service charge</ccts:Name>
-            <ccts:Description>The reason for the adjustment is that a fee for processing of a small order (an order below a defined threshold) has been applied.</ccts:Description>
+            <ccts:Description
+            >The reason for the adjustment is that a fee for processing of a small order (an order below a defined threshold) has been applied.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -797,7 +861,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Currency exchange differences</ccts:Name>
-            <ccts:Description>An adjustment made due to a change in a currency exchange rate.</ccts:Description>
+            <ccts:Description
+            >An adjustment made due to a change in a currency exchange rate.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -805,7 +870,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Insolvency</ccts:Name>
-            <ccts:Description>An adjustment made due to the partner's inability to pay open debts.</ccts:Description>
+            <ccts:Description
+            >An adjustment made due to the partner's inability to pay open debts.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -813,7 +879,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Incorrect references</ccts:Name>
-            <ccts:Description>Adjustment has taken place because of incorrect references.</ccts:Description>
+            <ccts:Description
+            >Adjustment has taken place because of incorrect references.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -821,7 +888,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Incorrect identification of the buyer</ccts:Name>
-            <ccts:Description>Adjustment has taken place because of incorrect identification of the buyer.</ccts:Description>
+            <ccts:Description
+            >Adjustment has taken place because of incorrect identification of the buyer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -829,7 +897,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Incorrect product identification</ccts:Name>
-            <ccts:Description>Adjustment has taken place because of incorrect product identification.</ccts:Description>
+            <ccts:Description
+            >Adjustment has taken place because of incorrect product identification.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -845,7 +914,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Employee retirement</ccts:Name>
-            <ccts:Description>The reason for the adjustment is the retirement of an employee.</ccts:Description>
+            <ccts:Description
+            >The reason for the adjustment is the retirement of an employee.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -869,7 +939,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Mutually defined</ccts:Name>
-            <ccts:Description>A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
+            <ccts:Description
+            >A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

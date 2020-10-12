@@ -13,10 +13,20 @@
         { "Id": "ADR", "Min": 0 },
         { "Id": "LOC", "Min": 0, "Max": 5 },
         { "Id": "DTM", "Min": 0, "Max": 5 },
-        { "Id": "CTALoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }] }
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }]
+        }
       ]
     },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 5 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 5 }]
+    },
     { "Id": "GISLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }] },
     { "Id": "UNS" },
     {
@@ -37,17 +47,41 @@
             { "Id": "DOC", "Min": 0, "Max": 9 }
           ]
         },
-        { "Id": "GISLoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }] },
-        { "Id": "RCSLoop1", "Max": 99, "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 99 }] },
+        {
+          "Id": "GISLoop2",
+          "Min": 0,
+          "Max": 5,
+          "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }]
+        },
+        {
+          "Id": "RCSLoop1",
+          "Max": 99,
+          "Loop": [{ "Id": "RCS" }, { "Id": "FTX", "Min": 0, "Max": 99 }]
+        },
         {
           "Id": "SALLoop1",
           "Min": 0,
           "Loop": [
             { "Id": "SAL" },
             { "Id": "FTX", "Min": 0 },
-            { "Id": "ATTLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "ATT" }, { "Id": "FTX", "Min": 0 }] },
-            { "Id": "GISLoop3", "Min": 0, "Max": 2, "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }] },
-            { "Id": "MOALoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "MOA" }, { "Id": "RNG", "Min": 0 }, { "Id": "FTX", "Min": 0 }] }
+            {
+              "Id": "ATTLoop1",
+              "Min": 0,
+              "Max": 10,
+              "Loop": [{ "Id": "ATT" }, { "Id": "FTX", "Min": 0 }]
+            },
+            {
+              "Id": "GISLoop3",
+              "Min": 0,
+              "Max": 2,
+              "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }]
+            },
+            {
+              "Id": "MOALoop1",
+              "Min": 0,
+              "Max": 5,
+              "Loop": [{ "Id": "MOA" }, { "Id": "RNG", "Min": 0 }, { "Id": "FTX", "Min": 0 }]
+            }
           ]
         },
         {
@@ -55,8 +89,18 @@
           "Loop": [
             { "Id": "EMP" },
             { "Id": "LOC", "Min": 0 },
-            { "Id": "ATTLoop2", "Min": 0, "Max": 100, "Loop": [{ "Id": "ATT" }, { "Id": "FTX", "Min": 0 }, { "Id": "PTY", "Min": 0 }] },
-            { "Id": "LANLoop1", "Min": 0, "Max": 20, "Loop": [{ "Id": "LAN" }, { "Id": "GIS", "Min": 0, "Max": 3 }] }
+            {
+              "Id": "ATTLoop2",
+              "Min": 0,
+              "Max": 100,
+              "Loop": [{ "Id": "ATT" }, { "Id": "FTX", "Min": 0 }, { "Id": "PTY", "Min": 0 }]
+            },
+            {
+              "Id": "LANLoop1",
+              "Min": 0,
+              "Max": 20,
+              "Loop": [{ "Id": "LAN" }, { "Id": "GIS", "Min": 0, "Max": 3 }]
+            }
           ]
         }
       ]

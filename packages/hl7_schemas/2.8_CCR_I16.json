@@ -34,7 +34,12 @@
           "Min": 1,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCR_I16.CLINICAL_ORDER_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "OBR" }, { "Id": "RXO" }, { "Id": "ODS" }, { "Id": "PR1" }] },
+            {
+              "Id": "CCR_I16.CLINICAL_ORDER_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "OBR" }, { "Id": "RXO" }, { "Id": "ODS" }, { "Id": "PR1" }]
+            },
             {
               "Id": "CCR_I16.CLINICAL_ORDER_OBSERVATION",
               "Min": 0,
@@ -86,7 +91,12 @@
               "Min": 0,
               "Max": "unbounded",
               "Loop": [
-                { "Id": "CCR_I16.RESOURCE_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "AIS" }, { "Id": "AIG" }, { "Id": "AIL" }, { "Id": "AIP" }] },
+                {
+                  "Id": "CCR_I16.RESOURCE_OBJECT",
+                  "Min": 1,
+                  "Max": 1,
+                  "Choice": [{ "Id": "AIS" }, { "Id": "AIG" }, { "Id": "AIL" }, { "Id": "AIP" }]
+                },
                 {
                   "Id": "CCR_I16.RESOURCE_OBSERVATION",
                   "Min": 0,
@@ -147,7 +157,12 @@
           "Min": 0,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCR_I16.ROLE_CLINICAL_HISTORY_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }] },
+            {
+              "Id": "CCR_I16.ROLE_CLINICAL_HISTORY_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }]
+            },
             { "Id": "VAR", "Min": 0, "Max": "unbounded" }
           ]
         },
@@ -240,7 +255,12 @@
           "Min": 0,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCR_I16.ROLE_PROBLEM_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }] },
+            {
+              "Id": "CCR_I16.ROLE_PROBLEM_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }]
+            },
             { "Id": "VAR", "Min": 0, "Max": "unbounded" }
           ]
         },
@@ -267,7 +287,12 @@
           "Min": 0,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCR_I16.ROLE_GOAL_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }] },
+            {
+              "Id": "CCR_I16.ROLE_GOAL_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }]
+            },
             { "Id": "VAR", "Min": 0, "Max": "unbounded" }
           ]
         },
@@ -294,7 +319,12 @@
           "Min": 0,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCR_I16.ROLE_PATHWAY_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }] },
+            {
+              "Id": "CCR_I16.ROLE_PATHWAY_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }]
+            },
             { "Id": "VAR", "Min": 0, "Max": "unbounded" }
           ]
         },

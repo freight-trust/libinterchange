@@ -16,7 +16,12 @@
         { "Id": "COD" },
         { "Id": "DNB", "Min": 0, "Max": "unbounded" },
         { "Id": "PVD", "Min": 0, "Max": "unbounded" },
-        { "Id": "RDQLoop1", "Min": 0, "Max": "unbounded", "Loop": [{ "Id": "RDQ" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }] }
+        {
+          "Id": "RDQLoop1",
+          "Min": 0,
+          "Max": "unbounded",
+          "Loop": [{ "Id": "RDQ" }, { "Id": "DNC", "Min": 0, "Max": "unbounded" }]
+        }
       ]
     },
     { "Id": "OTR", "Max": 1 },

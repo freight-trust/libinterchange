@@ -17,8 +17,17 @@
         { "Id": "DOC", "Min": 0 },
         { "Id": "ADR", "Min": 0, "Max": 2 },
         { "Id": "ATT", "Min": 0, "Max": 5 },
-        { "Id": "DTMLoop1", "Min": 0, "Max": 2, "Loop": [{ "Id": "DTM" }, { "Id": "ADR", "Min": 0 }] },
-        { "Id": "PDILoop1", "Min": 0, "Loop": [{ "Id": "PDI" }, { "Id": "DTM", "Min": 0, "Max": 2 }] }
+        {
+          "Id": "DTMLoop1",
+          "Min": 0,
+          "Max": 2,
+          "Loop": [{ "Id": "DTM" }, { "Id": "ADR", "Min": 0 }]
+        },
+        {
+          "Id": "PDILoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "PDI" }, { "Id": "DTM", "Min": 0, "Max": 2 }]
+        }
       ]
     },
     { "Id": "FTX", "Min": 0 },

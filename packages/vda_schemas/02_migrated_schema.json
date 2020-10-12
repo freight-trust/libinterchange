@@ -1,600 +1,506 @@
 {
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "description": "",
-    "type": "object",
-    "properties": {
-        "Release": {
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "Release": {
+      "type": "string",
+      "minLength": 1
+    },
+    "DocumentType": {
+      "type": "number"
+    },
+    "TransactionSet": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "required": ["ID", "Max"],
+        "properties": {
+          "ID": {
             "type": "string",
             "minLength": 1
-        },
-        "DocumentType": {
+          },
+          "Max": {
             "type": "number"
-        },
-        "TransactionSet": {
+          },
+          "Loop": {
             "type": "array",
             "uniqueItems": true,
             "minItems": 1,
             "items": {
-                "required": [
-                    "ID",
-                    "Max"
-                ],
-                "properties": {
-                    "ID": {
-                        "type": "string",
-                        "minLength": 1
-                    },
-                    "Max": {
-                        "type": "number"
-                    },
-                    "Loop": {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "minItems": 1,
-                        "items": {
-                            "required": [
-                                "ID",
-                                "Min",
-                                "Max"
-                            ],
-                            "properties": {
-                                "ID": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "Min": {
-                                    "type": "number"
-                                },
-                                "Max": {
-                                    "type": "number"
-                                }
-                            }
-                        }
-                    }
+              "required": ["ID", "Min", "Max"],
+              "properties": {
+                "ID": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "Min": {
+                  "type": "number"
+                },
+                "Max": {
+                  "type": "number"
                 }
+              }
             }
-        },
-        "Qualifiers": {
-            "type": "object",
-            "properties": {
-                "Plant Customer": {
-                    "type": "object",
-                    "properties": {
-                        "010": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "020": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "030": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "060": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "070": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "080": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "008": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "092": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "040": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "041": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "047": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "048": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "049": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "CX1": {
-                            "type": "string",
-                            "minLength": 1
-                        }
-                    },
-                    "required": [
-                        "010",
-                        "020",
-                        "030",
-                        "060",
-                        "070",
-                        "080",
-                        "008",
-                        "092",
-                        "040",
-                        "041",
-                        "047",
-                        "048",
-                        "049",
-                        "CX1"
-                    ]
-                },
-                "Unit Of Measurement": {
-                    "type": "object",
-                    "properties": {
-                        "ST": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "M": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "M2": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "M3": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "L": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "T": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "KG": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "G": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "KM": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "MM": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "SA": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "PA": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "TG": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "SD": {
-                            "type": "string",
-                            "minLength": 1
-                        }
-                    },
-                    "required": [
-                        "ST",
-                        "M",
-                        "M2",
-                        "M3",
-                        "L",
-                        "T",
-                        "KG",
-                        "G",
-                        "KM",
-                        "MM",
-                        "SA",
-                        "PA",
-                        "TG",
-                        "SD"
-                    ]
-                },
-                "Delivery Interval": {
-                    "type": "object",
-                    "properties": {
-                        "L": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "T": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "W": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "M": {
-                            "type": "string",
-                            "minLength": 1
-                        }
-                    },
-                    "required": [
-                        "L",
-                        "T",
-                        "W",
-                        "M"
-                    ]
-                },
-                "Code Usage": {
-                    "type": "object",
-                    "properties": {
-                        "S": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "E": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "M": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "V": {
-                            "type": "string",
-                            "minLength": 1
-                        }
-                    },
-                    "required": [
-                        "S",
-                        "E",
-                        "M",
-                        "V"
-                    ]
-                }
-            },
-            "required": [
-                "Plant Customer",
-                "Unit Of Measurement",
-                "Delivery Interval",
-                "Code Usage"
-            ]
-        },
-        "Segments": {
-            "type": "object",
-            "properties": {
-                "511": {
-                    "type": "object",
-                    "properties": {
-                        "Elements": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                                "required": [
-                                    "Desc",
-                                    "DataType",
-                                    "Required",
-                                    "Length"
-                                ],
-                                "properties": {
-                                    "Desc": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "DataType": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "Required": {
-                                        "type": "boolean"
-                                    },
-                                    "Length": {
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "Elements"
-                    ]
-                },
-                "512": {
-                    "type": "object",
-                    "properties": {
-                        "Elements": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                                "required": [
-                                    "Desc",
-                                    "DataType",
-                                    "Required",
-                                    "Length",
-                                    "QualifierRef"
-                                ],
-                                "properties": {
-                                    "Desc": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "DataType": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "Required": {
-                                        "type": "boolean"
-                                    },
-                                    "Length": {
-                                        "type": "number"
-                                    },
-                                    "QualifierRef": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "Elements"
-                    ]
-                },
-                "513": {
-                    "type": "object",
-                    "properties": {
-                        "Elements": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                                "required": [
-                                    "Desc",
-                                    "DataType",
-                                    "Required",
-                                    "Length"
-                                ],
-                                "properties": {
-                                    "Desc": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "DataType": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "Required": {
-                                        "type": "boolean"
-                                    },
-                                    "Length": {
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "Elements"
-                    ]
-                },
-                "514": {
-                    "type": "object",
-                    "properties": {
-                        "Elements": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                                "required": [
-                                    "Desc",
-                                    "DataType",
-                                    "Required",
-                                    "Length"
-                                ],
-                                "properties": {
-                                    "Desc": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "DataType": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "Required": {
-                                        "type": "boolean"
-                                    },
-                                    "Length": {
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "Elements"
-                    ]
-                },
-                "515": {
-                    "type": "object",
-                    "properties": {
-                        "Elements": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                                "required": [
-                                    "Desc",
-                                    "DataType",
-                                    "Required",
-                                    "Length"
-                                ],
-                                "properties": {
-                                    "Desc": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "DataType": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "Required": {
-                                        "type": "boolean"
-                                    },
-                                    "Length": {
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "Elements"
-                    ]
-                },
-                "517": {
-                    "type": "object",
-                    "properties": {
-                        "Elements": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                                "required": [
-                                    "Desc",
-                                    "DataType",
-                                    "Required",
-                                    "Length"
-                                ],
-                                "properties": {
-                                    "Desc": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "DataType": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "Required": {
-                                        "type": "boolean"
-                                    },
-                                    "Length": {
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "Elements"
-                    ]
-                },
-                "518": {
-                    "type": "object",
-                    "properties": {
-                        "Elements": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                                "required": [
-                                    "Desc",
-                                    "DataType",
-                                    "Required",
-                                    "Length"
-                                ],
-                                "properties": {
-                                    "Desc": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "DataType": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "Required": {
-                                        "type": "boolean"
-                                    },
-                                    "Length": {
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "Elements"
-                    ]
-                },
-                "519": {
-                    "type": "object",
-                    "properties": {
-                        "Elements": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                                "required": [
-                                    "Desc",
-                                    "DataType",
-                                    "Required",
-                                    "Length"
-                                ],
-                                "properties": {
-                                    "Desc": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "DataType": {
-                                        "type": "string",
-                                        "minLength": 1
-                                    },
-                                    "Required": {
-                                        "type": "boolean"
-                                    },
-                                    "Length": {
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "Elements"
-                    ]
-                }
-            },
-            "required": [
-                "511",
-                "512",
-                "513",
-                "514",
-                "515",
-                "517",
-                "518",
-                "519"
-            ]
+          }
         }
+      }
     },
-    "required": [
-        "Release",
-        "DocumentType",
-        "TransactionSet",
-        "Qualifiers",
-        "Segments"
-    ]
+    "Qualifiers": {
+      "type": "object",
+      "properties": {
+        "Plant Customer": {
+          "type": "object",
+          "properties": {
+            "010": {
+              "type": "string",
+              "minLength": 1
+            },
+            "020": {
+              "type": "string",
+              "minLength": 1
+            },
+            "030": {
+              "type": "string",
+              "minLength": 1
+            },
+            "060": {
+              "type": "string",
+              "minLength": 1
+            },
+            "070": {
+              "type": "string",
+              "minLength": 1
+            },
+            "080": {
+              "type": "string",
+              "minLength": 1
+            },
+            "008": {
+              "type": "string",
+              "minLength": 1
+            },
+            "092": {
+              "type": "string",
+              "minLength": 1
+            },
+            "040": {
+              "type": "string",
+              "minLength": 1
+            },
+            "041": {
+              "type": "string",
+              "minLength": 1
+            },
+            "047": {
+              "type": "string",
+              "minLength": 1
+            },
+            "048": {
+              "type": "string",
+              "minLength": 1
+            },
+            "049": {
+              "type": "string",
+              "minLength": 1
+            },
+            "CX1": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "010",
+            "020",
+            "030",
+            "060",
+            "070",
+            "080",
+            "008",
+            "092",
+            "040",
+            "041",
+            "047",
+            "048",
+            "049",
+            "CX1"
+          ]
+        },
+        "Unit Of Measurement": {
+          "type": "object",
+          "properties": {
+            "ST": {
+              "type": "string",
+              "minLength": 1
+            },
+            "M": {
+              "type": "string",
+              "minLength": 1
+            },
+            "M2": {
+              "type": "string",
+              "minLength": 1
+            },
+            "M3": {
+              "type": "string",
+              "minLength": 1
+            },
+            "L": {
+              "type": "string",
+              "minLength": 1
+            },
+            "T": {
+              "type": "string",
+              "minLength": 1
+            },
+            "KG": {
+              "type": "string",
+              "minLength": 1
+            },
+            "G": {
+              "type": "string",
+              "minLength": 1
+            },
+            "KM": {
+              "type": "string",
+              "minLength": 1
+            },
+            "MM": {
+              "type": "string",
+              "minLength": 1
+            },
+            "SA": {
+              "type": "string",
+              "minLength": 1
+            },
+            "PA": {
+              "type": "string",
+              "minLength": 1
+            },
+            "TG": {
+              "type": "string",
+              "minLength": 1
+            },
+            "SD": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "ST",
+            "M",
+            "M2",
+            "M3",
+            "L",
+            "T",
+            "KG",
+            "G",
+            "KM",
+            "MM",
+            "SA",
+            "PA",
+            "TG",
+            "SD"
+          ]
+        },
+        "Delivery Interval": {
+          "type": "object",
+          "properties": {
+            "L": {
+              "type": "string",
+              "minLength": 1
+            },
+            "T": {
+              "type": "string",
+              "minLength": 1
+            },
+            "W": {
+              "type": "string",
+              "minLength": 1
+            },
+            "M": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": ["L", "T", "W", "M"]
+        },
+        "Code Usage": {
+          "type": "object",
+          "properties": {
+            "S": {
+              "type": "string",
+              "minLength": 1
+            },
+            "E": {
+              "type": "string",
+              "minLength": 1
+            },
+            "M": {
+              "type": "string",
+              "minLength": 1
+            },
+            "V": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": ["S", "E", "M", "V"]
+        }
+      },
+      "required": ["Plant Customer", "Unit Of Measurement", "Delivery Interval", "Code Usage"]
+    },
+    "Segments": {
+      "type": "object",
+      "properties": {
+        "511": {
+          "type": "object",
+          "properties": {
+            "Elements": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": ["Desc", "DataType", "Required", "Length"],
+                "properties": {
+                  "Desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "DataType": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required": {
+                    "type": "boolean"
+                  },
+                  "Length": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": ["Elements"]
+        },
+        "512": {
+          "type": "object",
+          "properties": {
+            "Elements": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
+                "properties": {
+                  "Desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "DataType": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required": {
+                    "type": "boolean"
+                  },
+                  "Length": {
+                    "type": "number"
+                  },
+                  "QualifierRef": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          },
+          "required": ["Elements"]
+        },
+        "513": {
+          "type": "object",
+          "properties": {
+            "Elements": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": ["Desc", "DataType", "Required", "Length"],
+                "properties": {
+                  "Desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "DataType": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required": {
+                    "type": "boolean"
+                  },
+                  "Length": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": ["Elements"]
+        },
+        "514": {
+          "type": "object",
+          "properties": {
+            "Elements": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": ["Desc", "DataType", "Required", "Length"],
+                "properties": {
+                  "Desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "DataType": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required": {
+                    "type": "boolean"
+                  },
+                  "Length": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": ["Elements"]
+        },
+        "515": {
+          "type": "object",
+          "properties": {
+            "Elements": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": ["Desc", "DataType", "Required", "Length"],
+                "properties": {
+                  "Desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "DataType": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required": {
+                    "type": "boolean"
+                  },
+                  "Length": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": ["Elements"]
+        },
+        "517": {
+          "type": "object",
+          "properties": {
+            "Elements": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": ["Desc", "DataType", "Required", "Length"],
+                "properties": {
+                  "Desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "DataType": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required": {
+                    "type": "boolean"
+                  },
+                  "Length": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": ["Elements"]
+        },
+        "518": {
+          "type": "object",
+          "properties": {
+            "Elements": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": ["Desc", "DataType", "Required", "Length"],
+                "properties": {
+                  "Desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "DataType": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required": {
+                    "type": "boolean"
+                  },
+                  "Length": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": ["Elements"]
+        },
+        "519": {
+          "type": "object",
+          "properties": {
+            "Elements": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": ["Desc", "DataType", "Required", "Length"],
+                "properties": {
+                  "Desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "DataType": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required": {
+                    "type": "boolean"
+                  },
+                  "Length": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": ["Elements"]
+        }
+      },
+      "required": ["511", "512", "513", "514", "515", "517", "518", "519"]
+    }
+  },
+  "required": ["Release", "DocumentType", "TransactionSet", "Qualifiers", "Segments"]
 }

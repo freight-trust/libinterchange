@@ -12,7 +12,17 @@
     { "Id": "DAT", "Min": 0 },
     { "Id": "FQU", "Min": 0, "Max": 99 },
     { "Id": "IFT", "Min": 0 },
-    { "Id": "SDTLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "TRA" }, { "Id": "PDI", "Min": 0 }, { "Id": "RTG", "Min": 0 }, { "Id": "SDT", "Min": 0 }] },
+    {
+      "Id": "SDTLoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [
+        { "Id": "TRA" },
+        { "Id": "PDI", "Min": 0 },
+        { "Id": "RTG", "Min": 0 },
+        { "Id": "SDT", "Min": 0 }
+      ]
+    },
     {
       "Id": "DATLoop1",
       "Min": 0,
@@ -41,10 +51,19 @@
       "Loop": [
         { "Id": "EQN" },
         { "Id": "PTK", "Min": 0, "Max": 3 },
-        { "Id": "FQULoop2", "Min": 0, "Max": 99, "Loop": [{ "Id": "FAR" }, { "Id": "FQU", "Min": 0, "Max": 99 }] }
+        {
+          "Id": "FQULoop2",
+          "Min": 0,
+          "Max": 99,
+          "Loop": [{ "Id": "FAR" }, { "Id": "FQU", "Min": 0, "Max": 99 }]
+        }
       ]
     },
-    { "Id": "DATLoop2", "Min": 0, "Loop": [{ "Id": "FRU" }, { "Id": "REF", "Min": 0 }, { "Id": "DAT", "Min": 0 }] },
+    {
+      "Id": "DATLoop2",
+      "Min": 0,
+      "Loop": [{ "Id": "FRU" }, { "Id": "REF", "Min": 0 }, { "Id": "DAT", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

@@ -6,12 +6,32 @@
     { "Id": "BGM" },
     { "Id": "DTM", "Min": 0, "Max": 9 },
     { "Id": "FTX", "Min": 0, "Max": 9 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
-    { "Id": "TDTLoop1", "Loop": [{ "Id": "TDT" }, { "Id": "LOC", "Min": 0, "Max": 9 }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
+    {
+      "Id": "TDTLoop1",
+      "Loop": [
+        { "Id": "TDT" },
+        { "Id": "LOC", "Min": 0, "Max": 9 },
+        { "Id": "DTM", "Min": 0, "Max": 9 }
+      ]
+    },
     {
       "Id": "NADLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTALoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }] }]
+      "Loop": [
+        { "Id": "NAD" },
+        {
+          "Id": "CTALoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 9 }]
+        }
+      ]
     },
     {
       "Id": "EQDLoop1",
@@ -46,7 +66,11 @@
             { "Id": "MEA", "Min": 0, "Max": 9 },
             { "Id": "PCI", "Min": 0, "Max": 9 },
             { "Id": "DOC", "Min": 0, "Max": 9 },
-            { "Id": "SGPLoop1", "Max": 999, "Loop": [{ "Id": "SGP" }, { "Id": "MEA", "Min": 0, "Max": 9 }] },
+            {
+              "Id": "SGPLoop1",
+              "Max": 999,
+              "Loop": [{ "Id": "SGP" }, { "Id": "MEA", "Min": 0, "Max": 9 }]
+            },
             {
               "Id": "DGSLoop1",
               "Min": 0,
@@ -55,7 +79,12 @@
                 { "Id": "DGS" },
                 { "Id": "FTX", "Min": 0, "Max": 9 },
                 { "Id": "MEA", "Min": 0, "Max": 9 },
-                { "Id": "SGPLoop2", "Min": 0, "Max": 999, "Loop": [{ "Id": "SGP" }, { "Id": "MEA", "Min": 0, "Max": 9 }] }
+                {
+                  "Id": "SGPLoop2",
+                  "Min": 0,
+                  "Max": 999,
+                  "Loop": [{ "Id": "SGP" }, { "Id": "MEA", "Min": 0, "Max": 9 }]
+                }
               ]
             }
           ]

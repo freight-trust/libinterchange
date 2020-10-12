@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== 65189_AllowanceChargeID - Code List Schema Module          ===== -->
 <!-- ====================================================================== -->
@@ -19,13 +19,24 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clm65189AllowanceChargeID="urn:un:unece:uncefact:codelist:standard:UNECE:AllowanceChargeIdentificationCode:D19B" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:AllowanceChargeIdentificationCode:D19B" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.5">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:clm65189AllowanceChargeID="urn:un:unece:uncefact:codelist:standard:UNECE:AllowanceChargeIdentificationCode:D19B"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:AllowanceChargeIdentificationCode:D19B"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.5"
+>
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
 <!-- ===== Root Element                                                ===== -->
 <!-- ======================================================================= -->
-  <xsd:element name="AllowanceChargeIdentificationCode" type="clm65189AllowanceChargeID:AllowanceChargeIdentificationCodeContentType"/>
+  <xsd:element
+    name="AllowanceChargeIdentificationCode"
+    type="clm65189AllowanceChargeID:AllowanceChargeIdentificationCodeContentType"
+  />
 <!-- ================================================================== -->
 <!-- ===== Type Definitions                                       ===== -->
 <!-- ================================================================== -->
@@ -37,7 +48,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Handling commission</ccts:Name>
-            <ccts:Description>Fee for the processing of documentary credit, collection and payment which are charged to the customer.</ccts:Description>
+            <ccts:Description
+            >Fee for the processing of documentary credit, collection and payment which are charged to the customer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -45,7 +57,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Amendment commission</ccts:Name>
-            <ccts:Description>Fee for amendments in documentary credit and collection business (not extensions and increases of documentary credits).</ccts:Description>
+            <ccts:Description
+            >Fee for amendments in documentary credit and collection business (not extensions and increases of documentary credits).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -53,7 +66,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Acceptance commission</ccts:Name>
-            <ccts:Description>Fee for the acceptance of draft in documentary credit and collection business which are drawn on us (also to be seen as a kind of 'guarantee commission').</ccts:Description>
+            <ccts:Description
+            >Fee for the acceptance of draft in documentary credit and collection business which are drawn on us (also to be seen as a kind of 'guarantee commission').</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -61,7 +75,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commission for obtaining acceptance</ccts:Name>
-            <ccts:Description>Fee for obtaining an acceptance under collections on the basis of 'documents against acceptance'.</ccts:Description>
+            <ccts:Description
+            >Fee for obtaining an acceptance under collections on the basis of 'documents against acceptance'.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -69,7 +84,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commission on delivery</ccts:Name>
-            <ccts:Description>Fee for delivery of documents without corresponding payment.</ccts:Description>
+            <ccts:Description
+            >Fee for delivery of documents without corresponding payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -77,7 +93,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Advising commission</ccts:Name>
-            <ccts:Description>Fee for advising documentary credits (charged also in case of confirmed credits).</ccts:Description>
+            <ccts:Description
+            >Fee for advising documentary credits (charged also in case of confirmed credits).</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -93,7 +110,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Deferred payment commission</ccts:Name>
-            <ccts:Description>Fee for the deferred payment period under documentary credits confirmed by bank. This fee are charges for the period from presentation of the document until due date of payment.</ccts:Description>
+            <ccts:Description
+            >Fee for the deferred payment period under documentary credits confirmed by bank. This fee are charges for the period from presentation of the document until due date of payment.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -101,7 +119,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commission for taking up documents</ccts:Name>
-            <ccts:Description>Fee charged to the foreign bank for the processing of documentary credit.</ccts:Description>
+            <ccts:Description
+            >Fee charged to the foreign bank for the processing of documentary credit.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -117,7 +136,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Fee for payment under reserve</ccts:Name>
-            <ccts:Description>Fee charged to the customer for discrepancies in credit documents in the case of which the bank have to stipulate payment under reserve.</ccts:Description>
+            <ccts:Description
+            >Fee charged to the customer for discrepancies in credit documents in the case of which the bank have to stipulate payment under reserve.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -125,7 +145,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Discrepancy fee</ccts:Name>
-            <ccts:Description>Fee charged to the foreign bank for discrepancies in credit documents.</ccts:Description>
+            <ccts:Description
+            >Fee charged to the foreign bank for discrepancies in credit documents.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -141,7 +162,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commission for release of goods</ccts:Name>
-            <ccts:Description>Commission for the release of goods sent to the bank.</ccts:Description>
+            <ccts:Description
+            >Commission for the release of goods sent to the bank.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -149,7 +171,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Collection commission</ccts:Name>
-            <ccts:Description>Fee for settling collections on the basis of 'documents against payments'.</ccts:Description>
+            <ccts:Description
+            >Fee for settling collections on the basis of 'documents against payments'.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -157,7 +180,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Negotiation commission</ccts:Name>
-            <ccts:Description>Fee for the purchase of documents under sight credit for the first ten days.</ccts:Description>
+            <ccts:Description
+            >Fee for the purchase of documents under sight credit for the first ten days.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -165,7 +189,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Return commission</ccts:Name>
-            <ccts:Description>Fee for cheques, bills and collections returned unpaid and/or recalled.</ccts:Description>
+            <ccts:Description
+            >Fee for cheques, bills and collections returned unpaid and/or recalled.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -181,7 +206,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Trust commission</ccts:Name>
-            <ccts:Description>Fee for the handling on a fiduciary basis of imported goods that have been warehoused.</ccts:Description>
+            <ccts:Description
+            >Fee for the handling on a fiduciary basis of imported goods that have been warehoused.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -189,7 +215,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Transfer commission</ccts:Name>
-            <ccts:Description>Fee for the transfer of transferable documentary credits.</ccts:Description>
+            <ccts:Description
+            >Fee for the transfer of transferable documentary credits.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -197,7 +224,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Commission for opening irrevocable documentary credits</ccts:Name>
-            <ccts:Description>Fee for opening irrevocable documentary credits. This fee is a kind of 'Guarantee commission' as compensation for the commitment into which the bank have entered on the customers behalf; similar to confirmation commission, acceptance commission.</ccts:Description>
+            <ccts:Description
+            >Fee for opening irrevocable documentary credits. This fee is a kind of 'Guarantee commission' as compensation for the commitment into which the bank have entered on the customers behalf; similar to confirmation commission, acceptance commission.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -213,7 +241,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Supervisory commission</ccts:Name>
-            <ccts:Description>Fee for the supervising unconfirmed documentary credits with a deferred payment period.</ccts:Description>
+            <ccts:Description
+            >Fee for the supervising unconfirmed documentary credits with a deferred payment period.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -229,7 +258,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Risk commission</ccts:Name>
-            <ccts:Description>Commission in addition to the confirmation commission for documentary credits from sensitive countries.</ccts:Description>
+            <ccts:Description
+            >Commission in addition to the confirmation commission for documentary credits from sensitive countries.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -245,7 +275,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Reimbursement commission</ccts:Name>
-            <ccts:Description>Fee for reimbursement of, for example, documentary credits.</ccts:Description>
+            <ccts:Description
+            >Fee for reimbursement of, for example, documentary credits.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -253,7 +284,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Stamp duty</ccts:Name>
-            <ccts:Description>Tax payable on bills in accordance with national bill of exchange legislation.</ccts:Description>
+            <ccts:Description
+            >Tax payable on bills in accordance with national bill of exchange legislation.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -261,7 +293,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Brokerage</ccts:Name>
-            <ccts:Description>Brokers commission arising, in trade with foreign currencies.</ccts:Description>
+            <ccts:Description
+            >Brokers commission arising, in trade with foreign currencies.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -269,7 +302,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bank charges</ccts:Name>
-            <ccts:Description>Charges deducted/claimed by other banks involved in the transaction.</ccts:Description>
+            <ccts:Description
+            >Charges deducted/claimed by other banks involved in the transaction.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -277,7 +311,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Bank charges information</ccts:Name>
-            <ccts:Description>Charges not included in the total charge amount i.e. the charges are for information only.</ccts:Description>
+            <ccts:Description
+            >Charges not included in the total charge amount i.e. the charges are for information only.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -333,7 +368,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Penalty for late delivery of valuation of works</ccts:Name>
-            <ccts:Description>Penalty imposed when valuation of works is delivered late.</ccts:Description>
+            <ccts:Description
+            >Penalty imposed when valuation of works is delivered late.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -341,7 +377,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Penalty for execution of works behind schedule</ccts:Name>
-            <ccts:Description>Penalty imposed when the execution of works is behind schedule.</ccts:Description>
+            <ccts:Description
+            >Penalty imposed when the execution of works is behind schedule.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -453,7 +490,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Chamber of commerce charge</ccts:Name>
-            <ccts:Description>Identifies the charges from the chamber of commerce.</ccts:Description>
+            <ccts:Description
+            >Identifies the charges from the chamber of commerce.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -501,7 +539,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Manufacturer's consumer discount</ccts:Name>
-            <ccts:Description>A discount given by the manufacturer which should be passed on to the consumer.</ccts:Description>
+            <ccts:Description
+            >A discount given by the manufacturer which should be passed on to the consumer.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -533,7 +572,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Special agreement</ccts:Name>
-            <ccts:Description>An allowance or charge as specified in a special agreement.</ccts:Description>
+            <ccts:Description
+            >An allowance or charge as specified in a special agreement.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -541,7 +581,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Production error discount</ccts:Name>
-            <ccts:Description>A discount given for the purchase of a product with a production error.</ccts:Description>
+            <ccts:Description
+            >A discount given for the purchase of a product with a production error.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -549,7 +590,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>New outlet discount</ccts:Name>
-            <ccts:Description>A discount given at the occasion of the opening of a new outlet.</ccts:Description>
+            <ccts:Description
+            >A discount given at the occasion of the opening of a new outlet.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -557,7 +599,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Sample discount</ccts:Name>
-            <ccts:Description>A discount given for the purchase of a sample of a product.</ccts:Description>
+            <ccts:Description
+            >A discount given for the purchase of a sample of a product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -565,7 +608,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>End-of-range discount</ccts:Name>
-            <ccts:Description>A discount given for the purchase of an end-of-range product.</ccts:Description>
+            <ccts:Description
+            >A discount given for the purchase of an end-of-range product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -573,7 +617,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Charge for a customer specific finish</ccts:Name>
-            <ccts:Description>A charge for the addition of a customer specific finish to a product.</ccts:Description>
+            <ccts:Description
+            >A charge for the addition of a customer specific finish to a product.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -589,7 +634,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Point of sales threshold allowance</ccts:Name>
-            <ccts:Description>Allowance for reaching or exceeding an agreed sales threshold at the point of sales.</ccts:Description>
+            <ccts:Description
+            >Allowance for reaching or exceeding an agreed sales threshold at the point of sales.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -645,7 +691,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Special construction costs</ccts:Name>
-            <ccts:Description>Charge for costs incurred as result of special constructions.</ccts:Description>
+            <ccts:Description
+            >Charge for costs incurred as result of special constructions.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -653,7 +700,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Freight charges</ccts:Name>
-            <ccts:Description>Amount to be paid for moving goods, by whatever means, from one place to another.</ccts:Description>
+            <ccts:Description
+            >Amount to be paid for moving goods, by whatever means, from one place to another.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -709,7 +757,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Gold surcharge</ccts:Name>
-            <ccts:Description>Difference between current price and basic value contained in product price in relation to gold content.</ccts:Description>
+            <ccts:Description
+            >Difference between current price and basic value contained in product price in relation to gold content.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -717,7 +766,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Copper surcharge</ccts:Name>
-            <ccts:Description>Difference between current price and basic value contained in product price in relation to copper content.</ccts:Description>
+            <ccts:Description
+            >Difference between current price and basic value contained in product price in relation to copper content.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -725,7 +775,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Material surcharge/deduction</ccts:Name>
-            <ccts:Description>Surcharge/deduction, calculated for higher/ lower material's consumption.</ccts:Description>
+            <ccts:Description
+            >Surcharge/deduction, calculated for higher/ lower material's consumption.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -733,7 +784,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Lead surcharge</ccts:Name>
-            <ccts:Description>Difference between current price and basic value contained in product price in relation to lead content.</ccts:Description>
+            <ccts:Description
+            >Difference between current price and basic value contained in product price in relation to lead content.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -741,7 +793,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Price index surcharge</ccts:Name>
-            <ccts:Description>Higher/lower price, resulting from change in costs between the times of making offer and delivery.</ccts:Description>
+            <ccts:Description
+            >Higher/lower price, resulting from change in costs between the times of making offer and delivery.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -749,7 +802,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Platinum surcharge</ccts:Name>
-            <ccts:Description>Difference between current price and basic value contained in product price in relation to platinum content.</ccts:Description>
+            <ccts:Description
+            >Difference between current price and basic value contained in product price in relation to platinum content.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -757,7 +811,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Silver surcharge</ccts:Name>
-            <ccts:Description>Difference between current price and basic value contained in product price in relation to silver content.</ccts:Description>
+            <ccts:Description
+            >Difference between current price and basic value contained in product price in relation to silver content.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -765,7 +820,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Wolfram surcharge</ccts:Name>
-            <ccts:Description>Difference between current price and basic value contained in product price in relation to wolfram content.</ccts:Description>
+            <ccts:Description
+            >Difference between current price and basic value contained in product price in relation to wolfram content.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -773,7 +829,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Aluminum surcharge</ccts:Name>
-            <ccts:Description>Difference between current price and basic value contained in product price in relation to aluminum content.</ccts:Description>
+            <ccts:Description
+            >Difference between current price and basic value contained in product price in relation to aluminum content.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -821,7 +878,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Special rebate</ccts:Name>
-            <ccts:Description>A return of part of an amount paid for goods or services, serving as a reduction or discount.</ccts:Description>
+            <ccts:Description
+            >A return of part of an amount paid for goods or services, serving as a reduction or discount.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -829,7 +887,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Carbon footprint charge</ccts:Name>
-            <ccts:Description>A monetary amount charged for carbon footprint related to a regulatory requirement.</ccts:Description>
+            <ccts:Description
+            >A monetary amount charged for carbon footprint related to a regulatory requirement.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
@@ -869,7 +928,8 @@ This document and the information contained herein is provided on an "AS IS" bas
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:Name>Withheld taxes and social security contributions</ccts:Name>
-            <ccts:Description>The amount of taxes and contributions for social security, that is subtracted from the payable amount as it is to be paid separately.</ccts:Description>
+            <ccts:Description
+            >The amount of taxes and contributions for social security, that is subtracted from the payable amount as it is to be paid separately.</ccts:Description>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>

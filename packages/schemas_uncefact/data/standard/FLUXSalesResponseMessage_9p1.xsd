@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- ====================================================================== -->
 <!-- ===== FLUXSalesResponseMessage Schema Module                     ===== -->
 <!-- ====================================================================== -->
@@ -15,22 +15,42 @@ The limited permissions granted above are perpetual and will not be revoked by U
 
 This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rsm="urn:un:unece:uncefact:data:standard:FLUXSalesResponseMessage:9" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27" xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27" targetNamespace="urn:un:unece:uncefact:data:standard:FLUXSalesResponseMessage:9" elementFormDefault="qualified" attributeFormDefault="unqualified" version="9.1">
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:rsm="urn:un:unece:uncefact:data:standard:FLUXSalesResponseMessage:9"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+  xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27"
+  xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27"
+  xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27"
+  targetNamespace="urn:un:unece:uncefact:data:standard:FLUXSalesResponseMessage:9"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="9.1"
+>
 <!-- ======================================================================= -->
 <!-- ===== Imports                                                     ===== -->
 <!-- ======================================================================= -->
 <!-- ======================================================================= -->
 <!-- ===== Import of Unqualified Data Type Schema Module               ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27" schemaLocation="UnqualifiedDataType_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:27"
+    schemaLocation="UnqualifiedDataType_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Import of Qualified Data Type Schema Module                 ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27" schemaLocation="QualifiedDataType_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:Standard:QualifiedDataType:27"
+    schemaLocation="QualifiedDataType_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
 <!-- ======================================================================= -->
-  <xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27" schemaLocation="ReusableAggregateBusinessInformationEntity_27p0.xsd"/>
+  <xsd:import
+    namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:27"
+    schemaLocation="ReusableAggregateBusinessInformationEntity_27p0.xsd"
+  />
 <!-- ======================================================================= -->
 <!-- ===== Element Declarations                                        ===== -->
 <!-- ======================================================================= -->
@@ -43,9 +63,11 @@ This document and the information contained herein is provided on an "AS IS" bas
         <ccts:Acronym>RSM</ccts:Acronym>
         <ccts:Name>FLUXSalesResponseMessage</ccts:Name>
         <ccts:Version>1.0</ccts:Version>
-        <ccts:Definition>A Fisheries Language for Universal eXchange (FLUX) message for responding to a sales report or to a FLUX sales query message.</ccts:Definition>
+        <ccts:Definition
+        >A Fisheries Language for Universal eXchange (FLUX) message for responding to a sales report or to a FLUX sales query message.</ccts:Definition>
         <ccts:BusinessProcessContextValue>FLUX</ccts:BusinessProcessContextValue>
-        <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+        <ccts:GeopoliticalOrRegionContextValue
+        >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
         <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
         <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
         <ccts:IndustryContextValue>Fisheries</ccts:IndustryContextValue>
@@ -67,10 +89,12 @@ This document and the information contained herein is provided on an "AS IS" bas
         <ccts:Acronym>MA</ccts:Acronym>
         <ccts:DictionaryEntryName>FLUX Sales Response Message. Details</ccts:DictionaryEntryName>
         <ccts:Version>1.0</ccts:Version>
-        <ccts:Definition>A Fisheries Language for Universal eXchange (FLUX) message for responding to a sales report or to a FLUX sales query message.</ccts:Definition>
+        <ccts:Definition
+        >A Fisheries Language for Universal eXchange (FLUX) message for responding to a sales report or to a FLUX sales query message.</ccts:Definition>
         <ccts:ObjectClassTerm>FLUX Sales Response Message</ccts:ObjectClassTerm>
         <ccts:BusinessProcessContextValue>FLUX</ccts:BusinessProcessContextValue>
-        <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+        <ccts:GeopoliticalOrRegionContextValue
+        >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
         <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
         <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
         <ccts:IndustryContextValue>Fisheries</ccts:IndustryContextValue>
@@ -85,48 +109,64 @@ This document and the information contained herein is provided on an "AS IS" bas
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>UN04000108</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>FLUX Sales Response Message. FLUX Response_ Document</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >FLUX Sales Response Message. FLUX Response_ Document</ccts:DictionaryEntryName>
             <ccts:Version>1.0</ccts:Version>
-            <ccts:Definition>The response details for this FLUX sales response message.</ccts:Definition>
+            <ccts:Definition
+            >The response details for this FLUX sales response message.</ccts:Definition>
             <ccts:Cardinality>1</ccts:Cardinality>
             <ccts:ObjectClassTerm>FLUX Sales Response Message</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Document</ccts:AssociatedObjectClassTerm>
-            <ccts:AssociatedObjectClassQualifierTerm>FLUX Response</ccts:AssociatedObjectClassQualifierTerm>
+            <ccts:AssociatedObjectClassQualifierTerm
+            >FLUX Response</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>FLUX</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
             <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
             <ccts:IndustryContextValue>Fisheries</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="SalesReport" type="ram:SalesReportType" minOccurs="0" maxOccurs="unbounded">
+      <xsd:element
+        name="SalesReport"
+        type="ram:SalesReportType"
+        minOccurs="0"
+        maxOccurs="unbounded"
+      >
         <xsd:annotation>
           <xsd:documentation xml:lang="en">
             <ccts:UniqueID>UN04000109</ccts:UniqueID>
             <ccts:Acronym>ASMA</ccts:Acronym>
-            <ccts:DictionaryEntryName>FLUX Sales Response Message. Sales_ Report</ccts:DictionaryEntryName>
+            <ccts:DictionaryEntryName
+            >FLUX Sales Response Message. Sales_ Report</ccts:DictionaryEntryName>
             <ccts:Version>1.0</ccts:Version>
-            <ccts:Definition>Sales report details for this FLUX sales response message.</ccts:Definition>
+            <ccts:Definition
+            >Sales report details for this FLUX sales response message.</ccts:Definition>
             <ccts:Cardinality>0..n</ccts:Cardinality>
             <ccts:ObjectClassTerm>FLUX Sales Response Message</ccts:ObjectClassTerm>
             <ccts:AssociationType>composition</ccts:AssociationType>
-            <ccts:PropertyTerm></ccts:PropertyTerm>
+            <ccts:PropertyTerm />
             <ccts:AssociatedObjectClassTerm>Report</ccts:AssociatedObjectClassTerm>
             <ccts:AssociatedObjectClassQualifierTerm>Sales</ccts:AssociatedObjectClassQualifierTerm>
             <ccts:BusinessProcessContextValue>FLUX</ccts:BusinessProcessContextValue>
-            <ccts:GeopoliticalOrRegionContextValue>In All Contexts</ccts:GeopoliticalOrRegionContextValue>
+            <ccts:GeopoliticalOrRegionContextValue
+            >In All Contexts</ccts:GeopoliticalOrRegionContextValue>
             <ccts:OfficialConstraintContextValue>None</ccts:OfficialConstraintContextValue>
             <ccts:ProductContextValue>In All Contexts</ccts:ProductContextValue>
             <ccts:IndustryContextValue>Fisheries</ccts:IndustryContextValue>
-            <ccts:BusinessProcessRoleContextValue>In All Contexts</ccts:BusinessProcessRoleContextValue>
+            <ccts:BusinessProcessRoleContextValue
+            >In All Contexts</ccts:BusinessProcessRoleContextValue>
             <ccts:SupportingRoleContextValue>In All Contexts</ccts:SupportingRoleContextValue>
-            <ccts:SystemCapabilitiesContextValue>In All Contexts</ccts:SystemCapabilitiesContextValue>
+            <ccts:SystemCapabilitiesContextValue
+            >In All Contexts</ccts:SystemCapabilitiesContextValue>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>

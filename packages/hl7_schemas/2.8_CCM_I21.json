@@ -34,7 +34,12 @@
               "Min": 0,
               "Max": "unbounded",
               "Loop": [
-                { "Id": "CCM_I21.RESOURCE_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "AIS" }, { "Id": "AIG" }, { "Id": "AIL" }, { "Id": "AIP" }] },
+                {
+                  "Id": "CCM_I21.RESOURCE_OBJECT",
+                  "Min": 1,
+                  "Max": 1,
+                  "Choice": [{ "Id": "AIS" }, { "Id": "AIG" }, { "Id": "AIL" }, { "Id": "AIP" }]
+                },
                 {
                   "Id": "CCM_I21.RESOURCE_OBSERVATION",
                   "Min": 0,
@@ -96,7 +101,12 @@
           "Min": 0,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCM_I21.ROLE_CLINICAL_HISTORY_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }] },
+            {
+              "Id": "CCM_I21.ROLE_CLINICAL_HISTORY_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }]
+            },
             { "Id": "VAR", "Min": 0, "Max": "unbounded" }
           ]
         },
@@ -189,7 +199,12 @@
           "Min": 0,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCM_I21.ROLE_PROBLEM_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }] },
+            {
+              "Id": "CCM_I21.ROLE_PROBLEM_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }]
+            },
             { "Id": "VAR", "Min": 0, "Max": "unbounded" }
           ]
         },
@@ -216,7 +231,12 @@
           "Min": 0,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCM_I21.ROLE_GOAL_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }] },
+            {
+              "Id": "CCM_I21.ROLE_GOAL_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }]
+            },
             { "Id": "VAR", "Min": 0, "Max": "unbounded" }
           ]
         },
@@ -243,7 +263,12 @@
           "Min": 0,
           "Max": "unbounded",
           "Loop": [
-            { "Id": "CCM_I21.ROLE_PATHWAY_OBJECT", "Min": 1, "Max": 1, "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }] },
+            {
+              "Id": "CCM_I21.ROLE_PATHWAY_OBJECT",
+              "Min": 1,
+              "Max": 1,
+              "Choice": [{ "Id": "ROL" }, { "Id": "PRD" }]
+            },
             { "Id": "VAR", "Min": 0, "Max": "unbounded" }
           ]
         },

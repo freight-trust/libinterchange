@@ -1,9 +1,10 @@
 # Libinterchange
 
 ## Abstract
-LibInterchange is a more comprehensive coverage of EDI transaction sets than `libedi`. 
 
-## Overview 
+LibInterchange is a more comprehensive coverage of EDI transaction sets than `libedi`.
+
+## Overview
 
 [see packages/](/packages)
 

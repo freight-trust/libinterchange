@@ -5,7 +5,12 @@
     { "Id": "UNH" },
     { "Id": "BGM" },
     { "Id": "DTM", "Max": 10 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 10,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "NADLoop1",
       "Min": 0,
@@ -78,7 +83,11 @@
           "Id": "QTYLoop2",
           "Min": 0,
           "Max": 50,
-          "Loop": [{ "Id": "QTY" }, { "Id": "SCC", "Min": 0 }, { "Id": "DTM", "Min": 0, "Max": 2 }]
+          "Loop": [
+            { "Id": "QTY" },
+            { "Id": "SCC", "Min": 0 },
+            { "Id": "DTM", "Min": 0, "Max": 2 }
+          ]
         },
         { "Id": "PACLoop2", "Min": 0, "Max": 10, "Loop": [{ "Id": "PAC" }] },
         {

@@ -11,7 +11,12 @@
     { "Id": "LOC", "Min": 0, "Max": 2 },
     { "Id": "MOA", "Min": 0, "Max": 5 },
     { "Id": "FII", "Min": 0, "Max": 5 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "NADLoop1",
       "Min": 0,
@@ -29,8 +34,16 @@
         }
       ]
     },
-    { "Id": "PAILoop1", "Min": 0, "Loop": [{ "Id": "PAI" }, { "Id": "RFF", "Min": 0, "Max": 10 }] },
-    { "Id": "PYTLoop1", "Min": 0, "Loop": [{ "Id": "PYT" }, { "Id": "DTM", "Min": 0, "Max": 10 }] },
+    {
+      "Id": "PAILoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "PAI" }, { "Id": "RFF", "Min": 0, "Max": 10 }]
+    },
+    {
+      "Id": "PYTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "PYT" }, { "Id": "DTM", "Min": 0, "Max": 10 }]
+    },
     {
       "Id": "SEQLoop1",
       "Min": 0,
@@ -81,7 +94,10 @@
                       "Id": "CTALoop3",
                       "Min": 0,
                       "Max": 5,
-                      "Loop": [{ "Id": "CTA" }, { "Id": "COM", "Min": 0, "Max": 5 }]
+                      "Loop": [
+                        { "Id": "CTA" },
+                        { "Id": "COM", "Min": 0, "Max": 5 }
+                      ]
                     }
                   ]
                 }
@@ -93,8 +109,16 @@
               "Max": 99,
               "Loop": [{ "Id": "MOA" }, { "Id": "QTY", "Min": 0 }]
             },
-            { "Id": "PAILoop2", "Min": 0, "Loop": [{ "Id": "PAI" }, { "Id": "RFF", "Min": 0 }] },
-            { "Id": "PYTLoop2", "Min": 0, "Loop": [{ "Id": "PYT" }, { "Id": "DTM", "Min": 0 }] },
+            {
+              "Id": "PAILoop2",
+              "Min": 0,
+              "Loop": [{ "Id": "PAI" }, { "Id": "RFF", "Min": 0 }]
+            },
+            {
+              "Id": "PYTLoop2",
+              "Min": 0,
+              "Loop": [{ "Id": "PYT" }, { "Id": "DTM", "Min": 0 }]
+            },
             {
               "Id": "RCSLoop1",
               "Min": 0,

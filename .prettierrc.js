@@ -1,10 +1,20 @@
 module.exports = {
-  jsxBracketSameLine: false,
-  jsxSingleQuote: true,
-  printWidth: 100,
-  singleQuote: false,
+  tabWidth: 2,
+  printWidth: 80,
+  proseWrap: "preserve",
+  semi: false,
   trailingComma: "es5",
-  proseWrap: "never",
-  endOfLine: "lf",
-  embeddedLanguageFormatting: "off",
-};
+  singleQuote: false,
+  arrowParens: "avoid",
+  overrides: [
+    {
+      files: "{*.edi?(on),*.x12,*.edifact,*.xml}",
+      options: {
+        parser: "json5",
+        quoteProps: "preserve",
+        singleQuote: false,
+        trailingComma: "all",
+      },
+    },
+  ],
+}

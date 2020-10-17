@@ -50,11 +50,19 @@
               "Id": "MOALoop1",
               "Min": 0,
               "Max": 9,
-              "Loop": [{ "Id": "MOA" }, { "Id": "PYT", "Min": 0 }, { "Id": "DTM", "Min": 0 }]
+              "Loop": [
+                { "Id": "MOA" },
+                { "Id": "PYT", "Min": 0 },
+                { "Id": "DTM", "Min": 0 }
+              ]
             }
           ]
         },
-        { "Id": "GEILoop1", "Max": 20, "Loop": [{ "Id": "GEI" }, { "Id": "DTM", "Min": 0 }] },
+        {
+          "Id": "GEILoop1",
+          "Max": 20,
+          "Loop": [{ "Id": "GEI" }, { "Id": "DTM", "Min": 0 }]
+        },
         {
           "Id": "MEMLoop1",
           "Min": 0,

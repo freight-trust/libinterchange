@@ -11,7 +11,11 @@
       "Max": 5,
       "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 5 }]
     },
-    { "Id": "NADLoop1", "Max": 5, "Loop": [{ "Id": "NAD" }, { "Id": "RFF", "Min": 0 }] },
+    {
+      "Id": "NADLoop1",
+      "Max": 5,
+      "Loop": [{ "Id": "NAD" }, { "Id": "RFF", "Min": 0 }]
+    },
     { "Id": "UNS" },
     {
       "Id": "RFFLoop2",
@@ -26,7 +30,11 @@
             { "Id": "DOC" },
             { "Id": "MOA", "Min": 0, "Max": 9 },
             { "Id": "CNT" },
-            { "Id": "TAXLoop1", "Max": 9, "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Max": 3 }] }
+            {
+              "Id": "TAXLoop1",
+              "Max": 9,
+              "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Max": 3 }]
+            }
           ]
         }
       ]

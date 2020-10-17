@@ -6,7 +6,11 @@
     { "Id": "BGM" },
     { "Id": "DTM", "Min": 0 },
     { "Id": "GIS" },
-    { "Id": "RFFLoop1", "Min": 0, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "INDLoop1",
       "Max": 2,
@@ -39,7 +43,11 @@
         }
       ]
     },
-    { "Id": "AUTLoop1", "Min": 0, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

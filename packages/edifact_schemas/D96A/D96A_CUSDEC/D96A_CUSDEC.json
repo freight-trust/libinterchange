@@ -35,12 +35,21 @@
         }
       ]
     },
-    { "Id": "TDTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "TDT" }, { "Id": "TPL", "Min": 0 }] },
+    {
+      "Id": "TDTLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "TDT" }, { "Id": "TPL", "Min": 0 }]
+    },
     {
       "Id": "DOCLoop1",
       "Min": 0,
       "Max": 10,
-      "Loop": [{ "Id": "DOC" }, { "Id": "DTM", "Min": 0, "Max": 2 }, { "Id": "LOC", "Min": 0 }]
+      "Loop": [
+        { "Id": "DOC" },
+        { "Id": "DTM", "Min": 0, "Max": 2 },
+        { "Id": "LOC", "Min": 0 }
+      ]
     },
     {
       "Id": "NADLoop1",
@@ -56,7 +65,11 @@
     {
       "Id": "TODLoop1",
       "Min": 0,
-      "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0, "Max": 2 }, { "Id": "FTX", "Min": 0 }]
+      "Loop": [
+        { "Id": "TOD" },
+        { "Id": "LOC", "Min": 0, "Max": 2 },
+        { "Id": "FTX", "Min": 0 }
+      ]
     },
     {
       "Id": "MOALoop1",
@@ -64,7 +77,11 @@
       "Max": 25,
       "Loop": [
         { "Id": "MOA" },
-        { "Id": "CUXLoop1", "Min": 0, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] }
+        {
+          "Id": "CUXLoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }]
+        }
       ]
     },
     { "Id": "UNS" },
@@ -82,13 +99,21 @@
           "Max": 25,
           "Loop": [
             { "Id": "MOA" },
-            { "Id": "CUXLoop2", "Min": 0, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] }
+            {
+              "Id": "CUXLoop2",
+              "Min": 0,
+              "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }]
+            }
           ]
         },
         {
           "Id": "TODLoop2",
           "Min": 0,
-          "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0, "Max": 2 }, { "Id": "FTX", "Min": 0 }]
+          "Loop": [
+            { "Id": "TOD" },
+            { "Id": "LOC", "Min": 0, "Max": 2 },
+            { "Id": "FTX", "Min": 0 }
+          ]
         },
         {
           "Id": "NADLoop2",
@@ -118,7 +143,11 @@
               "Id": "PCILoop2",
               "Min": 0,
               "Max": 999,
-              "Loop": [{ "Id": "PCI" }, { "Id": "FTX", "Min": 0 }, { "Id": "RFF", "Min": 0 }]
+              "Loop": [
+                { "Id": "PCI" },
+                { "Id": "FTX", "Min": 0 },
+                { "Id": "RFF", "Min": 0 }
+              ]
             }
           ]
         },
@@ -143,7 +172,11 @@
             { "Id": "MOA", "Min": 0 },
             { "Id": "PCD", "Min": 0 },
             { "Id": "QTY", "Min": 0 },
-            { "Id": "CUXLoop3", "Min": 0, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] }
+            {
+              "Id": "CUXLoop3",
+              "Min": 0,
+              "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }]
+            }
           ]
         },
         {
@@ -177,7 +210,11 @@
                 { "Id": "MOA", "Min": 0 },
                 { "Id": "PCD", "Min": 0 },
                 { "Id": "QTY", "Min": 0 },
-                { "Id": "CUXLoop4", "Min": 0, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] }
+                {
+                  "Id": "CUXLoop4",
+                  "Min": 0,
+                  "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }]
+                }
               ]
             },
             {
@@ -212,7 +249,11 @@
                   "Id": "PCILoop3",
                   "Min": 0,
                   "Max": 999,
-                  "Loop": [{ "Id": "PCI" }, { "Id": "FTX", "Min": 0 }, { "Id": "RFF", "Min": 0 }]
+                  "Loop": [
+                    { "Id": "PCI" },
+                    { "Id": "FTX", "Min": 0 },
+                    { "Id": "RFF", "Min": 0 }
+                  ]
                 }
               ]
             }
@@ -252,7 +293,11 @@
           "Max": 25,
           "Loop": [
             { "Id": "MOA" },
-            { "Id": "CUXLoop5", "Min": 0, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] }
+            {
+              "Id": "CUXLoop5",
+              "Min": 0,
+              "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }]
+            }
           ]
         },
         {
@@ -285,9 +330,17 @@
         {
           "Id": "TODLoop4",
           "Min": 0,
-          "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0, "Max": 2 }, { "Id": "FTX", "Min": 0 }]
+          "Loop": [
+            { "Id": "TOD" },
+            { "Id": "LOC", "Min": 0, "Max": 2 },
+            { "Id": "FTX", "Min": 0 }
+          ]
         },
-        { "Id": "GDSLoop1", "Min": 0, "Loop": [{ "Id": "GDS" }, { "Id": "FTX", "Min": 0 }] },
+        {
+          "Id": "GDSLoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "GDS" }, { "Id": "FTX", "Min": 0 }]
+        },
         {
           "Id": "GISLoop1",
           "Min": 0,
@@ -303,7 +356,11 @@
           "Id": "TAXLoop1",
           "Min": 0,
           "Max": 10,
-          "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0, "Max": 2 }, { "Id": "GIS", "Min": 0 }]
+          "Loop": [
+            { "Id": "TAX" },
+            { "Id": "MOA", "Min": 0, "Max": 2 },
+            { "Id": "GIS", "Min": 0 }
+          ]
         },
         {
           "Id": "QVRLoop1",
@@ -311,7 +368,11 @@
           "Loop": [
             { "Id": "QVR" },
             { "Id": "QTY", "Min": 0 },
-            { "Id": "RFFLoop3", "Min": 0, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] }
+            {
+              "Id": "RFFLoop3",
+              "Min": 0,
+              "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+            }
           ]
         },
         {
@@ -329,7 +390,11 @@
               "Max": 10,
               "Loop": [
                 { "Id": "MOA" },
-                { "Id": "CUXLoop6", "Min": 0, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] }
+                {
+                  "Id": "CUXLoop6",
+                  "Min": 0,
+                  "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }]
+                }
               ]
             },
             {
@@ -362,9 +427,17 @@
       "Id": "TAXLoop3",
       "Min": 0,
       "Max": 50,
-      "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0, "Max": 2 }, { "Id": "GIS", "Min": 0 }]
+      "Loop": [
+        { "Id": "TAX" },
+        { "Id": "MOA", "Min": 0, "Max": 2 },
+        { "Id": "GIS", "Min": 0 }
+      ]
     },
-    { "Id": "AUTLoop1", "Min": 0, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

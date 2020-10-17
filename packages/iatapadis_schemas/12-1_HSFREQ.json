@@ -3,7 +3,11 @@
   "DocumentType": "HSFREQ",
   "TransactionSet": [
     { "Id": "UNH" },
-    { "Id": "REFLoop1", "Min": 0, "Loop": [{ "Id": "ORG" }, { "Id": "REF", "Min": 0 }] },
+    {
+      "Id": "REFLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "ORG" }, { "Id": "REF", "Min": 0 }]
+    },
     { "Id": "MSG" },
     { "Id": "EQN", "Min": 0 },
     { "Id": "DCD", "Min": 0 },

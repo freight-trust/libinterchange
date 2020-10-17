@@ -10,7 +10,11 @@
       "Id": "NADLoop1",
       "Min": 0,
       "Max": 5,
-      "Loop": [{ "Id": "NAD" }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 9 }]
+      "Loop": [
+        { "Id": "NAD" },
+        { "Id": "CTA", "Min": 0 },
+        { "Id": "COM", "Min": 0, "Max": 9 }
+      ]
     },
     {
       "Id": "TDTLoop1",
@@ -65,7 +69,11 @@
             { "Id": "QTY", "Min": 0, "Max": 9 }
           ]
         },
-        { "Id": "TDTLoop2", "Min": 0, "Loop": [{ "Id": "TDT" }, { "Id": "FTX", "Min": 0 }] }
+        {
+          "Id": "TDTLoop2",
+          "Min": 0,
+          "Loop": [{ "Id": "TDT" }, { "Id": "FTX", "Min": 0 }]
+        }
       ]
     },
     { "Id": "CNT", "Min": 0 },

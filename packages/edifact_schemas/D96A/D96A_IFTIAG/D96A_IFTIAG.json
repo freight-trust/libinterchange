@@ -9,7 +9,11 @@
     { "Id": "RFF", "Min": 0 },
     {
       "Id": "TDTLoop1",
-      "Loop": [{ "Id": "TDT" }, { "Id": "DTM", "Min": 0 }, { "Id": "CTA", "Min": 0 }]
+      "Loop": [
+        { "Id": "TDT" },
+        { "Id": "DTM", "Min": 0 },
+        { "Id": "CTA", "Min": 0 }
+      ]
     },
     {
       "Id": "LOCLoop1",
@@ -21,7 +25,11 @@
         { "Id": "DTM", "Min": 0 }
       ]
     },
-    { "Id": "EQDLoop1", "Max": 9999, "Loop": [{ "Id": "EQD" }, { "Id": "SEL", "Min": 0 }] },
+    {
+      "Id": "EQDLoop1",
+      "Max": 9999,
+      "Loop": [{ "Id": "EQD" }, { "Id": "SEL", "Min": 0 }]
+    },
     {
       "Id": "CNILoop1",
       "Max": 9999,

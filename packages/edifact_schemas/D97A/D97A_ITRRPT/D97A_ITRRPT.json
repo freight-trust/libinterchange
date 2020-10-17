@@ -76,7 +76,11 @@
         { "Id": "ALI", "Min": 0, "Max": 5 },
         { "Id": "MEA", "Min": 0, "Max": 5 },
         { "Id": "MOA", "Min": 0, "Max": 5 },
-        { "Id": "RFFLoop3", "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+        {
+          "Id": "RFFLoop3",
+          "Max": 10,
+          "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+        },
         {
           "Id": "NADLoop2",
           "Min": 0,
@@ -127,7 +131,10 @@
                   "Id": "HANLoop2",
                   "Min": 0,
                   "Max": 10,
-                  "Loop": [{ "Id": "HAN" }, { "Id": "FTX", "Min": 0, "Max": 10 }]
+                  "Loop": [
+                    { "Id": "HAN" },
+                    { "Id": "FTX", "Min": 0, "Max": 10 }
+                  ]
                 },
                 {
                   "Id": "PCILoop1",

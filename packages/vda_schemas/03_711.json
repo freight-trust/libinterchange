@@ -31,7 +31,10 @@
   ],
   "Qualifiers": {
     "Type of delivery, code": { "E": "Express delivery", "J": "JIT-delivery" },
-    "Pre-payment of charges key": { "01": "Unpaid", "03": "Paid 712_14 Key to means" },
+    "Pre-payment of charges key": {
+      "01": "Unpaid",
+      "03": "Paid 712_14 Key to means"
+    },
     "Key to means of Transport": {
       "01": "Licence plate",
       "02": "Bordero number",
@@ -388,7 +391,10 @@
       "M": "Master-Label (with sub-packages and the same reference numbers)",
       "S": "Single-Label (1 package)"
     },
-    "Returnable package indicator": { "E": "One way packaging", "M": "Returnable packaging" },
+    "Returnable package indicator": {
+      "E": "One way packaging",
+      "M": "Returnable packaging"
+    },
     "Property code": {
       "D": "Returnable packaging belonging to 3rd party, must be returned",
       "K": "Returnable packaging property of customer",
@@ -398,25 +404,60 @@
   "Segments": {
     "711": {
       "Elements": [
-        { "Desc": "Version number", "DataType": "AN", "Required": true, "Length": 2 },
+        {
+          "Desc": "Version number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
         {
           "Desc": "Data Receiver ID / Customer ID",
           "DataType": "AN",
           "Required": true,
           "Length": 9
         },
-        { "Desc": "Data Sender ID / Supplier ID", "DataType": "AN", "Required": true, "Length": 9 },
+        {
+          "Desc": "Data Sender ID / Supplier ID",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 9
+        },
         {
           "Desc": "Old (previous) transmission number",
           "DataType": "AN",
           "Required": true,
           "Length": 5
         },
-        { "Desc": "New transmission number", "DataType": "AN", "Required": true, "Length": 5 },
-        { "Desc": "Transmission date", "DataType": "AN", "Required": true, "Length": 6 },
-        { "Desc": "Sub-supplier ID", "DataType": "AN", "Required": true, "Length": 9 },
-        { "Desc": "Carrier ID", "DataType": "AN", "Required": true, "Length": 9 },
-        { "Desc": "Message origin, code", "DataType": "AN", "Required": true, "Length": 1 },
+        {
+          "Desc": "New transmission number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 5
+        },
+        {
+          "Desc": "Transmission date",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 6
+        },
+        {
+          "Desc": "Sub-supplier ID",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 9
+        },
+        {
+          "Desc": "Carrier ID",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 9
+        },
+        {
+          "Desc": "Message origin, code",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 1
+        },
         {
           "Desc": "Type of delivery, code",
           "DataType": "AN",
@@ -429,14 +470,24 @@
     },
     "712": {
       "Elements": [
-        { "Desc": "Version number", "DataType": "AN", "Required": true, "Length": 2 },
+        {
+          "Desc": "Version number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
         {
           "Desc": "Shipment Load Reference Number (consignment number)",
           "DataType": "AN",
           "Required": true,
           "Length": 8
         },
-        { "Desc": "Plant supplier", "DataType": "AN", "Required": true, "Length": 3 },
+        {
+          "Desc": "Plant supplier",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 3
+        },
         { "Desc": "Carrier", "DataType": "AN", "Required": true, "Length": 14 },
         {
           "Desc": "Date when goods have been handed over to carrier",
@@ -450,8 +501,18 @@
           "Required": true,
           "Length": 4
         },
-        { "Desc": "Shipment gross weight", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Shipment net weight", "DataType": "AN", "Required": true, "Length": 7 },
+        {
+          "Desc": "Shipment gross weight",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Shipment net weight",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
         {
           "Desc": "Pre-payment of charges key",
           "DataType": "AN",
@@ -465,8 +526,18 @@
           "Required": true,
           "Length": 1
         },
-        { "Desc": "Number of packages", "DataType": "AN", "Required": true, "Length": 4 },
-        { "Desc": "Transport partner ID", "DataType": "AN", "Required": true, "Length": 14 },
+        {
+          "Desc": "Number of packages",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 4
+        },
+        {
+          "Desc": "Transport partner ID",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 14
+        },
         {
           "Desc": "Key to means of Transport",
           "DataType": "AN",
@@ -474,7 +545,12 @@
           "Length": 2,
           "QualifierRef": "Key to means of Transport"
         },
-        { "Desc": "Means of transport number", "DataType": "AN", "Required": true, "Length": 25 },
+        {
+          "Desc": "Means of transport number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 25
+        },
         {
           "Desc": "Qualifier for information",
           "DataType": "AN",
@@ -488,9 +564,24 @@
           "Required": true,
           "Length": 8
         },
-        { "Desc": "Required arrival date", "DataType": "AN", "Required": true, "Length": 6 },
-        { "Desc": "Required arrival time", "DataType": "AN", "Required": true, "Length": 4 },
-        { "Desc": "Loading meters", "DataType": "AN", "Required": true, "Length": 3 },
+        {
+          "Desc": "Required arrival date",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 6
+        },
+        {
+          "Desc": "Required arrival time",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 4
+        },
+        {
+          "Desc": "Loading meters",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 3
+        },
         {
           "Desc": "Truck type code",
           "DataType": "AN",
@@ -503,10 +594,30 @@
     },
     "713": {
       "Elements": [
-        { "Desc": "Version number", "DataType": "AN", "Required": true, "Length": 2 },
-        { "Desc": "Delivery note number", "DataType": "AN", "Required": true, "Length": 8 },
-        { "Desc": "Despatch date", "DataType": "AN", "Required": true, "Length": 6 },
-        { "Desc": "Unloading point", "DataType": "AN", "Required": true, "Length": 5 },
+        {
+          "Desc": "Version number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
+        {
+          "Desc": "Delivery note number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 8
+        },
+        {
+          "Desc": "Despatch date",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 6
+        },
+        {
+          "Desc": "Unloading point",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 5
+        },
         {
           "Desc": "Dispatch type",
           "DataType": "AN",
@@ -520,7 +631,12 @@
           "Required": true,
           "Length": 4
         },
-        { "Desc": "Contract/Order number", "DataType": "AN", "Required": true, "Length": 12 },
+        {
+          "Desc": "Contract/Order number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 12
+        },
         {
           "Desc": "Process code",
           "DataType": "AN",
@@ -529,9 +645,24 @@
           "QualifierRef": "Process code"
         },
         { "Desc": "Empty", "DataType": "AN", "Required": true, "Length": 4 },
-        { "Desc": "Customer plant", "DataType": "AN", "Required": true, "Length": 3 },
-        { "Desc": "Consigment reference", "DataType": "AN", "Required": true, "Length": 8 },
-        { "Desc": "Goods receiver ID", "DataType": "AN", "Required": true, "Length": 9 },
+        {
+          "Desc": "Customer plant",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 3
+        },
+        {
+          "Desc": "Consigment reference",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 8
+        },
+        {
+          "Desc": "Goods receiver ID",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 9
+        },
         { "Desc": "Empty 2", "DataType": "AN", "Required": true, "Length": 1 },
         {
           "Desc": "Ship to/ Customer's storage location",
@@ -539,14 +670,24 @@
           "Required": true,
           "Length": 7
         },
-        { "Desc": "Supplier ID", "DataType": "AN", "Required": true, "Length": 9 },
+        {
+          "Desc": "Supplier ID",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 9
+        },
         {
           "Desc": "Point of consuption / internal destination",
           "DataType": "AN",
           "Required": true,
           "Length": 14
         },
-        { "Desc": "Call off number", "DataType": "AN", "Required": true, "Length": 4 },
+        {
+          "Desc": "Call off number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 4
+        },
         {
           "Desc": "Customer's reference as transmitted in an individual order",
           "DataType": "AN",
@@ -564,9 +705,24 @@
     },
     "714": {
       "Elements": [
-        { "Desc": "Version number", "DataType": "AN", "Required": true, "Length": 2 },
-        { "Desc": "Customer's article number", "DataType": "AN", "Required": true, "Length": 22 },
-        { "Desc": "Supplier's article number", "DataType": "AN", "Required": true, "Length": 22 },
+        {
+          "Desc": "Version number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
+        {
+          "Desc": "Customer's article number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 22
+        },
+        {
+          "Desc": "Supplier's article number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 22
+        },
         {
           "Desc": "Country of origin",
           "DataType": "AN",
@@ -574,7 +730,12 @@
           "Length": 3,
           "QualifierRef": "Country of origin"
         },
-        { "Desc": "Delivery quantity 1", "DataType": "AN", "Required": true, "Length": 13 },
+        {
+          "Desc": "Delivery quantity 1",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 13
+        },
         {
           "Desc": "Masure unit code 1",
           "DataType": "AN",
@@ -582,7 +743,12 @@
           "Length": 2,
           "QualifierRef": "Masure unit code"
         },
-        { "Desc": "Delivery quantity 2", "DataType": "AN", "Required": true, "Length": 13 },
+        {
+          "Desc": "Delivery quantity 2",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 13
+        },
         {
           "Desc": "Measure unit code 2",
           "DataType": "AN",
@@ -605,7 +771,12 @@
           "Length": 1,
           "QualifierRef": "Type of call-off, coded"
         },
-        { "Desc": "Batch number", "DataType": "AN", "Required": true, "Length": 15 },
+        {
+          "Desc": "Batch number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 15
+        },
         {
           "Desc": "Usage code",
           "DataType": "AN",
@@ -613,7 +784,12 @@
           "Length": 1,
           "QualifierRef": "Usage code"
         },
-        { "Desc": "Dangerous goods code", "DataType": "AN", "Required": true, "Length": 8 },
+        {
+          "Desc": "Dangerous goods code",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 8
+        },
         {
           "Desc": "Preference status",
           "DataType": "AN",
@@ -629,14 +805,34 @@
           "QualifierRef": "Dutiable goods"
         },
         { "Desc": "Empty 2", "DataType": "AN", "Required": true, "Length": 1 },
-        { "Desc": "Inventory status", "DataType": "AN", "Required": true, "Length": 1 },
-        { "Desc": "Modified version code", "DataType": "AN", "Required": true, "Length": 2 },
-        { "Desc": "Original delivery note number", "DataType": "AN", "Required": true, "Length": 8 }
+        {
+          "Desc": "Inventory status",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 1
+        },
+        {
+          "Desc": "Modified version code",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
+        {
+          "Desc": "Original delivery note number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 8
+        }
       ]
     },
     "715": {
       "Elements": [
-        { "Desc": "Version number", "DataType": "AN", "Required": true, "Length": 2 },
+        {
+          "Desc": "Version number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
         {
           "Desc": "Customer's package type ID",
           "DataType": "AN",
@@ -644,25 +840,60 @@
           "Length": 22,
           "QualifierRef": "Customer's package type ID"
         },
-        { "Desc": "Supplier's package type ID", "DataType": "AN", "Required": true, "Length": 22 },
-        { "Desc": "Number of packages", "DataType": "AN", "Required": true, "Length": 13 },
+        {
+          "Desc": "Supplier's package type ID",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 22
+        },
+        {
+          "Desc": "Number of packages",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 13
+        },
         {
           "Desc": "Delivery note line item number",
           "DataType": "AN",
           "Required": true,
           "Length": 3
         },
-        { "Desc": "Maximum quantity", "DataType": "AN", "Required": true, "Length": 13 },
-        { "Desc": "Package number from", "DataType": "AN", "Required": true, "Length": 9 },
-        { "Desc": "Package number to", "DataType": "AN", "Required": true, "Length": 9 },
-        { "Desc": "Package dimensions", "DataType": "AN", "Required": true, "Length": 12 },
+        {
+          "Desc": "Maximum quantity",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 13
+        },
+        {
+          "Desc": "Package number from",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 9
+        },
+        {
+          "Desc": "Package number to",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 9
+        },
+        {
+          "Desc": "Package dimensions",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 12
+        },
         {
           "Desc": "Stacking factor (maximum stackability)",
           "DataType": "AN",
           "Required": true,
           "Length": 1
         },
-        { "Desc": "Warehouse call-off number", "DataType": "AN", "Required": true, "Length": 15 },
+        {
+          "Desc": "Warehouse call-off number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 15
+        },
         {
           "Desc": "Label indicator",
           "DataType": "AN",
@@ -689,7 +920,12 @@
     },
     "716": {
       "Elements": [
-        { "Desc": "Version number", "DataType": "AN", "Required": true, "Length": 2 },
+        {
+          "Desc": "Version number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
         { "Desc": "Text 1", "DataType": "AN", "Required": true, "Length": 40 },
         { "Desc": "Text 2", "DataType": "AN", "Required": true, "Length": 40 },
         { "Desc": "Text 3", "DataType": "AN", "Required": true, "Length": 40 },
@@ -698,8 +934,18 @@
     },
     "718": {
       "Elements": [
-        { "Desc": "Version number", "DataType": "AN", "Required": true, "Length": 2 },
-        { "Desc": "delivery note number", "DataType": "AN", "Required": true, "Length": 8 },
+        {
+          "Desc": "Version number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
+        {
+          "Desc": "delivery note number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 8
+        },
         {
           "Desc": "Manufacturing reference number 1",
           "DataType": "AN",
@@ -771,16 +1017,66 @@
     },
     "719": {
       "Elements": [
-        { "Desc": "Version number", "DataType": "AN", "Required": true, "Length": 2 },
-        { "Desc": "Record type counter 711", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Record type counter 712", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Record type counter 713", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Record type counter 714", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Record type counter 715", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Record type counter 716", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Record type counter 718", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Record type counter 719", "DataType": "AN", "Required": true, "Length": 7 },
-        { "Desc": "Record type counter 717", "DataType": "AN", "Required": true, "Length": 7 },
+        {
+          "Desc": "Version number",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 2
+        },
+        {
+          "Desc": "Record type counter 711",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Record type counter 712",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Record type counter 713",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Record type counter 714",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Record type counter 715",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Record type counter 716",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Record type counter 718",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Record type counter 719",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
+        {
+          "Desc": "Record type counter 717",
+          "DataType": "AN",
+          "Required": true,
+          "Length": 7
+        },
         { "Desc": "Empty", "DataType": "AN", "Required": true, "Length": 60 }
       ]
     }

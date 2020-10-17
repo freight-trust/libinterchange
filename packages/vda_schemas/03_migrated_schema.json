@@ -226,7 +226,18 @@
               "minLength": 1
             }
           },
-          "required": ["10", "11", "20", "01", "02", "03", "04", "05", "08", "09"]
+          "required": [
+            "10",
+            "11",
+            "20",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "08",
+            "09"
+          ]
         },
         "Process code": {
           "type": "object",
@@ -1860,7 +1871,13 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
+                "required": [
+                  "Desc",
+                  "DataType",
+                  "Required",
+                  "Length",
+                  "QualifierRef"
+                ],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -1894,7 +1911,13 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
+                "required": [
+                  "Desc",
+                  "DataType",
+                  "Required",
+                  "Length",
+                  "QualifierRef"
+                ],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -1928,7 +1951,13 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
+                "required": [
+                  "Desc",
+                  "DataType",
+                  "Required",
+                  "Length",
+                  "QualifierRef"
+                ],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -1962,7 +1991,13 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
+                "required": [
+                  "Desc",
+                  "DataType",
+                  "Required",
+                  "Length",
+                  "QualifierRef"
+                ],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -1996,7 +2031,13 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
+                "required": [
+                  "Desc",
+                  "DataType",
+                  "Required",
+                  "Length",
+                  "QualifierRef"
+                ],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -2116,5 +2157,11 @@
       "required": ["711", "712", "713", "714", "715", "716", "718", "719"]
     }
   },
-  "required": ["Release", "DocumentType", "TransactionSet", "Qualifiers", "Segments"]
+  "required": [
+    "Release",
+    "DocumentType",
+    "TransactionSet",
+    "Qualifiers",
+    "Segments"
+  ]
 }

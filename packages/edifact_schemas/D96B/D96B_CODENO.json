@@ -6,7 +6,11 @@
     { "Id": "BGM" },
     { "Id": "DTM", "Min": 0, "Max": 9 },
     { "Id": "FTX", "Min": 0, "Max": 9 },
-    { "Id": "RFFLoop1", "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "RFFLoop1",
+      "Max": 9,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
+    },
     {
       "Id": "TDTLoop1",
       "Loop": [
@@ -34,14 +38,22 @@
       "Max": 999,
       "Loop": [
         { "Id": "GID" },
-        { "Id": "DOCLoop1", "Max": 9, "Loop": [{ "Id": "DOC" }, { "Id": "DTM", "Max": 9 }] },
+        {
+          "Id": "DOCLoop1",
+          "Max": 9,
+          "Loop": [{ "Id": "DOC" }, { "Id": "DTM", "Max": 9 }]
+        },
         { "Id": "SGP", "Max": 999 }
       ]
     },
     {
       "Id": "EQDLoop1",
       "Max": 999,
-      "Loop": [{ "Id": "EQD" }, { "Id": "RFF", "Min": 0 }, { "Id": "NAD", "Min": 0, "Max": 9 }]
+      "Loop": [
+        { "Id": "EQD" },
+        { "Id": "RFF", "Min": 0 },
+        { "Id": "NAD", "Min": 0, "Max": 9 }
+      ]
     },
     { "Id": "CNT" },
     { "Id": "UNT" }

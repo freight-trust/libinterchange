@@ -13,8 +13,17 @@
       "Max": 999,
       "Loop": [{ "Id": "TIF" }, { "Id": "TKT", "Min": 0, "Max": 9 }]
     },
-    { "Id": "IFTLoop1", "Min": 0, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
-    { "Id": "FQULoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "PTK" }, { "Id": "FQU", "Min": 0 }] },
+    {
+      "Id": "IFTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+    },
+    {
+      "Id": "FQULoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [{ "Id": "PTK" }, { "Id": "FQU", "Min": 0 }]
+    },
     {
       "Id": "ITMLoop1",
       "Min": 0,
@@ -26,7 +35,11 @@
           "Id": "TRALoop1",
           "Min": 0,
           "Max": 99,
-          "Loop": [{ "Id": "FQU" }, { "Id": "ODI", "Min": 0 }, { "Id": "TRA", "Min": 0 }]
+          "Loop": [
+            { "Id": "FQU" },
+            { "Id": "ODI", "Min": 0 },
+            { "Id": "TRA", "Min": 0 }
+          ]
         }
       ]
     },
@@ -37,7 +50,11 @@
       "Loop": [
         { "Id": "SRC" },
         { "Id": "PTK", "Min": 0 },
-        { "Id": "CPNLoop1", "Max": 9, "Loop": [{ "Id": "TKT" }, { "Id": "CPN", "Min": 0 }] }
+        {
+          "Id": "CPNLoop1",
+          "Max": 9,
+          "Loop": [{ "Id": "TKT" }, { "Id": "CPN", "Min": 0 }]
+        }
       ]
     },
     {
@@ -54,9 +71,17 @@
           "Id": "MONLoop2",
           "Min": 0,
           "Max": 99,
-          "Loop": [{ "Id": "TXD" }, { "Id": "DPI", "Min": 0 }, { "Id": "MON", "Min": 0, "Max": 5 }]
+          "Loop": [
+            { "Id": "TXD" },
+            { "Id": "DPI", "Min": 0 },
+            { "Id": "MON", "Min": 0, "Max": 5 }
+          ]
         },
-        { "Id": "FQULoop3", "Min": 0, "Loop": [{ "Id": "PTK" }, { "Id": "FQU", "Min": 0 }] },
+        {
+          "Id": "FQULoop3",
+          "Min": 0,
+          "Loop": [{ "Id": "PTK" }, { "Id": "FQU", "Min": 0 }]
+        },
         {
           "Id": "TIFLoop2",
           "Min": 0,
@@ -246,7 +271,10 @@
                               "Id": "TVLLoop4",
                               "Min": 0,
                               "Max": 99,
-                              "Loop": [{ "Id": "ADT" }, { "Id": "TVL", "Min": 0 }]
+                              "Loop": [
+                                { "Id": "ADT" },
+                                { "Id": "TVL", "Min": 0 }
+                              ]
                             },
                             { "Id": "MON", "Min": 0 },
                             { "Id": "PTS", "Min": 0 },
@@ -266,7 +294,10 @@
                   "Id": "TKTLoop3",
                   "Min": 0,
                   "Max": 99,
-                  "Loop": [{ "Id": "IFT" }, { "Id": "TKT", "Min": 0, "Max": 99 }]
+                  "Loop": [
+                    { "Id": "IFT" },
+                    { "Id": "TKT", "Min": 0, "Max": 99 }
+                  ]
                 },
                 {
                   "Id": "SDTLoop2",

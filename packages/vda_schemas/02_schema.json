@@ -249,7 +249,12 @@
           "required": ["S", "E", "M", "V"]
         }
       },
-      "required": ["Plant Customer", "Unit Of Measurement", "Delivery Interval", "Code Usage"]
+      "required": [
+        "Plant Customer",
+        "Unit Of Measurement",
+        "Delivery Interval",
+        "Code Usage"
+      ]
     },
     "Segments": {
       "type": "object",
@@ -292,7 +297,13 @@
               "uniqueItems": true,
               "minItems": 1,
               "items": {
-                "required": ["Desc", "DataType", "Required", "Length", "QualifierRef"],
+                "required": [
+                  "Desc",
+                  "DataType",
+                  "Required",
+                  "Length",
+                  "QualifierRef"
+                ],
                 "properties": {
                   "Desc": {
                     "type": "string",
@@ -502,5 +513,11 @@
       "required": ["511", "512", "513", "514", "515", "517", "518", "519"]
     }
   },
-  "required": ["Release", "DocumentType", "TransactionSet", "Qualifiers", "Segments"]
+  "required": [
+    "Release",
+    "DocumentType",
+    "TransactionSet",
+    "Qualifiers",
+    "Segments"
+  ]
 }

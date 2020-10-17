@@ -43,7 +43,12 @@
         }
       ]
     },
-    { "Id": "LOCLoop1", "Min": 0, "Max": 3, "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "LOCLoop1",
+      "Min": 0,
+      "Max": 3,
+      "Loop": [{ "Id": "LOC" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "PAILoop1", "Loop": [{ "Id": "PAI" }, { "Id": "LOC", "Min": 0 }] },
     {
       "Id": "PATLoop1",
@@ -57,13 +62,25 @@
         { "Id": "FTX", "Min": 0 }
       ]
     },
-    { "Id": "TODLoop1", "Min": 0, "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0 }] },
-    { "Id": "TSRLoop1", "Min": 0, "Loop": [{ "Id": "TSR" }, { "Id": "LOC", "Min": 0, "Max": 5 }] },
+    {
+      "Id": "TODLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "TOD" }, { "Id": "LOC", "Min": 0 }]
+    },
+    {
+      "Id": "TSRLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "TSR" }, { "Id": "LOC", "Min": 0, "Max": 5 }]
+    },
     {
       "Id": "INPLoop1",
       "Min": 0,
       "Max": 5,
-      "Loop": [{ "Id": "INP" }, { "Id": "FTX", "Min": 0 }, { "Id": "DTM", "Min": 0, "Max": 2 }]
+      "Loop": [
+        { "Id": "INP" },
+        { "Id": "FTX", "Min": 0 },
+        { "Id": "DTM", "Min": 0, "Max": 2 }
+      ]
     },
     {
       "Id": "GISLoop1",
@@ -81,7 +98,11 @@
     {
       "Id": "RFFLoop1",
       "Max": 9,
-      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }, { "Id": "FTX", "Min": 0 }]
+      "Loop": [
+        { "Id": "RFF" },
+        { "Id": "DTM", "Min": 0 },
+        { "Id": "FTX", "Min": 0 }
+      ]
     },
     {
       "Id": "DOCLoop1",
@@ -112,7 +133,11 @@
         }
       ]
     },
-    { "Id": "AUTLoop1", "Min": 0, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

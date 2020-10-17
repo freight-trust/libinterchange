@@ -3,7 +3,11 @@
   "DocumentType": "GENRAL",
   "TransactionSet": [
     { "Id": "MHD" },
-    { "Id": "MEDLoop1", "Max": 1, "Loop": [{ "Id": "MED" }, { "Id": "TXT", "Max": "unbounded" }] },
+    {
+      "Id": "MEDLoop1",
+      "Max": 1,
+      "Loop": [{ "Id": "MED" }, { "Id": "TXT", "Max": "unbounded" }]
+    },
     { "Id": "MTR", "Max": 1 }
   ]
 }

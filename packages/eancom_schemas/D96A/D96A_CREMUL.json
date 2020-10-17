@@ -83,7 +83,11 @@
               "Id": "INPLoop1",
               "Min": 0,
               "Max": 3,
-              "Loop": [{ "Id": "INP" }, { "Id": "FTX", "Min": 0 }, { "Id": "DTM", "Min": 0 }]
+              "Loop": [
+                { "Id": "INP" },
+                { "Id": "FTX", "Min": 0 },
+                { "Id": "DTM", "Min": 0 }
+              ]
             },
             {
               "Id": "GISLoop1",
@@ -119,7 +123,10 @@
                       "Id": "TAXLoop2",
                       "Min": 0,
                       "Max": 5,
-                      "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0, "Max": 2 }]
+                      "Loop": [
+                        { "Id": "TAX" },
+                        { "Id": "MOA", "Min": 0, "Max": 2 }
+                      ]
                     }
                   ]
                 }
@@ -192,7 +199,12 @@
       ]
     },
     { "Id": "CNT", "Min": 0, "Max": 5 },
-    { "Id": "AUTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

@@ -8,7 +8,12 @@
     { "Id": "PAI", "Min": 0 },
     { "Id": "IMD", "Min": 0 },
     { "Id": "FTX", "Min": 0, "Max": 10 },
-    { "Id": "DTMLoop1", "Min": 0, "Max": 3, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "DTMLoop1",
+      "Min": 0,
+      "Max": 3,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "FIILoop1",
       "Min": 0,
@@ -26,12 +31,21 @@
         }
       ]
     },
-    { "Id": "DTMLoop2", "Min": 0, "Max": 5, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "DTMLoop2",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "PCDLoop1",
       "Min": 0,
       "Max": 10,
-      "Loop": [{ "Id": "PAT" }, { "Id": "DTM", "Min": 0, "Max": 5 }, { "Id": "PCD", "Min": 0 }]
+      "Loop": [
+        { "Id": "PAT" },
+        { "Id": "DTM", "Min": 0, "Max": 5 },
+        { "Id": "PCD", "Min": 0 }
+      ]
     },
     {
       "Id": "FTXLoop1",

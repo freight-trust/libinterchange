@@ -1,26 +1,26 @@
 syntax = {
-    version: "00504",
-    functionalgroup: "SO",
-};
+  version: "00504",
+  functionalgroup: "SO",
+}
 
 structure = [
-    {
-        ID: "ST",
+  {
+    ID: "ST",
+    MIN: 1,
+    MAX: 1,
+    LEVEL: [
+      { ID: "V1", MIN: 1, MAX: 1 },
+      { ID: "K1", MIN: 0, MAX: 2 },
+      {
+        ID: "R4",
         MIN: 1,
-        MAX: 1,
+        MAX: 999,
         LEVEL: [
-            { ID: "V1", MIN: 1, MAX: 1 },
-            { ID: "K1", MIN: 0, MAX: 2 },
-            {
-                ID: "R4",
-                MIN: 1,
-                MAX: 999,
-                LEVEL: [
-                    { ID: "DTM", MIN: 0, MAX: 15 },
-                    { ID: "V9", MIN: 1, MAX: 5 },
-                ],
-            },
-            { ID: "SE", MIN: 1, MAX: 1 },
+          { ID: "DTM", MIN: 0, MAX: 15 },
+          { ID: "V9", MIN: 1, MAX: 5 },
         ],
-    },
-];
+      },
+      { ID: "SE", MIN: 1, MAX: 1 },
+    ],
+  },
+]

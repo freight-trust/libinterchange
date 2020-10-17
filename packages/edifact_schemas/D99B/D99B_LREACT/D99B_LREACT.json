@@ -31,7 +31,11 @@
         {
           "Id": "PCDLoop1",
           "Min": 0,
-          "Loop": [{ "Id": "PCD" }, { "Id": "PNA", "Min": 0 }, { "Id": "LOC", "Min": 0 }]
+          "Loop": [
+            { "Id": "PCD" },
+            { "Id": "PNA", "Min": 0 },
+            { "Id": "LOC", "Min": 0 }
+          ]
         },
         {
           "Id": "ICDLoop1",
@@ -42,7 +46,12 @@
             { "Id": "EMP", "Min": 0 },
             { "Id": "AGR", "Min": 0, "Max": 9 },
             { "Id": "LOC", "Min": 0 },
-            { "Id": "MOALoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "MOA" }, { "Id": "ARD" }] },
+            {
+              "Id": "MOALoop1",
+              "Min": 0,
+              "Max": 99,
+              "Loop": [{ "Id": "MOA" }, { "Id": "ARD" }]
+            },
             {
               "Id": "RTELoop1",
               "Min": 0,

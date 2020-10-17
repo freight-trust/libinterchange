@@ -31,13 +31,25 @@
     },
     {
       "Id": "PATLoop1",
-      "Loop": [{ "Id": "PAT" }, { "Id": "DTM", "Min": 0 }, { "Id": "FTX", "Min": 0 }]
+      "Loop": [
+        { "Id": "PAT" },
+        { "Id": "DTM", "Min": 0 },
+        { "Id": "FTX", "Min": 0 }
+      ]
     },
-    { "Id": "MOALoop1", "Max": 5, "Loop": [{ "Id": "MOA" }, { "Id": "FTX", "Min": 0 }] },
+    {
+      "Id": "MOALoop1",
+      "Max": 5,
+      "Loop": [{ "Id": "MOA" }, { "Id": "FTX", "Min": 0 }]
+    },
     {
       "Id": "TDTLoop1",
       "Min": 0,
-      "Loop": [{ "Id": "TDT" }, { "Id": "DTM", "Min": 0 }, { "Id": "LOC", "Min": 0, "Max": 3 }]
+      "Loop": [
+        { "Id": "TDT" },
+        { "Id": "DTM", "Min": 0 },
+        { "Id": "LOC", "Min": 0, "Max": 3 }
+      ]
     },
     {
       "Id": "GISLoop1",
@@ -52,7 +64,11 @@
         { "Id": "FTX", "Min": 0, "Max": 10 }
       ]
     },
-    { "Id": "AUTLoop1", "Min": 0, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

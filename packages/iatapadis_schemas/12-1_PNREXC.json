@@ -3,17 +3,30 @@
   "DocumentType": "PNREXC",
   "TransactionSet": [
     { "Id": "UNH" },
-    { "Id": "ABILoop1", "Min": 0, "Loop": [{ "Id": "ORG" }, { "Id": "ABI", "Min": 0, "Max": 3 }] },
+    {
+      "Id": "ABILoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "ORG" }, { "Id": "ABI", "Min": 0, "Max": 3 }]
+    },
     { "Id": "RCI", "Min": 0 },
     { "Id": "TXD", "Min": 0, "Max": 4 },
     { "Id": "MSG", "Min": 0, "Max": 9 },
     { "Id": "IFT", "Min": 0, "Max": 999 },
-    { "Id": "IFTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    {
+      "Id": "IFTLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+    },
     {
       "Id": "REFLoop1",
       "Min": 0,
       "Max": 999,
-      "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }, { "Id": "REF", "Min": 0 }]
+      "Loop": [
+        { "Id": "SSR" },
+        { "Id": "SRP", "Min": 0 },
+        { "Id": "REF", "Min": 0 }
+      ]
     },
     {
       "Id": "FARLoop1",
@@ -29,19 +42,31 @@
           "Id": "REFLoop2",
           "Min": 0,
           "Max": 999,
-          "Loop": [{ "Id": "SSR" }, { "Id": "SRP", "Min": 0 }, { "Id": "REF", "Min": 0 }]
+          "Loop": [
+            { "Id": "SSR" },
+            { "Id": "SRP", "Min": 0 },
+            { "Id": "REF", "Min": 0 }
+          ]
         }
       ]
     },
     {
       "Id": "CVRLoop1",
       "Min": 0,
-      "Loop": [{ "Id": "PTK" }, { "Id": "EQN", "Min": 0 }, { "Id": "CVR", "Min": 0 }]
+      "Loop": [
+        { "Id": "PTK" },
+        { "Id": "EQN", "Min": 0 },
+        { "Id": "CVR", "Min": 0 }
+      ]
     },
     {
       "Id": "TIFLoop2",
       "Min": 0,
-      "Loop": [{ "Id": "DID" }, { "Id": "RCI", "Min": 0 }, { "Id": "TIF", "Min": 0, "Max": 999 }]
+      "Loop": [
+        { "Id": "DID" },
+        { "Id": "RCI", "Min": 0 },
+        { "Id": "TIF", "Min": 0, "Max": 999 }
+      ]
     },
     {
       "Id": "IFTLoop3",

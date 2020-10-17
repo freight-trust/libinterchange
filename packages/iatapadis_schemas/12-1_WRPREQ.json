@@ -3,7 +3,11 @@
   "DocumentType": "WRPREQ",
   "TransactionSet": [
     { "Id": "UNH" },
-    { "Id": "ABILoop1", "Min": 0, "Loop": [{ "Id": "ORG" }, { "Id": "ABI", "Min": 0, "Max": 3 }] },
+    {
+      "Id": "ABILoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "ORG" }, { "Id": "ABI", "Min": 0, "Max": 3 }]
+    },
     { "Id": "RCI", "Min": 0 },
     { "Id": "EQN", "Min": 0 },
     { "Id": "MSG", "Min": 0, "Max": 9 },
@@ -134,7 +138,11 @@
     {
       "Id": "TIFLoop3",
       "Min": 0,
-      "Loop": [{ "Id": "DID" }, { "Id": "RCI", "Min": 0 }, { "Id": "TIF", "Min": 0, "Max": 999 }]
+      "Loop": [
+        { "Id": "DID" },
+        { "Id": "RCI", "Min": 0 },
+        { "Id": "TIF", "Min": 0, "Max": 999 }
+      ]
     },
     {
       "Id": "DATLoop5",

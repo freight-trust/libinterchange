@@ -24,14 +24,22 @@
       "Max": 9999,
       "Loop": [
         { "Id": "DOC" },
-        { "Id": "GEILoop1", "Min": 0, "Loop": [{ "Id": "GEI" }, { "Id": "FTX", "Min": 0 }] },
+        {
+          "Id": "GEILoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "GEI" }, { "Id": "FTX", "Min": 0 }]
+        },
         { "Id": "DTM", "Min": 0, "Max": 9 },
         { "Id": "NAD", "Min": 0, "Max": 9 },
         {
           "Id": "MOALoop1",
           "Min": 0,
           "Max": 99,
-          "Loop": [{ "Id": "MOA" }, { "Id": "DTM", "Min": 0 }, { "Id": "PCD", "Min": 0 }]
+          "Loop": [
+            { "Id": "MOA" },
+            { "Id": "DTM", "Min": 0 },
+            { "Id": "PCD", "Min": 0 }
+          ]
         },
         { "Id": "RFF", "Max": 9 },
         {

@@ -7,7 +7,11 @@
     { "Id": "STX", "Min": 0 },
     { "Id": "FRI", "Min": 0 },
     { "Id": "IFT", "Min": 0, "Max": 999 },
-    { "Id": "IFTLoop1", "Min": 0, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    {
+      "Id": "IFTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+    },
     {
       "Id": "IFTLoop2",
       "Min": 0,
@@ -66,7 +70,11 @@
           "Id": "FARLoop1",
           "Min": 0,
           "Max": 9,
-          "Loop": [{ "Id": "EQN" }, { "Id": "PTK", "Min": 0 }, { "Id": "FAR", "Min": 0 }]
+          "Loop": [
+            { "Id": "EQN" },
+            { "Id": "PTK", "Min": 0 },
+            { "Id": "FAR", "Min": 0 }
+          ]
         },
         {
           "Id": "IFTLoop5",
@@ -121,7 +129,11 @@
           "Id": "DATLoop4",
           "Min": 0,
           "Max": 99,
-          "Loop": [{ "Id": "REF" }, { "Id": "FRU", "Min": 0 }, { "Id": "DAT", "Min": 0 }]
+          "Loop": [
+            { "Id": "REF" },
+            { "Id": "FRU", "Min": 0 },
+            { "Id": "DAT", "Min": 0 }
+          ]
         },
         {
           "Id": "FRILoop1",
@@ -168,13 +180,21 @@
               "Id": "RTGLoop4",
               "Min": 0,
               "Max": 99,
-              "Loop": [{ "Id": "ODI" }, { "Id": "DAT", "Min": 0 }, { "Id": "RTG", "Min": 0 }]
+              "Loop": [
+                { "Id": "ODI" },
+                { "Id": "DAT", "Min": 0 },
+                { "Id": "RTG", "Min": 0 }
+              ]
             },
             {
               "Id": "FARLoop2",
               "Min": 0,
               "Max": 9,
-              "Loop": [{ "Id": "EQN" }, { "Id": "PTK", "Min": 0 }, { "Id": "FAR", "Min": 0 }]
+              "Loop": [
+                { "Id": "EQN" },
+                { "Id": "PTK", "Min": 0 },
+                { "Id": "FAR", "Min": 0 }
+              ]
             },
             {
               "Id": "TXDLoop2",
@@ -210,7 +230,11 @@
                   "Id": "DATLoop7",
                   "Min": 0,
                   "Max": 99,
-                  "Loop": [{ "Id": "ODI" }, { "Id": "RTG", "Min": 0 }, { "Id": "DAT", "Min": 0 }]
+                  "Loop": [
+                    { "Id": "ODI" },
+                    { "Id": "RTG", "Min": 0 },
+                    { "Id": "DAT", "Min": 0 }
+                  ]
                 }
               ]
             }

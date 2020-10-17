@@ -5,7 +5,12 @@
     { "Id": "UNH" },
     { "Id": "BGM" },
     { "Id": "DTM", "Max": 9 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "NADLoop1",
       "Max": 9,
@@ -34,9 +39,17 @@
           "Id": "NADLoop2",
           "Min": 0,
           "Max": 9,
-          "Loop": [{ "Id": "NAD" }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 9 }]
+          "Loop": [
+            { "Id": "NAD" },
+            { "Id": "CTA", "Min": 0 },
+            { "Id": "COM", "Min": 0, "Max": 9 }
+          ]
         },
-        { "Id": "MOALoop1", "Min": 0, "Loop": [{ "Id": "MOA" }, { "Id": "CUX", "Min": 0 }] },
+        {
+          "Id": "MOALoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "MOA" }, { "Id": "CUX", "Min": 0 }]
+        },
         {
           "Id": "RCSLoop1",
           "Min": 0,
@@ -49,7 +62,11 @@
             {
               "Id": "GIRLoop1",
               "Min": 0,
-              "Loop": [{ "Id": "GIR" }, { "Id": "QTY", "Min": 0 }, { "Id": "PRI", "Min": 0 }]
+              "Loop": [
+                { "Id": "GIR" },
+                { "Id": "QTY", "Min": 0 },
+                { "Id": "PRI", "Min": 0 }
+              ]
             }
           ]
         }

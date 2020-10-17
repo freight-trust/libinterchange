@@ -19,7 +19,10 @@
           "Id": "GISLoop1",
           "Loop": [
             { "Id": "GIS" },
-            { "Id": "BIILoop1", "Loop": [{ "Id": "BII" }, { "Id": "IMD", "Max": 9 }] }
+            {
+              "Id": "BIILoop1",
+              "Loop": [{ "Id": "BII" }, { "Id": "IMD", "Max": 9 }]
+            }
           ]
         }
       ]
@@ -55,7 +58,11 @@
           "Id": "CUXLoop1",
           "Min": 0,
           "Max": 5,
-          "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0, "Max": 5 }, { "Id": "FTX", "Min": 0 }]
+          "Loop": [
+            { "Id": "CUX" },
+            { "Id": "DTM", "Min": 0, "Max": 5 },
+            { "Id": "FTX", "Min": 0 }
+          ]
         },
         {
           "Id": "ALCLoop1",
@@ -79,7 +86,11 @@
           "Id": "RCSLoop1",
           "Min": 0,
           "Max": 100,
-          "Loop": [{ "Id": "RCS" }, { "Id": "BII" }, { "Id": "FTX", "Min": 0, "Max": 9 }]
+          "Loop": [
+            { "Id": "RCS" },
+            { "Id": "BII" },
+            { "Id": "FTX", "Min": 0, "Max": 9 }
+          ]
         },
         {
           "Id": "ARDLoop1",
@@ -189,7 +200,11 @@
           "Id": "DIMLoop1",
           "Min": 0,
           "Max": 100,
-          "Loop": [{ "Id": "DIM" }, { "Id": "APR", "Min": 0 }, { "Id": "FTX", "Min": 0 }]
+          "Loop": [
+            { "Id": "DIM" },
+            { "Id": "APR", "Min": 0 },
+            { "Id": "FTX", "Min": 0 }
+          ]
         },
         {
           "Id": "LINLoop1",
@@ -237,7 +252,11 @@
           "Id": "TAXLoop3",
           "Min": 0,
           "Max": 5,
-          "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0 }, { "Id": "LOC", "Min": 0, "Max": 5 }]
+          "Loop": [
+            { "Id": "TAX" },
+            { "Id": "MOA", "Min": 0 },
+            { "Id": "LOC", "Min": 0, "Max": 5 }
+          ]
         },
         {
           "Id": "RCSLoop2",

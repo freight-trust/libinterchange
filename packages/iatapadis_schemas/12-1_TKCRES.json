@@ -158,7 +158,11 @@
           "Min": 0,
           "Loop": [{ "Id": "TPD" }, { "Id": "SPI", "Min": 0, "Max": 4 }]
         },
-        { "Id": "DIDLoop2", "Min": 0, "Loop": [{ "Id": "ABI" }, { "Id": "DID", "Min": 0 }] },
+        {
+          "Id": "DIDLoop2",
+          "Min": 0,
+          "Loop": [{ "Id": "ABI" }, { "Id": "DID", "Min": 0 }]
+        },
         {
           "Id": "DATLoop3",
           "Min": 0,
@@ -191,7 +195,11 @@
             {
               "Id": "CVRLoop3",
               "Min": 0,
-              "Loop": [{ "Id": "REF" }, { "Id": "MON", "Min": 0 }, { "Id": "CVR", "Min": 0 }]
+              "Loop": [
+                { "Id": "REF" },
+                { "Id": "MON", "Min": 0 },
+                { "Id": "CVR", "Min": 0 }
+              ]
             }
           ]
         }

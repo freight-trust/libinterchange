@@ -9,12 +9,20 @@
     { "Id": "RFF", "Min": 0, "Max": 9 },
     { "Id": "ATT", "Min": 0, "Max": 9 },
     { "Id": "FTX", "Min": 0, "Max": 9 },
-    { "Id": "NADLoop1", "Min": 0, "Loop": [{ "Id": "NAD" }, { "Id": "LOC", "Min": 0, "Max": 9 }] },
+    {
+      "Id": "NADLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "NAD" }, { "Id": "LOC", "Min": 0, "Max": 9 }]
+    },
     {
       "Id": "MOALoop1",
       "Min": 0,
       "Max": 99,
-      "Loop": [{ "Id": "MOA" }, { "Id": "DTM", "Min": 0 }, { "Id": "FCA", "Min": 0 }]
+      "Loop": [
+        { "Id": "MOA" },
+        { "Id": "DTM", "Min": 0 },
+        { "Id": "FCA", "Min": 0 }
+      ]
     },
     { "Id": "UNS" },
     {
@@ -54,7 +62,11 @@
           "Id": "MOALoop2",
           "Min": 0,
           "Max": 99,
-          "Loop": [{ "Id": "MOA" }, { "Id": "DTM", "Min": 0 }, { "Id": "FCA", "Min": 0 }]
+          "Loop": [
+            { "Id": "MOA" },
+            { "Id": "DTM", "Min": 0 },
+            { "Id": "FCA", "Min": 0 }
+          ]
         }
       ]
     },

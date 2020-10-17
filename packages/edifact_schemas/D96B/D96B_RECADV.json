@@ -6,7 +6,12 @@
     { "Id": "BGM" },
     { "Id": "DTM", "Max": 10 },
     { "Id": "ALI", "Min": 0, "Max": 5 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 10,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "DOCLoop1",
       "Min": 0,
@@ -141,7 +146,10 @@
                       "Id": "CDILoop6",
                       "Min": 0,
                       "Max": 10,
-                      "Loop": [{ "Id": "CDI" }, { "Id": "INP", "Min": 0, "Max": 5 }]
+                      "Loop": [
+                        { "Id": "CDI" },
+                        { "Id": "INP", "Min": 0, "Max": 5 }
+                      ]
                     }
                   ]
                 }
@@ -224,7 +232,10 @@
                       "Id": "CDILoop11",
                       "Min": 0,
                       "Max": 10,
-                      "Loop": [{ "Id": "CDI" }, { "Id": "INP", "Min": 0, "Max": 5 }]
+                      "Loop": [
+                        { "Id": "CDI" },
+                        { "Id": "INP", "Min": 0, "Max": 5 }
+                      ]
                     }
                   ]
                 }

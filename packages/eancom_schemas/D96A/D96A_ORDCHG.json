@@ -30,7 +30,12 @@
         }
       ]
     },
-    { "Id": "TAXLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0 }] },
+    {
+      "Id": "TAXLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0 }]
+    },
     {
       "Id": "CUXLoop1",
       "Min": 0,
@@ -71,15 +76,27 @@
         { "Id": "ALC" },
         { "Id": "ALI", "Min": 0, "Max": 5 },
         { "Id": "DTM", "Min": 0, "Max": 5 },
-        { "Id": "QTYLoop1", "Min": 0, "Loop": [{ "Id": "QTY" }, { "Id": "RNG", "Min": 0 }] },
-        { "Id": "PCDLoop1", "Min": 0, "Loop": [{ "Id": "PCD" }, { "Id": "RNG", "Min": 0 }] },
+        {
+          "Id": "QTYLoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "QTY" }, { "Id": "RNG", "Min": 0 }]
+        },
+        {
+          "Id": "PCDLoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "PCD" }, { "Id": "RNG", "Min": 0 }]
+        },
         {
           "Id": "MOALoop1",
           "Min": 0,
           "Max": 2,
           "Loop": [{ "Id": "MOA" }, { "Id": "RNG", "Min": 0 }]
         },
-        { "Id": "RTELoop1", "Min": 0, "Loop": [{ "Id": "RTE" }, { "Id": "RNG", "Min": 0 }] },
+        {
+          "Id": "RTELoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "RTE" }, { "Id": "RNG", "Min": 0 }]
+        },
         {
           "Id": "TAXLoop2",
           "Min": 0,
@@ -138,7 +155,11 @@
           "Id": "LOCLoop2",
           "Min": 0,
           "Max": 9999,
-          "Loop": [{ "Id": "LOC" }, { "Id": "QTY", "Min": 0 }, { "Id": "DTM", "Min": 0, "Max": 5 }]
+          "Loop": [
+            { "Id": "LOC" },
+            { "Id": "QTY", "Min": 0 },
+            { "Id": "DTM", "Min": 0, "Max": 5 }
+          ]
         },
         {
           "Id": "TAXLoop3",
@@ -168,15 +189,27 @@
             { "Id": "ALC" },
             { "Id": "ALI", "Min": 0, "Max": 5 },
             { "Id": "DTM", "Min": 0, "Max": 5 },
-            { "Id": "QTYLoop2", "Min": 0, "Loop": [{ "Id": "QTY" }, { "Id": "RNG", "Min": 0 }] },
-            { "Id": "PCDLoop2", "Min": 0, "Loop": [{ "Id": "PCD" }, { "Id": "RNG", "Min": 0 }] },
+            {
+              "Id": "QTYLoop2",
+              "Min": 0,
+              "Loop": [{ "Id": "QTY" }, { "Id": "RNG", "Min": 0 }]
+            },
+            {
+              "Id": "PCDLoop2",
+              "Min": 0,
+              "Loop": [{ "Id": "PCD" }, { "Id": "RNG", "Min": 0 }]
+            },
             {
               "Id": "MOALoop2",
               "Min": 0,
               "Max": 2,
               "Loop": [{ "Id": "MOA" }, { "Id": "RNG", "Min": 0 }]
             },
-            { "Id": "RTELoop2", "Min": 0, "Loop": [{ "Id": "RTE" }, { "Id": "RNG", "Min": 0 }] },
+            {
+              "Id": "RTELoop2",
+              "Min": 0,
+              "Loop": [{ "Id": "RTE" }, { "Id": "RNG", "Min": 0 }]
+            },
             {
               "Id": "TAXLoop4",
               "Min": 0,

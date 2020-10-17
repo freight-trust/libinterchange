@@ -14,7 +14,11 @@
         { "Id": "LIN" },
         { "Id": "FII" },
         { "Id": "RFF" },
-        { "Id": "MOALoop1", "Max": 99, "Loop": [{ "Id": "MOA" }, { "Id": "DTM", "Min": 0 }] },
+        {
+          "Id": "MOALoop1",
+          "Max": 99,
+          "Loop": [{ "Id": "MOA" }, { "Id": "DTM", "Min": 0 }]
+        },
         {
           "Id": "SEQLoop1",
           "Min": 0,
@@ -31,7 +35,12 @@
       ]
     },
     { "Id": "CNT", "Min": 0, "Max": 5 },
-    { "Id": "AUTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

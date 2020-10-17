@@ -22,7 +22,12 @@
         }
       ]
     },
-    { "Id": "CCILoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "CCI" }, { "Id": "CAV", "Min": 0 }] },
+    {
+      "Id": "CCILoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [{ "Id": "CCI" }, { "Id": "CAV", "Min": 0 }]
+    },
     {
       "Id": "LINLoop1",
       "Max": 99999,
@@ -48,7 +53,11 @@
       ]
     },
     { "Id": "EQNLoop1", "Loop": [{ "Id": "EQN" }, { "Id": "MOA", "Max": 9 }] },
-    { "Id": "AUTLoop1", "Min": 0, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

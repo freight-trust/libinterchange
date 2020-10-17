@@ -9,7 +9,12 @@
     { "Id": "IMD", "Min": 0, "Max": 10 },
     { "Id": "FTX", "Min": 0, "Max": 5 },
     { "Id": "PGI", "Min": 0, "Max": 10 },
-    { "Id": "TRULoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "TRU" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "TRULoop1",
+      "Min": 0,
+      "Max": 10,
+      "Loop": [{ "Id": "TRU" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "RCSLoop1",
       "Min": 0,
@@ -92,7 +97,11 @@
           "Id": "PRILoop1",
           "Min": 0,
           "Max": 5,
-          "Loop": [{ "Id": "PRI" }, { "Id": "CUX", "Min": 0 }, { "Id": "RNG", "Min": 0 }]
+          "Loop": [
+            { "Id": "PRI" },
+            { "Id": "CUX", "Min": 0 },
+            { "Id": "RNG", "Min": 0 }
+          ]
         },
         {
           "Id": "CCILoop2",
@@ -134,7 +143,11 @@
           "Id": "DGSLoop1",
           "Min": 0,
           "Max": 10,
-          "Loop": [{ "Id": "DGS" }, { "Id": "QTY", "Min": 0 }, { "Id": "FTX", "Min": 0, "Max": 5 }]
+          "Loop": [
+            { "Id": "DGS" },
+            { "Id": "QTY", "Min": 0 },
+            { "Id": "FTX", "Min": 0, "Max": 5 }
+          ]
         },
         {
           "Id": "PACLoop1",

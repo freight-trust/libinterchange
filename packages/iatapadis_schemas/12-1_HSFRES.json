@@ -4,7 +4,11 @@
   "TransactionSet": [
     { "Id": "UNH" },
     { "Id": "MSG" },
-    { "Id": "IFTLoop1", "Min": 0, "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }] },
+    {
+      "Id": "IFTLoop1",
+      "Min": 0,
+      "Loop": [{ "Id": "ERC" }, { "Id": "IFT", "Min": 0 }]
+    },
     { "Id": "EQN", "Min": 0 },
     { "Id": "RCI", "Min": 0 },
     { "Id": "LTS", "Min": 0 },

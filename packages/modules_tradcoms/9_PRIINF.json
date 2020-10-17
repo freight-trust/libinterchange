@@ -25,7 +25,10 @@
               "Id": "DSCLoop1",
               "Min": 0,
               "Max": "unbounded",
-              "Loop": [{ "Id": "DSC" }, { "Id": "DSD", "Min": 0, "Max": "unbounded" }]
+              "Loop": [
+                { "Id": "DSC" },
+                { "Id": "DSD", "Min": 0, "Max": "unbounded" }
+              ]
             },
             { "Id": "DNC", "Min": 0, "Max": "unbounded" }
           ]

@@ -9,7 +9,11 @@
       "Id": "FTXLoop1",
       "Min": 0,
       "Max": 99,
-      "Loop": [{ "Id": "FTX" }, { "Id": "MEA", "Min": 0, "Max": 9 }, { "Id": "EQN", "Min": 0 }]
+      "Loop": [
+        { "Id": "FTX" },
+        { "Id": "MEA", "Min": 0, "Max": 9 },
+        { "Id": "EQN", "Min": 0 }
+      ]
     },
     {
       "Id": "RFFLoop1",
@@ -45,7 +49,12 @@
         { "Id": "FTX", "Min": 0, "Max": 9 }
       ]
     },
-    { "Id": "QTYLoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "QTY" }, { "Id": "FTX", "Min": 0 }] },
+    {
+      "Id": "QTYLoop1",
+      "Min": 0,
+      "Max": 9,
+      "Loop": [{ "Id": "QTY" }, { "Id": "FTX", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

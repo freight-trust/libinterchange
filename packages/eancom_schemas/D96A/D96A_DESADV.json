@@ -5,7 +5,12 @@
     { "Id": "UNH" },
     { "Id": "BGM" },
     { "Id": "DTM", "Min": 0, "Max": 10 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 10,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "NADLoop1",
       "Min": 0,
@@ -60,7 +65,12 @@
             { "Id": "PAC" },
             { "Id": "MEA", "Min": 0, "Max": 10 },
             { "Id": "QTY", "Min": 0, "Max": 10 },
-            { "Id": "HANLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "HAN" }] },
+            {
+              "Id": "HANLoop1",
+              "Min": 0,
+              "Max": 10,
+              "Loop": [{ "Id": "HAN" }]
+            },
             {
               "Id": "PCILoop1",
               "Min": 0,
@@ -69,7 +79,12 @@
                 { "Id": "PCI" },
                 { "Id": "RFF", "Min": 0 },
                 { "Id": "DTM", "Min": 0, "Max": 5 },
-                { "Id": "GINLoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "GIN" }] }
+                {
+                  "Id": "GINLoop1",
+                  "Min": 0,
+                  "Max": 99,
+                  "Loop": [{ "Id": "GIN" }]
+                }
               ]
             }
           ]
@@ -116,9 +131,17 @@
                   "Id": "GINLoop2",
                   "Min": 0,
                   "Max": 10,
-                  "Loop": [{ "Id": "GIN" }, { "Id": "DLM", "Min": 0, "Max": 100 }]
+                  "Loop": [
+                    { "Id": "GIN" },
+                    { "Id": "DLM", "Min": 0, "Max": 100 }
+                  ]
                 },
-                { "Id": "HANLoop2", "Min": 0, "Max": 10, "Loop": [{ "Id": "HAN" }] }
+                {
+                  "Id": "HANLoop2",
+                  "Min": 0,
+                  "Max": 10,
+                  "Loop": [{ "Id": "HAN" }]
+                }
               ]
             },
             {

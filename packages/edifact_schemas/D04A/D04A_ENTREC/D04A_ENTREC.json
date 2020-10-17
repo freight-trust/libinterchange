@@ -22,7 +22,12 @@
         }
       ]
     },
-    { "Id": "CCILoop1", "Min": 0, "Max": 99, "Loop": [{ "Id": "CCI" }, { "Id": "CAV", "Min": 0 }] },
+    {
+      "Id": "CCILoop1",
+      "Min": 0,
+      "Max": 99,
+      "Loop": [{ "Id": "CCI" }, { "Id": "CAV", "Min": 0 }]
+    },
     {
       "Id": "DTMLoop1",
       "Max": 999,
@@ -72,7 +77,11 @@
                     }
                   ]
                 },
-                { "Id": "AUTLoop1", "Min": 0, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] }
+                {
+                  "Id": "AUTLoop1",
+                  "Min": 0,
+                  "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+                }
               ]
             }
           ]
@@ -98,7 +107,11 @@
         { "Id": "MOA", "Max": 9 }
       ]
     },
-    { "Id": "AUTLoop2", "Min": 0, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop2",
+      "Min": 0,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

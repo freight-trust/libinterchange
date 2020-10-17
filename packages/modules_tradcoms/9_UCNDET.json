@@ -15,13 +15,19 @@
           "Id": "UCDLoop1",
           "Min": 0,
           "Max": "unbounded",
-          "Loop": [{ "Id": "UCD" }, { "Id": "DNB", "Min": 0, "Max": "unbounded" }]
+          "Loop": [
+            { "Id": "UCD" },
+            { "Id": "DNB", "Min": 0, "Max": "unbounded" }
+          ]
         },
         {
           "Id": "RCDLoop1",
           "Min": 0,
           "Max": "unbounded",
-          "Loop": [{ "Id": "RCD" }, { "Id": "RNB", "Min": 0, "Max": "unbounded" }]
+          "Loop": [
+            { "Id": "RCD" },
+            { "Id": "RNB", "Min": 0, "Max": "unbounded" }
+          ]
         }
       ]
     },

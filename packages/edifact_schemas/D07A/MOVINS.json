@@ -54,7 +54,11 @@
             { "Id": "DIM", "Min": 0, "Max": 9 },
             { "Id": "LOC", "Min": 0, "Max": 9 },
             { "Id": "NAD", "Max": 99 },
-            { "Id": "TMPLoop1", "Min": 0, "Loop": [{ "Id": "TMP" }, { "Id": "RNG", "Min": 0 }] },
+            {
+              "Id": "TMPLoop1",
+              "Min": 0,
+              "Loop": [{ "Id": "TMP" }, { "Id": "RNG", "Min": 0 }]
+            },
             {
               "Id": "EQDLoop1",
               "Min": 0,

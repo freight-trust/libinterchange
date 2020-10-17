@@ -30,7 +30,12 @@
         }
       ]
     },
-    { "Id": "TAXLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0 }] },
+    {
+      "Id": "TAXLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "TAX" }, { "Id": "MOA", "Min": 0 }]
+    },
     {
       "Id": "CUXLoop1",
       "Min": 0,
@@ -193,7 +198,11 @@
       "Id": "ALCLoop3",
       "Min": 0,
       "Max": 15,
-      "Loop": [{ "Id": "ALC" }, { "Id": "ALI", "Min": 0 }, { "Id": "MOA", "Min": 0, "Max": 2 }]
+      "Loop": [
+        { "Id": "ALC" },
+        { "Id": "ALI", "Min": 0 },
+        { "Id": "MOA", "Min": 0, "Max": 2 }
+      ]
     },
     { "Id": "UNT" }
   ]

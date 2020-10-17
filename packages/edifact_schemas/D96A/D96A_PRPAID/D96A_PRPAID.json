@@ -23,13 +23,21 @@
       "Max": 99,
       "Loop": [
         { "Id": "DOC" },
-        { "Id": "GISLoop1", "Min": 0, "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }] },
+        {
+          "Id": "GISLoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }]
+        },
         { "Id": "DTM", "Min": 0, "Max": 9 },
         { "Id": "NAD", "Min": 0 },
         {
           "Id": "MOALoop1",
           "Max": 9,
-          "Loop": [{ "Id": "MOA" }, { "Id": "DTM", "Min": 0 }, { "Id": "PCD", "Min": 0 }]
+          "Loop": [
+            { "Id": "MOA" },
+            { "Id": "DTM", "Min": 0 },
+            { "Id": "PCD", "Min": 0 }
+          ]
         },
         { "Id": "RFF", "Max": 9 },
         { "Id": "ICD", "Min": 0 },

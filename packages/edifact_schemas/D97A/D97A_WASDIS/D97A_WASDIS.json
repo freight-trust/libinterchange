@@ -11,7 +11,10 @@
       "Max": 9,
       "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 9 }]
     },
-    { "Id": "LOCLoop1", "Loop": [{ "Id": "LOC" }, { "Id": "DTM" }, { "Id": "GOR" }] },
+    {
+      "Id": "LOCLoop1",
+      "Loop": [{ "Id": "LOC" }, { "Id": "DTM" }, { "Id": "GOR" }]
+    },
     {
       "Id": "TDTLoop1",
       "Loop": [
@@ -38,7 +41,11 @@
       "Id": "DGSLoop1",
       "Min": 0,
       "Max": 99,
-      "Loop": [{ "Id": "DGS" }, { "Id": "MEA", "Min": 0 }, { "Id": "SGP", "Min": 0, "Max": 999 }]
+      "Loop": [
+        { "Id": "DGS" },
+        { "Id": "MEA", "Min": 0 },
+        { "Id": "SGP", "Min": 0, "Max": 999 }
+      ]
     },
     { "Id": "UNT" }
   ]

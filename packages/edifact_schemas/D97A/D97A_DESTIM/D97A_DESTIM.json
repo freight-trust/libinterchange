@@ -11,7 +11,11 @@
     { "Id": "FTX", "Min": 0, "Max": 9 },
     {
       "Id": "EQDLoop1",
-      "Loop": [{ "Id": "EQD" }, { "Id": "DIM", "Min": 0 }, { "Id": "IMD", "Min": 0, "Max": 9 }]
+      "Loop": [
+        { "Id": "EQD" },
+        { "Id": "DIM", "Min": 0 },
+        { "Id": "IMD", "Min": 0, "Max": 9 }
+      ]
     },
     {
       "Id": "NADLoop1",
@@ -42,7 +46,11 @@
       "Id": "DTMLoop1",
       "Min": 0,
       "Max": 9,
-      "Loop": [{ "Id": "DTM" }, { "Id": "LOC", "Min": 0 }, { "Id": "NAD", "Min": 0, "Max": 9 }]
+      "Loop": [
+        { "Id": "DTM" },
+        { "Id": "LOC", "Min": 0 },
+        { "Id": "NAD", "Min": 0, "Max": 9 }
+      ]
     },
     {
       "Id": "RFFLoop1",
@@ -64,8 +72,17 @@
         { "Id": "DIM", "Min": 0 },
         { "Id": "QTY", "Min": 0 },
         { "Id": "FTX", "Min": 0, "Max": 9 },
-        { "Id": "DAMLoop1", "Min": 0, "Loop": [{ "Id": "DAM" }, { "Id": "COD", "Min": 0 }] },
-        { "Id": "RTELoop1", "Min": 0, "Max": 9, "Loop": [{ "Id": "RTE" }, { "Id": "QTY" }] },
+        {
+          "Id": "DAMLoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "DAM" }, { "Id": "COD", "Min": 0 }]
+        },
+        {
+          "Id": "RTELoop1",
+          "Min": 0,
+          "Max": 9,
+          "Loop": [{ "Id": "RTE" }, { "Id": "QTY" }]
+        },
         {
           "Id": "NADLoop2",
           "Min": 0,
@@ -75,7 +92,11 @@
             {
               "Id": "MOALoop1",
               "Max": 9,
-              "Loop": [{ "Id": "MOA" }, { "Id": "TAX", "Min": 0 }, { "Id": "MEA", "Min": 0 }]
+              "Loop": [
+                { "Id": "MOA" },
+                { "Id": "TAX", "Min": 0 },
+                { "Id": "MEA", "Min": 0 }
+              ]
             }
           ]
         }

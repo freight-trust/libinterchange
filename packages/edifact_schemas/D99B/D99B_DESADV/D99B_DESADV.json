@@ -9,7 +9,12 @@
     { "Id": "MEA", "Min": 0, "Max": 5 },
     { "Id": "MOA", "Min": 0, "Max": 5 },
     { "Id": "CUX", "Min": 0, "Max": 9 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 10,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "NADLoop1",
       "Min": 0,
@@ -114,7 +119,10 @@
                   "Id": "GINLoop1",
                   "Min": 0,
                   "Max": 99,
-                  "Loop": [{ "Id": "GIN" }, { "Id": "DLM", "Min": 0, "Max": 10 }]
+                  "Loop": [
+                    { "Id": "GIN" },
+                    { "Id": "DLM", "Min": 0, "Max": 10 }
+                  ]
                 },
                 {
                   "Id": "CODLoop1",
@@ -203,7 +211,10 @@
                   "Id": "GINLoop2",
                   "Min": 0,
                   "Max": 10,
-                  "Loop": [{ "Id": "GIN" }, { "Id": "DLM", "Min": 0, "Max": 100 }]
+                  "Loop": [
+                    { "Id": "GIN" },
+                    { "Id": "DLM", "Min": 0, "Max": 100 }
+                  ]
                 },
                 {
                   "Id": "HANLoop3",

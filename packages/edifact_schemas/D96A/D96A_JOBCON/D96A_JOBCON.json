@@ -27,7 +27,12 @@
       "Max": 5,
       "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0, "Max": 5 }]
     },
-    { "Id": "GISLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }] },
+    {
+      "Id": "GISLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "GIS" }, { "Id": "FTX", "Min": 0 }]
+    },
     { "Id": "UNS" },
     {
       "Id": "RFFLoop2",
@@ -79,7 +84,11 @@
               "Id": "ATTLoop1",
               "Min": 0,
               "Max": 20,
-              "Loop": [{ "Id": "ATT" }, { "Id": "FTX", "Min": 0 }, { "Id": "PTY", "Min": 0 }]
+              "Loop": [
+                { "Id": "ATT" },
+                { "Id": "FTX", "Min": 0 },
+                { "Id": "PTY", "Min": 0 }
+              ]
             },
             {
               "Id": "LANLoop1",
@@ -112,7 +121,11 @@
               "Id": "MOALoop1",
               "Min": 0,
               "Max": 5,
-              "Loop": [{ "Id": "MOA" }, { "Id": "RNG", "Min": 0 }, { "Id": "FTX", "Min": 0 }]
+              "Loop": [
+                { "Id": "MOA" },
+                { "Id": "RNG", "Min": 0 },
+                { "Id": "FTX", "Min": 0 }
+              ]
             }
           ]
         },

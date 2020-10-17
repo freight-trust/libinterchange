@@ -40,7 +40,12 @@
       "USN": "US Dollar, Next Day Funds",
       "USS": "US Dollar, Same Day Funds"
     },
-    "Discount Type": { "A": "Special Allowance", "B": "Basic", "Q": "Quantity", "V": "Value" },
+    "Discount Type": {
+      "A": "Special Allowance",
+      "B": "Basic",
+      "Q": "Quantity",
+      "V": "Value"
+    },
     "Bill Type Code": {
       "A": "Amended bill",
       "F": "Final bill - last bill when an account is closed",
@@ -3903,7 +3908,10 @@
       "5": "Readings for information only",
       "6": "Variable charge (non consumption-based)"
     },
-    "Credit Line Indicator (DRLI)": { "H": "Handling Allowance", "R": "Returns" },
+    "Credit Line Indicator (DRLI)": {
+      "H": "Handling Allowance",
+      "R": "Returns"
+    },
     "Stock Snapshot Category Code": {
       "01": "Below Re-order Level",
       "02": "Available Stock",
@@ -10573,7 +10581,13 @@
           "Id": "TYPE",
           "Required": true,
           "Components": [
-            { "Id": "TYPE-1", "Desc": "Type", "DataType": "AN", "Required": true, "MaxLength": 6 },
+            {
+              "Id": "TYPE-1",
+              "Desc": "Type",
+              "DataType": "AN",
+              "Required": true,
+              "MaxLength": 6
+            },
             {
               "Id": "TYPE-2",
               "Desc": "Version Number",

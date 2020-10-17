@@ -5,7 +5,12 @@
     { "Id": "UNH" },
     { "Id": "BGM" },
     { "Id": "DTM", "Max": 10 },
-    { "Id": "RFFLoop1", "Min": 0, "Max": 10, "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "RFFLoop1",
+      "Min": 0,
+      "Max": 10,
+      "Loop": [{ "Id": "RFF" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "NADLoop1",
       "Min": 0,
@@ -27,7 +32,12 @@
         }
       ]
     },
-    { "Id": "CUXLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "CUXLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "CUX" }, { "Id": "DTM", "Min": 0 }]
+    },
     {
       "Id": "CPSLoop1",
       "Min": 0,
@@ -94,7 +104,11 @@
               "Id": "PRILoop1",
               "Min": 0,
               "Max": 5,
-              "Loop": [{ "Id": "PRI" }, { "Id": "CUX", "Min": 0 }, { "Id": "DTM", "Min": 0 }]
+              "Loop": [
+                { "Id": "PRI" },
+                { "Id": "CUX", "Min": 0 },
+                { "Id": "DTM", "Min": 0 }
+              ]
             },
             {
               "Id": "RFFLoop4",

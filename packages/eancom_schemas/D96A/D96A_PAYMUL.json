@@ -32,12 +32,20 @@
           "Id": "NADLoop2",
           "Min": 0,
           "Max": 3,
-          "Loop": [{ "Id": "NAD" }, { "Id": "CTA", "Min": 0 }, { "Id": "COM", "Min": 0, "Max": 5 }]
+          "Loop": [
+            { "Id": "NAD" },
+            { "Id": "CTA", "Min": 0 },
+            { "Id": "COM", "Min": 0, "Max": 5 }
+          ]
         },
         {
           "Id": "INPLoop1",
           "Min": 0,
-          "Loop": [{ "Id": "INP" }, { "Id": "FTX", "Min": 0 }, { "Id": "DTM", "Min": 0, "Max": 2 }]
+          "Loop": [
+            { "Id": "INP" },
+            { "Id": "FTX", "Min": 0 },
+            { "Id": "DTM", "Min": 0, "Max": 2 }
+          ]
         },
         {
           "Id": "GISLoop1",
@@ -52,7 +60,11 @@
             { "Id": "FTX", "Min": 0, "Max": 10 }
           ]
         },
-        { "Id": "PRCLoop1", "Min": 0, "Loop": [{ "Id": "PRC" }, { "Id": "FTX" }] },
+        {
+          "Id": "PRCLoop1",
+          "Min": 0,
+          "Loop": [{ "Id": "PRC" }, { "Id": "FTX" }]
+        },
         {
           "Id": "SEQLoop1",
           "Max": 9999,
@@ -123,7 +135,11 @@
                       "Id": "AJTLoop1",
                       "Min": 0,
                       "Max": 100,
-                      "Loop": [{ "Id": "AJT" }, { "Id": "MOA" }, { "Id": "RFF", "Min": 0 }]
+                      "Loop": [
+                        { "Id": "AJT" },
+                        { "Id": "MOA" },
+                        { "Id": "RFF", "Min": 0 }
+                      ]
                     },
                     {
                       "Id": "DLILoop1",
@@ -137,7 +153,11 @@
                           "Id": "AJTLoop2",
                           "Min": 0,
                           "Max": 10,
-                          "Loop": [{ "Id": "AJT" }, { "Id": "MOA" }, { "Id": "RFF", "Min": 0 }]
+                          "Loop": [
+                            { "Id": "AJT" },
+                            { "Id": "MOA" },
+                            { "Id": "RFF", "Min": 0 }
+                          ]
                         }
                       ]
                     }
@@ -155,7 +175,12 @@
       ]
     },
     { "Id": "CNT", "Min": 0, "Max": 5 },
-    { "Id": "AUTLoop1", "Min": 0, "Max": 5, "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }] },
+    {
+      "Id": "AUTLoop1",
+      "Min": 0,
+      "Max": 5,
+      "Loop": [{ "Id": "AUT" }, { "Id": "DTM", "Min": 0 }]
+    },
     { "Id": "UNT" }
   ]
 }

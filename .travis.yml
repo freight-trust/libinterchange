@@ -7,4 +7,4 @@ scripts:
   - npm install codecov -g
 install: yarn install
 after_success:
-  - codecov
+  - codecov.sh

@@ -1,0 +1,10 @@
+# travis-ci
+os: linux
+dist: xenial
+
+language: node_js
+scripts:
+  - npm install codecov -g
+install: yarn install
+after_success:
+  - codecov

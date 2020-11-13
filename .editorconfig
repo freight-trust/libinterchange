@@ -1,27 +1,45 @@
-# http://editorconfig.org
+# Editorconfig Settings
+# XML-Conformance
+# SPDX-License-Identifier: CC-0
+# v1.0.0
+
+# top-most EditorConfig file
 root = true
 
+# Don't use tabs for indentation.
+# defaults
 [*]
-indent_style = space
-indent_size = 2
-
+charset = utf-8
 end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{xml,xsd}]
+max_line_length = off
+end_of_line = lf
+indent_style = space
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+indent_size = 2
 
-[*.{java,kt,kts,scala,rs,xml,kt.spec,kts.spec}]
-indent_size = 4
+# XML project files
+[*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
+indent_size = 2
 
-[*.{kt,kts}]
-kotlin_imports_layout=ascii
+# XML config files
+[*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
+indent_size = 2
 
-[{Makefile,*.go}]
-indent_style = tab
-indent_size = 4
 
-[*.md]
-trim_trailing_whitespace = false
+# Shell
+# https://google.github.io/styleguide/shell.xml#Indentation
+[*.{bash,sh,zsh}]
+indent_size = 2
+indent_style = space
 
-[gradle/verification-metadata.xml]
-indent_size = 3
+# YAML
+# http://yaml.org/spec/1.2/2009-07-21/spec.html#id2576668
+[*.{yaml,yml}]
+indent_size = 2
+indent_style = space

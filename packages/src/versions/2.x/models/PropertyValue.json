@@ -1,0 +1,65 @@
+{
+  "type": "PropertyValue",
+  "derivedFrom": "https://schema.org/PropertyValue",
+  "hasId": false,
+  "requiredFields": [
+    "name",
+    "type",
+    "value"
+  ],
+  "inSpec": [
+    "name",
+    "propertyID",
+    "type",
+    "value",
+    "description"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "PropertyValue"
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "The name of this PropertyValue"
+      ],
+      "example": "Vendor ID"
+    },
+    "propertyID": {
+      "fieldName": "propertyID",
+      "sameAs": "https://schema.org/propertyID",
+      "requiredType": "https://schema.org/URL",
+      "alternativeTypes": [
+        "https://schema.org/Text"
+      ],
+      "description": [
+        "A commonly used identifier for the characteristic represented by the property"
+      ],
+      "example": "ActivePlaces"
+    },
+    "value": {
+      "fieldName": "value",
+      "sameAs": "https://schema.org/value",
+      "requiredType": "https://schema.org/Text",
+      "alternativeTypes": [
+        "https://schema.org/Integer"
+      ],
+      "description": [
+        "The actual value of this identifier"
+      ],
+      "example": "SB1234"
+    },
+    "description": {
+      "fieldName": "description",
+      "sameAs": "https://schema.org/description",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "Additional human-readable version of the value of the property."
+      ]
+    }
+  }
+}

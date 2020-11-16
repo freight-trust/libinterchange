@@ -1,0 +1,81 @@
+{
+  "@context": "https://openactive.io/",
+  "@type": "Event",
+  "name": "Blade and tone",
+  "url": "http://www.example.org/events/1",
+  "description": "Run by our head instructor, this is an intermediate class for those with existing roller blading experience, where we focus on exercises to tone key muscle groups. Bring your own boots, shape up, and have fun!",
+  "image": [
+  {
+    "@type": "ImageObject",
+    "url": "https://example.com/static/image/yourimage_large.jpg",
+    "thumbnail": [
+      {
+        "@type": "ImageObject",
+        "url": "https://example.com/static/image/yourimage_thumbnail.jpg"
+      }
+    ]
+  }],
+  "activity": [{
+     "id":"https://openactive.io/activity-list/#7e5cb3ee-8c91-4f85-8c97-e335e0013eb3",
+      "@type": "Concept",
+      "prefLabel": "Roller blading",
+      "inScheme": "https://openactive.io/activity-list"
+   }],
+  "eventSchedule": [
+    {
+      "@type": "Schedule",
+      "startDate": "2018-08-13",
+      "endDate": "2020-08-13",
+      "duration": "PT1H",
+      "repeatFrequency": "P1W",
+      "byDay": [
+        "https://schema.org/Thursday"
+      ],
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "scheduledEventType": "ScheduledSession"
+    }
+  ],
+  "programme": {
+    "@type": "Brand",
+    "name": "BladeFitness™️",
+    "url": "https://www.exampleorgbody.org/blade-fitness/",
+    "description": "A programme of events to encourage participation and get fit through roller blading"
+  },
+  "location": {
+      "@type": "Place",
+      "name": "ExampleCo Gym",
+      "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "1 High Street",
+         "addressLocality": "Colchester",
+         "addressRegion": "Essex",
+         "postalCode": "AB1 2CD",
+         "addressCountry": "GB"
+      },
+      "geo": {
+         "@type": "GeoCoordinates",
+         "latitude": 51.88805,
+         "longitude": 0.90286
+      }
+   },
+   "organizer": {
+       "name": "Colchester Bladers",
+       "@type": "Organization",
+       "url": "https://www.examplecluburl.com"
+   },
+  "ageRange": {
+    "@type": "QuantitativeValue",
+    "minValue": 18
+  },
+  "genderRestriction": "https://openactive.io/NoRestriction",
+  "level": [
+    "intermediate"
+  ],
+  "offers": [{
+    "@type": "Offer",
+    "name": "Single session",
+    "price": 10,
+    "priceCurrency": "GBP"
+  }]
+}

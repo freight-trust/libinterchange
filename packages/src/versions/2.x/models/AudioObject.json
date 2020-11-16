@@ -1,0 +1,43 @@
+{
+  "type": "AudioObject",
+  "subClassOf": "#MediaObject",
+  "derivedFrom": "https://schema.org/AudioObject",
+  "hasId": false,
+  "requiredFields":[
+    "type",
+    "url"
+  ],
+  "inSpec": [
+    "type",
+    "thumbnail",
+    "url",
+    "contentUrl",
+    "embedUrl",
+    "width",
+    "height"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "AudioObject"
+    },
+    "thumbnail": {
+      "fieldName": "thumbnail",
+      "sameAs": "https://schema.org/thumbnail",
+      "model": "ArrayOf#ImageObject",
+      "description": [
+        "The URL for a thumbnail image for the audio."
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://soundcloud.com/stayin/getfit",
+      "description": [
+        "The URL for the audio."
+      ]
+    }
+  }
+}

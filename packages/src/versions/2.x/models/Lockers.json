@@ -1,0 +1,20 @@
+{
+  "type": "Lockers",
+  "subClassOf": "#LocationFeatureSpecification",
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Lockers"
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Indoor Lockers",
+      "description": [
+        "A string, suitable for presentation in user interfaces."
+      ]
+    }
+  }
+}

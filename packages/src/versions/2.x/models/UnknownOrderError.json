@@ -1,0 +1,41 @@
+{
+  "type": "UnknownOrderError",
+  "subClassOf": "#OpenBookingError",
+  "description": {
+    "sections": [
+      {
+        "title": "Error Use Case",
+        "paragraphs": [
+          "The Booking System has no `Order` matching the one requested."
+        ]
+      }
+    ]
+  },
+  "fields": {
+    "type": {
+        "fieldName": "type",
+        "requiredContent": "UnknownOrderError",
+        "requiredType": "https://schema.org/Text"
+    },
+    "name": {
+      "description": [
+          "A short, human-readable summary of the problem type. It should not change from occurrence to occurrence of the problem, except for purposes of localization."
+      ],
+      "example": "The Booking System has no 'Order' matching the one requested.",
+      "defaultContent": "The Booking System has no 'Order' matching the one requested.",
+      "fieldName": "name",
+      "requiredType": "https://schema.org/Text",
+      "sameAs": "https://schema.org/name"
+    },
+    "statusCode": {
+      "fieldName": "statusCode",
+      "sameAs": "https://openactive.io/statusCode",
+      "requiredType": "https://schema.org/Integer",
+      "requiredContent": 404,
+      "defaultContent": 404,
+      "description": [
+        "An integer representing the HTTP status code."
+      ]
+    }
+  }
+}

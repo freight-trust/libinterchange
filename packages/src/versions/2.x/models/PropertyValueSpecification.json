@@ -1,0 +1,62 @@
+{
+   "type":"PropertyValueSpecification",
+   "derivedFrom": "https://schema.org/PropertyValueSpecification",
+   "status":{
+      "response":{
+         "hasId":false,
+         "requiredFields":[
+            "type",
+            "name"
+         ],
+         "recommendedFields":[
+            "description"
+         ],
+         "shallNotInclude":[
+
+         ],
+         "requiredOptions":[
+
+         ]
+      }
+   },
+   "inSpec":[
+      "type",
+      "name",
+      "description",
+      "valueRequired"
+   ],
+   "notInSpec":[
+
+   ],
+   "fields":{
+      "type":{
+         "fieldName":"type",
+         "requiredType":"https://schema.org/Text",
+         "requiredContent":"PropertyValueSpecification"
+      },
+      "name":{
+         "fieldName":"name",
+         "requiredType":"https://schema.org/Text",
+         "sameAs": "https://schema.org/name",
+         "description":[
+            "Display label for the field."
+         ]
+      },
+      "description":{
+         "fieldName":"description",
+         "requiredType":"https://schema.org/Text",
+         "sameAs": "https://schema.org/description",
+         "description":[
+            "Descriptive help plain text for the field, which must not include HTML or other markup."
+         ]
+      },
+      "valueRequired":{
+         "fieldName":"valueRequired",
+         "requiredType":"https://schema.org/Text",
+         "sameAs": "https://schema.org/valueRequired",
+         "description":[
+            "Specifies that a value for the field is required to proceed with the booking."
+         ]
+      }
+   }
+}

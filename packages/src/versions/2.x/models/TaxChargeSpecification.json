@@ -1,0 +1,98 @@
+{
+   "type":"TaxChargeSpecification",
+   "subClassOf":"#PriceSpecification",
+   "isJsonLd":true,
+   "validationMode": {
+ 		"C1Request": "request",
+ 		"C1Response": "response",
+ 		"C2Request": "request",
+ 		"C2Response": "response",
+ 		"PRequest": "request",
+ 		"PResponse": "response",
+ 		"BRequest": "request",
+ 		"BResponse": "response",
+ 		"OrderProposalPatch": "request",
+ 		"OrderPatch": "request"
+ 	},
+ 	"imperativeConfiguration": {
+ 		"request": {
+ 			"requiredFields": [],
+ 			"recommendedFields": []
+ 		},
+ 		"response": {
+ 			"requiredFields": [
+ 				"type",
+ 				"price",
+ 				"priceCurrency",
+        "name"
+ 			]
+ 		}
+ 	},
+   "inSpec":[
+      "type",
+      "price",
+      "priceCurrency",
+      "identifier",
+      "name",
+      "rate",
+      "prepayment"
+   ],
+   "notInSpec":[
+      "prepayment"
+   ],
+   "fields":{
+      "type":{
+         "fieldName":"type",
+         "requiredType":"https://schema.org/Text",
+         "requiredContent":"TaxChargeSpecification"
+      },
+      "price":{
+         "fieldName":"price",
+         "requiredType":"https://schema.org/Number",
+         "sameAs":"https://schema.org/price",
+         "description":[
+            "The total amount."
+         ]
+      },
+      "priceCurrency":{
+         "fieldName":"priceCurrency",
+         "requiredType":"https://schema.org/Text",
+         "sameAs":"https://schema.org/priceCurrency",
+         "description":[
+            "The currency of the price. Specified as a 3-letter ISO 4217 value. If a  PriceSpecification has a zero price, then this property is not required. Otherwise the priceCurrency must be specified."
+         ]
+      },
+      "name":{
+         "fieldName":"name",
+         "requiredType":"https://schema.org/Text",
+         "sameAs":"https://schema.org/name",
+         "description":[
+            "The name of the tax charge, e.g. \"VAT at 0% for EU transactions\""
+         ]
+      },
+      "rate":{
+         "fieldName":"rate",
+         "requiredType":"https://schema.org/Number",
+         "sameAs":"https://openactive.io/rate",
+         "description":[
+            "The rate of VAT."
+         ]
+      },
+      "identifier":{
+         "fieldName":"identifier",
+         "sameAs":"https://schema.org/identifier",
+         "alternativeModels":[
+            "#PropertyValue",
+            "ArrayOf#PropertyValue"
+         ],
+         "requiredType":"https://schema.org/Text",
+         "alternativeTypes":[
+            "https://schema.org/Integer"
+         ],
+         "example":"SB1234",
+         "description":[
+            "A local non-URI identifier for the resource"
+         ]
+      }
+   }
+}

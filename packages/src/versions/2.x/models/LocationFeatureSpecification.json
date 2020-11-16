@@ -1,0 +1,41 @@
+{
+  "type": "LocationFeatureSpecification",
+  "derivedFrom": "https://schema.org/LocationFeatureSpecification",
+  "hasId": false,
+  "requiredFields": [
+    "name",
+    "type",
+    "value"
+  ],
+  "inSpec": [
+    "name",
+    "type",
+    "value"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "LocationFeatureSpecification"
+    },
+    "name": {
+         "sameAs": "https://schema.org/identifier",
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Bike Shed",
+      "description": [
+        "A string, suitable for presentation in user interfaces."
+      ]
+    },
+    "value": {
+      "fieldName": "value",
+      "sameAs": "https://schema.org/value",
+      "requiredType": "https://schema.org/Boolean",
+      "example": false,
+      "description": [
+        "A boolean value indicating whether this ammenity is available."
+      ]
+    }
+  }
+}

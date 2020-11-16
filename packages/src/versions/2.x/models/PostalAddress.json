@@ -1,0 +1,105 @@
+{
+  "type": "PostalAddress",
+  "derivedFrom": "https://schema.org/PostalAddress",
+  "hasId": false,
+  "validationMode": {
+		"C1Request": "request",
+		"C1Response": "response",
+		"C2Request": "request",
+		"C2Response": "response",
+		"PRequest": "request",
+		"PResponse": "response",
+		"BRequest": "request",
+		"BResponse": "response",
+		"OrderProposalPatch": "request",
+    "OrderPatch": "request",
+    "OrdersFeed": "response",
+    "OrderStatus": "response"
+	},
+	"imperativeConfiguration": {
+		"request": {
+			"requiredFields": [
+				"type",
+				"streetAddress",
+        "addressLocality",
+        "addressRegion",
+        "postalCode",
+        "addressCountry"
+			],
+			"recommendedFields": []
+		},
+		"response": {
+			"requiredFields": [],
+			"recommendedFields": []
+		}
+  },
+  "requiredFields": [
+    "type",
+    "streetAddress",
+    "addressLocality",
+    "addressRegion",
+    "postalCode",
+    "addressCountry"
+  ],
+  "recommendedFields": [],
+  "inSpec": [
+    "type",
+    "addressCountry",
+    "addressLocality",
+    "addressRegion",
+    "postalCode",
+    "streetAddress"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "PostalAddress"
+    },
+    "addressCountry": {
+      "fieldName": "addressCountry",
+      "sameAs": "https://schema.org/addressCountry",
+      "requiredType": "https://schema.org/Text",
+      "example": "GB",
+      "description": [
+        "The country, expressed as a two-letter ISO 3166-1 alpha-2 country code."
+      ]
+    },
+    "addressLocality": {
+      "fieldName": "addressLocality",
+      "sameAs": "https://schema.org/addressLocality",
+      "requiredType": "https://schema.org/Text",
+      "example": "Shoreditch",
+      "description": [
+        "The locality, a suburb within a city or a town within a county or district."
+      ]
+    },
+    "addressRegion": {
+      "fieldName": "addressRegion",
+      "sameAs": "https://schema.org/addressRegion",
+      "requiredType": "https://schema.org/Text",
+      "example": "London",
+      "description": [
+        "The region, either a city or a county or district."
+      ]
+    },
+    "postalCode": {
+      "fieldName": "postalCode",
+      "sameAs": "https://schema.org/postalCode",
+      "requiredType": "https://schema.org/Text",
+      "example": "EC2A 4JE",
+      "description": [
+        "The postal code."
+      ]
+    },
+    "streetAddress": {
+      "fieldName": "streetAddress",
+      "sameAs": "https://schema.org/streetAddress",
+      "requiredType": "https://schema.org/Text",
+      "example": "Open Data Institute, Floor 3, 65 Clifton St",
+      "description": [
+        "The street address."
+      ]
+    }
+  }
+}

@@ -1,15 +1,30 @@
 {
-  "name": "edi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
+  "name": "libinterchange--models",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "engines": {
+    "node": "12.16.3"
+  },
+  "private": "true",
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jasmine": "^3.2.0",
+    "jasmine-expect": "^4.0.3",
+    "rdflib": "^1.1.0",
+    "sync-request": "^6.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "build": "node scripts/build.js",
+    "lint": "eslint \"src/**/*.js\" \"scripts/**/*.js\"",
+    "lint-fix": "eslint --fix \"src/**/*.js\" \"scripts/**/*.js\"",
+    "prepare": "npm run build",
+    "pretest": "npm run build && npm run lint",
+    "test": "npm run test-no-lint",
+    "test-no-lint": "jasmine",
+    "test-debug": "node --inspect-brk -i ./node_modules/jasmine/bin/jasmine.js",
+    "postpublish": "git push",
+    "publish-patch": "npm test && git pull && git push && npm version patch && npm publish"
+  }
 }

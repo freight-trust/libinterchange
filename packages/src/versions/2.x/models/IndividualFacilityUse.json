@@ -1,0 +1,79 @@
+{
+  "type": "IndividualFacilityUse",
+  "subClassOf": "#FacilityUse",
+  "sampleId": "https://example.com/individual-facility-use/1",
+  "requiredFields": [
+    "type",
+    "url",
+    "name",
+    "activity",
+    "location",
+    "provider"
+  ],
+  "recommendedFields": [
+    "id",
+    "description",
+    "image",
+    "hoursAvailable",
+    "aggregateFacilityUse",
+    "event"
+  ],
+  "notInSpec": [
+    "individualFacilityUse"
+  ],
+  "inSpec": [
+    "type",
+    "id",
+    "url",
+    "identifier",
+    "individualFacilityUse",
+    "name",
+    "description",
+    "image",
+    "activity",
+    "location",
+    "event",
+    "offers",
+    "hoursAvailable",
+    "aggregateFacilityUse",
+    "provider",
+    "accessibilityInformation",
+    "accessibilitySupport",
+    "category",
+    "attendeeInstructions"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "IndividualFacilityUse"
+    },
+    "aggregateFacilityUse": {
+      "fieldName": "aggregateFacilityUse",
+      "sameAs": "https://openactive.io/aggregateFacilityUse",
+      "model": "#FacilityUse",
+      "description": [
+        "Inverse of the oa:individualFacilityUse property. Relates an oa:IndividualFacilityUse (e.g. an opportunity to play tennis on a specific court) to a oa:FacilityUse (e.g. an opportunity to play tennis at a specific location)."
+      ]
+    },
+    "event": {
+      "fieldName": "event",
+      "sameAs": "https://schema.org/event",
+      "model": "ArrayOf#Slot",
+      "description": [
+        "An array of slots of availability of this IndividualFacilityUse."
+      ],
+      "example": [
+        {
+          "@type": "Slot",
+          "@id": "http://www.example.org/api/individual-facility-uses/432#/event/2018-03-01T10:00:00Z",
+          "startDate": "2018-03-01T11:00:00Z",
+          "endDate": "2018-03-01T11:30:00Z",
+          "duration": "PT30M",
+          "remainingUses": 0,
+          "maximumUses": 1
+        }
+      ]
+    }
+  }
+}

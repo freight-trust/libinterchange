@@ -1,0 +1,38 @@
+{
+  "type": "QuantitativeValue",
+  "derivedFrom": "https://schema.org/QuantitativeValue",
+  "hasId": false,
+  "requiredFields": [
+    "type"
+  ],
+  "inSpec": [
+    "type",
+    "minValue",
+    "maxValue"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "QuantitativeValue"
+    },
+    "maxValue": {
+      "fieldName": "maxValue",
+      "sameAs": "https://schema.org/maxValue",
+      "requiredType": "https://schema.org/Integer",
+      "description": [
+        "The maximum value."
+      ],
+      "example": 60
+    },
+    "minValue": {
+      "fieldName": "minValue",
+      "sameAs": "https://schema.org/minValue",
+      "requiredType": "https://schema.org/Integer",
+      "description": [
+        "The minimum value."
+      ],
+      "example": 16
+    }
+  }
+}

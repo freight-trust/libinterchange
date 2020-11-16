@@ -1,0 +1,609 @@
+{
+  "type": "Event",
+  "derivedFrom": "https://schema.org/Event",
+  "hasId": true,
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://example.com/event/12345",
+  "requiredFields": [
+    "type",
+    "url",
+    "name",
+    "location",
+    "activity",
+    "organizer",
+    "offers",
+    "startDate"
+  ],
+  "commonTypos": {
+    "offer": "offers"
+  },
+  "recommendedFields": [
+    "id",
+    "description",
+    "image",
+    "eventStatus",
+    "ageRange",
+    "genderRestriction",
+    "leader",
+    "level",
+    "maximumAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "endDate"
+  ],
+  "shallNotInclude": [
+    "eventSchedule"
+  ],
+  "validationMode": {
+    "RPDEFeed": "feed",
+    "BookableRPDEFeed": "feed",
+    "C1Request": "request",
+    "C1Response": "response",
+    "C2Request": "request",
+    "C2Response": "response",
+    "PRequest": "request",
+    "PResponse": "response",
+    "BRequest": "request",
+    "BResponse": "response",
+    "OrdersFeed": "request",
+    "OrderStatus": "response",
+    "TestInterface": "testInterface"
+  },
+  "imperativeConfigurationWithContext": {
+    "feed": {
+      "subEvent": {
+        "requiredFields": [
+          "type",
+          "url",
+          "name",
+          "location",
+          "activity",
+          "organizer",
+          "startDate"
+        ]
+      }
+    }
+  },
+  "imperativeConfiguration": {
+    "feed": {},
+    "testInterface": {
+      "requiredFields": [
+        "type"
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+      ]
+    },
+    "request": {
+      "requiredFields": [
+        "type",
+        "id"
+      ],
+      "shallNotInclude": [
+        "identifier",
+        "url",
+        "name",
+        "description",
+        "image",
+        "startDate",
+        "endDate",
+        "duration",
+        "location",
+        "organizer",
+        "contributor",
+        "maximumAttendeeCapacity",
+        "maximumVirtualAttendeeCapacity",
+        "remainingAttendeeCapacity",
+        "eventStatus",
+        "subEvent",
+        "superEvent",
+        "activity",
+        "category",
+        "ageRange",
+        "genderRestriction",
+        "programme",
+        "attendeeInstructions",
+        "leader",
+        "accessibilitySupport",
+        "accessibilityInformation",
+        "isCoached",
+        "level",
+        "meetingPoint",
+        "isAccessibleForFree",
+        "offers",
+        "schedulingNote"
+      ]
+    },
+    "response": {
+      "requiredFields": [
+        "type",
+        "id",
+        "url",
+        "name",
+        "location",
+        "activity",
+        "startDate"
+      ],
+      "recommendedFields": [
+        "endDate",
+        "duration",
+        "ageRange",
+        "genderRestriction",
+        "eventStatus",
+        "maximumAttendeeCapacity",
+        "remainingAttendeeCapacity"
+      ],
+      "shallNotInclude": [
+        "offers",
+        "subEvent",
+        "organizer"
+      ]
+    }
+  },
+  "inSpec": [
+    "id",
+    "type",
+    "identifier",
+    "url",
+    "name",
+    "description",
+    "image",
+    "startDate",
+    "endDate",
+    "duration",
+    "location",
+    "organizer",
+    "contributor",
+    "maximumAttendeeCapacity",
+    "maximumVirtualAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "eventStatus",
+    "subEvent",
+    "superEvent",
+    "activity",
+    "category",
+    "ageRange",
+    "genderRestriction",
+    "programme",
+    "attendeeInstructions",
+    "leader",
+    "accessibilitySupport",
+    "accessibilityInformation",
+    "isCoached",
+    "level",
+    "meetingPoint",
+    "isAccessibleForFree",
+    "offers",
+    "schedulingNote",
+    "eventAttendanceMode"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Event"
+    },
+    "accessibilityInformation": {
+      "fieldName": "accessibilityInformation",
+      "sameAs": "https://openactive.io/accessibilityInformation",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "Provide additional, specific documentation for participants about how disabilities are, or can be supported at the Event."
+      ],
+      "example": "This route has been British Cycling assessed as an accessible route, meaning it is suitable for the majority of adaptive bikes. The route will have no or low levels of traffic, there will be plenty of space and will have a good surface throughout. If you have any questions about using this route on an adaptive bike on this ride, please use visit https://www.letsride.co.uk/accessibility or call 0123 456 7000 and ask for the Recreation team."
+    },
+    "accessibilitySupport": {
+      "fieldName": "accessibilitySupport",
+      "sameAs": "https://openactive.io/accessibilitySupport",
+      "model": "ArrayOf#Concept",
+      "description": [
+        "Used to specify the types of disabilities or impairments that are supported at an event."
+      ],
+      "example": [
+        {
+          "@type": "Concept",
+          "@id": "https://openactive.io/accessibility-support#1393f2dc-3fcc-4be9-a99f-f1e51f5ad277",
+          "prefLabel": "Visual impairment",
+          "inScheme": "https://openactive.io/accessibility-support"
+        }
+      ]
+    },
+    "activity": {
+      "fieldName": "activity",
+      "sameAs": "https://openactive.io/activity",
+      "model": "ArrayOf#Concept",
+      "description": [
+        "Specifies the physical activity or activities that will take place during an event."
+      ],
+      "example": [
+        {
+          "@type": "Concept",
+          "@id": "https://openactive.io/activity-list#5e78bcbe-36db-425a-9064-bf96d09cc351",
+          "prefLabel": "Bodypump™",
+          "inScheme": "https://openactive.io/activity-list"
+        }
+      ]
+    },
+    "ageRange": {
+      "fieldName": "ageRange",
+      "sameAs": "https://openactive.io/ageRange",
+      "model": "#QuantitativeValue",
+      "description": [
+        "Indicates that an event is suitable for a specific age range. If only a single age is specified then this is assumed to be a minimum age. Age ranges can be specified as follows: 18-30"
+      ],
+      "example": {
+        "@type": "QuantitativeValue",
+        "minValue": 15,
+        "maxValue": 60
+      }
+    },
+    "attendeeInstructions": {
+      "fieldName": "attendeeInstructions",
+      "sameAs": "https://openactive.io/attendeeInstructions",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "Provides additional notes and instructions for event attendees, for example more information on how to find the event, what to bring, etc. The value of this property must not include HTML or other markup."
+      ],
+      "example": "Ensure you bring trainers and a bottle of water."
+    },
+    "category": {
+      "fieldName": "category",
+      "sameAs": "https://schema.org/category",
+      "model": "ArrayOf#Concept",
+      "alternativeTypes": [
+        "ArrayOf#https://schema.org/Text"
+      ],
+      "description": [
+        "Provides a set of tags that help categorise and describe an event, e.g. its intensity, purpose, etc."
+      ],
+      "example": [ "High Intensity" ]
+    },
+    "contributor": {
+      "fieldName": "contributor",
+      "sameAs": "https://schema.org/contributor",
+      "model": "ArrayOf#Person",
+      "description": [
+        "A Person who contributes to the facilitation of the Event."
+      ],
+      "example": [{
+        "@type": "Person",
+        "familyName": "Smith",
+        "givenName": "Nicole",
+        "@id": "https://example.com/locations/1234ABCD/leaders/89",
+        "identifier": 89
+      }]
+    },
+    "description": {
+      "fieldName": "description",
+      "sameAs": "https://schema.org/description",
+      "requiredType": "https://schema.org/Text",
+      "example": "An fast paced game that incorporates netball, handball and football.",
+      "description": [
+        "A plain text description of the event, which must not include HTML or other markup."
+      ]
+    },
+    "duration": {
+      "fieldName": "duration",
+      "sameAs": "https://schema.org/duration",
+      "requiredType": "https://schema.org/Duration",
+      "description": [
+        "The duration of the event given in [ISO8601] format."
+      ],
+      "example": "PT1H"
+    },
+    "endDate": {
+      "fieldName": "endDate",
+      "sameAs": "https://schema.org/endDate",
+      "requiredType": "https://schema.org/DateTime",
+      "alternativeTypes": [
+        "https://schema.org/Date"
+      ],
+      "description": [
+        "The end date and time of the event. Can be specified as a schema:Date or  schema:DateTime",
+        "It is recommended that publishers provide either an schema:endDate or a schema:duration for an event."
+      ],
+      "example": "2018-01-27T12:00:00Z"
+    },
+    "eventStatus": {
+      "fieldName": "eventStatus",
+      "sameAs": "https://schema.org/eventStatus",
+      "requiredType": "https://schema.org/EventStatusType",
+      "description": [
+        "The status of an event. Can be used to indicate rescheduled or cancelled events"
+      ],
+      "example": "https://schema.org/EventScheduled"
+    },
+    "genderRestriction": {
+      "fieldName": "genderRestriction",
+      "sameAs": "https://openactive.io/genderRestriction",
+      "requiredType": "https://openactive.io/GenderRestrictionType",
+      "description": [
+        "Indicates that an event is restricted to male, female or a mixed audience. If a gender restriction isn't specified then applications should assume that an event is suitable for a mixed audience"
+      ],
+      "example": "https://openactive.io/FemaleOnly"
+    },
+    "identifier": {
+      "fieldName": "identifier",
+      "sameAs": "https://schema.org/identifier",
+      "alternativeModels": [
+        "#PropertyValue",
+        "ArrayOf#PropertyValue"
+      ],
+      "requiredType": "https://schema.org/Text",
+      "alternativeTypes": [
+        "https://schema.org/Integer"
+      ],
+      "example": "SB1234",
+      "description": [
+        "A local non-URI identifier for the resource"
+      ]
+    },
+    "image": {
+      "fieldName": "image",
+      "sameAs": "https://schema.org/image",
+      "model": "ArrayOf#ImageObject",
+      "description": [
+        "An image or photo that depicts the event, e.g. a photo taken at a previous event."
+      ],
+      "example": [{
+        "@type": "ImageObject",
+        "url": "http://example.com/static/image/speedball_large.jpg",
+        "thumbnail":[
+          {
+            "@type": "ImageObject",
+            "url": "http://example.com/static/image/speedball_thumbnail.jpg"
+          }
+        ]
+      }]
+    },
+    "isAccessibleForFree": {
+      "fieldName": "isAccessibleForFree",
+      "sameAs": "https://schema.org/isAccessibleForFree",
+      "requiredType": "https://schema.org/Boolean",
+      "description": [
+        "Whether the Event is accessible without charge."
+      ],
+      "example": true
+    },
+    "isCoached": {
+      "fieldName": "isCoached",
+      "sameAs": "https://openactive.io/isCoached",
+      "requiredType": "https://schema.org/Boolean",
+      "description": [
+        "A boolean property that indicates whether an Event will be coached. This flag allows an Event to be marked as being coached without having to specify a named individual as a coach. This addresses both privacy concerns and also scenarios where the actual coach may only be decided on the day."
+      ],
+      "example": true
+    },
+    "leader": {
+      "fieldName": "leader",
+      "sameAs": "https://openactive.io/leader",
+      "model": "ArrayOf#Person",
+      "description": [
+        "Refers to a person (schema:Person) who will be leading an event. E.g. a coach. This is a more specific role than an organiser or a contributor. The person will need to have given their consent for their personal information to be present in the Open Data."
+      ],
+      "example": [{
+        "@type": "Person",
+        "familyName": "Smith",
+        "givenName": "Nicole",
+        "gender": "https://schema.org/Male",
+        "@id": "https://example.com/locations/1234ABCD/leaders/89",
+        "identifier": 89
+      }]
+    },
+    "level": {
+      "fieldName": "level",
+      "sameAs": "https://openactive.io/level",
+      "requiredType": "ArrayOf#https://schema.org/Text",
+      "alternativeModels": [
+        "ArrayOf#Concept"
+      ],
+      "description": [
+        "A general purpose property for specifying the suitability of an event for different participant “levels”. E.g. `Beginner`, `Intermediate`, `Advanced`. Or in the case of martial arts, specific belt requirements."
+      ],
+      "example": [ "Beginner" ]
+    },
+    "location": {
+      "fieldName": "location",
+      "sameAs": "https://schema.org/location",
+      "model": "#Place",
+      "description": [
+        "The location at which the event will take place. Or, in the case of events that may span multiple locations, the initial meeting or starting point.",
+        "It is recommended that locations should be specified as a [Place](/models/place) complete with a fully described geographic location and/or address.",
+        "If only an address is available then this should be described as a [PostalAddress](/models/postaladdress).",
+        "Applications may use [schema:Text](https://schema.org/Text) to provide a more general description of a location (\"In Victoria Park, near the lake\"), but this is not recommended: consuming applications will be unable to help users discover opportunities based on their location."
+      ],
+      "example": {
+        "@type": "Place",
+        "@id": "https://example.com/locations/1234ABCD",
+        "identifier": "1234ABCD",
+        "address": {
+          "addressLocality": "New Malden",
+          "addressRegion": "London",
+          "postalCode": "NW5 3DU",
+          "streetAddress": "Raynes Park High School, 46A West Barnes Lane",
+          "@type": "PostalAddress"
+        },
+        "description": "Raynes Park High School in London",
+        "geo": {
+          "latitude": 51.4034423828125,
+          "longitude": -0.2369088977575302,
+          "@type": "GeoCoordinates"
+        },
+        "name": "Raynes Park High School",
+        "telephone": "01253 473934"
+      }
+    },
+    "maximumAttendeeCapacity": {
+      "fieldName": "maximumAttendeeCapacity",
+      "sameAs": "https://schema.org/maximumAttendeeCapacity",
+      "requiredType": "https://schema.org/Integer",
+      "description": [
+        "The maximum capacity of the Event."
+      ],
+      "example": 30
+    },
+    "maximumVirtualAttendeeCapacity": {
+      "fieldName": "maximumVirtualAttendeeCapacity",
+      "sameAs": "https://pending.schema.org/maximumVirtualAttendeeCapacity",
+      "requiredType": "https://schema.org/Integer",
+      "description": [
+        "Indicates the maximum number of connections to a shared virtual space."
+      ],
+      "example": 20
+    },
+    "meetingPoint": {
+      "fieldName": "meetingPoint",
+      "sameAs": "https://openactive.io/meetingPoint",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "Instructions for the attendees of an Event about where they should meet the organizer or leader at the start of the event. Some larger locations may have several possible meeting points, so this property provides additional more specific directions."
+      ],
+      "example": "At the entrance to the park"
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Speedball",
+      "description": [
+        "The name of the event"
+      ]
+    },
+    "offers": {
+      "fieldName": "offers",
+      "sameAs": "https://schema.org/offers",
+      "model": "ArrayOf#Offer",
+      "description": [
+        "An array of schema:Offer that include the price of attending."
+      ],
+      "example": [ {
+        "@type": "Offer",
+        "identifier": "OX-AD",
+        "name": "Adult",
+        "price": 3.3,
+        "priceCurrency": "GBP",
+        "url": "https://profile.everyoneactive.com/booking?Site=0140&Activities=1402CBP20150217&Culture=en-GB"
+      } ]
+    },
+    "organizer": {
+      "fieldName": "organizer",
+      "sameAs": "https://schema.org/organizer",
+      "model": "#Organization",
+      "alternativeModels": [
+        "#Person"
+      ],
+      "description": [
+        "The person or organization ultimately responsible for an event. An organizer might be an  schema:Organization or a schema:Person."
+      ],
+      "example": {
+        "name": "Central Speedball Association",
+        "@type": "Organization",
+        "url": "http://www.speedball-world.com"
+      }
+    },
+    "programme": {
+      "fieldName": "programme",
+      "sameAs": "https://openactive.io/programme",
+      "model": "#Brand",
+      "description": [
+        "Indicates that an event will be organised according to a specific Programme."
+      ],
+      "example": {
+        "@type": "Brand",
+        "name": "Play Ball!",
+        "url": "http://example.org/brand/play-ball"
+      }
+    },
+    "remainingAttendeeCapacity": {
+      "fieldName": "remainingAttendeeCapacity",
+      "sameAs": "https://schema.org/remainingAttendeeCapacity",
+      "requiredType": "https://schema.org/Integer",
+      "description": [
+        "The number of places that are still available for the Event."
+      ],
+      "example": 20
+    },
+    "subEvent": {
+      "fieldName": "subEvent",
+      "sameAs": "https://schema.org/subEvent",
+      "model": "ArrayOf#Event",
+      "description": [
+        "Relates a parent event to a child event. Properties describing the parent event can be assumed to apply to the child, unless otherwise specified. A child event might be a specific instance of an Event within a schedule"
+      ],
+      "inheritsTo": {
+        "exclude": ["id", "identifier", "subEvent", "superEvent", "eventSchedule", "offers"]
+      }
+    },
+    "schedulingNote": {
+      "fieldName": "schedulingNote",
+      "sameAs": "https://openactive.io/schedulingNote",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "Provides a note from an organizer relating to how this Event is scheduled."
+      ],
+      "example": "This event doesn't run during school holidays"
+    },
+    "superEvent": {
+      "fieldName": "superEvent",
+      "sameAs": "https://schema.org/superEvent",
+      "model": "#Event",
+      "description": [
+        "Relates a child event to a parent event. Properties describing the parent event can be assumed to apply to the child, unless otherwise specified. A parent event might specify a recurring schedule, of which the child event is one specific instance"
+      ],
+      "inheritsFrom": {
+        "exclude": ["id", "identifier", "subEvent", "superEvent", "eventSchedule", "offers"]
+      }
+    },
+    "startDate": {
+      "fieldName": "startDate",
+      "sameAs": "https://schema.org/startDate",
+      "requiredType": "https://schema.org/DateTime",
+      "alternativeTypes": [
+        "https://schema.org/Date"
+      ],
+      "description": [
+        "The start date and time of the event. Can be specified as a schema:Date or schema:DateTime."
+      ],
+      "example": "2018-01-27T12:00:00Z"
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "description": [
+        "A URL to a web page (or section of a page) that describes the event."
+      ],
+      "example": "https://example.com/event/1234"
+    },
+    "eventAttendanceMode": {
+      "fieldName": "eventAttendanceMode",
+      "sameAs": "https://pending.schema.org/eventAttendanceMode",
+      "requiredType": "https://schema.org/EventAttendanceModeEnumeration",
+      "description": [
+        "The eventAttendanceMode of an event indicates whether it occurs online, offline, or a mix."
+      ],
+      "example": "https://schema.org/OnlineEventAttendanceMode"
+    }
+  },
+  "description-example": {
+    "sections": [
+      {
+        "title": "Example heading",
+        "paragraphs": [
+          "This is the first paragraph",
+          "This is the second paragraph"
+        ]
+      }
+    ]
+  },
+  "namedExamples": [
+    {
+      "title": "Describing a session",
+      "description": [
+        "The type property indicates that the JSON is describing an Event rather than one of the other types of resource defined in the data model.",
+        "This is a very basic session description. The following examples illustrate how to provide more detail."
+      ],
+      "example": "event_example_1.json"
+    }
+  ]
+}

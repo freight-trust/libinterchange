@@ -1,0 +1,70 @@
+{
+    "subClassOf": "https://schema.org/Thing",
+    "fields": {
+        "description": {
+            "description": [
+                "A plain-text human-readable explanation specific to this occurrence of the problem, providing specific information about why the error occurred in this particular case. This description must not include HTML or other markup."
+            ],
+            "example": "No customer details supplied. These must be supplied for calls to C2, P, and B.",
+            "fieldName": "description",
+            "requiredType": "https://schema.org/Text",
+            "sameAs": "https://schema.org/description"
+        },
+        "instance": {
+            "description": [
+                "A URI reference that identifies the specific occurrence of the problem. It may or may not yield further information if dereferenced."
+            ],
+            "fieldName": "instance",
+            "requiredType": "https://schema.org/URL",
+            "sameAs": "https://openactive.io/instance"
+        },
+        "name": {
+            "description": [
+                "A short, human-readable summary of the problem type. It should not change from occurrence to occurrence of the problem, except for purposes of localization."
+            ],
+            "example": "No customer details supplied",
+            "fieldName": "name",
+            "requiredType": "https://schema.org/Text",
+            "sameAs": "https://schema.org/name"
+        },
+        "requestId": {
+            "description": [
+                "Used by technical support for diagnostics purposes."
+            ],
+            "fieldName": "requestId",
+            "requiredType": "https://schema.org/Text",
+            "sameAs": "https://openactive.io/requestId"
+        },
+        "statusCode": {
+            "description": [
+                "An integer representing the HTTP status code."
+            ],
+            "fieldName": "statusCode",
+            "requiredType": "https://schema.org/Integer",
+            "sameAs": "https://openactive.io/statusCode"
+        },
+        "type": {
+            "fieldName": "type",
+            "requiredContent": "OpenBookingError",
+            "requiredType": "https://schema.org/Text"
+        }
+    },
+    "hasId": false,
+    "inSpec": [
+        "type",
+        "name",
+        "description",
+        "instance",
+        "statusCode",
+        "requestId"
+    ],
+    "recommendedFields": [
+        "name",
+        "description",
+        "instance"
+    ],
+    "requiredFields": [
+        "type"
+    ],
+    "type": "OpenBookingError"
+}

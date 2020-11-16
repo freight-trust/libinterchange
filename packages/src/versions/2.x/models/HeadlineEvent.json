@@ -1,0 +1,126 @@
+{
+  "type": "HeadlineEvent",
+  "subClassOf": "#Event",
+  "shallNotInclude": [
+    "eventSchedule"
+  ],
+  "requiredOptions": [],
+  "requiredFields": [
+    "type",
+    "url",
+    "name",
+    "location",
+    "activity",
+    "organizer",
+    "startDate"
+  ],
+  "recommendedFields": [
+    "id",
+    "description",
+    "image",
+    "eventStatus",
+    "ageRange",
+    "genderRestriction",
+    "leader",
+    "level",
+    "maximumAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "offers",
+    "endDate"
+  ],
+  "validationMode": {
+    "C1Request": "request",
+		"C1Response": "response",
+		"C2Request": "request",
+		"C2Response": "response",
+		"PRequest": "request",
+		"PResponse": "response",
+		"BRequest": "request",
+		"BResponse": "response",
+    "OrdersFeed": "request",
+    "OrderStatus": "response",
+    "TestInterface": "testInterface"
+  },
+	"imperativeConfiguration": {
+    "testInterface": {
+      "requiredFields": [
+        "type"
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+      ]
+    },
+		"request": {
+      "requiredFields": [
+        "type",
+        "id"
+      ],
+      "shallNotInclude": [
+        "identifier",
+        "url",
+        "name",
+        "description",
+        "image",
+        "startDate",
+        "endDate",
+        "duration",
+        "location",
+        "organizer",
+        "contributor",
+        "maximumAttendeeCapacity",
+        "maximumVirtualAttendeeCapacity",
+        "remainingAttendeeCapacity",
+        "eventStatus",
+        "subEvent",
+        "superEvent",
+        "activity",
+        "category",
+        "ageRange",
+        "genderRestriction",
+        "programme",
+        "attendeeInstructions",
+        "leader",
+        "accessibilitySupport",
+        "accessibilityInformation",
+        "isCoached",
+        "level",
+        "meetingPoint",
+        "isAccessibleForFree",
+        "offers",
+        "schedulingNote"
+      ]
+		},
+    "response": {
+      "requiredFields": [
+        "type",
+        "url",
+        "name",
+        "location",
+        "activity",
+        "startDate"
+      ],
+      "recommendedFields": [
+        "endDate",
+        "duration",
+        "ageRange",
+        "genderRestriction",
+        "eventStatus",
+        "maximumAttendeeCapacity",
+        "remainingAttendeeCapacity"
+      ],
+      "shallNotInclude": [
+        "organizer",
+        "offers",
+        "subEvent"
+      ]
+		}
+	},
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "HeadlineEvent"
+    }
+  }
+}

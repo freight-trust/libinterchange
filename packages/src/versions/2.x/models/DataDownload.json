@@ -1,0 +1,84 @@
+{
+  "type": "DataDownload",
+  "derivedFrom": "https://schema.org/DataDownload",
+  "hasId": false,
+  "requiredFields": [
+    "type",
+    "name",
+    "additionalType",
+    "encodingFormat",
+    "contentUrl"
+  ],
+  "inSpec": [
+    "type",
+    "name",
+    "additionalType",
+    "encodingFormat",
+    "contentUrl",
+    "identifier"
+  ],
+  "description": {
+    "sections": [
+      {
+        "title": "EARLY RELEASE NOTICE",
+        "paragraphs": [
+          "This class represents a draft that is designed to inform the OpenActive specification work with implementation feedback.",
+          "IT IS SUBJECT TO CHANGE, as the [Dataset API Discovery specification](https://openactive.io/dataset-api-discovery/EditorsDraft/) evolves."
+        ]
+      }
+    ]
+  },
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "DataDownload"
+    },
+    "identifier": {
+      "fieldName": "identifier",
+      "sameAs": "https://schema.org/identifier",
+      "requiredType": "https://schema.org/Text",
+      "example": "ScheduledSession",
+      "description": [
+        "A local non-URI identifier for the resource"
+      ]
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "SessionSeries",
+      "description": [
+        "The name of the type of feed"
+      ]
+    },
+    "additionalType": {
+      "fieldName": "additionalType",
+      "sameAs": "https://schema.org/additionalType",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://openactive.io/SessionSeries",
+      "description": [
+        "A fully qualified reference to the class that is at the root of the items in the RPDE feed."
+      ]
+    },
+    "encodingFormat": {
+      "fieldName": "encodingFormat",
+      "sameAs": "https://schema.org/encodingFormat",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "application/vnd.openactive.rpde+json; version=1",
+      "example": "application/vnd.openactive.rpde+json; version=1",
+      "description": [
+        "The version of RPDE that is used in the feed, specified via MIME type."
+      ]
+    },
+    "contentUrl": {
+      "fieldName": "contentUrl",
+      "sameAs": "https://schema.org/contentUrl",
+      "requiredType": "https://schema.org/URL",
+      "description": [
+        "The URL of the RPDE data feed."
+      ],
+      "example": "https://opendata.leisurecloud.live/api/feeds/fusion-lifestyle-fl-live-session-series"
+    }
+  }
+}

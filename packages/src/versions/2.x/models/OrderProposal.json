@@ -1,0 +1,171 @@
+{
+  "type": "OrderProposal",
+  "subClassOf": "#OrderQuote",
+  "sampleId": "https://example.com/OrderProposal/d45b31031ab6d80b",
+  "validationMode": {
+    "PRequest": "request",
+    "PResponse": "response",
+    "OrderProposalPatch": "patch",
+    "OrdersFeed": "ordersFeed"
+  },
+  "imperativeConfiguration": {
+    "request": {
+      "requiredFields": [
+        "type",
+        "seller",
+        "broker",
+        "brokerRole",
+        "customer",
+        "orderedItem",
+        "totalPaymentDue"
+      ],
+      "recommendedFields": [
+
+      ],
+      "shallNotInclude": [
+        "identifier",
+        "orderNumber",
+        "bookingService",
+        "totalPaymentTax",
+        "orderCreationStatus",
+        "orderProposalVersion",
+        "lease",
+        "orderProposalStatus"
+      ],
+      "requiredOptions": [
+
+      ]
+    },
+    "response": {
+      "requiredFields": [
+        "type",
+        "seller",
+        "broker",
+        "brokerRole",
+        "bookingService",
+        "orderedItem",
+        "totalPaymentDue",
+        "totalPaymentTax",
+        "orderProposalVersion",
+        "orderProposalStatus"
+      ],
+      "recommendedFields": [
+
+      ],
+      "shallNotInclude": [
+        "orderCreationStatus"
+      ],
+      "requiredOptions": [
+
+      ]
+    },
+    "ordersFeed": {
+      "requiredFields": [
+        "type",
+        "id",
+        "orderedItem",
+        "totalPaymentDue",
+        "orderProposalVersion",
+        "orderProposalStatus"
+      ],
+      "recommendedFields": [
+
+      ],
+      "shallNotInclude": [
+        "orderCreationStatus",
+        "broker",
+        "brokerRole",
+        "bookingService",
+        "customer",
+        "orderNumber",
+        "seller"
+      ]
+    },
+    "patch": {
+      "requiredFields": [
+        "type"
+      ],
+      "requiredOptions": [
+        {
+          "description": [
+            "The endpoint accepts a simple PATCH containing either or both of `orderProposalStatus` and `orderCustomerNote`."
+          ],
+          "options": [
+            "orderProposalStatus",
+            "orderCustomerNote"
+          ]
+        }
+      ],
+      "shallNotInclude": [
+        "id",
+        "identifier",
+        "seller",
+        "broker",
+        "brokerRole",
+        "orderNumber",
+        "customer",
+        "bookingService",
+        "orderedItem",
+        "totalPaymentDue",
+        "totalPaymentTax",
+        "taxCalculationExcluded",
+        "payment",
+        "orderProposalVersion",
+        "lease",
+        "orderSellerNote"
+      ]
+    }
+  },
+  "inSpec": [
+    "type",
+    "id",
+    "identifier",
+    "seller",
+    "broker",
+    "brokerRole",
+    "orderNumber",
+    "customer",
+    "bookingService",
+    "orderedItem",
+    "totalPaymentDue",
+    "totalPaymentTax",
+    "taxCalculationExcluded",
+    "payment",
+    "orderCreationStatus",
+    "orderProposalVersion",
+    "lease",
+    "orderRequiresApproval",
+    "orderProposalStatus",
+    "orderSellerNote",
+    "orderCustomerNote"
+  ],
+  "notInSpec": [
+		"orderRequiresApproval"
+	],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "OrderProposal"
+    },
+    "orderProposalStatus": {
+      "fieldName": "orderProposalStatus",
+      "requiredType": "https://openactive.io/OrderProposalStatus",
+      "description": [""],
+      "sameAs": "https://openactive.io/orderProposalStatus"
+    },
+    "orderSellerNote": {
+      "fieldName": "orderSellerNote",
+      "requiredType": "https://schema.org/Text",
+      "description": [""],
+      "sameAs": "https://openactive.io/orderSellerNote"
+    },
+    "orderCustomerNote": {
+      "fieldName": "orderCustomerNote",
+      "requiredType": "https://schema.org/Text",
+      "description": [""],
+      "sameAs": "https://openactive.io/orderCustomerNote"
+
+    }
+  }
+}

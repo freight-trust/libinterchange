@@ -1,0 +1,41 @@
+{
+  "type": "SellerMismatchError",
+  "subClassOf": "#OpenBookingError",
+  "description": {
+    "sections": [
+      {
+        "title": "Error Use Case",
+        "paragraphs": [
+          "At least one of the `OrderItem`s did not match the specified `seller`."
+        ]
+      }
+    ]
+  },
+  "fields": {
+    "type": {
+        "fieldName": "type",
+        "requiredContent": "SellerMismatchError",
+        "requiredType": "https://schema.org/Text"
+    },
+    "name": {
+      "description": [
+          "A short, human-readable summary of the problem type. It should not change from occurrence to occurrence of the problem, except for purposes of localization."
+      ],
+      "example": "At least one of the 'OrderItem's did not match the specified 'seller'.",
+      "defaultContent": "At least one of the 'OrderItem's did not match the specified 'seller'.",
+      "fieldName": "name",
+      "requiredType": "https://schema.org/Text",
+      "sameAs": "https://schema.org/name"
+    },
+    "statusCode": {
+      "fieldName": "statusCode",
+      "sameAs": "https://openactive.io/statusCode",
+      "requiredType": "https://schema.org/Integer",
+      "requiredContent": 500,
+      "defaultContent": 500,
+      "description": [
+        "An integer representing the HTTP status code."
+      ]
+    }
+  }
+}

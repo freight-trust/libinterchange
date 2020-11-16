@@ -1,0 +1,44 @@
+{
+   "type":"DropdownFormFieldSpecification",
+   "subClassOf":"#PropertyValueSpecification",
+    "hasId":false,
+    "requiredFields":[
+            "type",
+            "name",
+            "valueOption"
+         ],
+         "recommendedFields":[
+            "description"
+         ],
+         "shallNotInclude":[
+
+         ],
+         "requiredOptions":[
+
+         ],
+   "inSpec":[
+      "type",
+      "name",
+      "description",
+      "valueRequired",
+      "valueOption"
+   ],
+   "notInSpec":[
+
+   ],
+   "fields":{
+      "type":{
+         "fieldName":"type",
+         "requiredType":"https://schema.org/Text",
+         "requiredContent":"DropdownFormFieldSpecification"
+      },
+      "valueOption":{
+         "fieldName":"valueOption",
+         "requiredType":"ArrayOf#https://schema.org/Text",
+         "description":[
+            "Specifies an array of display values for the dropdown."
+         ],
+         "sameAs":"https://openactive.io/valueOption"
+      }
+   }
+}

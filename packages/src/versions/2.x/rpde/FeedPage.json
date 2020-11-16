@@ -1,0 +1,57 @@
+{
+  "type": "FeedPage",
+  "hasId": false,
+  "isJsonLd": false,
+  "requiredFields": [
+    "next",
+    "items",
+    "license"
+  ],
+  "validationMode": {
+		"OrdersFeed": "orderfeed"
+	},
+	"imperativeConfiguration": {
+    "orderfeed": {
+      "requiredFields": [
+        "next",
+        "items"
+      ],
+      "shallNotInclude": [
+        "license"
+      ]
+		}
+	},
+  "inSpec": [
+    "next",
+    "items",
+    "license"
+  ],
+  "fields": {
+    "items": {
+      "fieldName": "items",
+      "model": "ArrayOf#FeedItem",
+      "description": [
+        "An array of <item>. This should simply by empty [] if no results are returned. The items property being empty is not sufficient to indicate the last page."
+      ]
+    },
+    "license": {
+      "fieldName": "license",
+      "requiredType": "https://schema.org/url",
+      "alternativeTypes": [
+        "https://schema.org/Text"
+      ],
+      "description": [
+        "Reference to the license under which the data has been published. Any website that links to this endpoint should also include text such as \"This opportunity data is owned by My Company Ltd and is licensed under the Creative Commons Attribution Licence (CC-BY v4.0) for anyone to access, use and share.\"."
+      ],
+      "example": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "next": {
+      "fieldName": "next",
+      "requiredType": "https://schema.org/url",
+      "description": [
+        "The next URL is a precomputed URL to be called by the data consumer (System 2) to get the next page of data. The next URL must be calculated from the last item used to generate the current page, and use the current page's own URL if no items exist. Not all items in the current page may be visible in the case of filtering so the last item used may not be contained within items. The next URL must be an absolute URL. Note \"polling\" and \"paging\" are differentiated only by the duration between requests. Although an example endpoint path is provided (\"/api/rpde/sessions\"), it is outside the scope of this specification."
+      ],
+      "example": "http://www.example.com/api/rpde/sessions?afterTimestamp=<modified>&afterId=<id>"
+    }
+  }
+}

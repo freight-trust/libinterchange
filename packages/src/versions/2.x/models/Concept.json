@@ -1,0 +1,138 @@
+{
+  "type": "Concept",
+  "derivedFrom": "http://www.w3.org/2004/02/skos/core#Concept",
+  "hasId": true,
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://openactive.io/activity-list#a454c7e6-52da-426d-9bd1-743e9d7d266d",
+  "requiredFields": [
+    "type",
+    "id",
+    "prefLabel",
+    "inScheme"
+  ],
+  "shallNotInclude": [
+    "altLabel",
+    "hiddenLabel",
+    "broader",
+    "narrower",
+    "related",
+    "notation",
+    "definition",
+    "topConceptOf"
+  ],
+  "commonTypos": {
+    "identifier": "notation",
+    "name": "prefLabel"
+  },
+  "inSpec": [
+    "type",
+    "id",
+    "prefLabel",
+    "altLabel",
+    "hiddenLabel",
+    "inScheme",
+    "broader",
+    "narrower",
+    "related",
+    "notation",
+    "definition",
+    "topConceptOf"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Concept"
+    },
+    "altLabel": {
+      "fieldName": "altLabel",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#altLabel",
+      "requiredType": "ArrayOf#https://schema.org/Text",
+      "example": [ "Five a side" ],
+      "description": [
+        "An alternative human readable string for use in user interfaces."
+      ]
+    },
+    "hiddenLabel": {
+      "fieldName": "hiddenLabel",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#hiddenLabel",
+      "requiredType": "ArrayOf#https://schema.org/Text",
+      "example": [ "5-a-side" ],
+      "description": [
+        "An alternative human readable string used to drive autocomplete search matches, that is hidden from the user."
+      ]
+    },
+    "broader": {
+      "fieldName": "broader",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#broader",
+      "requiredType": "ArrayOf#https://schema.org/URL",
+      "example": [ "https://openactive.io/activity-list#6ca15167-51da-4d91-a1ae-8a45dc47b0ea" ],
+      "description": [
+        "A broader Concept URI"
+      ]
+    },
+    "related": {
+      "fieldName": "related",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#related",
+      "requiredType": "ArrayOf#https://schema.org/URL",
+      "example": [ "https://openactive.io/activity-list#5cdf5ead-e19d-4619-9585-cfe509c3fe52" ],
+      "description": [
+        "A related Concept URI"
+      ]
+    },
+    "inScheme": {
+      "fieldName": "inScheme",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://openactive.io/activity-list",
+      "description": [
+        "A stable URL reference for the taxonomy, which must be `https://openactive.io/activity-list` to reference the OpenActive Activity List."
+      ]
+    },
+    "narrower": {
+      "fieldName": "narrower",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#narrower",
+      "requiredType": "ArrayOf#https://schema.org/URL",
+      "example": [ "https://openactive.io/activity-list#b3829f3e-a63e-455f-a51c-1f50ecf85ad5" ],
+      "description": [
+        "A more specific concept URI"
+      ]
+    },
+    "notation": {
+      "fieldName": "notation",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#notation",
+      "requiredType": "https://schema.org/Text",
+      "example": "salsa",
+      "description": [
+        "A human-readable identifier for the concept."
+      ]
+    },
+    "prefLabel": {
+      "fieldName": "prefLabel",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "requiredType": "https://schema.org/Text",
+      "example": "Salsa",
+      "description": [
+        "A human readable string that minimally describes the Concept, for use in user interfaces."
+      ]
+    },
+    "definition": {
+      "fieldName": "definition",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#definition",
+      "requiredType": "https://schema.org/Text",
+      "example": "Latin American style of dance with Cuban origins.",
+      "description": [
+        "A human readable string that unambiguously defines the Concept, for use in user interfaces."
+      ]
+    },
+    "topConceptOf": {
+      "fieldName": "topConceptOf",
+      "sameAs": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://openactive.io/activity-list",
+      "description": [
+        "A reference to the Scheme URI, the existence of which indicates that this Concept is at the top level of the hierarchy."
+      ]
+    }
+  }
+}

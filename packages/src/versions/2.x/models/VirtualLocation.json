@@ -1,0 +1,60 @@
+{
+  "type": "VirtualLocation",
+  "derivedFrom": "https://pending.schema.org/VirtualLocation",
+  "hasId": false,
+  "requiredFields":[
+    "type"
+  ],
+  "requiredOptions": [
+    {
+      "description": [
+        "A data publisher must provide either a `name`, `description` or `url` for the `VirtualLocation`."
+      ],
+      "options": [
+        "name",
+        "description",
+        "url"
+      ]
+    }
+  ],
+  "inSpec": [
+    "type",
+    "name",
+    "description",
+    "url"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "VirtualLocation"
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Zoom Room",
+      "description": [
+        "The name of the livestream."
+      ]
+    },
+    "description": {
+      "fieldName": "description",
+      "sameAs": "https://schema.org/description",
+      "requiredType": "https://schema.org/Text",
+      "example": "Please log into Zoom a few minutes before the event, and mute your mic while you wait for the session to start.",
+      "description": [
+        "A plain text description of the live stream, including any instructions to join. This description must not include HTML or other markup."
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://zoom.us/room/3fbCs0GVjgQ",
+      "description": [
+        "The URL for the livestream."
+      ]
+    }
+  }
+}

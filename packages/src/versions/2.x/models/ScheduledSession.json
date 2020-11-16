@@ -1,0 +1,141 @@
+{
+  "type": "ScheduledSession",
+  "subClassOf": "#Event",
+  "notInSpec": [
+    "subEvent"
+  ],
+  "requiredFields": [
+    "type",
+    "startDate"
+  ],
+  "requiredOptions": [],
+  "recommendedFields": [
+    "id",
+    "eventStatus",
+    "leader",
+    "maximumAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "offers",
+    "url",
+    "endDate"
+  ],
+  "shallNotInclude": [
+    "eventSchedule"
+  ],
+  "validationMode": {
+    "C1Request": "request",
+    "C1Response": "response",
+    "C2Request": "request",
+    "C2Response": "response",
+    "PRequest": "request",
+    "PResponse": "response",
+    "BRequest": "request",
+    "BResponse": "response",
+    "OrdersFeed": "request",
+    "OrderStatus": "response",
+    "TestInterface": "testInterface"
+  },
+  "imperativeConfigurationWithContext": {},
+  "imperativeConfiguration": {
+    "testInterface": {
+      "requiredFields": [
+        "type"
+      ],
+      "requiredOptions": [
+        {
+          "description": [
+            "For a request, a `superEvent` must be included. For a response, an `@id` must be included."
+          ],
+          "options": [
+            "superEvent",
+            "id"
+          ],
+          "oneOf": true
+        }
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+      ]
+    },
+    "request": {
+      "requiredFields": [
+        "type",
+        "id"
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+        "identifier",
+        "url",
+        "name",
+        "description",
+        "image",
+        "startDate",
+        "endDate",
+        "duration",
+        "location",
+        "organizer",
+        "contributor",
+        "maximumAttendeeCapacity",
+        "maximumVirtualAttendeeCapacity",
+        "remainingAttendeeCapacity",
+        "eventStatus",
+        "subEvent",
+        "superEvent",
+        "activity",
+        "category",
+        "ageRange",
+        "genderRestriction",
+        "programme",
+        "attendeeInstructions",
+        "leader",
+        "accessibilitySupport",
+        "accessibilityInformation",
+        "isCoached",
+        "level",
+        "meetingPoint",
+        "isAccessibleForFree",
+        "offers",
+        "schedulingNote"
+      ]
+    },
+    "response": {
+      "requiredFields": [
+        "type",
+        "id",
+        "startDate",
+        "superEvent"
+      ],
+      "recommendedFields": [
+        "eventStatus",
+        "maximumAttendeeCapacity",
+        "remainingAttendeeCapacity"
+      ],
+      "shallNotInclude": [
+        "offers"
+      ]
+    }
+  },
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "ScheduledSession"
+    },
+    "superEvent": {
+      "fieldName": "superEvent",
+      "sameAs": "https://schema.org/superEvent",
+      "model": "#Event",
+      "alternativeTypes": [
+        "https://schema.org/URL"
+      ],
+      "description": [
+        "Relates a child event to a parent event. Properties describing the parent event can be assumed to apply to the child, unless otherwise specified. A parent event might specify a recurring schedule, of which the child event is one specific instance"
+      ],
+      "inheritsFrom": {
+        "exclude": ["id", "identifier", "subEvent", "superEvent", "url", "eventSchedule"]
+      }
+    }
+  }
+}

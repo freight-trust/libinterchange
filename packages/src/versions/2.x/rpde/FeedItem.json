@@ -1,0 +1,83 @@
+{
+  "type": "FeedItem",
+  "hasId": false,
+  "isJsonLd": false,
+  "requiredFields": [
+    "id",
+    "kind",
+    "modified",
+    "state"
+  ],
+  "inSpec": [
+    "data",
+    "id",
+    "kind",
+    "modified",
+    "state"
+  ],
+  "fields": {
+    "data": {
+      "fieldName": "data",
+      "model": "#Event",
+      "alternativeModels": [
+        "#FacilityUse"
+      ],
+      "description": [
+        "Note this property must not be included if state is \"deleted\"."
+      ]
+    },
+    "id": {
+      "fieldName": "id",
+      "description": [
+        "The id property is the unique identifier of the item. Two items must not share the same id. This specification does not prescribe any specific format."
+      ]
+    },
+    "kind": {
+      "fieldName": "kind",
+      "requiredType": "https://schema.org/Text",
+      "options": [
+        "SessionSeries",
+        "ScheduledSession",
+        "ScheduledSession.SessionSeries",
+        "SessionSeries.ScheduledSession",
+        "FacilityUse",
+        "IndividualFacilityUse",
+        "FacilityUse/Slot",
+        "IndividualFacilityUse/Slot",
+        "Course",
+        "CourseInstance",
+        "HeadlineEvent",
+        "Event",
+        "EventSeries",
+        "OnDemandEvent",
+        "Order"
+      ],
+      "description": [
+        "The kind property allows for the representation of different entity types, though where possible referenced entities should be embedded into the primary entity. Each entity type (kind) can be synchronised separately, this allows a decoupling of the sync logic from the data structure, and allows the data structure to be reassembled on the data consumer side (at System 2)."
+      ],
+      "example": "SessionSeries"
+    },
+    "modified": {
+      "fieldName": "modified",
+      "requiredType": "https://schema.org/Text",
+      "alternativeTypes": [
+        "https://schema.org/Integer"
+      ],
+      "description": [
+        "The modified property should contain either the modified timestamp or change number of the item, depending on the ordering strategy used. It must be appropriately comparable to itself as either a string or integer, representing a chronological ordering. It must always be updated when any data within <data> is updated, and such an update must set the value of the property to be greater than or equal to (>=) all existing modified values. It may be any format, but should be an integer where possible. Integer values must be represented as integers, not strings. The value of the modified property of the last item must be used in either the afterTimestamp or afterChangeNumber parameter of the \"next\" URL (though such an item may not be included in <items> if it is filtered out). The format of the modified property and the relevant URL parameter must be identical."
+      ]
+    },
+    "state": {
+      "fieldName": "state",
+      "requiredType": "https://schema.org/Text",
+      "options": [
+        "deleted",
+        "updated"
+      ],
+      "description": [
+        "The state property must be of value \"updated\" or value \"deleted\". Deleted items are included in the response with a \"deleted\" state, but no <data> associated."
+      ],
+      "example": "updated"
+    }
+  }
+}

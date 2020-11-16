@@ -1,0 +1,78 @@
+{
+	"type": "OfferOverride",
+	"subClassOf": "#Offer",
+	"hasId": true,
+	"idFormat": "https://schema.org/URL",
+	"sampleId": "https://example.com/offer/fc8f8c37e70ae50b",
+	"validationMode": {
+		"C1Request": "request",
+		"C1Response": "response",
+		"C2Request": "request",
+		"C2Response": "response",
+		"PRequest": "request",
+		"PResponse": "response",
+		"BRequest": "request",
+		"BResponse": "response",
+		"OrderProposalPatch": "request",
+		"OrderPatch": "request",
+		"OrdersFeed": "response",
+		"OrderStatus": "response"
+	},
+	"imperativeConfiguration": {
+		"request": {
+			"requiredFields": [
+				"id",
+				"type",
+				"price",
+				"priceCurrency"
+			],
+			"recommendedFields": [
+				"name"
+			]
+		},
+		"response": {
+			"requiredFields": [
+				"id",
+				"type",
+				"price",
+				"priceCurrency"
+			],
+			"recommendedFields": [
+				"name"
+			]
+		}
+	},
+	"inSpec": [
+		"id",
+		"type",
+		"price",
+		"priceCurrency",
+		"name",
+		"ageRange",
+		"advanceBooking",
+		"acceptedPaymentMethod",
+		"prepayment",
+		"availableChannel",
+		"validFromBeforeStartDate",
+		"latestCancellationBeforeStartDate",
+		"openBookingFlowRequirement",
+		"identifier",
+		"description",
+		"url"
+	],
+	"notInSpec": [
+		"availableChannel",
+		"advanceBooking",
+		"prepayment",
+		"ageRange",
+		"validFromBeforeStartDate",
+		"latestCancellationBeforeStartDate"
+	],
+	"fields": {
+		"type": {
+			"fieldName": "type",
+			"requiredType": "https://schema.org/Text",
+			"requiredContent": "OfferOverride"
+		}
+	}
+}

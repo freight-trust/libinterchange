@@ -1,0 +1,116 @@
+{
+  "type": "OnDemandEvent",
+  "subClassOf": "#Event",
+  "derivedFrom": "https://schema.org/OnDemandEvent",
+  "requiredFields": [
+    "type",
+    "name",
+    "activity",
+    "organizer",
+    "offers",
+    "url"
+  ],
+  "requiredOptions": [
+  ],
+  "recommendedFields": [
+    "duration",
+    "description",
+    "image",
+    "level",
+    "ageRange",
+    "genderRestriction",
+    "workFeatured"
+  ],
+  "inSpec": [
+    "id",
+    "type",
+    "identifier",
+    "url",
+    "name",
+    "description",
+    "image",
+    "startDate",
+    "endDate",
+    "duration",
+    "location",
+    "organizer",
+    "contributor",
+    "maximumAttendeeCapacity",
+    "maximumVirtualAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "eventStatus",
+    "subEvent",
+    "superEvent",
+    "activity",
+    "category",
+    "ageRange",
+    "genderRestriction",
+    "programme",
+    "attendeeInstructions",
+    "leader",
+    "accessibilitySupport",
+    "accessibilityInformation",
+    "isCoached",
+    "level",
+    "meetingPoint",
+    "isAccessibleForFree",
+    "offers",
+    "schedulingNote",
+    "eventAttendanceMode",
+    "workFeatured"
+  ],
+  "notInSpec": [
+    "subEvent",
+    "schedulingNote",
+    "maximumAttendeeCapacity",
+    "maximumVirtualAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "location",
+    "startDate",
+    "endDate",
+    "eventAttendanceMode",
+    "eventStatus",
+    "meetingPoint"
+  ],
+  "shallNotInclude": [
+    "eventSchedule"
+  ],
+  "imperativeConfigurationWithContext": {},
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "OnDemandEvent"
+    },
+    "superEvent": {
+      "fieldName": "superEvent",
+      "sameAs": "https://schema.org/superEvent",
+      "model": "#Event",
+      "description": [
+        "Relates an `OnDemandEvent` to an `EventSeries`."
+      ],
+      "inheritsFrom": {
+        "exclude": ["id", "identifier", "subEvent", "superEvent", "offers"]
+      }
+    },
+    "workFeatured": {
+      "fieldName": "workFeatured",
+      "sameAs": "https://schema.org/workFeatured",
+      "model": "#MediaObject",
+      "description": [
+        "A video, audio or other media that represents the actual recording of the `OnDemandEvent`."
+      ],
+      "example": {
+        "@type": "VideoObject",
+        "url": "https://www.youtube.com/watch?v=3fbCs0GVjgQ",
+        "embedUrl": "https://www.youtube.com/embed/3fbCs0GVjgQ",
+        "thumbnail":[
+          {
+            "@type": "ImageObject",
+            "url": "http://example.com/static/image/speedball_thumbnail.jpg"
+          }
+        ]
+      }
+    }
+  }
+}

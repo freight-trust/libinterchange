@@ -1,0 +1,70 @@
+{
+   "type":"BookingService",
+   "subClassOf":"https://schema.org/Service",
+   "validationMode": {
+ 		"C1Request": "request",
+ 		"C1Response": "response",
+ 		"C2Request": "request",
+ 		"C2Response": "response",
+ 		"PRequest": "request",
+ 		"PResponse": "response",
+ 		"BRequest": "request",
+ 		"BResponse": "response",
+ 		"OrderProposalPatch": "request",
+ 		"OrderPatch": "request"
+ 	},
+ 	"imperativeConfiguration": {
+ 		"request": {
+ 			"requiredFields": [],
+ 			"recommendedFields": []
+ 		},
+ 		"response": {
+ 			"requiredFields": [
+            "type",
+            "name"
+ 			],
+ 			"recommendedFields": []
+ 		}
+ 	},
+   "inSpec":[
+      "type",
+      "name",
+      "url",
+      "termsOfService",
+      "softwareVersion"
+   ],
+   "notInSpec":[],
+   "fields":{
+      "type":{
+         "fieldName":"type",
+         "requiredType":"https://schema.org/Text",
+         "requiredContent":"BookingService"
+      },
+      "name":{
+         "fieldName":"name",
+         "requiredType":"https://schema.org/Text",
+         "sameAs": "https://schema.org/name",
+         "description": ["The name of the Booking System."]
+      },
+      "url":{
+         "fieldName":"url",
+         "requiredType":"https://schema.org/URL",
+         "sameAs": "https://schema.org/url",
+         "description": ["The URL of the website of the Booking System."]
+      },
+      "termsOfService":{
+         "fieldName":"termsOfService",
+         "sameAs": "https://pending.schema.org/termsOfService",
+         "model": "ArrayOf#Terms",
+         "description": ["The terms of service of the Booking System."]
+      },
+      "softwareVersion": {	
+         "fieldName": "softwareVersion",	
+         "sameAs": "https://schema.org/softwareVersion",	
+         "requiredType": "https://schema.org/Text",	
+         "description": [	
+           "The version of the application, useful for on-premise installations. Note this property is in EARLY RELEASE AND IS SUBJECT TO CHANGE, as the [Dataset API Discovery specification](https://openactive.io/dataset-api-discovery/EditorsDraft/) evolves."	
+         ]
+       }
+   }
+}

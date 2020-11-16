@@ -1,0 +1,32 @@
+{
+   "type":"ParagraphFormFieldSpecification",
+   "subClassOf":"#PropertyValueSpecification",
+    "hasId":false,
+    "requiredFields":[
+            "type",
+            "name"
+    ],
+    "recommendedFields":[
+            "description"
+         ],
+    "shallNotInclude":[
+
+         ],
+    "requiredOptions":[],
+   "inSpec":[
+      "type",
+      "name",
+      "description",
+      "valueRequired"
+   ],
+   "notInSpec":[
+
+   ],
+   "fields":{
+      "type":{
+         "fieldName":"type",
+         "requiredType":"https://schema.org/Text",
+         "requiredContent":"ParagraphFormFieldSpecification"
+      }
+   }
+}

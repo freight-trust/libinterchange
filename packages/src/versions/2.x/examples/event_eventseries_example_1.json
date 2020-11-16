@@ -1,0 +1,136 @@
+{
+  "next": "https://www.example.org/feeds/events?afterTimestamp=1558084806&afterId=151176",
+  "items": [
+    {
+      "state": "updated",
+      "kind": "Event",
+      "id": 151175,
+      "modified": 1558084800,
+      "data": {
+        "@context": [
+          "https://openactive.io/",
+          "https://openactive.io/ns-beta"
+        ],
+        "@type": "Event",
+        "superEvent": {
+          "@type": "EventSeries",
+          "@id": "https://opensessions.io/api/event-series/123456",
+          "identifier": 123456,
+          "name": "Alan's social ride group Gorhambury House loop",
+          "description": "Leaving Watford heading towards North Watford Woodside Abbots Langley Bedmond gorhambury house St Albans Chiswell Green Bricket Wood then back to Watford check out the map for the exact route This is a British Cycling risk Assessed routeContact telephone number 07472 044502",
+          "activity": [
+            {
+              "@id": "https://openactive.io/activity-list#2a41c553-84be-4970-b3d0-42f9ef6bd9a4",
+              "prefLabel": "Road Cycling",
+              "@type": "Concept",
+              "inScheme": "https://openactive.io/activity-list"
+            }
+          ],
+          "genderRestriction": "https://openactive.io/NoRestriction",
+          "isCoached": true,
+          "ageRange": {
+            "@type": "QuantitativeValue",
+            "minValue": 16
+          },
+          "level": [
+            "Beginner"
+          ],
+          "image": [
+            {
+              "@type": "ImageObject",
+              "url": "https://media.letsride.co.uk/image/c0f83af33c8ccd598bc4baebabb574f4"
+            }
+          ],
+          "organizer": {
+            "@type": "Organization",
+            "@id": "https://id.bookingsystem.example.com/organizers/1",
+            "identifier": "steady-pace-group",
+            "url": "https://www.letsride.co.uk/groups/steady-pace-group",
+            "name": "Alan's social ride group",
+            "description": "My name is Alan I'm creating this group for those people who would like to ride during the week and weekends at a Easygoing steady and fast-paced",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://media.letsride.co.uk/image/85ba237fe836645a642ae4d7f7e93bfe"
+            }
+          }
+        },
+        "identifier": 158313,
+        "url": "https://www.letsride.co.uk/rides/gorhambury-house-loop",
+        "startDate": "2019-08-25T10:00:00+01:00",
+        "endDate": "2019-08-25T12:40:00+01:00",
+        "duration": "PT2H40M0S",
+        "maximumAttendeeCapacity": 30,
+        "remainingAttendeeCapacity": 21,
+        "location": {
+          "@type": "Place",
+          "url": "https://www.everyoneactive.com/centres/Middlesbrough-Sports-Village",
+          "name": "Middlesbrough Sports Village",
+          "description": "You can enjoy a huge range of different sports and activities at Middlesbrough Sports Village. There’s a state-of-the-art gym, a full programme of group exercise classes, indoor badminton sessions and a soft play area for kids. Outside, the Village boasts a full range of athletics facilities, including an eight-lane 400m track, a 10-lane 100m track, as well as four long jump pits. There’s also high jump, hammer throwing, javelin and pole vaulting facilities. The latest addition to the facility is a £1.6m, 250m velodrome, alongside five all-weather outdoor pitches and a skate park for BMX bikes, scooters and inline skaters.",
+          "identifier": "0140",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Alan Peacock Way",
+            "addressLocality": "Village East",
+            "addressRegion": "Middlesbrough",
+            "postalCode": "TS4 3AE",
+            "addressCountry": "GB"
+          },
+          "telephone": "01642 728555",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 54.543964,
+            "longitude": -1.20978500000001
+          },
+          "image": [
+            {
+              "@type": "ImageObject",
+              "url": "https://s3-eu-west-2.amazonaws.com/prod-everyoneactive-wp/wp-content/uploads/2018/04/13112215/Acton_HeaderBanner.png"
+            }
+          ],
+          "amenityFeature": [
+            {
+              "name": "Changing Facilities",
+              "value": true,
+              "@type": "ChangingFacilities"
+            },
+            {
+              "name": "Showers",
+              "value": false,
+              "@type": "Showers"
+            },
+            {
+              "name": "Lockers",
+              "value": true,
+              "@type": "Lockers"
+            },
+            {
+              "name": "Towels",
+              "value": false,
+              "@type": "Towels"
+            },
+            {
+              "name": "Creche",
+              "value": false,
+              "@type": "Creche"
+            },
+            {
+              "name": "Parking",
+              "value": true,
+              "@type": "Parking"
+            }
+          ]
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "url": "https://www.letsride.co.uk/rides/gorhambury-house-loop/book",
+            "price": 0
+          }
+        ],
+        "isAccessibleForFree": true,
+        "meetingPoint": "Gandhi courts car park of Raphael Drive Watford there are no parking restrictions in the car parks"
+      }
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}

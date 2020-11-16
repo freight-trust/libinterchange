@@ -25,7 +25,7 @@ const getPrefixForType = (basePath, metaData, type) => {
 const generateGraph = (version, metaData, enums) => {
   const specVersion = deriveVersion(version);
   const extraData = {
-    '@id': metaData.namespaces[metaData.openActivePrefix],
+    '@id': metaData.namespaces[metaData.openEDIPrefix],
     'dc:date': (new Date()).toISOString().replace(/T.*$/, ''),
     'owl:versionInfo': '#',
   };
@@ -41,7 +41,7 @@ const generateGraph = (version, metaData, enums) => {
       if (enumObj.namespace === metaData.contextUrl) {
         oaEnums.push(`${metaData.contextUrl}${enumKey}`);
         propsAndClasses.rdfs_classes.push({
-          '@id': `${metaData.openActivePrefix}:${enumKey}`,
+          '@id': `${metaData.openEDIPrefix}:${enumKey}`,
           '@type': 'rdfs:Class',
           'rdfs:label': {
             en: enumKey,
@@ -52,7 +52,7 @@ const generateGraph = (version, metaData, enums) => {
         });
         for (const enumValue of enumObj.values) {
           propsAndClasses.rdfs_classes.push({
-            '@id': `${metaData.openActivePrefix}:${enumValue}`,
+            '@id': `${metaData.openEDIPrefix}:${enumValue}`,
             '@type': 'rdfs:Class',
             'rdfs:label': {
               en: enumValue,
@@ -60,7 +60,7 @@ const generateGraph = (version, metaData, enums) => {
             'rdfs:comment': {
               en: `Enumerated value of ${enumKey}`,
             },
-            'rdfs:subClassOf': `${metaData.openActivePrefix}:${enumKey}`,
+            'rdfs:subClassOf': `${metaData.openEDIPrefix}:${enumKey}`,
           });
         }
       }
@@ -75,7 +75,7 @@ const generateGraph = (version, metaData, enums) => {
     const data = fs.readFileSync(jsonPath, 'utf8');
     const model = JSON.parse(data);
 
-    let modelPrefix = metaData.openActivePrefix;
+    let modelPrefix = metaData.openEDIPrefix;
     const hasModelDerivedFrom = typeof model.derivedFrom !== 'undefined' && model.derivedFrom !== null;
     if (hasModelDerivedFrom) {
       modelPrefix = derivePrefix(model.derivedFrom, metaData.namespaces) || modelPrefix;
@@ -84,7 +84,7 @@ const generateGraph = (version, metaData, enums) => {
       ? model.derivedFrom.replace(metaData.namespaces[modelPrefix], '')
       : model.type;
     if (modelPrefix !== metaData.defaultPrefix) {
-      if (modelPrefix === metaData.openActivePrefix) {
+      if (modelPrefix === metaData.openEDIPrefix) {
         const rdfsClass = {
           '@id': `${modelPrefix}:${modelDerivedFromName}`,
           '@type': 'rdfs:Class',
@@ -96,7 +96,7 @@ const generateGraph = (version, metaData, enums) => {
           },
         };
         if (typeof model.subClassOf !== 'undefined') {
-          let subClassNamespace = derivePrefix(model.subClassOf, metaData.namespaces) || metaData.openActivePrefix;
+          let subClassNamespace = derivePrefix(model.subClassOf, metaData.namespaces) || metaData.openEDIPrefix;
           const subClassName = model.subClassOf.replace(/^#/, '').replace(metaData.namespaces[subClassNamespace], '');
           // We should check whether the parent of this is derived from elsewhere
           if (model.subClassOf.match(/^#/)) {
@@ -123,7 +123,7 @@ const generateGraph = (version, metaData, enums) => {
           const fieldSameAsName = hasFieldSameAs
             ? field.sameAs.replace(metaData.namespaces[fieldPrefix], '')
             : fieldName;
-          if (fieldPrefix === metaData.openActivePrefix) {
+          if (fieldPrefix === metaData.openEDIPrefix) {
             // Find an existing property
             const found = propsAndClasses.rdfs_properties.filter(
               value => value['@id'] === `${fieldPrefix}:${fieldSameAsName}`,
@@ -151,12 +151,12 @@ const generateGraph = (version, metaData, enums) => {
             if (types.length > 0) {
               for (const type of types) {
                 if (type.match(/^[A-Za-z]+$/)) {
-                  const typePrefix = getPrefixForType(basePath, metaData, type) || metaData.openActivePrefix;
+                  const typePrefix = getPrefixForType(basePath, metaData, type) || metaData.openEDIPrefix;
                   range.push(`${typePrefix}:${type}`);
                 } else if (oaEnums.indexOf(type) >= 0) {
-                  range.push(`${metaData.openActivePrefix}:${type.replace(metaData.contextUrl, '')}`);
+                  range.push(`${metaData.openEDIPrefix}:${type.replace(metaData.contextUrl, '')}`);
                 } else {
-                  const typePrefix = derivePrefix(type, metaData.namespaces) || metaData.openActivePrefix;
+                  const typePrefix = derivePrefix(type, metaData.namespaces) || metaData.openEDIPrefix;
                   const typeName = type.replace(/^#/, '').replace(metaData.namespaces[typePrefix], '');
                   range.push(`${typePrefix}:${typeName}`);
                 }

@@ -681,7 +681,7 @@ describe('models', () => {
           if (typeof model.isJsonLd !== 'undefined' && model.isJsonLd === false) {
             return;
           }
-          let modelPrefix = metaData.openActivePrefix;
+          let modelPrefix = metaData.openEDIPrefix;
           const hasModelDerivedFrom = typeof model.derivedFrom !== 'undefined' && model.derivedFrom !== null;
           if (hasModelDerivedFrom) {
             modelPrefix = derivePrefix(model.derivedFrom, metaData.namespaces) || modelPrefix;

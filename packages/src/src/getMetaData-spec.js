@@ -9,12 +9,12 @@ describe('getMetaData', () => {
   it('should return valid metaData as JSON', () => {
     const metaData = getMetaData('2.0');
     expect(typeof metaData).toBe('object');
-    expect(metaData.openActivePrefix).toBe('oa');
+    expect(metaData.openEDIPrefix).toBe('oa');
   });
 
   it('should return valid metaData as JSON with a version alias', () => {
     const metaData = getMetaData('latest');
     expect(typeof metaData).toBe('object');
-    expect(metaData.openActivePrefix).toBe('oa');
+    expect(metaData.openEDIPrefix).toBe('oa');
   });
 });

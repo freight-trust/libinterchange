@@ -95,7 +95,7 @@ Returns the meta data relating to the specification version supplied.
 The meta data should contain the following keys:
 
 * **defaultPrefix** - The default prefix that is used in the `@vocab` field of the OpenActive JSON-LD definition.
-* **openActivePrefix** - The prefix used for OpenActive fields
+* **openEDIPrefix** - The prefix used for OpenActive fields
 * **contextUrl** - The URL that the JSON context of this specification is published at
 * **specUrl** - The URL that the human-readable version of this specification is published at
 * **defaultActivityLists** - An array of activity list URLs that accompany this spec
@@ -114,7 +114,7 @@ const metaData = getMetaData('2.0');
 
 // {
 //   "defaultPrefix": "schema",
-//   "openActivePrefix": "oa",
+//   "openEDIPrefix": "oa",
 //   "contextUrl": "https://openactive.io/",
 //   "specUrl": "https://openactive.io/modelling-opportunity-data/EditorsDraft/",
 //   "defaultActivityLists": [

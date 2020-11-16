@@ -26,7 +26,7 @@ const generateContext = (version, metaData, enums) => {
     const data = fs.readFileSync(jsonPath, 'utf8');
     const model = JSON.parse(data);
 
-    let modelPrefix = metaData.openActivePrefix;
+    let modelPrefix = metaData.openEDIPrefix;
     const hasModelDerivedFrom = typeof model.derivedFrom !== 'undefined' && model.derivedFrom !== null;
     if (hasModelDerivedFrom) {
       modelPrefix = derivePrefix(model.derivedFrom, metaData.namespaces) || modelPrefix;
@@ -35,7 +35,7 @@ const generateContext = (version, metaData, enums) => {
       const modelDerivedFromName = hasModelDerivedFrom
         ? model.derivedFrom.replace(metaData.namespaces[modelPrefix], '')
         : model.type;
-      if (modelPrefix === metaData.openActivePrefix) {
+      if (modelPrefix === metaData.openEDIPrefix) {
         newModels[model.type] = `${modelPrefix}:${modelDerivedFromName}`;
       } else {
         existing[model.type] = `${modelPrefix}:${modelDerivedFromName}`;
@@ -58,7 +58,7 @@ const generateContext = (version, metaData, enums) => {
           const fieldSameAsName = hasFieldSameAs
             ? field.sameAs.replace(metaData.namespaces[fieldPrefix], '')
             : fieldName;
-          if (fieldPrefix === metaData.openActivePrefix) {
+          if (fieldPrefix === metaData.openEDIPrefix) {
             newFields[fieldName] = {
               '@id': `${fieldPrefix}:${fieldSameAsName}`,
             };
@@ -77,9 +77,9 @@ const generateContext = (version, metaData, enums) => {
       if (Object.prototype.hasOwnProperty.call(enums, enumKey)) {
         const enumObj = enums[enumKey];
         if (enumObj.namespace === metaData.contextUrl) {
-          newModels[enumKey] = `${metaData.openActivePrefix}:${enumKey}`;
+          newModels[enumKey] = `${metaData.openEDIPrefix}:${enumKey}`;
           for (const enumValue of enumObj.values) {
-            newModels[enumValue] = `${metaData.openActivePrefix}:${enumValue}`;
+            newModels[enumValue] = `${metaData.openEDIPrefix}:${enumValue}`;
           }
         }
       }

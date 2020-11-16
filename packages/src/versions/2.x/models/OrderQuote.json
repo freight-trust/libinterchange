@@ -132,13 +132,13 @@
     },
     "lease": {
       "fieldName": "lease",
-      "sameAs": "https://openactive.io/lease",
+      "sameAs": "https://openedi.org/lease",
       "model": "#Lease",
       "description": ["The Lease on the OrderItems which lasts for the duration specified by the Booking System."]
     },
     "orderRequiresApproval": {
       "fieldName": "orderRequiresApproval",
-      "sameAs": "https://openactive.io/orderRequiresApproval",
+      "sameAs": "https://openedi.org/orderRequiresApproval",
       "requiredType": "https://schema.org/Boolean",
       "description": ["Whether the Booking Flow with Approval must be used to book the set of OrderItems included. must be true if any of the OrderItems require approval."]
     }

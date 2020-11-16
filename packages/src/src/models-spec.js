@@ -147,8 +147,8 @@ describe('models', () => {
               if (!result.pass) {
                 result.message = `${typeRef} is not a valid SKOS type reference`;
               }
-            } else if (typeId.match(/^https:\/\/openactive.io/)) {
-              const typeName = typeId.replace(/^https:\/\/openactive.io\//, '');
+            } else if (typeId.match(/^https:\/\/openedi.org/)) {
+              const typeName = typeId.replace(/^https:\/\/openedi.org\//, '');
               const enums = getEnums(version);
               result.pass = Object.prototype.hasOwnProperty.call(enums, typeName) || modelExists(typeName);
               if (!result.pass) {
@@ -206,8 +206,8 @@ describe('models', () => {
               if (!result.pass) {
                 result.message = `${typeRef} is not an accurate DCAT v2 reference for ${field}`;
               }
-            } else if (typeId.match(/^https:\/\/openactive.io/)) {
-              const expectedId = `https://openactive.io/${field}`;
+            } else if (typeId.match(/^https:\/\/openedi.org/)) {
+              const expectedId = `https://openedi.org/${field}`;
               result.pass = expectedId === typeId;
               if (!result.pass) {
                 result.message = `${typeRef} is not a valid OpenActive reference for ${field}`;

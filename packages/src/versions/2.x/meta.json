@@ -1,16 +1,16 @@
 {
   "defaultPrefix": "schema",
   "openEDIPrefix": "oa",
-  "contextUrl": "https://openactive.io/",
-  "specUrl": "https://openactive.io/modelling-opportunity-data/",
+  "contextUrl": "https://openedi.org/",
+  "specUrl": "https://openedi.org/modelling-opportunity-data/",
   "defaultActivityLists": [
-    "https://openactive.io/activity-list"
+    "https://openedi.org/activity-list"
   ],
   "opportunityTypes": [
     {
       "identifier": "SessionSeries",
       "name": "SessionSeries",
-      "sameAs": "https://openactive.io/SessionSeries",
+      "sameAs": "https://openedi.org/SessionSeries",
       "parent": "EventSeries",
       "defaultFeedPath": "/session-series",
       "themeDisplayName": "Sessions",
@@ -19,7 +19,7 @@
     {
       "identifier": "ScheduledSession",
       "name": "ScheduledSession",
-      "sameAs": "https://openactive.io/ScheduledSession",
+      "sameAs": "https://openedi.org/ScheduledSession",
       "parent": "SessionSeries",
       "defaultFeedPath": "/scheduled-sessions",
       "themeDisplayName": "Sessions",
@@ -28,7 +28,7 @@
     {
       "identifier": "FacilityUse",
       "name": "FacilityUse",
-      "sameAs": "https://openactive.io/FacilityUse",
+      "sameAs": "https://openedi.org/FacilityUse",
       "defaultFeedPath": "/facility-uses",
       "themeDisplayName": "Facilities",
       "bookable": false
@@ -36,7 +36,7 @@
     {
       "identifier": "IndividualFacilityUse",
       "name": "IndividualFacilityUse",
-      "sameAs": "https://openactive.io/IndividualFacilityUse",
+      "sameAs": "https://openedi.org/IndividualFacilityUse",
       "defaultFeedPath": "/individual-facility-uses",
       "themeDisplayName": "Facilities",
       "bookable": false
@@ -44,7 +44,7 @@
     {
       "identifier": "FacilityUseSlot",
       "name": "Slot for FacilityUse",
-      "sameAs": "https://openactive.io/Slot",
+      "sameAs": "https://openedi.org/Slot",
       "parent": "FacilityUse",
       "defaultFeedPath": "/facility-use-slots",
       "themeDisplayName": "Facilities",
@@ -53,7 +53,7 @@
     {
       "identifier": "IndividualFacilityUseSlot",
       "name": "Slot for IndividualFacilityUse",
-      "sameAs": "https://openactive.io/Slot",
+      "sameAs": "https://openedi.org/Slot",
       "parent": "IndividualFacilityUse",
       "defaultFeedPath": "/individual-facility-use-slots",
       "themeDisplayName": "Facilities",
@@ -88,7 +88,7 @@
     {
       "identifier": "HeadlineEvent",
       "name": "HeadlineEvent",
-      "sameAs": "https://openactive.io/HeadlineEvent",
+      "sameAs": "https://openedi.org/HeadlineEvent",
       "parent": "EventSeries",
       "defaultFeedPath": "/headline-events",
       "themeDisplayName": "Headline Events",
@@ -226,7 +226,7 @@
     "id": "@id"
   },
   "namespaces": {
-    "oa": "https://openactive.io/",
+    "oa": "https://openedi.org/",
     "dc": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "owl": "http://www.w3.org/2002/07/owl#",

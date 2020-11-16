@@ -80,7 +80,7 @@
     },
     "accessibilityInformation": {
       "fieldName": "accessibilityInformation",
-      "sameAs": "https://openactive.io/accessibilityInformation",
+      "sameAs": "https://openedi.org/accessibilityInformation",
       "requiredType": "https://schema.org/Text",
       "description": [
         "Provide additional, specific documentation for participants about how disabilities are, or can be supported at the Event."
@@ -89,7 +89,7 @@
     },
     "accessibilitySupport": {
       "fieldName": "accessibilitySupport",
-      "sameAs": "https://openactive.io/accessibilitySupport",
+      "sameAs": "https://openedi.org/accessibilitySupport",
       "model": "ArrayOf#Concept",
       "description": [
         "Used to specify the types of disabilities or impairments that are supported at an event."
@@ -97,15 +97,15 @@
       "example": [
         {
           "@type": "Concept",
-          "@id": "https://openactive.io/accessibility-support#1393f2dc-3fcc-4be9-a99f-f1e51f5ad277",
+          "@id": "https://openedi.org/accessibility-support#1393f2dc-3fcc-4be9-a99f-f1e51f5ad277",
           "prefLabel": "Visual impairment",
-          "inScheme": "https://openactive.io/accessibility-support"
+          "inScheme": "https://openedi.org/accessibility-support"
         }
       ]
     },
     "activity": {
       "fieldName": "activity",
-      "sameAs": "https://openactive.io/activity",
+      "sameAs": "https://openedi.org/activity",
       "model": "ArrayOf#Concept",
       "description": [
         "Specifies the physical activity or activities that will take place during a facility use."
@@ -113,15 +113,15 @@
       "example": [
         {
           "@type": "Concept",
-          "@id": "https://openactive.io/activity-list#c0360db0-a817-4bae-9167-40f89b49fc9e",
+          "@id": "https://openedi.org/activity-list#c0360db0-a817-4bae-9167-40f89b49fc9e",
           "prefLabel": "Badminton",
-          "inScheme": "https://openactive.io/activity-list"
+          "inScheme": "https://openedi.org/activity-list"
         }
       ]
     },
     "attendeeInstructions": {
       "fieldName": "attendeeInstructions",
-      "sameAs": "https://openactive.io/attendeeInstructions",
+      "sameAs": "https://openedi.org/attendeeInstructions",
       "requiredType": "https://schema.org/Text",
       "description": [
         "Provides additional notes and instructions for users of a facility, for example more information on how to find it, what to bring, etc. The value of this property must not include HTML or other markup."
@@ -212,7 +212,7 @@
     },
     "individualFacilityUse": {
       "fieldName": "individualFacilityUse",
-      "sameAs": "https://openactive.io/individualFacilityUse",
+      "sameAs": "https://openedi.org/individualFacilityUse",
       "model": "ArrayOf#IndividualFacilityUse",
       "description": [
         "Inverse of the oa:aggregateFacilityUse property. Relates a oa:FacilityUse (e.g. an opportunity to play tennis at a specific location) to an oa:IndividualFacilityUse (e.g. an opportunity to play tennis on a specific court)."

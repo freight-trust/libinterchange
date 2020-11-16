@@ -3,7 +3,7 @@
   "derivedFrom": "http://www.w3.org/2004/02/skos/core#Concept",
   "hasId": true,
   "idFormat": "https://schema.org/URL",
-  "sampleId": "https://openactive.io/activity-list#a454c7e6-52da-426d-9bd1-743e9d7d266d",
+  "sampleId": "https://openedi.org/activity-list#a454c7e6-52da-426d-9bd1-743e9d7d266d",
   "requiredFields": [
     "type",
     "id",
@@ -66,7 +66,7 @@
       "fieldName": "broader",
       "sameAs": "http://www.w3.org/2004/02/skos/core#broader",
       "requiredType": "ArrayOf#https://schema.org/URL",
-      "example": [ "https://openactive.io/activity-list#6ca15167-51da-4d91-a1ae-8a45dc47b0ea" ],
+      "example": [ "https://openedi.org/activity-list#6ca15167-51da-4d91-a1ae-8a45dc47b0ea" ],
       "description": [
         "A broader Concept URI"
       ]
@@ -75,7 +75,7 @@
       "fieldName": "related",
       "sameAs": "http://www.w3.org/2004/02/skos/core#related",
       "requiredType": "ArrayOf#https://schema.org/URL",
-      "example": [ "https://openactive.io/activity-list#5cdf5ead-e19d-4619-9585-cfe509c3fe52" ],
+      "example": [ "https://openedi.org/activity-list#5cdf5ead-e19d-4619-9585-cfe509c3fe52" ],
       "description": [
         "A related Concept URI"
       ]
@@ -84,16 +84,16 @@
       "fieldName": "inScheme",
       "sameAs": "http://www.w3.org/2004/02/skos/core#inScheme",
       "requiredType": "https://schema.org/URL",
-      "example": "https://openactive.io/activity-list",
+      "example": "https://openedi.org/activity-list",
       "description": [
-        "A stable URL reference for the taxonomy, which must be `https://openactive.io/activity-list` to reference the OpenActive Activity List."
+        "A stable URL reference for the taxonomy, which must be `https://openedi.org/activity-list` to reference the OpenActive Activity List."
       ]
     },
     "narrower": {
       "fieldName": "narrower",
       "sameAs": "http://www.w3.org/2004/02/skos/core#narrower",
       "requiredType": "ArrayOf#https://schema.org/URL",
-      "example": [ "https://openactive.io/activity-list#b3829f3e-a63e-455f-a51c-1f50ecf85ad5" ],
+      "example": [ "https://openedi.org/activity-list#b3829f3e-a63e-455f-a51c-1f50ecf85ad5" ],
       "description": [
         "A more specific concept URI"
       ]
@@ -129,7 +129,7 @@
       "fieldName": "topConceptOf",
       "sameAs": "http://www.w3.org/2004/02/skos/core#topConceptOf",
       "requiredType": "https://schema.org/URL",
-      "example": "https://openactive.io/activity-list",
+      "example": "https://openedi.org/activity-list",
       "description": [
         "A reference to the Scheme URI, the existence of which indicates that this Concept is at the top level of the hierarchy."
       ]

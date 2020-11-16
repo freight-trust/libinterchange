@@ -50,7 +50,7 @@
         "title": "EARLY RELEASE NOTICE",
         "paragraphs": [
           "This class represents a draft that is designed to inform the OpenActive specification work with implementation feedback. It is mostly stable, as it based almost entirely on schema.org.",
-          "HOWEVER, IT IS STILL SUBJECT TO CHANGE, as the [Dataset API Discovery specification](https://openactive.io/dataset-api-discovery/EditorsDraft/) evolves."
+          "HOWEVER, IT IS STILL SUBJECT TO CHANGE, as the [Dataset API Discovery specification](https://openedi.org/dataset-api-discovery/EditorsDraft/) evolves."
         ]
       }
     ]
@@ -122,7 +122,7 @@
         {
           "@type": "DataDownload",
           "name": "FacilityUse",
-          "additionalType": "https://openactive.io/FacilityUse",
+          "additionalType": "https://openedi.org/FacilityUse",
           "encodingFormat": "application/vnd.openactive.rpde+json; version=1",
           "contentUrl": "https://opendata.leisurecloud.live/api/feeds/fusion-lifestyle-fl-live-facility-uses"
         }
@@ -144,7 +144,7 @@
       "fieldName": "documentation",
       "sameAs": "https://pending.schema.org/documentation",
       "requiredType": "https://schema.org/URL",
-      "example": "https://developer.openactive.io",
+      "example": "https://developer.openedi.org",
       "description": [
         "A link to documentation related to the `Dataset`, or a link to the OpenActive developer documentation if no Dataset-specific documentation is available."
       ]
@@ -198,14 +198,14 @@
       "fieldName": "schemaVersion",
       "sameAs": "https://schema.org/schemaVersion",
       "requiredType": "https://schema.org/URL",
-      "example": "https://openactive.io/modelling-opportunity-data/2.0/",
+      "example": "https://openedi.org/modelling-opportunity-data/2.0/",
       "description": [
         "Indicates the version of OpenActive Modelling Opportunity Data Specification with which this `Dataset` conforms, by specifying its URL."
       ]
     },
     "backgroundImage": {
       "fieldName": "backgroundImage",
-      "sameAs": "https://openactive.io/backgroundImage",
+      "sameAs": "https://openedi.org/backgroundImage",
       "model": "#ImageObject",
       "description": [
         "A background image for the `Dataset`."
@@ -217,7 +217,7 @@
     },
     "bookingService": {
       "fieldName": "bookingService",
-      "sameAs": "https://openactive.io/bookingService",
+      "sameAs": "https://openedi.org/bookingService",
       "model": "#BookingService",
       "description": [
         "Information about the Booking System or publishing platform"

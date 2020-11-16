@@ -63,7 +63,7 @@ let info = getFullyQualifiedProperty('meetingPoint', '2.0');
 
 // {
 //   "prefix": "oa",
-//   "namespace": "https://openactive.io/",
+//   "namespace": "https://openedi.org/",
 //   "label": "meetingPoint",
 //   "alias": "meetingPoint",
 // }
@@ -115,10 +115,10 @@ const metaData = getMetaData('2.0');
 // {
 //   "defaultPrefix": "schema",
 //   "openEDIPrefix": "oa",
-//   "contextUrl": "https://openactive.io/",
-//   "specUrl": "https://openactive.io/modelling-opportunity-data/EditorsDraft/",
+//   "contextUrl": "https://openedi.org/",
+//   "specUrl": "https://openedi.org/modelling-opportunity-data/EditorsDraft/",
 //   "defaultActivityLists": [
-//     "https://openactive.io/activity-list"
+//     "https://openedi.org/activity-list"
 //   ],
 //   "baseGraph": {},
 //   "keywords": {
@@ -126,7 +126,7 @@ const metaData = getMetaData('2.0');
 //     "id": "@id"
 //   },
 //   "namespaces": {
-//     "oa": "https://openactive.io/",
+//     "oa": "https://openedi.org/",
 //     "dc": "http://purl.org/dc/terms/",
 //     "owl": "http://www.w3.org/2002/07/owl#",
 //     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

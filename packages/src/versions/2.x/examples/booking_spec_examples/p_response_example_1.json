@@ -1,11 +1,11 @@
 {
-  "@context": "https://openactive.io/",
+  "@context": "https://openedi.org/",
   "@type": "OrderProposal",
   "@id": "https://example.com/api/order-proposals/e11429ea-467f-4270-ab62-e47368996fe8",
   "orderNumber": "AB000001",
   "orderProposalVersion": "https://example.com/api/order-proposals/e11429ea-467f-4270-ab62-e47368996fe8/versions/8eb1a6ce-3f5b-40b0-87a7-bddb4c5518bd",
-  "orderProposalStatus": "https://openactive.io/AwaitingSellerConfirmation",
-  "brokerRole": "https://openactive.io/AgentBroker",
+  "orderProposalStatus": "https://openedi.org/AwaitingSellerConfirmation",
+  "brokerRole": "https://openedi.org/AgentBroker",
   "broker": {
     "@type": "Organization",
     "name": "MyFitnessApp",
@@ -29,7 +29,7 @@
     "@id": "https://example.com/api/organisations/123",
     "identifier": "CRUOZWJ1",
     "name": "Better",
-    "taxMode": "https://openactive.io/TaxGross",
+    "taxMode": "https://openedi.org/TaxGross",
     "legalName": "Greenwich Leisure Limited",
     "description": "A charitable social enterprise for all the community",
     "url": "https://www.better.org.uk",
@@ -88,7 +88,7 @@
     {
       "@type": "OrderItem",
       "position": 0,
-      "orderItemStatus": "https://openactive.io/OrderItemProposed",
+      "orderItemStatus": "https://openedi.org/OrderItemProposed",
       "unitTaxSpecification": [
         {
           "@type": "TaxChargeSpecification",
@@ -123,9 +123,9 @@
           "activity": [
             {
               "@type": "Concept",
-              "@id": "https://openactive.io/activity-list#5e78bcbe-36db-425a-9064-bf96d09cc351",
+              "@id": "https://openedi.org/activity-list#5e78bcbe-36db-425a-9064-bf96d09cc351",
               "prefLabel": "Bodypump™",
-              "inScheme": "https://openactive.io/activity-list"
+              "inScheme": "https://openedi.org/activity-list"
             }
           ],
           "url": "https://example.com/events/452",

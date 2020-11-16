@@ -187,19 +187,19 @@
       "fieldName": "taxCalculationExcluded",
       "requiredType": "https://schema.org/Boolean",
       "description": ["Set to true when business-to-business tax calculation is required by the seller or brokerRole settings, but not supported by the Broker."],
-      "sameAs": "https://openactive.io/taxCalculationExcluded"
+      "sameAs": "https://openedi.org/taxCalculationExcluded"
     },
     "broker": {
       "fieldName": "broker",
       "sameAs": "https://schema.org/broker",
       "model": "#Organization",
-      "description": ["The organisation or developer providing an application that allows Customers to make bookings. Those applications will be clients of the API defined in this specification. If brokerRole is set to https://openactive.io/NoBroker this is not required."]
+      "description": ["The organisation or developer providing an application that allows Customers to make bookings. Those applications will be clients of the API defined in this specification. If brokerRole is set to https://openedi.org/NoBroker this is not required."]
     },
     "brokerRole": {
       "fieldName": "brokerRole",
-      "sameAs": "https://openactive.io/brokerRole",
-      "requiredType": "https://openactive.io/BrokerType",
-      "description": ["Either https://openactive.io/AgentBroker,  https://openactive.io/ResellerBroker or  https://openactive.io/NoBroker, as agreed in advance between the Broker and Seller."]
+      "sameAs": "https://openedi.org/brokerRole",
+      "requiredType": "https://openedi.org/BrokerType",
+      "description": ["Either https://openedi.org/AgentBroker,  https://openedi.org/ResellerBroker or  https://openedi.org/NoBroker, as agreed in advance between the Broker and Seller."]
     },
     "orderNumber": {
       "fieldName": "orderNumber",
@@ -218,7 +218,7 @@
     },
     "bookingService": {
       "fieldName": "bookingService",
-      "sameAs": "https://openactive.io/bookingService",
+      "sameAs": "https://openedi.org/bookingService",
       "model": "#BookingService",
       "description": ["Details about the Booking System"]
     },
@@ -230,26 +230,26 @@
     },
     "totalPaymentTax": {
       "fieldName": "totalPaymentTax",
-      "sameAs": "https://openactive.io/totalPaymentTax",
+      "sameAs": "https://openedi.org/totalPaymentTax",
       "model": "ArrayOf#TaxChargeSpecification",
       "description": ["Breakdown of tax payable for the Order."]
     },
     "payment": {
       "fieldName": "payment",
-      "sameAs": "https://openactive.io/payment",
+      "sameAs": "https://openedi.org/payment",
       "model": "#Payment",
       "description": ["The payment associated with the Order by the Broker. It is required for cases where a payment has been taken."]
     },
     "orderCreationStatus": {
       "fieldName": "orderCreationStatus",
-      "sameAs": "https://openactive.io/orderCreationStatus",
-      "requiredType": "https://openactive.io/OrderCreationStatus",
+      "sameAs": "https://openedi.org/orderCreationStatus",
+      "requiredType": "https://openedi.org/OrderCreationStatus",
       "description": ["This property is internal to the Broker in this version of the specification."]
     },
     "orderProposalVersion": {
       "fieldName": "orderProposalVersion",
       "requiredType": "https://schema.org/URL",
-      "sameAs": "https://openactive.io/orderProposalVersion",
+      "sameAs": "https://openedi.org/orderProposalVersion",
       "description": ["The unique URL representing this version of the  OrderProposal, or the version of the OrderProposal to which this Order is related."]
     },
     "totalPaymentDue": {

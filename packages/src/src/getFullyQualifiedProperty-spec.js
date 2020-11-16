@@ -14,7 +14,7 @@ describe('getFullyQualifiedProperty', () => {
     const prop = getFullyQualifiedProperty('meetingPoint', '2.0');
 
     expect(prop.prefix).toBe('oa');
-    expect(prop.namespace).toBe('https://openactive.io/');
+    expect(prop.namespace).toBe('https://openedi.org/');
     expect(prop.label).toBe('meetingPoint');
     expect(prop.alias).toBe('meetingPoint');
   });

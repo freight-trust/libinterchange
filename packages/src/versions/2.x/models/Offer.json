@@ -152,7 +152,7 @@
     },
     "ageRange": {
       "fieldName": "ageRange",
-      "sameAs": "https://openactive.io/ageRange",
+      "sameAs": "https://openedi.org/ageRange",
       "model": "#QuantitativeValue",
       "description": [
         "Indicates that an Offer is applicable to a specific age range. Specified as a QuantitativeValue with minValue and maxValue properties."
@@ -177,12 +177,12 @@
     },
     "advanceBooking": {
       "fieldName": "advanceBooking",
-      "requiredType": "https://openactive.io/RequiredStatusType",
+      "requiredType": "https://openedi.org/RequiredStatusType",
       "description": [
-        "Indicates whether to accept this offer, a participant must book in advance, whether they must pay on attending, or have option to do either. Values must be one of  https://openactive.io/Required,  https://openactive.io/Optional or  https://openactive.io/Unavailable."
+        "Indicates whether to accept this offer, a participant must book in advance, whether they must pay on attending, or have option to do either. Values must be one of  https://openedi.org/Required,  https://openedi.org/Optional or  https://openedi.org/Unavailable."
       ],
-      "example": "https://openactive.io/Required",
-      "sameAs": "https://openactive.io/advanceBooking"
+      "example": "https://openedi.org/Required",
+      "sameAs": "https://openedi.org/advanceBooking"
     },
     "description": {
       "fieldName": "description",
@@ -195,24 +195,24 @@
     },
     "prepayment": {
       "fieldName": "prepayment",
-      "sameAs": "https://openactive.io/prepayment",
-      "requiredType": "https://openactive.io/RequiredStatusType",
+      "sameAs": "https://openedi.org/prepayment",
+      "requiredType": "https://openedi.org/RequiredStatusType",
       "description": [
-        "Indicates whether to accept this offer, a participant must pay in advance, pay when attending, or have the option to do either. Values must be one of  https://openactive.io/Required,  https://openactive.io/Optional or  https://openactive.io/Unavailable."
+        "Indicates whether to accept this offer, a participant must pay in advance, pay when attending, or have the option to do either. Values must be one of  https://openedi.org/Required,  https://openedi.org/Optional or  https://openedi.org/Unavailable."
       ],
-      "example": "https://openactive.io/Required"
+      "example": "https://openedi.org/Required"
     },
     "availableChannel": {
       "fieldName": "availableChannel",
       "sameAs": "https://schema.org/availableChannel",
-      "requiredType": "ArrayOf#https://openactive.io/AvailableChannelType",
+      "requiredType": "ArrayOf#https://openedi.org/AvailableChannelType",
       "description": [
         "The channels through which a booking can be made."
       ]
     },
     "validFromBeforeStartDate": {
       "fieldName": "validFromBeforeStartDate",
-      "sameAs": "https://openactive.io/validFromBeforeStartDate",
+      "sameAs": "https://openedi.org/validFromBeforeStartDate",
       "requiredType": "https://schema.org/Duration",
       "description": [
         "The duration before the startDate for which this Offer is valid, given in ISO 8601 format. This is a relatively-defined equivalent of schema:validFrom, to allow for Offer inheritance."
@@ -220,7 +220,7 @@
     },
     "latestCancellationBeforeStartDate": {
       "fieldName": "latestCancellationBeforeStartDate",
-      "sameAs": "https://openactive.io/latestCancellationBeforeStartDate",
+      "sameAs": "https://openedi.org/latestCancellationBeforeStartDate",
       "requiredType": "https://schema.org/Duration",
       "description": [
         "The duration before the startDate during which this Offer may not be cancelled, given in ISO 8601 format."
@@ -228,11 +228,11 @@
     },
     "openBookingFlowRequirement": {
       "fieldName": "openBookingFlowRequirement",
-      "requiredType": "ArrayOf#https://openactive.io/OpenBookingFlowRequirement",
+      "requiredType": "ArrayOf#https://openedi.org/OpenBookingFlowRequirement",
       "description": [
-        "Can include  https://openactive.io/OpenBookingIntakeForm,  https://openactive.io/OpenBookingAttendeeDetails,  https://openactive.io/OpenBookingApproval,  https://openactive.io/OpenBookingNegotiation,  https://openactive.io/OpenBookingMessageExchange"
+        "Can include  https://openedi.org/OpenBookingIntakeForm,  https://openedi.org/OpenBookingAttendeeDetails,  https://openedi.org/OpenBookingApproval,  https://openedi.org/OpenBookingNegotiation,  https://openedi.org/OpenBookingMessageExchange"
       ],
-      "sameAs": "https://openactive.io/openBookingFlowRequirement"
+      "sameAs": "https://openedi.org/openBookingFlowRequirement"
     },
     "url": {
       "fieldName": "url",

@@ -185,7 +185,7 @@
     },
     "accessibilityInformation": {
       "fieldName": "accessibilityInformation",
-      "sameAs": "https://openactive.io/accessibilityInformation",
+      "sameAs": "https://openedi.org/accessibilityInformation",
       "requiredType": "https://schema.org/Text",
       "description": [
         "Provide additional, specific documentation for participants about how disabilities are, or can be supported at the Event."
@@ -194,7 +194,7 @@
     },
     "accessibilitySupport": {
       "fieldName": "accessibilitySupport",
-      "sameAs": "https://openactive.io/accessibilitySupport",
+      "sameAs": "https://openedi.org/accessibilitySupport",
       "model": "ArrayOf#Concept",
       "description": [
         "Used to specify the types of disabilities or impairments that are supported at an event."
@@ -202,15 +202,15 @@
       "example": [
         {
           "@type": "Concept",
-          "@id": "https://openactive.io/accessibility-support#1393f2dc-3fcc-4be9-a99f-f1e51f5ad277",
+          "@id": "https://openedi.org/accessibility-support#1393f2dc-3fcc-4be9-a99f-f1e51f5ad277",
           "prefLabel": "Visual impairment",
-          "inScheme": "https://openactive.io/accessibility-support"
+          "inScheme": "https://openedi.org/accessibility-support"
         }
       ]
     },
     "activity": {
       "fieldName": "activity",
-      "sameAs": "https://openactive.io/activity",
+      "sameAs": "https://openedi.org/activity",
       "model": "ArrayOf#Concept",
       "description": [
         "Specifies the physical activity or activities that will take place during an event."
@@ -218,15 +218,15 @@
       "example": [
         {
           "@type": "Concept",
-          "@id": "https://openactive.io/activity-list#5e78bcbe-36db-425a-9064-bf96d09cc351",
+          "@id": "https://openedi.org/activity-list#5e78bcbe-36db-425a-9064-bf96d09cc351",
           "prefLabel": "Bodypump™",
-          "inScheme": "https://openactive.io/activity-list"
+          "inScheme": "https://openedi.org/activity-list"
         }
       ]
     },
     "ageRange": {
       "fieldName": "ageRange",
-      "sameAs": "https://openactive.io/ageRange",
+      "sameAs": "https://openedi.org/ageRange",
       "model": "#QuantitativeValue",
       "description": [
         "Indicates that an event is suitable for a specific age range. If only a single age is specified then this is assumed to be a minimum age. Age ranges can be specified as follows: 18-30"
@@ -239,7 +239,7 @@
     },
     "attendeeInstructions": {
       "fieldName": "attendeeInstructions",
-      "sameAs": "https://openactive.io/attendeeInstructions",
+      "sameAs": "https://openedi.org/attendeeInstructions",
       "requiredType": "https://schema.org/Text",
       "description": [
         "Provides additional notes and instructions for event attendees, for example more information on how to find the event, what to bring, etc. The value of this property must not include HTML or other markup."
@@ -315,12 +315,12 @@
     },
     "genderRestriction": {
       "fieldName": "genderRestriction",
-      "sameAs": "https://openactive.io/genderRestriction",
-      "requiredType": "https://openactive.io/GenderRestrictionType",
+      "sameAs": "https://openedi.org/genderRestriction",
+      "requiredType": "https://openedi.org/GenderRestrictionType",
       "description": [
         "Indicates that an event is restricted to male, female or a mixed audience. If a gender restriction isn't specified then applications should assume that an event is suitable for a mixed audience"
       ],
-      "example": "https://openactive.io/FemaleOnly"
+      "example": "https://openedi.org/FemaleOnly"
     },
     "identifier": {
       "fieldName": "identifier",
@@ -367,7 +367,7 @@
     },
     "isCoached": {
       "fieldName": "isCoached",
-      "sameAs": "https://openactive.io/isCoached",
+      "sameAs": "https://openedi.org/isCoached",
       "requiredType": "https://schema.org/Boolean",
       "description": [
         "A boolean property that indicates whether an Event will be coached. This flag allows an Event to be marked as being coached without having to specify a named individual as a coach. This addresses both privacy concerns and also scenarios where the actual coach may only be decided on the day."
@@ -376,7 +376,7 @@
     },
     "leader": {
       "fieldName": "leader",
-      "sameAs": "https://openactive.io/leader",
+      "sameAs": "https://openedi.org/leader",
       "model": "ArrayOf#Person",
       "description": [
         "Refers to a person (schema:Person) who will be leading an event. E.g. a coach. This is a more specific role than an organiser or a contributor. The person will need to have given their consent for their personal information to be present in the Open Data."
@@ -392,7 +392,7 @@
     },
     "level": {
       "fieldName": "level",
-      "sameAs": "https://openactive.io/level",
+      "sameAs": "https://openedi.org/level",
       "requiredType": "ArrayOf#https://schema.org/Text",
       "alternativeModels": [
         "ArrayOf#Concept"
@@ -453,7 +453,7 @@
     },
     "meetingPoint": {
       "fieldName": "meetingPoint",
-      "sameAs": "https://openactive.io/meetingPoint",
+      "sameAs": "https://openedi.org/meetingPoint",
       "requiredType": "https://schema.org/Text",
       "description": [
         "Instructions for the attendees of an Event about where they should meet the organizer or leader at the start of the event. Some larger locations may have several possible meeting points, so this property provides additional more specific directions."
@@ -503,7 +503,7 @@
     },
     "programme": {
       "fieldName": "programme",
-      "sameAs": "https://openactive.io/programme",
+      "sameAs": "https://openedi.org/programme",
       "model": "#Brand",
       "description": [
         "Indicates that an event will be organised according to a specific Programme."
@@ -536,7 +536,7 @@
     },
     "schedulingNote": {
       "fieldName": "schedulingNote",
-      "sameAs": "https://openactive.io/schedulingNote",
+      "sameAs": "https://openedi.org/schedulingNote",
       "requiredType": "https://schema.org/Text",
       "description": [
         "Provides a note from an organizer relating to how this Event is scheduled."

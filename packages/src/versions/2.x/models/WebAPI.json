@@ -32,7 +32,7 @@
         "title": "EARLY RELEASE NOTICE",
         "paragraphs": [
           "This class represents a draft that is designed to inform the OpenActive specification work with implementation feedback.",
-          "IT IS SUBJECT TO CHANGE, as the [Dataset API Discovery specification](https://openactive.io/dataset-api-discovery/EditorsDraft/) evolves."
+          "IT IS SUBJECT TO CHANGE, as the [Dataset API Discovery specification](https://openedi.org/dataset-api-discovery/EditorsDraft/) evolves."
         ]
       }
     ]
@@ -65,7 +65,7 @@
       "fieldName": "documentation",
       "sameAs": "https://pending.schema.org/documentation",
       "requiredType": "https://schema.org/URL",
-      "example": "https://developer.openactive.io",
+      "example": "https://developer.openedi.org",
       "description": [
         "A link to documentation related to the Dataset, or a link to the OpenActive developer documentation if no Dataset-specific documentation is available."
       ]
@@ -93,7 +93,7 @@
       "sameAs": "http://purl.org/dc/terms/conformsTo",
       "requiredType": "ArrayOf#https://schema.org/URL",
       "example": [ 
-        "https://openactive.io/open-booking-api/1.0/#core"
+        "https://openedi.org/open-booking-api/1.0/#core"
       ],
       "description": [
         "Indicates the version and profiles of OpenActive Open Booking Specification with which this WebAPI conforms, by specifying these as URLs."
@@ -103,7 +103,7 @@
       "fieldName": "endpointDescription",
       "sameAs": "http://www.w3.org/ns/dcat#endpointDescription",
       "requiredType": "https://schema.org/URL",
-      "example": "https://openactive.io/open-booking-api/1.0/swagger.json",
+      "example": "https://openedi.org/open-booking-api/1.0/swagger.json",
       "description": [
         "The Open API document associated with this version of the Open Booking API"
       ]
@@ -119,7 +119,7 @@
     },
     "authenticationAuthority": {
       "fieldName": "authenticationAuthority",
-      "sameAs": "https://openactive.io/authenticationAuthority",
+      "sameAs": "https://openedi.org/authenticationAuthority",
       "requiredType": "https://schema.org/URL",
       "example": "https://auth.bookingsystem.com",
       "description": [

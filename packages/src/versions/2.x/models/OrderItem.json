@@ -217,18 +217,18 @@
     "orderItemStatus": {
       "fieldName": "orderItemStatus",
       "sameAs": "https://schema.org/orderItemStatus",
-      "requiredType": "https://openactive.io/OrderItemStatus",
+      "requiredType": "https://openedi.org/OrderItemStatus",
       "description": []
     },
     "allowCustomerCancellationFullRefund": {
       "fieldName": "allowCustomerCancellationFullRefund",
-      "sameAs": "https://openactive.io/allowCustomerCancellationFullRefund",
+      "sameAs": "https://openedi.org/allowCustomerCancellationFullRefund",
       "requiredType": "https://schema.org/Boolean",
       "description": ["Whether the event can be cancelled."]
     },
     "unitTaxSpecification": {
       "fieldName": "unitTaxSpecification",
-      "sameAs": "https://openactive.io/unitTaxSpecification",
+      "sameAs": "https://openedi.org/unitTaxSpecification",
       "model": "ArrayOf#TaxChargeSpecification",
       "description": ["Breakdown of tax payable for the OrderItem."]
     },
@@ -252,7 +252,7 @@
     },
     "accessPass": {
       "fieldName": "accessPass",
-      "sameAs": "https://openactive.io/accessPass",
+      "sameAs": "https://openedi.org/accessPass",
       "model": "ArrayOf#ImageObject",
       "description": ["ImageObject or Barcode that contains reference to an asset (e.g. Barcode, QR code image or PDF) usable for entrance. Not applicable for an OrderQuote."]
     },
@@ -264,15 +264,15 @@
     },
     "cancellationMessage": {
       "fieldName": "cancellationMessage",
-      "sameAs": "https://openactive.io/cancellationMessage",
+      "sameAs": "https://openedi.org/cancellationMessage",
       "requiredType": "https://schema.org/Text",
-      "description": ["A message set by the Seller in the event of Opportunity cancellation, only applicable for an  Order and where the OrderItem has  orderItemStatus set to  https://openactive.io/SellerCancelled"]
+      "description": ["A message set by the Seller in the event of Opportunity cancellation, only applicable for an  Order and where the OrderItem has  orderItemStatus set to  https://openedi.org/SellerCancelled"]
     },
     "customerNotice": {
       "fieldName": "customerNotice",
-      "sameAs": "https://openactive.io/customerNotice",
+      "sameAs": "https://openedi.org/customerNotice",
       "requiredType": "https://schema.org/Text",
-      "description": ["A message set by the Seller to trigger a notification to the Customer, only applicable for an Order and where the OrderItem has  orderItemStatus set to  https://openactive.io/OrderItemConfirmed or  https://openactive.io/CustomerAttended"]
+      "description": ["A message set by the Seller to trigger a notification to the Customer, only applicable for an Order and where the OrderItem has  orderItemStatus set to  https://openedi.org/OrderItemConfirmed or  https://openedi.org/CustomerAttended"]
     },
     "attendee": {
       "fieldName": "attendee",
@@ -282,19 +282,19 @@
     },
     "attendeeDetailsRequired": {
       "fieldName": "attendeeDetailsRequired",
-      "sameAs": "https://openactive.io/attendeeDetailsRequired",
+      "sameAs": "https://openedi.org/attendeeDetailsRequired",
       "requiredType": "ArrayOf#https://schema.org/Property",
       "description": []
     },
     "orderItemIntakeForm": {
       "fieldName": "orderItemIntakeForm",
-      "sameAs": "https://openactive.io/orderItemIntakeForm",
+      "sameAs": "https://openedi.org/orderItemIntakeForm",
       "model": "ArrayOf#PropertyValueSpecification",
       "description": ["PropertyValueSpecifications that describe fields in the orderItemIntakeForm."]
     },
     "orderItemIntakeFormResponse": {
       "fieldName": "orderItemIntakeFormResponse",
-      "sameAs": "https://openactive.io/orderItemIntakeFormResponse",
+      "sameAs": "https://openedi.org/orderItemIntakeFormResponse",
       "model": "ArrayOf#PropertyValue",
       "description": ["PropertyValues that contains a text value responses to the orderItemIntakeForm."]
     }

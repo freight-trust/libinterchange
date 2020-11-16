@@ -1,0 +1,168 @@
+[
+  {
+    "name": "Opportunity Data Publishing - Physical",
+    "exampleList": [
+      {
+        "file": "sessionseries_example_1.json",
+        "name": "SessionSeries with ScheduledSession Example"
+      },
+      {
+        "file": "scheduledsession_example_1.json",
+        "name": "ScheduledSession with SessionSeries Example"
+      },
+      {
+        "file": "sessionseries-split_example_1.json",
+        "name": "SessionSeries Example"
+      },
+      {
+        "file": "scheduledsession-split_example_1.json",
+        "name": "ScheduledSession Example"
+      },
+      {
+        "file": "sessionseries-eventseries-split_example_1.json",
+        "name": "SessionSeries with EventSeries Example"
+      },
+      {
+        "file": "facilityuse_example_1.json",
+        "name": "FacilityUse Example"
+      },
+      {
+        "file": "slot_example_1.json",
+        "name": "Slot Example"
+      },
+      {
+        "file": "courseinstance_example_1.json",
+        "name": "CourseInstance Example"
+      },
+      {
+        "file": "courseinstance_event_example_1.json",
+        "name": "CourseInstance with Event Example"
+      },
+      {
+        "file": "event_example_1.json",
+        "name": "Event Example"
+      },
+      {
+        "file": "event_eventseries_example_1.json",
+        "name": "Event with EventSeries Example"
+      }
+    ]
+  },
+  {
+    "name": "Opportunity Data Publishing - Virtual",
+    "exampleList": [
+      {
+        "file": "sessionseries-split-virtual_example_1.json",
+        "name": "Virtual SessionSeries Example"
+      },
+      {
+        "file": "scheduledsession-split-virtual_example_1.json",
+        "name": "Virtual ScheduledSession Example"
+      },
+      {
+        "file": "ondemandevent_example_1.json",
+        "name": "OnDemandEvent Example"
+      }
+    ]
+  },
+  {
+    "name": "Dataset Sites (Preview)",
+    "exampleList": [
+      {
+        "file": "https://openactive.io/dataset-site-template/example.json",
+        "name": "Dataset Site Embedded JSON-LD Example",
+        "validationMode": "DatasetSite"
+      },
+      {
+        "file": "https://openactive.io/data-catalogs/singular.jsonld",
+        "name": "DataCatalog Example",
+        "validationMode": "DataCatalog"
+      },
+      {
+        "file": "https://openactive.io/data-catalogs/data-catalog-collection.jsonld",
+        "name": "DataCatalog Collection Example",
+        "validationMode": "DataCatalog"
+      }
+    ]
+  },
+  {
+    "name": "Open Booking API - Simple",
+    "exampleList": [
+      {
+        "file": "booking_spec_examples/c1_request_example_1.json",
+        "name": "OrderQuote Creation C1 Request Example",
+        "validationMode": "C1Request"
+      },
+      {
+        "file": "booking_spec_examples/c1_response_example_1.json",
+        "name": "OrderQuote Creation C1 Response Example",
+        "validationMode": "C1Response"
+      },
+      {
+        "file": "booking_spec_examples/c2_request_example_1.json",
+        "name": "OrderQuote Creation C2 Request Example",
+        "validationMode": "C2Request"
+      },
+      {
+        "file": "booking_spec_examples/c2_response_example_1.json",
+        "name": "OrderQuote Creation C2 Response Example",
+        "validationMode": "C2Response"
+      },
+      {
+        "file": "booking_spec_examples/b_request_example_1.json",
+        "name": "Order Creation B Order Request Example",
+        "validationMode": "BRequest"
+      },
+      {
+        "file": "booking_spec_examples/b_response_example_1.json",
+        "name": "Order Creation B Response Example",
+        "validationMode": "BResponse"
+      },
+      {
+        "file": "booking_spec_examples/order_patch_example_1.json",
+        "name": "Order Cancellation Example",
+        "validationMode": "OrderPatch"
+      },
+      {
+        "file": "booking_spec_examples/order_feed_example_1.json",
+        "name": "Orders RPDE Feed Example",
+        "validationMode": "OrdersFeed"
+      },
+      {
+        "file": "booking_spec_examples/orderstatus_example_1.json",
+        "name": "Order Status Example",
+        "validationMode": "OrderStatus"
+      },
+      {
+        "file": "booking_spec_examples/error_response_example_1.json",
+        "name": "Error Response Example",
+        "validationMode": "OpenBookingError"
+      }
+    ]
+  },
+  {
+    "name": "Open Booking API - Approval",
+    "exampleList": [
+      {
+        "file": "booking_spec_examples/p_request_example_1.json",
+        "name": "OrderProposal Creation P Request Example",
+        "validationMode": "PRequest"
+      },
+      {
+        "file": "booking_spec_examples/p_response_example_1.json",
+        "name": "OrderProposal Creation P Response Example",
+        "validationMode": "PResponse"
+      },
+      {
+        "file": "booking_spec_examples/b_response_example_2_proposal.json",
+        "name": "Order Creation B OrderProposal Request Example",
+        "validationMode": "BOrderProposalRequest"
+      },
+      {
+        "file": "booking_spec_examples/orderproposal_patch_example_1.json",
+        "name": "OrderProposal Update Example",
+        "validationMode": "OrderProposalPatch"
+      }
+    ]
+  }
+]

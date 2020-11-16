@@ -1,0 +1,20 @@
+{
+  "type": "Toilets",
+  "subClassOf": "#LocationFeatureSpecification",
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Toilets"
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Public Toilets",
+      "description": [
+        "A string, suitable for presentation in user interfaces."
+      ]
+    }
+  }
+}

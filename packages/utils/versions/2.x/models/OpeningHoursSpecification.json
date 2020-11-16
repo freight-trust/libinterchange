@@ -1,0 +1,51 @@
+{
+  "type": "OpeningHoursSpecification",
+  "derivedFrom": "https://schema.org/OpeningHoursSpecification",
+  "hasId": false,
+  "requiredFields": [
+    "type",
+    "opens",
+    "closes",
+    "dayOfWeek"
+  ],
+  "inSpec": [
+    "type",
+    "opens",
+    "closes",
+    "dayOfWeek"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "OpeningHoursSpecification"
+    },
+    "closes": {
+      "fieldName": "closes",
+      "sameAs": "https://schema.org/closes",
+      "requiredType": "https://schema.org/Time",
+      "description": [
+        "The closing time."
+      ],
+      "example": "17:00"
+    },
+    "dayOfWeek": {
+      "fieldName": "dayOfWeek",
+      "sameAs": "https://schema.org/dayOfWeek",
+      "requiredType": "https://schema.org/DayOfWeek",
+      "example": "https://schema.org/Monday",
+      "description": [
+        "Defines the day of the week upon which the Place is open"
+      ]
+    },
+    "opens": {
+      "fieldName": "opens",
+      "sameAs": "https://schema.org/opens",
+      "requiredType": "https://schema.org/Time",
+      "description": [
+        "The opening time."
+      ],
+      "example": "09:00"
+    }
+  }
+}

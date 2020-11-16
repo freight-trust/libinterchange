@@ -1,0 +1,305 @@
+{
+  "type": "Slot",
+  "hasId": true,
+  "subClassOf": "#Event",
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://example.com/slot/",
+  "requiredFields": [
+    "type",
+    "facilityUse",
+    "startDate",
+    "duration",
+    "remainingUses",
+    "offers"
+  ],
+  "recommendedFields": [
+    "id",
+    "maximumUses"
+  ],
+  "requiredOptions": [
+    {
+      "description": [
+        "While these properties are marked as optional/recommended in the Modelling Specification, one of these must be provided when surfacing a slot through an RPDE feed to ensure that the slots can be processed correctly by data consumers."
+      ],
+      "options": [
+        "id",
+        "identifier"
+      ]
+    }
+  ],
+  "validationMode": {
+    "C1Request": "request",
+    "C1Response": "response",
+    "C2Request": "request",
+    "C2Response": "response",
+    "PRequest": "request",
+    "PResponse": "response",
+    "BRequest": "request",
+    "BResponse": "response",
+    "OrdersFeed": "request",
+    "OrderStatus": "response",
+    "TestInterface": "request"
+  },
+  "imperativeConfigurationWithContext": {},
+  "imperativeConfiguration": {
+    "testInterface": {
+      "requiredFields": [
+        "type"
+      ],
+      "requiredOptions": [
+        {
+          "description": [
+            "For a request, a `facilityUse` must be included. For a response, an `@id` must be included."
+          ],
+          "options": [
+            "facilityUse",
+            "id"
+          ],
+          "oneOf": true
+        }
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+      ]
+    },
+    "request": {
+      "requiredFields": [
+        "type",
+        "id"
+      ],
+      "shallNotInclude": [
+        "identifier",
+        "facilityUse",
+        "startDate",
+        "endDate",
+        "duration",
+        "offers",
+        "remainingUses",
+        "maximumUses",
+        "accessibilityInformation",
+        "accessibilitySupport",
+        "activity",
+        "ageRange",
+        "attendeeInstructions",
+        "category",
+        "contributor",
+        "description",
+        "eventStatus",
+        "genderRestriction",
+        "image",
+        "isAccessibleForFree",
+        "isCoached",
+        "leader",
+        "level",
+        "location",
+        "maximumAttendeeCapacity",
+        "maximumVirtualAttendeeCapacity",
+        "meetingPoint",
+        "name",
+        "organizer",
+        "programme",
+        "remainingAttendeeCapacity",
+        "subEvent",
+        "schedulingNote",
+        "superEvent",
+        "url"
+      ]
+    },
+    "response": {
+      "requiredFields": [
+        "type",
+        "id",
+        "startDate",
+        "facilityUse"
+      ],
+      "recommendedFields": [
+        "endDate",
+        "duration",
+        "maximumUses",
+        "remainingUses"
+      ],
+      "shallNotInclude": [
+        "offers"
+      ]
+    }
+  },
+  "inSpec": [
+    "type",
+    "id",
+    "identifier",
+    "facilityUse",
+    "startDate",
+    "endDate",
+    "duration",
+    "offers",
+    "remainingUses",
+    "maximumUses",
+    "accessibilityInformation",
+    "accessibilitySupport",
+    "activity",
+    "ageRange",
+    "attendeeInstructions",
+    "category",
+    "contributor",
+    "description",
+    "eventStatus",
+    "genderRestriction",
+    "image",
+    "isAccessibleForFree",
+    "isCoached",
+    "leader",
+    "level",
+    "location",
+    "maximumAttendeeCapacity",
+    "maximumVirtualAttendeeCapacity",
+    "meetingPoint",
+    "name",
+    "organizer",
+    "programme",
+    "remainingAttendeeCapacity",
+    "subEvent",
+    "schedulingNote",
+    "superEvent",
+    "url",
+    "eventAttendanceMode"
+  ],
+  "notInSpec": [
+    "accessibilityInformation",
+    "accessibilitySupport",
+    "activity",
+    "ageRange",
+    "attendeeInstructions",
+    "category",
+    "contributor",
+    "description",
+    "eventStatus",
+    "genderRestriction",
+    "image",
+    "isAccessibleForFree",
+    "isCoached",
+    "leader",
+    "level",
+    "location",
+    "maximumAttendeeCapacity",
+    "maximumVirtualAttendeeCapacity",
+    "meetingPoint",
+    "name",
+    "programme",
+    "remainingAttendeeCapacity",
+    "subEvent",
+    "schedulingNote",
+    "superEvent",
+    "url",
+    "eventAttendanceMode"
+  ],
+  "shallNotInclude": [
+    "eventSchedule"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Slot"
+    },
+    "duration": {
+      "fieldName": "duration",
+      "sameAs": "https://schema.org/duration",
+      "requiredType": "https://schema.org/Duration",
+      "description": [
+        "The duration of the slot given in [ISO8601] format."
+      ],
+      "example": "PT1H"
+    },
+    "endDate": {
+      "fieldName": "endDate",
+      "sameAs": "https://schema.org/endDate",
+      "requiredType": "https://schema.org/DateTime",
+      "alternativeTypes": [
+        "https://schema.org/Date"
+      ],
+      "description": [
+        "The end date and time of the slot. Can be specified as a schema:Date or schema:DateTime",
+        "It is recommended that publishers provide either an schema:endDate or a schema:duration for an slot."
+      ],
+      "example": "2018-01-27T12:00:00Z"
+    },
+    "facilityUse": {
+      "fieldName": "facilityUse",
+      "sameAs": "https://openactive.io/facilityUse",
+      "model": "#FacilityUse",
+      "alternativeModels": [
+        "#IndividualFacilityUse"
+      ],
+      "alternativeTypes": [
+        "https://schema.org/URL"
+      ],
+      "description": [
+        "`FacilityUse` or `IndividualFacilityUse` that has this `Slot`, either directly embedded or referenced by its `@id`"
+      ],
+      "example": "https://example.com/facility-use/1"
+    },
+    "identifier": {
+      "fieldName": "identifier",
+      "sameAs": "https://schema.org/identifier",
+      "alternativeModels": [
+        "#PropertyValue",
+        "ArrayOf#PropertyValue"
+      ],
+      "requiredType": "https://schema.org/Text",
+      "alternativeTypes": [
+        "https://schema.org/Integer"
+      ],
+      "example": "SB1234",
+      "description": [
+        "A local non-URI identifier for the resource"
+      ]
+    },
+    "maximumUses": {
+      "fieldName": "maximumUses",
+      "sameAs": "https://openactive.io/maximumUses",
+      "requiredType": "https://schema.org/Integer",
+      "description": [
+        "The maximum available courts or pitches at this time. Must be 0 or 1 for an IndividualFacilityUse."
+      ],
+      "example": 16
+    },
+    "offers": {
+      "fieldName": "offers",
+      "sameAs": "https://schema.org/offers",
+      "model": "ArrayOf#Offer",
+      "description": [
+        "An array of schema:Offer that include the price of booking."
+      ],
+      "example": {
+        "@type": "Offer",
+        "identifier": "OX-AD",
+        "name": "Adult",
+        "price": 7.5,
+        "priceCurrency": "GBP",
+        "url": "https://profile.everyoneactive.com/booking?Site=0140&Activities=1402CBP20150217&Culture=en-GB"
+      }
+    },
+    "remainingUses": {
+      "fieldName": "remainingUses",
+      "sameAs": "https://openactive.io/remainingUses",
+      "requiredType": "https://schema.org/Integer",
+      "description": [
+        "The remaining available courts or pitches at this time. Must be 0 or 1 for an IndividualFacilityUse."
+      ],
+      "example": 5
+    },
+    "startDate": {
+      "fieldName": "startDate",
+      "sameAs": "https://schema.org/startDate",
+      "requiredType": "https://schema.org/DateTime",
+      "alternativeTypes": [
+        "https://schema.org/Date"
+      ],
+      "description": [
+        "The start date and time of the slot. Can be specified as a schema:Date or schema:DateTime"
+      ],
+      "example": "2018-01-27T12:00:00Z"
+    }
+  }
+}

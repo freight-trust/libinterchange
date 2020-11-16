@@ -1,0 +1,47 @@
+{
+  "type": "ImageObject",
+  "subClassOf": "#MediaObject",
+  "derivedFrom": "https://schema.org/ImageObject",
+  "hasId": false,
+  "requiredFields":[
+    "type",
+    "url"
+  ],
+  "inSpec": [
+    "type",
+    "thumbnail",
+    "url",
+    "contentUrl",
+    "embedUrl",
+    "width",
+    "height"
+  ],
+  "notInSpec": [
+    "contentUrl",
+    "embedUrl"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "ImageObject"
+    },
+    "thumbnail": {
+      "fieldName": "thumbnail",
+      "sameAs": "https://schema.org/thumbnail",
+      "model": "ArrayOf#ImageObject",
+      "description": [
+        "The URL for a thumbnail image for an image."
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "example": "http://example.com/static/image/speedball_large.jpg",
+      "description": [
+        "The URL for the display resolution image."
+      ]
+    }
+  }
+}

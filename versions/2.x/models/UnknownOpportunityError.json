@@ -1,0 +1,41 @@
+{
+  "type": "UnknownOpportunityError",
+  "subClassOf": "#OpenBookingError",
+  "description": {
+    "sections": [
+      {
+        "title": "Error Use Case",
+        "paragraphs": [
+          "The `@id` provided for the `orderedItem` is not a URL which corresponds to an Opportunity within the Booking System."
+        ]
+      }
+    ]
+  },
+  "fields": {
+    "type": {
+        "fieldName": "type",
+        "requiredContent": "UnknownOpportunityError",
+        "requiredType": "https://schema.org/Text"
+    },
+    "name": {
+      "description": [
+          "A short, human-readable summary of the problem type. It should not change from occurrence to occurrence of the problem, except for purposes of localization."
+      ],
+      "example": "The '@id' provided for the 'orderedItem' is not a URL which corresponds to an Opportunity within the Booking System.",
+      "defaultContent": "The '@id' provided for the 'orderedItem' is not a URL which corresponds to an Opportunity within the Booking System.",
+      "fieldName": "name",
+      "requiredType": "https://schema.org/Text",
+      "sameAs": "https://schema.org/name"
+    },
+    "statusCode": {
+      "fieldName": "statusCode",
+      "sameAs": "https://openactive.io/statusCode",
+      "requiredType": "https://schema.org/Integer",
+      "requiredContent": 409,
+      "defaultContent": 409,
+      "description": [
+        "An integer representing the HTTP status code."
+      ]
+    }
+  }
+}

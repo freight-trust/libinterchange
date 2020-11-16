@@ -1,0 +1,20 @@
+{
+  "type": "Showers",
+  "subClassOf": "#LocationFeatureSpecification",
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Showers"
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Poolside Showers",
+      "description": [
+        "A string, suitable for presentation in user interfaces."
+      ]
+    }
+  }
+}

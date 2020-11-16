@@ -1,0 +1,135 @@
+{
+  "type": "DataCatalog",
+  "derivedFrom": "https://schema.org/DataCatalog",
+  "hasId": true,
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://opendata.leisurecloud.live/api/datacatalog",
+  "requiredFields": [
+    "id",
+    "type",
+    "name",
+    "license",
+    "publisher"
+  ],
+  "requiredOptions": [
+    {
+      "description": [
+        "The `DataCatalog` must include either `hasPart` if it is a collection of smaller `DataCatalog`s, or `dataset` if it is a collection of dataset sites."
+      ],
+      "options": [
+        "hasPart",
+        "dataset"
+      ],
+      "oneOf": true
+    }
+  ],
+  "recommendedFields": [
+    "datePublished"
+  ],
+  "inSpec": [
+    "id",
+    "type",
+    "name",
+    "license",
+    "publisher",
+    "dateModified",
+    "datePublished",
+    "dataset",
+    "hasPart"
+  ],
+  "description": {
+    "sections": [
+      {
+        "title": "EARLY RELEASE NOTICE",
+        "paragraphs": [
+          "This class represents a draft that is designed to inform the OpenActive specification work with implementation feedback. It is mostly stable, as it based entirely on schema.org.",
+          "HOWEVER, IT IS STILL SUBJECT TO CHANGE, as the [Dataset API Discovery specification](https://openactive.io/dataset-api-discovery/EditorsDraft/) evolves."
+        ]
+      }
+    ]
+  },
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "DataCatalog"
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Acme Leisure Sessions and Facilities",
+      "description": [
+        "The name of the `DataCatalog`"
+      ]
+    },
+    "license": {
+      "fieldName": "license",
+      "sameAs": "https://schema.org/license",
+      "requiredType": "https://schema.org/URL",
+      "requiredContent": "https://creativecommons.org/licenses/by/4.0/",
+      "example": "https://creativecommons.org/licenses/by/4.0/",
+      "description": [
+        "The license under which the data is published. OpenActive data must be published under CC-BY 4.0."
+      ]
+    },
+    "publisher": {
+      "fieldName": "publisher",
+      "sameAs": "https://schema.org/publisher",
+      "model": "#Organization",
+      "description": [
+        "The organization ultimately responsible for maintaining this `DataCatalog`."
+      ],
+      "example": {
+        "name": "Central Speedball Association",
+        "type": "Organization",
+        "url": "http://www.speedball-world.com"
+      }
+    },
+    "dateModified": {
+      "fieldName": "dateModified",
+      "sameAs": "https://schema.org/dateModified",
+      "requiredType": "https://schema.org/DateTime",
+      "description": [
+        "The date this `DataCatalog` was last updated."
+      ],
+      "example": "2018-01-27T12:00:00Z"
+    },
+    "datePublished": {
+      "fieldName": "datePublished",
+      "sameAs": "https://schema.org/datePublished",
+      "requiredType": "https://schema.org/DateTime",
+      "alternativeTypes": [
+        "https://schema.org/Date"
+      ],
+      "description": [
+        "The date this `DataCatalog` was first published. Can be specified as a schema:Date or schema:DateTime."
+      ],
+      "example": "2018-01-27T12:00:00Z"
+    },
+    "dataset": {
+      "fieldName": "dataset",
+      "sameAs": "https://schema.org/dataset",
+      "requiredType": "ArrayOf#https://schema.org/URL",
+      "description": [
+        "The URLs of the dataset sites within this `DataCatalog`."
+      ],
+      "example": [
+        "https://opendata.exercise-anywhere.com/",
+        "https://www.participant.co.uk/participant/openactive/"
+      ]
+    },
+    "hasPart": {
+      "fieldName": "hasPart",
+      "sameAs": "https://schema.org/hasPart",
+      "requiredType": "ArrayOf#https://schema.org/URL",
+      "description": [
+        "The URLs of each smaller `DataCatalog` within this `DataCatalog` collection."
+      ],
+      "example": [
+        "https://opendata.leisurecloud.live/api/datacatalog",
+        "https://openactivedatacatalog.legendonlineservices.co.uk/api/DataCatalog"
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+   "type":"Terms",
+   "subClassOf":"https://schema.org/DigitalDocument",
+   "validationMode": {
+ 		"C1Request": "request",
+ 		"C1Response": "response",
+ 		"C2Request": "request",
+ 		"C2Response": "response",
+ 		"PRequest": "request",
+ 		"PResponse": "response",
+ 		"BRequest": "request",
+ 		"BResponse": "response",
+ 		"OrderProposalPatch": "request",
+ 		"OrderPatch": "request"
+ 	},
+ 	"imperativeConfiguration": {
+ 		"request": {
+ 			"requiredFields": [],
+ 			"recommendedFields": []
+ 		},
+ 		"response": {
+ 			"requiredFields": [
+            "type",
+ 				"name",
+ 				"url",
+ 				"requiresExplicitConsent"
+ 			]
+ 		}
+ 	},
+   "inSpec":[
+      "type",
+      "name",
+      "url",
+      "requiresExplicitConsent",
+      "dateModified"
+   ],
+   "notInSpec":[
+
+   ],
+   "fields":{
+      "type":{
+         "fieldName":"type",
+         "requiredType":"https://schema.org/Text",
+         "requiredContent":"Terms"
+      },
+      "name":{
+         "fieldName":"name",
+         "requiredType":"https://schema.org/Text",
+         "sameAs": "https://schema.org/name",
+         "description":["The name of the terms. The name must distinguish this from other terms fields provided, e.g. 'Terms and Conditions' or 'Privacy Policy'."]
+      },
+      "url":{
+         "fieldName":"url",
+         "sameAs": "https://schema.org/url",
+         "requiredType":"https://schema.org/URL",
+         "description": ["The URL of the webpage containing the contents of the terms."]
+      },
+      "requiresExplicitConsent":{
+         "fieldName":"requiresExplicitConsent",
+         "requiredType":"https://schema.org/Boolean",
+         "sameAs": "https://openactive.io/requiresExplicitConsent",
+         "description": [""]
+      },
+      "dateModified": {
+         "fieldName": "dateModified",
+         "sameAs": "https://schema.org/dateModified",
+         "requiredType": "https://schema.org/DateTime",
+         "description": [
+           "The date and time at which the webpage containing the contents of the terms, located at the `url`, was last updated."
+         ],
+         "example": "2018-01-27T12:00:00Z"
+       }
+   }
+}

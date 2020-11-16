@@ -1,0 +1,24 @@
+{
+  "type": "PartialSchedule",
+  "subClassOf": "#Schedule",
+  "requiredOptions": [],
+  "requiredFields": [
+    "type"
+  ],
+  "recommendedFields": [
+    "endTime",
+    "repeatFrequency",
+    "startTime"
+  ],
+  "notInSpec":[
+    "idTemplate",
+    "urlTemplate"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "PartialSchedule"
+    }
+  }
+}

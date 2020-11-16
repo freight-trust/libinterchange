@@ -1,0 +1,302 @@
+{
+  "type": "OrderItem",
+  "derivedFrom": "https://schema.org/OrderItem",
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://example.com/OrderItem/",
+  "validationMode": {
+    "C1Request": "request",
+    "C1Response": "Cresponse",
+    "C2Request": "request",
+    "C2Response": "Cresponse",
+    "PRequest": "request",
+    "PResponse": "Presponse",
+    "BRequest": "request",
+    "BResponse": "response",
+    "OrderProposalPatch": "request",
+    "OrderPatch": "cancellation",
+    "OrdersFeed": "ordersFeed",
+    "OrderStatus": "orderStatus"
+  },
+  "imperativeConfiguration": {
+    "request": {
+      "hasId": true,
+      "requiredFields": [
+        "type",
+        "acceptedOffer",
+        "orderedItem",
+        "position"
+      ],
+      "recommendedFields": [
+
+      ],
+      "shallNotInclude": [
+        "orderItemStatus",
+        "allowCustomerCancellationFullRefund",
+        "unitTaxSpecification",
+        "accessCode",
+        "error",
+        "cancellationMessage",
+        "customerNotice",
+        "orderItemIntakeForm"
+      ],
+      "requiredOptions": [
+
+      ]
+    },
+    "Cresponse": {
+      "hasId": true,
+      "requiredFields": [
+        "type",
+        "acceptedOffer",
+        "orderedItem",
+        "position"
+      ],
+      "recommendedFields": [
+        "allowCustomerCancellationFullRefund"
+      ],
+      "shallNotInclude": [
+        "orderItemStatus",
+        "cancellationMessage",
+        "customerNotice",
+        "accessCode",
+        "accessPass"
+      ],
+      "requiredOptions": [
+
+      ]
+    },
+    "response": {
+      "hasId": true,
+      "requiredFields": [
+        "type",
+        "id",
+        "orderItemStatus",
+        "acceptedOffer",
+        "orderedItem"
+      ],
+      "recommendedFields": [
+        "allowCustomerCancellationFullRefund",
+        "accessCode",
+        "accessPass"
+      ],
+      "shallNotInclude": [
+        "cancellationMessage",
+        "customerNotice"
+      ],
+      "requiredOptions": [
+
+      ]
+    },
+    "Presponse": {
+      "hasId": true,
+      "requiredFields": [
+        "type",
+        "orderItemStatus",
+        "acceptedOffer",
+        "orderedItem",
+        "position"
+      ],
+      "recommendedFields": [
+        "allowCustomerCancellationFullRefund",
+        "accessCode",
+        "accessPass"
+      ],
+      "shallNotInclude": [
+        "cancellationMessage",
+        "customerNotice",
+        "id"
+      ],
+      "requiredOptions": [
+
+      ]
+    },
+    "orderStatus": {
+      "hasId": true,
+      "requiredFields": [
+        "type",
+        "id",
+        "orderItemStatus",
+        "acceptedOffer",
+        "orderedItem"
+      ],
+      "recommendedFields": [
+        "allowCustomerCancellationFullRefund",
+        "accessCode",
+        "accessPass"
+      ],
+      "shallNotInclude": [
+        "cancellationMessage",
+        "customerNotice",
+        "position"
+      ],
+      "requiredOptions": [
+
+      ]
+    },
+    "ordersFeed": {
+      "hasId": true,
+      "requiredFields": [
+        "type",
+        "orderItemStatus",
+        "acceptedOffer",
+        "orderedItem"
+      ],
+      "recommendedFields": [
+        "allowCustomerCancellationFullRefund",
+        "accessCode",
+        "accessPass"
+      ],
+      "shallNotInclude": [
+        "attendee",
+        "attendeeDetailsRequired",
+        "orderItemIntakeForm",
+        "orderItemIntakeFormResponse",
+        "position"
+      ],
+      "requiredOptions": [
+      ]
+    },
+    "cancellation": {
+      "hasId": true,
+      "requiredFields": [
+        "type",
+        "id",
+        "orderItemStatus"
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+        "allowCustomerCancellationFullRefund",
+        "unitTaxSpecification",
+        "accessCode",
+        "accessPass",
+        "error",
+        "cancellationMessage",
+        "customerNotice",
+        "orderItemIntakeForm",
+        "acceptedOffer",
+        "orderedItem",
+        "position"
+      ],
+      "requiredOptions": [
+
+      ]
+    }
+  },
+  "inSpec": [
+    "id",
+    "type",
+    "position",
+    "orderItemStatus",
+    "allowCustomerCancellationFullRefund",
+    "unitTaxSpecification",
+    "acceptedOffer",
+    "orderedItem",
+    "accessCode",
+    "accessPass",
+    "error",
+    "cancellationMessage",
+    "customerNotice",
+    "attendee",
+    "attendeeDetailsRequired",
+    "orderItemIntakeForm",
+    "orderItemIntakeFormResponse"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "OrderItem"
+    },
+    "position": {
+      "fieldName": "position",
+      "sameAs": "https://schema.org/position",
+      "requiredType": "https://schema.org/Integer",
+      "description": ["An integer representing the order of OrderItems within the array."]
+    },
+    "orderItemStatus": {
+      "fieldName": "orderItemStatus",
+      "sameAs": "https://schema.org/orderItemStatus",
+      "requiredType": "https://openactive.io/OrderItemStatus",
+      "description": []
+    },
+    "allowCustomerCancellationFullRefund": {
+      "fieldName": "allowCustomerCancellationFullRefund",
+      "sameAs": "https://openactive.io/allowCustomerCancellationFullRefund",
+      "requiredType": "https://schema.org/Boolean",
+      "description": ["Whether the event can be cancelled."]
+    },
+    "unitTaxSpecification": {
+      "fieldName": "unitTaxSpecification",
+      "sameAs": "https://openactive.io/unitTaxSpecification",
+      "model": "ArrayOf#TaxChargeSpecification",
+      "description": ["Breakdown of tax payable for the OrderItem."]
+    },
+    "acceptedOffer": {
+      "fieldName": "acceptedOffer",
+      "sameAs": "https://schema.org/acceptedOffer",
+      "model": "#Offer",
+      "description": ["The offer from the associated orderedItem that has been selected by the Customer. The price of this includes or excludes tax depending on the taxMode of the Order."]
+    },
+    "orderedItem": {
+      "fieldName": "orderedItem",
+      "sameAs": "https://schema.org/orderedItem",
+      "model": "#Event",
+      "description": ["The specific bookable Thing that has been selected by the Customer. See the [Modelling-Opportunity-Data] for more information on these types. Note that the Broker Request and Orders feed only require id within these objects to be included; in these contexts, all other properties are ignored."]
+    },
+    "accessCode": {
+      "fieldName": "accessCode",
+      "sameAs": "https://schema.org/accessCode",
+      "model": "ArrayOf#PropertyValue",
+      "description": ["PropertyValue that contains a text value usable for entrance. Not applicable for an  OrderQuote."]
+    },
+    "accessPass": {
+      "fieldName": "accessPass",
+      "sameAs": "https://openactive.io/accessPass",
+      "model": "ArrayOf#ImageObject",
+      "description": ["ImageObject or Barcode that contains reference to an asset (e.g. Barcode, QR code image or PDF) usable for entrance. Not applicable for an OrderQuote."]
+    },
+    "error": {
+      "fieldName": "error",
+      "sameAs": "https://schema.org/error",
+      "model": "ArrayOf#OpenBookingError",
+      "description": ["Array of errors related to the OrderItem being included in the Order, only applicable for an  OrderQuote."]
+    },
+    "cancellationMessage": {
+      "fieldName": "cancellationMessage",
+      "sameAs": "https://openactive.io/cancellationMessage",
+      "requiredType": "https://schema.org/Text",
+      "description": ["A message set by the Seller in the event of Opportunity cancellation, only applicable for an  Order and where the OrderItem has  orderItemStatus set to  https://openactive.io/SellerCancelled"]
+    },
+    "customerNotice": {
+      "fieldName": "customerNotice",
+      "sameAs": "https://openactive.io/customerNotice",
+      "requiredType": "https://schema.org/Text",
+      "description": ["A message set by the Seller to trigger a notification to the Customer, only applicable for an Order and where the OrderItem has  orderItemStatus set to  https://openactive.io/OrderItemConfirmed or  https://openactive.io/CustomerAttended"]
+    },
+    "attendee": {
+      "fieldName": "attendee",
+      "sameAs": "https://schema.org/attendee",
+      "model": "#Person",
+      "description": []
+    },
+    "attendeeDetailsRequired": {
+      "fieldName": "attendeeDetailsRequired",
+      "sameAs": "https://openactive.io/attendeeDetailsRequired",
+      "requiredType": "ArrayOf#https://schema.org/Property",
+      "description": []
+    },
+    "orderItemIntakeForm": {
+      "fieldName": "orderItemIntakeForm",
+      "sameAs": "https://openactive.io/orderItemIntakeForm",
+      "model": "ArrayOf#PropertyValueSpecification",
+      "description": ["PropertyValueSpecifications that describe fields in the orderItemIntakeForm."]
+    },
+    "orderItemIntakeFormResponse": {
+      "fieldName": "orderItemIntakeFormResponse",
+      "sameAs": "https://openactive.io/orderItemIntakeFormResponse",
+      "model": "ArrayOf#PropertyValue",
+      "description": ["PropertyValues that contains a text value responses to the orderItemIntakeForm."]
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "type": "CourseInstance",
+  "subClassOf": "#Event",
+  "derivedFrom": "https://schema.org/CourseInstance",
+  "requiredFields": [
+    "type",
+    "url",
+    "name",
+    "location",
+    "activity",
+    "organizer",
+    "offers",
+    "startDate",
+    "endDate"
+  ],
+  "requiredOptions": [
+    {
+      "description": [
+        "A data publisher must provide either a `subEvent` or specify an `eventSchedule` for a CourseInstance."
+      ],
+      "options": [
+        "subEvent",
+        "eventSchedule"
+      ],
+      "oneOf": true
+    }
+  ],
+  "recommendedFields": [
+    "id",
+    "description",
+    "image",
+    "eventStatus",
+    "ageRange",
+    "genderRestriction",
+    "leader",
+    "level",
+    "maximumAttendeeCapacity",
+    "remainingAttendeeCapacity"
+  ],
+  "shallNotInclude": [],
+  "validationMode": {
+    "C1Request": "request",
+		"C1Response": "response",
+		"C2Request": "request",
+		"C2Response": "response",
+		"PRequest": "request",
+		"PResponse": "response",
+		"BRequest": "request",
+		"BResponse": "response",
+    "OrdersFeed": "request",
+    "OrderStatus": "response",
+    "TestInterface": "testInterface"
+  },
+	"imperativeConfiguration": {
+    "testInterface": {
+      "requiredFields": [
+        "type"
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+      ]
+    },
+		"request": {
+      "requiredFields": [
+        "type",
+        "id"
+      ],
+      "shallNotInclude": [
+        "identifier",
+        "url",
+        "name",
+        "description",
+        "image",
+        "startDate",
+        "endDate",
+        "duration",
+        "location",
+        "organizer",
+        "contributor",
+        "maximumAttendeeCapacity",
+        "maximumVirtualAttendeeCapacity",
+        "remainingAttendeeCapacity",
+        "eventStatus",
+        "subEvent",
+        "superEvent",
+        "activity",
+        "category",
+        "ageRange",
+        "genderRestriction",
+        "programme",
+        "attendeeInstructions",
+        "leader",
+        "accessibilitySupport",
+        "accessibilityInformation",
+        "isCoached",
+        "level",
+        "meetingPoint",
+        "isAccessibleForFree",
+        "offers",
+        "schedulingNote",
+        "eventSchedule"
+      ]
+    },
+    "response": {
+      "requiredFields": [
+        "type",
+        "id",
+        "url",
+        "name",
+        "location",
+        "activity",
+        "startDate"
+      ],
+      "recommendedFields": [
+        "endDate",
+        "duration",
+        "ageRange",
+        "genderRestriction",
+        "eventStatus",
+        "maximumAttendeeCapacity",
+        "remainingAttendeeCapacity"
+      ],
+      "shallNotInclude": [
+        "offers",
+        "subEvent",
+        "organizer"
+      ]
+		}
+	},
+  "inSpec": [
+    "id",
+    "type",
+    "identifier",
+    "url",
+    "name",
+    "description",
+    "image",
+    "startDate",
+    "endDate",
+    "duration",
+    "location",
+    "organizer",
+    "contributor",
+    "maximumAttendeeCapacity",
+    "maximumVirtualAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "eventStatus",
+    "subEvent",
+    "superEvent",
+    "eventSchedule",
+    "activity",
+    "category",
+    "ageRange",
+    "genderRestriction",
+    "programme",
+    "attendeeInstructions",
+    "leader",
+    "accessibilitySupport",
+    "accessibilityInformation",
+    "isCoached",
+    "level",
+    "meetingPoint",
+    "isAccessibleForFree",
+    "offers",
+    "schedulingNote",
+    "eventAttendanceMode"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "CourseInstance"
+    },
+    "eventSchedule": {
+      "fieldName": "eventSchedule",
+      "sameAs": "https://pending.schema.org/eventSchedule",
+      "model": "ArrayOf#Schedule",
+      "description": [
+        "A an array of oa:Schedule or oa:PartialSchedule, which represents a recurrence pattern."
+      ],
+      "example": [
+        {
+          "@type": "PartialSchedule",
+          "repeatFrequency": "P1W",
+          "startTime": "20:15",
+          "endTime": "20:45",
+          "byDay": [
+            "http://schema.org/Tuesday"
+          ],
+          "scheduleTimezone": "Europe/London"
+        }
+      ]
+    }
+  }
+}

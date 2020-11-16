@@ -1,0 +1,84 @@
+{
+  "type": "Brand",
+  "derivedFrom": "https://schema.org/Brand",
+  "hasId": false,
+  "requiredFields": [
+    "type",
+    "name",
+    "url"
+  ],
+  "recommendedFields": [
+    "description",
+    "logo"
+  ],
+  "inSpec": [
+    "type",
+    "name",
+    "url",
+    "description",
+    "logo",
+    "identifier"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Brand"
+    },
+    "description": {
+      "fieldName": "description",
+      "sameAs": "https://schema.org/description",
+      "requiredType": "https://schema.org/Text",
+      "example": "Play Ball! is a series of games for people of all abilities.",
+      "description": [
+        "A plain text description for the brand, which must not include HTML or other markup."
+      ]
+    },
+    "identifier": {
+      "fieldName": "identifier",
+      "sameAs": "https://schema.org/identifier",
+      "alternativeModels": [
+        "#PropertyValue",
+        "ArrayOf#PropertyValue"
+      ],
+      "requiredType": "https://schema.org/Text",
+      "alternativeTypes": [
+        "https://schema.org/Integer"
+      ],
+      "example": "BR1234",
+      "description": [
+        "A local non-URI identifier for the resource"
+      ]
+    },
+    "logo": {
+      "fieldName": "logo",
+      "sameAs": "https://schema.org/logo",
+      "model": "#ImageObject",
+      "example": {
+        "@type": "ImageObject",
+        "url": "http://example.com/static/image/speedball_large.jpg"
+      },
+      "description": [
+        "The logo associated with the brand."
+      ]
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Play Ball!",
+      "description": [
+        "The name of the brand."
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "example": "http://example.com/play_ball",
+      "description": [
+        "A url where further information can be found for the brand."
+      ]
+    }
+  }
+}

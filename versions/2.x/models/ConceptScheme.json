@@ -1,0 +1,85 @@
+{
+  "type": "ConceptScheme",
+  "derivedFrom": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "hasId": true,
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://example.com/scheme/",
+  "requiredFields": [
+    "type",
+    "id",
+    "url",
+    "title",
+    "concept"
+  ],
+  "recommendedFields": [
+    "description",
+    "license"
+  ],
+  "inSpec": [
+    "type",
+    "id",
+    "url",
+    "title",
+    "description",
+    "license",
+    "concept"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "ConceptScheme"
+    },
+    "concept": {
+      "fieldName": "concept",
+      "sameAs": "https://openactive.io/concept",
+      "model": "ArrayOf#Concept",
+      "example": [{
+        "@id": "https://example.com/concept/martial-arts",
+        "type": "Concept",
+        "prefLabel": "Martial Arts",
+        "inScheme": "https://example.com/scheme/123",
+        "narrower": "https://example.com/concept/martial-arts/karate"
+      }],
+      "description": [
+        "A collection of concepts that are part of this scheme"
+      ]
+    },
+    "description": {
+      "fieldName": "description",
+      "sameAs": "https://schema.org/description",
+      "requiredType": "https://schema.org/Text",
+      "example": "An example activity list.",
+      "description": [
+        "A plain text description of the taxonomy, which must not include HTML or other markup."
+      ]
+    },
+    "license": {
+      "fieldName": "license",
+      "sameAs": "http://purl.org/dc/terms/license",
+      "requiredType": "https://schema.org/URL",
+      "description": [
+        "Reference to the license under which the activity list has been published."
+      ],
+      "example": "https://example.com/license/MIT"
+    },
+    "title": {
+      "fieldName": "title",
+      "sameAs": "http://purl.org/dc/terms/title",
+      "requiredType": "https://schema.org/Text",
+      "example": "Activity List",
+      "description": [
+        "The title of the scheme"
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "description": [
+        "A URL to a web page (or section of a page) that describes the concept scheme."
+      ],
+      "example": "https://example.com/scheme/1234"
+    }
+  }
+}

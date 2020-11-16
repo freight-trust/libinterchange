@@ -1,0 +1,41 @@
+{
+  "type": "UnauthenticatedError",
+  "subClassOf": "#OpenBookingError",
+  "description": {
+    "sections": [
+      {
+        "title": "Error Use Case",
+        "paragraphs": [
+          "The Broker did not supply any form of authentication."
+        ]
+      }
+    ]
+  },
+  "fields": {
+    "type": {
+        "fieldName": "type",
+        "requiredContent": "UnauthenticatedError",
+        "requiredType": "https://schema.org/Text"
+    },
+    "name": {
+      "description": [
+          "A short, human-readable summary of the problem type. It should not change from occurrence to occurrence of the problem, except for purposes of localization."
+      ],
+      "example": "The Broker did not supply any form of authentication.",
+      "defaultContent": "The Broker did not supply any form of authentication.",
+      "fieldName": "name",
+      "requiredType": "https://schema.org/Text",
+      "sameAs": "https://schema.org/name"
+    },
+    "statusCode": {
+      "fieldName": "statusCode",
+      "sameAs": "https://openactive.io/statusCode",
+      "requiredType": "https://schema.org/Integer",
+      "requiredContent": 403,
+      "defaultContent": 403,
+      "description": [
+        "An integer representing the HTTP status code."
+      ]
+    }
+  }
+}

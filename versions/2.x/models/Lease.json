@@ -1,0 +1,58 @@
+{
+   "type":"Lease",
+   "subClassOf": "https://schema.org/Thing",
+   "validationMode": {
+ 		"C1Response": "response",
+ 		"C2Request": "request",
+ 		"C2Response": "response",
+ 		"PRequest": "request",
+ 		"PResponse": "response",
+ 		"BRequest": "request",
+ 		"BResponse": "response"
+ 	},
+ 	"imperativeConfiguration": {
+ 		"request": {
+ 			"requiredFields": [],
+ 			"recommendedFields": []
+ 		},
+ 		"response": {
+ 			"requiredFields": [
+ 				"type",
+ 				"leaseExpires"
+ 			],
+ 			"recommendedFields": []
+ 		}
+ 	},
+   "inSpec":[
+      "type",
+      "leaseExpires",
+      "identifier"
+   ],
+   "fields":{
+      "type":{
+         "fieldName":"type",
+         "requiredType":"https://schema.org/Text",
+         "requiredContent":"Lease"
+      },
+      "identifier":{
+         "fieldName":"identifier",
+         "sameAs": "https://schema.org/identifier",
+         "alternativeModels":[
+            "#PropertyValue",
+            "ArrayOf#PropertyValue"
+         ],
+         "requiredType":"https://schema.org/Text",
+         "alternativeTypes":[
+            "https://schema.org/Integer"
+         ],
+         "example":"SB1234",
+         "description":[ "Optional identifier of the Lease if useful for audit or debugging purposes."]
+      },
+      "leaseExpires":{
+         "fieldName":"leaseExpires",
+         "sameAs": "https://openactive.io/leaseExpires",
+         "requiredType":"https://schema.org/DateTime",
+         "description":["Expiry DateTime of the Lease in ISO 8601 format"]
+      }
+   }
+}

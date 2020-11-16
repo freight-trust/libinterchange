@@ -1,0 +1,31 @@
+{
+  "type": "Action",
+  "derivedFrom": "https://schema.org/Action",
+  "hasId": false,
+  "inSpec": [
+    "type",
+    "object"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Action"
+    },
+    "object": {
+      "fieldName": "object",
+      "sameAs": "https://schema.org/object",
+      "model": "#Event",
+      "alternativeModels": [
+        "#Order"
+      ],
+      "example": {
+        "@type": "SessionSeries",
+        "@id": "https://id.booking-system.example.com/session-series/42"
+      },
+      "description": [
+        "The object upon which the action is carried out, whose state is kept intact or changed."
+      ]
+    }
+  }
+}

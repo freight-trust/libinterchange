@@ -1,0 +1,256 @@
+{
+  "type": "Place",
+  "derivedFrom": "https://schema.org/Place",
+  "hasId": true,
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://example.com/place/",
+  "requiredFields": [
+    "type",
+    "name"
+  ],
+  "requiredOptions": [
+    {
+      "description": [
+        "While these properties are marked as recommended in the specification, a data publisher must provide as much detail in both `address` and `geo` for an event as possible."
+      ],
+      "options": [
+        "address",
+        "geo"
+      ]
+    }
+  ],
+  "recommendedFields": [
+    "id",
+    "url",
+    "description",
+    "image",
+    "telephone",
+    "openingHoursSpecification",
+    "amenityFeature"
+  ],
+  "inSpec": [
+    "type",
+    "id",
+    "identifier",
+    "url",
+    "name",
+    "description",
+    "image",
+    "address",
+    "geo",
+    "containedInPlace",
+    "containsPlace",
+    "telephone",
+    "openingHoursSpecification",
+    "amenityFeature"
+  ],
+  "validationMode": {
+		"C1Response": "response",
+		"C2Response": "response",
+		"PResponse": "response",
+		"BResponse": "response",
+    "OrderStatus": "response"
+	},
+	"imperativeConfiguration": {
+    "response": {
+      "requiredFields": [
+        "type",
+        "name"
+      ],
+      "requiredOptions": [
+        {
+          "description": [
+            "While these properties are marked as recommended in the specification, a data publisher must provide as much detail in both `address` and `geo` for an event as possible."
+          ],
+          "options": [
+            "address",
+            "geo"
+          ]
+        }
+      ],
+      "shallNotInclude": [
+        "containedInPlace",
+        "containsPlace"
+      ]
+		}
+	},
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Place"
+    },
+    "address": {
+      "fieldName": "address",
+      "sameAs": "https://schema.org/address",
+      "model": "#PostalAddress",
+      "alternativeTypes": [
+        "https://schema.org/Text"
+      ],
+      "preferredComment": "Ideally the address should be provided using the PostalAddress structured format. Google Reserve requires https://schema.org/PostalAddress and will not accept plain text addresses.",
+      "example": {
+        "@type": "PostalAddress",
+        "streetAddress": "Raynes Park High School, 46A West Barnes Lane",
+        "addressLocality": "New Malden",
+        "addressRegion": "London",
+        "postalCode": "NW5 3DU",
+        "addressCountry": "GB"
+      },
+      "description": [
+        "A structured PostalAddress object for the Place.","Ideally the address should be provided using the PostalAddress structured format. Google Reserve requires https://schema.org/PostalAddress and will not accept plain text addresses."
+      ]
+    },
+    "amenityFeature": {
+      "fieldName": "amenityFeature",
+      "sameAs": "https://schema.org/amenityFeature",
+      "model": "ArrayOf#LocationFeatureSpecification",
+      "example": [
+        {
+          "name": "Changing Facilities",
+          "value": true,
+          "@type": "ChangingFacilities"
+        },
+        {
+          "name": "Showers",
+          "value": false,
+          "@type": "Showers"
+        },
+        {
+          "name": "Lockers",
+          "value": true,
+          "@type": "Lockers"
+        },
+        {
+          "name": "Towels",
+          "value": false,
+          "@type": "Towels"
+        },
+        {
+          "name": "Creche",
+          "value": false,
+          "@type": "Creche"
+        },
+        {
+          "name": "Parking",
+          "value": true,
+          "@type": "Parking"
+        }
+      ],
+      "description": [
+        "An array listing the Ammenities of the Place."
+      ]
+    },
+    "containedInPlace": {
+      "fieldName": "containedInPlace",
+      "sameAs": "https://schema.org/containedInPlace",
+      "model": "#Place",
+      "example": {
+        "@type": "Place",
+        "url": "https://www.everyoneactive.com/centres/Middlesbrough-Sports-Village",
+        "name": "Middlesbrough Sports Village"
+      },
+      "description": [
+        "The place within which this Place exists"
+      ]
+    },
+    "containsPlace": {
+      "fieldName": "containsPlace",
+      "sameAs": "https://schema.org/containsPlace",
+      "model": "ArrayOf#Place",
+      "example": {
+        "@type": "Place",
+        "url": "https://www.everyoneactive.com/centres/Center-Parcs-Sports-Plaza",
+        "name": "Center Parcs Sports Plaza"
+      },
+      "description": [
+        "Places that exist within this place"
+      ]
+    },
+    "description": {
+      "fieldName": "description",
+      "sameAs": "https://schema.org/description",
+      "requiredType": "https://schema.org/Text",
+      "example": "Raynes Park High School in London",
+      "description": [
+        "A plain text description of the Place, which must not include HTML or other markup."
+      ]
+    },
+    "geo": {
+      "fieldName": "geo",
+      "sameAs": "https://schema.org/geo",
+      "model": "#GeoCoordinates",
+      "example": {
+        "latitude": 51.4034423828125,
+        "longitude": -0.2369088977575302,
+        "@type": "GeoCoordinates"
+      },
+      "description": [
+        "The geo coordinates of the Place."
+      ]
+    },
+    "identifier": {
+      "fieldName": "identifier",
+      "sameAs": "https://schema.org/identifier",
+      "alternativeModels": [
+        "#PropertyValue",
+        "ArrayOf#PropertyValue"
+      ],
+      "requiredType": "https://schema.org/Text",
+      "alternativeTypes": [
+        "https://schema.org/Integer"
+      ],
+      "example": "SB1234",
+      "description": [
+        "A local non-URI identifier for the resource"
+      ]
+    },
+    "image": {
+      "fieldName": "image",
+      "sameAs": "https://schema.org/image",
+      "model": "ArrayOf#ImageObject",
+      "description": [
+        "An image or photo that depicts the place, e.g. a photo taken at a previous event."
+      ],
+      "example": [{
+        "thumbnail": "http://example.com/static/image/speedball_thumbnail.jpg",
+        "@type": "ImageObject",
+        "url": "http://example.com/static/image/speedball_large.jpg"
+      }]
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Raynes Park High School",
+      "description": [
+        "The name of the Place"
+      ]
+    },
+    "openingHoursSpecification": {
+      "sameAs": "https://schema.org/openingHoursSpecification",
+      "fieldName": "openingHoursSpecification",
+      "model": "ArrayOf#OpeningHoursSpecification",
+      "description": [
+        "The times the Place is open"
+      ]
+    },
+    "telephone": {
+      "fieldName": "telephone",
+      "sameAs": "https://schema.org/telephone",
+      "requiredType": "https://schema.org/Text",
+      "example": "01253 473934",
+      "description": [
+        "The telephone number for the Place"
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "example": "http://www.rphs.org.uk/",
+      "description": [
+        "The website for the Place"
+      ]
+    }
+  }
+}

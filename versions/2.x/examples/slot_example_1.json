@@ -1,0 +1,32 @@
+{
+  "next": "http://www.example.org/feeds/facility-uses/events?afterChangeNumber=44254329",
+  "items": [
+    {
+      "state": "updated",
+      "kind": "FacilityUse/Slot",
+      "id": "009/2018-03-01T10:00:00Z",
+      "modified": 44234351,
+      "data": {
+        "@context": "https://openactive.io/",
+        "@type": "Slot",
+        "@id": "http://www.example.org/api/facility-uses/432#/event/2018-03-01T10:00:00Z",
+        "facilityUse": "http://www.example.org/api/facility-uses/432",
+        "startDate": "2018-03-01T11:00:00Z",
+        "endDate": "2018-03-01T11:30:00Z",
+        "duration": "PT30M",
+        "remainingUses": 3,
+        "maximumUses": 6,
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "30 minute hire",
+            "price": 10,
+            "priceCurrency": "GBP",
+            "url": "https://profile.everyoneactive.com/booking?Site=0140&Activities=1402CBP20150217&Culture=en-GB"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}

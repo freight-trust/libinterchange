@@ -1,0 +1,68 @@
+{
+  "next": "https://example.com/api/orders-rpde?afterTimestamp=1521565719&afterId=e11429ea-467f-4270-ab62-e47368996fe8",
+  "items": [
+    {
+      "state": "updated",
+      "kind": "Order",
+      "@id": "e11429ea-467f-4270-ab62-e47368996fe8",
+      "modified": 1521565719,
+      "data": {
+        "@context": "https://openactive.io/",
+        "@type": "Order",
+        "@id": "https://example.com/api/orders/e11429ea-467f-4270-ab62-e47368996fe8",
+        "identifier": "e11429ea-467f-4270-ab62-e47368996fe8",
+        "orderedItem": [
+          {
+            "@type": "OrderItem",
+            "@id": "https://example.com/api/orders/e11429ea-467f-4270-ab62-e47368996fe8#/orderedItem/1234",
+            "orderItemStatus": "https://openactive.io/OrderItemConfirmed",
+            "allowCustomerCancellationFullRefund": true,
+            "unitTaxSpecification": [
+              {
+                "@type": "TaxChargeSpecification",
+                "name": "VAT at 20%",
+                "price": 1,
+                "priceCurrency": "GBP",
+                "rate": 0.2
+              }
+            ],
+            "acceptedOffer": {
+              "@type": "Offer",
+              "@id": "https://example.com/events/452#/offers/878",
+              "description": "Winger space for Speedball.",
+              "name": "Speedball winger position",
+              "price": 10,
+              "priceCurrency": "GBP",
+              "validFromBeforeStartDate": "P6D",
+              "latestCancellationBeforeStartDate": "P1D"
+            },
+            "orderedItem": {
+              "@type": "ScheduledSession",
+              "@id": "https://example.com/events/452/subEvents/132"
+            },
+            "accessPass": [
+              {
+                "@type": "Barcode",
+                "text": "0123456789"
+              }
+            ]
+          }
+        ],
+        "totalPaymentDue": {
+          "@type": "PriceSpecification",
+          "price": 5,
+          "priceCurrency": "GBP"
+        },
+        "totalPaymentTax": [
+          {
+            "@type": "TaxChargeSpecification",
+            "name": "VAT at 20%",
+            "price": 1,
+            "priceCurrency": "GBP",
+            "rate": 0.2
+          }
+        ]
+      }
+    }
+  ]
+}

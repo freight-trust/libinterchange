@@ -1,0 +1,43 @@
+{
+  "type": "VideoObject",
+  "subClassOf": "#MediaObject",
+  "derivedFrom": "https://schema.org/VideoObject",
+  "hasId": false,
+  "requiredFields":[
+    "type",
+    "url"
+  ],
+  "inSpec": [
+    "type",
+    "thumbnail",
+    "url",
+    "contentUrl",
+    "embedUrl",
+    "width",
+    "height"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "VideoObject"
+    },
+    "thumbnail": {
+      "fieldName": "thumbnail",
+      "sameAs": "https://schema.org/thumbnail",
+      "model": "ArrayOf#ImageObject",
+      "description": [
+        "The URL for a thumbnail image for the video."
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://www.youtube.com/watch?v=3fbCs0GVjgQ",
+      "description": [
+        "The URL for the video."
+      ]
+    }
+  }
+}

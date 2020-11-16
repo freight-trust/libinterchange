@@ -1,0 +1,330 @@
+{
+  "defaultPrefix": "schema",
+  "openActivePrefix": "oa",
+  "contextUrl": "https://openactive.io/",
+  "specUrl": "https://openactive.io/modelling-opportunity-data/",
+  "defaultActivityLists": [
+    "https://openactive.io/activity-list"
+  ],
+  "opportunityTypes": [
+    {
+      "identifier": "SessionSeries",
+      "name": "SessionSeries",
+      "sameAs": "https://openactive.io/SessionSeries",
+      "parent": "EventSeries",
+      "defaultFeedPath": "/session-series",
+      "themeDisplayName": "Sessions",
+      "bookable": false
+    },
+    {
+      "identifier": "ScheduledSession",
+      "name": "ScheduledSession",
+      "sameAs": "https://openactive.io/ScheduledSession",
+      "parent": "SessionSeries",
+      "defaultFeedPath": "/scheduled-sessions",
+      "themeDisplayName": "Sessions",
+      "bookable": true
+    },
+    {
+      "identifier": "FacilityUse",
+      "name": "FacilityUse",
+      "sameAs": "https://openactive.io/FacilityUse",
+      "defaultFeedPath": "/facility-uses",
+      "themeDisplayName": "Facilities",
+      "bookable": false
+    },
+    {
+      "identifier": "IndividualFacilityUse",
+      "name": "IndividualFacilityUse",
+      "sameAs": "https://openactive.io/IndividualFacilityUse",
+      "defaultFeedPath": "/individual-facility-uses",
+      "themeDisplayName": "Facilities",
+      "bookable": false
+    },
+    {
+      "identifier": "FacilityUseSlot",
+      "name": "Slot for FacilityUse",
+      "sameAs": "https://openactive.io/Slot",
+      "parent": "FacilityUse",
+      "defaultFeedPath": "/facility-use-slots",
+      "themeDisplayName": "Facilities",
+      "bookable": true
+    },
+    {
+      "identifier": "IndividualFacilityUseSlot",
+      "name": "Slot for IndividualFacilityUse",
+      "sameAs": "https://openactive.io/Slot",
+      "parent": "IndividualFacilityUse",
+      "defaultFeedPath": "/individual-facility-use-slots",
+      "themeDisplayName": "Facilities",
+      "bookable": true
+    },
+    {
+      "identifier": "Course",
+      "name": "Course",
+      "sameAs": "https://schema.org/Course",
+      "defaultFeedPath": "/courses",
+      "themeDisplayName": "Courses",
+      "bookable": false
+    },
+    {
+      "identifier": "CourseInstance",
+      "name": "CourseInstance",
+      "sameAs": "https://schema.org/CourseInstance",
+      "parent": "Course",
+      "defaultFeedPath": "/course-instances",
+      "themeDisplayName": "Courses",
+      "bookable": true
+    },
+    {
+      "identifier": "CourseInstanceSubEvent",
+      "name": "Event for CourseInstance",
+      "sameAs": "https://schema.org/Event",
+      "parent": "CourseInstance",
+      "defaultFeedPath": "/course-instance-subevents",
+      "themeDisplayName": "Courses",
+      "bookable": true
+    },
+    {
+      "identifier": "HeadlineEvent",
+      "name": "HeadlineEvent",
+      "sameAs": "https://openactive.io/HeadlineEvent",
+      "parent": "EventSeries",
+      "defaultFeedPath": "/headline-events",
+      "themeDisplayName": "Headline Events",
+      "bookable": true
+    },
+    {
+      "identifier": "HeadlineEventSubEvent",
+      "name": "Event for HeadlineEvent",
+      "sameAs": "https://schema.org/Event",
+      "parent": "HeadlineEvent",
+      "defaultFeedPath": "/headline-event-subevents",
+      "themeDisplayName": "Headline Events",
+      "bookable": true
+    },
+    {
+      "identifier": "Event",
+      "name": "Event",
+      "sameAs": "https://schema.org/Event",
+      "parent": "EventSeries",
+      "defaultFeedPath": "/events",
+      "kind": ["Event"],
+      "themeDisplayName": "Events",
+      "bookable": true
+    },
+    {
+      "identifier": "EventSeries",
+      "name": "EventSeries",
+      "sameAs": "https://schema.org/EventSeries",
+      "defaultFeedPath": "/event-series",
+      "kind": ["EventSeries"],
+      "bookable": false
+    },
+    {
+      "identifier": "OnDemandEvent",
+      "name": "OnDemandEvent",
+      "sameAs": "https://schema.org/OnDemandEvent",
+      "defaultFeedPath": "/on-demand-event",
+      "kind": ["OnDemandEvent"],
+      "themeDisplayName": "On Demand Events",
+      "bookable": true
+    }
+  ],
+  "baseGraph": {
+    "@context": {
+      "id": "@id",
+      "type": "@type",
+      "dc:title": {
+        "@container": "@language"
+      },
+      "dc:description": {
+        "@container": "@language"
+      },
+      "dc:date": {
+        "@type": "xsd:date"
+      },
+      "rdfs:comment": {
+        "@container": "@language"
+      },
+      "rdfs:domain": {
+        "@type": "@id"
+      },
+      "rdfs:label": {
+        "@container": "@language"
+      },
+      "rdfs:range": {
+        "@type": "@id"
+      },
+      "rdfs:seeAlso": {
+        "@type": "@id"
+      },
+      "rdfs:subClassOf": {
+        "@type": "@id"
+      },
+      "rdfs:subPropertyOf": {
+        "@type": "@id"
+      },
+      "owl:equivalentClass": {
+        "@type": "@vocab"
+      },
+      "owl:equivalentProperty": {
+        "@type": "@vocab"
+      },
+      "owl:oneOf": {
+        "@container": "@list",
+        "@type": "@vocab"
+      },
+      "owl:imports": {
+        "@type": "@id"
+      },
+      "owl:versionInfo": {
+        "@type": "@id"
+      },
+      "owl:inverseOf": {
+        "@type": "@vocab"
+      },
+      "owl:unionOf": {
+        "@type": "@vocab",
+        "@container": "@list"
+      },
+      "rdfs_classes": {
+        "@reverse": "rdfs:isDefinedBy",
+        "@type": "@id"
+      },
+      "rdfs_properties": {
+        "@reverse": "rdfs:isDefinedBy",
+        "@type": "@id"
+      },
+      "rdfs_datatypes": {
+        "@reverse": "rdfs:isDefinedBy",
+        "@type": "@id"
+      },
+      "rdfs_instances": {
+        "@reverse": "rdfs:isDefinedBy",
+        "@type": "@id"
+      },
+      "concepts": {
+        "@reverse": "skos:inScheme"
+      }
+    },
+    "@id": "",
+    "@type": "owl:Ontology",
+    "dc:title": {
+      "en": "OpenActive Namespace Vocabulary Terms"
+    },
+    "dc:description": {
+      "en": "This document describes the vocabulary used in the Modelling Opportunity Data specification."
+    },
+    "dc:date": "",
+    "owl:versionInfo": "",
+    "rdfs_classes": [],
+    "rdfs_properties": []
+  },
+  "keywords": {
+    "type": "@type",
+    "id": "@id"
+  },
+  "namespaces": {
+    "oa": "https://openactive.io/",
+    "dc": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfa": "http://www.w3.org/ns/rdfa#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pending": "https://pending.schema.org/",
+    "gr": "http://purl.org/goodrelations/v1#"
+  },
+  "validationModeGroups":[
+    {
+      "name": "Opportunity Data Publishing",
+      "validationModeList": [
+        {
+          "validationMode": "RPDEFeed",
+          "name": "Opportunity RPDE Feed"
+        },
+        {
+          "validationMode": "BookableRPDEFeed",
+          "name": "Bookable Opportunity RPDE Feed"
+        },
+        {
+          "validationMode": "DatasetSite",
+          "name": "Dataset Site"
+        },
+        {
+          "validationMode": "DataCatalog",
+          "name": "Data Catalog"
+        }
+      ]
+    },
+    {
+      "name": "Open Booking API",
+      "validationModeList": [
+        {
+          "validationMode": "C1Request",
+          "name": "OrderQuote Creation C1 Request"
+        },
+        {
+          "validationMode": "C1Response",
+          "name": "OrderQuote Creation C1 Response"
+        },
+        {
+          "validationMode": "C2Request",
+          "name": "OrderQuote Creation C2 Request"
+        },
+        {
+          "validationMode": "C2Response",
+          "name": "OrderQuote Creation C2 Response"
+        },
+        {
+          "validationMode": "PRequest",
+          "name": "OrderProposal Creation P Request"
+        },
+        {
+          "validationMode": "PResponse",
+          "name": "OrderProposal Creation P Response"
+        },
+        {
+          "validationMode": "OrderProposalPatch",
+          "name": "OrderProposal Update"
+        },
+        {
+          "validationMode": "BRequest",
+          "name": "Order Creation B Order Request"
+        },
+        {
+          "validationMode": "BOrderProposalRequest",
+          "name": "Order Creation B OrderProposal Request"
+        },
+        {
+          "validationMode": "BResponse",
+          "name": "Order Creation B Response"
+        },
+        {
+          "validationMode": "OrderPatch",
+          "name": "Order Cancellation"
+        },
+        {
+          "validationMode": "OrdersFeed",
+          "name": "Orders RPDE feed"
+        },
+        {
+          "validationMode": "OrderStatus",
+          "name": "Order Status"
+        },
+        {
+          "validationMode": "OpenBookingError",
+          "name": "Error Response"
+        },
+        {
+          "validationMode": "TestInterface",
+          "name": "Test Interface"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "type": "FacilityUse",
+  "hasId": true,
+  "subClassOf": "https://schema.org/Product",
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://example.com/facility-use/1",
+  "requiredFields": [
+    "type",
+    "url",
+    "name",
+    "activity",
+    "location",
+    "provider"
+  ],
+  "recommendedFields": [
+    "id",
+    "description",
+    "image",
+    "hoursAvailable",
+    "offers"
+  ],
+  "validationMode": {
+		"C1Response": "response",
+		"C2Response": "response",
+		"PResponse": "response",
+		"BResponse": "response",
+    "OrderStatus": "response",
+    "TestInterface": "testInterface"
+	},
+	"imperativeConfiguration": {
+    "testInterface": {
+      "requiredFields": [
+        "type"
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+      ]
+    },
+    "response": {
+      "requiredFields": [
+        "type",
+        "url",
+        "name",
+        "activity",
+        "location"
+      ],
+      "shallNotInclude": [
+        "offers",
+        "event",
+        "provider"
+      ]
+		}
+	},
+  "inSpec": [
+    "type",
+    "id",
+    "url",
+    "identifier",
+    "name",
+    "description",
+    "image",
+    "activity",
+    "location",
+    "event",
+    "offers",
+    "hoursAvailable",
+    "individualFacilityUse",
+    "provider",
+    "accessibilityInformation",
+    "accessibilitySupport",
+    "category",
+    "attendeeInstructions"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "FacilityUse"
+    },
+    "accessibilityInformation": {
+      "fieldName": "accessibilityInformation",
+      "sameAs": "https://openactive.io/accessibilityInformation",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "Provide additional, specific documentation for participants about how disabilities are, or can be supported at the Event."
+      ],
+      "example": "This route has been British Cycling assessed as an accessible route, meaning it is suitable for the majority of adaptive bikes. The route will have no or low levels of traffic, there will be plenty of space and will have a good surface throughout. If you have any questions about using this route on an adaptive bike on this ride, please use visit https://www.letsride.co.uk/accessibility or call 0123 456 7000 and ask for the Recreation team."
+    },
+    "accessibilitySupport": {
+      "fieldName": "accessibilitySupport",
+      "sameAs": "https://openactive.io/accessibilitySupport",
+      "model": "ArrayOf#Concept",
+      "description": [
+        "Used to specify the types of disabilities or impairments that are supported at an event."
+      ],
+      "example": [
+        {
+          "@type": "Concept",
+          "@id": "https://openactive.io/accessibility-support#1393f2dc-3fcc-4be9-a99f-f1e51f5ad277",
+          "prefLabel": "Visual impairment",
+          "inScheme": "https://openactive.io/accessibility-support"
+        }
+      ]
+    },
+    "activity": {
+      "fieldName": "activity",
+      "sameAs": "https://openactive.io/activity",
+      "model": "ArrayOf#Concept",
+      "description": [
+        "Specifies the physical activity or activities that will take place during a facility use."
+      ],
+      "example": [
+        {
+          "@type": "Concept",
+          "@id": "https://openactive.io/activity-list#c0360db0-a817-4bae-9167-40f89b49fc9e",
+          "prefLabel": "Badminton",
+          "inScheme": "https://openactive.io/activity-list"
+        }
+      ]
+    },
+    "attendeeInstructions": {
+      "fieldName": "attendeeInstructions",
+      "sameAs": "https://openactive.io/attendeeInstructions",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "Provides additional notes and instructions for users of a facility, for example more information on how to find it, what to bring, etc. The value of this property must not include HTML or other markup."
+      ],
+      "example": "The tennis court is locked with a keycode, so please ensure you book online in advance to gain access."
+    },
+    "category": {
+      "fieldName": "category",
+      "sameAs": "https://schema.org/category",
+      "model": "ArrayOf#Concept",
+      "alternativeTypes": [
+        "ArrayOf#https://schema.org/Text"
+      ],
+      "description": [
+        "Provides a set of tags that help categorise and describe a facility."
+      ],
+      "example": [{
+        "@type": "Concept",
+        "@id": "https://example.com/reference/categories#Top%20Club%20Level",
+        "inScheme": "https://example.com/reference/categories",
+        "prefLabel": "Top Club Level"
+      }]
+    },
+    "description": {
+      "fieldName": "description",
+      "sameAs": "https://schema.org/description",
+      "requiredType": "https://schema.org/Text",
+      "example": "An fast paced game that incorporates netball, handball and football.",
+      "description": [
+        "A plain text description of the facility use, which must not include HTML or other markup."
+      ]
+    },
+    "event": {
+      "fieldName": "event",
+      "sameAs": "https://schema.org/event",
+      "model": "ArrayOf#Slot",
+      "description": [
+        "An array of slots of availability of this FacilityUse."
+      ],
+      "example": [
+        {
+          "@type": "Slot",
+          "@id": "http://www.example.org/api/facility-uses/432#/event/2018-03-01T10:00:00Z",
+          "startDate": "2018-03-01T11:00:00Z",
+          "endDate": "2018-03-01T11:30:00Z",
+          "duration": "PT30M",
+          "remainingUses": 3,
+          "maximumUses": 6
+        }
+      ]
+    },
+    "hoursAvailable": {
+      "fieldName": "hoursAvailable",
+      "sameAs": "https://schema.org/hoursAvailable",
+      "model": "ArrayOf#OpeningHoursSpecification",
+      "description": [
+        "The times the facility use is available"
+      ]
+    },
+    "identifier": {
+      "fieldName": "identifier",
+      "sameAs": "https://schema.org/identifier",
+      "alternativeModels": [
+        "#PropertyValue",
+        "ArrayOf#PropertyValue"
+      ],
+      "requiredType": "https://schema.org/Text",
+      "alternativeTypes": [
+        "https://schema.org/Integer"
+      ],
+      "example": "SB1234",
+      "description": [
+        "A local non-URI identifier for the resource"
+      ]
+    },
+    "image": {
+      "fieldName": "image",
+      "sameAs": "https://schema.org/image",
+      "model": "ArrayOf#ImageObject",
+      "description": [
+        "An image or photo that depicts the facility use, e.g. a photo taken at a previous event."
+      ],
+      "example": [{
+        "thumbnail": "http://example.com/static/image/speedball_thumbnail.jpg",
+        "@type": "ImageObject",
+        "url": "http://example.com/static/image/speedball_large.jpg"
+      }]
+    },
+    "individualFacilityUse": {
+      "fieldName": "individualFacilityUse",
+      "sameAs": "https://openactive.io/individualFacilityUse",
+      "model": "ArrayOf#IndividualFacilityUse",
+      "description": [
+        "Inverse of the oa:aggregateFacilityUse property. Relates a oa:FacilityUse (e.g. an opportunity to play tennis at a specific location) to an oa:IndividualFacilityUse (e.g. an opportunity to play tennis on a specific court)."
+      ],
+      "example": [
+        {
+          "@type": "IndividualFacilityUse",
+          "@id": "http://www.example.org/facility-uses/1",
+          "name": "Tennis Court 1"
+        }
+      ]
+    },
+    "location": {
+      "fieldName": "location",
+      "model": "#Place",
+      "sameAs": "https://schema.org/location",
+      "description": [
+        "The location at which the facility use will take place."
+      ],
+      "example": {
+        "@type": "Place",
+        "address": {
+          "addressLocality": "New Malden",
+          "addressRegion": "London",
+          "postalCode": "NW5 3DU",
+          "streetAddress": "Raynes Park High School, 46A West Barnes Lane",
+          "@type": "PostalAddress"
+        },
+        "description": "Raynes Park High School in London",
+        "geo": {
+          "latitude": 51.4034423828125,
+          "longitude": -0.2369088977575302,
+          "@type": "GeoCoordinates"
+        },
+        "@id": "https://example.com/locations/1234ABCD",
+        "identifier": "1234ABCD",
+        "name": "Raynes Park High School",
+        "telephone": "01253 473934"
+      }
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Speedball",
+      "description": [
+        "The name of the facility use"
+      ]
+    },
+    "provider": {
+      "fieldName": "provider",
+      "sameAs": "https://schema.org/provider",
+      "model": "#Organization",
+      "description": [
+        "The organisation responsible for providing the facility"
+      ],
+      "example": {
+        "name": "Central Speedball Association",
+        "@type": "Organization",
+        "url": "http://www.speedball-world.com"
+      }
+    },
+    "offers": {
+      "fieldName": "offers",
+      "sameAs": "https://schema.org/offers",
+      "model": "ArrayOf#Offer",
+      "description": [
+        "An array of schema:Offer that include the price of booking."
+      ],
+      "example": {
+        "@type": "Offer",
+        "identifier": "OX-AD",
+        "name": "Adult",
+        "price": 7.5,
+        "priceCurrency": "GBP",
+        "url": "https://profile.everyoneactive.com/booking?Site=0140&Activities=1402CBP20150217&Culture=en-GB"
+      }
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "description": [
+        "A URL to a web page (or section of a page) that describes the facility use."
+      ],
+      "example": "https://example.com/facility-use/1234"
+    }
+  }
+}

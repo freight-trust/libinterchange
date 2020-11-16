@@ -1,0 +1,20 @@
+{
+  "type": "Towels",
+  "subClassOf": "#LocationFeatureSpecification",
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Towels"
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Complementary Towels",
+      "description": [
+        "A string, suitable for presentation in user interfaces."
+      ]
+    }
+  }
+}

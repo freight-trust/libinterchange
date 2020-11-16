@@ -1,0 +1,144 @@
+{
+  "type": "SessionSeries",
+  "subClassOf": "#Event",
+  "notInSpec": [
+    "remainingAttendeeCapacity"
+  ],
+  "requiredFields": [
+    "type",
+    "url",
+    "name",
+    "location",
+    "activity",
+    "organizer",
+    "offers"
+  ],
+  "requiredOptions": [],
+  "recommendedFields": [
+    "id",
+    "description",
+    "image",
+    "ageRange",
+    "genderRestriction",
+    "leader",
+    "level"
+  ],
+  "shallNotInclude": [],
+  "validationMode": {
+    "C1Response": "response",
+    "C2Response": "response",
+    "PResponse": "response",
+    "BResponse": "response",
+    "OrderStatus": "response",
+    "TestInterface": "testInterface"
+  },
+  "imperativeConfigurationWithContext": {},
+  "imperativeConfiguration": {
+    "testInterface": {
+      "requiredFields": [
+        "type"
+      ],
+      "recommendedFields": [
+      ],
+      "shallNotInclude": [
+      ]
+    },
+    "response": {
+      "requiredFields": [
+        "type",
+        "id",
+        "url",
+        "name",
+        "location",
+        "activity"
+      ],
+      "recommendedFields": [
+        "ageRange",
+        "genderRestriction",
+        "eventStatus"
+      ],
+      "shallNotInclude": [
+        "remainingAttendeeCapacity",
+        "offers",
+        "subEvent",
+        "organizer"
+      ]
+    }
+  },
+  "inSpec": [
+    "id",
+    "type",
+    "identifier",
+    "url",
+    "name",
+    "description",
+    "image",
+    "startDate",
+    "endDate",
+    "duration",
+    "location",
+    "organizer",
+    "contributor",
+    "maximumAttendeeCapacity",
+    "maximumVirtualAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "eventStatus",
+    "subEvent",
+    "superEvent",
+    "activity",
+    "category",
+    "ageRange",
+    "genderRestriction",
+    "programme",
+    "attendeeInstructions",
+    "leader",
+    "accessibilitySupport",
+    "accessibilityInformation",
+    "isCoached",
+    "level",
+    "meetingPoint",
+    "isAccessibleForFree",
+    "offers",
+    "schedulingNote",
+    "eventAttendanceMode",
+    "eventSchedule"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "SessionSeries"
+    },
+    "subEvent": {
+      "fieldName": "subEvent",
+      "sameAs": "https://schema.org/subEvent",
+      "model": "ArrayOf#ScheduledSession",
+      "description": [
+        "Relates a parent event to a child event. Properties describing the parent event can be assumed to apply to the child, unless otherwise specified. A child event might be a specific instance of an Event within a schedule"
+      ],
+      "inheritsTo": {
+        "exclude": ["id", "identifier", "subEvent", "superEvent", "url", "eventSchedule"]
+      }
+    },
+    "eventSchedule": {
+      "fieldName": "eventSchedule",
+      "sameAs": "https://pending.schema.org/eventSchedule",
+      "model": "ArrayOf#Schedule",
+      "description": [
+        "A an array of oa:Schedule or oa:PartialSchedule, which represents a recurrence pattern."
+      ],
+      "example": [
+        {
+          "@type": "PartialSchedule",
+          "repeatFrequency": "P1W",
+          "startTime": "20:15",
+          "endTime": "20:45",
+          "byDay": [
+            "http://schema.org/Tuesday"
+          ],
+          "scheduleTimezone": "Europe/London"
+        }
+      ]
+    }
+  }
+}

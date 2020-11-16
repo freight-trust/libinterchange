@@ -1,0 +1,78 @@
+{
+  "type": "MediaObject",
+  "derivedFrom": "https://schema.org/MediaObject",
+  "hasId": false,
+  "requiredFields":[
+    "type",
+    "url"
+  ],
+  "inSpec": [
+    "type",
+    "thumbnail",
+    "url",
+    "contentUrl",
+    "embedUrl",
+    "width",
+    "height"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "MediaObject"
+    },
+    "thumbnail": {
+      "fieldName": "thumbnail",
+      "sameAs": "https://schema.org/thumbnail",
+      "model": "ArrayOf#ImageObject",
+      "description": [
+        "The URL for a thumbnail image for the media."
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://example.com/media/stayin/getfit",
+      "description": [
+        "The URL for the page containing the media."
+      ]
+    },
+    "contentUrl": {
+      "fieldName": "contentUrl",
+      "sameAs": "https://schema.org/contentUrl",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://example.com/media/stayin/getfit",
+      "description": [
+        "Actual bytes of the media object, for example the image file or video file."
+      ]
+    },
+    "embedUrl": {
+      "fieldName": "embedUrl",
+      "sameAs": "https://schema.org/embedUrl",
+      "requiredType": "https://schema.org/URL",
+      "example": "https://example.com/media/stayin/getfit",
+      "description": [
+        "A URL pointing to a player for a specific video. In general, this is the information in the src element of an embed tag and should not be the same as the content of the loc tag."
+      ]
+    },
+    "width": {
+      "fieldName": "width",
+      "sameAs": "https://schema.org/width",
+      "requiredType": "https://schema.org/Integer",
+      "example": 400,
+      "description": [
+        "The width of the media in pixels."
+      ]
+    },
+    "height": {
+      "fieldName": "height",
+      "sameAs": "https://schema.org/height",
+      "requiredType": "https://schema.org/Integer",
+      "example": 300,
+      "description": [
+        "The height of the media in pixels."
+      ]
+    }
+  }
+}

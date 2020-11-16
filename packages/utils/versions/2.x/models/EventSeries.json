@@ -1,0 +1,100 @@
+{
+  "type": "EventSeries",
+  "subClassOf": "#Event",
+  "derivedFrom": "https://pending.schema.org/EventSeries",
+  "requiredFields": [
+    "type",
+    "name",
+    "activity",
+    "organizer"
+  ],
+  "requiredOptions": [
+    {
+      "description": [
+        "An `id` and/or `identifier` must be provided in order to allow data users to group `EventSeries` together consistently."
+      ],
+      "options": [
+        "id",
+        "identifier"
+      ]
+    }
+  ],
+  "recommendedFields": [
+    "id",
+    "ageRange",
+    "description",
+    "genderRestriction",
+    "image",
+    "isCoached",
+    "level",
+    "programme"
+  ],
+  "shallNotInclude": [
+    "eventSchedule"
+  ],
+  "validationMode": {
+    "C1Response": "response",
+    "C2Response": "response",
+    "PResponse": "response",
+    "BResponse": "response",
+    "OrderStatus": "response"
+  },
+  "imperativeConfigurationWithContext": {},
+  "imperativeConfiguration": {
+    "response": {
+      "requiredFields": [
+        "type",
+        "name",
+        "activity"
+      ]
+    }
+  },
+  "inSpec": [
+    "id",
+    "type",
+    "identifier",
+    "url",
+    "name",
+    "description",
+    "image",
+    "startDate",
+    "endDate",
+    "duration",
+    "location",
+    "organizer",
+    "contributor",
+    "maximumAttendeeCapacity",
+    "maximumVirtualAttendeeCapacity",
+    "remainingAttendeeCapacity",
+    "eventStatus",
+    "subEvent",
+    "superEvent",
+    "activity",
+    "category",
+    "ageRange",
+    "genderRestriction",
+    "programme",
+    "attendeeInstructions",
+    "leader",
+    "accessibilitySupport",
+    "accessibilityInformation",
+    "isCoached",
+    "level",
+    "meetingPoint",
+    "isAccessibleForFree",
+    "offers",
+    "schedulingNote",
+    "eventAttendanceMode"
+  ],
+  "notInSpec": [
+    "startDate",
+    "endDate"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "EventSeries"
+    }
+  }
+}

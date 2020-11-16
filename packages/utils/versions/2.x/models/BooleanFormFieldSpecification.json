@@ -1,0 +1,32 @@
+{
+   "type":"BooleanFormFieldSpecification",
+   "subClassOf":"#PropertyValueSpecification",
+    "hasId":false,
+    "requiredFields":[
+            "type",
+            "name"
+         ],
+         "recommendedFields":[
+            "description"
+         ],
+         "shallNotInclude":[
+            "valueRequired"
+         ],
+         "requiredOptions":[],
+   "inSpec":[
+      "type",
+      "name",
+      "description",
+      "valueRequired"
+   ],
+   "notInSpec":[
+     "valueRequired"
+   ],
+   "fields":{
+      "type":{
+         "fieldName":"type",
+         "requiredType":"https://schema.org/Text",
+         "requiredContent":"BooleanFormFieldSpecification"
+      }
+   }
+}

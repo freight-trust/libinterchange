@@ -1,0 +1,42 @@
+{
+  "type": "GeoCoordinates",
+  "derivedFrom": "https://schema.org/GeoCoordinates",
+  "hasId": false,
+  "requiredFields": [
+    "type",
+    "latitude",
+    "longitude"
+  ],
+  "inSpec": [
+    "type",
+    "latitude",
+    "longitude"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "GeoCoordinates"
+    },
+    "latitude": {
+      "fieldName": "latitude",
+      "sameAs": "https://schema.org/latitude",
+      "requiredType": "https://schema.org/Number",
+      "minDecimalPlaces": 3,
+      "example": 51.522338,
+      "description": [
+        "The latitude of a location. For example 51.522338 (WGS 84)."
+      ]
+    },
+    "longitude": {
+      "fieldName": "longitude",
+      "sameAs": "https://schema.org/longitude",
+      "requiredType": "https://schema.org/Number",
+      "minDecimalPlaces": 3,
+      "example": -0.083437,
+      "description": [
+        "The longitude of a location. For example -0.083437 (WGS 84)."
+      ]
+    }
+  }
+}

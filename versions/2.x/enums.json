@@ -1,0 +1,125 @@
+{
+  "BrokerType":{
+    "namespace": "https://openactive.io/",
+    "values": [
+      "AgentBroker",
+      "NoBroker",
+      "ResellerBroker"
+    ]
+  },
+  "DayOfWeek": {
+    "namespace": "https://schema.org/",
+    "values": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ]
+  },
+  "EventStatusType": {
+    "namespace": "https://schema.org/",
+    "values": [
+      "EventCancelled",
+      "EventPostponed",
+      "EventRescheduled",
+      "EventScheduled"
+    ]
+  },
+  "GenderType": {
+    "namespace": "https://schema.org/",
+    "values": [
+      "Male",
+      "Female"
+    ]
+  },
+  "GenderRestrictionType": {
+    "namespace": "https://openactive.io/",
+    "comment": "Enumerated types for gender restrictions that are applied to Events",
+    "values": [
+      "NoRestriction",
+      "MaleOnly",
+      "FemaleOnly"
+    ]
+  },
+  "OrderCreationStatus":{
+    "namespace": "https://openactive.io/",
+    "values": [
+      "OrderCreationPaymentAuthorized",
+      "OrderCreationPaymentCaptured",
+      "OrderCreationComplete",
+      "OrderCreationPaymentDue"
+    ]
+  },
+  "OrderProposalStatus":{
+    "namespace": "https://openactive.io/",
+    "values": [
+      "AwaitingSellerConfirmation",
+      "SellerAccepted",
+      "SellerRejected",
+      "CustomerRejected"
+    ]
+  },
+  "PaymentMethod": {
+    "namespace": "http://purl.org/goodrelations/v1#",
+    "values": [
+      "Cash",
+      "PaymentMethodCreditCard"
+    ]
+  },
+  "RequiredStatusType": {
+    "namespace": "https://openactive.io/",
+    "values": [
+      "Required",
+      "Optional",
+      "Unavailable"
+    ]
+  },
+  "TaxMode": {
+    "namespace": "https://openactive.io/",
+    "values": [
+      "TaxGross",
+      "TaxNet"
+    ]
+  },
+  "OpenBookingFlowRequirement":{
+    "namespace": "https://openactive.io/",
+    "values":[
+      "OpenBookingIntakeForm",
+      "OpenBookingAttendeeDetails",
+      "OpenBookingApproval",
+      "OpenBookingNegotiation",
+      "OpenBookingMessageExchange"
+    ]
+  },
+  "OrderItemStatus":{
+    "namespace": "https://openactive.io/",
+    "values":[
+      "SellerCancelled",
+      "CustomerCancelled",
+      "OrderItemProposed",
+      "OrderItemConfirmed",
+      "CustomerAttended"
+    ]
+  },
+  "AvailableChannelType":{
+    "namespace": "https://openactive.io/",
+    "values":[
+      "OpenBookingPrepayment",
+      "TelephoneAdvanceBooking",
+      "TelephonePrepayment",
+      "OnlinePrepayment"
+    ]
+  },
+  "EventAttendanceModeEnumeration": {
+    "namespace": "https://schema.org/",
+    "isSchemaPending": true,
+    "values": [
+      "OfflineEventAttendanceMode",
+      "MixedEventAttendanceMode",
+      "OnlineEventAttendanceMode"
+    ]
+  }
+}

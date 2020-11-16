@@ -1,0 +1,337 @@
+{
+  "type": "Organization",
+  "derivedFrom": "https://schema.org/Organization",
+  "hasId": true,
+  "idFormat": "https://schema.org/URL",
+  "sampleId": "https://id.bookingsystem.example.com/organizers/1",
+  "requiredFields": [
+    "name"
+  ],
+  "recommendedFields": [
+    "url",
+    "telephone",
+    "sameAs"
+  ],
+  "validationMode": {
+    "RPDEFeed": "feed",
+    "BookableRPDEFeed": "bookableFeed",
+    "DatasetSite": "datasetSite",
+    "DataCatalog": "dataCatalog",
+    "C1Request": "request",
+    "C1Response": "response",
+    "C2Request": "request",
+    "C2Response": "response",
+    "PRequest": "request",
+    "PResponse": "response",
+    "BRequest": "request",
+    "BResponse": "response",
+    "OrderProposalPatch": "request",
+    "OrderPatch": "request",
+    "OrdersFeed": "result",
+    "OrderStatus": "result"
+  },
+  "imperativeConfiguration": {
+    "datasetSite": {
+      "requiredFields": [
+        "name",
+        "logo",
+        "legalName",
+        "url"
+      ],
+      "recommendedFields": [
+      ]
+    },
+    "dataCatalog": {
+      "requiredFields": [
+        "name",
+        "url"
+      ],
+      "recommendedFields": [
+      ]
+    },
+    "bookableFeed": {
+      "requiredFields": [
+        "id",
+        "name"
+      ],
+      "recommendedFields": [
+        "url",
+        "telephone",
+        "sameAs"
+      ]
+    }
+  },
+  "imperativeConfigurationWithContext": {
+    "feed": {
+      "organizer": {
+        "requiredFields": [
+          "id"
+        ]
+      }
+    },
+    "bookableFeed": {
+      "organizer": {
+        "requiredFields": [
+          "id",
+          "name",
+          "taxMode"
+        ],
+        "recommendedFields": [
+          "url",
+          "telephone",
+          "sameAs"
+        ]
+      },
+      "provider": {
+        "requiredFields": [
+          "id",
+          "name",
+          "taxMode"
+        ],
+        "recommendedFields": [
+          "url",
+          "telephone",
+          "sameAs"
+        ]
+      }
+    },
+    "request": {
+      "broker": {
+        "requiredFields": [
+          "name"
+        ],
+        "recommendedFields": [
+          "email",
+          "url",
+          "logo"
+        ]
+      },
+      "seller": {
+        "requiredFields": [
+          "id"
+        ],
+        "recommendedFields": []
+      },
+      "customer": {
+        "requiredFields": [
+          "email",
+          "name",
+          "address"
+        ],
+        "recommendedFields": []
+      }
+    },
+    "response": {
+      "broker": {
+        "requiredFields": [],
+        "recommendedFields": []
+      },
+      "seller": {
+        "requiredFields":[
+          "id",
+          "name",
+          "legalName",
+          "taxMode",
+          "address"
+        ],
+        "recommendedFields": [
+          "email",
+          "url",
+          "logo",
+          "vatID"
+        ]
+      },
+      "customer": {
+        "requiredFields": [],
+        "recommendedFields": []
+      }
+    },
+    "result": {
+      "broker": {
+        "requiredFields": [
+          "name"
+        ],
+        "recommendedFields": [
+          "email",
+          "url",
+          "logo"
+        ]
+      },
+      "seller": {
+        "requiredFields": [
+          "id",
+          "name",
+          "legalName",
+          "taxMode",
+          "address"
+        ],
+        "recommendedFields": [
+          "email",
+          "url",
+          "logo",
+          "vatID"
+        ]
+      },
+      "customer": {
+        "requiredFields": [
+          "email",
+          "name",
+          "address"
+        ],
+        "recommendedFields": []
+      }
+    }
+  },
+  "inSpec": [
+    "id",
+    "type",
+    "identifier",
+    "name",
+    "legalName",
+    "email",
+    "description",
+    "logo",
+    "telephone",
+    "sameAs",
+    "taxMode",
+    "vatID",
+    "telephone",
+    "url",
+    "logo",
+    "address",
+    "termsOfService"
+  ],
+  "fields": {
+    "type": {
+      "fieldName": "type",
+      "requiredType": "https://schema.org/Text",
+      "requiredContent": "Organization"
+    },
+    "description": {
+      "fieldName": "description",
+      "sameAs": "https://schema.org/description",
+      "requiredType": "https://schema.org/Text",
+      "example": "The national governing body of cycling",
+      "description": [
+        "A plain text description of the Organization, which must not include HTML or other markup."
+      ]
+    },
+    "taxMode": {
+      "fieldName": "taxMode",
+      "sameAs":"https://openactive.io/taxMode",
+      "requiredType": "https://openactive.io/TaxMode",
+      "description": [
+        "Either  https://openactive.io/TaxNet or  https://openactive.io/TaxGross"
+      ]
+    },
+    "vatID": {
+      "fieldName": "vatID",
+      "sameAs": "https://schema.org/vatID",
+      "requiredType": "https://schema.org/Text",
+      "description": [
+        "The Value-added Tax ID of the of the Seller."
+      ]
+    },
+    "identifier": {
+      "fieldName": "identifier",
+      "sameAs": "https://schema.org/identifier",
+      "alternativeModels": [
+        "#PropertyValue",
+        "ArrayOf#PropertyValue"
+      ],
+      "requiredType": "https://schema.org/Text",
+      "alternativeTypes": [
+        "https://schema.org/Integer"
+      ],
+      "example": "SB1234",
+      "description": [
+        "A local non-URI identifier for the resource"
+      ]
+    },
+    "logo": {
+      "fieldName": "logo",
+      "sameAs": "https://schema.org/logo",
+      "model": "#ImageObject",
+      "example": {
+        "@type": "ImageObject",
+        "url": "http://example.com/static/image/speedball_large.jpg"
+      },
+      "description": [
+        "A logo for the Organization."
+      ]
+    },
+    "name": {
+      "fieldName": "name",
+      "sameAs": "https://schema.org/name",
+      "requiredType": "https://schema.org/Text",
+      "example": "Central Speedball Association",
+      "description": [
+        "The name of the Organization"
+      ]
+    },
+    "legalName": {
+      "fieldName": "legalName",
+      "sameAs": "https://schema.org/legalName",
+      "requiredType": "https://schema.org/Text",
+      "example": "Central Speedball Ltd",
+      "description": [
+        "The official name of the organization, e.g. the registered company name."
+      ]
+    },
+    "email": {
+      "fieldName": "email",
+      "sameAs": "https://schema.org/email",
+      "requiredType": "https://schema.org/Text",
+      "example": "info@example.com",
+      "description": [
+        "General enquiries e-mail address for the organization."
+      ]
+    },
+    "sameAs": {
+      "fieldName": "sameAs",
+      "sameAs": "https://schema.org/sameAs",
+      "requiredType": "ArrayOf#https://schema.org/URL",
+      "example": [
+        "https://www.facebook.com/everyoneactive/",
+        "https://twitter.com/everyoneactive"
+      ],
+      "description": [
+        "Lists the URL(s) of the official social media profile pages associated with the organization."
+      ]
+    },
+    "telephone": {
+      "fieldName": "telephone",
+      "sameAs": "https://schema.org/telephone",
+      "requiredType": "https://schema.org/Text",
+      "example": "01234 567890",
+      "description": [
+        "The telephone number of the Organization"
+      ]
+    },
+    "url": {
+      "fieldName": "url",
+      "sameAs": "https://schema.org/url",
+      "requiredType": "https://schema.org/URL",
+      "example": "http://www.speedball-world.com",
+      "description": [
+        "A definitive canonical URL for the Organization."
+      ]
+    },
+    "address": {
+      "fieldName": "address",
+      "sameAs": "https://schema.org/address",
+      "model": "#PostalAddress",
+      "description": [
+        "Address of the Seller, used on tax receipts."
+      ]
+    },
+    "termsOfService": {
+      "fieldName": "termsOfService",
+      "sameAs": "https://pending.schema.org/termsOfService",
+      "model": "ArrayOf#Terms",
+      "description": [
+        "The terms of service of the Seller."
+      ]
+    }
+  }
+}

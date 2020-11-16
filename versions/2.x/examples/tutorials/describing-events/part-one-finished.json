@@ -1,0 +1,39 @@
+{
+  "@context": "https://openactive.io/",
+  "@type": "Event",
+  "name": "Blade and tone",
+  "url": "http://www.example.org/events/1",
+  "activity": [
+    {
+      "id": "https://openactive.io/activity-list/#7e5cb3ee-8c91-4f85-8c97-e335e0013eb3",
+      "@type": "Concept",
+      "prefLabel": "Roller blading",
+      "inScheme": "https://openactive.io/activity-list"
+    }
+  ],
+  "startDate": "2018-08-13T20:00:00Z",
+  "endDate": "2018-08-13T21:00:00Z",
+  "duration": "PT1H",
+  "location": {
+    "@type": "Place",
+    "name": "ExampleCo Gym",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 High Street",
+      "addressLocality": "Colchester",
+      "addressRegion": "Essex",
+      "postalCode": "AB1 2CD",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.88805,
+      "longitude": 0.90286
+    }
+  },
+  "organizer": {
+    "name": "Colchester Bladers",
+    "@type": "Organization",
+    "url": "https://www.examplecluburl.com"
+  }
+}

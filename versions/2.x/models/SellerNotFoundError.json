@@ -1,0 +1,41 @@
+{
+  "type": "SellerNotFoundError",
+  "subClassOf": "#OpenBookingError",
+  "description": {
+    "sections": [
+      {
+        "title": "Error Use Case",
+        "paragraphs": [
+          "The `@id` of the `seller` included in the request was not found within the Booking System."
+        ]
+      }
+    ]
+  },
+  "fields": {
+    "type": {
+        "fieldName": "type",
+        "requiredContent": "SellerNotFoundError",
+        "requiredType": "https://schema.org/Text"
+    },
+    "name": {
+      "description": [
+          "A short, human-readable summary of the problem type. It should not change from occurrence to occurrence of the problem, except for purposes of localization."
+      ],
+      "example": "The '@id' of the 'seller' included in the request was not found within the Booking System.",
+      "defaultContent": "The '@id' of the 'seller' included in the request was not found within the Booking System.",
+      "fieldName": "name",
+      "requiredType": "https://schema.org/Text",
+      "sameAs": "https://schema.org/name"
+    },
+    "statusCode": {
+      "fieldName": "statusCode",
+      "sameAs": "https://openactive.io/statusCode",
+      "requiredType": "https://schema.org/Integer",
+      "requiredContent": 500,
+      "defaultContent": 500,
+      "description": [
+        "An integer representing the HTTP status code."
+      ]
+    }
+  }
+}
